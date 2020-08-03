@@ -1,5 +1,5 @@
 ---
-title: "Neovim Thoughts"
+title: "Why I Use Neovim And Not A Normal Editor"
 date: 2020-08-02T22:35:38-05:00
 ---
 
