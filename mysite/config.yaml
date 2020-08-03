@@ -4,8 +4,8 @@ baseUrl: "https://co1ncidence.github.io/"
 title: "Anubis"
 theme: "anubis"
 paginate: 10
-disqusShortname: yourdiscussshortname
-googleAnalytics: UA-123-45
+disqusShortname: ""
+googleAnalytics: ""
 enableRobotsTXT: true
 
 menu:
