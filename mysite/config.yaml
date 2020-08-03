@@ -27,7 +27,7 @@ params:
     - js/main.js # relative path to "static" directory
   dateFormat: "2006-01-02"
   paginationSinglePost: true
-  style: auto
+  style: dark
 
 markup:
   goldmark:
