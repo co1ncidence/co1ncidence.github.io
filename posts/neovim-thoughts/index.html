@@ -10,13 +10,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="no-referrer-when-downgrade">
 
-<title>Why I Use Neovim And Not A Normal Editor - Anubis</title>
+<title>Why I Use Neovim And Not A Normal Editor - nuaNce&#39;s blog</title>
 <meta name="description" content="">
 
 <link rel="icon" type="image/x-icon" href="https://co1ncidence.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://co1ncidence.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://co1ncidence.github.io/css/light.css?rnd=1596427102" />
+<link rel="stylesheet" href="https://co1ncidence.github.io/css/light.css?rnd=1596429396" />
 <style>
 
     [data-theme="dark"] {   
@@ -48,11 +48,11 @@
 
 </style>
 
-<link rel="stylesheet" href="https://co1ncidence.github.io/css/style.css?rnd=1596427102" />
+<link rel="stylesheet" href="https://co1ncidence.github.io/css/style.css?rnd=1596429396" />
 
-<link rel="stylesheet" href="https://co1ncidence.github.io/css/my.css?rnd=1596427102">
+<link rel="stylesheet" href="https://co1ncidence.github.io/css/my.css?rnd=1596429396">
 
-<script src="https://co1ncidence.github.io/js/main.js?rnd=1596427102" type="text/javascript" charset="utf-8"></script>
+<script src="https://co1ncidence.github.io/js/main.js?rnd=1596429396" type="text/javascript" charset="utf-8"></script>
 
 <meta property="og:title" content="Why I Use Neovim And Not A Normal Editor" />
 <meta property="og:description" content="As someone who&rsquo;s always given a lot of importance to the concept of a streamlined workflow, I&rsquo;ve always been on the lookout for the best possible tools for what I do. One of the most important tools someone like me can use is the Text Editor. There are many popular Editors and IDE&rsquo;s out there, and I have tried many of them. For the better part of the last year I have been &ldquo;Editor Hopping&rdquo; in search of something to replace what I used to use, which was Apache&rsquo;s NetBeans IDE." />
@@ -83,7 +83,7 @@
         <header class="common-header"> 
             
                 <h1 class="site-title">
-    <a href="/">Anubis</a>
+    <a href="/">nuaNce&#39;s blog</a>
 </h1>
 <nav>
     
@@ -183,6 +183,76 @@
     
 
 
+
+    <button class="theme-switcher">
+        Dark theme
+    </button>
+
+    <script>
+    const STORAGE_KEY = 'user-color-scheme'
+    const defaultTheme = "auto"
+
+    let currentTheme
+    let switchButton
+    let autoDefinedScheme = window.matchMedia('(prefers-color-scheme: dark)')
+
+    const autoChangeScheme = e => {
+        currentTheme = e.matches ? 'dark' : 'light'
+        document.documentElement.setAttribute('data-theme', currentTheme)
+        changeButtonText()
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        switchButton = document.querySelector('.theme-switcher')
+        currentTheme = detectCurrentScheme()
+        if (currentTheme == 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark')
+        }
+        if (currentTheme == 'auto') {
+            autoChangeScheme(autoDefinedScheme);
+            autoDefinedScheme.addListener(autoChangeScheme);
+        }
+        changeButtonText()
+        switchButton.addEventListener('click', switchTheme, false)
+    })
+
+
+
+    function detectCurrentScheme() {
+        if (localStorage.getItem(STORAGE_KEY)) {
+            return localStorage.getItem(STORAGE_KEY)
+        } 
+        if (defaultTheme) {
+            return defaultTheme
+        } 
+        if (!window.matchMedia) {
+            return 'light'
+        } 
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            return 'dark'
+        }
+        return 'light'
+    }
+
+    function changeButtonText()
+    {
+        console.log(currentTheme)
+        switchButton.textContent = currentTheme == 'dark' ? 'Light theme' : 'Dark theme'
+    }
+
+    function switchTheme(e) {
+        if (currentTheme == 'dark') {
+            localStorage.setItem(STORAGE_KEY, 'light')
+            document.documentElement.setAttribute('data-theme', 'light')
+            currentTheme = 'light'
+        } else {
+            localStorage.setItem(STORAGE_KEY, 'dark')
+            document.documentElement.setAttribute('data-theme', 'dark')
+            currentTheme = 'dark'
+        }
+        changeButtonText()
+    }
+    </script>
     
 </footer>
 

@@ -1,7 +1,7 @@
 publishdir : ".."
 languageCode: "en-us"
 baseUrl: "https://co1ncidence.github.io/"
-title: "Anubis"
+title: "nuaNce's blog"
 theme: "anubis"
 paginate: 10
 disqusShortname: ""
@@ -27,7 +27,7 @@ params:
     - js/main.js # relative path to "static" directory
   dateFormat: "2006-01-02"
   paginationSinglePost: true
-  style: light-without-switcher
+  style: auto
 
 markup:
   goldmark:
