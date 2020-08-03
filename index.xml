@@ -12,6 +12,26 @@
     
     
     <item>
+      <title>About Me</title>
+      <link>https://co1ncidence.github.io/about/</link>
+      <pubDate>Sun, 02 Aug 2020 23:44:22 -0500</pubDate>
+      
+      <guid>https://co1ncidence.github.io/about/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m just a bored windrunner looking for fun stuff to do over the summer. I consider myself a Linux enthusiast and a veteran ricer, I take customization very seriously and have worked quite a bit to perfect my workflow. I am also an avid anti-normie and believe that everyone should care more about their online presence and what sorts of software they use. And, if you haven&amp;rsquo;t already guessed, I am also a huge advocate of FOSS.&lt;/p&gt;
+&lt;h3 id=&#34;my-stuff&#34;&gt;My Stuff:&lt;/h3&gt;
+&lt;p&gt;Here is a sneak-peak at my current rice:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/thBo16j.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/AUy8Vbh.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Recently I&amp;rsquo;ve been going for a bit of a more comfy, low contrast feel on my laptop rice, mostly to have a nice environment for studying and because I&amp;rsquo;ve gotten tired of higher contrast color palettes.&lt;/p&gt;
+&lt;p&gt;Oh, and if you&amp;rsquo;re wondering what my bash prompt is, it&amp;rsquo;s simple my home directory with a space after, here is the code:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;PS1&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;\[\e[0;37m\]\w\[\e[m\] \[\e0&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I&amp;rsquo;ll be making more posts on my configuration(s) later, so stay tuned!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Why I Use Neovim And Not A Normal Editor</title>
       <link>https://co1ncidence.github.io/posts/neovim-thoughts/</link>
       <pubDate>Sun, 02 Aug 2020 22:35:38 -0500</pubDate>
