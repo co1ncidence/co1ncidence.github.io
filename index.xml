@@ -40,17 +40,40 @@
       <pubDate>Sun, 02 Aug 2020 23:44:22 -0500</pubDate>
       
       <guid>https://co1ncidence.github.io/about/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m just a bored windrunner looking for fun stuff to do over the summer. I consider myself a Linux enthusiast and a veteran ricer, I take customization very seriously and have worked quite a bit to perfect my workflow. I am also an avid anti-normie and believe that everyone should care more about their online presence and what sorts of software they use. And, if you haven&amp;rsquo;t already guessed, I am also a huge advocate of FOSS.&lt;/p&gt;
-&lt;h3 id=&#34;my-stuff&#34;&gt;My Stuff:&lt;/h3&gt;
-&lt;p&gt;Here is a sneak-peak at my current rice:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/thBo16j.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/AUy8Vbh.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;Recently I&amp;rsquo;ve been going for a bit of a more comfy, low contrast feel on my laptop rice, mostly to have a nice environment for studying and because I&amp;rsquo;ve gotten tired of higher contrast color palettes.&lt;/p&gt;
-&lt;p&gt;Oh, and if you&amp;rsquo;re wondering what my bash prompt is, it&amp;rsquo;s simple my home directory with a space after, here is the code:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;PS1&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;\[\e[0;37m\]\w\[\e[m\] \[\e0&amp;#39;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I&amp;rsquo;ll be making more posts on my configuration(s) later, so stay tuned!&lt;/p&gt;
+      <description>&lt;p&gt;I&amp;rsquo;m just a bored windrunner looking for fun stuff to do over the summer. I consider myself a Linux enthusiast and a veteran ricer, I take customization very seriously and have worked quite a bit to perfect my workflow. I am also an avid anti-normie and believe that everyone should care more about their online presence and what sorts of software they use. And, if you haven&amp;rsquo;t already guessed, I am also a huge advocate of FOSS. I&amp;rsquo;ve been a car guy for a lot of my life but am not really good at talking about them (since I&amp;rsquo;ve never driven one), so don&amp;rsquo;t expect any car related posts. I&amp;rsquo;m Also an avid gamer and was formerly a Semi-Pro CS:GO player, though due to schoolwork and other concerns I have stopped playing competitively for the time being. And, as a longtime fantasy lover, here are some books of the genre I think you should read:&lt;/p&gt;
+&lt;h3 id=&#34;recommended-reads&#34;&gt;Recommended Reads&lt;/h3&gt;
+&lt;p&gt;Here are some of the books that I&amp;rsquo;ve really found myself enjoying during the quarantine and basically any free time that I get:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Author&lt;/th&gt;
+&lt;th&gt;Series&lt;/th&gt;
+&lt;th&gt;Favorite Books&lt;/th&gt;
+&lt;th&gt;Link to book. 1 (PDF)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Brandon Sanderson&lt;/td&gt;
+&lt;td&gt;The Stormlight Archive&lt;/td&gt;
+&lt;td&gt;Book 3. Oathbringer&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://b-ok.cc/book/4219340/4b2f48&#34;&gt;The Way of Kings&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Patrick Rothfuss&lt;/td&gt;
+&lt;td&gt;The Kingkiller Chronicle&lt;/td&gt;
+&lt;td&gt;Book 2. The Wise Man&amp;rsquo;s Fear&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://b-ok.cc/book/1564700/b39690&#34;&gt;The Name of The Wind&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Robert Jordan&lt;/td&gt;
+&lt;td&gt;The Wheel of Time&lt;/td&gt;
+&lt;td&gt;Book 15. A Memory of Light&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://b-ok.cc/book/984472/9743af&#34;&gt;The Eye of The World&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;I will keep this list updated and add more books as I continue reading, I hope you enjoy them as much as I do!&lt;/p&gt;
 </description>
     </item>
     
