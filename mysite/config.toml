@@ -1,0 +1,46 @@
+publishdir = ".."
+baseURL = "https://co1ncidence.github.io"
+languageCode = "en-us"
+title = "nuaNce's blog"
+theme = "anubis"
+paginate = 3
+
+disqusShortname = ""
+googleAnalytics = ""
+
+[author]
+  name = "nuaNce"
+
+[params]
+   author = "nuaNce"
+   description = "Just a place where I can rant and maybe say something smart."
+   dateFormat = "2006-01-02"
+   paginationSinglePost = true
+   style = "light"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Archive"
+    identifier = "archive"
+    url = "/posts/"
+    weight = 3
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+
+[markup.goldmark.renderer]
+unsafe = true
