@@ -3,7 +3,7 @@ title: "Neovim Thoughts"
 date: 2020-08-02T22:35:38-05:00
 ---
 
-As someone who's always given high importance to the concept of a streamlined workflow, I have always been on the lookout for the best possible tools for what I do. One of the most important tools someone like me can use is the **Text Editor**. There are many popular Editors and IDE's out there, and I have tried many of them. For the better part of the last year I have been "Editor Hopping" in search of something to replace what I used to use, which was Apache's NetBeans IDE. It was slow and inefficient and had far too much bloat and unnecessary features for me. I wanted something that did only what I needed it to and that could adapt to my workflow too. I came to the decision of using Neovim, here is a look at what my configuration looks like:
+As someone who's always given a lot of importance to the concept of a streamlined workflow, I have always been on the lookout for the best possible tools for what I do. One of the most important tools someone like me can use is the **Text Editor**. There are many popular Editors and IDE's out there, and I have tried many of them. For the better part of the last year I have been "Editor Hopping" in search of something to replace what I used to use, which was Apache's NetBeans IDE. It was slow and inefficient and had far too much bloat and unnecessary features for me. I wanted something that did only what I needed it to and that could adapt to my workflow too. I came to the decision of using Neovim, here is a look at what my configuration looks like:
 
 ![img](https://i.imgur.com/0mrpEEQ.png)
 
