@@ -16,7 +16,7 @@
 <link rel="icon" type="image/x-icon" href="https://co1ncidence.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://co1ncidence.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://co1ncidence.github.io/css/light.css?rnd=1596425752" />
+<link rel="stylesheet" href="https://co1ncidence.github.io/css/light.css?rnd=1596425953" />
 <style>
 
     [data-theme="dark"] {   
@@ -48,14 +48,14 @@
 
 </style>
 
-<link rel="stylesheet" href="https://co1ncidence.github.io/css/style.css?rnd=1596425752" />
+<link rel="stylesheet" href="https://co1ncidence.github.io/css/style.css?rnd=1596425953" />
 
-<link rel="stylesheet" href="https://co1ncidence.github.io/css/my.css?rnd=1596425752">
+<link rel="stylesheet" href="https://co1ncidence.github.io/css/my.css?rnd=1596425953">
 
-<script src="https://co1ncidence.github.io/js/main.js?rnd=1596425752" type="text/javascript" charset="utf-8"></script>
+<script src="https://co1ncidence.github.io/js/main.js?rnd=1596425953" type="text/javascript" charset="utf-8"></script>
 
 <meta property="og:title" content="Neovim Thoughts" />
-<meta property="og:description" content="ADJALDAjdaldADLkjadlj" />
+<meta property="og:description" content="As someone who&rsquo;s always given high importance to the concept of a streamlined workflow, I have always been on the lookout for the best possible tools for what I do. One of the most important tools someone like me can use is the Text Editor. There are many popular Editors and IDE&rsquo;s out there, and I have tried many of them. For the better part of the last year I have been &ldquo;Editor Hopping&rdquo; in search of something to replace what I used to use, which was Apache&rsquo;s NetBeans IDE." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://co1ncidence.github.io/posts/neovim-thoughts/" />
 <meta property="og:image" content="https://co1ncidence.github.io/images/og-featured.png"/>
@@ -66,7 +66,7 @@
 <meta name="twitter:image" content="https://co1ncidence.github.io/images/og-featured.png"/>
 
 <meta name="twitter:title" content="Neovim Thoughts"/>
-<meta name="twitter:description" content="ADJALDAjdaldADLkjadlj"/>
+<meta name="twitter:description" content="As someone who&rsquo;s always given high importance to the concept of a streamlined workflow, I have always been on the lookout for the best possible tools for what I do. One of the most important tools someone like me can use is the Text Editor. There are many popular Editors and IDE&rsquo;s out there, and I have tried many of them. For the better part of the last year I have been &ldquo;Editor Hopping&rdquo; in search of something to replace what I used to use, which was Apache&rsquo;s NetBeans IDE."/>
 
 
 
@@ -103,7 +103,41 @@
             <h1 class="post-title">Neovim Thoughts</h1>
         </header>
         <div class="content">
-            <p>ADJALDAjdaldADLkjadlj</p>
+            <p>As someone who&rsquo;s always given high importance to the concept of a streamlined workflow, I have always been on the lookout for the best possible tools for what I do. One of the most important tools someone like me can use is the <strong>Text Editor</strong>. There are many popular Editors and IDE&rsquo;s out there, and I have tried many of them. For the better part of the last year I have been &ldquo;Editor Hopping&rdquo; in search of something to replace what I used to use, which was Apache&rsquo;s NetBeans IDE. It was slow and inefficient and had far too much bloat and unnecessary features for me. I wanted something that did only what I needed it to and that could adapt to my workflow too. I came to the decision of using Neovim, here is a look at what my configuration looks like:</p>
+<p><img src="https://i.imgur.com/9ZcxTX1.png" alt="img"></p>
+<p>As you can see, it is perfectly optimized for everyday code editing. Neovim&rsquo;s modal editing capabilities and powerful ranges and motions also extend its functionality far over other editors right out of the box. I don&rsquo;t just use Neovim for code, however. Recently I have begun using it as my main editor for Markdown documents as well, and I believe it can replace my older choice, Typora, quite well:</p>
+<p><img src="https://i.imgur.com/lyGIc5L.png" alt="img"></p>
+<p>Using plugins like <a href="https://github.com/junegunn/goyo.vim">goyo</a> and <a href="https://github.com/junegunn/limelight.vim">limelight</a> greatly help improve the visual potency of Neovim when editing in markdown, both also help improve visibility of the document and make focusing on the actual writing far easier. Other tools like <a href="https://github.com/reedes/vim-pencil">vim-pencil</a> and <a href="https://github.com/plasticboy/vim-markdown">vim-markdown</a> help out with the formatting and syntax control of the document. I also use a handful of other plugins in my configuration, for reference, here is my entire plugins block (I use the vim-plug plugin manager):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#a6e22e">call</span> <span style="color:#a6e22e">plug</span>#<span style="color:#a6e22e">begin</span>(<span style="color:#e6db74">&#39;~/.vim/plugged&#39;</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;neoclide/coc.nvim&#39;</span>, {<span style="color:#e6db74">&#39;branch&#39;</span>: <span style="color:#e6db74">&#39;release&#39;</span>}<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;reedes/vim-pencil&#39;</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;itchyny/lightline.vim&#39;</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;tpope/vim-commentary&#39;</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;mattn/emmet-vim&#39;</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;alvan/vim-closetag&#39;</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;ap/vim-css-color&#39;</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;Yggdroot/indentline&#39;</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;preservim/nerdtree&#39;</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;sheerun/vim-polyglot&#39;</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;SirVer/ultisnips&#39;</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;dense-analysis/ale&#39;</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;honza/vim-snippets&#39;</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;elzr/vim-json&#39;</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;plasticboy/vim-markdown&#39;</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;iamcco/markdown-preview.nvim&#39;</span>, { <span style="color:#e6db74">&#39;do&#39;</span>: { -&gt; <span style="color:#a6e22e">mkdp</span>#<span style="color:#a6e22e">util</span>#<span style="color:#a6e22e">install</span>() }}<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;junegunn/goyo.vim&#39;</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;junegunn/fzf&#39;</span>, { <span style="color:#e6db74">&#39;do&#39;</span>: { -&gt; <span style="color:#a6e22e">fzf</span>#<span style="color:#a6e22e">install</span>() } }<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;junegunn/fzf.vim&#39;</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;junegunn/limelight.vim&#39;</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;prettier/vim-prettier&#39;</span>, {<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">call</span> <span style="color:#a6e22e">plug</span>#<span style="color:#a6e22e">end</span>()<span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><p>Some might say that this is an absurd amount of plugins for what is intended to be a minimalist editor, but I have carefully picked and chosen only the plugins that integrate well with what I do. You may have noticed the inclusion of WebDev plugins like
+<a href="">emmet-vim</a> and <a href="">vim-prettier</a> in this list, this is mostly to help with the editing and formatting of HTML files, as I am still quite unused to the syntax of that markup. You may also notice <a href="https://github.com/preservim/nerdtree">nerdtree</a> and <a href="https://github.com/junegunn/fzf.vim">fzf</a> in the list, I consider these to be almost essential to every Vim/Neovim user, as they make hopping between files and mass editing so much easier and more efficient.</p>
+<p><strong>But you may be wondering,</strong> why does having all of this stuff matter, don&rsquo;t other, more mainstream editors have similar, if not better plugins? This is where my second point comes in, Neovim is light, and I mean <em>light</em>, It barely comes in at around 10 megabytes with a loaded configuration like mine. It is also far faster than any other editor, being able to load up files that are more than 1000 lines long in under a second. Another aspect to consider is customization, the look and feel of Neovim is 100% under your control, down to even what text the status-bar displays.</p>
+<p>Lastly, I would like to mention the ergonomically and intelligently designed keybindings of Neovim and any other Vi-based editor, the convenience of being able to navigate and do basic edits straight from the home row is something that you can never come back from, trust me, try it out and you will never regret it.</p>
+<p><strong>Thanks for staying with me through this little opinionated post, I hope you enjoyed it!</strong></p>
 
         </div>
         
