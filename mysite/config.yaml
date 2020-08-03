@@ -16,6 +16,14 @@ menu:
     url: /posts/
     weight: 0
 
+menu:
+  main:
+  - identifier: about
+    name: About
+    title: About
+    url: /about/
+    weight: 0
+
 params:
   author: ""
   description: ""
