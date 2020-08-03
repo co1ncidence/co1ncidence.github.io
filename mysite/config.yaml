@@ -1,0 +1,35 @@
+languageCode: "en-us"
+baseUrl: "http://localhost:1313/"
+title: "Anubis"
+theme: "anubis"
+paginate: 10
+disqusShortname: yourdiscussshortname
+googleAnalytics: UA-123-45
+enableRobotsTXT: true
+
+menu:
+  main:
+  - identifier: archive
+    name: Archive
+    title: Archive
+    url: /posts/
+    weight: 0
+
+params:
+  author: ""
+  description: ""
+  images:
+    - images/og-featured.png # relative path to "static" directory
+  customCSS:
+    - css/my.css # relative path to "static" directory
+  customJS:
+    - js/main.js # relative path to "static" directory
+  dateFormat: "2006-01-02"
+  paginationSinglePost: true
+  style: light-without-switcher
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # enable raw HTML in Markdown
+
