@@ -1,6 +1,6 @@
 publishdir : ".."
 languageCode: "en-us"
-baseUrl: "http://localhost:1313/"
+baseUrl: "https://co1ncidence.github.io/"
 title: "Anubis"
 theme: "anubis"
 paginate: 10
