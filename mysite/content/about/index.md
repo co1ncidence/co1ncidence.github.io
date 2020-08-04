@@ -9,7 +9,7 @@ I'm just a bored windrunner looking for fun stuff to do over the summer. I consi
 Here are some of the books that I've really found myself enjoying during the quarantine and basically any free time that I get:
 
 ***
-| Author            | Series                   | Favorite Books              | Link to book. 1 (PDF)                                       |
+| Author            | Series                   | Favorite Book              | Link to book. 1 (PDF)                                       |
 |-------------------|--------------------------|-----------------------------|-------------------------------------------------------------|
 | Brandon Sanderson | The Stormlight Archive   | Book 3. Oathbringer         | [The Way of Kings](https://b-ok.cc/book/4219340/4b2f48)     |
 | Patrick Rothfuss  | The Kingkiller Chronicle | Book 2. The Wise Man's Fear | [The Name of The Wind](https://b-ok.cc/book/1564700/b39690) |
