@@ -16,11 +16,12 @@
 <link rel="icon" type="image/x-icon" href="https://co1ncidence.github.io/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="https://co1ncidence.github.io/favicon.png">
 
-<link rel="stylesheet" href="https://co1ncidence.github.io/css/light.css?rnd=1596505625" />
+<link rel="stylesheet" href="https://co1ncidence.github.io/css/light.css?rnd=1596505714" />
 <style>
 
-    [data-theme="dark"] {   
-        --font-color: #eee;
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --font-color: #eee;
 --bg-color: #212121;
 
 --link-color:#599ada;
@@ -44,11 +45,13 @@
 --switcher-color: #333;
 --switcher-bg-color: #fff;
 
+        }
+        
     }
 
 </style>
 
-<link rel="stylesheet" href="https://co1ncidence.github.io/css/style.css?rnd=1596505625" />
+<link rel="stylesheet" href="https://co1ncidence.github.io/css/style.css?rnd=1596505714" />
 
 
 
@@ -203,76 +206,6 @@
     
 
 
-
-    <button class="theme-switcher">
-        Dark theme
-    </button>
-
-    <script>
-    const STORAGE_KEY = 'user-color-scheme'
-    const defaultTheme = "light"
-
-    let currentTheme
-    let switchButton
-    let autoDefinedScheme = window.matchMedia('(prefers-color-scheme: dark)')
-
-    const autoChangeScheme = e => {
-        currentTheme = e.matches ? 'dark' : 'light'
-        document.documentElement.setAttribute('data-theme', currentTheme)
-        changeButtonText()
-    }
-
-    document.addEventListener('DOMContentLoaded', function() {
-        switchButton = document.querySelector('.theme-switcher')
-        currentTheme = detectCurrentScheme()
-        if (currentTheme == 'dark') {
-            document.documentElement.setAttribute('data-theme', 'dark')
-        }
-        if (currentTheme == 'auto') {
-            autoChangeScheme(autoDefinedScheme);
-            autoDefinedScheme.addListener(autoChangeScheme);
-        }
-        changeButtonText()
-        switchButton.addEventListener('click', switchTheme, false)
-    })
-
-
-
-    function detectCurrentScheme() {
-        if (localStorage.getItem(STORAGE_KEY)) {
-            return localStorage.getItem(STORAGE_KEY)
-        } 
-        if (defaultTheme) {
-            return defaultTheme
-        } 
-        if (!window.matchMedia) {
-            return 'light'
-        } 
-        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            return 'dark'
-        }
-        return 'light'
-    }
-
-    function changeButtonText()
-    {
-        console.log(currentTheme)
-        switchButton.textContent = currentTheme == 'dark' ? 'Light theme' : 'Dark theme'
-    }
-
-    function switchTheme(e) {
-        if (currentTheme == 'dark') {
-            localStorage.setItem(STORAGE_KEY, 'light')
-            document.documentElement.setAttribute('data-theme', 'light')
-            currentTheme = 'light'
-        } else {
-            localStorage.setItem(STORAGE_KEY, 'dark')
-            document.documentElement.setAttribute('data-theme', 'dark')
-            currentTheme = 'dark'
-        }
-        changeButtonText()
-    }
-    </script>
     
 </footer>
 
