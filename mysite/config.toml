@@ -16,7 +16,7 @@ googleAnalytics = ""
    description = "Just a place where I can rant and maybe say something smart."
    dateFormat = "2006-01-02"
    paginationSinglePost = true
-   style = "light-without-switcher"
+   style = "light"
 
 [menu]
 
