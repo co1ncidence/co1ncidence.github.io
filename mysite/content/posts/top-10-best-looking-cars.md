@@ -1,6 +1,9 @@
 ---
 title: "Top 8 Best Looking Cars, In My Opinion" 
 date: 2020-08-05T15:58:49-05:00
+tags:
+  - Cars
+  - Opinion
 ---
 
 ## 8. De Tomaso Pantera
