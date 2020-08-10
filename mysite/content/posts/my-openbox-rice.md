@@ -21,7 +21,7 @@ One may wonder, however, why I don't just use a tiling window manager. There is 
 
 Finally, Here are some more screenshots of my setup: 
 
-![img](https://i.imgur.com/xtqNzxM.png)
+![img](https://i.redd.it/f7tqi07tovf51.png)
 
 ![img](https://imgur.com/3k3w8Wb.png)
 
