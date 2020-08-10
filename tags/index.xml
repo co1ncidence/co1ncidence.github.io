@@ -3,13 +3,49 @@
   <channel>
     <title>Tags on nuaNce&#39;s blog</title>
     <link>https://co1ncidence.github.io/tags/</link>
-    <description>nuaNce&#39;s blog (Tags)</description>
+    <description>Recent content in Tags on nuaNce&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 05 Aug 2020 15:58:49 -0500</lastBuildDate>
     
-    <atom:link href="https://co1ncidence.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://co1ncidence.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cars</title>
+      <link>https://co1ncidence.github.io/tags/cars/</link>
+      <pubDate>Wed, 05 Aug 2020 15:58:49 -0500</pubDate>
+      
+      <guid>https://co1ncidence.github.io/tags/cars/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Opinion</title>
+      <link>https://co1ncidence.github.io/tags/opinion/</link>
+      <pubDate>Wed, 05 Aug 2020 15:58:49 -0500</pubDate>
+      
+      <guid>https://co1ncidence.github.io/tags/opinion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Showcase</title>
+      <link>https://co1ncidence.github.io/tags/showcase/</link>
+      <pubDate>Tue, 04 Aug 2020 00:19:18 -0500</pubDate>
+      
+      <guid>https://co1ncidence.github.io/tags/showcase/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Productivity</title>
+      <link>https://co1ncidence.github.io/tags/productivity/</link>
+      <pubDate>Sun, 02 Aug 2020 22:35:38 -0500</pubDate>
+      
+      <guid>https://co1ncidence.github.io/tags/productivity/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

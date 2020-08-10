@@ -2,7 +2,7 @@ publishdir = ".."
 baseURL = "https://co1ncidence.github.io"
 languageCode = "en-us"
 title = "nuaNce's blog"
-theme = "anubis"
+theme = "zozo"
 paginate = 10
 
 disqusShortname = ""
