@@ -13,5 +13,6 @@ Some books that I've really found myself enjoying during the quarantine and basi
 | Brandon Sanderson | The Stormlight Archive   | Book 3. Oathbringer         | [The Way of Kings](https://b-ok.cc/book/4219340/4b2f48)     |
 | Patrick Rothfuss  | The Kingkiller Chronicle | Book 2. The Wise Man's Fear | [The Name of The Wind](https://b-ok.cc/book/1564700/b39690) |
 | Robert Jordan     | The Wheel of Time        | Book 15. A Memory of Light  | [The Eye of The World](https://b-ok.cc/book/984472/9743af)  |
+<br />
 
 I will keep this list updated and add more books as I continue reading, I hope you enjoy them as much as I do!
