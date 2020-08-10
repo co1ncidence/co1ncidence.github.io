@@ -16,7 +16,7 @@ As you can see, it is perfectly optimized for everyday code editing. Neovim's mo
 
 Using plugins like [goyo](https://github.com/junegunn/goyo.vim) and [limelight](https://github.com/junegunn/limelight.vim) greatly help improve the visual potency of Neovim when editing in markdown, both also help improve visibility of the document and make focusing on the actual writing far easier. Other tools like [vim-pencil](https://github.com/reedes/vim-pencil) and [vim-markdown](https://github.com/plasticboy/vim-markdown) help out with the formatting and syntax control of the document. I also use a handful of other plugins in my configuration, for reference, here is my entire plugins block (I use the vim-plug plugin manager):
 
-```vim
+```
 call plug#begin('~/.vim/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -51,4 +51,4 @@ Some might say that this is an absurd amount of plugins for what is intended to 
 
 Lastly, I would like to mention the ergonomically and intelligently designed keybindings of Neovim and any other Vi-based editor, the convenience of being able to navigate and do basic edits straight from the home row is something that you can never come back from, trust me, try it out and you will never regret it.
 
-__Thanks for staying with me through this little opinionated post, I hope you enjoyed it!__
+#### Thanks for staying with me through this little opinionated post, I hope you enjoyed it!
