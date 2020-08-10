@@ -14,7 +14,7 @@ googleAnalytics = ""
 [params]
    author = "nuaNce"
    description = "Just a place where I can rant and maybe say something smart."
-   subTitle = "Welcome to my realm."
+   subTitle = "welcome to my realm."
    dateFormat = "2006-01-02"
    paginationSinglePost = true
    style = "auto-without-switcher"
