@@ -14,4 +14,5 @@ Some books that I've really found myself enjoying during the quarantine and basi
 | Patrick Rothfuss  | The Kingkiller Chronicle | Book 2. The Wise Man's Fear | [The Name of The Wind](https://b-ok.cc/book/1564700/b39690) |
 | Robert Jordan     | The Wheel of Time        | Book 15. A Memory of Light  | [The Eye of The World](https://b-ok.cc/book/984472/9743af)  |
 
-I will keep this list updated and add more books as I continue reading, I hope you enjoy them as much as I do!
+### Final notes
+This blog was started mostly as a place to practice some of my writing skills and `html/css`, so please don't take my opinions or anything too seriously. If I say something that offends you just don't look at my blog anymore **:P**
