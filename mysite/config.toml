@@ -14,6 +14,7 @@ googleAnalytics = ""
 [params]
    author = "nuaNce"
    description = "Just a place where I can rant and maybe say something smart."
+  subTitle = "Just a place where I can rant and maybe say something smart."
    dateFormat = "2006-01-02"
    paginationSinglePost = true
    style = "auto-without-switcher"
@@ -37,6 +38,13 @@ googleAnalytics = ""
     identifier = "archive"
     url = "/posts/"
     weight = 3
+
+[social]
+  github = " "
+  twitter = " "
+  facebook = " "
+  weibo = " "
+  instagram = " "
 
 [taxonomies]
 category = "categories"
