@@ -34,17 +34,16 @@ googleAnalytics = ""
     weight = 2
 
   [[menu.main]]
-    name = "Archive"
+    name = "Posts"
     identifier = "archive"
     url = "/posts/"
     weight = 3
 
 [social]
   github = "https://www.github.com/co1ncidence/"
-  twitter = " "
-  facebook = " "
-  weibo = " "
-  instagram = " "
+  youtube = "https://www.youtube.com/channel/UCMPEedx3_wzTNd_X1X4SPXg"
+  discord = "https://discord.gg/TnJ4h5K"
+  reddit = "https://www.reddit.com/user/fps_co1ncidence"
 
 [taxonomies]
 category = "categories"
