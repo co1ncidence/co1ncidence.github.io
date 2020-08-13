@@ -16,3 +16,12 @@
 [submodule "mysite/themes/hugo-swift-theme"]
 	path = mysite/themes/hugo-swift-theme
 	url = https://github.com/onweru/hugo-swift-theme.git
+[submodule "mysite/themes/hugo-theme-tokiwa"]
+	path = mysite/themes/hugo-theme-tokiwa
+	url = https://github.com/heyeshuang/hugo-theme-tokiwa.git
+[submodule "mysite/themes/diary"]
+	path = mysite/themes/diary
+	url = https://github.com/AmazingRise/hugo-theme-diary.git
+[submodule "mysite/themes/rocinante"]
+	path = mysite/themes/rocinante
+	url = https://github.com/mavidser/hugo-rocinante.git

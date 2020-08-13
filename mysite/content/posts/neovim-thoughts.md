@@ -16,10 +16,10 @@ As you can see, it is perfectly optimized for everyday code editing. Neovim's mo
 
 Using plugins like [goyo](https://github.com/junegunn/goyo.vim) and [limelight](https://github.com/junegunn/limelight.vim) greatly help improve the visual potency of Neovim when editing in markdown, both also help improve visibility of the document and make focusing on the actual writing far easier. Other tools like [vim-pencil](https://github.com/reedes/vim-pencil) and [vim-markdown](https://github.com/plasticboy/vim-markdown) help out with the formatting and syntax control of the document. I also use a handful of other plugins in my configuration, for reference, here is my entire plugins block (I use the vim-plug plugin manager):
 
-```
+```vim
 call plug#begin('~/.vim/plugged')
 
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim'
 Plug 'reedes/vim-pencil'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-commentary'
@@ -34,12 +34,12 @@ Plug 'dense-analysis/ale'
 Plug 'honza/vim-snippets'
 Plug 'elzr/vim-json'
 Plug 'plasticboy/vim-markdown'
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }}
+Plug 'iamcco/markdown-preview.nvim'
 Plug 'junegunn/goyo.vim'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/limelight.vim'
-Plug 'prettier/vim-prettier', {
+Plug 'prettier/vim-prettier'
 
 call plug#end()
 ```
