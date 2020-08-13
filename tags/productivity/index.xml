@@ -1,24 +1,112 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Productivity on nuaNce&#39;s blog</title>
-    <link>https://co1ncidence.github.io/tags/productivity/</link>
-    <description>Recent content in Productivity on nuaNce&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 02 Aug 2020 22:35:38 -0500</lastBuildDate>
-    
-	<atom:link href="https://co1ncidence.github.io/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Why I Use Neovim And Not A Normal Editor</title>
-      <link>https://co1ncidence.github.io/posts/neovim-thoughts/</link>
-      <pubDate>Sun, 02 Aug 2020 22:35:38 -0500</pubDate>
-      
-      <guid>https://co1ncidence.github.io/posts/neovim-thoughts/</guid>
-      <description>As someone who&amp;rsquo;s always given a lot of importance to the concept of a streamlined workflow, I&amp;rsquo;ve always been on the lookout for the best possible tools for what I do. One of the most important tools someone like me can use is the Text Editor. There are many popular Editors and IDE&amp;rsquo;s out there, and I have tried many of them. For the better part of the last year I have been &amp;ldquo;Editor Hopping&amp;rdquo; in search of something to replace what I used to use, which was Apache&amp;rsquo;s NetBeans IDE.</description>
-    </item>
-    
-  </channel>
+ <channel>
+   <title>Productivity on nuaNce&#39;s blog</title>
+   <link>https://co1ncidence.github.io/tags/productivity/</link>
+   <description>Recent content in Productivity on nuaNce&#39;s blog</description>
+   <generator>Hugo -- gohugo.io</generator>
+   <language>en-us</language>
+   <lastBuildDate>Sun, 02 Aug 2020 22:35:38 -0500</lastBuildDate>
+   
+       <atom:link href="https://co1ncidence.github.io/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
+   
+   
+     <item>
+       <title>Top 8 Best Looking Cars, In My Opinion</title>
+       <link>https://co1ncidence.github.io/posts/top-10-best-looking-cars/</link>
+       <pubDate>Wed, 05 Aug 2020 15:58:49 -0500</pubDate>
+       
+       <guid>https://co1ncidence.github.io/posts/top-10-best-looking-cars/</guid>
+       <description>&lt;h2 id=&#34;8-de-tomaso-pantera&#34;&gt;8. De Tomaso Pantera,&lt;/h2&gt;
+&lt;p&gt;While some may find the more exotic &amp;ldquo;GTS&amp;rdquo; variant of the Pantera to be the one that looks better, I&amp;rsquo;m not personally a fan of the Lamborghini Countach-like aesthetic of that vehicle. I much prefer the cleaner, sharper look of the Pantera, it is definitely a piece of art to behold.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/e9Vxb5e.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;7-bmw-m3-e30&#34;&gt;7. BMW M3 (e30),&lt;/h2&gt;
+&lt;p&gt;Couldn&amp;rsquo;t have a list like this without the legend itself.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi1.wp.com%2Fwww.motoringresearch.com%2Fwp-content%2Fuploads%2F2019%2F03%2FBMW-E30-M3-Redux-001.jpg%3Fresize%3D1500%252C844%26ssl%3D1&amp;amp;f=1&amp;amp;nofb=1&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;6-koenigsegg-agera-r&#34;&gt;6. Koenigsegg Agera R,&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;ve always had a thing for more muscular looking cars, but the style that real muscle cars have doesn&amp;rsquo;t really hit the spot I want it to. The way Koenigsegg designed the Agera, however, matches perfectly with what I mean. Long, sleek lines with a short hood and flat buttresses really make this car stand out in the upper echelon of the supercar industry.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/oVeyjg0.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;5-porsche-911-carrera-992&#34;&gt;5. Porsche 911 Carrera (992),&lt;/h2&gt;
+&lt;p&gt;Now while people usually consider the design of the Porsche 911 to be quite bland and repetitive, I quite like the planted, wide feel the design of the new 992 Carrera brings to the table, and though it&amp;rsquo;s basically the same as the last generation, the new headlights are the reason I chose this one over the 991.2.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/1MvCnm4.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;4-mclaren-765lt&#34;&gt;4. Mclaren 765LT,&lt;/h2&gt;
+&lt;p&gt;I was originally going to add the Mclaren 720s to take this place. But with the recent announcement that Mclaren&amp;rsquo;s next speedtail was going to be based off of the 720, I just had to use this one instead as it only improves on the beautiful design of its predecessor.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/F2c5TVc.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;3-acura-nsx-gen-1&#34;&gt;3. Acura Nsx (Gen 1),&lt;/h2&gt;
+&lt;p&gt;I don&amp;rsquo;t really have much to say about this car, just that it looks nice for it&amp;rsquo;s time and has managed to employ a quite timeless aesthetic. Too bad it&amp;rsquo;s successor didn&amp;rsquo;t achieve the same.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/HyupsoV.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2-ferrari-250swb&#34;&gt;2. Ferrari 250SWB,&lt;/h2&gt;
+&lt;p&gt;A spin-off model of what was arguably one of the best looking Ferraris of all time, the 250SWB improves greatly on the vintage aesthetic of the 250GTO and manages to look even more sophisticated than its older brother.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/3nE0VdI.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;1-aston-martin-dbs-superleggera&#34;&gt;1. Aston Martin DBS Superleggera,&lt;/h2&gt;
+&lt;p&gt;I Don&amp;rsquo;t think that there even really is any question as to why I chose the Superleggera as the number one entry in my list.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/8zDcqjT.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
+</description>
+     </item>
+   
+     <item>
+       <title>My Openbox Rice</title>
+       <link>https://co1ncidence.github.io/posts/my-openbox-rice/</link>
+       <pubDate>Tue, 04 Aug 2020 00:19:18 -0500</pubDate>
+       
+       <guid>https://co1ncidence.github.io/posts/my-openbox-rice/</guid>
+       <description>&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/7b8q0jN.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Above you can see a pretty complete screenshot of my openbox rice. I like to go for a kinda comfy, retro feels with my rices and like to avoid too many vivid colors. My polybar is also kept to a minimal, as to keep my (fairly) weak laptop from being under too much stress. One of my main goals with this rice was to minimize resource usage. I managed to accomplish this very well, with &lt;strong&gt;my ram usage after a fresh boot and with mpd running being only 280mb.&lt;/strong&gt; This is without consequence as well, I have the cupsd daemon running to manage print jobs, and with networkmanager running as well. One of my main goals with this system was to have something that not only was beautiful and efficient, but also usable in every scenario.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/38b0Tm8.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Another part of my rice I am really proud of is integrating a keyboard based workflow into openbox, I have the ability move, resize, and snap windows all with the keyboard, see this gif for more a more clear explanation:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/GKp4kB9.gif&#34; alt=&#34;gif&#34;&gt;&lt;/p&gt;
+&lt;p&gt;One may wonder, however, why I don&amp;rsquo;t just use a tiling window manager. There is one main reason, Windows becoming fullscreen automatically gets really annoying after a while, and I&amp;rsquo;m not a big fan of the straight-edge aesthetic in most tiling window managers. Another, more personal reason, is that I really like the customizability and lightness of openbox, and, most importantly, the right-click menu, which allows me to quickly access my favorite programs and some mpd controls:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/KdZhCuI.gif&#34; alt=&#34;gif&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Finally, Here are some more screenshots of my setup:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.redd.it/f7tqi07tovf51.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://imgur.com/3k3w8Wb.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/jyNVWZD.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Thanks for sticking with me through this showcase, I hope you enjoyed it!&lt;/strong&gt;&lt;/p&gt;
+</description>
+     </item>
+   
+     <item>
+       <title>Why I Use Neovim And Not A Normal Editor</title>
+       <link>https://co1ncidence.github.io/posts/neovim-thoughts/</link>
+       <pubDate>Sun, 02 Aug 2020 22:35:38 -0500</pubDate>
+       
+       <guid>https://co1ncidence.github.io/posts/neovim-thoughts/</guid>
+       <description>&lt;p&gt;As someone who&amp;rsquo;s always given a lot of importance to the concept of a streamlined workflow, I&amp;rsquo;ve always been on the lookout for the best possible tools for what I do. One of the most important tools someone like me can use is the &lt;strong&gt;Text Editor&lt;/strong&gt;. There are many popular Editors and IDE&amp;rsquo;s out there, and I have tried many of them. For the better part of the last year I have been &amp;ldquo;Editor Hopping&amp;rdquo; in search of something to replace what I used to use, which was Apache&amp;rsquo;s NetBeans IDE. It was slow and inefficient and had far too much bloat and unnecessary features for me. I wanted something that did only what I needed it to and that could adapt to my workflow too. I came to the decision of using Neovim, here is a look at what my configuration looks like:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/PIsQIl0.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
+&lt;p&gt;As you can see, it is perfectly optimized for everyday code editing. Neovim&amp;rsquo;s modal editing capabilities and powerful ranges and motions also extend its functionality far over other editors right out of the box. I don&amp;rsquo;t just use Neovim for code, however. Recently I have begun using it as my main editor for Markdown documents as well, and I believe it can replace my older choice, Typora, quite well:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/HETwUSB.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Using plugins like &lt;a href=&#34;https://github.com/junegunn/goyo.vim&#34;&gt;goyo&lt;/a&gt; and &lt;a href=&#34;https://github.com/junegunn/limelight.vim&#34;&gt;limelight&lt;/a&gt; greatly help improve the visual potency of Neovim when editing in markdown, both also help improve visibility of the document and make focusing on the actual writing far easier. Other tools like &lt;a href=&#34;https://github.com/reedes/vim-pencil&#34;&gt;vim-pencil&lt;/a&gt; and &lt;a href=&#34;https://github.com/plasticboy/vim-markdown&#34;&gt;vim-markdown&lt;/a&gt; help out with the formatting and syntax control of the document. I also use a handful of other plugins in my configuration, for reference, here is my entire plugins block (I use the vim-plug plugin manager):&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-vim&#34; data-lang=&#34;vim&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;call&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;plug&lt;/span&gt;#&lt;span style=&#34;color:#a6e22e&#34;&gt;begin&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;~/.vim/plugged&amp;#39;&lt;/span&gt;)&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Plug&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;neoclide/coc.nvim&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Plug&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;reedes/vim-pencil&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Plug&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;itchyny/lightline.vim&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Plug&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;tpope/vim-commentary&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Plug&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;mattn/emmet-vim&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Plug&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;alvan/vim-closetag&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Plug&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;ap/vim-css-color&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Plug&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Yggdroot/indentline&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Plug&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;preservim/nerdtree&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Plug&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;sheerun/vim-polyglot&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Plug&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;SirVer/ultisnips&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Plug&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;dense-analysis/ale&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Plug&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;honza/vim-snippets&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Plug&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;elzr/vim-json&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Plug&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;plasticboy/vim-markdown&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Plug&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;iamcco/markdown-preview.nvim&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Plug&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;junegunn/goyo.vim&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Plug&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;junegunn/fzf&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Plug&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;junegunn/fzf.vim&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Plug&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;junegunn/limelight.vim&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Plug&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;prettier/vim-prettier&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;call&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;plug&lt;/span&gt;#&lt;span style=&#34;color:#a6e22e&#34;&gt;end&lt;/span&gt;()&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Some might say that this is an absurd amount of plugins for what is intended to be a minimalist editor, but I have carefully picked and chosen only the plugins that integrate well with what I do. You may have noticed the inclusion of WebDev plugins like &lt;a href=&#34;&#34;&gt;emmet-vim&lt;/a&gt; and &lt;a href=&#34;&#34;&gt;vim-prettier&lt;/a&gt; in this list, this is mostly to help with the editing and formatting of HTML files, as I am still quite unused to the syntax of that markup. You may also notice &lt;a href=&#34;https://github.com/preservim/nerdtree&#34;&gt;nerdtree&lt;/a&gt; and &lt;a href=&#34;https://github.com/junegunn/fzf.vim&#34;&gt;fzf&lt;/a&gt; in the list, I consider these to be almost essential to every Vim/Neovim user, as they make hopping between files and mass editing so much easier and more efficient.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;But you may be wondering,&lt;/strong&gt; why does having all of this stuff matter, don&amp;rsquo;t other, more mainstream editors have similar, if not better plugins? This is where my second point comes in, Neovim is light, and I mean &lt;em&gt;light&lt;/em&gt;, It barely comes in at around 10 megabytes with a loaded configuration like mine. It is also far faster than any other editor, being able to load up files that are more than 1000 lines long in under a second. Another aspect to consider is customization, the look and feel of Neovim is 100% under your control, down to even what text the status-bar displays.&lt;/p&gt;
+&lt;p&gt;Lastly, I would like to mention the ergonomically and intelligently designed keybindings of Neovim and any other Vi-based editor, the convenience of being able to navigate and do basic edits straight from the home row is something that you can never come back from, trust me, try it out and you will never regret it.&lt;/p&gt;
+&lt;h4 id=&#34;thanks-for-staying-with-me-through-this-little-opinionated-post-i-hope-you-enjoyed-it&#34;&gt;Thanks for staying with me through this little opinionated post, I hope you enjoyed it!&lt;/h4&gt;
+</description>
+     </item>
+   
+ </channel>
 </rss>
