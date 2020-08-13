@@ -10,6 +10,9 @@ googleAnalytics = ""
 
 [author]
   name = "nuaNce"
+  github = "https://github.com/co1ncidence"
+  gitlab = "https://gitlab.com/co1ncidence"
+  youtube = "https://www.youtube.com/channel/UCMPEedx3_wzTNd_X1X4SPXg"
 
 [params]
    author = "nuaNce"
