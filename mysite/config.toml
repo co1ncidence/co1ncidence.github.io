@@ -10,9 +10,9 @@ googleAnalytics = ""
 
 [author]
   name = "nuaNce"
-  github = "https://github.com/co1ncidence"
-  gitlab = "https://gitlab.com/co1ncidence"
-  youtube = "https://www.youtube.com/channel/UCMPEedx3_wzTNd_X1X4SPXg"
+  github = "co1ncidence"
+  gitlab = "co1ncidence"
+  youtube = "/channel/UCMPEedx3_wzTNd_X1X4SPXg"
 
 [params]
    author = "nuaNce"
@@ -46,7 +46,7 @@ googleAnalytics = ""
 
 [social]
   github = "https://www.github.com/co1ncidence/"
-  youtube = "https://www.youtube.com/channel/UCMPEedx3_wzTNd_X1X4SPXg"
+  youtube = ""
   discord = "https://discord.gg/TnJ4h5K"
   reddit = "https://www.reddit.com/user/fps_co1ncidence"
 
