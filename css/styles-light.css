@@ -5,6 +5,7 @@ body {
   font-family: "Source Sans Pro", serif;
   background-color: #fdf9f8;
   color: #26221f;
+  width: 100%;
 }
 
 h1,
@@ -331,7 +332,7 @@ a:hover:after {
 
 .image, figure img, img {
   width: 100%;
-  box-shadow: 0px 0px 10px 5px #bab1ab;
+  box-shadow: 0px 0px 10px 1px #bab1ab;
   border: 1px solid #f8ede9;
 }
 
@@ -443,7 +444,7 @@ table {
 }
 
 table th {
-  background-color: #f4e0da;
+  background-color: #f8ede9;
 }
 
 table th, table td {
