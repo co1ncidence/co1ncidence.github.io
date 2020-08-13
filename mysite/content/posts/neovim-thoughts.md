@@ -16,7 +16,7 @@ As you can see, it is perfectly optimized for everyday code editing. Neovim's mo
 
 Using plugins like [goyo](https://github.com/junegunn/goyo.vim) and [limelight](https://github.com/junegunn/limelight.vim) greatly help improve the visual potency of Neovim when editing in markdown, both also help improve visibility of the document and make focusing on the actual writing far easier. Other tools like [vim-pencil](https://github.com/reedes/vim-pencil) and [vim-markdown](https://github.com/plasticboy/vim-markdown) help out with the formatting and syntax control of the document. I also use a handful of other plugins in my configuration, for reference, here is my entire plugins block (I use the vim-plug plugin manager):
 
-```vim
+```
 call plug#begin('~/.vim/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -44,8 +44,7 @@ Plug 'prettier/vim-prettier', {
 call plug#end()
 ```
 
-Some might say that this is an absurd amount of plugins for what is intended to be a minimalist editor, but I have carefully picked and chosen only the plugins that integrate well with what I do. You may have noticed the inclusion of WebDev plugins like
-[emmet-vim]() and [vim-prettier]() in this list, this is mostly to help with the editing and formatting of HTML files, as I am still quite unused to the syntax of that markup. You may also notice [nerdtree](https://github.com/preservim/nerdtree) and [fzf](https://github.com/junegunn/fzf.vim) in the list, I consider these to be almost essential to every Vim/Neovim user, as they make hopping between files and mass editing so much easier and more efficient. 
+Some might say that this is an absurd amount of plugins for what is intended to be a minimalist editor, but I have carefully picked and chosen only the plugins that integrate well with what I do. You may have noticed the inclusion of WebDev plugins like [emmet-vim]() and [vim-prettier]() in this list, this is mostly to help with the editing and formatting of HTML files, as I am still quite unused to the syntax of that markup. You may also notice [nerdtree](https://github.com/preservim/nerdtree) and [fzf](https://github.com/junegunn/fzf.vim) in the list, I consider these to be almost essential to every Vim/Neovim user, as they make hopping between files and mass editing so much easier and more efficient. 
 
 **But you may be wondering,** why does having all of this stuff matter, don't other, more mainstream editors have similar, if not better plugins? This is where my second point comes in, Neovim is light, and I mean *light*, It barely comes in at around 10 megabytes with a loaded configuration like mine. It is also far faster than any other editor, being able to load up files that are more than 1000 lines long in under a second. Another aspect to consider is customization, the look and feel of Neovim is 100% under your control, down to even what text the status-bar displays.
 

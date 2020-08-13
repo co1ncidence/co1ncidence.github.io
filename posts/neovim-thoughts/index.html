@@ -102,33 +102,32 @@
 <p>As you can see, it is perfectly optimized for everyday code editing. Neovim&rsquo;s modal editing capabilities and powerful ranges and motions also extend its functionality far over other editors right out of the box. I don&rsquo;t just use Neovim for code, however. Recently I have begun using it as my main editor for Markdown documents as well, and I believe it can replace my older choice, Typora, quite well:</p>
 <p><img src="https://i.imgur.com/HETwUSB.png" alt="img"></p>
 <p>Using plugins like <a href="https://github.com/junegunn/goyo.vim">goyo</a> and <a href="https://github.com/junegunn/limelight.vim">limelight</a> greatly help improve the visual potency of Neovim when editing in markdown, both also help improve visibility of the document and make focusing on the actual writing far easier. Other tools like <a href="https://github.com/reedes/vim-pencil">vim-pencil</a> and <a href="https://github.com/plasticboy/vim-markdown">vim-markdown</a> help out with the formatting and syntax control of the document. I also use a handful of other plugins in my configuration, for reference, here is my entire plugins block (I use the vim-plug plugin manager):</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#a6e22e">call</span> <span style="color:#a6e22e">plug</span>#<span style="color:#a6e22e">begin</span>(<span style="color:#e6db74">&#39;~/.vim/plugged&#39;</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;neoclide/coc.nvim&#39;</span>, {<span style="color:#e6db74">&#39;branch&#39;</span>: <span style="color:#e6db74">&#39;release&#39;</span>}<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;reedes/vim-pencil&#39;</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;itchyny/lightline.vim&#39;</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;tpope/vim-commentary&#39;</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;mattn/emmet-vim&#39;</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;alvan/vim-closetag&#39;</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;ap/vim-css-color&#39;</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;Yggdroot/indentline&#39;</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;preservim/nerdtree&#39;</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;sheerun/vim-polyglot&#39;</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;SirVer/ultisnips&#39;</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;dense-analysis/ale&#39;</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;honza/vim-snippets&#39;</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;elzr/vim-json&#39;</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;plasticboy/vim-markdown&#39;</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;iamcco/markdown-preview.nvim&#39;</span>, { <span style="color:#e6db74">&#39;do&#39;</span>: { -&gt; <span style="color:#a6e22e">mkdp</span>#<span style="color:#a6e22e">util</span>#<span style="color:#a6e22e">install</span>() }}<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;junegunn/goyo.vim&#39;</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;junegunn/fzf&#39;</span>, { <span style="color:#e6db74">&#39;do&#39;</span>: { -&gt; <span style="color:#a6e22e">fzf</span>#<span style="color:#a6e22e">install</span>() } }<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;junegunn/fzf.vim&#39;</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;junegunn/limelight.vim&#39;</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;prettier/vim-prettier&#39;</span>, {<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">call</span> <span style="color:#a6e22e">plug</span>#<span style="color:#a6e22e">end</span>()<span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div><p>Some might say that this is an absurd amount of plugins for what is intended to be a minimalist editor, but I have carefully picked and chosen only the plugins that integrate well with what I do. You may have noticed the inclusion of WebDev plugins like
-<a href="">emmet-vim</a> and <a href="">vim-prettier</a> in this list, this is mostly to help with the editing and formatting of HTML files, as I am still quite unused to the syntax of that markup. You may also notice <a href="https://github.com/preservim/nerdtree">nerdtree</a> and <a href="https://github.com/junegunn/fzf.vim">fzf</a> in the list, I consider these to be almost essential to every Vim/Neovim user, as they make hopping between files and mass editing so much easier and more efficient.</p>
+<pre><code>call plug#begin('~/.vim/plugged')
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'reedes/vim-pencil'
+Plug 'itchyny/lightline.vim'
+Plug 'tpope/vim-commentary'
+Plug 'mattn/emmet-vim'
+Plug 'alvan/vim-closetag'
+Plug 'ap/vim-css-color'
+Plug 'Yggdroot/indentline'
+Plug 'preservim/nerdtree'
+Plug 'sheerun/vim-polyglot'
+Plug 'SirVer/ultisnips'
+Plug 'dense-analysis/ale'
+Plug 'honza/vim-snippets'
+Plug 'elzr/vim-json'
+Plug 'plasticboy/vim-markdown'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -&gt; mkdp#util#install() }}
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/fzf', { 'do': { -&gt; fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'junegunn/limelight.vim'
+Plug 'prettier/vim-prettier', {
+
+call plug#end()
+</code></pre><p>Some might say that this is an absurd amount of plugins for what is intended to be a minimalist editor, but I have carefully picked and chosen only the plugins that integrate well with what I do. You may have noticed the inclusion of WebDev plugins like <a href="">emmet-vim</a> and <a href="">vim-prettier</a> in this list, this is mostly to help with the editing and formatting of HTML files, as I am still quite unused to the syntax of that markup. You may also notice <a href="https://github.com/preservim/nerdtree">nerdtree</a> and <a href="https://github.com/junegunn/fzf.vim">fzf</a> in the list, I consider these to be almost essential to every Vim/Neovim user, as they make hopping between files and mass editing so much easier and more efficient.</p>
 <p><strong>But you may be wondering,</strong> why does having all of this stuff matter, don&rsquo;t other, more mainstream editors have similar, if not better plugins? This is where my second point comes in, Neovim is light, and I mean <em>light</em>, It barely comes in at around 10 megabytes with a loaded configuration like mine. It is also far faster than any other editor, being able to load up files that are more than 1000 lines long in under a second. Another aspect to consider is customization, the look and feel of Neovim is 100% under your control, down to even what text the status-bar displays.</p>
 <p>Lastly, I would like to mention the ergonomically and intelligently designed keybindings of Neovim and any other Vi-based editor, the convenience of being able to navigate and do basic edits straight from the home row is something that you can never come back from, trust me, try it out and you will never regret it.</p>
 <h4 id="thanks-for-staying-with-me-through-this-little-opinionated-post-i-hope-you-enjoyed-it">Thanks for staying with me through this little opinionated post, I hope you enjoyed it!</h4>
