@@ -3,8 +3,8 @@ body {
   padding: 0;
   overflow-x: hidden;
   font-family: "Source Sans Pro", serif;
-  color: #ffffff;
-  background: #26221f;
+  background-color: #26221f;
+  color: #fdf9f8;
 }
 
 h1,
@@ -14,7 +14,7 @@ h4,
 h5,
 h6,
 time {
-  font-family: "Roboto", sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
 }
 
 #container {
@@ -47,7 +47,7 @@ time {
 }
 
 #container header h1 a {
-  color: #ffffff;
+  color: #4db4aa;
 }
 
 #container header ul {
@@ -72,9 +72,9 @@ time {
 }
 
 #container nav {
-  border-bottom: solid 3px #cecece;
+  border-bottom: solid 3px #b1a7a0;
   padding-bottom: 0.5em;
-  font-family: "Roboto", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 #container nav ul {
@@ -90,7 +90,7 @@ time {
 }
 
 #container nav ul li a.active {
-  border-bottom: 0.5em solid #ffffff;
+  border-bottom: 0.5em solid #38322e;
 }
 
 #container main {
@@ -115,7 +115,7 @@ time {
 }
 
 #container main section#home span {
-  color: #666666;
+  color: #38322e;
 }
 
 #container main section#list ul {
@@ -148,7 +148,7 @@ time {
 }
 
 #container main article > pre {
-  background-color: #a0a04b;
+  background-color: #ffffcc;
   overflow-x: auto;
   padding: 0.8em;
   font-size: 0.9em;
@@ -167,7 +167,7 @@ time {
 
 #container main article p code {
   padding: 0.2em;
-  background-color: #d03232;
+  background-color: #ffcccc;
   font-size: 0.9em;
 }
 
@@ -228,7 +228,7 @@ width: 100%;
   align-items: center;
   border: 1px solid #d3d6db;
   border-radius: 3px;
-  color: #666666;
+  color: #38322e;
   /*display: -webkit-inline-box;*/
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -264,13 +264,14 @@ width: 100%;
 }
 
 a {
-  color: #ffffff;
+  color: #635851;
   text-decoration: none;
 }
 
 .image, figure img, img {
   width: 100%;
-  box-shadow: 0 3px 3px #bbbbbb;
+  box-shadow: 0px 0px 3px 3px #bab1ab;
+  border: 1px solid #f8ede9;
 }
 
 .full-image, figure.full img, img[src*="full"] {
@@ -376,8 +377,17 @@ figure.float-right figcaption {
 }
 
 table {
-  width: 100%;
-  border-bottom: solid 1px #cecece;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table th {
+  background-color: #f6f8fa;
+}
+
+table th, table td {
+  padding: 10px 20px;
+  border: 1px solid #dfe2e5;
 }
 
 table thead {
@@ -386,11 +396,11 @@ table thead {
 
 blockquote {
   margin: 1em;
-  border-left: solid 0.1em #797979;
+  border-left: solid 0.1em #cecece;
   padding: 0.5em 2em;
   position: relative;
-  background-color: #3e3b3c;
-  box-shadow: 0 -1px 0 #797979 inset;
+  background-color: #efefef;
+  box-shadow: 0 -1px 0 #bbbbbb inset;
 }
 
 blockquote::before {
