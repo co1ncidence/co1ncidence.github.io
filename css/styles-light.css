@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: "Source Sans Pro", serif;
+  font-family: "Source Sans Pro", sans-serif;
   background-color: #fdf9f8;
   color: #26221f;
   width: 100%;
@@ -15,7 +15,8 @@ h4,
 h5,
 h6,
 time {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: Bold;
 }
 
 #container {
@@ -278,7 +279,7 @@ width: 100%;
 
 .meta-aside, #container main section#home ul li aside, #container main article aside {
   margin: 0.5em 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   color: #83756c;
   font-size: 0.8em;
 }
