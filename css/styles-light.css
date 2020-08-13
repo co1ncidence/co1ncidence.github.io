@@ -48,6 +48,36 @@ time {
 
 #container header h1 a {
   color: #4db4aa;
+  position: relative;
+  text-decoration: none;
+  transition: color .4s ease-out;
+}
+
+#container header h1 a:hover {
+  color: #5ec5bb;
+  right: 0;
+  text-decoration: none;
+}
+
+#container header h1 a:hover:after {
+  border-color: #5ec5bb;
+  right: 0;
+}
+
+#container header h1 a:after {
+  border-radius: 1em;
+  border-top: .1em solid #5ec5bb;
+  content: "";
+  position: absolute;
+    right: 100%;
+    bottom: .14em;
+    left: 0;
+  transition: right .4s cubic-bezier(0,.5,0,1),
+              border-color .4s ease-out;
+}
+
+#container header h1 a:hover:after {
+right: 0;
 }
 
 #container header ul {
@@ -263,14 +293,45 @@ width: 100%;
   padding: 0;
 }
 
+
 a {
   color: #635851;
+  position: relative;
   text-decoration: none;
+  transition: color .4s ease-out;
+}
+
+a:hover {
+  color: #83756c;
+  right: 0;
+  text-decoration: none;
+}
+
+a:hover:after {
+  border-color: #83756c;
+  right: 0;
+}
+
+a:after {
+  border-radius: 1em;
+  border-top: .1em solid #2F56B0;
+  content: "";
+  position: absolute;
+    right: 100%;
+    bottom: .14em;
+    left: 0;
+  transition: right .2s cubic-bezier(0,.5,0,1),
+              border-color .2s ease-out;
+}
+
+a:hover:after {
+  animation: anchor-underline 1s cubic-bezier(0,.5,0,1);
+  border-color: #83756c;
 }
 
 .image, figure img, img {
   width: 100%;
-  box-shadow: 0px 0px 3px 3px #bab1ab;
+  box-shadow: 0px 0px 10px 5px #bab1ab;
   border: 1px solid #f8ede9;
 }
 
@@ -382,12 +443,12 @@ table {
 }
 
 table th {
-  background-color: #f6f8fa;
+  background-color: #f4e0da;
 }
 
 table th, table td {
-  padding: 10px 20px;
-  border: 1px solid #dfe2e5;
+  padding: 5px 10px;
+  border: 1px solid #38322e;
 }
 
 table thead {
