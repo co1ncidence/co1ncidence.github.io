@@ -5,10 +5,10 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   background-color: #fdf9f8;
   color: #26221f;
-  border-top: 100px solid #ebe4dd;
-  border-bottom: 100px solid #ebe4dd;
-  border-left: 300px solid #ebe4dd;
-  border-right: 300px solid #ebe4dd;
+  border-top: 100px solid #26221f;
+  border-bottom: 100px solid #26221f;
+  border-left: 260px solid #38322e;
+  border-right: 260px solid #38322e;
 }
 
 h1,
@@ -337,7 +337,7 @@ a:hover:after {
 .image, figure img, img {
   width: 100%;
   box-shadow: 0px 0px 10px 1px #bab1ab;
-  border: 1px solid #f8ede9;
+  border: 1px solid #f4e0da;
 }
 
 .full-image, figure.full img, img[src*="full"] {
