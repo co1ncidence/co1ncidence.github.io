@@ -1,11 +1,14 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 50px;
   overflow-x: hidden;
   font-family: "Source Sans Pro", sans-serif;
   background-color: #fdf9f8;
   color: #26221f;
-  width: 100%;
+  border-top: 100px solid #ebe4dd;
+  border-bottom: 100px solid #ebe4dd;
+  border-left: 300px solid #ebe4dd;
+  border-right: 300px solid #ebe4dd;
 }
 
 h1,
