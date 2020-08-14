@@ -19,12 +19,10 @@ One may wonder, however, why I don't just use a tiling window manager. There is 
 
 ![gif](https://i.imgur.com/KdZhCuI.gif)
 
-Finally, Here are some more screenshots of my setup: 
+**Finally, Here are some more screenshots of my setup:**
 
 ![img](https://i.redd.it/f7tqi07tovf51.png)
 
 ![img](https://imgur.com/3k3w8Wb.png)
 
 ![img](https://i.imgur.com/jyNVWZD.png)
-
-**Thanks for sticking with me through this showcase, I hope you enjoyed it!**
