@@ -8,7 +8,7 @@ tags:
 
 As someone who's always given a lot of importance to the concept of a streamlined workflow, I've always been on the lookout for the best possible tools for what I do. One of the most important tools someone like me can use is the **Text Editor**. There are many popular Editors and IDE's out there, and I have tried many of them. For the better part of the last year I have been "Editor Hopping" in search of something to replace what I used to use, which was Apache's NetBeans IDE. It was slow and inefficient and had far too much bloat and unnecessary features for me. I wanted something that did only what I needed it to and that could adapt to my workflow too. I came to the decision of using Neovim, here is a look at what my configuration looks like:
 
-![img](https://i.imgur.com/PIsQIl0.png)
+{{< figure src="https://i.imgur.com/PIsQIl0.png" class="normal" >}}
 
 As you can see, it is perfectly optimized for everyday code editing. Neovim's modal editing capabilities and powerful ranges and motions also extend its functionality far over other editors right out of the box. I don't just use Neovim for code, however. Recently I have begun using it as my main editor for Markdown documents as well, and I believe it can replace my older choice, Typora, quite well:
 
