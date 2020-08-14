@@ -1,14 +1,17 @@
 body {
   margin: 0;
-  padding: 50px;
+  padding-right: 2vw;
+  padding-left: 2vw;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
   overflow-x: hidden;
   font-family: "Source Sans Pro", sans-serif;
   background-color: #fdf9f8;
   color: #26221f;
-  border-top: 100px solid #26221f;
-  border-bottom: 100px solid #26221f;
-  border-left: 260px solid #38322e;
-  border-right: 260px solid #38322e;
+  border-top: 15vh solid #26221f;
+  border-bottom: 15vh solid #26221f;
+  border-left: 20vw solid #38322e;
+  border-right: 20vw solid #38322e;
 }
 
 h1,
