@@ -322,7 +322,7 @@ a:hover:after {
 
 a:after {
   border-radius: 1em;
-  border-top: .1em solid #2F56B0;
+  border-top: .1em solid #635851;
   content: "";
   position: absolute;
     right: 100%;
