@@ -107,7 +107,7 @@ rm -rf folder/
 Thus is how you can use `rm` to remove folders as well as individual files.
 
 #### Using the "*" character in file management
-You can also use this basic RegEx character to make bulk file movement easier, for example, you can move every `.png` file in a folder somewhere else using the `*` character, for example, this command is moving every `.png` file from one folder to another. 
+You can also use this basic RegEx character to make bulk file movement easier, for example, you can move every `.png` file in a folder somewhere else using the `*` character, for example, this command is doing exactly that: 
 ```sh
 mv *.png ~/Pictures/stuff/
 #once again, this is not limited to the current location

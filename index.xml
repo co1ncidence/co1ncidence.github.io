@@ -81,7 +81,7 @@ However, unlike the other file management commands, &lt;code&gt;rm&lt;/code&gt; 
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;rm -rf folder/
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Thus is how you can use &lt;code&gt;rm&lt;/code&gt; to remove folders as well as individual files.&lt;/p&gt;
 &lt;h4 id=&#34;using-the--character-in-file-management&#34;&gt;Using the &amp;ldquo;*&amp;rdquo; character in file management&lt;/h4&gt;
-&lt;p&gt;You can also use this basic RegEx character to make bulk file movement easier, for example, you can move every &lt;code&gt;.png&lt;/code&gt; file in a folder somewhere else using the &lt;code&gt;*&lt;/code&gt; character, for example, this command is moving every &lt;code&gt;.png&lt;/code&gt; file from one folder to another.&lt;/p&gt;
+&lt;p&gt;You can also use this basic RegEx character to make bulk file movement easier, for example, you can move every &lt;code&gt;.png&lt;/code&gt; file in a folder somewhere else using the &lt;code&gt;*&lt;/code&gt; character, for example, this command is doing exactly that:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;mv *.png ~/Pictures/stuff/
 &lt;span style=&#34;color:#75715e&#34;&gt;#once again, this is not limited to the current location&lt;/span&gt;
 mv ~/usr/share/backgrounds/*.png ~/Pictures/stuff/
