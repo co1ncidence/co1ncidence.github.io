@@ -157,7 +157,7 @@ command1 <span style="color:#f92672">||</span> command2
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#these 2 commands are the same</span>
 cd ~/folder1/folder2/
 cd ~/folder1/folder2
-</code></pre></div><p>You can use aliases previously mentioned before to navigate folders as well.</p>
+</code></pre></div><p>You can use the aliases previously mentioned to navigate folders as well.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#running this moves you to the parent folder</span>
 cd ..
 <span style="color:#75715e">#running this does nothing, as you are moving to the same folder</span>
@@ -176,15 +176,20 @@ cd ~/
 </code></pre></div><p>while <code>touch</code> is a cool command, it can sometimes be a pain to type, so another alternative can be just to type <code>:&gt;</code> instead, as it serves the same purpose:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#creates a new css file</span>
 :&gt; newfile.css
-</code></pre></div><p><code>mv</code> is a command used to move files from one location to another, and because of this it can also be used to replace a file with another. It is also possible to change the name of a file when moving it .Example usage:</p>
+</code></pre></div><p><code>mv</code> is a command used to move files from one location to another, and because of this it can also be used to replace a file with another. It is also possible to change the name of a file when moving it. Example usage:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mv /usr/share/file.txt ~/Documents/newfile.txt
 <span style="color:#75715e">#mv can also be used to rename files</span>
 mv file.txt file2.txt
-</code></pre></div><p><code>cp</code> works the same way as <code>mv</code>, but instead of moving a file it creates a copy of the original file in the new location, and like <code>mv</code>, the resulting file can have  new name. Example usage:</p>
+</code></pre></div><p><code>cp</code> works the same way as <code>mv</code>, but instead of moving a file it creates a copy of the original file in the new location, and like <code>mv</code>, the resulting file can have new name. Example usage:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cp ~/.local/bin/command /usr/bin/command2
 <span style="color:#75715e">#if name is not a concern, just specify resulting directory</span>
 cp ~/.local/bin/command /usr/bin
-</code></pre></div><p><code>rm</code> is another very useful, but dangerous command. It stands for &ldquo;remove&rdquo; and can be used to remove any</p>
+</code></pre></div><p><code>rm</code> is another very useful, but dangerous command. It stands for &ldquo;remove&rdquo; and can be used to remove any
+However, unlike the other file management commands, <code>rm</code> cannot remove folders by default, this requires the use of a couple <strong>Flags</strong>, which are just letters/words you can attach to a command to unlock abilities that the command cannot do by default. For <code>rm</code> to be able to delete a whole folder, it requires the <code>-r</code> and <code>-f</code> flags, here is an example:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">rm -r -f folder/
+</code></pre></div><p>Though separating flags is not necessary, you can just combine them into one flag like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">rm -rf folder/
+</code></pre></div><p>Thus is how you can use <code>rm</code> to remove folders as well as individual files.</p>
 <h4 id="using-the--character-in-file-management">Using the &ldquo;*&rdquo; character in file management</h4>
 <p>You can also use this basic RegEx character to make bulk file movement easier, for example, you can move every <code>.png</code> file in a folder somewhere else using the <code>*</code> character, for example, this command is moving every <code>.png</code> file from one folder to another.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mv *.png ~/Pictures/stuff/
@@ -193,12 +198,7 @@ mv ~/usr/share/backgrounds/*.png ~/Pictures/stuff/
 </code></pre></div><p>You can also pair <code>*</code> with <code>rm</code>, this can be very dangerous so make sure you are careful. Example</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#this removes all png files in folder</span>
 rm *.png
-</code></pre></div><p>However, unlike the other file management commands, <code>rm</code> cannot remove folders by default, this requires the use of a couple <strong>Flags</strong>, which are just letters/words you can attach to a command to unlock abilities that the command cannot do by default. For <code>rm</code> to be able to delete a whole folder, it requires the <code>-r</code> and <code>-f</code> flags, here is an example:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">rm -r -f folder/
-</code></pre></div><p>Though separating flags is not necessary, you can just combine them into one flag like this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">rm -rf folder/
-</code></pre></div><p>Thus is how you can use <code>rm</code> to remove folders as well as individual files.</p>
-<h4 id="permissions">Permissions</h4>
+</code></pre></div><h4 id="permissions">Permissions</h4>
 <p>Sometimes, your user may not have the necessary permissions to execute certain commands on a file or folder, this is because the owner of said file/folder is the <strong>root user</strong>, to obtain the abilities of the root user, you just have to place the word <code>sudo</code> behind your command. <code>sudo</code> stands for &ldquo;Super User DO&rdquo;, and will allow you to run commands with elevated permissions, here is an example:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo rm -rf /
 </code></pre></div><p>This command is a great showcase of the dangers of <code>sudo</code> as well. If you haven&rsquo;t already realized, this command will wipe every file and folder on your system. So whenever something requires you to be root to run a command, always make sure you know what you are doing, and always remember that there is a reason that there is a reason for a password to be between you and the execution of this command. Stay safe.</p>

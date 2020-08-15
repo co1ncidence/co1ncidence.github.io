@@ -50,7 +50,7 @@ command1 || command2
 cd ~/folder1/folder2/
 cd ~/folder1/folder2
 ```
-You can use aliases previously mentioned before to navigate folders as well.
+You can use the aliases previously mentioned to navigate folders as well.
 ```sh
 #running this moves you to the parent folder
 cd ..
@@ -81,14 +81,14 @@ while `touch` is a cool command, it can sometimes be a pain to type, so another 
 :> newfile.css
 ```
 
-`mv` is a command used to move files from one location to another, and because of this it can also be used to replace a file with another. It is also possible to change the name of a file when moving it .Example usage:
+`mv` is a command used to move files from one location to another, and because of this it can also be used to replace a file with another. It is also possible to change the name of a file when moving it. Example usage:
 ```sh
 mv /usr/share/file.txt ~/Documents/newfile.txt
 #mv can also be used to rename files
 mv file.txt file2.txt
 ```
 
-`cp` works the same way as `mv`, but instead of moving a file it creates a copy of the original file in the new location, and like `mv`, the resulting file can have  new name. Example usage:
+`cp` works the same way as `mv`, but instead of moving a file it creates a copy of the original file in the new location, and like `mv`, the resulting file can have new name. Example usage:
 ```sh
 cp ~/.local/bin/command /usr/bin/command2
 #if name is not a concern, just specify resulting directory
@@ -96,6 +96,15 @@ cp ~/.local/bin/command /usr/bin
 ```
 
 `rm` is another very useful, but dangerous command. It stands for "remove" and can be used to remove any 
+However, unlike the other file management commands, `rm` cannot remove folders by default, this requires the use of a couple **Flags**, which are just letters/words you can attach to a command to unlock abilities that the command cannot do by default. For `rm` to be able to delete a whole folder, it requires the `-r` and `-f` flags, here is an example:
+```sh
+rm -r -f folder/
+```
+Though separating flags is not necessary, you can just combine them into one flag like this:
+```sh
+rm -rf folder/
+```
+Thus is how you can use `rm` to remove folders as well as individual files.
 
 #### Using the "*" character in file management
 You can also use this basic RegEx character to make bulk file movement easier, for example, you can move every `.png` file in a folder somewhere else using the `*` character, for example, this command is moving every `.png` file from one folder to another. 
@@ -109,15 +118,6 @@ You can also pair `*` with `rm`, this can be very dangerous so make sure you are
 #this removes all png files in folder
 rm *.png
 ```
-However, unlike the other file management commands, `rm` cannot remove folders by default, this requires the use of a couple **Flags**, which are just letters/words you can attach to a command to unlock abilities that the command cannot do by default. For `rm` to be able to delete a whole folder, it requires the `-r` and `-f` flags, here is an example:
-```sh
-rm -r -f folder/
-```
-Though separating flags is not necessary, you can just combine them into one flag like this:
-```sh
-rm -rf folder/
-```
-Thus is how you can use `rm` to remove folders as well as individual files.
 
 #### Permissions
 Sometimes, your user may not have the necessary permissions to execute certain commands on a file or folder, this is because the owner of said file/folder is the **root user**, to obtain the abilities of the root user, you just have to place the word `sudo` behind your command. `sudo` stands for "Super User DO", and will allow you to run commands with elevated permissions, here is an example:

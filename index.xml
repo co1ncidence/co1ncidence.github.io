@@ -47,7 +47,7 @@ command1 &lt;span style=&#34;color:#f92672&#34;&gt;||&lt;/span&gt; command2
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#these 2 commands are the same&lt;/span&gt;
 cd ~/folder1/folder2/
 cd ~/folder1/folder2
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can use aliases previously mentioned before to navigate folders as well.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can use the aliases previously mentioned to navigate folders as well.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#running this moves you to the parent folder&lt;/span&gt;
 cd ..
 &lt;span style=&#34;color:#75715e&#34;&gt;#running this does nothing, as you are moving to the same folder&lt;/span&gt;
@@ -66,15 +66,20 @@ cd ~/
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;while &lt;code&gt;touch&lt;/code&gt; is a cool command, it can sometimes be a pain to type, so another alternative can be just to type &lt;code&gt;:&amp;gt;&lt;/code&gt; instead, as it serves the same purpose:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#creates a new css file&lt;/span&gt;
 :&amp;gt; newfile.css
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;mv&lt;/code&gt; is a command used to move files from one location to another, and because of this it can also be used to replace a file with another. It is also possible to change the name of a file when moving it .Example usage:&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;mv&lt;/code&gt; is a command used to move files from one location to another, and because of this it can also be used to replace a file with another. It is also possible to change the name of a file when moving it. Example usage:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;mv /usr/share/file.txt ~/Documents/newfile.txt
 &lt;span style=&#34;color:#75715e&#34;&gt;#mv can also be used to rename files&lt;/span&gt;
 mv file.txt file2.txt
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;cp&lt;/code&gt; works the same way as &lt;code&gt;mv&lt;/code&gt;, but instead of moving a file it creates a copy of the original file in the new location, and like &lt;code&gt;mv&lt;/code&gt;, the resulting file can have  new name. Example usage:&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;cp&lt;/code&gt; works the same way as &lt;code&gt;mv&lt;/code&gt;, but instead of moving a file it creates a copy of the original file in the new location, and like &lt;code&gt;mv&lt;/code&gt;, the resulting file can have new name. Example usage:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;cp ~/.local/bin/command /usr/bin/command2
 &lt;span style=&#34;color:#75715e&#34;&gt;#if name is not a concern, just specify resulting directory&lt;/span&gt;
 cp ~/.local/bin/command /usr/bin
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;rm&lt;/code&gt; is another very useful, but dangerous command. It stands for &amp;ldquo;remove&amp;rdquo; and can be used to remove any&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;rm&lt;/code&gt; is another very useful, but dangerous command. It stands for &amp;ldquo;remove&amp;rdquo; and can be used to remove any
+However, unlike the other file management commands, &lt;code&gt;rm&lt;/code&gt; cannot remove folders by default, this requires the use of a couple &lt;strong&gt;Flags&lt;/strong&gt;, which are just letters/words you can attach to a command to unlock abilities that the command cannot do by default. For &lt;code&gt;rm&lt;/code&gt; to be able to delete a whole folder, it requires the &lt;code&gt;-r&lt;/code&gt; and &lt;code&gt;-f&lt;/code&gt; flags, here is an example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;rm -r -f folder/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Though separating flags is not necessary, you can just combine them into one flag like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;rm -rf folder/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Thus is how you can use &lt;code&gt;rm&lt;/code&gt; to remove folders as well as individual files.&lt;/p&gt;
 &lt;h4 id=&#34;using-the--character-in-file-management&#34;&gt;Using the &amp;ldquo;*&amp;rdquo; character in file management&lt;/h4&gt;
 &lt;p&gt;You can also use this basic RegEx character to make bulk file movement easier, for example, you can move every &lt;code&gt;.png&lt;/code&gt; file in a folder somewhere else using the &lt;code&gt;*&lt;/code&gt; character, for example, this command is moving every &lt;code&gt;.png&lt;/code&gt; file from one folder to another.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;mv *.png ~/Pictures/stuff/
@@ -83,12 +88,7 @@ mv ~/usr/share/backgrounds/*.png ~/Pictures/stuff/
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can also pair &lt;code&gt;*&lt;/code&gt; with &lt;code&gt;rm&lt;/code&gt;, this can be very dangerous so make sure you are careful. Example&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#this removes all png files in folder&lt;/span&gt;
 rm *.png
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;However, unlike the other file management commands, &lt;code&gt;rm&lt;/code&gt; cannot remove folders by default, this requires the use of a couple &lt;strong&gt;Flags&lt;/strong&gt;, which are just letters/words you can attach to a command to unlock abilities that the command cannot do by default. For &lt;code&gt;rm&lt;/code&gt; to be able to delete a whole folder, it requires the &lt;code&gt;-r&lt;/code&gt; and &lt;code&gt;-f&lt;/code&gt; flags, here is an example:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;rm -r -f folder/
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Though separating flags is not necessary, you can just combine them into one flag like this:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;rm -rf folder/
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Thus is how you can use &lt;code&gt;rm&lt;/code&gt; to remove folders as well as individual files.&lt;/p&gt;
-&lt;h4 id=&#34;permissions&#34;&gt;Permissions&lt;/h4&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;permissions&#34;&gt;Permissions&lt;/h4&gt;
 &lt;p&gt;Sometimes, your user may not have the necessary permissions to execute certain commands on a file or folder, this is because the owner of said file/folder is the &lt;strong&gt;root user&lt;/strong&gt;, to obtain the abilities of the root user, you just have to place the word &lt;code&gt;sudo&lt;/code&gt; behind your command. &lt;code&gt;sudo&lt;/code&gt; stands for &amp;ldquo;Super User DO&amp;rdquo;, and will allow you to run commands with elevated permissions, here is an example:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;sudo rm -rf /
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This command is a great showcase of the dangers of &lt;code&gt;sudo&lt;/code&gt; as well. If you haven&amp;rsquo;t already realized, this command will wipe every file and folder on your system. So whenever something requires you to be root to run a command, always make sure you know what you are doing, and always remember that there is a reason that there is a reason for a password to be between you and the execution of this command. Stay safe.&lt;/p&gt;
