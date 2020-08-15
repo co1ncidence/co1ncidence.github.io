@@ -3,27 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://co1ncidence.github.io/tags/guide/</loc>
+    <lastmod>2020-08-15T14:15:28-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://co1ncidence.github.io/posts/bash-basics-for-nubs/</loc>
+    <lastmod>2020-08-15T14:15:28-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://co1ncidence.github.io/</loc>
+    <lastmod>2020-08-15T14:15:28-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://co1ncidence.github.io/posts/</loc>
+    <lastmod>2020-08-15T14:15:28-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://co1ncidence.github.io/tags/productivity/</loc>
+    <lastmod>2020-08-15T14:15:28-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://co1ncidence.github.io/tags/</loc>
+    <lastmod>2020-08-15T14:15:28-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://co1ncidence.github.io/tags/cars/</loc>
     <lastmod>2020-08-05T15:58:49-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://co1ncidence.github.io/</loc>
-    <lastmod>2020-08-05T15:58:49-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://co1ncidence.github.io/tags/opinion/</loc>
-    <lastmod>2020-08-05T15:58:49-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://co1ncidence.github.io/posts/</loc>
-    <lastmod>2020-08-05T15:58:49-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://co1ncidence.github.io/tags/</loc>
     <lastmod>2020-08-05T15:58:49-05:00</lastmod>
   </url>
   
@@ -45,11 +60,6 @@
   <url>
     <loc>https://co1ncidence.github.io/about/</loc>
     <lastmod>2020-08-02T23:44:22-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://co1ncidence.github.io/tags/productivity/</loc>
-    <lastmod>2020-08-02T22:35:38-05:00</lastmod>
   </url>
   
   <url>
