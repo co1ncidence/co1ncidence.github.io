@@ -1,6 +1,11 @@
+html {
+  background-color: #38322e;
+}
+
 body {
-  margin: 0;
-  max-width: 100%;
+  margin: 10vh auto;
+  width: 100%;
+  max-width: 800px;
   padding-right: 2vw;
   padding-left: 2vw;
   padding-top: 5vh;
@@ -8,10 +13,13 @@ body {
   font-family: "Source Sans Pro", "PT Sans", "Noto Sans", "Arial", sans-serif;
   background-color: #fdf9f8;
   color: #26221f;
-  /* border-top: 15vh solid #26221f; */
-  /* border-bottom: 15vh solid #26221f; */
-  /* border-left: 20vw solid #38322e; */
-  /* border-right: 20vw solid #38322e; */
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0px solid #000000;
+  -webkit-box-shadow: 0px 0px 16px 10px rgba(0,0,0,0.5);
+ 	-moz-box-shadow: 0px 0px 16px 10px rgba(0,0,0,0.5);
+ 	box-shadow: 0px 0px 16px 10px rgba(0,0,0,0.5);
 }
 
 h1,
@@ -463,23 +471,11 @@ table thead {
 }
 
 blockquote {
-  margin: 1em;
-  border-left: solid 0.1em #cecece;
-  padding: 0.5em 2em;
+  margin-left: 0em;
+  border-left: solid 0.5em #38322e;
+  padding: 0.2em 2em;
   position: relative;
-  background-color: #efefef;
-  box-shadow: 0 -1px 0 #bbbbbb inset;
-}
-
-blockquote::before {
-  content: "\f10d";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 3em;
-  color: rgba(192, 192, 192, 0.3);
-  position: absolute;
-  left: 6px;
-  top: 0;
+  background-color: #fff2f2;
 }
 
 @media only screen and (max-width: 800px) {
