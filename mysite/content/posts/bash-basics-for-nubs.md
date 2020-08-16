@@ -17,7 +17,8 @@ The Terminal is simply an interface to interact with your computer, by itself, i
   - Searching through online forums like [Stack Overflow](https://stackoverflow.com/)
   - Reading Wiki pages on amazing websites like the [ArchWiki](https://wiki.archlinux.org/)
   - Searching [Reddit](https://reddit.com) for similar problems or making a post about your own
-Following these steps will lead you to your solution far more often than not.
+
+**Following these steps will lead you to your solution far more often than not.**
 
 ## Second, some things I really wish I knew when starting off 
 
