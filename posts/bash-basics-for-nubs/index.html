@@ -129,7 +129,7 @@
 <blockquote>
 <p>I either find peace in the terminal or I find another friggin&rsquo; error</p>
 </blockquote>
-<h2 id="first-some-things-that-you-have-to-know-before-delving-into-the-command-line">First, some things that you have to know before delving into the command line.</h2>
+<h2 id="first-some-things-to-note-before-delving-into-the-command-line">First, some things to note before delving into the command line:</h2>
 <p>The Terminal is simply an interface to interact with your computer, by itself, it is nothing but an empty program. A terminal (in 99.99% of cases) needs a <strong>Shell</strong> to function. A shell is an interactive text interface for the user, and the <strong>Terminal</strong> is the tool most often used to run commands via the shell. There are many shells out there, thought this tutorial in specific will be focusing on the most is <strong>Bash</strong>, the most popular shell in use right now and the default shell of many UNIX based operating systems, including <a href="https://en.wikipedia.org/wiki/MacOS">MacOS</a> and many <a href="https://en.wikipedia.org/wiki/Linux">Linux</a> distributions. Bash allows you to run commands from other programs or utilities, common ones you&rsquo;ll mostly likely need are those from something like the <a href="https://en.wikipedia.org/wiki/GNU_Core_Utilities">GNU Coreutils</a>, and any other programs you might use daily. Once you have familiarized yourself with these terms, you can get on to actually using the command line. And finally, and most likely <strong>The Most Important Thing You Will Read Here</strong>, you have to always be willing to read documentation and official manuals, don&rsquo;t go around annoying others for help. Some places to look at when encountering issues can include:</p>
 <ul>
 <li>The official manual of the program, accessed by running the man command for that program in the terminal</li>
@@ -139,21 +139,22 @@
 <li>Searching <a href="https://reddit.com">Reddit</a> for similar problems or making a post about your own</li>
 </ul>
 <p><strong>Following these steps will lead you to your solution far more often than not.</strong></p>
-<h2 id="second-some-things-i-really-wish-i-knew-when-starting-off">Second, some things I really wish I knew when starting off</h2>
-<h3 id="cool-aliases">Cool aliases</h3>
+<h2 id="second-some-things-i-wish-i-knew-when-starting-off">Second, some things I wish I knew when starting off:</h2>
+<p>This is just a collection of cool tips and tricks that&rsquo;ll help with fully optimizing your command line skills, expect this to be updated frequently as I learn more.</p>
+<h3 id="cool-aliases">Cool aliases:</h3>
 <p><code>..</code> is an alias for the parent folder of the directory you are currently working inside, and the word <code>.</code> is the alias for the folder currently occupied. These are useful to know as they can save you precious time typing in long directory paths when you are working with more advanced commands. These aliases can be used with just about any command so be careful with them.</p>
 <p><code>~</code> is an alias that stands for <code>/home/username</code>, with &ldquo;username&rdquo; being the user name of the currently active user. It can be used with many commands, so once again, be careful with what you do. If you are ever unsure, just remind yourself that it <strong>directly</strong> translates to <code>/home/username</code>, that&rsquo;ll help you get a bearing on the command you are about to run.</p>
-<h3 id="conditional-execution">Conditional execution</h3>
+<h3 id="conditional-execution">Conditional execution:</h3>
 <p><code>&amp;</code> is a character you can insert after a command and use to spawn command outputs in the background, and <code>&amp;&amp;</code> can be used to implement <strong>Conditional Execution</strong>, which means you can run multiple commands in succession, for example:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#command2 will only run if command1 has finished executing</span>
 command1 <span style="color:#f92672">&amp;&amp;</span> command2
 </code></pre></div><p>You can also do another kind of sequential execution in the command line, using the <code>||</code> function, this works in a similar way to <code>&amp;&amp;</code> but instead of running a command after the execution of the previous one, it runs a second command only if the first one failed to run, sort of like a &ldquo;Plan B&rdquo; if you will. Here is an example:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#command2 will only run if command1 fails for any reason</span>
 command1 <span style="color:#f92672">||</span> command2
-</code></pre></div><h3 id="pipes-in-bash">Pipes in bash</h3>
+</code></pre></div><h3 id="pipes-in-bash">Pipes in bash:</h3>
 <p><strong>Pipes</strong> are things you can use to filter one command through another, thus allowing for things like controlling outputs of commands. Pipes have many uses so I recommend that you look more into them as there is no way I can go into full depth here. Here is an example of a pipe being used to filter the output of of <code>fc-list</code> through <code>grep</code> to only show fonts with a certain name.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">fc-list | grep Roboto
-</code></pre></div><h2 id="file-management-commands">File Management Commands</h2>
+</code></pre></div><h2 id="file-management-commands">File Management Commands:</h2>
 <p><code>cd</code> stands for &ldquo;change directory&rdquo;, you can use this command to enter and leave directories. It is not limited to neighboring directories, however, you can use <code>cd</code> to move from one side of your computer to another, provided you don&rsquo;t mess up typing in the names of folders. First thing to note is that a <code>/</code> is not necessary after a folder name:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#these 2 commands are the same</span>
 cd ~/folder1/folder2/
@@ -205,7 +206,7 @@ rm *.png
 <p>Sometimes, your user may not have the necessary permissions to execute certain commands on a file or folder, this is because the owner of said file/folder is the <strong>root user</strong>, to obtain the abilities of the root user, you just have to place the word <code>sudo</code> behind your command. <code>sudo</code> stands for &ldquo;Super User DO&rdquo;, and will allow you to run commands with elevated permissions, here is an example:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo rm -rf /
 </code></pre></div><p>This command is a great showcase of the dangers of <code>sudo</code> as well. If you haven&rsquo;t already realized, this command will wipe every file and folder on your system. So whenever something requires you to be root to run a command, always make sure you know what you are doing, and always remember that there is a reason that there is a reason for a password to be between you and the execution of this command. Stay safe.</p>
-<h2 id="file-viewing--and-output-controlfiltering">File viewing  and output control/filtering</h2>
+<h2 id="file-viewing--and-output-controlfiltering">File viewing  and output control/filtering:</h2>
 <p>The <code>cat</code> command is one of the first to know when viewing files, running <code>cat</code> on a file which contains any sort of text will cause your terminal to output the full contents of your file, for example, running:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cat .bashrc
 </code></pre></div><p>Will show you the contents of your <code>.bashrc</code> file, otherwise known as the bash shell configuration file, more about this later. <code>cat</code> is very useful when you want to look at certain content in a file but don&rsquo;t want to open it in your editor.
@@ -218,11 +219,11 @@ You may realize. Here is an example of the <code>cat</code> command being used:<
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">fc-list
 </code></pre></div><p>This command, however, will filter out every result and only show results containing the word &ldquo;Roboto&rdquo;:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">fc-list | grep Roboto
-</code></pre></div><h2 id="editing-files-in-the-command-line-using-gnu-nano">Editing files in the command line using GNU Nano</h2>
+</code></pre></div><h2 id="editing-files-in-the-command-line-using-gnu-nano">Editing files in the command line using GNU Nano:</h2>
 <p>Throughout your Linux journey, there will be many, and I mean many, times where you will have to make a quick edit to some configuration file of some sort. Editing these files with a visual editor can be a pain as you have to run the editor as root, find the file you want to edit, and then finally get to editing it. As a solution to this, computers running any GNU/Linux Distribution usually come with a terminal editor installed, called <a href="https://en.wikipedia.org/wiki/GNU_nano">Nano</a>. Nano is an editor that allows you to edit any text file through the terminal. Here is an example of me editing the <code>/etc/fstab</code> file using Nano (notice the use of sudo to access this file):</p>
 <p><img src="https://i.imgur.com/JN1wnz6.gif" alt="gif"></p>
 <p>Nano has many keyboard shortcuts and is a quite featured editor, though you will most likely only be using it for quick edits, as anything bigger would be better done in a real editor. The only real shortcut to know in Nano is <strong>Ctrl + X</strong>, this saves and exits the file, prompting you before doing so as well.</p>
-<h2 id="implementations-of-time-in-the-command-line">Implementations of Time in the command line</h2>
+<p>#that # Implementations of Time in the command line</p>
 
 
 </article>

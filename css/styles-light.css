@@ -1,11 +1,12 @@
 body {
   margin: 0;
+  max-width: 100%;
   padding-right: 2vw;
   padding-left: 2vw;
   padding-top: 5vh;
   padding-bottom: 5vh;
   overflow-x: hidden;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Source Sans Pro", "PT Sans", "Noto Sans", "Arial", sans-serif;
   background-color: #fdf9f8;
   color: #26221f;
   border-top: 15vh solid #26221f;
@@ -21,7 +22,7 @@ h4,
 h5,
 h6,
 time {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Source Sans Pro", "Noto Sans", "Arial", "PT Sans", sans-serif;
   font-weight: Bold;
 }
 
@@ -112,7 +113,7 @@ right: 0;
 #container nav {
   border-bottom: solid 4px #b1a7a0;
   padding-bottom: 0.5em;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Source Sans Pro", "Noto Sans", "Arial", "PT Sans", sans-serif;
 }
 
 #container nav ul {
@@ -285,7 +286,7 @@ width: 100%;
 
 .meta-aside, #container main section#home ul li aside, #container main article aside {
   margin: 0.5em 0;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Source Sans Pro", "Noto Sans", "Arial", "PT Sans", sans-serif;
   color: #83756c;
   font-size: 0.8em;
 }

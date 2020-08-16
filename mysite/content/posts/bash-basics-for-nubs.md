@@ -10,7 +10,7 @@ When I first started with Linux, and especially the command line, It was difficu
 
 > I either find peace in the terminal or I find another friggin' error
 
-## First, some things that you have to know before delving into the command line.
+## First, some things to note before delving into the command line:
 The Terminal is simply an interface to interact with your computer, by itself, it is nothing but an empty program. A terminal (in 99.99% of cases) needs a **Shell** to function. A shell is an interactive text interface for the user, and the **Terminal** is the tool most often used to run commands via the shell. There are many shells out there, thought this tutorial in specific will be focusing on the most is **Bash**, the most popular shell in use right now and the default shell of many UNIX based operating systems, including [MacOS](https://en.wikipedia.org/wiki/MacOS) and many [Linux](https://en.wikipedia.org/wiki/Linux) distributions. Bash allows you to run commands from other programs or utilities, common ones you'll mostly likely need are those from something like the [GNU Coreutils](https://en.wikipedia.org/wiki/GNU_Core_Utilities), and any other programs you might use daily. Once you have familiarized yourself with these terms, you can get on to actually using the command line. And finally, and most likely **The Most Important Thing You Will Read Here**, you have to always be willing to read documentation and official manuals, don't go around annoying others for help. Some places to look at when encountering issues can include:
   - The official manual of the program, accessed by running the man command for that program in the terminal
   - Searching through the Github issues of the program you are struggling with to find a similar or identical problem
@@ -20,16 +20,17 @@ The Terminal is simply an interface to interact with your computer, by itself, i
 
 **Following these steps will lead you to your solution far more often than not.**
 
-## Second, some things I really wish I knew when starting off 
+## Second, some things I wish I knew when starting off:
 
+This is just a collection of cool tips and tricks that'll help with fully optimizing your command line skills, expect this to be updated frequently as I learn more.
 
-### Cool aliases
+### Cool aliases:
 `..` is an alias for the parent folder of the directory you are currently working inside, and the word `.` is the alias for the folder currently occupied. These are useful to know as they can save you precious time typing in long directory paths when you are working with more advanced commands. These aliases can be used with just about any command so be careful with them.
 
 `~` is an alias that stands for `/home/username`, with "username" being the user name of the currently active user. It can be used with many commands, so once again, be careful with what you do. If you are ever unsure, just remind yourself that it **directly** translates to `/home/username`, that'll help you get a bearing on the command you are about to run.
 
 
-### Conditional execution
+### Conditional execution:
 
 `&` is a character you can insert after a command and use to spawn command outputs in the background, and `&&` can be used to implement **Conditional Execution**, which means you can run multiple commands in succession, for example:
 ```sh
@@ -42,13 +43,13 @@ You can also do another kind of sequential execution in the command line, using 
 command1 || command2
 ```
 
-### Pipes in bash
+### Pipes in bash:
 **Pipes** are things you can use to filter one command through another, thus allowing for things like controlling outputs of commands. Pipes have many uses so I recommend that you look more into them as there is no way I can go into full depth here. Here is an example of a pipe being used to filter the output of of `fc-list` through `grep` to only show fonts with a certain name.
 ```sh
 fc-list | grep Roboto
 ```
 
-## File Management Commands
+## File Management Commands:
 
 
 `cd` stands for "change directory", you can use this command to enter and leave directories. It is not limited to neighboring directories, however, you can use `cd` to move from one side of your computer to another, provided you don't mess up typing in the names of folders. First thing to note is that a `/` is not necessary after a folder name:
@@ -106,7 +107,7 @@ cp ~/.local/bin/command /usr/bin/command2
 cp ~/.local/bin/command /usr/bin
 ```
 
-`rm` is another very useful, but dangerous command. It stands for "remove" and can be used to remove any 
+`rm` is another very useful, but dangerous command. It stands for "remove" and can be used to remove any
 However, unlike the other file management commands, `rm` cannot remove folders by default, this requires the use of a couple **Flags**, which are just letters/words you can attach to a command to unlock abilities that the command cannot do by default. For `rm` to be able to delete a whole folder, it requires the `-r` and `-f` flags, here is an example:
 ```sh
 rm -r -f folder/
@@ -118,7 +119,7 @@ rm -rf folder/
 Thus is how you can use `rm` to remove folders as well as individual files.
 
 #### Using the "*" character in file management
-You can also use this basic RegEx character to make bulk file movement easier, for example, you can move every `.png` file in a folder somewhere else using the `*` character, for example, this command is doing exactly that: 
+You can also use this basic RegEx character to make bulk file movement easier, for example, you can move every `.png` file in a folder somewhere else using the `*` character, for example, this command is doing exactly that:
 ```sh
 mv *.png ~/Pictures/stuff/
 #once again, this is not limited to the current location
@@ -137,9 +138,9 @@ sudo rm -rf /
 ```
 This command is a great showcase of the dangers of `sudo` as well. If you haven't already realized, this command will wipe every file and folder on your system. So whenever something requires you to be root to run a command, always make sure you know what you are doing, and always remember that there is a reason that there is a reason for a password to be between you and the execution of this command. Stay safe.
 
-## File viewing  and output control/filtering
+## File viewing  and output control/filtering:
 
-The `cat` command is one of the first to know when viewing files, running `cat` on a file which contains any sort of text will cause your terminal to output the full contents of your file, for example, running: 
+The `cat` command is one of the first to know when viewing files, running `cat` on a file which contains any sort of text will cause your terminal to output the full contents of your file, for example, running:
 ```sh
 cat .bashrc
 ```
@@ -164,7 +165,7 @@ This command, however, will filter out every result and only show results contai
 fc-list | grep Roboto
 ```
 
-## Editing files in the command line using GNU Nano
+## Editing files in the command line using GNU Nano:
 
 Throughout your Linux journey, there will be many, and I mean many, times where you will have to make a quick edit to some configuration file of some sort. Editing these files with a visual editor can be a pain as you have to run the editor as root, find the file you want to edit, and then finally get to editing it. As a solution to this, computers running any GNU/Linux Distribution usually come with a terminal editor installed, called [Nano](https://en.wikipedia.org/wiki/GNU_nano). Nano is an editor that allows you to edit any text file through the terminal. Here is an example of me editing the `/etc/fstab` file using Nano (notice the use of sudo to access this file):
 
@@ -172,5 +173,4 @@ Throughout your Linux journey, there will be many, and I mean many, times where 
 
 Nano has many keyboard shortcuts and is a quite featured editor, though you will most likely only be using it for quick edits, as anything bigger would be better done in a real editor. The only real shortcut to know in Nano is **Ctrl + X**, this saves and exits the file, prompting you before doing so as well.
 
-## Implementations of Time in the command line
-
+#that # Implementations of Time in the command line
