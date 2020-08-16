@@ -153,7 +153,7 @@ You may realize. Here is an example of the &lt;code&gt;cat&lt;/code&gt; command 
      </item>
    
      <item>
-       <title>My Openbox Rice</title>
+       <title>My Openbox Rice(s)</title>
        <link>https://co1ncidence.github.io/posts/my-openbox-rice/</link>
        <pubDate>Tue, 04 Aug 2020 00:19:18 -0500</pubDate>
        
@@ -166,6 +166,32 @@ You may realize. Here is an example of the &lt;code&gt;cat&lt;/code&gt; command 
 &lt;p&gt;One may wonder, however, why I don&amp;rsquo;t just use a tiling window manager. There is one main reason, Windows becoming fullscreen automatically gets really annoying after a while, and I&amp;rsquo;m not a big fan of the straight-edge aesthetic in most tiling window managers. Another, more personal reason, is that I really like the customizability and lightness of openbox, and, most importantly, the right-click menu, which allows me to quickly access my favorite programs and some mpd controls:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.imgur.com/5qiWTtR.gif&#34; alt=&#34;gif&#34;&gt;&lt;/p&gt;
 &lt;p&gt;I also, of course, have an toggling polybar as it tends to get in my way because of my lacking screen real estate:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/wpwsaZd.gif&#34; alt=&#34;gif&#34;&gt;&lt;/p&gt;
+&lt;p&gt;In addition to all this, I have just about every single one of my most used programs and commands mapped to keyboard shortcuts as possible using &lt;a href=&#34;https://github.com/baskerville/sxhkd&#34;&gt;sxhkd&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;to-top-it-all-off-here-are-screenshots-from-some-of-my-previous-rices&#34;&gt;To top it all off, here are screenshots from some of my previous rices:&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.discordapp.com/attachments/743868455547305985/743868817028939876/image.png&#34; alt=&#34;img&#34;&gt;
+&lt;img src=&#34;https://cdn.discordapp.com/attachments/743868455547305985/743868991428100156/image.png&#34; alt=&#34;img&#34;&gt;
+&lt;img src=&#34;https://cdn.discordapp.com/attachments/743868455547305985/743869025699889162/image.png&#34; alt=&#34;img&#34;&gt;
+&lt;img src=&#34;https://cdn.discordapp.com/attachments/743868455547305985/743869067751981137/image.png&#34; alt=&#34;img&#34;&gt;
+&lt;img src=&#34;https://cdn.discordapp.com/attachments/743868455547305985/743869123804528641/image.png&#34; alt=&#34;img&#34;&gt;
+&lt;img src=&#34;https://cdn.discordapp.com/attachments/743868455547305985/743869197209174116/image.png&#34; alt=&#34;img&#34;&gt;
+&lt;img src=&#34;https://cdn.discordapp.com/attachments/743868455547305985/743869263236038786/image.png&#34; alt=&#34;img&#34;&gt;
+&lt;img src=&#34;https://cdn.discordapp.com/attachments/743868455547305985/743869347050553425/image.png&#34; alt=&#34;img&#34;&gt;
+&lt;img src=&#34;https://cdn.discordapp.com/attachments/743868455547305985/743869761556840569/image.png&#34; alt=&#34;img&#34;&gt;
+&lt;img src=&#34;https://cdn.discordapp.com/attachments/743868455547305985/743869845870739681/image.png&#34; alt=&#34;img&#34;&gt;
+&lt;img src=&#34;https://cdn.discordapp.com/attachments/743868455547305985/743869978997948548/image.png&#34; alt=&#34;img&#34;&gt;
+&lt;img src=&#34;https://cdn.discordapp.com/attachments/743868455547305985/743870073629966387/image.png&#34; alt=&#34;img&#34;&gt;
+&lt;img src=&#34;https://cdn.discordapp.com/attachments/743868455547305985/743870198544597062/image.png&#34; alt=&#34;img&#34;&gt;
+&lt;img src=&#34;https://cdn.discordapp.com/attachments/743868455547305985/743870351632498759/image.png&#34; alt=&#34;img&#34;&gt;
+&lt;img src=&#34;https://cdn.discordapp.com/attachments/743868455547305985/743870537209741342/image.png&#34; alt=&#34;img&#34;&gt;
+&lt;img src=&#34;https://cdn.discordapp.com/attachments/743868455547305985/743870663319879840/image.png&#34; alt=&#34;img&#34;&gt;
+&lt;img src=&#34;https://cdn.discordapp.com/attachments/743868455547305985/743870977724776502/image.png&#34; alt=&#34;img&#34;&gt;
+&lt;img src=&#34;https://cdn.discordapp.com/attachments/743868455547305985/743871057064230922/image.png&#34; alt=&#34;img&#34;&gt;
+&lt;img src=&#34;https://cdn.discordapp.com/attachments/743868455547305985/743871129814564955/image.png&#34; alt=&#34;img&#34;&gt;
+&lt;img src=&#34;https://cdn.discordapp.com/attachments/743868455547305985/743871216506372197/image.png&#34; alt=&#34;img&#34;&gt;
+&lt;img src=&#34;https://cdn.discordapp.com/attachments/743868455547305985/743871305434267738/image.png&#34; alt=&#34;img&#34;&gt;
+&lt;img src=&#34;https://cdn.discordapp.com/attachments/743868455547305985/743871396999856208/image.png&#34; alt=&#34;img&#34;&gt;
+&lt;img src=&#34;https://cdn.discordapp.com/attachments/743868455547305985/743871580370763856/image.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
 </description>
      </item>
    

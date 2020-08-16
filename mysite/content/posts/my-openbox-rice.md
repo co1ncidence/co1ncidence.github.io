@@ -1,5 +1,5 @@
 ---
-title: "My Openbox Rice"
+title: "My Openbox Rice(s)"
 date: 2020-08-04T00:19:18-05:00
 tags:
   - Showcase
@@ -21,3 +21,32 @@ One may wonder, however, why I don't just use a tiling window manager. There is 
 
 I also, of course, have an toggling polybar as it tends to get in my way because of my lacking screen real estate:
 
+![gif](https://i.imgur.com/wpwsaZd.gif)
+
+In addition to all this, I have just about every single one of my most used programs and commands mapped to keyboard shortcuts as possible using [sxhkd](https://github.com/baskerville/sxhkd).
+
+## To top it all off, here are screenshots from some of my previous rices:
+
+![img](https://cdn.discordapp.com/attachments/743868455547305985/743868817028939876/image.png)
+![img](https://cdn.discordapp.com/attachments/743868455547305985/743868991428100156/image.png)
+![img](https://cdn.discordapp.com/attachments/743868455547305985/743869025699889162/image.png)
+![img](https://cdn.discordapp.com/attachments/743868455547305985/743869067751981137/image.png)
+![img](https://cdn.discordapp.com/attachments/743868455547305985/743869123804528641/image.png)
+![img](https://cdn.discordapp.com/attachments/743868455547305985/743869197209174116/image.png)
+![img](https://cdn.discordapp.com/attachments/743868455547305985/743869263236038786/image.png)
+![img](https://cdn.discordapp.com/attachments/743868455547305985/743869347050553425/image.png)
+![img](https://cdn.discordapp.com/attachments/743868455547305985/743869761556840569/image.png)
+![img](https://cdn.discordapp.com/attachments/743868455547305985/743869845870739681/image.png)
+![img](https://cdn.discordapp.com/attachments/743868455547305985/743869978997948548/image.png)
+![img](https://cdn.discordapp.com/attachments/743868455547305985/743870073629966387/image.png)
+![img](https://cdn.discordapp.com/attachments/743868455547305985/743870198544597062/image.png)
+![img](https://cdn.discordapp.com/attachments/743868455547305985/743870351632498759/image.png)
+![img](https://cdn.discordapp.com/attachments/743868455547305985/743870537209741342/image.png)
+![img](https://cdn.discordapp.com/attachments/743868455547305985/743870663319879840/image.png)
+![img](https://cdn.discordapp.com/attachments/743868455547305985/743870977724776502/image.png)
+![img](https://cdn.discordapp.com/attachments/743868455547305985/743871057064230922/image.png)
+![img](https://cdn.discordapp.com/attachments/743868455547305985/743871129814564955/image.png)
+![img](https://cdn.discordapp.com/attachments/743868455547305985/743871216506372197/image.png)
+![img](https://cdn.discordapp.com/attachments/743868455547305985/743871305434267738/image.png)
+![img](https://cdn.discordapp.com/attachments/743868455547305985/743871396999856208/image.png)
+![img](https://cdn.discordapp.com/attachments/743868455547305985/743871580370763856/image.png)
