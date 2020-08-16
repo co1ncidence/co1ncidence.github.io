@@ -11,7 +11,7 @@ When I first started with Linux, and especially the command line, It was difficu
 > I either find peace in the terminal or I find another friggin' error
 
 ## First, some things that you have to know before delving into the command line.
-The Terminal is simply an interface to interact with your computer, by itself, it is nothing but an empty program. A terminal (in 99.99% of cases) needs a **Shell** to function. A shell is an interactive text interface for the user, and the **Terminal** is the tool most often used to run commands via the shell. There are many shells out there, thought this tutorial in specific will be focusing on the most is **Bash**, the most popular shell in use right now and the default shell of many UNIX based operating systems, including [MacOS](https://en.wikipedia.org/wiki/MacOS) and many [Linux](https://en.wikipedia.org/wiki/Linux) distributions. Bash allows you to run commands from other programs or utilities, common ones you'll mostly likely need are those from something like the [GNU Coreutils](https://en.wikipedia.org/wiki/GNU_Core_Utilities), and any other programs you might use daily. Once you have familiarized yourself with these terms, you can get on to actually using the command line. And finally, and most likely **The Most Important Thing You Will Read Here**, you have to always be willing to read documentation and official manuals, don't go around annoying others for help. Places to look for when encountering issues can include:
+The Terminal is simply an interface to interact with your computer, by itself, it is nothing but an empty program. A terminal (in 99.99% of cases) needs a **Shell** to function. A shell is an interactive text interface for the user, and the **Terminal** is the tool most often used to run commands via the shell. There are many shells out there, thought this tutorial in specific will be focusing on the most is **Bash**, the most popular shell in use right now and the default shell of many UNIX based operating systems, including [MacOS](https://en.wikipedia.org/wiki/MacOS) and many [Linux](https://en.wikipedia.org/wiki/Linux) distributions. Bash allows you to run commands from other programs or utilities, common ones you'll mostly likely need are those from something like the [GNU Coreutils](https://en.wikipedia.org/wiki/GNU_Core_Utilities), and any other programs you might use daily. Once you have familiarized yourself with these terms, you can get on to actually using the command line. And finally, and most likely **The Most Important Thing You Will Read Here**, you have to always be willing to read documentation and official manuals, don't go around annoying others for help. Some places to look at when encountering issues can include:
   - The official manual of the program, accessed by running the man command for that program in the terminal
   - Searching through the Github issues of the program you are struggling with to find a similar or identical problem
   - Searching through online forums like [Stack Overflow](https://stackoverflow.com/)
@@ -41,6 +41,12 @@ You can also do another kind of sequential execution in the command line, using 
 command1 || command2
 ```
 
+### Pipes in bash
+**Pipes** are things you can use to filter one command through another, thus allowing for things like controlling outputs of commands. Pipes have many uses so I recommend that you look more into them as there is no way I can go into full depth here. Here is an example of a pipe being used to filter the output of of `fc-list` through `grep` to only show fonts with a certain name.
+```sh
+fc-list | grep Roboto
+```
+
 ## File Management Commands
 
 
@@ -66,6 +72,10 @@ cd /
 #this will move you back to home
 cd ~/
 ```
+
+`ls` is one of the commands you will use the most, this command lists all of the files and folders in the current folder, allowing you to get a better idea of where you are. Here is an example of the `ls` command in use:
+
+![gif](https://i.imgur.com/Klpg4s7.gif)
 
 `touch` is used (mostly) to create a new, empty file in the folder you are currently occupying, the filetype can vary based on name extension, for example, to create a new `css` file you would run
 ```sh
@@ -126,5 +136,40 @@ sudo rm -rf /
 ```
 This command is a great showcase of the dangers of `sudo` as well. If you haven't already realized, this command will wipe every file and folder on your system. So whenever something requires you to be root to run a command, always make sure you know what you are doing, and always remember that there is a reason that there is a reason for a password to be between you and the execution of this command. Stay safe.
 
-## Disk Management and Informational Commands
+## File viewing  and output control/filtering
+
+The `cat` command is one of the first to know when viewing files, running `cat` on a file which contains any sort of text will cause your terminal to output the full contents of your file, for example, running: 
+```sh
+cat .bashrc
+```
+Will show you the contents of your `.bashrc` file, otherwise known as the bash shell configuration file, more about this later. `cat` is very useful when you want to look at certain content in a file but don't want to open it in your editor.
+You may realize. Here is an example of the `cat` command being used:
+
+![gif](https://i.imgur.com/Nf93ABf.gif)
+
+However, that `cat` can be annoying when used on longer files, as you have to manually scroll back if you want to view any content near the beginning of the file. This is where another, very useful command comes in. The `less` command is similar to `cat`, but instead of just throwing all of the output at you and leaving you alone to manage it, `less` allows you to view the file in a scrolling window, with the top of the file being the beginning. You can then use the Up and Down arrow keys of J and K to navigate the file as you want. For those of you comfortable with them, Vim keybindings work in `less` as well. As you can see here, the experience is far more intuitive:
+
+![gif](https://i.imgur.com/8RmoBjK.gif)
+
+Sometimes, however, we have too much output of a command, one example of such a problematic command can be the `fc-list` command, which lists all fonts currently installed on your system. You can filter the output of this command using `grep`, an extremely powerful search utility. `grep` however, usually requires piping, which I talked about earlier. Here is a basic example of the usage of `grep`:
+
+This command will have hundreds of lines of output, displaying all of your fonts:
+```sh
+fc-list
+```
+
+This command, however, will filter out every result and only show results containing the word "Roboto":
+```sh
+fc-list | grep Roboto
+```
+
+## Editing files in the command line using GNU Nano
+
+Throughout your Linux journey, there will be many, and I mean many, times where you will have to make a quick edit to some configuration file of some sort. Editing these files with a visual editor can be a pain as you have to run the editor as root, find the file you want to edit, and then finally get to editing it. As a solution to this, computers running any GNU/Linux Distribution usually come with a terminal editor installed, called [Nano](https://en.wikipedia.org/wiki/GNU_nano). Nano is an editor that allows you to edit any text file through the terminal. Here is an example of me editing the `/etc/fstab` file using Nano (notice the use of sudo to access this file):
+
+![gif](https://i.imgur.com/JN1wnz6.gif)
+
+Nano has many keyboard shortcuts and is a quite featured editor, though you will most likely only be using it for quick edits, as anything bigger would be better done in a real editor. The only real shortcut to know in Nano is **Ctrl + X**, this saves and exits the file, prompting you before doing so as well.
+
+## Implementations of Time in the command line
 
