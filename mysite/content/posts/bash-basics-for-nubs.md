@@ -49,16 +49,24 @@ fc-list | grep Roboto
 
 ### Keyboard shortcuts
 Unknown to me for quite a while during my usage of the terminal in Linux was that there were many keyboard shortcuts that could be used to navigate and control text much faster in the command line. These are mostly inherited from some of the keyboard shortcuts in older editors like `vi`, from what I can tell. Here are the ones I find myself using most often:
-  - `ctrl + arrow keys` will move the cursor one word in the respective direction
-  - `ctrl + b/f` will move the cursor backwards and forwards respectively
-  - `ctrl + w` will delete the previous word
-  - `ctrl + h` will delete the previous letter, though I would recommend the `backspace` key
-  - `ctrl + d` will delete the character under the cursor, without disturbing previous words
-  - `F11` types in the `~` character, which may or may not be easier for you to press
-  - `ctrl + a` moves the cursor all the way back to the prompt
-  - `ctrl + u` will delete all text entered
-  - `ctrl + r` will initiate a "reverse search", allowing you to easily access a command that you may have entered a while ago
-  - `ctrl + m/j` either will initiate the command currently entered, though `enter` is preferred for this case
+
+`ctrl + arrow keys` will move the cursor one word in the respective direction
+
+`ctrl + b/f` will move the cursor backwards and forwards respectively
+
+`ctrl + w` will delete the previous word
+
+`ctrl + h` works the same way as `backspace`
+
+`ctrl + d` will delete the character under the cursor, without disturbing previous words
+
+`ctrl + a` moves the cursor all the way back to the prompt
+
+`ctrl + u` will delete all text entered
+
+`ctrl + r` will initiate a reverse search for previously entered commands
+
+`ctrl + m/j`, both work the same way as `enter`
 
 ## File Management Commands:
 

@@ -48,18 +48,15 @@ command1 &lt;span style=&#34;color:#f92672&#34;&gt;||&lt;/span&gt; command2
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;fc-list | grep Roboto
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;keyboard-shortcuts&#34;&gt;Keyboard shortcuts&lt;/h3&gt;
 &lt;p&gt;Unknown to me for quite a while during my usage of the terminal in Linux was that there were many keyboard shortcuts that could be used to navigate and control text much faster in the command line. These are mostly inherited from some of the keyboard shortcuts in older editors like &lt;code&gt;vi&lt;/code&gt;, from what I can tell. Here are the ones I find myself using most often:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;ctrl + arrow keys&lt;/code&gt; will move the cursor one word in the respective direction&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ctrl + b/f&lt;/code&gt; will move the cursor backwards and forwards respectively&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ctrl + w&lt;/code&gt; will delete the previous word&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ctrl + h&lt;/code&gt; will delete the previous letter, though I would recommend the &lt;code&gt;backspace&lt;/code&gt; key&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ctrl + d&lt;/code&gt; will delete the character under the cursor, without disturbing previous words&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;F11&lt;/code&gt; types in the &lt;code&gt;~&lt;/code&gt; character, which may or may not be easier for you to press&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ctrl + a&lt;/code&gt; moves the cursor all the way back to the prompt&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ctrl + u&lt;/code&gt; will delete all text entered&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ctrl + r&lt;/code&gt; will initiate a &amp;ldquo;reverse search&amp;rdquo;, allowing you to easily access a command that you may have entered a while ago&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ctrl + m/j&lt;/code&gt; either will initiate the command currently entered, though &lt;code&gt;enter&lt;/code&gt; is preferred for this case&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;ctrl + arrow keys&lt;/code&gt; will move the cursor one word in the respective direction&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ctrl + b/f&lt;/code&gt; will move the cursor backwards and forwards respectively&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ctrl + w&lt;/code&gt; will delete the previous word&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ctrl + h&lt;/code&gt; works the same way as &lt;code&gt;backspace&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ctrl + d&lt;/code&gt; will delete the character under the cursor, without disturbing previous words&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ctrl + a&lt;/code&gt; moves the cursor all the way back to the prompt&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ctrl + u&lt;/code&gt; will delete all text entered&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ctrl + r&lt;/code&gt; will initiate a reverse search for previously entered commands&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ctrl + m/j&lt;/code&gt;, both work the same way as &lt;code&gt;enter&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&#34;file-management-commands&#34;&gt;File Management Commands:&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;cd&lt;/code&gt; stands for &amp;ldquo;change directory&amp;rdquo;, you can use this command to enter and leave directories. It is not limited to neighboring directories, however, you can use &lt;code&gt;cd&lt;/code&gt; to move from one side of your computer to another, provided you don&amp;rsquo;t mess up typing in the names of folders. First thing to note is that a &lt;code&gt;/&lt;/code&gt; is not necessary after a folder name:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#these 2 commands are the same&lt;/span&gt;
