@@ -21,7 +21,6 @@ The Terminal is simply an interface to interact with your computer, by itself, i
 **Following these steps will lead you to your solution far more often than not.**
 
 ## Second, some things I wish I knew when starting off:
-
 This is just a collection of cool tips and tricks that'll help with fully optimizing your command line skills, expect this to be updated frequently as I learn more.
 
 ### Cool aliases:
@@ -31,7 +30,6 @@ This is just a collection of cool tips and tricks that'll help with fully optimi
 
 
 ### Conditional execution:
-
 `&` is a character you can insert after a command and use to spawn command outputs in the background, and `&&` can be used to implement **Conditional Execution**, which means you can run multiple commands in succession, for example:
 ```sh
 #command2 will only run if command1 has finished executing
@@ -49,8 +47,20 @@ command1 || command2
 fc-list | grep Roboto
 ```
 
-## File Management Commands:
+### Keyboard shortcuts
+Unknown to me for quite a while during my usage of the terminal in Linux was that there were many keyboard shortcuts that could be used to navigate and control text much faster in the command line. These are mostly inherited from some of the keyboard shortcuts in older editors like `vi`, from what I can tell. Here are the ones I find myself using most often:
+  - `ctrl + arrow keys` will move the cursor one word in the respective direction
+  - `ctrl + b/f` will move the cursor backwards and forwards respectively
+  - `ctrl + w` will delete the previous word
+  - `ctrl + h` will delete the previous letter, though I would recommend the `backspace` key
+  - `ctrl + d` will delete the character under the cursor, without disturbing previous words
+  - `F11` types in the `~` character, which may or may not be easier for you to press
+  - `ctrl + a` moves the cursor all the way back to the prompt
+  - `ctrl + u` will delete all text entered
+  - `ctrl + r` will initiate a "reverse search", allowing you to easily access a command that you may have entered a while ago
+  - `ctrl + m/j` either will initiate the command currently entered, though `enter` is preferred for this case
 
+## File Management Commands:
 
 `cd` stands for "change directory", you can use this command to enter and leave directories. It is not limited to neighboring directories, however, you can use `cd` to move from one side of your computer to another, provided you don't mess up typing in the names of folders. First thing to note is that a `/` is not necessary after a folder name:
 ```sh
@@ -139,7 +149,6 @@ sudo rm -rf /
 This command is a great showcase of the dangers of `sudo` as well. If you haven't already realized, this command will wipe every file and folder on your system. So whenever something requires you to be root to run a command, always make sure you know what you are doing, and always remember that there is a reason that there is a reason for a password to be between you and the execution of this command. Stay safe.
 
 ## File viewing  and output control/filtering:
-
 The `cat` command is one of the first to know when viewing files, running `cat` on a file which contains any sort of text will cause your terminal to output the full contents of your file, for example, running:
 ```sh
 cat .bashrc
@@ -166,7 +175,6 @@ fc-list | grep Roboto
 ```
 
 ## Editing files in the command line using GNU Nano:
-
 Throughout your Linux journey, there will be many, and I mean many, times where you will have to make a quick edit to some configuration file of some sort. Editing these files with a visual editor can be a pain as you have to run the editor as root, find the file you want to edit, and then finally get to editing it. As a solution to this, computers running any GNU/Linux Distribution usually come with a terminal editor installed, called [Nano](https://en.wikipedia.org/wiki/GNU_nano). Nano is an editor that allows you to edit any text file through the terminal. Here is an example of me editing the `/etc/fstab` file using Nano (notice the use of sudo to access this file):
 
 ![gif](https://i.imgur.com/JN1wnz6.gif)
@@ -174,7 +182,6 @@ Throughout your Linux journey, there will be many, and I mean many, times where 
 Nano has many keyboard shortcuts and is a quite featured editor, though you will most likely only be using it for quick edits, as anything bigger would be better done in a real editor. The only real shortcut to know in Nano is **Ctrl + X**, this saves and exits the file, prompting you before doing so as well.
 
 ## Implementations of Time in the command line
-
 The `date` command can be used to quickly display the current date and time on the terminal, while this is cool it doesn't really have much of a use in day to day command line usage, it is more effective in scripts and programs, as a reliable way to get system time. Here is an example of the `date` command in use:
 
 ![gif](https://i.imgur.com/M7eS3oE.gif)
