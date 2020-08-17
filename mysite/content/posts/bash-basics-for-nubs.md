@@ -11,7 +11,7 @@ When I first started with Linux, and especially the command line, It was difficu
 > Read The F***ing Manual
 
 ## First, some things to note before delving into the command line:
-The Terminal is simply an interface to interact with your computer, by itself, it is nothing but an empty program. A terminal (in 99.99% of cases) needs a **Shell** to function. A shell is an interactive text interface for the user, and the **Terminal** is the tool most often used to run commands via the shell. There are many shells out there, thought this tutorial in specific will be focusing on the most is **Bash**, the most popular shell in use right now and the default shell of many UNIX based operating systems, including [MacOS](https://en.wikipedia.org/wiki/MacOS) and many [Linux](https://en.wikipedia.org/wiki/Linux) distributions. Bash allows you to run commands from other programs or utilities, common ones you'll mostly likely need are those from something like the [GNU Coreutils](https://en.wikipedia.org/wiki/GNU_Core_Utilities), and any other programs you might use daily. Once you have familiarized yourself with these terms, you can get on to actually using the command line. And finally, and most likely **The Most Important Thing You Will Read Here**, you have to always be willing to read documentation and official manuals, don't go around annoying others for help. Some places to look at when encountering issues can include:
+The Terminal is simply an interface to interact with your computer, by itself, it is nothing but an empty program. A terminal (in 99.99% of cases) needs a **Shell** to function. A shell is an interactive text interface for the user, and the **Terminal** is the tool most often used to run commands via the shell. There are many shells out there, thought this tutorial in specific will be focusing on the most is **Bash**, the most popular shell in use right now and the default shell of many UNIX based operating systems, including most [Linux](https://en.wikipedia.org/wiki/Linux) distributions. Bash allows you to run commands from other programs or utilities, common ones you'll mostly likely need are those from something like the [GNU Coreutils](https://en.wikipedia.org/wiki/GNU_Core_Utilities), and any other programs you might use daily. Once you have familiarized yourself with these terms, you can get on to actually using the command line. And finally, and most likely **The Most Important Thing You Will Read Here**, you have to always be willing to read documentation and official manuals, don't go around annoying others for help. Some things to do when encountering issues can include:
   - The official manual of the program, accessed by running the man command for that program in the terminal
   - Searching through the Github issues of the program you are struggling with to find a similar or identical problem
   - Searching through online forums like [Stack Overflow](https://stackoverflow.com/)
@@ -173,4 +173,19 @@ Throughout your Linux journey, there will be many, and I mean many, times where 
 
 Nano has many keyboard shortcuts and is a quite featured editor, though you will most likely only be using it for quick edits, as anything bigger would be better done in a real editor. The only real shortcut to know in Nano is **Ctrl + X**, this saves and exits the file, prompting you before doing so as well.
 
-#that # Implementations of Time in the command line
+## Implementations of Time in the command line
+
+The `date` command can be used to quickly display the current date and time on the terminal, while this is cool it doesn't really have much of a use in day to day command line usage, it is more effective in scripts and programs, as a reliable way to get system time. Here is an example of the `date` command in use:
+
+![gif](https://i.imgur.com/M7eS3oE.gif)
+
+Another time related command you can use is `uptime`, this command outputs the amount of time the system has been on for, this can be helpful to know for a variety of reasons. By default, the `uptime` command has very messy output, so run it with the `-p` flag to make it more readable, here is an example:
+
+![gif](https://i.imgur.com/KOOTpoT.gif)
+
+The `time` command can be used to measure how much time another program takes to open up, this can be useful when diagnosing problems regarding system performance issues. Here is an example of the `time` command being used to display the startup time of the Alacritty Terminal:
+
+![gif](https://i.imgur.com/2rujRi6.gif)
+
+
+

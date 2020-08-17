@@ -116,7 +116,7 @@
         </li>
         
 
-        <li>10 minutes read</li>
+        <li>11 minutes read</li>
     </ul>
 </aside>
 
@@ -130,7 +130,7 @@
 <p>Read The F***ing Manual</p>
 </blockquote>
 <h2 id="first-some-things-to-note-before-delving-into-the-command-line">First, some things to note before delving into the command line:</h2>
-<p>The Terminal is simply an interface to interact with your computer, by itself, it is nothing but an empty program. A terminal (in 99.99% of cases) needs a <strong>Shell</strong> to function. A shell is an interactive text interface for the user, and the <strong>Terminal</strong> is the tool most often used to run commands via the shell. There are many shells out there, thought this tutorial in specific will be focusing on the most is <strong>Bash</strong>, the most popular shell in use right now and the default shell of many UNIX based operating systems, including <a href="https://en.wikipedia.org/wiki/MacOS">MacOS</a> and many <a href="https://en.wikipedia.org/wiki/Linux">Linux</a> distributions. Bash allows you to run commands from other programs or utilities, common ones you&rsquo;ll mostly likely need are those from something like the <a href="https://en.wikipedia.org/wiki/GNU_Core_Utilities">GNU Coreutils</a>, and any other programs you might use daily. Once you have familiarized yourself with these terms, you can get on to actually using the command line. And finally, and most likely <strong>The Most Important Thing You Will Read Here</strong>, you have to always be willing to read documentation and official manuals, don&rsquo;t go around annoying others for help. Some places to look at when encountering issues can include:</p>
+<p>The Terminal is simply an interface to interact with your computer, by itself, it is nothing but an empty program. A terminal (in 99.99% of cases) needs a <strong>Shell</strong> to function. A shell is an interactive text interface for the user, and the <strong>Terminal</strong> is the tool most often used to run commands via the shell. There are many shells out there, thought this tutorial in specific will be focusing on the most is <strong>Bash</strong>, the most popular shell in use right now and the default shell of many UNIX based operating systems, including most <a href="https://en.wikipedia.org/wiki/Linux">Linux</a> distributions. Bash allows you to run commands from other programs or utilities, common ones you&rsquo;ll mostly likely need are those from something like the <a href="https://en.wikipedia.org/wiki/GNU_Core_Utilities">GNU Coreutils</a>, and any other programs you might use daily. Once you have familiarized yourself with these terms, you can get on to actually using the command line. And finally, and most likely <strong>The Most Important Thing You Will Read Here</strong>, you have to always be willing to read documentation and official manuals, don&rsquo;t go around annoying others for help. Some things to do when encountering issues can include:</p>
 <ul>
 <li>The official manual of the program, accessed by running the man command for that program in the terminal</li>
 <li>Searching through the Github issues of the program you are struggling with to find a similar or identical problem</li>
@@ -223,7 +223,13 @@ You may realize. Here is an example of the <code>cat</code> command being used:<
 <p>Throughout your Linux journey, there will be many, and I mean many, times where you will have to make a quick edit to some configuration file of some sort. Editing these files with a visual editor can be a pain as you have to run the editor as root, find the file you want to edit, and then finally get to editing it. As a solution to this, computers running any GNU/Linux Distribution usually come with a terminal editor installed, called <a href="https://en.wikipedia.org/wiki/GNU_nano">Nano</a>. Nano is an editor that allows you to edit any text file through the terminal. Here is an example of me editing the <code>/etc/fstab</code> file using Nano (notice the use of sudo to access this file):</p>
 <p><img src="https://i.imgur.com/JN1wnz6.gif" alt="gif"></p>
 <p>Nano has many keyboard shortcuts and is a quite featured editor, though you will most likely only be using it for quick edits, as anything bigger would be better done in a real editor. The only real shortcut to know in Nano is <strong>Ctrl + X</strong>, this saves and exits the file, prompting you before doing so as well.</p>
-<p>#that # Implementations of Time in the command line</p>
+<h2 id="implementations-of-time-in-the-command-line">Implementations of Time in the command line</h2>
+<p>The <code>date</code> command can be used to quickly display the current date and time on the terminal, while this is cool it doesn&rsquo;t really have much of a use in day to day command line usage, it is more effective in scripts and programs, as a reliable way to get system time. Here is an example of the <code>date</code> command in use:</p>
+<p><img src="https://i.imgur.com/M7eS3oE.gif" alt="gif"></p>
+<p>Another time related command you can use is <code>uptime</code>, this command outputs the amount of time the system has been on for, this can be helpful to know for a variety of reasons. By default, the <code>uptime</code> command has very messy output, so run it with the <code>-p</code> flag to make it more readable, here is an example:</p>
+<p><img src="https://i.imgur.com/KOOTpoT.gif" alt="gif"></p>
+<p>The <code>time</code> command can be used to measure how much time another program takes to open up, this can be useful when diagnosing problems regarding system performance issues. Here is an example of the <code>time</code> command being used to display the startup time of the Alacritty Terminal:</p>
+<p><img src="https://i.imgur.com/2rujRi6.gif" alt="gif"></p>
 
 
 </article>
