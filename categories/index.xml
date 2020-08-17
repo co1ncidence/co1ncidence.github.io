@@ -51,7 +51,7 @@ command1 &lt;span style=&#34;color:#f92672&#34;&gt;||&lt;/span&gt; command2
 &lt;p&gt;&lt;code&gt;ctrl + b/f&lt;/code&gt; will move the cursor backwards and forwards respectively&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;ctrl + w&lt;/code&gt; will delete the previous word&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;ctrl + h&lt;/code&gt; works the same way as &lt;code&gt;backspace&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;ctrl + d&lt;/code&gt; will delete the character under the cursor, without disturbing previous words&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ctrl + d&lt;/code&gt; will delete the character under the cursor&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;ctrl + a&lt;/code&gt; moves the cursor all the way back to the prompt&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;ctrl + u&lt;/code&gt; will delete all text entered&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;ctrl + r&lt;/code&gt; will initiate a reverse search for previously entered commands&lt;/p&gt;

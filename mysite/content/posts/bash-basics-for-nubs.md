@@ -58,7 +58,7 @@ Unknown to me for quite a while during my usage of the terminal in Linux was tha
 
 `ctrl + h` works the same way as `backspace`
 
-`ctrl + d` will delete the character under the cursor, without disturbing previous words
+`ctrl + d` will delete the character under the cursor
 
 `ctrl + a` moves the cursor all the way back to the prompt
 
