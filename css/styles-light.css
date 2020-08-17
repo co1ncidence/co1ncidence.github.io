@@ -486,7 +486,8 @@ blockquote {
   border-left: solid 0.5em #38322e;
   padding: 0.2em 2em;
   position: relative;
-  background-color: #fff2f2;
+  background-color: #e6e3e1;
+  border-radius: 12px;
 }
 
 @media only screen and (max-width: 800px) {
