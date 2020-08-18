@@ -1,5 +1,5 @@
 html {
-  background-color: #38322e;
+  background-color: #83756c;
 }
 
 body {
@@ -10,16 +10,12 @@ body {
   padding-left: 2vw;
   padding-top: 5vh;
   padding-bottom: 5vh;
-  font-family: "Source Sans Pro", "PT Sans", "Noto Sans", "Arial", sans-serif;
+  font-family: serif;
   background-color: #fdf9f8;
   color: #26221f;
-  border-radius: 10px 10px 10px 10px;
-  -moz-border-radius: 10px 10px 10px 10px;
-  -webkit-border-radius: 10px 10px 10px 10px;
-  border: 0px solid #000000;
-  -webkit-box-shadow: 0px 0px 16px 10px rgba(0,0,0,0.5);
- 	-moz-box-shadow: 0px 0px 16px 10px rgba(0,0,0,0.5);
- 	box-shadow: 0px 0px 16px 10px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 h1,
@@ -29,7 +25,7 @@ h4,
 h5,
 h6,
 time {
-  font-family: "Source Sans Pro", "Noto Sans", "Arial", "PT Sans", sans-serif;
+  font-family: sans-serif;
   font-weight: Bold;
 }
 
@@ -118,9 +114,9 @@ right: 0;
 }
 
 #container nav {
-  border-bottom: solid 4px #b1a7a0;
+  border-bottom: solid 4px #26221f;
   padding-bottom: 0.5em;
-  font-family: "Source Sans Pro", "Noto Sans", "Arial", "PT Sans", sans-serif;
+  font-family: serif;
 }
 
 #container nav ul {
@@ -299,7 +295,7 @@ width: 100%;
 
 .meta-aside, #container main section#home ul li aside, #container main article aside {
   margin: 0.5em 0;
-  font-family: "Source Sans Pro", "Noto Sans", "Arial", "PT Sans", sans-serif;
+  font-family: serif;
   color: #83756c;
   font-size: 0.8em;
 }
@@ -357,7 +353,7 @@ a:hover:after {
   -webkit-box-shadow: -1px 2px 15px -3px rgba(0,0,0,0.46);
   -moz-box-shadow: -1px 2px 15px -3px rgba(0,0,0,0.46);
   border: 1px solid #38322e;
-  border-radius: 4px;
+  /* border-radius: 4px; */
 }
 
 .full-image, figure.full img, img[src*="full"] {
