@@ -349,11 +349,9 @@ a:hover:after {
 
 .image, figure img, img {
   width: 100%;
-  box-shadow: -1px 2px 15px -3px rgba(0,0,0,0.46);
-  -webkit-box-shadow: -1px 2px 15px -3px rgba(0,0,0,0.46);
-  -moz-box-shadow: -1px 2px 15px -3px rgba(0,0,0,0.46);
-  border: 1px solid #38322e;
-  /* border-radius: 4px; */
+  -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
 }
 
 .full-image, figure.full img, img[src*="full"] {
