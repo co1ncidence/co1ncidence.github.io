@@ -394,7 +394,6 @@ figure {
 figure figcaption p {
   margin-top: 0.3em;
   font-size: 0.8em;
-  font-style: italic;
 }
 
 figure.full {
@@ -425,7 +424,7 @@ table {
 }
 
 table th {
-  background-color: #e6e3e1;
+  background-color: #f9ece9;
 }
 
 table th, table td {
