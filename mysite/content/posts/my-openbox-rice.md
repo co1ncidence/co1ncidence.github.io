@@ -3,6 +3,7 @@ title: "My Openbox Rice(s)"
 date: 2020-08-04T00:19:18-05:00
 tags:
   - Showcase
+  - Ricing and Theming
 ---
 
 ![img](https://i.imgur.com/NNM1EHU.jpg)

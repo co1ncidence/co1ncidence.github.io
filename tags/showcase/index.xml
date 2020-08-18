@@ -6,7 +6,7 @@
    <description>Recent content in Showcase on nuaNce&#39;s blog</description>
    <generator>Hugo -- gohugo.io</generator>
    <language>en-us</language>
-   <lastBuildDate>Tue, 04 Aug 2020 00:19:18 -0500</lastBuildDate>
+   <lastBuildDate>Fri, 14 Aug 2020 10:43:39 -0500</lastBuildDate>
    
        <atom:link href="https://co1ncidence.github.io/tags/showcase/index.xml" rel="self" type="application/rss+xml" />
    
@@ -133,6 +133,25 @@ You may realize. Here is an example of the &lt;code&gt;cat&lt;/code&gt; command 
 &lt;p&gt;&lt;img src=&#34;https://i.imgur.com/KOOTpoT.gif&#34; alt=&#34;gif&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;time&lt;/code&gt; command can be used to measure how much time another program takes to open up, this can be useful when diagnosing problems regarding system performance issues. Here is an example of the &lt;code&gt;time&lt;/code&gt; command being used to display the startup time of the Alacritty Terminal:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.imgur.com/2rujRi6.gif&#34; alt=&#34;gif&#34;&gt;&lt;/p&gt;
+</description>
+     </item>
+   
+     <item>
+       <title>Some Cool Software</title>
+       <link>https://co1ncidence.github.io/posts/some-cool-software/</link>
+       <pubDate>Fri, 14 Aug 2020 10:43:39 -0500</pubDate>
+       
+       <guid>https://co1ncidence.github.io/posts/some-cool-software/</guid>
+       <description>&lt;p&gt;This is a list of some of the best software that I have come across in my journey using Linux. I highly recommend that you try them out and maybe even give the developers a well earned star on Github to show your support :) I&amp;rsquo;ve divided the software into sections based on their uses, so if you don&amp;rsquo;t see what you need just scroll down until you see the type of software you are searching for.&lt;/p&gt;
+&lt;h2 id=&#34;image-and-video-software&#34;&gt;Image And Video Software&lt;/h2&gt;
+&lt;h3 id=&#34;maimhttpsgithubcomnaelstrofmaim-the-better-screenshot-tool&#34;&gt;&lt;a href=&#34;https://github.com/naelstrof/maim&#34;&gt;Maim&lt;/a&gt;, the better screenshot tool&lt;/h3&gt;
+&lt;p&gt;One of the most important pieces of software you can have is something to capture you display, while &lt;a href=&#34;https://github.com/dreamer/scrot&#34;&gt;scrot&lt;/a&gt; does the job quite well, it has issues with selecting areas and windows, which is where Maim comes in, it does basically the same thing as scrot but without any of the rendering and selection issues. Fun fact, every screenshot you see on this blog was taken using Maim.&lt;/p&gt;
+&lt;h3 id=&#34;sxivhttpsgithubcommuennichsxiv-the-image-viewer-that-well-views-images&#34;&gt;&lt;a href=&#34;https://github.com/muennich/sxiv&#34;&gt;SXIV&lt;/a&gt;, the image viewer that, well, views images&lt;/h3&gt;
+&lt;h3 id=&#34;giphhttpsgithubcomphischgiph-easily-record-gifs-of-your-screen&#34;&gt;&lt;a href=&#34;https://github.com/phisch/giph&#34;&gt;Giph&lt;/a&gt;, easily record gifs of your screen&lt;/h3&gt;
+&lt;h3 id=&#34;scrhttpsgithubcom6gkscr-a-small-script-to-easily-take-screenshots-and-record-videos&#34;&gt;&lt;a href=&#34;https://github.com/6gk/scr&#34;&gt;Scr&lt;/a&gt;, a small script to easily take screenshots and record videos&lt;/h3&gt;
+&lt;h3 id=&#34;ripcordhttpscancelfmripcord-an-dangerously-lightweight-and-minimal-discordslack-client&#34;&gt;&lt;a href=&#34;https://cancel.fm/ripcord/&#34;&gt;Ripcord&lt;/a&gt;, an dangerously lightweight and minimal Discord/Slack client&lt;/h3&gt;
+&lt;h3 id=&#34;polybarhttpsgithubcompolybarpolybar-an-easily-configured-infinitely-customizable-desktop-statusbar&#34;&gt;&lt;a href=&#34;https://github.com/polybar/polybar&#34;&gt;Polybar&lt;/a&gt;, an easily configured, infinitely customizable desktop statusbar&lt;/h3&gt;
+&lt;h3 id=&#34;lyrebirdhttpsgithubcomchxrltlyrebird-simple-and-easy-to-use-voice-changer-for-linux&#34;&gt;&lt;a href=&#34;https://github.com/chxrlt/lyrebird&#34;&gt;Lyrebird&lt;/a&gt;, Simple and easy to use Voice Changer for Linux&lt;/h3&gt;
 </description>
      </item>
    

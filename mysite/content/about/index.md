@@ -15,4 +15,4 @@ Some books that I've really found myself enjoying during the quarantine and basi
 | Robert Jordan     | The Wheel of Time        | A Memory of Light           | [The Eye of The World](https://b-ok.cc/book/984472/9743af)  |
 
 ### Final notes
-This blog was started mostly as a place to practice some of my writing skills and `html/css`, so please don't take my opinions or anything too seriously. If I say something that offends you just don't look at my blog anymore **:P**
+This blog was started mostly as a place to practice some of my writing skills and `html/css`, so please don't take my opinions or anything too seriously. If I say something that offends you just don't look at my blog anymore. **:P**
