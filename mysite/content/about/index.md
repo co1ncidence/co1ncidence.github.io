@@ -11,6 +11,8 @@ Gaming was a thing for me a while ago but it's kinda meh now, I prefer doing mor
 
 What's my favorite food? Well, this is a bit of a touchy topic, I usually can't decide but I *have* been craving some nice [Mutton Nihari](https://duckduckgo.com/?q=mutton+nihari&ia=images&iax=images) lately...
 
+I don't see money that often, and my best friend is a 7 month old cat named Felix. Quarantine has got me stuck at home but I find things to do, you'll be reading about said things quite often here. See you around :P
+
 ### Recommended Reads
 Some books that I like and think you will too:
 
@@ -19,6 +21,3 @@ Some books that I like and think you will too:
 | Brandon Sanderson | The Stormlight Archive   | Oathbringer                 | [The Way of Kings](https://b-ok.cc/book/4219340/4b2f48)     |
 | Patrick Rothfuss  | The Kingkiller Chronicle | The Wise Man's Fear         | [The Name of The Wind](https://b-ok.cc/book/1564700/b39690) |
 | Robert Jordan     | The Wheel of Time        | A Memory of Light           | [The Eye of The World](https://b-ok.cc/book/984472/9743af)  |
-
-### Final notes
-This blog was started mostly as a place to practice some of my writing skills and `html/css`, so please don't take my opinions or anything too seriously. If I say something that offends you just don't look at my blog anymore. **:P**
