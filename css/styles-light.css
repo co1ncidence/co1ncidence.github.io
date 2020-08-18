@@ -1,5 +1,5 @@
 html {
-  background-color: #584f49;
+  background-color: #38322e;
 }
 
 body {
@@ -13,9 +13,9 @@ body {
   font-family: serif;
   background-color: #fdf9f8;
   color: #26221f;
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(15,13,12,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(15,13,12,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(15,13,12,0.75);
 }
 
 h1,
@@ -60,36 +60,18 @@ time {
 
 #container header h1 a {
   color: #4db4aa;
-  position: relative;
   text-decoration: none;
-  transition: color .4s ease-out;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 4px;
+  transition: background-size cubic-bezier(0,.5,0,1) 0.3s;
 }
 
-#container header h1 a:hover {
-  color: #5ec5bb;
-  right: 0;
+#container header h1 a:hover,
+a:focus {
   text-decoration: none;
-}
-
-#container header h1 a:hover:after {
-  border-color: #5ec5bb;
-  right: 0;
-}
-
-#container header h1 a:after {
-  border-radius: 1em;
-  border-top: .1em solid #5ec5bb;
-  content: "";
-  position: absolute;
-    right: 100%;
-    bottom: .14em;
-    left: 0;
-  transition: right .4s cubic-bezier(0,.5,0,1),
-              border-color .4s ease-out;
-}
-
-#container header h1 a:hover:after {
-right: 0;
+  background-size: 100% 4px;
 }
 
 #container header ul {
@@ -313,38 +295,19 @@ width: 100%;
 
 
 a {
-  color: #635851;
-  position: relative;
+  color: #8e7f75;
   text-decoration: none;
-  transition: color .4s ease-out;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size cubic-bezier(0,.5,0,1) 0.3s;
 }
 
-a:hover {
-  color: #83756c;
-  right: 0;
+a:hover,
+a:focus {
   text-decoration: none;
-}
-
-a:hover:after {
-  border-color: #83756c;
-  right: 0;
-}
-
-a:after {
-  border-radius: 1em;
-  border-top: .1em solid #635851;
-  content: "";
-  position: absolute;
-    right: 100%;
-    bottom: .14em;
-    left: 0;
-  transition: right .2s cubic-bezier(0,.5,0,1),
-              border-color .2s ease-out;
-}
-
-a:hover:after {
-  animation: anchor-underline 1s cubic-bezier(0,.5,0,1);
-  border-color: #83756c;
+  background-size: 100% 2px;
 }
 
 .image, figure img, img {
@@ -463,7 +426,7 @@ table {
 }
 
 table th {
-  background-color: #f8ede9;
+  background-color: #e6e3e1;
 }
 
 table th, table td {
