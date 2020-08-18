@@ -28,6 +28,8 @@ This is just a collection of cool tips and tricks that'll help with fully optimi
 
 `~` is an alias that stands for `/home/username`, with "username" being the user name of the currently active user. It can be used with many commands, so once again, be careful with what you do. If you are ever unsure, just remind yourself that it **directly** translates to `/home/username`, that'll help you get a bearing on the command you are about to run.
 
+`!!` is an alias for the last command run. For example, if you ran a command but forgot to add `sudo` or something, you can simply run `sudo !!` instead of typing out the whole of the previous command.
+
 
 ### Conditional execution:
 `&` is a character you can insert after a command and use to spawn command outputs in the background, and `&&` can be used to implement **Conditional Execution**, which means you can run multiple commands in succession, for example:
@@ -48,6 +50,7 @@ fc-list | grep Roboto
 ```
 
 ### Keyboard shortcuts
+
 Unknown to me for quite a while during my usage of the terminal in Linux was that there were many keyboard shortcuts that could be used to navigate and control text much faster in the command line. These are mostly inherited from some of the keyboard shortcuts in older editors like `vi`, from what I can tell. Here are the ones I find myself using most often:
 
 `ctrl + arrow keys` will move the cursor one word in the respective direction
@@ -95,7 +98,7 @@ cd ~/
 
 `ls` is one of the commands you will use the most, this command lists all of the files and folders in the current folder, allowing you to get a better idea of where you are. Here is an example of the `ls` command in use:
 
-![gif](https://i.imgur.com/Klpg4s7.gif)
+![gif](https://i.imgur.com/JeHH33T.gif)
 
 `touch` is used (mostly) to create a new, empty file in the folder you are currently occupying, the filetype can vary based on name extension, for example, to create a new `css` file you would run
 ```sh
@@ -111,7 +114,14 @@ while `touch` is a cool command, it can sometimes be a pain to type, so another 
 :> newfile.css
 ```
 
+`mkdir` is like `touch`, but instead of creating a single file it creates an entire directory, and like `touch`, this can be used to create a folder anywhere on your system, provided you have the right permissions to do so, here is an example of the `mkdir` command:
+
+```sh
+mkdir folder/
+```
+
 `mv` is a command used to move files from one location to another, and because of this it can also be used to replace a file with another. It is also possible to change the name of a file when moving it. Example usage:
+
 ```sh
 mv /usr/share/file.txt ~/Documents/newfile.txt
 #mv can also be used to rename files
@@ -133,6 +143,8 @@ rm -r -f folder/
 Though separating flags is not necessary, you can just combine them into one flag like this:
 ```sh
 rm -rf folder/
+#you can also use the alternative "rmdir" command
+rmdir folder/
 ```
 Thus is how you can use `rm` to remove folders as well as individual files.
 
@@ -164,11 +176,11 @@ cat .bashrc
 Will show you the contents of your `.bashrc` file, otherwise known as the bash shell configuration file, more about this later. `cat` is very useful when you want to look at certain content in a file but don't want to open it in your editor.
 You may realize. Here is an example of the `cat` command being used:
 
-![gif](https://i.imgur.com/Nf93ABf.gif)
+![gif](https://i.imgur.com/5Axaprt.gif)
 
 However, that `cat` can be annoying when used on longer files, as you have to manually scroll back if you want to view any content near the beginning of the file. This is where another, very useful command comes in. The `less` command is similar to `cat`, but instead of just throwing all of the output at you and leaving you alone to manage it, `less` allows you to view the file in a scrolling window, with the top of the file being the beginning. You can then use the Up and Down arrow keys of J and K to navigate the file as you want. For those of you comfortable with them, Vim keybindings work in `less` as well. As you can see here, the experience is far more intuitive:
 
-![gif](https://i.imgur.com/8RmoBjK.gif)
+![gif](https://i.imgur.com/TaXK4Rf.gif)
 
 Sometimes, however, we have too much output of a command, one example of such a problematic command can be the `fc-list` command, which lists all fonts currently installed on your system. You can filter the output of this command using `grep`, an extremely powerful search utility. `grep` however, usually requires piping, which I talked about earlier. Here is a basic example of the usage of `grep`:
 
@@ -183,24 +195,24 @@ fc-list | grep Roboto
 ```
 
 ## Editing files in the command line using GNU Nano:
-Throughout your Linux journey, there will be many, and I mean many, times where you will have to make a quick edit to some configuration file of some sort. Editing these files with a visual editor can be a pain as you have to run the editor as root, find the file you want to edit, and then finally get to editing it. As a solution to this, computers running any GNU/Linux Distribution usually come with a terminal editor installed, called [Nano](https://en.wikipedia.org/wiki/GNU_nano). Nano is an editor that allows you to edit any text file through the terminal. Here is an example of me editing the `/etc/fstab` file using Nano (notice the use of sudo to access this file):
+Throughout your Linux journey, there will be many, and I mean many, times where you will have to make a quick edit to some configuration file of some sort. Editing these files with a visual editor can be a pain as you have to run the editor as root, find the file you want to edit, and then finally get to editing it. As a solution to this, computers running any GNU/Linux Distribution usually come with a terminal editor installed, called [Nano](https://en.wikipedia.org/wiki/GNU_nano). Nano is an editor that allows you to edit any text file through the terminal. Here is an example of me editing the `/etc/fstab` file using Nano (note the use of sudo to access this file):
 
-![gif](https://i.imgur.com/JN1wnz6.gif)
+![gif](https://i.imgur.com/72sEkgT.gif)
 
 Nano has many keyboard shortcuts and is a quite featured editor, though you will most likely only be using it for quick edits, as anything bigger would be better done in a real editor. The only real shortcut to know in Nano is **Ctrl + X**, this saves and exits the file, prompting you before doing so as well.
 
 ## Implementations of Time in the command line
 The `date` command can be used to quickly display the current date and time on the terminal, while this is cool it doesn't really have much of a use in day to day command line usage, it is more effective in scripts and programs, as a reliable way to get system time. Here is an example of the `date` command in use:
 
-![gif](https://i.imgur.com/M7eS3oE.gif)
+![gif](https://i.imgur.com/7YiAa6m.gif)
 
 Another time related command you can use is `uptime`, this command outputs the amount of time the system has been on for, this can be helpful to know for a variety of reasons. By default, the `uptime` command has very messy output, so run it with the `-p` flag to make it more readable, here is an example:
 
-![gif](https://i.imgur.com/KOOTpoT.gif)
+![gif](https://i.imgur.com/0BMdeOh.gif)
 
 The `time` command can be used to measure how much time another program takes to open up, this can be useful when diagnosing problems regarding system performance issues. Here is an example of the `time` command being used to display the startup time of the Alacritty Terminal:
 
-![gif](https://i.imgur.com/2rujRi6.gif)
+![gif](https://i.imgur.com/v2BNmAe.gif)
 
 
 
