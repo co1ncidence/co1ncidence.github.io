@@ -3,10 +3,16 @@ title: "About Me"
 date: 2020-08-02T23:44:22-05:00
 ---
 
-I'm just a bored windrunner looking for fun stuff to do over the summer. I consider myself a Linux enthusiast and a veteran ricer, I take customization very seriously and have worked quite a bit to perfect my workflow. I am also an avid anti-normie and believe that everyone should care more about their online presence and what sorts of software they use. And, if you haven't already guessed, I am a huge advocate of FOSS. I've been a car guy for a lot of my life but am not really good at talking about them (since I've never driven one), so don't expect too many car related posts. I'm an avid gamer and former a Semi-Pro CS:GO player, though due to schoolwork and other concerns I have stopped playing competitively for the time being. And I am, of course, a longtime lover of fantasy.
+Just a lost windrunner who spends too much time wasting it. A large part of which is my obsession with Linux and ricing. Along with, of course, a good peach and chocolate covered almonds.
+
+I've always been a fan of the [Fjords of Norway](https://duckduckgo.com/?q=fjords+of+norway&iax=images&ia=images) but recently discovered the beauty of places like [Iceland](https://duckduckgo.com/?q=iceland+mountains&iax=images&ia=images) and [Baffin Island](https://duckduckgo.com/?q=baffin+island&iax=images&ia=images), both of which are making my bucket list seem quite expensive.
+
+Gaming was a thing for me a while ago but it's kinda meh now, I prefer doing more productive things, though some [Hollow Knight](https://store.steampowered.com/app/367520/Hollow_Knight/) from time to time is a nice getaway.
+
+What's my favorite food? Well, this is a bit of a touchy topic, I usually can't decide but I *have* been craving some nice [Mutton Nihari](https://duckduckgo.com/?q=mutton+nihari&ia=images&iax=images) lately...
 
 ### Recommended Reads
-Some books that I've really found myself enjoying during the quarantine and basically any free time that I get:
+Some books that I like and think you will too:
 
 | Author            | Series                   | Favorite Book               | Link to book. 1 (PDF)                                       |
 |-------------------|--------------------------|-----------------------------|-------------------------------------------------------------|
