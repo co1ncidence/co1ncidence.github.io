@@ -6,7 +6,7 @@ tags:
   - Ricing and Theming
 ---
 
-![img](https://i.imgur.com/NNM1EHU.jpg)
+![img](https://i.redd.it/uhmfcesa1zh51.png)
 
 Above you can see a pretty complete screenshot of my openbox rice. I like to go for a kinda comfy, retro feels with my rices and like to avoid too many vivid colors. My polybar is also kept to a minimal, as to keep my (fairly) weak laptop from being under too much stress. One of my main goals with this rice was to minimize resource usage. I managed to accomplish this very well, with **my ram usage after a fresh boot and with mpd running being only 280mb.** This is without consequence as well, I have the cupsd daemon running to manage print jobs, and with networkmanager running as well. One of my main goals with this system was to have something that not only was beautiful and efficient, but also usable in every scenario.
 
@@ -27,6 +27,9 @@ I also, of course, have an toggling polybar as it tends to get in my way because
 In addition to all this, I have just about every single one of my most used programs and commands mapped to keyboard shortcuts as possible using [sxhkd](https://github.com/baskerville/sxhkd).
 
 ## Some screenshots from some of my previous rices:
+
+![img](https://i.imgur.com/NNM1EHU.jpg)
+&nbsp;
 
 ![img](https://cdn.discordapp.com/attachments/743868455547305985/743868817028939876/image.png)
 &nbsp;

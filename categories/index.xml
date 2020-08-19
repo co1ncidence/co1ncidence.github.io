@@ -207,7 +207,7 @@ You may realize. Here is an example of the &lt;code&gt;cat&lt;/code&gt; command 
        <pubDate>Tue, 04 Aug 2020 00:19:18 -0500</pubDate>
        
        <guid>https://co1ncidence.github.io/posts/my-openbox-rice/</guid>
-       <description>&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/NNM1EHU.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
+       <description>&lt;p&gt;&lt;img src=&#34;https://i.redd.it/uhmfcesa1zh51.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Above you can see a pretty complete screenshot of my openbox rice. I like to go for a kinda comfy, retro feels with my rices and like to avoid too many vivid colors. My polybar is also kept to a minimal, as to keep my (fairly) weak laptop from being under too much stress. One of my main goals with this rice was to minimize resource usage. I managed to accomplish this very well, with &lt;strong&gt;my ram usage after a fresh boot and with mpd running being only 280mb.&lt;/strong&gt; This is without consequence as well, I have the cupsd daemon running to manage print jobs, and with networkmanager running as well. One of my main goals with this system was to have something that not only was beautiful and efficient, but also usable in every scenario.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.imgur.com/jjK0MiH.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Another part of my rice I am really proud of is integrating a keyboard based workflow into openbox, I have the ability move, resize, and snap windows all with the keyboard, see this gif for more a more clear explanation:&lt;/p&gt;
@@ -218,6 +218,8 @@ You may realize. Here is an example of the &lt;code&gt;cat&lt;/code&gt; command 
 &lt;p&gt;&lt;img src=&#34;https://i.imgur.com/wpwsaZd.gif&#34; alt=&#34;gif&#34;&gt;&lt;/p&gt;
 &lt;p&gt;In addition to all this, I have just about every single one of my most used programs and commands mapped to keyboard shortcuts as possible using &lt;a href=&#34;https://github.com/baskerville/sxhkd&#34;&gt;sxhkd&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;some-screenshots-from-some-of-my-previous-rices&#34;&gt;Some screenshots from some of my previous rices:&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/NNM1EHU.jpg&#34; alt=&#34;img&#34;&gt;
+ &lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://cdn.discordapp.com/attachments/743868455547305985/743868817028939876/image.png&#34; alt=&#34;img&#34;&gt;
  &lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://cdn.discordapp.com/attachments/743868455547305985/743868991428100156/image.png&#34; alt=&#34;img&#34;&gt;
