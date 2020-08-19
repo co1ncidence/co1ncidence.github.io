@@ -424,7 +424,8 @@ table {
 }
 
 table th {
-  background-color: #f9ece9;
+  background-color: #38322e;
+  color: #f4e0da;
 }
 
 table th, table td {
