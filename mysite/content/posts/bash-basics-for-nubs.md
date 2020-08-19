@@ -213,3 +213,5 @@ Another time related command you can use is `uptime`, this command outputs the a
 The `time` command can be used to measure how much time another program takes to open up, this can be useful when diagnosing problems regarding system performance issues. Here is an example of the `time` command being used to display the startup time of the Alacritty Terminal:
 
 ![gif](https://i.imgur.com/v2BNmAe.gif)
+
+# System Management in the Terminal

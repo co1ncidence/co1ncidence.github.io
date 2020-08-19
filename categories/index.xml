@@ -158,6 +158,7 @@ You may realize. Here is an example of the &lt;code&gt;cat&lt;/code&gt; command 
 &lt;p&gt;&lt;img src=&#34;https://i.imgur.com/0BMdeOh.gif&#34; alt=&#34;gif&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;time&lt;/code&gt; command can be used to measure how much time another program takes to open up, this can be useful when diagnosing problems regarding system performance issues. Here is an example of the &lt;code&gt;time&lt;/code&gt; command being used to display the startup time of the Alacritty Terminal:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.imgur.com/v2BNmAe.gif&#34; alt=&#34;gif&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;system-management-in-the-terminal&#34;&gt;System Management in the Terminal&lt;/h1&gt;
 </description>
      </item>
    
