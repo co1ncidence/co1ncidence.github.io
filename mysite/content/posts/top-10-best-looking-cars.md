@@ -1,10 +1,20 @@
 ---
-title: "Top 8 Best Looking Cars"
+title: "Top 10 Best Looking Cars"
 date: 2020-08-05T15:58:49-05:00
 tags:
   - Cars
   - Opinion
 ---
+
+## 10. Mercedes AMG GT-R
+One of the only cars in recent times to really pose a threat to the sales of the 911, the GT does a good job of representing a similar muscular and round look while also adhering to the aesthetic of it's predecessor, the SLS AMG.
+
+![img](https://i.imgur.com/mwGVMaC.jpg)
+
+## 9. Datsun 240z Fairlady (bodykit)
+One of the most well-known sports cars of it's time and now a JDM legend, the amount of things that have been done to the Datsun are insane, here is NightRide's iteration of the vehicle, one of the best looking ones I've found:
+
+![img](https://i.imgur.com/XXhE6B9.jpg)
 
 ## 8. De Tomaso Pantera,
 
@@ -16,13 +26,13 @@ While some may find the more exotic "GTS" variant of the Pantera to be the one t
 
 Couldn't have a list like this without the legend itself.
 
-![img](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi1.wp.com%2Fwww.motoringresearch.com%2Fwp-content%2Fuploads%2F2019%2F03%2FBMW-E30-M3-Redux-001.jpg%3Fresize%3D1500%252C844%26ssl%3D1&f=1&nofb=1)
+![img](https://i.imgur.com/BsUufV0.jpg)
 
-## 6. Koenigsegg Agera R,
+## 6. Koenigsegg One:1,
 
-I've always had a thing for more muscular looking cars, but the style that real muscle cars have doesn't really hit the spot I want it to. The way Koenigsegg designed the Agera, however, matches perfectly with what I mean. Long, sleek lines with a short hood and flat buttresses really make this car stand out in the upper echelon of the supercar industry.
+I've always had a thing for more muscular looking cars, but the style that real muscle cars have doesn't really hit the spot I want it to. The way Koenigsegg designed the One:1, however, matches perfectly with what I mean. Long, sleek lines with a short hood and flat buttresses really make this car stand out in the upper echelon of the hypercar scene. The fact that it is one of the fastest cars in the world also helps its case.
 
-![img](https://i.imgur.com/oVeyjg0.jpg)
+![img](https://www.koenigsegg.com/wp-content/uploads/2019/01/Julia_LaPalme_LagunaSeca_2015_MGL3058.jpg)
 
 ## 5. Porsche 911 Carrera (992),
 
@@ -50,6 +60,6 @@ A spin-off model of what was arguably one of the best looking Ferraris of all ti
 
 ## 1. Aston Martin DBS Superleggera,
 
-I Don't think that there even really is any question as to why I chose the Superleggera as the number one entry in my list.
+It's the best looking, no argument here.
 
 ![img](https://i.imgur.com/8zDcqjT.png)
