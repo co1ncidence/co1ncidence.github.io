@@ -16,7 +16,7 @@ I don't see money that often, and my best friend is a 7 month old cat named Feli
 ### Recommended Reads
 Some books that I like and think you will too:
 
-| Author            | Series                   | Favorite Book               | Link to book. 1 (PDF)                                       |
+| Author            | Series                   | Favorite Book               | Link to book.                                               |
 |-------------------|--------------------------|-----------------------------|-------------------------------------------------------------|
 | Brandon Sanderson | The Stormlight Archive   | Oathbringer                 | [The Way of Kings](https://b-ok.cc/book/4219340/4b2f48)     |
 | Patrick Rothfuss  | The Kingkiller Chronicle | The Wise Man's Fear         | [The Name of The Wind](https://b-ok.cc/book/1564700/b39690) |
