@@ -101,7 +101,7 @@
         </li>
         
 
-        <li>12 minutes read</li>
+        <li>13 minutes read</li>
     </ul>
 </aside>
 
@@ -115,7 +115,7 @@
 <p>Read The F***ing Manual</p>
 </blockquote>
 <h2 id="first-some-things-to-note-before-delving-into-the-command-line">First, some things to note before delving into the command line:</h2>
-<p>The Terminal is simply an interface to interact with your computer, by itself, it is nothing but an empty program. A terminal (in 99.99% of cases) needs a <strong>Shell</strong> to function. A shell is an interactive text interface for the user, and the <strong>Terminal</strong> is the tool most often used to run commands via the shell. There are many shells out there, thought this tutorial in specific will be focusing on the most is <strong>Bash</strong>, the most popular shell in use right now and the default shell of many UNIX based operating systems, including most <a href="https://en.wikipedia.org/wiki/Linux">Linux</a> distributions. Bash allows you to run commands from other programs or utilities, common ones you&rsquo;ll mostly likely need are those from something like the <a href="https://en.wikipedia.org/wiki/GNU_Core_Utilities">GNU Coreutils</a>, and any other programs you might use daily. Once you have familiarized yourself with these terms, you can get on to actually using the command line. And finally, and most likely <strong>The Most Important Thing You Will Read Here</strong>, you have to always be willing to read documentation and official manuals, don&rsquo;t go around annoying others for help. Some things to do when encountering issues can include:</p>
+<p>The Terminal is simply an interface to interact with your computer, by itself, it is nothing but an empty program. A terminal (in 99.99% of cases) needs a <strong>Shell</strong> to function. A shell is an interactive text interface for the user, and the <strong>Terminal</strong> is the tool most often used to run commands via the shell. There are many shells out there, thought this tutorial in specific will be focusing on the most is <strong>Bash</strong>, the most popular shell in use right now and the default shell of most <a href="https://en.wikipedia.org/wiki/Linux">Linux</a> distributions. Bash allows you to run commands from other programs or utilities, common ones you&rsquo;ll mostly likely need are those from something like the <a href="https://en.wikipedia.org/wiki/GNU_Core_Utilities">GNU Coreutils</a>, and any other programs you might use daily. Once you have familiarized yourself with these terms, you can get on to actually using the command line. And finally, and most likely <strong>The Most Important Thing You Will Read Here</strong>, you have to always be willing to read documentation and official manuals, don&rsquo;t go around annoying others for help. Some things to do when encountering issues can include:</p>
 <ul>
 <li>The official manual of the program, accessed by running the man command for that program in the terminal</li>
 <li>Searching through the Github issues of the program you are struggling with to find a similar or identical problem</li>
@@ -132,7 +132,7 @@
 <p><code>!!</code> is an alias for the last command run. For example, if you ran a command but forgot to add <code>sudo</code> or something, you can simply run <code>sudo !!</code> instead of typing out the whole of the previous command.</p>
 <h3 id="conditional-execution">Conditional execution:</h3>
 <p><code>&amp;</code> is a character you can insert after a command and use to spawn command outputs in the background, and <code>&amp;&amp;</code> can be used to implement <strong>Conditional Execution</strong>, which means you can run multiple commands in succession, for example:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#command2 will only run if command1 has finished executing</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#command2 will only run if command1 is successful</span>
 command1 <span style="color:#f92672">&amp;&amp;</span> command2
 </code></pre></div><p>You can also do another kind of sequential execution in the command line, using the <code>||</code> function, this works in a similar way to <code>&amp;&amp;</code> but instead of running a command after the execution of the previous one, it runs a second command only if the first one failed to run, sort of like a &ldquo;Plan B&rdquo; if you will. Here is an example:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#command2 will only run if command1 fails for any reason</span>
@@ -141,7 +141,7 @@ command1 <span style="color:#f92672">||</span> command2
 <p><strong>Pipes</strong> are things you can use to filter one command through another, thus allowing for things like controlling outputs of commands. Pipes have many uses so I recommend that you look more into them as there is no way I can go into full depth here. Here is an example of a pipe being used to filter the output of of <code>fc-list</code> through <code>grep</code> to only show fonts with a certain name.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">fc-list | grep Roboto
 </code></pre></div><h3 id="keyboard-shortcuts">Keyboard shortcuts</h3>
-<p>Unknown to me for quite a while during my usage of the terminal in Linux was that there were many keyboard shortcuts that could be used to navigate and control text much faster in the command line. These are mostly inherited from some of the keyboard shortcuts in older editors like <code>vi</code>, from what I can tell. Here are the ones I find myself using most often:</p>
+<p>Unknown to me for quite a while during my usage of the terminal in Linux was that there were many keyboard shortcuts that could be used to navigate and control text much faster in the command line. These are mostly inherited from some of the keyboard shortcuts in editors like <code>emacs</code>, from what I can tell. Here are the ones I find myself using most often:</p>
 <p><code>ctrl + arrow keys</code> will move the cursor one word in the respective direction</p>
 <p><code>ctrl + b/f</code> will move the cursor backwards and forwards respectively</p>
 <p><code>ctrl + w</code> will delete the previous word</p>
@@ -231,7 +231,10 @@ You may realize. Here is an example of the <code>cat</code> command being used:<
 <p><img src="https://i.imgur.com/0BMdeOh.gif" alt="gif"></p>
 <p>The <code>time</code> command can be used to measure how much time another program takes to open up, this can be useful when diagnosing problems regarding system performance issues. Here is an example of the <code>time</code> command being used to display the startup time of the Alacritty Terminal:</p>
 <p><img src="https://i.imgur.com/v2BNmAe.gif" alt="gif"></p>
-<h1 id="system-management-in-the-terminal">System Management in the Terminal</h1>
+<h1 id="process-management-in-the-terminal">Process Management in the Terminal</h1>
+<p><code>pgrep</code> is a command that can be used to find the <code>pid</code> of a program. The <code>pid</code> is sort of like the internal name the process has, and knowing this allows you do to things like kill or disable a currently running process. Here is an example of using <code>pgrep</code> to find the <code>pid</code> of alacritty, a program which I currently have open:</p>
+<p><img src="https://i.imgur.com/FAqapLO.gif" alt="gif"></p>
+<p>Once you have the <code>pid</code>, you can now use commands like <code>pkill</code>, which allows you to kill a currently running process using an array of 15 signals. The most important ones though, and the only ones you really need to know right now, are signals 9 and 15, otherwise known as <code>SIGKILL</code> and <code>SIGTERM</code> respectively. To call on these signals you have to use <strong>Flags</strong>, as previously mentioned.</p>
 
 
 </article>

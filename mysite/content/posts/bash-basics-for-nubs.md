@@ -11,7 +11,7 @@ When I first started with Linux, and especially the command line, It was difficu
 > Read The F***ing Manual
 
 ## First, some things to note before delving into the command line:
-The Terminal is simply an interface to interact with your computer, by itself, it is nothing but an empty program. A terminal (in 99.99% of cases) needs a **Shell** to function. A shell is an interactive text interface for the user, and the **Terminal** is the tool most often used to run commands via the shell. There are many shells out there, thought this tutorial in specific will be focusing on the most is **Bash**, the most popular shell in use right now and the default shell of many UNIX based operating systems, including most [Linux](https://en.wikipedia.org/wiki/Linux) distributions. Bash allows you to run commands from other programs or utilities, common ones you'll mostly likely need are those from something like the [GNU Coreutils](https://en.wikipedia.org/wiki/GNU_Core_Utilities), and any other programs you might use daily. Once you have familiarized yourself with these terms, you can get on to actually using the command line. And finally, and most likely **The Most Important Thing You Will Read Here**, you have to always be willing to read documentation and official manuals, don't go around annoying others for help. Some things to do when encountering issues can include:
+The Terminal is simply an interface to interact with your computer, by itself, it is nothing but an empty program. A terminal (in 99.99% of cases) needs a **Shell** to function. A shell is an interactive text interface for the user, and the **Terminal** is the tool most often used to run commands via the shell. There are many shells out there, thought this tutorial in specific will be focusing on the most is **Bash**, the most popular shell in use right now and the default shell of most [Linux](https://en.wikipedia.org/wiki/Linux) distributions. Bash allows you to run commands from other programs or utilities, common ones you'll mostly likely need are those from something like the [GNU Coreutils](https://en.wikipedia.org/wiki/GNU_Core_Utilities), and any other programs you might use daily. Once you have familiarized yourself with these terms, you can get on to actually using the command line. And finally, and most likely **The Most Important Thing You Will Read Here**, you have to always be willing to read documentation and official manuals, don't go around annoying others for help. Some things to do when encountering issues can include:
   - The official manual of the program, accessed by running the man command for that program in the terminal
   - Searching through the Github issues of the program you are struggling with to find a similar or identical problem
   - Searching through online forums like [Stack Overflow](https://stackoverflow.com/)
@@ -34,7 +34,7 @@ This is just a collection of cool tips and tricks that'll help with fully optimi
 ### Conditional execution:
 `&` is a character you can insert after a command and use to spawn command outputs in the background, and `&&` can be used to implement **Conditional Execution**, which means you can run multiple commands in succession, for example:
 ```sh
-#command2 will only run if command1 has finished executing
+#command2 will only run if command1 is successful
 command1 && command2
 ```
 You can also do another kind of sequential execution in the command line, using the `||` function, this works in a similar way to `&&` but instead of running a command after the execution of the previous one, it runs a second command only if the first one failed to run, sort of like a "Plan B" if you will. Here is an example:
@@ -51,7 +51,7 @@ fc-list | grep Roboto
 
 ### Keyboard shortcuts
 
-Unknown to me for quite a while during my usage of the terminal in Linux was that there were many keyboard shortcuts that could be used to navigate and control text much faster in the command line. These are mostly inherited from some of the keyboard shortcuts in older editors like `vi`, from what I can tell. Here are the ones I find myself using most often:
+Unknown to me for quite a while during my usage of the terminal in Linux was that there were many keyboard shortcuts that could be used to navigate and control text much faster in the command line. These are mostly inherited from some of the keyboard shortcuts in editors like `emacs`, from what I can tell. Here are the ones I find myself using most often:
 
 `ctrl + arrow keys` will move the cursor one word in the respective direction
 
@@ -214,4 +214,10 @@ The `time` command can be used to measure how much time another program takes to
 
 ![gif](https://i.imgur.com/v2BNmAe.gif)
 
-# System Management in the Terminal
+# Process Management in the Terminal
+
+`pgrep` is a command that can be used to find the `pid` of a program. The `pid` is sort of like the internal name the process has, and knowing this allows you do to things like kill or disable a currently running process. Here is an example of using `pgrep` to find the `pid` of alacritty, a program which I currently have open:
+
+![gif](https://i.imgur.com/FAqapLO.gif)
+
+Once you have the `pid`, you can now use commands like `pkill`, which allows you to kill a currently running process using an array of 15 signals. The most important ones though, and the only ones you really need to know right now, are signals 9 and 15, otherwise known as `SIGKILL` and `SIGTERM` respectively. To call on these signals you have to use **Flags**, as previously mentioned. 
