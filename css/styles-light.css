@@ -379,7 +379,7 @@ a:focus {
 .float-image-right, figure.float-right img, img[src*="float-right"] {
   width: 300px;
   float: right;
-  margin: 0.5em 0em 1em 1em;
+  margin: 1.1em 0em 1em 1em;
   -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
   box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);

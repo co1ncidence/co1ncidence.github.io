@@ -22,31 +22,33 @@
 &lt;p&gt;Links to the software&amp;rsquo;s Github page are in the headers&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;maimhttpsgithubcomnaelstrofmaim-the-better-screenshot-tool&#34;&gt;&lt;a href=&#34;https://github.com/naelstrof/maim&#34;&gt;Maim&lt;/a&gt;, the better screenshot tool&lt;/h3&gt;
-&lt;p&gt;One of the most important pieces of software you can have is something to capture you display, while &lt;a href=&#34;https://github.com/dreamer/scrot&#34;&gt;scrot&lt;/a&gt; does the job quite well, it has issues with selecting areas and windows, which is where Maim comes in, it does basically the same thing as scrot but without any of the rendering and selection issues. Fun fact, every screenshot you see on this blog was taken using Maim.&lt;/p&gt;
+&lt;h2 id=&#34;maimhttpsgithubcomnaelstrofmaim-the-better-screenshot-tool&#34;&gt;&lt;a href=&#34;https://github.com/naelstrof/maim&#34;&gt;Maim&lt;/a&gt;, the better screenshot tool&lt;/h2&gt;
+&lt;p&gt;One of the most important pieces of software you can have is something to capture you display, while &lt;a href=&#34;https://github.com/dreamer/scrot&#34;&gt;scrot&lt;/a&gt; does the job quite well, it has issues with selecting areas and windows, which is where Maim comes in, it does basically the same thing as scrot but without any of the rendering and selection issues. Also, every screenshot you see on this blog was taken using Maim.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Fun fact:&lt;/strong&gt; bind this command in your hotkey daemon&amp;rsquo;s config and you can use it to easily take and paste screenshots:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;maim -s -u | xclip -selection clipboard -t image/png&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.imgur.com/6T1WTMF.png#float-right&#34; alt=&#34;picture-of-sxiv&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;sxivhttpsgithubcommuennichsxiv-simple-x-image-viewer&#34;&gt;&lt;a href=&#34;https://github.com/muennich/sxiv&#34;&gt;SXIV&lt;/a&gt;, Simple X Image Viewer&lt;/h3&gt;
+&lt;h2 id=&#34;sxivhttpsgithubcommuennichsxiv-simple-x-image-viewer&#34;&gt;&lt;a href=&#34;https://github.com/muennich/sxiv&#34;&gt;SXIV&lt;/a&gt;, Simple X Image Viewer&lt;/h2&gt;
 &lt;p&gt;Many image viewers out there are usually needlessly large programs with unnecessary features, SXIV aims to just be a simple image viewer for X. And it does just that. You can zoom, pan, have a thumbnail mode, and just about anything you really need. Not much more to say, just something that everyone who wants to move to more efficient software should be using.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;giphhttpsgithubcomphischgiph-easily-record-gifs-of-your-screen&#34;&gt;&lt;a href=&#34;https://github.com/phisch/giph&#34;&gt;Giph&lt;/a&gt;, easily record gifs of your screen&lt;/h3&gt;
+&lt;h2 id=&#34;giphhttpsgithubcomphischgiph-simple-gif-recorder&#34;&gt;&lt;a href=&#34;https://github.com/phisch/giph&#34;&gt;Giph&lt;/a&gt;, Simple .gif Recorder&lt;/h2&gt;
+&lt;p&gt;Exactly what it claims to be, Giph a simple little utility that makes use of FFmpeg&amp;rsquo;s recording abilities to make it easy to record gifs of all, or sections of your screen. You can even use slop to select a section of your screen and then output it as a gif file, which is very convenient. And, like with maim, every gif that you see on this blog was recorded using Giph.&lt;/p&gt;
+&lt;p&gt;Hi phisch &lt;strong&gt;:)&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/FNQWNFu.png#float-right&#34; alt=&#34;picture-of-lyrebird&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;lyrebirdhttpsgithubcomchxrltlyrebird-voice-changer-for-linux&#34;&gt;&lt;a href=&#34;https://github.com/chxrlt/lyrebird&#34;&gt;Lyrebird&lt;/a&gt;, Voice Changer For Linux&lt;/h3&gt;
+&lt;h2 id=&#34;lyrebirdhttpsgithubcomchxrltlyrebird-voice-changer-for-linux&#34;&gt;&lt;a href=&#34;https://github.com/chxrlt/lyrebird&#34;&gt;Lyrebird&lt;/a&gt;, Voice Changer For Linux&lt;/h2&gt;
 &lt;p&gt;Just looking at the UI of this program, you can easily tell what it is. You simply select which effect to apply then toggle the application, it couldn&amp;rsquo;t possibly get simpler to use. It works really good too, with there being minimal to none amounts of audible distortion and/or lag in input time when using this to change your voice.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/FNQWNFu.png&#34; alt=&#34;picture-of-lyrebird&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.imgur.com/65Holv7.png#float-right&#34; alt=&#34;picture-of-cfm&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;cfmhttpsgithubcomwillecclescfm-cactus-file-manager&#34;&gt;&lt;a href=&#34;https://github.com/WillEccles/cfm&#34;&gt;CFM&lt;/a&gt;, Cactus File Manager&lt;/h3&gt;
-&lt;p&gt;We&amp;rsquo;ve all used things like Ranger at some point, but sometimes you just need a small little file browser to get around directories quickly or make a quick change to a specific file. CFM is great for things like this as it doesn&amp;rsquo;t have any unnecessary featured and this remains very fast. It also looks really nice and has a cool indent effect on the currently selected item, which is pointless in terms of usability but I find it to be quite nice.  &lt;strong&gt;:P&lt;/strong&gt;
- &lt;/p&gt;
+&lt;h2 id=&#34;cfmhttpsgithubcomwillecclescfm-cactus-file-manager&#34;&gt;&lt;a href=&#34;https://github.com/WillEccles/cfm&#34;&gt;CFM&lt;/a&gt;, Cactus File Manager&lt;/h2&gt;
+&lt;p&gt;We&amp;rsquo;ve all used things like Ranger at some point, but sometimes you just need a small little file browser to get around directories quickly or make a quick change to a file. CFM is great for things like this as it doesn&amp;rsquo;t have any unnecessary featured and this remains very fast. It also looks really nice and has a cool indent effect on the currently selected item, which is pointless in terms of usability but I find it to be quite nice.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;:P&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/nLNDatX.png#float-right&#34; alt=&#34;picture-of-ripcord&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;ripcordhttpscancelfmripcord-lightweight-discord-client&#34;&gt;&lt;a href=&#34;https://cancel.fm/ripcord/&#34;&gt;Ripcord&lt;/a&gt;, Lightweight Discord Client&lt;/h3&gt;
+&lt;h2 id=&#34;ripcordhttpscancelfmripcord-lightweight-discord-client&#34;&gt;&lt;a href=&#34;https://cancel.fm/ripcord/&#34;&gt;Ripcord&lt;/a&gt;, Lightweight Discord Client&lt;/h2&gt;
 &lt;p&gt;If you&amp;rsquo;ve used the normal Discord electron client, you are most likely aware of how resource intensive and bloated it can be, especially when it comes to ram usage. This is where Ripcord comes in, it is ridiculously lightweight and has most of the features you could want as well, including some very snappy movement via keybinds. It also has customizable colors out of the box.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/nLNDatX.png&#34; alt=&#34;picture-of-ripcord&#34;&gt;&lt;/p&gt;
 </description>
      </item>
    
