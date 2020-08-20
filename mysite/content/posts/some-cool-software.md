@@ -50,7 +50,7 @@ We've all used things like Ranger at some point, but sometimes you just need a s
 
 ---
 
-## [Ripcord](https://cancel.fm/ripcord/), Lightweight Discord Client
+## [Ripcord](https://cancel.fm/ripcord/), Lightweight Discord/Slack Client
 If you've used the normal Discord electron client, you are most likely aware of how resource intensive and bloated it can be, especially when it comes to ram usage. This is where Ripcord comes in, it is ridiculously lightweight and has most of the features you could want as well, including some very snappy movement via keybinds. It also has customizable colors out of the box.
 
 ![picture-of-ripcord](https://i.imgur.com/nLNDatX.png)
