@@ -192,8 +192,12 @@ a:focus {
 }
 
 #container main article p code {
-  padding: 0.2em;
-  background-color: #ffcccc;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+  padding-top: 0.0em;
+  padding-bottom: 0.1em;
+  color: #f4e0da;
+  background-color: #4e4540;
   font-size: 0.9em;
 }
 
@@ -375,8 +379,10 @@ a:focus {
 .float-image-right, figure.float-right img, img[src*="float-right"] {
   width: 300px;
   float: right;
-  margin: 0 -3em 1em 1em;
-  box-shadow: 0 3px 3px #bbbbbb;
+  margin: 0.5em 0em 1em 1em;
+  -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
 }
 
 @media only screen and (max-width: 800px) {
@@ -440,11 +446,13 @@ table thead {
 
 blockquote {
   margin-left: 0em;
-  border-left: solid 0.5em #38322e;
+  border-left: solid 0.5em #26221f;
   padding: 0.2em 2em;
   position: relative;
-  background-color: #e6e3e1;
-  border-radius: 12px;
+  color: #f4e0da;
+  background-color: #38322e;
+  border-radius: 0px;
+  font-family: sans-serif;
 }
 
 @media only screen and (max-width: 800px) {

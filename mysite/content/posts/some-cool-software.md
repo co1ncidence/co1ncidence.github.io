@@ -11,27 +11,40 @@ This is a list of some of the best software that I have come across in my journe
 
 > Links to the software's Github page are in the headers
 
+---
+
 ### [Maim](https://github.com/naelstrof/maim), the better screenshot tool
 One of the most important pieces of software you can have is something to capture you display, while [scrot](https://github.com/dreamer/scrot) does the job quite well, it has issues with selecting areas and windows, which is where Maim comes in, it does basically the same thing as scrot but without any of the rendering and selection issues. Fun fact, every screenshot you see on this blog was taken using Maim.
 
-> fun fact, bind this command in your hotkey daemon's config and you can use it to easily take and paste screenshots:
+> **Fun fact:** bind this command in your hotkey daemon's config and you can use it to easily take and paste screenshots:
 >
 > `maim -s -u | xclip -selection clipboard -t image/png`
 
-### [SXIV](https://github.com/muennich/sxiv), the image viewer that, well, views images
-While most desktop environments do come with their own image viewers, most of them, like the Eye Of Gnome image viewer, are unnecessarily bloated and have unneeded features. This is where SXIV comes in, it follows exactly what its name says it is. I views images in a small window with a statusbar. You can zoom in and out and even view folders of images in a thumbnail view. I highly recommend it to anyone who wants to move to using smaller, faster, more efficient software.
+---
 
-![img](https://i.imgur.com/6T1WTMF.png)
+![picture-of-sxiv](https://i.imgur.com/6T1WTMF.png#float-right)
+### [SXIV](https://github.com/muennich/sxiv), Simple X Image Viewer
+Many image viewers out there are usually needlessly large programs with unnecessary features, SXIV aims to just be a simple image viewer for X. And it does just that. You can zoom, pan, have a thumbnail mode, and just about anything you really need. Not much more to say, just something that everyone who wants to move to more efficient software should be using.
+
+---
 
 ### [Giph](https://github.com/phisch/giph), easily record gifs of your screen
 
-### [Ripcord](https://cancel.fm/ripcord/), an dangerously lightweight and minimal Discord/Slack client
+---
 
-### [Lyrebird](https://github.com/chxrlt/lyrebird), Simple and easy to use Voice Changer for Linux
+![picture-of-lyrebird](https://i.imgur.com/FNQWNFu.png#float-right)
+### [Lyrebird](https://github.com/chxrlt/lyrebird), Voice Changer For Linux
 Just looking at the UI of this program, you can easily tell what it is. You simply select which effect to apply then toggle the application, it couldn't possibly get simpler to use. It works really good too, with there being minimal to none amounts of audible distortion and/or lag in input time when using this to change your voice.
 
-![img](https://i.imgur.com/FNQWNFu.png)
+---
 
-### [CFM], A terminal file manager that makes sense
+![picture-of-cfm](https://i.imgur.com/65Holv7.png#float-right)
+### [CFM](https://github.com/WillEccles/cfm), Cactus File Manager
+We've all used things like Ranger at some point, but sometimes you just need a small little file browser to get around directories quickly or make a quick change to a specific file. CFM is great for things like this as it doesn't have any unnecessary featured and this remains very fast. It also looks really nice and has a cool indent effect on the currently selected item, which is pointless in terms of usability but I find it to be quite nice.  **:P**
+&nbsp;
 
-![img](https://i.imgur.com/65Holv7.png)
+---
+
+![picture-of-ripcord](https://i.imgur.com/nLNDatX.png#float-right)
+### [Ripcord](https://cancel.fm/ripcord/), Lightweight Discord Client
+If you've used the normal Discord electron client, you are most likely aware of how resource intensive and bloated it can be, especially when it comes to ram usage. This is where Ripcord comes in, it is ridiculously lightweight and has most of the features you could want as well, including some very snappy movement via keybinds. It also has customizable colors out of the box.
