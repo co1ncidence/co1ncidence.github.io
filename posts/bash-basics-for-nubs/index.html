@@ -100,7 +100,7 @@
         </li>
         
 
-        <li>13 minutes read</li>
+        <li>15 minutes read</li>
     </ul>
 </aside>
 
@@ -231,9 +231,34 @@ You may realize. Here is an example of the <code>cat</code> command being used:<
 <p>The <code>time</code> command can be used to measure how much time another program takes to open up, this can be useful when diagnosing problems regarding system performance issues. Here is an example of the <code>time</code> command being used to display the startup time of the Alacritty Terminal:</p>
 <p><img src="https://i.imgur.com/v2BNmAe.gif" alt="gif"></p>
 <h1 id="process-management-in-the-terminal">Process Management in the Terminal</h1>
-<p><code>pgrep</code> is a command that can be used to find the <code>pid</code> of a program. The <code>pid</code> is sort of like the internal name the process has, and knowing this allows you do to things like kill or disable a currently running process. Here is an example of using <code>pgrep</code> to find the <code>pid</code> of alacritty, a program which I currently have open:</p>
-<p><img src="https://i.imgur.com/FAqapLO.gif" alt="gif"></p>
-<p>Once you have the <code>pid</code>, you can now use commands like <code>pkill</code>, which allows you to kill a currently running process using an array of 15 signals. The most important ones though, and the only ones you really need to know right now, are signals 9 and 15, otherwise known as <code>SIGKILL</code> and <code>SIGTERM</code> respectively. To call on these signals you have to use <strong>Flags</strong>, as previously mentioned.</p>
+<p>Processes in Linux are usually given certain <code>pid</code>'s, having this form of identification allows them to be easily tracked and managed, mostly this is used to take care of or kill problematic processes. There are 2 commands that can be used to find the <code>pid</code> of a program. You can use either <code>pidof</code> of <code>pgrep</code>. For the purposes of this guide, I will be using the <code>pgrep</code> command. Here is an example of me using <code>pgrep</code> to find the <code>pid</code> of Alacritty, a program that I know is currently running:</p>
+<p><img src="https://i.postimg.cc/4dtVgQvB/image.png" alt="img"></p>
+<p>Though, while this command is useful in a limited use case, you will most likely find it easier to just use the <code>pkill</code> command. <code>pkill</code> allows you to kill a process using a variety of signals, 15 to be exact. The only ones that really matter, however, are signals 9 and 15, otherwise known as <code>SIGKILL</code> and <code>SIGTERM</code> respectively. <code>SIGTERM</code> will kill a process off safely and slowly, but sometimes this is not enough, so you can use <code>SIGKILL</code> to immediately terminate it, but I recommend trying your best not to resort to that option, as it could cause problems. Different signals can be invoked using <strong>Flags</strong>. <code>pkill</code>, however, defaults to using the <code>SIGTERM</code> signal, so for 99% of your use cases just using <code>pkill</code> serves as enough, as shown in this example:</p>
+<p><img src="https://i.postimg.cc/y8cH0JT2/image.png" alt="img"></p>
+<p>Another thing to take into account when dealing with running processes is memory usage, you can use the <code>free</code> command with the <code>-h</code> flag to display the amount of memory currently being used:</p>
+<p><img src="https://i.postimg.cc/nVXcCh6f/image.png" alt="img"></p>
+<p>But what if you wanted to see an interactive interface from which you could manage processes and see their relative resource usage, a &ldquo;task manager&rdquo; if you will. One of the programs you will find yourself most frequently using is <code>htop</code>, while not normally included with most Linux Distros, it is a must have utility, a lightweight and easy to use terminal task manager. I suggest you check out the program&rsquo;s GitHub page if you want to learn more. For now, however, here is a screenshot of <code>htop</code>:</p>
+<p><img src="https://i.postimg.cc/YSSBZX7B/image.png" alt="img"></p>
+<h2 id="creating-shell-aliases">Creating Shell Aliases</h2>
+<p>You may or not have noticed a file called <code>.bashrc</code> in your Home Directory. This file is the configuration file of the Bash Shell, and can be used to do some cool things, one of which is creating shell aliases. Shell aliases can be used to simplify long and complicated, or even simply hard-to-type commands into smaller ones. To add a shell alias, simple append a line following this syntax to the end of the <code>.bashrc</code> file, replacing the placeholder words with a word/command of your choice:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">alias newcommand<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;long-and-annoying-old-command&#34;</span>
+</code></pre></div><p>Once you written this (hopefully using Nano), simply save the file and restart your terminal. Try typing in your new command, you will see that your chosen word acts as if it was that annoying command that you chose to replace.</p>
+<p>The possibilities with shell aliases are almost infinite, but for some inspiration, here are some of the ones that I am currently using:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">alias ls<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;exa --group-directories-first&#34;</span>
+alias walls<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;cd ~/usr/pic/wallpapers/&#34;</span>
+alias df<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;df -h /dev/sda3&#34;</span>
+alias nvimrc<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nvim ~/.config/nvim/init.vim&#34;</span>
+alias c<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;clear&#34;</span>
+alias download<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;youtube-dl -x --audio-format mp3&#34;</span>
+alias shuffle<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;feh --bg-fill --randomize ~/usr/pic/wallpapers/&#34;</span>
+alias class<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;cd ~/usr/doc/school/&#34;</span>
+alias notes<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;cd ~/usr/doc/school/awo/&#34;</span>
+alias t<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;todo.sh&#34;</span>
+alias du<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;du -m | sort -n&#34;</span>
+alias web<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;cd ~/opt/mysite/&#34;</span>
+alias gif<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;giph -s ~/usr/vid/</span><span style="color:#66d9ef">$(</span>date <span style="color:#e6db74">&#39;+%Y-%m-%d_%H-%M-%S&#39;</span><span style="color:#66d9ef">)</span><span style="color:#e6db74">.gif&#34;</span>
+alias free<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;free -h&#34;</span>
+</code></pre></div><p>Feel free to use any of them, and don&rsquo;t limit yourself, the possibilities with aliases are almost infinite!</p>
 
 
 </article>

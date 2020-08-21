@@ -216,8 +216,47 @@ The `time` command can be used to measure how much time another program takes to
 
 # Process Management in the Terminal
 
-`pgrep` is a command that can be used to find the `pid` of a program. The `pid` is sort of like the internal name the process has, and knowing this allows you do to things like kill or disable a currently running process. Here is an example of using `pgrep` to find the `pid` of alacritty, a program which I currently have open:
+Processes in Linux are usually given certain `pid`'s, having this form of identification allows them to be easily tracked and managed, mostly this is used to take care of or kill problematic processes. There are 2 commands that can be used to find the `pid` of a program. You can use either `pidof` of `pgrep`. For the purposes of this guide, I will be using the `pgrep` command. Here is an example of me using `pgrep` to find the `pid` of Alacritty, a program that I know is currently running:
 
-![gif](https://i.imgur.com/FAqapLO.gif)
+![img](https://i.postimg.cc/4dtVgQvB/image.png)
 
-Once you have the `pid`, you can now use commands like `pkill`, which allows you to kill a currently running process using an array of 15 signals. The most important ones though, and the only ones you really need to know right now, are signals 9 and 15, otherwise known as `SIGKILL` and `SIGTERM` respectively. To call on these signals you have to use **Flags**, as previously mentioned. 
+Though, while this command is useful in a limited use case, you will most likely find it easier to just use the `pkill` command. `pkill` allows you to kill a process using a variety of signals, 15 to be exact. The only ones that really matter, however, are signals 9 and 15, otherwise known as `SIGKILL` and `SIGTERM` respectively. `SIGTERM` will kill a process off safely and slowly, but sometimes this is not enough, so you can use `SIGKILL` to immediately terminate it, but I recommend trying your best not to resort to that option, as it could cause problems. Different signals can be invoked using **Flags**. `pkill`, however, defaults to using the `SIGTERM` signal, so for 99% of your use cases just using `pkill` serves as enough, as shown in this example:
+
+![img](https://i.postimg.cc/y8cH0JT2/image.png)
+
+Another thing to take into account when dealing with running processes is memory usage, you can use the `free` command with the `-h` flag to display the amount of memory currently being used:
+
+![img](https://i.postimg.cc/nVXcCh6f/image.png)
+
+But what if you wanted to see an interactive interface from which you could manage processes and see their relative resource usage, a "task manager" if you will. One of the programs you will find yourself most frequently using is `htop`, while not normally included with most Linux Distros, it is a must have utility, a lightweight and easy to use terminal task manager. I suggest you check out the program's GitHub page if you want to learn more. For now, however, here is a screenshot of `htop`:
+
+![img](https://i.postimg.cc/YSSBZX7B/image.png)
+
+## Creating Shell Aliases
+
+You may or not have noticed a file called `.bashrc` in your Home Directory. This file is the configuration file of the Bash Shell, and can be used to do some cool things, one of which is creating shell aliases. Shell aliases can be used to simplify long and complicated, or even simply hard-to-type commands into smaller ones. To add a shell alias, simple append a line following this syntax to the end of the `.bashrc` file, replacing the placeholder words with a word/command of your choice:
+
+```sh
+alias newcommand="long-and-annoying-old-command"
+```
+Once you written this (hopefully using Nano), simply save the file and restart your terminal. Try typing in your new command, you will see that your chosen word acts as if it was that annoying command that you chose to replace.
+
+The possibilities with shell aliases are almost infinite, but for some inspiration, here are some of the ones that I am currently using:
+```sh
+alias ls="exa --group-directories-first"
+alias walls="cd ~/usr/pic/wallpapers/"
+alias df="df -h /dev/sda3"
+alias nvimrc="nvim ~/.config/nvim/init.vim"
+alias c="clear"
+alias download="youtube-dl -x --audio-format mp3"
+alias shuffle="feh --bg-fill --randomize ~/usr/pic/wallpapers/"
+alias class="cd ~/usr/doc/school/"
+alias notes="cd ~/usr/doc/school/awo/"
+alias t="todo.sh"
+alias du="du -m | sort -n"
+alias web="cd ~/opt/mysite/"
+alias gif="giph -s ~/usr/vid/$(date '+%Y-%m-%d_%H-%M-%S').gif"
+alias free="free -h"
+```
+Feel free to use any of them, and don't limit yourself, the possibilities with aliases are almost infinite!
+
