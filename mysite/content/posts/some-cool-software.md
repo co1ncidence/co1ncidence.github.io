@@ -1,5 +1,5 @@
 ---
-title: "Some Cool Software"
+title: "Personal Software Faves"
 date: 2020-08-17T10:43:39-05:00
 tags:
   - Opinion
