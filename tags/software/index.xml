@@ -100,6 +100,7 @@ command1 &lt;span style=&#34;color:#f92672&#34;&gt;||&lt;/span&gt; command2
 &lt;p&gt;&lt;code&gt;ctrl + a&lt;/code&gt; moves the cursor all the way back to the prompt&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;ctrl + u&lt;/code&gt; will delete all text entered&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;ctrl + r&lt;/code&gt; will initiate a reverse search for previously entered commands&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ctrl + n/p&lt;/code&gt; will cycle you through previously entered commands&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;ctrl + m/j&lt;/code&gt;, both work the same way as &lt;code&gt;enter&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&#34;file-management&#34;&gt;File Management:&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;cd&lt;/code&gt; stands for &amp;ldquo;change directory&amp;rdquo;, you can use this command to enter and leave directories. It is not limited to neighboring directories, however, you can use &lt;code&gt;cd&lt;/code&gt; to move from one side of your computer to another, provided you don&amp;rsquo;t mess up typing in the names of folders. First thing to note is that a &lt;code&gt;/&lt;/code&gt; is not necessary after a folder name:&lt;/p&gt;

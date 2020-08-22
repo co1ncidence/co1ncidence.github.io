@@ -72,6 +72,8 @@ Unknown to me for quite a while during my usage of the terminal in Linux was tha
 
 `ctrl + r` will initiate a reverse search for previously entered commands
 
+`ctrl + n/p` will cycle you through previously entered commands
+
 `ctrl + m/j`, both work the same way as `enter`
 
 ## File Management:
