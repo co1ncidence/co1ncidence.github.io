@@ -11,7 +11,7 @@
    
    
      <item>
-       <title>Personal Software Faves</title>
+       <title>My Personal Software Faves</title>
        <link>https://co1ncidence.github.io/posts/some-cool-software/</link>
        <pubDate>Mon, 17 Aug 2020 10:43:39 -0500</pubDate>
        
@@ -42,8 +42,7 @@
 &lt;hr&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.imgur.com/65Holv7.png#float-right&#34; alt=&#34;picture-of-cfm&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;cfmhttpsgithubcomwillecclescfm-cactus-file-manager&#34;&gt;&lt;a href=&#34;https://github.com/WillEccles/cfm&#34;&gt;cfm&lt;/a&gt;, Cactus File Manager&lt;/h2&gt;
-&lt;p&gt;We&amp;rsquo;ve all used things like Ranger at some point, but sometimes you just need a small little file browser to get around directories quickly or make a quick change to a file. cfm is great for things like this as it doesn&amp;rsquo;t have any unnecessary featured and this remains very fast. It also looks really nice and has a cool indent effect on the currently selected item, which is pointless in terms of usability but I find it to be quite nice.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;:P&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve all used things like Ranger at some point, but sometimes you just need a small little file browser to get around directories quickly or make a quick change to a file. cfm is great for things like this, since it doesn&amp;rsquo;t have any unnecessary features and thus remains very fast. It also looks really nice and has a cool indent effect on the currently selected item, which is pointless in terms of usability but I find it to be quite nice.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;ripcordhttpscancelfmripcord-lightweight-discordslack-client&#34;&gt;&lt;a href=&#34;https://cancel.fm/ripcord/&#34;&gt;Ripcord&lt;/a&gt;, Lightweight Discord/Slack Client&lt;/h2&gt;
 &lt;p&gt;If you&amp;rsquo;ve used the normal Discord electron client, you are most likely aware of how resource intensive and bloated it can be, especially when it comes to ram usage. This is where Ripcord comes in, it is ridiculously lightweight and has most of the features you could want as well, including some very snappy movement via keybinds. It also has customizable colors out of the box.&lt;/p&gt;
@@ -52,7 +51,7 @@
      </item>
    
      <item>
-       <title>Linux Terminal Basics for Nubs</title>
+       <title>My Guide to The Linux Command Line</title>
        <link>https://co1ncidence.github.io/posts/bash-basics-for-nubs/</link>
        <pubDate>Sat, 15 Aug 2020 14:15:28 -0500</pubDate>
        
@@ -214,7 +213,7 @@ alias free&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style
      </item>
    
      <item>
-       <title>Top 10 Best Looking Cars</title>
+       <title>My Top 10 Best Looking Cars</title>
        <link>https://co1ncidence.github.io/posts/top-10-best-looking-cars/</link>
        <pubDate>Wed, 05 Aug 2020 15:58:49 -0500</pubDate>
        

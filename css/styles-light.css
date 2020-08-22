@@ -65,7 +65,7 @@ time {
   background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: 0% 4px;
-  transition: background-size cubic-bezier(0,.5,0,1) 0.3s;
+  transition: background-size cubic-bezier(0,.5,0,1) 0.15s;
 }
 
 #container header h1 a:hover,
@@ -304,8 +304,8 @@ a {
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 0% 100%;
   background-repeat: no-repeat;
-  background-size: 0% 2px;
-  transition: background-size cubic-bezier(0,.5,0,1) 0.3s;
+  background-size: 0% 3px;
+  transition: background-size cubic-bezier(0,.5,0,1) 0.15s;
 }
 
 a:hover,

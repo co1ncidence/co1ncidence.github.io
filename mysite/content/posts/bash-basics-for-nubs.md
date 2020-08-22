@@ -1,5 +1,5 @@
 ---
-title: "Linux Terminal Basics for Nubs"
+title: "My Guide to The Linux Command Line"
 date: 2020-08-15T14:15:28-05:00
 tags:
   - Guide
