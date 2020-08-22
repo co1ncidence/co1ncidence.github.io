@@ -13,6 +13,8 @@ body {
   font-family: serif;
   background-color: #fdf9f8;
   color: #26221f;
+  border-top: 20px solid #1b1816;
+  border-bottom: 20px solid #1b1816;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(15,13,12,0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(15,13,12,0.75);
   box-shadow: 10px 10px 5px 0px rgba(15,13,12,0.75);
@@ -98,7 +100,7 @@ a:focus {
 #container nav {
   border-bottom: solid 4px #635851;
   padding-bottom: 0.5em;
-  font-family: serif;
+  font-family: sans-serif;
 }
 
 #container nav ul {
