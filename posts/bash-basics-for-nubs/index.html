@@ -3,11 +3,11 @@
 <html lang="en-us">
 
 <head>
-  <title>Linux Command Line 101 - nuaNce&#39;s blog :P</title>
+  <title>[Linux Command Line 101] - nuaNce&#39;s blog :P</title>
   <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="description" content="Just a place where I can rant and perhaps say something smart" />
-<meta name="author" content="nuaNce" /><meta property="og:title" content="Linux Command Line 101" />
+<meta name="author" content="nuaNce" /><meta property="og:title" content="[Linux Command Line 101]" />
 <meta property="og:description" content="When I first started with Linux, and especially the command line, It was difficult to find a truly optimal and comprehensive guide to these things. While most tutorials were nice and gave me a good starting point, they usually provided inefficient information or didn&rsquo;t showcase the most optimal commands/strategies. I am making this list as more of a dump for all of the things that I have learned about bash so far, which isn&rsquo;t too much compared to some but I like to think that I know something." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://co1ncidence.github.io/posts/bash-basics-for-nubs/" />
@@ -15,7 +15,7 @@
 <meta property="article:modified_time" content="2020-08-15T14:15:28-05:00" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Linux Command Line 101"/>
+<meta name="twitter:title" content="[Linux Command Line 101]"/>
 <meta name="twitter:description" content="When I first started with Linux, and especially the command line, It was difficult to find a truly optimal and comprehensive guide to these things. While most tutorials were nice and gave me a good starting point, they usually provided inefficient information or didn&rsquo;t showcase the most optimal commands/strategies. I am making this list as more of a dump for all of the things that I have learned about bash so far, which isn&rsquo;t too much compared to some but I like to think that I know something."/>
 
 <meta name="generator" content="Hugo 0.73.0" />
@@ -82,7 +82,7 @@
 
 <article>
 
-    <h1>Linux Command Line 101</h1>
+    <h1>[Linux Command Line 101]</h1>
 
     
       <aside>
@@ -119,7 +119,7 @@
 <blockquote>
 <p>Read The F***ing Manual</p>
 </blockquote>
-<h2 id="first-some-things-to-note-before-delving-into-the-command-line">First, some things to note before delving into the command line:</h2>
+<h2 id="first-some-terminology-and-tips">[First, some Terminology and Tips]</h2>
 <p>The Terminal is simply an interface to interact with your computer, by itself, it is nothing but an empty program. A terminal (in 99.99% of cases) needs a <strong>Shell</strong> to function. A shell is an interactive text interface for the user, and the <strong>Terminal</strong> is the tool most often used to run commands via the shell. There are many shells out there, thought this tutorial in specific will be focusing on the most is <strong>Bash</strong>, the most popular shell in use right now and the default shell of most <a href="https://en.wikipedia.org/wiki/Linux">Linux</a> distributions. Bash allows you to run commands from other programs or utilities, common ones you&rsquo;ll mostly likely need are those from something like the <a href="https://en.wikipedia.org/wiki/GNU_Core_Utilities">GNU Coreutils</a>, and any other programs you might use daily. Once you have familiarized yourself with these terms, you can get on to actually using the command line. And finally, and most likely <strong>The Most Important Thing You Will Read Here</strong>, you have to always be willing to read documentation and official manuals, don&rsquo;t go around annoying others for help. Some things to do when encountering issues can include:</p>
 <ul>
 <li>The official manual of the program, accessed by running the man command for that program in the terminal</li>
@@ -129,25 +129,25 @@
 <li>Searching <a href="https://reddit.com">Reddit</a> for similar problems or making a post about your own</li>
 </ul>
 <p><strong>Following these steps will lead you to your solution far more often than not.</strong></p>
-<h2 id="second-some-things-i-wish-i-knew-when-starting-off">Second, some things I wish I knew when starting off:</h2>
+<h2 id="second-some-cli-life-hax">[Second, some CLI life hax]</h2>
 <p>This is just a collection of cool tips and tricks that&rsquo;ll help with fully optimizing your command line skills, expect this to be updated frequently as I learn more.</p>
-<h3 id="autocomplete">Autocomplete:</h3>
+<h3 id="autocomplete">[Autocomplete]</h3>
 <p>Something I didn&rsquo;t realize for a long time was that bash has built in tab-complete, so instead of typing in entire long names of folders and/or programs, you can just type in a few letters and press the <code>tab</code> key, Bash will then auto-type the rest of the name for your. If there are multiple possibilities, Bash will just output them all, so you can choose the one you want.</p>
-<h3 id="global-aliases">Global Aliases:</h3>
+<h3 id="global-aliases">[Global Aliases]</h3>
 <p><code>..</code> is an alias for the parent folder of the directory you are currently working inside, and the word <code>.</code> is the alias for the folder currently occupied. These are useful to know as they can save you precious time typing in long directory paths when you are working with more advanced commands. These aliases can be used with just about any command so be careful with them.</p>
 <p><code>~</code> is an alias that stands for <code>/home/username</code>, with &ldquo;username&rdquo; being the user name of the currently active user. It can be used with many commands, so once again, be careful with what you do. If you are ever unsure, just remind yourself that it <strong>directly</strong> translates to <code>/home/username</code>, that&rsquo;ll help you get a bearing on the command you are about to run.</p>
 <p><code>!!</code> is an alias for the last command run. For example, if you ran a command but forgot to add <code>sudo</code> or something, you can simply run <code>sudo !!</code> instead of typing out the whole of the previous command.</p>
-<h3 id="conditional-execution">Conditional Execution:</h3>
+<h3 id="conditional-execution">[Conditional Execution]</h3>
 <p><code>&amp;</code> is a character you can insert after a command and use to spawn command outputs in the background, and <code>&amp;&amp;</code> can be used to implement <strong>Conditional Execution</strong>, which means you can run multiple commands in succession, for example:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#command2 will only run if command1 is successful</span>
 command1 <span style="color:#f92672">&amp;&amp;</span> command2
 </code></pre></div><p>You can also do another kind of sequential execution in the command line, using the <code>||</code> function, this works in a similar way to <code>&amp;&amp;</code> but instead of running a command after the execution of the previous one, it runs a second command only if the first one failed to run, sort of like a &ldquo;Plan B&rdquo; if you will. Here is an example:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#command2 will only run if command1 fails for any reason</span>
 command1 <span style="color:#f92672">||</span> command2
-</code></pre></div><h3 id="pipes-in-bash">Pipes In Bash:</h3>
+</code></pre></div><h3 id="pipes-in-bash">[Pipes In Bash]</h3>
 <p><strong>Pipes</strong> are things you can use to filter one command through another, thus allowing for things like controlling outputs of commands. Pipes have many uses so I recommend that you look more into them as there is no way I can go into full depth here. Here is an example of a pipe being used to filter the output of of <code>fc-list</code> through <code>grep</code> to only show fonts with a certain name.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">fc-list | grep Roboto
-</code></pre></div><h3 id="keyboard-shortcuts">Keyboard Shortcuts</h3>
+</code></pre></div><h3 id="keyboard-shortcuts">[Keyboard Shortcuts]</h3>
 <p>Unknown to me for quite a while during my usage of the terminal in Linux was that there were many keyboard shortcuts that could be used to navigate and control text much faster in the command line. These are mostly inherited from some of the keyboard shortcuts in editors like <code>emacs</code>, from what I can tell. Here are the ones I find myself using most often:</p>
 <p><code>ctrl + arrow keys</code> will move the cursor one word in the respective direction</p>
 <p><code>ctrl + b/f</code> will move the cursor backwards and forwards respectively</p>
@@ -159,7 +159,7 @@ command1 <span style="color:#f92672">||</span> command2
 <p><code>ctrl + r</code> will initiate a reverse search for previously entered commands</p>
 <p><code>ctrl + n/p</code> will cycle you through previously entered commands</p>
 <p><code>ctrl + m/j</code>, both work the same way as <code>enter</code></p>
-<h2 id="file-management">File Management:</h2>
+<h2 id="file-management">[File Management]</h2>
 <p><code>cd</code> stands for &ldquo;change directory&rdquo;, you can use this command to enter and leave directories. It is not limited to neighboring directories, however, you can use <code>cd</code> to move from one side of your computer to another, provided you don&rsquo;t mess up typing in the names of folders. First thing to note is that a <code>/</code> is not necessary after a folder name:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#these 2 commands are the same</span>
 cd ~/folder1/folder2/
@@ -203,7 +203,7 @@ However, unlike the other file management commands, <code>rm</code> cannot remov
 <span style="color:#75715e">#you can also use the alternative &#34;rmdir&#34; command</span>
 rmdir folder/
 </code></pre></div><p>Thus is how you can use <code>rm</code> to remove folders as well as individual files.</p>
-<h4 id="using-the--character-in-file-management">Using the &ldquo;*&rdquo; character in file management</h4>
+<h4 id="using-the--character-in-file-management">[Using the &ldquo;*&rdquo; character in file management]</h4>
 <p>You can also use this basic RegEx character to make bulk file movement easier, for example, you can move every <code>.png</code> file in a folder somewhere else using the <code>*</code> character, for example, this command is doing exactly that:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mv *.png ~/Pictures/stuff/
 <span style="color:#75715e">#once again, this is not limited to the current location</span>
@@ -211,11 +211,11 @@ mv ~/usr/share/backgrounds/*.png ~/Pictures/stuff/
 </code></pre></div><p>You can also pair <code>*</code> with <code>rm</code>, this can be very dangerous so make sure you are careful. Example</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#this removes all png files in folder</span>
 rm *.png
-</code></pre></div><h4 id="permissions">Permissions</h4>
+</code></pre></div><h4 id="permissions">[Permissions]</h4>
 <p>Sometimes, your user may not have the necessary permissions to execute certain commands on a file or folder, this is because the owner of said file/folder is the <strong>root user</strong>, to obtain the abilities of the root user, you just have to place the word <code>sudo</code> behind your command. <code>sudo</code> stands for &ldquo;Super User DO&rdquo;, and will allow you to run commands with elevated permissions, here is an example:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo rm -rf /
 </code></pre></div><p>This command is a great showcase of the dangers of <code>sudo</code> as well. If you haven&rsquo;t already realized, this command will wipe every file and folder on your system. So whenever something requires you to be root to run a command, always make sure you know what you are doing, and always remember that there is a reason that there is a reason for a password to be between you and the execution of this command. Stay safe.</p>
-<h2 id="file-viewing--and-output-controlfiltering">File Viewing  and Output Control/Filtering:</h2>
+<h2 id="file-viewing--and-output-controlfiltering">[File Viewing  and Output Control/Filtering]</h2>
 <p>The <code>cat</code> command is one of the first to know when viewing files, running <code>cat</code> on a file which contains any sort of text will cause your terminal to output the full contents of your file, for example, running:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cat .bashrc
 </code></pre></div><p>Will show you the contents of your <code>.bashrc</code> file, otherwise known as the bash shell configuration file, more about this later. <code>cat</code> is very useful when you want to look at certain content in a file but don&rsquo;t want to open it in your editor.
@@ -228,18 +228,18 @@ You may realize. Here is an example of the <code>cat</code> command being used:<
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">fc-list
 </code></pre></div><p>This command, however, will filter out every result and only show results containing the word &ldquo;Roboto&rdquo;:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">fc-list | grep Roboto
-</code></pre></div><h2 id="editing-files-in-the-command-line-using-gnu-nano">Editing Files in The Command Line Using GNU Nano:</h2>
+</code></pre></div><h2 id="editing-files-using-gnu-nano">[Editing Files Using GNU Nano]</h2>
 <p>Throughout your Linux journey, there will be many, and I mean many, times where you will have to make a quick edit to some configuration file of some sort. Editing these files with a visual editor can be a pain as you have to run the editor as root, find the file you want to edit, and then finally get to editing it. As a solution to this, computers running any GNU/Linux Distribution usually come with a terminal editor installed, called <a href="https://en.wikipedia.org/wiki/GNU_nano">Nano</a>. Nano is an editor that allows you to edit any text file through the terminal. Here is an example of me editing the <code>/etc/fstab</code> file using Nano (note the use of sudo to access this file):</p>
 <p><img src="https://i.postimg.cc/dt2J2101/2020-08-23-07-06-00.gif" alt="gif"></p>
 <p>Nano has many keyboard shortcuts and is a quite featured editor, though you will most likely only be using it for quick edits, as anything bigger would be better done in a real editor. The only real shortcut to know in Nano is <strong>Ctrl + X</strong>, this saves and exits the file, prompting you before doing so as well.</p>
-<h2 id="implementations-of-time-in-the-command-line">Implementations of Time In The Command Line</h2>
+<h2 id="time-in-the-command-line">[Time In The Command Line]</h2>
 <p>The <code>date</code> command can be used to quickly display the current date and time on the terminal, while this is cool it doesn&rsquo;t really have much of a use in day to day command line usage, it is more effective in scripts and programs, as a reliable way to get system time. Here is an example of the <code>date</code> command in use:</p>
 <p><img src="https://i.postimg.cc/W4JWZD2Y/image.png" alt="img"></p>
 <p>Another time related command you can use is <code>uptime</code>, this command outputs the amount of time the system has been on for, this can be helpful to know for a variety of reasons. By default, the <code>uptime</code> command has very messy output, so run it with the <code>-p</code> flag to make it more readable, here is an example:</p>
 <p><img src="https://i.postimg.cc/7YfghFPm/image.png" alt="img"></p>
 <p>The <code>time</code> command can be used to measure how much time another program takes to open up, this can be useful when diagnosing problems regarding system performance issues. Here is an example of the <code>time</code> command being used to display the startup time of the Alacritty Terminal:</p>
 <p><img src="https://i.postimg.cc/rpQmSpQW/image.png" alt="img"></p>
-<h1 id="process-management-in-the-terminal">Process Management in the Terminal</h1>
+<h2 id="process-management-in-the-terminal">[Process Management in the Terminal]</h2>
 <p>Processes in Linux are usually given certain <code>pid</code>'s, having this form of identification allows them to be easily tracked and managed, mostly this is used to take care of or kill problematic processes. There are 2 commands that can be used to find the <code>pid</code> of a program. You can use either <code>pidof</code> of <code>pgrep</code>. For the purposes of this guide, I will be using the <code>pgrep</code> command. Here is an example of me using <code>pgrep</code> to find the <code>pid</code> of Alacritty, a program that I know is currently running:</p>
 <p><img src="https://i.postimg.cc/bvWv65fN/image.png" alt="img"></p>
 <p>Though, while this command is useful in a limited use case, you will most likely find it easier to just use the <code>pkill</code> command. <code>pkill</code> allows you to kill a process using a variety of signals, 15 to be exact. The only ones that really matter, however, are signals 9 and 15, otherwise known as <code>SIGKILL</code> and <code>SIGTERM</code> respectively. <code>SIGTERM</code> will kill a process off safely and slowly, but sometimes this is not enough, so you can use <code>SIGKILL</code> to immediately terminate it, but I recommend trying your best not to resort to that option, as it could cause problems. Different signals can be invoked using <strong>Flags</strong>. <code>pkill</code>, however, defaults to using the <code>SIGTERM</code> signal, so for 99% of your use cases just using <code>pkill</code> serves as enough, as shown in this example:</p>
@@ -249,7 +249,7 @@ You may realize. Here is an example of the <code>cat</code> command being used:<
 <p><img src="https://i.postimg.cc/PfBRtQTp/image.png" alt="img"></p>
 <p>But what if you wanted to see an interactive interface from which you could manage processes and see their relative resource usage, a &ldquo;task manager&rdquo; if you will. One of the programs you will find yourself most frequently using is <code>htop</code>, while not normally included with most Linux Distros, it is a must have utility, a lightweight and easy to use terminal task manager. I suggest you check out the program&rsquo;s GitHub page if you want to learn more. For now, however, here is a screenshot of <code>htop</code>:</p>
 <p><img src="https://i.postimg.cc/D0qdfsPL/image.png" alt="img"></p>
-<h2 id="creating-shell-aliases">Creating Shell Aliases</h2>
+<h2 id="creating-shell-aliases">[Creating Shell Aliases]</h2>
 <p>You may or not have noticed a file called <code>.bashrc</code> in your Home Directory. This file is the configuration file of the Bash Shell, and can be used to do some cool things, one of which is creating shell aliases. Shell aliases can be used to simplify long and complicated, or even simply hard-to-type commands into smaller ones. To add a shell alias, simply append a line following this syntax to the end of the <code>.bashrc</code> file, replacing the placeholder words with a word/command of your choice:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">alias newcommand<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;long-and-annoying-old-command&#34;</span>
 </code></pre></div><p>Once you&rsquo;ve finished this (hopefully using Nano), simply save the file and restart your shell or terminal. Try typing in your new command, you will see that your chosen word behaves the same as that annoying command that you chose to replace.</p>
@@ -278,12 +278,12 @@ alias free<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;f
     <ul>
         
         <li>
-            <a href="https://co1ncidence.github.io/posts/top-10-best-looking-cars/"><i class="fa fa-chevron-circle-left"></i> My Top 10 Best Looking Cars</a>
+            <a href="https://co1ncidence.github.io/posts/top-10-best-looking-cars/"><i class="fa fa-chevron-circle-left"></i> [My Top 10 Best Looking Cars]</a>
         </li>
         
         
         <li>
-            <a href="https://co1ncidence.github.io/posts/some-cool-software/">A List of My Favorite Software <i class="fa fa-chevron-circle-right"></i> </a>
+            <a href="https://co1ncidence.github.io/posts/some-cool-software/">[A List of My Favorite Software] <i class="fa fa-chevron-circle-right"></i> </a>
         </li>
         
     </ul>

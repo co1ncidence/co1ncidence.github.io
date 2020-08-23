@@ -1,7 +1,5 @@
 html {
   background-color: #fdf9f8;
-  border-top: 8px solid #26221f;
-  border-bottom: 8px solid #26221f;
 }
 
 body {
@@ -26,6 +24,7 @@ h6,
 time {
   font-family: "Roboto Mono", "Inconsolota", "SF Mono", monospace;
   font-weight: Bold;
+  color: #38322e;
 }
 
 #container {
@@ -328,7 +327,6 @@ a:focus {
 
 .mid-image, figure.mid img, img[src*="mid"] {
   width: 100%;
-  box-shadow: 0 3px 3px #bbbbbb;
 }
 
 @supports (width: 100vw) {
@@ -354,7 +352,6 @@ a:focus {
   width: 300px;
   float: left;
   margin: 0 1em 1em -3em;
-  box-shadow: 0 3px 3px #bbbbbb;
 }
 
 @media only screen and (max-width: 800px) {
