@@ -1,5 +1,5 @@
 ---
-title: "Books I've Been Reading"
+title: "[Books I've Been Reading]"
 date: 2020-08-23T06:57:25-05:00
 ---
 
