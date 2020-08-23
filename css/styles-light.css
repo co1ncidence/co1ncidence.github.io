@@ -15,9 +15,6 @@ body {
   font-family: "Roboto Mono", "Inconsolota", "SF Mono", monospace;
   background-color: #fdf9f8;
   color: #26221f;
-  /* -webkit-box-shadow: 10px 10px 5px 0px rgba(15,13,12,0.75); */
-  /* -moz-box-shadow: 10px 10px 5px 0px rgba(15,13,12,0.75); */
-  /* box-shadow: 10px 10px 5px 0px rgba(15,13,12,0.75); */
 }
 
 h1,
