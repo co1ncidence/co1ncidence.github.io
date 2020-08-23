@@ -7,7 +7,7 @@ tags:
   - Showcase
 ---
 
-This is a list of some of the best software that I have come across in my journey using Linux. I highly recommend that you try them out and maybe even give the developers a well earned star on Github to show your support :) I've divided the software into sections based on their uses, so if you don't see what you need just scroll down until you see the type of software you are searching for.
+This is a list of some of the best software that I have come across in my journey using Linux. I highly recommend that you try them out and maybe even give the developers a well earned star on Github to show your support :) 
 
 > Links to the software's Github page are in the headers
 

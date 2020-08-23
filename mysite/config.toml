@@ -24,21 +24,27 @@ googleAnalytics = ""
 
   [[menu.main]]
     identifier = "about"
-    name = "About Me"
+    name = "[About Me]"
     url = "/about/"
     weight = 1
 
   [[menu.main]]
-    identifier = "tags"
-    name = "Tags"
-    url = "/tags/"
+    name = "[Posts]"
+    identifier = "archive"
+    url = "/posts/"
     weight = 2
 
   [[menu.main]]
-    name = "Posts"
-    identifier = "archive"
-    url = "/posts/"
+    identifier = "tags"
+    name = "[Tags]"
+    url = "/tags/"
     weight = 3
+
+  [[menu.main]]
+    name = "[Books]"
+    identifier = "books"
+    url = "/books/"
+    weight = 4
 
 [social]
   github = "https://www.github.com/co1ncidence/"

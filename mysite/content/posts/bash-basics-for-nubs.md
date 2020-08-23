@@ -103,7 +103,7 @@ cd ~/
 
 `ls` is one of the commands you will use the most, this command lists all of the files and folders in the current folder, allowing you to get a better idea of where you are. Here is an example of the `ls` command in use:
 
-![gif](https://i.imgur.com/JeHH33T.gif)
+![gif](https://i.postimg.cc/pTzfWz2x/2020-08-23-07-06-00.gif)
 
 `touch` is used (mostly) to create a new, empty file in the folder you are currently occupying, the filetype can vary based on name extension, for example, to create a new `css` file you would run
 ```sh
@@ -181,11 +181,11 @@ cat .bashrc
 Will show you the contents of your `.bashrc` file, otherwise known as the bash shell configuration file, more about this later. `cat` is very useful when you want to look at certain content in a file but don't want to open it in your editor.
 You may realize. Here is an example of the `cat` command being used:
 
-![gif](https://i.imgur.com/5Axaprt.gif)
+![gif](https://i.postimg.cc/5tvYLJDS/2020-08-23-07-06-00.gif)
 
 However, that `cat` can be annoying when used on longer files, as you have to manually scroll back if you want to view any content near the beginning of the file. This is where another, very useful command comes in. The `less` command is similar to `cat`, but instead of just throwing all of the output at you and leaving you alone to manage it, `less` allows you to view the file in a scrolling window, with the top of the file being the beginning. You can then use the Up and Down arrow keys of J and K to navigate the file as you want. For those of you comfortable with them, Vim keybindings work in `less` as well. As you can see here, the experience is far more intuitive:
 
-![gif](https://i.imgur.com/TaXK4Rf.gif)
+![gif](https://i.postimg.cc/FHSsnZG9/2020-08-23-07-06-00.gif)
 
 Sometimes, however, we have too much output of a command, one example of such a problematic command can be the `fc-list` command, which lists all fonts currently installed on your system. You can filter the output of this command using `grep`, an extremely powerful search utility. `grep` however, usually requires piping, which I talked about earlier. Here is a basic example of the usage of `grep`:
 
@@ -202,44 +202,47 @@ fc-list | grep Roboto
 ## Editing Files in The Command Line Using GNU Nano:
 Throughout your Linux journey, there will be many, and I mean many, times where you will have to make a quick edit to some configuration file of some sort. Editing these files with a visual editor can be a pain as you have to run the editor as root, find the file you want to edit, and then finally get to editing it. As a solution to this, computers running any GNU/Linux Distribution usually come with a terminal editor installed, called [Nano](https://en.wikipedia.org/wiki/GNU_nano). Nano is an editor that allows you to edit any text file through the terminal. Here is an example of me editing the `/etc/fstab` file using Nano (note the use of sudo to access this file):
 
-![gif](https://i.imgur.com/72sEkgT.gif)
+![gif](https://i.postimg.cc/dt2J2101/2020-08-23-07-06-00.gif)
 
 Nano has many keyboard shortcuts and is a quite featured editor, though you will most likely only be using it for quick edits, as anything bigger would be better done in a real editor. The only real shortcut to know in Nano is **Ctrl + X**, this saves and exits the file, prompting you before doing so as well.
 
 ## Implementations of Time In The Command Line
 The `date` command can be used to quickly display the current date and time on the terminal, while this is cool it doesn't really have much of a use in day to day command line usage, it is more effective in scripts and programs, as a reliable way to get system time. Here is an example of the `date` command in use:
 
-![gif](https://i.imgur.com/7YiAa6m.gif)
+![img](https://i.postimg.cc/W4JWZD2Y/image.png)
 
 Another time related command you can use is `uptime`, this command outputs the amount of time the system has been on for, this can be helpful to know for a variety of reasons. By default, the `uptime` command has very messy output, so run it with the `-p` flag to make it more readable, here is an example:
 
-![gif](https://i.imgur.com/0BMdeOh.gif)
+![img](https://i.postimg.cc/7YfghFPm/image.png)
 
 The `time` command can be used to measure how much time another program takes to open up, this can be useful when diagnosing problems regarding system performance issues. Here is an example of the `time` command being used to display the startup time of the Alacritty Terminal:
 
-![gif](https://i.imgur.com/v2BNmAe.gif)
+![img](https://i.postimg.cc/rpQmSpQW/image.png)
 
 # Process Management in the Terminal
 
 Processes in Linux are usually given certain `pid`'s, having this form of identification allows them to be easily tracked and managed, mostly this is used to take care of or kill problematic processes. There are 2 commands that can be used to find the `pid` of a program. You can use either `pidof` of `pgrep`. For the purposes of this guide, I will be using the `pgrep` command. Here is an example of me using `pgrep` to find the `pid` of Alacritty, a program that I know is currently running:
 
-![img](https://i.postimg.cc/4dtVgQvB/image.png)
+![img](https://i.postimg.cc/bvWv65fN/image.png)
 
 Though, while this command is useful in a limited use case, you will most likely find it easier to just use the `pkill` command. `pkill` allows you to kill a process using a variety of signals, 15 to be exact. The only ones that really matter, however, are signals 9 and 15, otherwise known as `SIGKILL` and `SIGTERM` respectively. `SIGTERM` will kill a process off safely and slowly, but sometimes this is not enough, so you can use `SIGKILL` to immediately terminate it, but I recommend trying your best not to resort to that option, as it could cause problems. Different signals can be invoked using **Flags**. `pkill`, however, defaults to using the `SIGTERM` signal, so for 99% of your use cases just using `pkill` serves as enough, as shown in this example:
 
-![img](https://i.postimg.cc/y8cH0JT2/image.png)
+**Not much to see here, the process either dies or there is an error:**
+
+![img](https://i.postimg.cc/cCD2mVPF/image.png)
+
 
 Another thing to take into account when dealing with running processes is memory usage, you can use the `free` command with the `-h` flag to display the amount of memory currently being used:
 
-![img](https://i.postimg.cc/nVXcCh6f/image.png)
+![img](https://i.postimg.cc/PfBRtQTp/image.png)
 
 But what if you wanted to see an interactive interface from which you could manage processes and see their relative resource usage, a "task manager" if you will. One of the programs you will find yourself most frequently using is `htop`, while not normally included with most Linux Distros, it is a must have utility, a lightweight and easy to use terminal task manager. I suggest you check out the program's GitHub page if you want to learn more. For now, however, here is a screenshot of `htop`:
 
-![img](https://i.postimg.cc/YSSBZX7B/image.png)
+![img](https://i.postimg.cc/D0qdfsPL/image.png)
 
 ## Creating Shell Aliases
 
-You may or not have noticed a file called `.bashrc` in your Home Directory. This file is the configuration file of the Bash Shell, and can be used to do some cool things, one of which is creating shell aliases. Shell aliases can be used to simplify long and complicated, or even simply hard-to-type commands into smaller ones. To add a shell alias, simple append a line following this syntax to the end of the `.bashrc` file, replacing the placeholder words with a word/command of your choice:
+You may or not have noticed a file called `.bashrc` in your Home Directory. This file is the configuration file of the Bash Shell, and can be used to do some cool things, one of which is creating shell aliases. Shell aliases can be used to simplify long and complicated, or even simply hard-to-type commands into smaller ones. To add a shell alias, simply append a line following this syntax to the end of the `.bashrc` file, replacing the placeholder words with a word/command of your choice:
 
 ```sh
 alias newcommand="long-and-annoying-old-command"

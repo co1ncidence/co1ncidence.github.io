@@ -49,19 +49,25 @@
         
         <li>
             <a class="" href="/about/">
-                <i class="fa-li fa  fa-lg"></i><span>About Me</span>
-            </a>
-        </li>
-        
-        <li>
-            <a class="" href="/tags/">
-                <i class="fa-li fa  fa-lg"></i><span>Tags</span>
+                <i class="fa-li fa  fa-lg"></i><span>[About Me]</span>
             </a>
         </li>
         
         <li>
             <a class="" href="/posts/">
-                <i class="fa-li fa  fa-lg"></i><span>Posts</span>
+                <i class="fa-li fa  fa-lg"></i><span>[Posts]</span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="" href="/tags/">
+                <i class="fa-li fa  fa-lg"></i><span>[Tags]</span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="" href="/books/">
+                <i class="fa-li fa  fa-lg"></i><span>[Books]</span>
             </a>
         </li>
         
@@ -171,7 +177,7 @@ cd /
 <span style="color:#75715e">#this will move you back to home</span>
 cd ~/
 </code></pre></div><p><code>ls</code> is one of the commands you will use the most, this command lists all of the files and folders in the current folder, allowing you to get a better idea of where you are. Here is an example of the <code>ls</code> command in use:</p>
-<p><img src="https://i.imgur.com/JeHH33T.gif" alt="gif"></p>
+<p><img src="https://i.postimg.cc/pTzfWz2x/2020-08-23-07-06-00.gif" alt="gif"></p>
 <p><code>touch</code> is used (mostly) to create a new, empty file in the folder you are currently occupying, the filetype can vary based on name extension, for example, to create a new <code>css</code> file you would run</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">touch file.css
 </code></pre></div><p>You can also use touch to create files in other folders:</p>
@@ -214,9 +220,9 @@ rm *.png
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cat .bashrc
 </code></pre></div><p>Will show you the contents of your <code>.bashrc</code> file, otherwise known as the bash shell configuration file, more about this later. <code>cat</code> is very useful when you want to look at certain content in a file but don&rsquo;t want to open it in your editor.
 You may realize. Here is an example of the <code>cat</code> command being used:</p>
-<p><img src="https://i.imgur.com/5Axaprt.gif" alt="gif"></p>
+<p><img src="https://i.postimg.cc/5tvYLJDS/2020-08-23-07-06-00.gif" alt="gif"></p>
 <p>However, that <code>cat</code> can be annoying when used on longer files, as you have to manually scroll back if you want to view any content near the beginning of the file. This is where another, very useful command comes in. The <code>less</code> command is similar to <code>cat</code>, but instead of just throwing all of the output at you and leaving you alone to manage it, <code>less</code> allows you to view the file in a scrolling window, with the top of the file being the beginning. You can then use the Up and Down arrow keys of J and K to navigate the file as you want. For those of you comfortable with them, Vim keybindings work in <code>less</code> as well. As you can see here, the experience is far more intuitive:</p>
-<p><img src="https://i.imgur.com/TaXK4Rf.gif" alt="gif"></p>
+<p><img src="https://i.postimg.cc/FHSsnZG9/2020-08-23-07-06-00.gif" alt="gif"></p>
 <p>Sometimes, however, we have too much output of a command, one example of such a problematic command can be the <code>fc-list</code> command, which lists all fonts currently installed on your system. You can filter the output of this command using <code>grep</code>, an extremely powerful search utility. <code>grep</code> however, usually requires piping, which I talked about earlier. Here is a basic example of the usage of <code>grep</code>:</p>
 <p>This command will have hundreds of lines of output, displaying all of your fonts:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">fc-list
@@ -224,26 +230,27 @@ You may realize. Here is an example of the <code>cat</code> command being used:<
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">fc-list | grep Roboto
 </code></pre></div><h2 id="editing-files-in-the-command-line-using-gnu-nano">Editing Files in The Command Line Using GNU Nano:</h2>
 <p>Throughout your Linux journey, there will be many, and I mean many, times where you will have to make a quick edit to some configuration file of some sort. Editing these files with a visual editor can be a pain as you have to run the editor as root, find the file you want to edit, and then finally get to editing it. As a solution to this, computers running any GNU/Linux Distribution usually come with a terminal editor installed, called <a href="https://en.wikipedia.org/wiki/GNU_nano">Nano</a>. Nano is an editor that allows you to edit any text file through the terminal. Here is an example of me editing the <code>/etc/fstab</code> file using Nano (note the use of sudo to access this file):</p>
-<p><img src="https://i.imgur.com/72sEkgT.gif" alt="gif"></p>
+<p><img src="https://i.postimg.cc/dt2J2101/2020-08-23-07-06-00.gif" alt="gif"></p>
 <p>Nano has many keyboard shortcuts and is a quite featured editor, though you will most likely only be using it for quick edits, as anything bigger would be better done in a real editor. The only real shortcut to know in Nano is <strong>Ctrl + X</strong>, this saves and exits the file, prompting you before doing so as well.</p>
 <h2 id="implementations-of-time-in-the-command-line">Implementations of Time In The Command Line</h2>
 <p>The <code>date</code> command can be used to quickly display the current date and time on the terminal, while this is cool it doesn&rsquo;t really have much of a use in day to day command line usage, it is more effective in scripts and programs, as a reliable way to get system time. Here is an example of the <code>date</code> command in use:</p>
-<p><img src="https://i.imgur.com/7YiAa6m.gif" alt="gif"></p>
+<p><img src="https://i.postimg.cc/W4JWZD2Y/image.png" alt="img"></p>
 <p>Another time related command you can use is <code>uptime</code>, this command outputs the amount of time the system has been on for, this can be helpful to know for a variety of reasons. By default, the <code>uptime</code> command has very messy output, so run it with the <code>-p</code> flag to make it more readable, here is an example:</p>
-<p><img src="https://i.imgur.com/0BMdeOh.gif" alt="gif"></p>
+<p><img src="https://i.postimg.cc/7YfghFPm/image.png" alt="img"></p>
 <p>The <code>time</code> command can be used to measure how much time another program takes to open up, this can be useful when diagnosing problems regarding system performance issues. Here is an example of the <code>time</code> command being used to display the startup time of the Alacritty Terminal:</p>
-<p><img src="https://i.imgur.com/v2BNmAe.gif" alt="gif"></p>
+<p><img src="https://i.postimg.cc/rpQmSpQW/image.png" alt="img"></p>
 <h1 id="process-management-in-the-terminal">Process Management in the Terminal</h1>
 <p>Processes in Linux are usually given certain <code>pid</code>'s, having this form of identification allows them to be easily tracked and managed, mostly this is used to take care of or kill problematic processes. There are 2 commands that can be used to find the <code>pid</code> of a program. You can use either <code>pidof</code> of <code>pgrep</code>. For the purposes of this guide, I will be using the <code>pgrep</code> command. Here is an example of me using <code>pgrep</code> to find the <code>pid</code> of Alacritty, a program that I know is currently running:</p>
-<p><img src="https://i.postimg.cc/4dtVgQvB/image.png" alt="img"></p>
+<p><img src="https://i.postimg.cc/bvWv65fN/image.png" alt="img"></p>
 <p>Though, while this command is useful in a limited use case, you will most likely find it easier to just use the <code>pkill</code> command. <code>pkill</code> allows you to kill a process using a variety of signals, 15 to be exact. The only ones that really matter, however, are signals 9 and 15, otherwise known as <code>SIGKILL</code> and <code>SIGTERM</code> respectively. <code>SIGTERM</code> will kill a process off safely and slowly, but sometimes this is not enough, so you can use <code>SIGKILL</code> to immediately terminate it, but I recommend trying your best not to resort to that option, as it could cause problems. Different signals can be invoked using <strong>Flags</strong>. <code>pkill</code>, however, defaults to using the <code>SIGTERM</code> signal, so for 99% of your use cases just using <code>pkill</code> serves as enough, as shown in this example:</p>
-<p><img src="https://i.postimg.cc/y8cH0JT2/image.png" alt="img"></p>
+<p><strong>Not much to see here, the process either dies or there is an error:</strong></p>
+<p><img src="https://i.postimg.cc/cCD2mVPF/image.png" alt="img"></p>
 <p>Another thing to take into account when dealing with running processes is memory usage, you can use the <code>free</code> command with the <code>-h</code> flag to display the amount of memory currently being used:</p>
-<p><img src="https://i.postimg.cc/nVXcCh6f/image.png" alt="img"></p>
+<p><img src="https://i.postimg.cc/PfBRtQTp/image.png" alt="img"></p>
 <p>But what if you wanted to see an interactive interface from which you could manage processes and see their relative resource usage, a &ldquo;task manager&rdquo; if you will. One of the programs you will find yourself most frequently using is <code>htop</code>, while not normally included with most Linux Distros, it is a must have utility, a lightweight and easy to use terminal task manager. I suggest you check out the program&rsquo;s GitHub page if you want to learn more. For now, however, here is a screenshot of <code>htop</code>:</p>
-<p><img src="https://i.postimg.cc/YSSBZX7B/image.png" alt="img"></p>
+<p><img src="https://i.postimg.cc/D0qdfsPL/image.png" alt="img"></p>
 <h2 id="creating-shell-aliases">Creating Shell Aliases</h2>
-<p>You may or not have noticed a file called <code>.bashrc</code> in your Home Directory. This file is the configuration file of the Bash Shell, and can be used to do some cool things, one of which is creating shell aliases. Shell aliases can be used to simplify long and complicated, or even simply hard-to-type commands into smaller ones. To add a shell alias, simple append a line following this syntax to the end of the <code>.bashrc</code> file, replacing the placeholder words with a word/command of your choice:</p>
+<p>You may or not have noticed a file called <code>.bashrc</code> in your Home Directory. This file is the configuration file of the Bash Shell, and can be used to do some cool things, one of which is creating shell aliases. Shell aliases can be used to simplify long and complicated, or even simply hard-to-type commands into smaller ones. To add a shell alias, simply append a line following this syntax to the end of the <code>.bashrc</code> file, replacing the placeholder words with a word/command of your choice:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">alias newcommand<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;long-and-annoying-old-command&#34;</span>
 </code></pre></div><p>Once you written this (hopefully using Nano), simply save the file and restart your terminal. Try typing in your new command, you will see that your chosen word acts as if it was that annoying command that you chose to replace.</p>
 <p>The possibilities with shell aliases are almost infinite, but for some inspiration, here are some of the ones that I am currently using:</p>
