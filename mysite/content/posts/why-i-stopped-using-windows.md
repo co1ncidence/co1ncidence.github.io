@@ -16,7 +16,7 @@ I will divide this subsection into 5 categories and talk about them separately:
   4. Lack of control over system, too much going on without user consent
   5. Other, more miscellaneous concerns
 
-### [Slow, bloated Interface, terrible UI design:]
+### [Slow, bloated Interface, terrible UI design]
 
 > Since design is a more subjective topic, this section will be regarded as the "least important", most will agree with what I say but some might not, keep this in mind as you read
 
