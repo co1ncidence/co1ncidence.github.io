@@ -1,23 +1,26 @@
 html {
-  background-color: #38322e;
+  background-color: #4e4540;
 }
 
 body {
-  margin: 10vh auto;
+  margin: 0vh auto;
   width: 100%;
-  max-width: 800px;
+  max-width: 850px;
   padding-right: 2vw;
   padding-left: 2vw;
   padding-top: 5vh;
   padding-bottom: 5vh;
-  font-family: serif;
+  font-family: "Roboto Mono", "Inconsolota", "SF Mono", monospace;
   background-color: #fdf9f8;
   color: #26221f;
-  border-top: 20px solid #1b1816;
-  border-bottom: 20px solid #1b1816;
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(15,13,12,0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(15,13,12,0.75);
-  box-shadow: 10px 10px 5px 0px rgba(15,13,12,0.75);
+
+  border-top: 8px solid #26221f;
+  border-bottom: 8px solid #26221f;
+
+
+  /* -webkit-box-shadow: 10px 10px 5px 0px rgba(15,13,12,0.75); */
+  /* -moz-box-shadow: 10px 10px 5px 0px rgba(15,13,12,0.75); */
+  /* box-shadow: 10px 10px 5px 0px rgba(15,13,12,0.75); */
 }
 
 h1,
@@ -27,7 +30,7 @@ h4,
 h5,
 h6,
 time {
-  font-family: sans-serif;
+  font-family: "Roboto Mono", "Inconsolota", "SF Mono", monospace;
   font-weight: Bold;
 }
 
@@ -41,7 +44,7 @@ time {
 }
 
 #container > * {
-  width: 700px;
+  width: 750px;
   margin: 0 auto;
 }
 
@@ -66,14 +69,14 @@ time {
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 0% 100%;
   background-repeat: no-repeat;
-  background-size: 0% 4px;
-  transition: background-size cubic-bezier(0,.5,0,1) 0.15s;
+  background-size: 0% 5px;
+  transition: background-size cubic-bezier(0,.5,0,1) 0.05s;
 }
 
 #container header h1 a:hover,
 a:focus {
   text-decoration: none;
-  background-size: 100% 4px;
+  background-size: 100% 5px;
 }
 
 #container header ul {
@@ -98,9 +101,9 @@ a:focus {
 }
 
 #container nav {
-  border-bottom: solid 4px #635851;
-  padding-bottom: 0.5em;
-  font-family: sans-serif;
+  border-bottom: 3px dashed #38322e;
+  padding-bottom: 0.4em;
+  font-family: "Roboto Mono", "Inconsolota", "SF Mono", monospace;
 }
 
 #container nav ul {
@@ -198,9 +201,10 @@ a:focus {
   padding-right: 0.25em;
   padding-top: 0.0em;
   padding-bottom: 0.1em;
-  color: #f4e0da;
-  background-color: #4e4540;
-  font-size: 0.9em;
+  color: #26221f;
+  background-color: #efedec;
+  font-size: 0.8em;
+  color: #020202;
 }
 
 #container main article p kbd {
@@ -283,7 +287,7 @@ width: 100%;
 
 .meta-aside, #container main section#home ul li aside, #container main article aside {
   margin: 0.5em 0;
-  font-family: serif;
+  font-family: "Roboto Mono", "Inconsolota", "SF Mono", monospace;
   color: #83756c;
   font-size: 0.8em;
 }
@@ -301,33 +305,22 @@ width: 100%;
 
 
 a {
-  color: #8e7f75;
-  text-decoration: none;
-  background-image: linear-gradient(currentColor, currentColor);
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-  background-size: 0% 3px;
-  transition: background-size cubic-bezier(0,.5,0,1) 0.15s;
+  color: #6e625a;
+  text-decoration: underline;
 }
 
 a:hover,
 a:focus {
-  text-decoration: none;
-  background-size: 100% 2px;
+  text-decoration: underline;
+  color: #4db4aa;
 }
 
 .image, figure img, img {
   width: 100%;
-  -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
 }
 
 .full-image, figure.full img, img[src*="full"] {
   width: 100%;
-  -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
 }
 
 @supports (width: 100vw) {
@@ -382,9 +375,6 @@ a:focus {
   width: 300px;
   float: right;
   margin: 1.1em 0em 1em 1em;
-  -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
 }
 
 @media only screen and (max-width: 800px) {
@@ -448,13 +438,14 @@ table thead {
 
 blockquote {
   margin-left: 0em;
-  border-left: solid 0.5em #26221f;
+  border-left: dashed 4px #26221f;
   padding: 0.2em 2em;
   position: relative;
-  color: #f4e0da;
-  background-color: #38322e;
+  color: #38322e;
+  background-color: #efedec;
   border-radius: 0px;
-  font-family: sans-serif;
+  font-family: "Roboto Mono", "Inconsolota", "SF Mono", monospace;
+  font-size: 16px;
 }
 
 @media only screen and (max-width: 800px) {

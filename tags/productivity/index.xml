@@ -1,9 +1,9 @@
 
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
  <channel>
-   <title>Productivity on nuaNce&#39;s blog</title>
+   <title>Productivity on nuaNce&#39;s blog :P</title>
    <link>https://co1ncidence.github.io/tags/productivity/</link>
-   <description>Recent content in Productivity on nuaNce&#39;s blog</description>
+   <description>Recent content in Productivity on nuaNce&#39;s blog :P</description>
    <generator>Hugo -- gohugo.io</generator>
    <language>en-us</language>
    <lastBuildDate>Sat, 15 Aug 2020 14:15:28 -0500</lastBuildDate>
@@ -28,9 +28,7 @@
 &lt;li&gt;Other, more miscellaneous concerns&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;1-slow-bloated-interface-terrible-ui-design&#34;&gt;1. Slow, bloated Interface, terrible UI design:&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Since design is a more subjective topic, this section will be regarded as the &amp;ldquo;least important&amp;rdquo;, most will agree with what I say but some might not, keep this in mind as you read&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;h4 id=&#34;since-design-is-a-more-subjective-topic-this-section-will-be-regarded-as-the-least-important-most-will-agree-with-what-i-say-but-some-might-not-keep-this-in-mind-as-you-read&#34;&gt;Since design is a more subjective topic, this section will be regarded as the &amp;ldquo;least important&amp;rdquo;, most will agree with what I say but some might not, keep this in mind as you read&lt;/h4&gt;
 &lt;p&gt;Something that I noticed while using windows on a daily basis was just how terrible the design was, there is no real effort put into the interface of Windows. I was constantly changing the look &amp;amp; feel of Windows using 3rd party programs like theme patchers to make the experience even tolerable. Buttons are misaligned all over, there is no real consistency to in the implementation of animations and other visual effects throughout the system, and worst of all, some of the less used interfaces still have design elements from older versions of Windows. One prime example of this can be found in Microsoft&amp;rsquo;s &lt;a href=&#34;https://outlook.live.com/owa/&#34;&gt;Outlook&lt;/a&gt; email client, which still uses &lt;a href=&#34;https://i.postimg.cc/Rh4gmHG8/Outlook-DV-Settings.jpg&#34;&gt;Windows XP dialogs&lt;/a&gt; for some of the account settings menus. And there isn&amp;rsquo;t much you can do to change these things either, since the only real customization options that Microsoft provides are:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Changing the desktop wallpaper&lt;/li&gt;
@@ -38,7 +36,7 @@
 &lt;li&gt;Adding items (only launchers so far) to the taskbar&lt;/li&gt;
 &lt;li&gt;And changing the single global accent color, which only a handful of &amp;ldquo;Windows Apps&amp;rdquo; actually use&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;And along with being terribly designed, the interface of Windows is also extremely slow and bloated, with animations taking seemingly forever to finish. Cool animations are fine and all, but if you ever try to get anything done fast in Windows, you will have a hard time if you are waiting 2-3 seconds for something like the Start Menu to open up. And speaking of the Start menu, not only is it slow, it provides no helpful features at a glance and requires you to spend considerable time scrolling or searching to actually find anything. On top of that it is filled with ads and publications which, are put there without any user consent whatsoever. All of these features actually end up causing harm as well. Microsoft&amp;rsquo;s developers have implemented almost no optimization into their interface, so even simple operations use up ridiculous amounts of RAM. Just idling your Windows desktop after boot uses up a whopping 1.4-20 gigabytes of ram and anywhere from 15-40 percent of your processor, depending on the strength of your hardware of course. This not only makes Windows a torturous experience to use on weaker machines, but also slows some of them down because of the constant stress the computers are in. And if you were to look closer, which I highly advise you don&amp;rsquo;t for your own good, you would find many misaligned texts, badly places lines, boxes out of order etc. In short, the Windows user interface is an unacceptable mess, and the saddest part is that this terrible experience, something I wouldn&amp;rsquo;t use for free, costs 120 glorious US dollars&amp;hellip;&lt;/p&gt;
+&lt;p&gt;And along with being terribly designed, the interface of Windows is also extremely slow and bloated, with animations taking seemingly forever to finish. Cool animations are fine and all, but if you ever try to get anything done fast in Windows, you will have a hard time if you are waiting 2-3 seconds for something like the Start Menu to open up. And speaking of the Start menu, not only is it slow, it provides no helpful features at a glance and requires you to spend considerable time scrolling or searching to actually find anything. On top of that it is filled with ads and publications which, are put there without any user consent whatsoever. All of these features actually end up causing harm as well. Microsoft&amp;rsquo;s developers have implemented almost no optimization into their interface, so even simple operations use up ridiculous amounts of system resources. Just idling your Windows desktop after boot uses up a whopping 1.4-20 gigabytes of RAM and anywhere from 15-40 percent of your CPU, depending on the strength of your hardware of course. This not only makes Windows a torturous experience to use on weaker machines, but also slows some of them down because of the constant stress the computers are in. And if you were to look closer, which I highly advise you don&amp;rsquo;t for your own good, you would find many misaligned texts, badly places lines, boxes out of order etc. In short, the Windows user interface is an unacceptable mess, and the saddest part is that this terrible experience, something I wouldn&amp;rsquo;t use for free, costs 120 glorious US dollars&amp;hellip;&lt;/p&gt;
 &lt;h3 id=&#34;many-security-and-privacy-issues-constant-spying-from-microsoft&#34;&gt;Many security and privacy issues, constant spying from Microsoft&lt;/h3&gt;
 &lt;h3 id=&#34;software-base-being-almost-completely-proprietary&#34;&gt;Software base being almost completely proprietary&lt;/h3&gt;
 &lt;h3 id=&#34;lack-of-control-over-system-too-much-going-on-without-user-consent&#34;&gt;Lack of control over system, too much going on without user consent&lt;/h3&gt;
@@ -47,7 +45,7 @@
      </item>
    
      <item>
-       <title>My Personal Software Faves</title>
+       <title>A List of My Favorite Software</title>
        <link>https://co1ncidence.github.io/posts/some-cool-software/</link>
        <pubDate>Mon, 17 Aug 2020 10:43:39 -0500</pubDate>
        
@@ -87,7 +85,7 @@
      </item>
    
      <item>
-       <title>My Guide to The Linux Command Line</title>
+       <title>Linux Command Line 101</title>
        <link>https://co1ncidence.github.io/posts/bash-basics-for-nubs/</link>
        <pubDate>Sat, 15 Aug 2020 14:15:28 -0500</pubDate>
        
@@ -108,7 +106,7 @@
 &lt;p&gt;&lt;strong&gt;Following these steps will lead you to your solution far more often than not.&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;second-some-things-i-wish-i-knew-when-starting-off&#34;&gt;Second, some things I wish I knew when starting off:&lt;/h2&gt;
 &lt;p&gt;This is just a collection of cool tips and tricks that&amp;rsquo;ll help with fully optimizing your command line skills, expect this to be updated frequently as I learn more.&lt;/p&gt;
-&lt;h3 id=&#34;autocomplete&#34;&gt;Autocomplete&lt;/h3&gt;
+&lt;h3 id=&#34;autocomplete&#34;&gt;Autocomplete:&lt;/h3&gt;
 &lt;p&gt;Something I didn&amp;rsquo;t realize for a long time was that bash has built in tab-complete, so instead of typing in entire long names of folders and/or programs, you can just type in a few letters and press the &lt;code&gt;tab&lt;/code&gt; key, Bash will then auto-type the rest of the name for your. If there are multiple possibilities, Bash will just output them all, so you can choose the one you want.&lt;/p&gt;
 &lt;h3 id=&#34;global-aliases&#34;&gt;Global Aliases:&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;..&lt;/code&gt; is an alias for the parent folder of the directory you are currently working inside, and the word &lt;code&gt;.&lt;/code&gt; is the alias for the folder currently occupied. These are useful to know as they can save you precious time typing in long directory paths when you are working with more advanced commands. These aliases can be used with just about any command so be careful with them.&lt;/p&gt;

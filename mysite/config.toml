@@ -1,7 +1,7 @@
 publishdir = ".."
 baseURL = "https://co1ncidence.github.io"
 languageCode = "en-us"
-title = "nuaNce's blog"
+title = "nuaNce's blog :P"
 theme = "hugo-kiera"
 paginate = 10
 
@@ -13,7 +13,7 @@ googleAnalytics = ""
 
 [params]
    author = "nuaNce"
-   tagline = "welcome to my realm"
+   tagline = "welcome to my realm, prepare for rants and strong opinions"
    description = "Just a place where I can rant and perhaps say something smart"
    subTitle = "welcome to my realm"
    dateFormat = "2006-01-02"

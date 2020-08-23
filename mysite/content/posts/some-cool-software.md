@@ -1,5 +1,5 @@
 ---
-title: "My Personal Software Faves"
+title: "A List of My Favorite Software"
 date: 2020-08-17T10:43:39-05:00
 tags:
   - Opinion

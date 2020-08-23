@@ -1,5 +1,5 @@
 ---
-title: "My Guide to The Linux Command Line"
+title: "Linux Command Line 101"
 date: 2020-08-15T14:15:28-05:00
 tags:
   - Guide
@@ -23,7 +23,7 @@ The Terminal is simply an interface to interact with your computer, by itself, i
 ## Second, some things I wish I knew when starting off:
 This is just a collection of cool tips and tricks that'll help with fully optimizing your command line skills, expect this to be updated frequently as I learn more.
 
-### Autocomplete
+### Autocomplete:
 Something I didn't realize for a long time was that bash has built in tab-complete, so instead of typing in entire long names of folders and/or programs, you can just type in a few letters and press the `tab` key, Bash will then auto-type the rest of the name for your. If there are multiple possibilities, Bash will just output them all, so you can choose the one you want.
 
 ### Global Aliases:
