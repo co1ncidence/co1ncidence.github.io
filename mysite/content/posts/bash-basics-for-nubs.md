@@ -247,7 +247,7 @@ You may or not have noticed a file called `.bashrc` in your Home Directory. This
 ```sh
 alias newcommand="long-and-annoying-old-command"
 ```
-Once you written this (hopefully using Nano), simply save the file and restart your terminal. Try typing in your new command, you will see that your chosen word acts as if it was that annoying command that you chose to replace.
+Once you've finished this (hopefully using Nano), simply save the file and restart your shell or terminal. Try typing in your new command, you will see that your chosen word behaves the same as that annoying command that you chose to replace.
 
 The possibilities with shell aliases are almost infinite, but for some inspiration, here are some of the ones that I am currently using:
 ```sh
