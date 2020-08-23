@@ -52,3 +52,12 @@ We've all used things like Ranger at some point, but sometimes you just need a s
 If you've used the normal Discord electron client, you are most likely aware of how resource intensive and bloated it can be, especially when it comes to ram usage. This is where Ripcord comes in, it is ridiculously lightweight and has most of the features you could want as well, including some very snappy movement via keybinds. It also has customizable colors out of the box.
 
 ![picture-of-ripcord](https://i.imgur.com/nLNDatX.png)
+
+---
+
+## [Qalculate](https://github.com/Qalculate/libqalculate), Stupidly Powerful CLI Calculator
+The days of having to turn to Google or some proprietary Internet service just for the sake of getting some quick maths done is over. With Qalc, not only can you easily do any number of regular mathematical operations, you can also do a number of verbose calculations for things like unit conversions. You may not get what I mean so here is an example:
+
+![img](https://i.postimg.cc/pdcgK95g/image.png)
+
+And, if you aren't up for doing math in the terminal, there is also an extremely powerful [GUI Version](http://qalculate.github.io/).
