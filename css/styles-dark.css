@@ -309,7 +309,7 @@ a {
 a:hover,
 a:focus {
   color: #7B9899;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .image, figure img, img {
