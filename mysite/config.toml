@@ -23,25 +23,25 @@ googleAnalytics = ""
 [menu]
 
   [[menu.main]]
+    name = "[ABOUT ME]"
     identifier = "about"
-    name = "[About Me]"
     url = "/about/"
     weight = 1
 
   [[menu.main]]
-    name = "[Posts]"
+    name = "[POSTS]"
     identifier = "archive"
     url = "/posts/"
     weight = 2
 
   [[menu.main]]
     identifier = "tags"
-    name = "[Tags]"
+    name = "[TAGS]"
     url = "/tags/"
     weight = 3
 
   [[menu.main]]
-    name = "[Books]"
+    name = "[BOOKS]"
     identifier = "books"
     url = "/books/"
     weight = 4

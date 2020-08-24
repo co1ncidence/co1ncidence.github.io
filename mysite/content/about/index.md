@@ -11,4 +11,6 @@ Gaming was a thing for me a while ago but it's kinda meh now, I prefer doing mor
 
 What's my favorite food? Well, this is a bit of a touchy topic. I usually can't decide but I *have* been craving some nice [Mutton Nihari](https://duckduckgo.com/?q=mutton+nihari&ia=images&iax=images) lately...
 
-I don't see money that often, and my best friend is a 7 month old cat named Felix. Quarantine has got me stuck at home but I manage to find things to do, you'll be reading about said things quite often here. See you around **:)**
+I don't see money that often, and my best friend is a 7 month old cat named Felix. Quarantine has got me stuck at home but I manage to find things to do, you'll be reading about said things quite often here. See you around
+
+**:)**

@@ -44,7 +44,7 @@ Just looking at the UI of this program, you can easily tell what it is. You simp
 
 ![picture-of-cfm](https://i.imgur.com/65Holv7.png#float-right)
 ## [cfm](https://github.com/WillEccles/cfm), Cactus File Manager
-We've all used things like Ranger at some point, but sometimes you just need a small little file browser to get around directories quickly or make a quick change to a file. cfm is great for things like this, since it doesn't have any unnecessary features and thus remains very fast. It also looks much a bit nicer than [fff](https://github.com/dylanaraps/fff), if that matters.
+We've all used things like Ranger at some point, but sometimes you just need a small little file browser to get around directories quickly or make a quick change to a file. cfm is great for things like this, since it doesn't have any unnecessary features and thus remains very fast. It also looks a bit nicer than [fff](https://github.com/dylanaraps/fff), it's main "competitor, with its nice little indentation effects and stuff.
 
 ---
 

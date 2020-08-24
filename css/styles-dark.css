@@ -1,5 +1,5 @@
 html {
-  background-color: #191919;
+  background-color: #363636;
 }
 
 body {
@@ -11,8 +11,13 @@ body {
   padding-top: 5vh;
   padding-bottom: 5vh;
   font-family: "Roboto Mono", "Inconsolota", "SF Mono", monospace;
-  background-color: #191919;
+  background-color: #222222;
   color: #f0f0f0;
+  border-right: 10px solid #8faaac;
+  border-left: 10px solid #8faaac;
+  -webkit-box-shadow: 0px 0px 57px 1px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 57px 1px rgba(0,0,0,1);
+  box-shadow: 0px 0px 57px 1px rgba(0,0,0,1);
 }
 
 h1,
@@ -199,7 +204,7 @@ a:focus {
   padding-top: 0.0em;
   padding-bottom: 0.1em;
   color: #f0f0f0;
-  background-color: #2c2c2c;
+  background-color: #363636;
   font-size: 0.9em;
   border-radius: 3px;
 }
@@ -285,7 +290,7 @@ width: 100%;
 .meta-aside, #container main section#home ul li aside, #container main article aside {
   margin: 0.5em 0;
   font-family: "Roboto Mono", "Inconsolota", "SF Mono", monospace;
-  color: #8aac8b;
+  color: #f0f0f0;
   font-size: 0.8em;
 }
 
@@ -425,8 +430,8 @@ table th {
 table th, table td {
   padding: 5px 10px;
   border-bottom: 3px solid #f0f0f0;
-  border-right: 2px solid #191919;
-  border-left: 2px solid #191919;
+  border-right: 2px solid #222222;
+  border-left: 2px solid #222222;
 }
 
 table thead {
