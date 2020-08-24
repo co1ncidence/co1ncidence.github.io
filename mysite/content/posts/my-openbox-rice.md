@@ -1,12 +1,12 @@
 ---
-title: "[My Linux Rices]"
+title: "My Linux Rices"
 date: 2020-08-04T00:19:18-05:00
 tags:
   - Showcase
   - Ricing and Theming
 ---
 
-## [Current rice]
+## Current rice
 ---
 
 ![img](https://i.postimg.cc/LsRQgbKW/what.png)
@@ -15,7 +15,7 @@ tags:
 
 ![img](https://i.postimg.cc/KzStp2VJ/whatever.png)
 
-## [Gallery of Rices]
+## Gallery of Rices
 ---
 
 ![img](https://i.postimg.cc/PfmCyx5s/2020-08-21-19-29-18.png)

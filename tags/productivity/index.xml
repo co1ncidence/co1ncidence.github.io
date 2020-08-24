@@ -12,7 +12,7 @@
    
    
      <item>
-       <title>[A List of My Favorite Software]</title>
+       <title>A List of My Favorite Software</title>
        <link>https://co1ncidence.github.io/posts/some-cool-software/</link>
        <pubDate>Mon, 17 Aug 2020 10:43:39 -0500</pubDate>
        
@@ -22,7 +22,7 @@
 &lt;p&gt;Links to the software&amp;rsquo;s Github page are in the headers&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;maimhttpsgithubcomnaelstrofmaim-the-better-screenshot-tool&#34;&gt;[&lt;a href=&#34;https://github.com/naelstrof/maim&#34;&gt;Maim&lt;/a&gt;, the better screenshot tool]&lt;/h2&gt;
+&lt;h2 id=&#34;maimhttpsgithubcomnaelstrofmaim-the-better-screenshot-tool&#34;&gt;&lt;a href=&#34;https://github.com/naelstrof/maim&#34;&gt;Maim&lt;/a&gt;, the better screenshot tool&lt;/h2&gt;
 &lt;p&gt;One of the most important pieces of software you can have is something to capture you display, while &lt;a href=&#34;https://github.com/dreamer/scrot&#34;&gt;scrot&lt;/a&gt; does the job quite well, it has issues with selecting areas and windows, which is where Maim comes in, it does basically the same thing as scrot but without any of the rendering and selection issues. Also, every screenshot you see on this blog was taken using Maim.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Fun fact:&lt;/strong&gt; bind this command in your hotkey daemon&amp;rsquo;s config and you can use it to easily take and paste screenshots:&lt;/p&gt;
@@ -30,26 +30,26 @@
 &lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.imgur.com/6T1WTMF.png#float-right&#34; alt=&#34;picture-of-sxiv&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;sxivhttpsgithubcommuennichsxiv-simple-x-image-viewer&#34;&gt;[&lt;a href=&#34;https://github.com/muennich/sxiv&#34;&gt;SXIV&lt;/a&gt;, Simple X Image Viewer]&lt;/h2&gt;
+&lt;h2 id=&#34;sxivhttpsgithubcommuennichsxiv-simple-x-image-viewer&#34;&gt;&lt;a href=&#34;https://github.com/muennich/sxiv&#34;&gt;SXIV&lt;/a&gt;, Simple X Image Viewer&lt;/h2&gt;
 &lt;p&gt;Many image viewers out there are usually needlessly large programs with unnecessary features, SXIV aims to just be a simple image viewer for X. And it does just that. You can zoom, pan, have a thumbnail mode, and just about anything you really need.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;giphhttpsgithubcomphischgiph-simple-gif-recorder&#34;&gt;[&lt;a href=&#34;https://github.com/phisch/giph&#34;&gt;Giph&lt;/a&gt;, Simple .gif Recorder]&lt;/h2&gt;
+&lt;h2 id=&#34;giphhttpsgithubcomphischgiph-simple-gif-recorder&#34;&gt;&lt;a href=&#34;https://github.com/phisch/giph&#34;&gt;Giph&lt;/a&gt;, Simple .gif Recorder&lt;/h2&gt;
 &lt;p&gt;Exactly what it claims to be, Giph a simple little utility that makes use of FFmpeg&amp;rsquo;s recording abilities to make it easy to record gifs of all, or sections of your screen. You can even use slop to select a section of your screen and then output it as a gif file, which is very convenient. And, like with maim, every gif that you see on this blog was recorded using Giph.&lt;/p&gt;
 &lt;p&gt;Hi phisch &lt;strong&gt;:)&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;lyrebirdhttpsgithubcomchxrltlyrebird-voice-changer-for-linux&#34;&gt;[&lt;a href=&#34;https://github.com/chxrlt/lyrebird&#34;&gt;Lyrebird&lt;/a&gt;, Voice Changer For Linux]&lt;/h2&gt;
+&lt;h2 id=&#34;lyrebirdhttpsgithubcomchxrltlyrebird-voice-changer-for-linux&#34;&gt;&lt;a href=&#34;https://github.com/chxrlt/lyrebird&#34;&gt;Lyrebird&lt;/a&gt;, Voice Changer For Linux&lt;/h2&gt;
 &lt;p&gt;Just looking at the UI of this program, you can easily tell what it is. You simply select which effect to apply then toggle the application, it couldn&amp;rsquo;t possibly get simpler to use. It works really good too, with there being minimal to none amounts of audible distortion and/or lag in input time when using this to change your voice.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.imgur.com/FNQWNFu.png&#34; alt=&#34;picture-of-lyrebird&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.imgur.com/65Holv7.png#float-right&#34; alt=&#34;picture-of-cfm&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;cfmhttpsgithubcomwillecclescfm-cactus-file-manager&#34;&gt;[&lt;a href=&#34;https://github.com/WillEccles/cfm&#34;&gt;cfm&lt;/a&gt;, Cactus File Manager]&lt;/h2&gt;
+&lt;h2 id=&#34;cfmhttpsgithubcomwillecclescfm-cactus-file-manager&#34;&gt;&lt;a href=&#34;https://github.com/WillEccles/cfm&#34;&gt;cfm&lt;/a&gt;, Cactus File Manager&lt;/h2&gt;
 &lt;p&gt;We&amp;rsquo;ve all used things like Ranger at some point, but sometimes you just need a small little file browser to get around directories quickly or make a quick change to a file. cfm is great for things like this, since it doesn&amp;rsquo;t have any unnecessary features and thus remains very fast. It also looks much a bit nicer than &lt;a href=&#34;https://github.com/dylanaraps/fff&#34;&gt;fff&lt;/a&gt;, if that matters.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;ripcordhttpscancelfmripcord-lightweight-discordslack-client&#34;&gt;[&lt;a href=&#34;https://cancel.fm/ripcord/&#34;&gt;Ripcord&lt;/a&gt;, Lightweight Discord/Slack Client]&lt;/h2&gt;
+&lt;h2 id=&#34;ripcordhttpscancelfmripcord-lightweight-discordslack-client&#34;&gt;&lt;a href=&#34;https://cancel.fm/ripcord/&#34;&gt;Ripcord&lt;/a&gt;, Lightweight Discord/Slack Client&lt;/h2&gt;
 &lt;p&gt;If you&amp;rsquo;ve used the normal Discord electron client, you are most likely aware of how resource intensive and bloated it can be, especially when it comes to ram usage. This is where Ripcord comes in, it is ridiculously lightweight and has most of the features you could want as well, including some very snappy movement via keybinds. It also has customizable colors out of the box.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.imgur.com/nLNDatX.png&#34; alt=&#34;picture-of-ripcord&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;qalculatehttpsgithubcomqalculatelibqalculate-stupidly-powerful-cli-calculator&#34;&gt;[&lt;a href=&#34;https://github.com/Qalculate/libqalculate&#34;&gt;Qalculate&lt;/a&gt;, Stupidly Powerful CLI Calculator]&lt;/h2&gt;
+&lt;h2 id=&#34;qalculatehttpsgithubcomqalculatelibqalculate-stupidly-powerful-cli-calculator&#34;&gt;&lt;a href=&#34;https://github.com/Qalculate/libqalculate&#34;&gt;Qalculate&lt;/a&gt;, Stupidly Powerful CLI Calculator&lt;/h2&gt;
 &lt;p&gt;The days of having to turn to Google or some proprietary Internet service just for the sake of getting some quick maths done is over. With Qalc, not only can you easily do any number of regular mathematical operations, you can also do a number of verbose calculations for things like unit conversions. You may not get what I mean so here is an example:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/pdcgK95g/image.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
 &lt;p&gt;And, if you aren&amp;rsquo;t up for doing math in the terminal, there is also an equally powerful &lt;a href=&#34;http://qalculate.github.io/&#34;&gt;GUI Version&lt;/a&gt;.&lt;/p&gt;
@@ -57,7 +57,7 @@
      </item>
    
      <item>
-       <title>[Linux Command Line 101]</title>
+       <title>Linux Command Line 101</title>
        <link>https://co1ncidence.github.io/posts/bash-basics-for-nubs/</link>
        <pubDate>Sat, 15 Aug 2020 14:15:28 -0500</pubDate>
        
@@ -66,7 +66,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;Read The F***ing Manual&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;first-some-terminology-and-tips&#34;&gt;[First, some Terminology and Tips]&lt;/h2&gt;
+&lt;h2 id=&#34;first-some-terminology-and-tips&#34;&gt;First, some Terminology and Tips&lt;/h2&gt;
 &lt;p&gt;The Terminal is simply an interface to interact with your computer, by itself, it is nothing but an empty program. A terminal (in 99.99% of cases) needs a &lt;strong&gt;Shell&lt;/strong&gt; to function. A shell is an interactive text interface for the user, and the &lt;strong&gt;Terminal&lt;/strong&gt; is the tool most often used to run commands via the shell. There are many shells out there, thought this tutorial in specific will be focusing on the most is &lt;strong&gt;Bash&lt;/strong&gt;, the most popular shell in use right now and the default shell of most &lt;a href=&#34;https://en.wikipedia.org/wiki/Linux&#34;&gt;Linux&lt;/a&gt; distributions. Bash allows you to run commands from other programs or utilities, common ones you&amp;rsquo;ll mostly likely need are those from something like the &lt;a href=&#34;https://en.wikipedia.org/wiki/GNU_Core_Utilities&#34;&gt;GNU Coreutils&lt;/a&gt;, and any other programs you might use daily. Once you have familiarized yourself with these terms, you can get on to actually using the command line. And finally, and most likely &lt;strong&gt;The Most Important Thing You Will Read Here&lt;/strong&gt;, you have to always be willing to read documentation and official manuals, don&amp;rsquo;t go around annoying others for help. Some things to do when encountering issues can include:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;The official manual of the program, accessed by running the man command for that program in the terminal&lt;/li&gt;
@@ -76,25 +76,25 @@
 &lt;li&gt;Searching &lt;a href=&#34;https://reddit.com&#34;&gt;Reddit&lt;/a&gt; for similar problems or making a post about your own&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Following these steps will lead you to your solution far more often than not.&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;second-some-cli-life-hax&#34;&gt;[Second, some CLI life hax]&lt;/h2&gt;
+&lt;h2 id=&#34;second-some-cli-life-hax&#34;&gt;Second, some CLI life hax&lt;/h2&gt;
 &lt;p&gt;This is just a collection of cool tips and tricks that&amp;rsquo;ll help with fully optimizing your command line skills, expect this to be updated frequently as I learn more.&lt;/p&gt;
-&lt;h3 id=&#34;autocomplete&#34;&gt;[Autocomplete]&lt;/h3&gt;
+&lt;h3 id=&#34;autocomplete&#34;&gt;Autocomplete&lt;/h3&gt;
 &lt;p&gt;Something I didn&amp;rsquo;t realize for a long time was that bash has built in tab-complete, so instead of typing in entire long names of folders and/or programs, you can just type in a few letters and press the &lt;code&gt;tab&lt;/code&gt; key, Bash will then auto-type the rest of the name for your. If there are multiple possibilities, Bash will just output them all, so you can choose the one you want.&lt;/p&gt;
-&lt;h3 id=&#34;global-aliases&#34;&gt;[Global Aliases]&lt;/h3&gt;
+&lt;h3 id=&#34;global-aliases&#34;&gt;Global Aliases&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;..&lt;/code&gt; is an alias for the parent folder of the directory you are currently working inside, and the word &lt;code&gt;.&lt;/code&gt; is the alias for the folder currently occupied. These are useful to know as they can save you precious time typing in long directory paths when you are working with more advanced commands. These aliases can be used with just about any command so be careful with them.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;~&lt;/code&gt; is an alias that stands for &lt;code&gt;/home/username&lt;/code&gt;, with &amp;ldquo;username&amp;rdquo; being the user name of the currently active user. It can be used with many commands, so once again, be careful with what you do. If you are ever unsure, just remind yourself that it &lt;strong&gt;directly&lt;/strong&gt; translates to &lt;code&gt;/home/username&lt;/code&gt;, that&amp;rsquo;ll help you get a bearing on the command you are about to run.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;!!&lt;/code&gt; is an alias for the last command run. For example, if you ran a command but forgot to add &lt;code&gt;sudo&lt;/code&gt; or something, you can simply run &lt;code&gt;sudo !!&lt;/code&gt; instead of typing out the whole of the previous command.&lt;/p&gt;
-&lt;h3 id=&#34;conditional-execution&#34;&gt;[Conditional Execution]&lt;/h3&gt;
+&lt;h3 id=&#34;conditional-execution&#34;&gt;Conditional Execution&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;&amp;amp;&lt;/code&gt; is a character you can insert after a command and use to spawn command outputs in the background, and &lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt; can be used to implement &lt;strong&gt;Conditional Execution&lt;/strong&gt;, which means you can run multiple commands in succession, for example:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#command2 will only run if command1 is successful&lt;/span&gt;
 command1 &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; command2
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can also do another kind of sequential execution in the command line, using the &lt;code&gt;||&lt;/code&gt; function, this works in a similar way to &lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt; but instead of running a command after the execution of the previous one, it runs a second command only if the first one failed to run, sort of like a &amp;ldquo;Plan B&amp;rdquo; if you will. Here is an example:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#command2 will only run if command1 fails for any reason&lt;/span&gt;
 command1 &lt;span style=&#34;color:#f92672&#34;&gt;||&lt;/span&gt; command2
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;pipes-in-bash&#34;&gt;[Pipes In Bash]&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;pipes-in-bash&#34;&gt;Pipes In Bash&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Pipes&lt;/strong&gt; are things you can use to filter one command through another, thus allowing for things like controlling outputs of commands. Pipes have many uses so I recommend that you look more into them as there is no way I can go into full depth here. Here is an example of a pipe being used to filter the output of of &lt;code&gt;fc-list&lt;/code&gt; through &lt;code&gt;grep&lt;/code&gt; to only show fonts with a certain name.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;fc-list | grep Roboto
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;keyboard-shortcuts&#34;&gt;[Keyboard Shortcuts]&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;keyboard-shortcuts&#34;&gt;Keyboard Shortcuts&lt;/h3&gt;
 &lt;p&gt;Unknown to me for quite a while during my usage of the terminal in Linux was that there were many keyboard shortcuts that could be used to navigate and control text much faster in the command line. These are mostly inherited from some of the keyboard shortcuts in editors like &lt;code&gt;emacs&lt;/code&gt;, from what I can tell. Here are the ones I find myself using most often:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;ctrl + arrow keys&lt;/code&gt; will move the cursor one word in the respective direction&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;ctrl + b/f&lt;/code&gt; will move the cursor backwards and forwards respectively&lt;/p&gt;
@@ -106,7 +106,7 @@ command1 &lt;span style=&#34;color:#f92672&#34;&gt;||&lt;/span&gt; command2
 &lt;p&gt;&lt;code&gt;ctrl + r&lt;/code&gt; will initiate a reverse search for previously entered commands&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;ctrl + n/p&lt;/code&gt; will cycle you through previously entered commands&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;ctrl + m/j&lt;/code&gt;, both work the same way as &lt;code&gt;enter&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&#34;file-management&#34;&gt;[File Management]&lt;/h2&gt;
+&lt;h2 id=&#34;file-management&#34;&gt;File Management&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;cd&lt;/code&gt; stands for &amp;ldquo;change directory&amp;rdquo;, you can use this command to enter and leave directories. It is not limited to neighboring directories, however, you can use &lt;code&gt;cd&lt;/code&gt; to move from one side of your computer to another, provided you don&amp;rsquo;t mess up typing in the names of folders. First thing to note is that a &lt;code&gt;/&lt;/code&gt; is not necessary after a folder name:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#these 2 commands are the same&lt;/span&gt;
 cd ~/folder1/folder2/
@@ -158,11 +158,11 @@ mv ~/usr/share/backgrounds/*.png ~/Pictures/stuff/
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can also pair &lt;code&gt;*&lt;/code&gt; with &lt;code&gt;rm&lt;/code&gt;, this can be very dangerous so make sure you are careful. Example&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#this removes all png files in folder&lt;/span&gt;
 rm *.png
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;permissions&#34;&gt;[Permissions]&lt;/h4&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;permissions&#34;&gt;Permissions&lt;/h4&gt;
 &lt;p&gt;Sometimes, your user may not have the necessary permissions to execute certain commands on a file or folder, this is because the owner of said file/folder is the &lt;strong&gt;root user&lt;/strong&gt;, to obtain the abilities of the root user, you just have to place the word &lt;code&gt;sudo&lt;/code&gt; behind your command. &lt;code&gt;sudo&lt;/code&gt; stands for &amp;ldquo;Super User DO&amp;rdquo;, and will allow you to run commands with elevated permissions, here is an example:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;sudo rm -rf /
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This command is a great showcase of the dangers of &lt;code&gt;sudo&lt;/code&gt; as well. If you haven&amp;rsquo;t already realized, this command will wipe every file and folder on your system. So whenever something requires you to be root to run a command, always make sure you know what you are doing, and always remember that there is a reason that there is a reason for a password to be between you and the execution of this command. Stay safe.&lt;/p&gt;
-&lt;h2 id=&#34;file-viewing--and-output-controlfiltering&#34;&gt;[File Viewing  and Output Control/Filtering]&lt;/h2&gt;
+&lt;h2 id=&#34;file-viewing--and-output-controlfiltering&#34;&gt;File Viewing  and Output Control/Filtering&lt;/h2&gt;
 &lt;p&gt;The &lt;code&gt;cat&lt;/code&gt; command is one of the first to know when viewing files, running &lt;code&gt;cat&lt;/code&gt; on a file which contains any sort of text will cause your terminal to output the full contents of your file, for example, running:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;cat .bashrc
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Will show you the contents of your &lt;code&gt;.bashrc&lt;/code&gt; file, otherwise known as the bash shell configuration file, more about this later. &lt;code&gt;cat&lt;/code&gt; is very useful when you want to look at certain content in a file but don&amp;rsquo;t want to open it in your editor.
@@ -175,7 +175,7 @@ You may realize. Here is an example of the &lt;code&gt;cat&lt;/code&gt; command 
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;fc-list
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This command, however, will filter out every result and only show results containing the word &amp;ldquo;Roboto&amp;rdquo;:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;fc-list | grep Roboto
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;editing-files-using-gnu-nano&#34;&gt;[Editing Files Using GNU Nano]&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;editing-files-using-gnu-nano&#34;&gt;Editing Files Using GNU Nano&lt;/h2&gt;
 &lt;p&gt;Throughout your Linux journey, there will be many, and I mean many, times where you will have to make a quick edit to some configuration file of some sort. Editing these files with a visual editor can be a pain as you have to run the editor as root, find the file you want to edit, and then finally get to editing it. As a solution to this, computers running any GNU/Linux Distribution usually come with a terminal editor installed, called &lt;a href=&#34;https://en.wikipedia.org/wiki/GNU_nano&#34;&gt;Nano&lt;/a&gt;. Nano is an editor that allows you to edit any text file through the terminal. Here is an example of me editing the &lt;code&gt;/etc/fstab&lt;/code&gt; file using Nano (note the use of sudo to access this file):&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/dt2J2101/2020-08-23-07-06-00.gif&#34; alt=&#34;gif&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Nano has many keyboard shortcuts and is a quite featured editor, though you will most likely only be using it for quick edits, as anything bigger would be better done in a real editor. The only real shortcut to know in Nano is &lt;strong&gt;Ctrl + X&lt;/strong&gt;, this saves and exits the file, prompting you before doing so as well.&lt;/p&gt;
@@ -220,56 +220,56 @@ alias free&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style
      </item>
    
      <item>
-       <title>[My Top 10 Best Looking Cars]</title>
+       <title>My Top 10 Best Looking Cars</title>
        <link>https://co1ncidence.github.io/posts/top-10-best-looking-cars/</link>
        <pubDate>Wed, 05 Aug 2020 15:58:49 -0500</pubDate>
        
        <guid>https://co1ncidence.github.io/posts/top-10-best-looking-cars/</guid>
-       <description>&lt;h2 id=&#34;mercedes-amg-gt-r&#34;&gt;[Mercedes AMG GT-R]&lt;/h2&gt;
+       <description>&lt;h2 id=&#34;mercedes-amg-gt-r&#34;&gt;Mercedes AMG GT-R&lt;/h2&gt;
 &lt;p&gt;One of the only cars in recent times to really pose a threat to the sales of the 911, the GT does a good job of representing a similar muscular and round look while also adhering to the aesthetic of it&amp;rsquo;s predecessor, the SLS AMG.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.imgur.com/mwGVMaC.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;datsun-240z-fairlady&#34;&gt;[Datsun 240z Fairlady]&lt;/h2&gt;
+&lt;h2 id=&#34;datsun-240z-fairlady&#34;&gt;Datsun 240z Fairlady&lt;/h2&gt;
 &lt;p&gt;One of the most well-known sports cars of it&amp;rsquo;s time and now a JDM legend, the amount of things that have been done to the Datsun are insane, here is NightRide&amp;rsquo;s iteration of the vehicle, one of the best looking ones I&amp;rsquo;ve found:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.imgur.com/XXhE6B9.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;de-tomaso-pantera&#34;&gt;[De Tomaso Pantera]&lt;/h2&gt;
+&lt;h2 id=&#34;de-tomaso-pantera&#34;&gt;De Tomaso Pantera&lt;/h2&gt;
 &lt;p&gt;While some may find the more exotic &amp;ldquo;GTS&amp;rdquo; variant of the Pantera to be the one that looks better, I&amp;rsquo;m not personally a fan of the Lamborghini Countach-like aesthetic of that vehicle. I much prefer the cleaner, sharper look of the Pantera, it is definitely a piece of art to behold.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.imgur.com/e9Vxb5e.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;bmw-m3&#34;&gt;[BMW M3]&lt;/h2&gt;
+&lt;h2 id=&#34;bmw-m3&#34;&gt;BMW M3&lt;/h2&gt;
 &lt;p&gt;Couldn&amp;rsquo;t have a list like this without the legend itself.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.imgur.com/BsUufV0.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;koenigsegg-one1&#34;&gt;[Koenigsegg One:1]&lt;/h2&gt;
+&lt;h2 id=&#34;koenigsegg-one1&#34;&gt;Koenigsegg One:1&lt;/h2&gt;
 &lt;p&gt;I&amp;rsquo;ve always had a thing for more muscular looking cars, but the style that real muscle cars have doesn&amp;rsquo;t really hit the spot I want it to. The way Koenigsegg designed the One:1, however, matches perfectly with what I mean. Long, sleek lines with a short hood and flat buttresses really make this car stand out in the upper echelon of the hypercar scene. The fact that it is one of the fastest cars in the world also helps its case.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://www.koenigsegg.com/wp-content/uploads/2019/01/Julia_LaPalme_LagunaSeca_2015_MGL3058.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;porsche-911-carrera&#34;&gt;[Porsche 911 Carrera]&lt;/h2&gt;
+&lt;h2 id=&#34;porsche-911-carrera&#34;&gt;Porsche 911 Carrera&lt;/h2&gt;
 &lt;p&gt;Now while people usually consider the design of the Porsche 911 to be quite bland and repetitive, I quite like the planted, wide feel the design of the new 992 Carrera brings to the table, and though it&amp;rsquo;s basically the same as the last generation, the new headlights are the reason I chose this one over the 991.2.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.imgur.com/1MvCnm4.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;mclaren-765lt&#34;&gt;[Mclaren 765LT]&lt;/h2&gt;
+&lt;h2 id=&#34;mclaren-765lt&#34;&gt;Mclaren 765LT&lt;/h2&gt;
 &lt;p&gt;I was originally going to add the Mclaren 720s to take this place. But with the recent announcement that Mclaren&amp;rsquo;s next speedtail was going to be based off of the 720, I just had to use this one instead as it only improves on the beautiful design of its predecessor.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.imgur.com/F2c5TVc.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;acura-nsx&#34;&gt;[Acura Nsx]&lt;/h2&gt;
+&lt;h2 id=&#34;acura-nsx&#34;&gt;Acura Nsx&lt;/h2&gt;
 &lt;p&gt;I don&amp;rsquo;t really have much to say about this car, just that it looks nice for it&amp;rsquo;s time and has managed to employ a quite timeless aesthetic. Too bad it&amp;rsquo;s successor didn&amp;rsquo;t achieve the same.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.imgur.com/HyupsoV.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;ferrari-250swb&#34;&gt;[Ferrari 250SWB]&lt;/h2&gt;
+&lt;h2 id=&#34;ferrari-250swb&#34;&gt;Ferrari 250SWB&lt;/h2&gt;
 &lt;p&gt;A spin-off model of what was arguably one of the best looking Ferraris of all time, the 250SWB improves greatly on the vintage aesthetic of the 250GTO and manages to look even more sophisticated than its older brother.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.imgur.com/3nE0VdI.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;aston-martin-dbs-superleggera&#34;&gt;[Aston Martin DBS Superleggera]&lt;/h2&gt;
+&lt;h2 id=&#34;aston-martin-dbs-superleggera&#34;&gt;Aston Martin DBS Superleggera&lt;/h2&gt;
 &lt;p&gt;It&amp;rsquo;s the best looking, no argument here.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.imgur.com/8zDcqjT.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
 </description>
      </item>
    
      <item>
-       <title>[My Linux Rices]</title>
+       <title>My Linux Rices</title>
        <link>https://co1ncidence.github.io/posts/my-openbox-rice/</link>
        <pubDate>Tue, 04 Aug 2020 00:19:18 -0500</pubDate>
        
        <guid>https://co1ncidence.github.io/posts/my-openbox-rice/</guid>
-       <description>&lt;h2 id=&#34;current-rice&#34;&gt;[Current rice]&lt;/h2&gt;
+       <description>&lt;h2 id=&#34;current-rice&#34;&gt;Current rice&lt;/h2&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/LsRQgbKW/what.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/PJNZP58f/whatever.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/KzStp2VJ/whatever.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;gallery-of-rices&#34;&gt;[Gallery of Rices]&lt;/h2&gt;
+&lt;h2 id=&#34;gallery-of-rices&#34;&gt;Gallery of Rices&lt;/h2&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/PfmCyx5s/2020-08-21-19-29-18.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.redd.it/uhmfcesa1zh51.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
@@ -301,7 +301,7 @@ alias free&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style
      </item>
    
      <item>
-       <title>[Why I Use Neovim]</title>
+       <title>Why I Use Neovim</title>
        <link>https://co1ncidence.github.io/posts/neovim-thoughts/</link>
        <pubDate>Sun, 02 Aug 2020 22:35:38 -0500</pubDate>
        

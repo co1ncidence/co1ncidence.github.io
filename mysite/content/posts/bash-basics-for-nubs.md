@@ -1,5 +1,5 @@
 ---
-title: "[Linux Command Line 101]"
+title: "Linux Command Line 101"
 date: 2020-08-15T14:15:28-05:00
 tags:
   - Guide
@@ -10,7 +10,7 @@ When I first started with Linux, and especially the command line, It was difficu
 
 > Read The F***ing Manual
 
-## [First, some Terminology and Tips]
+## First, some Terminology and Tips
 The Terminal is simply an interface to interact with your computer, by itself, it is nothing but an empty program. A terminal (in 99.99% of cases) needs a **Shell** to function. A shell is an interactive text interface for the user, and the **Terminal** is the tool most often used to run commands via the shell. There are many shells out there, thought this tutorial in specific will be focusing on the most is **Bash**, the most popular shell in use right now and the default shell of most [Linux](https://en.wikipedia.org/wiki/Linux) distributions. Bash allows you to run commands from other programs or utilities, common ones you'll mostly likely need are those from something like the [GNU Coreutils](https://en.wikipedia.org/wiki/GNU_Core_Utilities), and any other programs you might use daily. Once you have familiarized yourself with these terms, you can get on to actually using the command line. And finally, and most likely **The Most Important Thing You Will Read Here**, you have to always be willing to read documentation and official manuals, don't go around annoying others for help. Some things to do when encountering issues can include:
   - The official manual of the program, accessed by running the man command for that program in the terminal
   - Searching through the Github issues of the program you are struggling with to find a similar or identical problem
@@ -20,13 +20,13 @@ The Terminal is simply an interface to interact with your computer, by itself, i
 
 **Following these steps will lead you to your solution far more often than not.**
 
-## [Second, some CLI life hax]
+## Second, some CLI life hax
 This is just a collection of cool tips and tricks that'll help with fully optimizing your command line skills, expect this to be updated frequently as I learn more.
 
-### [Autocomplete]
+### Autocomplete
 Something I didn't realize for a long time was that bash has built in tab-complete, so instead of typing in entire long names of folders and/or programs, you can just type in a few letters and press the `tab` key, Bash will then auto-type the rest of the name for your. If there are multiple possibilities, Bash will just output them all, so you can choose the one you want.
 
-### [Global Aliases]
+### Global Aliases
 `..` is an alias for the parent folder of the directory you are currently working inside, and the word `.` is the alias for the folder currently occupied. These are useful to know as they can save you precious time typing in long directory paths when you are working with more advanced commands. These aliases can be used with just about any command so be careful with them.
 
 `~` is an alias that stands for `/home/username`, with "username" being the user name of the currently active user. It can be used with many commands, so once again, be careful with what you do. If you are ever unsure, just remind yourself that it **directly** translates to `/home/username`, that'll help you get a bearing on the command you are about to run.
@@ -34,7 +34,7 @@ Something I didn't realize for a long time was that bash has built in tab-comple
 `!!` is an alias for the last command run. For example, if you ran a command but forgot to add `sudo` or something, you can simply run `sudo !!` instead of typing out the whole of the previous command.
 
 
-### [Conditional Execution]
+### Conditional Execution
 `&` is a character you can insert after a command and use to spawn command outputs in the background, and `&&` can be used to implement **Conditional Execution**, which means you can run multiple commands in succession, for example:
 ```sh
 #command2 will only run if command1 is successful
@@ -46,13 +46,13 @@ You can also do another kind of sequential execution in the command line, using 
 command1 || command2
 ```
 
-### [Pipes In Bash]
+### Pipes In Bash
 **Pipes** are things you can use to filter one command through another, thus allowing for things like controlling outputs of commands. Pipes have many uses so I recommend that you look more into them as there is no way I can go into full depth here. Here is an example of a pipe being used to filter the output of of `fc-list` through `grep` to only show fonts with a certain name.
 ```sh
 fc-list | grep Roboto
 ```
 
-### [Keyboard Shortcuts]
+### Keyboard Shortcuts
 Unknown to me for quite a while during my usage of the terminal in Linux was that there were many keyboard shortcuts that could be used to navigate and control text much faster in the command line. These are mostly inherited from some of the keyboard shortcuts in editors like `emacs`, from what I can tell. Here are the ones I find myself using most often:
 
 `ctrl + arrow keys` will move the cursor one word in the respective direction
@@ -75,7 +75,7 @@ Unknown to me for quite a while during my usage of the terminal in Linux was tha
 
 `ctrl + m/j`, both work the same way as `enter`
 
-## [File Management]
+## File Management
 
 `cd` stands for "change directory", you can use this command to enter and leave directories. It is not limited to neighboring directories, however, you can use `cd` to move from one side of your computer to another, provided you don't mess up typing in the names of folders. First thing to note is that a `/` is not necessary after a folder name:
 ```sh
@@ -165,14 +165,14 @@ You can also pair `*` with `rm`, this can be very dangerous so make sure you are
 rm *.png
 ```
 
-#### [Permissions]
+#### Permissions
 Sometimes, your user may not have the necessary permissions to execute certain commands on a file or folder, this is because the owner of said file/folder is the **root user**, to obtain the abilities of the root user, you just have to place the word `sudo` behind your command. `sudo` stands for "Super User DO", and will allow you to run commands with elevated permissions, here is an example:
 ```sh
 sudo rm -rf /
 ```
 This command is a great showcase of the dangers of `sudo` as well. If you haven't already realized, this command will wipe every file and folder on your system. So whenever something requires you to be root to run a command, always make sure you know what you are doing, and always remember that there is a reason that there is a reason for a password to be between you and the execution of this command. Stay safe.
 
-## [File Viewing  and Output Control/Filtering]
+## File Viewing  and Output Control/Filtering
 The `cat` command is one of the first to know when viewing files, running `cat` on a file which contains any sort of text will cause your terminal to output the full contents of your file, for example, running:
 ```sh
 cat .bashrc
@@ -198,7 +198,7 @@ This command, however, will filter out every result and only show results contai
 fc-list | grep Roboto
 ```
 
-## [Editing Files Using GNU Nano]
+## Editing Files Using GNU Nano
 Throughout your Linux journey, there will be many, and I mean many, times where you will have to make a quick edit to some configuration file of some sort. Editing these files with a visual editor can be a pain as you have to run the editor as root, find the file you want to edit, and then finally get to editing it. As a solution to this, computers running any GNU/Linux Distribution usually come with a terminal editor installed, called [Nano](https://en.wikipedia.org/wiki/GNU_nano). Nano is an editor that allows you to edit any text file through the terminal. Here is an example of me editing the `/etc/fstab` file using Nano (note the use of sudo to access this file):
 
 ![gif](https://i.postimg.cc/dt2J2101/2020-08-23-07-06-00.gif)
