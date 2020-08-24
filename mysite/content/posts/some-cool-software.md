@@ -60,4 +60,4 @@ The days of having to turn to Google or some proprietary Internet service just f
 
 ![img](https://i.postimg.cc/pdcgK95g/image.png)
 
-And, if you aren't up for doing math in the terminal, there is also an extremely powerful [GUI Version](http://qalculate.github.io/).
+And, if you aren't up for doing math in the terminal, there is also an equally powerful [GUI Version](http://qalculate.github.io/).
