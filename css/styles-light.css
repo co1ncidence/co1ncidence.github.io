@@ -1,5 +1,5 @@
 html {
-  background-color: #191919;
+  background-color: #f5f5f5;
 }
 
 body {
@@ -11,8 +11,8 @@ body {
   padding-top: 5vh;
   padding-bottom: 5vh;
   font-family: "Roboto Mono", "Inconsolota", "SF Mono", monospace;
-  background-color: #191919;
-  color: #f0f0f0;
+  background-color: #f5f5f5;
+  color: #2c2c2c;
 }
 
 h1,
@@ -24,7 +24,7 @@ h6,
 time {
   font-family: "Roboto Mono", "Inconsolota", "SF Mono", monospace;
   font-weight: Bold;
-  color: #fafafa;
+  color: #222222;
 }
 
 #container {
@@ -99,7 +99,7 @@ a:focus {
   position: relative;
   padding-bottom: 0.5em;
   font-family: "Roboto Mono", "Inconsolota", "SF Mono", monospace;
-  border-bottom: 3px solid #f0f0f0;
+  border-bottom: 3px solid #535353;
 }
 
 #container nav ul {
@@ -168,7 +168,7 @@ a:focus {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  border-top: 1px solid #f0f0f0;
+  border-top: 1px solid #bbbbbb;
   font-size: 0.9em;
 }
 
@@ -198,8 +198,8 @@ a:focus {
   padding-right: 0.25em;
   padding-top: 0.0em;
   padding-bottom: 0.1em;
-  color: #f0f0f0;
-  background-color: #2c2c2c;
+  color: #2c2c2c;
+  background-color: #e7e7e7;
   font-size: 0.9em;
   border-radius: 3px;
 }
@@ -302,7 +302,7 @@ width: 100%;
 
 
 a {
-  color: #9EC3C4;
+  color: #617878;
   text-decoration: none;
 }
 
@@ -314,6 +314,7 @@ a:focus {
 
 .image, figure img, img {
   width: 100%;
+  border-radius: 4px;
 }
 
 .full-image, figure.full img, img[src*="full"] {
@@ -418,15 +419,15 @@ table {
 }
 
 table th {
-  background-color: #2c2c2c;
-  color: #f0f0f0;
+  background-color: #e7e7e7;
+  color: #2c2c2c;
 }
 
 table th, table td {
   padding: 5px 10px;
-  border-bottom: 3px solid #f0f0f0;
-  border-right: 2px solid #191919;
-  border-left: 2px solid #191919;
+  border-bottom: 3px solid #191919;
+  border-right: 2px solid #f5f5f5;
+  border-left: 2px solid #f5f5f5;
 }
 
 table thead {
@@ -435,11 +436,11 @@ table thead {
 
 blockquote {
   margin-left: 0em;
-  border-left: solid 4px #f0f0f0;
+  border-left: solid 4px #2c2c2c;
   padding: 0.2em 2em;
   position: relative;
-  color: #fafafa;
-  background-color: #2c2c2c;
+  color: #222222;
+  background-color: #e7e7e7;
   font-family: "Roboto Mono", "Inconsolota", "SF Mono", monospace;
   font-size: 16px;
 }
