@@ -11,10 +11,6 @@ tags:
 
 ![img](https://i.postimg.cc/LsRQgbKW/what.png)
 
-![img](https://i.postimg.cc/PJNZP58f/whatever.png)
-
-![img](https://i.postimg.cc/KzStp2VJ/whatever.png)
-
 ## Gallery of Rices
 ---
 
