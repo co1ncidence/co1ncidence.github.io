@@ -13,10 +13,7 @@ body {
   font-family: "Roboto Mono", "Inconsolota", "SF Mono", monospace;
   background-color: #f5f5f5;
   color: #404040;
-  border-right: 10px solid #8faaac;
-  border-left: 10px solid #8faaac;
-  border-top: 10px solid #8faaac;
-  border-bottom: 10px solid #8faaac;
+  border-radius: 20px;
   -webkit-box-shadow: 0px 0px 20px 1px rgba(25,25,25,0.25);
   -moz-box-shadow: 0px 0px 20px 1px rgba(25,25,25,0.25);
   box-shadow: 0px 0px 20px 1px rgba(25,25,25,0.25);
