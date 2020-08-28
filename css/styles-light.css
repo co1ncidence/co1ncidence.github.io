@@ -10,7 +10,7 @@ body {
   padding-left: 2vw;
   padding-top: 5vh;
   padding-bottom: 5vh;
-  font-family: "Roboto Mono", "Inconsolota", "SF Mono", monospace;
+  font-family: "Space Mono", "Roboto Mono", "Inconsolota", "SF Mono", monospace;
   background-color: #f5f5f5;
   color: #404040;
   border-radius: 20px;
@@ -26,7 +26,7 @@ h4,
 h5,
 h6,
 time {
-  font-family: "Roboto Mono", "Inconsolota", "SF Mono", monospace;
+  font-family: "Space Mono", "Roboto Mono", "Inconsolota", "SF Mono", monospace;
   font-weight: Bold;
   color: #363636;
 }
@@ -102,7 +102,7 @@ a:focus {
   text-align: center;
   position: relative;
   padding-bottom: 0.5em;
-  font-family: "Roboto Mono", "Inconsolota", "SF Mono", monospace;
+  font-family: "Space Mono", "Roboto Mono", "Inconsolota", "SF Mono", monospace;
   border-bottom: 3px solid #7b7b7b;
 }
 
@@ -288,7 +288,7 @@ width: 100%;
 
 .meta-aside, #container main section#home ul li aside, #container main article aside {
   margin: 0.5em 0;
-  font-family: "Roboto Mono", "Inconsolota", "SF Mono", monospace;
+  font-family: "Space Mono", "Roboto Mono", "Inconsolota", "SF Mono", monospace;
   color: #191919;
   font-size: 0.8em;
 }
@@ -445,7 +445,7 @@ blockquote {
   position: relative;
   color: #404040;
   background-color: #e7e7e7;
-  font-family: "Roboto Mono", "Inconsolota", "SF Mono", monospace;
+  font-family: "Space Mono", "Roboto Mono", "Inconsolota", "SF Mono", monospace;
   font-size: 16px;
   border-radius: 0px 4px 4px 0px;
   -moz-border-radius: 0px 4px 4px 0px;

@@ -11,6 +11,6 @@ I've always been a fan of the [Fjords of Norway](https://duckduckgo.com/?q=fjord
 
 Gaming was a big thing for me a while ago but I find it kind of meh now, I've come to prefer doing more productive things, though I will admit that some [Hollow Knight](https://store.steampowered.com/app/367520/Hollow_Knight/) or [Terraria](https://store.steampowered.com/app/105600/Terraria/) from time to time is a nice getaway.
 
-I'm the kind of guy who eats grapes straight from the vine and will use the smallest spoon available when eating something he likes. I don't know if that says anything about me but I hope it does. I learn by teaching and teach by scolding, it's worked for me so far and I hope it keeps doing so. 
+I'm the kind of guy who eats grapes straight from the vine and will use the smallest spoon available when eating something he likes. I don't know if that says anything about me but I hope it does. I learn by teaching and teach by scolding, it's worked for me so far and I hope it keeps doing so.
 
-I haven't met Money in a while now, we don't exactly get along together, but I do have a cat named Felix whom I consider to be my best friend. Quarantine has got me stuck at home but that's fine, I never went anywhere anyway.
+I haven't met Money in a while now, she doesn't exactly get along well with me, but that's fine, Loneliness was always more my type.
