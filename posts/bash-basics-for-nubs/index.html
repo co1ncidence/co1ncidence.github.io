@@ -106,7 +106,7 @@
         </li>
         
 
-        <li>15 minutes read</li>
+        <li>19 minutes read</li>
     </ul>
 </aside>
 
@@ -129,24 +129,29 @@
 <li>Searching <a href="https://reddit.com">Reddit</a> for similar problems or making a post about your own</li>
 </ul>
 <p><strong>Following these steps will lead you to your solution far more often than not.</strong></p>
-<h2 id="second-some-cli-life-hax">Second, some CLI life hax</h2>
-<p>This is just a collection of cool tips and tricks that&rsquo;ll help with fully optimizing your command line skills, expect this to be updated frequently as I learn more.</p>
+<h2 id="second-basics-of-bash">Second, Basics of bash</h2>
+<p>Here I will be explaining some simple bash concepts that will help speed you along your terminal journey, knowing these is necessary if you want to truly be efficient on the command line:</p>
 <h3 id="autocomplete">Autocomplete</h3>
-<p>Something I didn&rsquo;t realize for a long time was that bash has built in tab-complete, so instead of typing in entire long names of folders and/or programs, you can just type in a few letters and press the <code>tab</code> key, Bash will then auto-type the rest of the name for your. If there are multiple possibilities, Bash will just output them all, so you can choose the one you want.</p>
+<p>Bash has built in <strong>tab-complete</strong>, so instead of typing in entire long names of folders and/or programs, you can just type in a few letters and press the <code>tab</code> key, Bash will then auto-type the rest of the name for your. If there are multiple possibilities, Bash will just output them all, so you can choose the one you want.</p>
 <h3 id="global-aliases">Global Aliases</h3>
 <p><code>..</code> is an alias for the parent folder of the directory you are currently working inside, and the word <code>.</code> is the alias for the folder currently occupied. These are useful to know as they can save you precious time typing in long directory paths when you are working with more advanced commands. These aliases can be used with just about any command so be careful with them.</p>
 <p><code>~</code> is an alias that stands for <code>/home/username</code>, with &ldquo;username&rdquo; being the user name of the currently active user. It can be used with many commands, so once again, be careful with what you do. If you are ever unsure, just remind yourself that it <strong>directly</strong> translates to <code>/home/username</code>, that&rsquo;ll help you get a bearing on the command you are about to run.</p>
 <p><code>!!</code> is an alias for the last command run. For example, if you ran a command but forgot to add <code>sudo</code> or something, you can simply run <code>sudo !!</code> instead of typing out the whole of the previous command.</p>
 <h3 id="conditional-execution">Conditional Execution</h3>
 <p><code>&amp;</code> is a character you can insert after a command and use to spawn command outputs in the background, and <code>&amp;&amp;</code> can be used to implement <strong>Conditional Execution</strong>, which means you can run multiple commands in succession, for example:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#command2 will only run if command1 is successful</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># command2 will only run if command1 is successful</span>
 command1 <span style="color:#f92672">&amp;&amp;</span> command2
 </code></pre></div><p>You can also do another kind of sequential execution in the command line, using the <code>||</code> function, this works in a similar way to <code>&amp;&amp;</code> but instead of running a command after the execution of the previous one, it runs a second command only if the first one failed to run, sort of like a &ldquo;Plan B&rdquo; if you will. Here is an example:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#command2 will only run if command1 fails for any reason</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># command2 will only run if command1 fails for any reason</span>
 command1 <span style="color:#f92672">||</span> command2
 </code></pre></div><h3 id="pipes-in-bash">Pipes In Bash</h3>
 <p><strong>Pipes</strong> are things you can use to filter one command through another, thus allowing for things like controlling outputs of commands. Pipes have many uses so I recommend that you look more into them as there is no way I can go into full depth here. Here is an example of a pipe being used to filter the output of of <code>fc-list</code> through <code>grep</code> to only show fonts with a certain name.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">fc-list | grep Roboto
+</code></pre></div><h2 id="sending-command-outputs-to-different-places">Sending command outputs to different places</h2>
+<p>The <code>&gt;</code> character works in a similar fashion to pipes, but instead of filtering the command through another, it pushes the output to a file of your choice. The amount of <code>&gt;</code>'s you use also makes a difference, for example, this command will print the word &ldquo;hello&rdquo; and push it as the first word in a new file called &ldquo;file.txt&rdquo;:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">echo <span style="color:#e6db74">&#34;hello&#34;</span> &gt; file.txt
+</code></pre></div><p>Using two <code>&gt;</code>'s provides a different result, instead of creating a new file containing the outputted words, it will append the output to an existing file that you point it to. A common example of this is when adding a heading to a GitHub README:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">echo <span style="color:#e6db74">&#34;# Heading&#34;</span> &gt;&gt; README.md
 </code></pre></div><h3 id="keyboard-shortcuts">Keyboard Shortcuts</h3>
 <p>Unknown to me for quite a while during my usage of the terminal in Linux was that there were many keyboard shortcuts that could be used to navigate and control text much faster in the command line. These are mostly inherited from some of the keyboard shortcuts in editors like <code>emacs</code>, from what I can tell. Here are the ones I find myself using most often:</p>
 <p><code>ctrl + arrow keys</code> will move the cursor one word in the respective direction</p>
@@ -159,7 +164,41 @@ command1 <span style="color:#f92672">||</span> command2
 <p><code>ctrl + r</code> will initiate a reverse search for previously entered commands</p>
 <p><code>ctrl + n/p</code> will cycle you through previously entered commands</p>
 <p><code>ctrl + m/j</code>, both work the same way as <code>enter</code></p>
-<h2 id="file-management">File Management</h2>
+<h3 id="environment-variables">Environment Variables</h3>
+<p>Environment variables are basically just global settings that different programs use to determine user preferences, they look something like this, a variable name followed by a <code>=</code> and the environment setting in quotes.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">TERMINAL<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;alacritty&#34;</span>
+</code></pre></div><p>Environment variables can be set using the <code>export</code> command, for example, if I wanted to change my <code>TERMINAL</code> variable to <code>st</code>, I would use this command:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">export TERMINAL<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;st&#34;</span>
+</code></pre></div><p>This would set the default terminal used by other programs to <code>st</code> instead of whatever I was using before. Many different programs have their own environment variables, though I don&rsquo;t recommend messing with them unless the manual you are reading asks you to do so.</p>
+<h2 id="shell-aliases">Shell Aliases</h2>
+<p>You may or not have noticed a file called <code>.bashrc</code> in your Home Directory. This file is the configuration file of the Bash Shell, and can be used to do some cool things, one of which is creating shell aliases. Shell aliases can be used to simplify long and complicated, or even simply hard-to-type commands into smaller ones. To add a shell alias, simply append a line following this syntax to the end of the <code>.bashrc</code> file, replacing the placeholder words with a word/command of your choice:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">alias newcommand<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;long-and-annoying-old-command&#34;</span>
+</code></pre></div><p>Once you&rsquo;ve finished this (hopefully using Nano), simply save the file and restart your shell or terminal. Try typing in your new command, you will see that your chosen word behaves the same as that annoying command that you chose to replace.</p>
+<p>The possibilities with shell aliases are almost infinite, but for some inspiration, here are some of the ones that I am currently using:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">alias ls<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;exa --group-directories-first&#34;</span>
+alias walls<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;cd ~/usr/pic/wallpapers/&#34;</span>
+alias df<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;df -h /dev/sda3&#34;</span>
+alias nvimrc<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nvim ~/.config/nvim/init.vim&#34;</span>
+alias c<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;clear&#34;</span>
+alias download<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;youtube-dl -x --audio-format mp3&#34;</span>
+alias shuffle<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;feh --bg-fill --randomize ~/usr/pic/wallpapers/&#34;</span>
+alias class<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;cd ~/usr/doc/school/&#34;</span>
+alias notes<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;cd ~/usr/doc/school/awo/&#34;</span>
+alias t<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;todo.sh&#34;</span>
+alias du<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;du -m | sort -n&#34;</span>
+alias web<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;cd ~/opt/mysite/&#34;</span>
+alias gif<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;giph -s ~/usr/vid/</span><span style="color:#66d9ef">$(</span>date <span style="color:#e6db74">&#39;+%Y-%m-%d_%H-%M-%S&#39;</span><span style="color:#66d9ef">)</span><span style="color:#e6db74">.gif&#34;</span>
+alias free<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;free -h&#34;</span>
+</code></pre></div><p>Feel free to use any of them, and don&rsquo;t limit yourself, the possibilities with aliases are almost infinite!</p>
+<h3 id="various-other-cool-things">Various other cool things</h3>
+<p>You can use the <code>clear</code> command to clear everything in your terminal, usually used to give you a fresh working space. It is important to know what <code>clear</code> does not change anything regarding your working directory or it&rsquo;s contents, it just clears terminal output.</p>
+<p><code>set</code> can be used to temporarily set or unset certain global settings.</p>
+<p><code>reset</code> will restart your shell and terminal and make it behave as if you just opened it for the first time.</p>
+<p><code>sleep</code> is an especially cool command, it can be used in conjunction with <code>&amp;&amp;</code> to essentially but a command on a countdown, for example, running this command will tell your system to way 1600 seconds before running the next command in the sequence:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sleep <span style="color:#ae81ff">1600</span> <span style="color:#f92672">&amp;&amp;</span> clear
+</code></pre></div><p>And make sure you are acquainted with these 2 files, both are located in your home directory: First, <code>.bash_history</code>, which contains the last 2000 commands you ran using bash, allowing you to identify the ones you want easily. Second, <code>.bashrc</code>, this is your bash configuration file, which can be used to make many different changes to your shell.</p>
+<h2 id="file-management-in-the-command-line">File Management In The Command Line</h2>
+<p>You can use the <code>pwd</code> command to display what directory you are currently in, this is useful as a beginner to get a better feel of where you are in your system.</p>
 <p><code>cd</code> stands for &ldquo;change directory&rdquo;, you can use this command to enter and leave directories. It is not limited to neighboring directories, however, you can use <code>cd</code> to move from one side of your computer to another, provided you don&rsquo;t mess up typing in the names of folders. First thing to note is that a <code>/</code> is not necessary after a folder name:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#these 2 commands are the same</span>
 cd ~/folder1/folder2/
@@ -215,6 +254,8 @@ rm *.png
 <p>Sometimes, your user may not have the necessary permissions to execute certain commands on a file or folder, this is because the owner of said file/folder is the <strong>root user</strong>, to obtain the abilities of the root user, you just have to place the word <code>sudo</code> behind your command. <code>sudo</code> stands for &ldquo;Super User DO&rdquo;, and will allow you to run commands with elevated permissions, here is an example:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo rm -rf /
 </code></pre></div><p>This command is a great showcase of the dangers of <code>sudo</code> as well. If you haven&rsquo;t already realized, this command will wipe every file and folder on your system. So whenever something requires you to be root to run a command, always make sure you know what you are doing, and always remember that there is a reason that there is a reason for a password to be between you and the execution of this command. Stay safe.</p>
+<p><code>chmod</code> is a command that can be used to change the permissions a file has. These permissions include reading, writing, and changing whether a file can be executable or not. You can use <code>chmod</code> plus/minus a letter like this: <code>chmod +x</code> to add or remove a permission from a file. To view the permissions of all files and folders in your current directory, run the <code>ls</code> command with the <code>-l</code> flag:</p>
+<p><img src="https://i.postimg.cc/zB6gygDk/image.png" alt="img"></p>
 <h2 id="file-viewing--and-output-controlfiltering">File Viewing  and Output Control/Filtering</h2>
 <p>The <code>cat</code> command is one of the first to know when viewing files, running <code>cat</code> on a file which contains any sort of text will cause your terminal to output the full contents of your file, for example, running:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cat .bashrc
@@ -228,7 +269,17 @@ You may realize. Here is an example of the <code>cat</code> command being used:<
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">fc-list
 </code></pre></div><p>This command, however, will filter out every result and only show results containing the word &ldquo;Roboto&rdquo;:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">fc-list | grep Roboto
-</code></pre></div><h2 id="editing-files-using-gnu-nano">Editing Files Using GNU Nano</h2>
+</code></pre></div><p><code>grep</code> is not, however, limited to command outputs, it can also be used to filter out the lines of a file that word that you are looking for. For example, running <code>grep &quot;hello&quot; file.txt</code> will output all the lines of <code>file.txt</code> that contain the word &ldquo;hello&rdquo;. <code>grep</code> has a myriad of flags that can be used to futher increase the usefulness of a command:</p>
+<ul>
+<li><strong>B <number></strong> will show <number> of lines before the lines you searched for along with the results, providing some context</li>
+<li><strong>C <number></strong> does the same thing as <strong>B</strong> but with the context lines being after instead of before</li>
+<li><strong>E</strong> will interpret the text you are searching for as a regular expression</li>
+<li><strong>i</strong> will search without being case sensitive</li>
+<li><strong>l</strong> this works when <code>grep</code> is used on a directory, printing out just the files containing the searched word instead of the lines</li>
+<li><strong>r</strong> will allow <code>grep</code> to search directories recursively, bringing results from subfolders as well</li>
+<li><strong>v</strong> inverts <code>grep</code>, printing out every line that doesn&rsquo;t contain the searched word</li>
+</ul>
+<h2 id="editing-files-using-gnu-nano">Editing Files Using GNU Nano</h2>
 <p>Throughout your Linux journey, there will be many, and I mean many, times where you will have to make a quick edit to some configuration file of some sort. Editing these files with a visual editor can be a pain as you have to run the editor as root, find the file you want to edit, and then finally get to editing it. As a solution to this, computers running any GNU/Linux Distribution usually come with a terminal editor installed, called <a href="https://en.wikipedia.org/wiki/GNU_nano">Nano</a>. Nano is an editor that allows you to edit any text file through the terminal. Here is an example of me editing the <code>/etc/fstab</code> file using Nano (note the use of sudo to access this file):</p>
 <p><img src="https://i.postimg.cc/dt2J2101/2020-08-23-07-06-00.gif" alt="gif"></p>
 <p>Nano has many keyboard shortcuts and is a quite featured editor, though you will most likely only be using it for quick edits, as anything bigger would be better done in a real editor. The only real shortcut to know in Nano is <strong>Ctrl + X</strong>, this saves and exits the file, prompting you before doing so as well.</p>
@@ -249,26 +300,14 @@ You may realize. Here is an example of the <code>cat</code> command being used:<
 <p><img src="https://i.postimg.cc/PfBRtQTp/image.png" alt="img"></p>
 <p>But what if you wanted to see an interactive interface from which you could manage processes and see their relative resource usage, a &ldquo;task manager&rdquo; if you will. One of the programs you will find yourself most frequently using is <code>htop</code>, while not normally included with most Linux Distros, it is a must have utility, a lightweight and easy to use terminal task manager. I suggest you check out the program&rsquo;s GitHub page if you want to learn more. For now, however, here is a screenshot of <code>htop</code>:</p>
 <p><img src="https://i.postimg.cc/D0qdfsPL/image.png" alt="img"></p>
-<h2 id="creating-shell-aliases">[Creating Shell Aliases]</h2>
-<p>You may or not have noticed a file called <code>.bashrc</code> in your Home Directory. This file is the configuration file of the Bash Shell, and can be used to do some cool things, one of which is creating shell aliases. Shell aliases can be used to simplify long and complicated, or even simply hard-to-type commands into smaller ones. To add a shell alias, simply append a line following this syntax to the end of the <code>.bashrc</code> file, replacing the placeholder words with a word/command of your choice:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">alias newcommand<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;long-and-annoying-old-command&#34;</span>
-</code></pre></div><p>Once you&rsquo;ve finished this (hopefully using Nano), simply save the file and restart your shell or terminal. Try typing in your new command, you will see that your chosen word behaves the same as that annoying command that you chose to replace.</p>
-<p>The possibilities with shell aliases are almost infinite, but for some inspiration, here are some of the ones that I am currently using:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">alias ls<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;exa --group-directories-first&#34;</span>
-alias walls<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;cd ~/usr/pic/wallpapers/&#34;</span>
-alias df<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;df -h /dev/sda3&#34;</span>
-alias nvimrc<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nvim ~/.config/nvim/init.vim&#34;</span>
-alias c<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;clear&#34;</span>
-alias download<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;youtube-dl -x --audio-format mp3&#34;</span>
-alias shuffle<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;feh --bg-fill --randomize ~/usr/pic/wallpapers/&#34;</span>
-alias class<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;cd ~/usr/doc/school/&#34;</span>
-alias notes<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;cd ~/usr/doc/school/awo/&#34;</span>
-alias t<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;todo.sh&#34;</span>
-alias du<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;du -m | sort -n&#34;</span>
-alias web<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;cd ~/opt/mysite/&#34;</span>
-alias gif<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;giph -s ~/usr/vid/</span><span style="color:#66d9ef">$(</span>date <span style="color:#e6db74">&#39;+%Y-%m-%d_%H-%M-%S&#39;</span><span style="color:#66d9ef">)</span><span style="color:#e6db74">.gif&#34;</span>
-alias free<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;free -h&#34;</span>
-</code></pre></div><p>Feel free to use any of them, and don&rsquo;t limit yourself, the possibilities with aliases are almost infinite!</p>
+<h2 id="disk-and-storage-management-in-the-terminal">Disk and storage management in the Terminal</h2>
+<p>To Display all of the disks on your system and all of the storage that has been used on them, use the <code>df</code> command with the <code>-h</code> flag to make it human readable:</p>
+<p><img src="https://i.postimg.cc/vZc3jWgQ/image.png" alt="img"></p>
+<p>If instead, you wanted to view all of the disks and their respective UUID&rsquo;s or other information, use the <code>lsblk</code> command with the <code>-f</code> flag, which allows displaying the UUID of each disk along with some other information.</p>
+<p><img src="https://i.postimg.cc/SQPXdChL/image.png" alt="img"></p>
+<p>You can use the <code>mount</code> command to mount a disk and access the files inside it. This is useful in recovery situations or when trying to save a computer from a live environment. For example, <code>sudo mount /dev/sda3</code> will mount the drive <code>sda3</code> for viewing/editing.</p>
+<p><code>du</code> can be used to display all directories in a location and the amount of space they use up. This command gets pretty detailed so I suggest that you look more into it yourself to learn.</p>
+<h2 id="networking-in-the-command-line">Networking in The Command Line</h2>
 
 
 </article>

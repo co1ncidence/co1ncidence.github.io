@@ -20,11 +20,11 @@ The Terminal is simply an interface to interact with your computer, by itself, i
 
 **Following these steps will lead you to your solution far more often than not.**
 
-## Second, some CLI life hax
-This is just a collection of cool tips and tricks that'll help with fully optimizing your command line skills, expect this to be updated frequently as I learn more.
+## Second, Basics of bash
+Here I will be explaining some simple bash concepts that will help speed you along your terminal journey, knowing these is necessary if you want to truly be efficient on the command line:
 
 ### Autocomplete
-Something I didn't realize for a long time was that bash has built in tab-complete, so instead of typing in entire long names of folders and/or programs, you can just type in a few letters and press the `tab` key, Bash will then auto-type the rest of the name for your. If there are multiple possibilities, Bash will just output them all, so you can choose the one you want.
+Bash has built in **tab-complete**, so instead of typing in entire long names of folders and/or programs, you can just type in a few letters and press the `tab` key, Bash will then auto-type the rest of the name for your. If there are multiple possibilities, Bash will just output them all, so you can choose the one you want.
 
 ### Global Aliases
 `..` is an alias for the parent folder of the directory you are currently working inside, and the word `.` is the alias for the folder currently occupied. These are useful to know as they can save you precious time typing in long directory paths when you are working with more advanced commands. These aliases can be used with just about any command so be careful with them.
@@ -33,16 +33,15 @@ Something I didn't realize for a long time was that bash has built in tab-comple
 
 `!!` is an alias for the last command run. For example, if you ran a command but forgot to add `sudo` or something, you can simply run `sudo !!` instead of typing out the whole of the previous command.
 
-
 ### Conditional Execution
 `&` is a character you can insert after a command and use to spawn command outputs in the background, and `&&` can be used to implement **Conditional Execution**, which means you can run multiple commands in succession, for example:
 ```sh
-#command2 will only run if command1 is successful
+# command2 will only run if command1 is successful
 command1 && command2
 ```
 You can also do another kind of sequential execution in the command line, using the `||` function, this works in a similar way to `&&` but instead of running a command after the execution of the previous one, it runs a second command only if the first one failed to run, sort of like a "Plan B" if you will. Here is an example:
 ```sh
-#command2 will only run if command1 fails for any reason
+# command2 will only run if command1 fails for any reason
 command1 || command2
 ```
 
@@ -50,6 +49,16 @@ command1 || command2
 **Pipes** are things you can use to filter one command through another, thus allowing for things like controlling outputs of commands. Pipes have many uses so I recommend that you look more into them as there is no way I can go into full depth here. Here is an example of a pipe being used to filter the output of of `fc-list` through `grep` to only show fonts with a certain name.
 ```sh
 fc-list | grep Roboto
+```
+
+## Sending command outputs to different places
+The `>` character works in a similar fashion to pipes, but instead of filtering the command through another, it pushes the output to a file of your choice. The amount of `>`'s you use also makes a difference, for example, this command will print the word "hello" and push it as the first word in a new file called "file.txt":
+```sh
+echo "hello" > file.txt
+```
+Using two `>`'s provides a different result, instead of creating a new file containing the outputted words, it will append the output to an existing file that you point it to. A common example of this is when adding a heading to a GitHub README:
+```sh
+echo "# Heading" >> README.md
 ```
 
 ### Keyboard Shortcuts
@@ -75,7 +84,60 @@ Unknown to me for quite a while during my usage of the terminal in Linux was tha
 
 `ctrl + m/j`, both work the same way as `enter`
 
-## File Management
+### Environment Variables
+Environment variables are basically just global settings that different programs use to determine user preferences, they look something like this, a variable name followed by a `=` and the environment setting in quotes.
+```sh
+TERMINAL="alacritty"
+```
+Environment variables can be set using the `export` command, for example, if I wanted to change my `TERMINAL` variable to `st`, I would use this command:
+```sh
+export TERMINAL="st"
+```
+This would set the default terminal used by other programs to `st` instead of whatever I was using before. Many different programs have their own environment variables, though I don't recommend messing with them unless the manual you are reading asks you to do so.
+
+## Shell Aliases
+
+You may or not have noticed a file called `.bashrc` in your Home Directory. This file is the configuration file of the Bash Shell, and can be used to do some cool things, one of which is creating shell aliases. Shell aliases can be used to simplify long and complicated, or even simply hard-to-type commands into smaller ones. To add a shell alias, simply append a line following this syntax to the end of the `.bashrc` file, replacing the placeholder words with a word/command of your choice:
+
+```sh
+alias newcommand="long-and-annoying-old-command"
+```
+Once you've finished this (hopefully using Nano), simply save the file and restart your shell or terminal. Try typing in your new command, you will see that your chosen word behaves the same as that annoying command that you chose to replace.
+
+The possibilities with shell aliases are almost infinite, but for some inspiration, here are some of the ones that I am currently using:
+```sh
+alias ls="exa --group-directories-first"
+alias walls="cd ~/usr/pic/wallpapers/"
+alias df="df -h /dev/sda3"
+alias nvimrc="nvim ~/.config/nvim/init.vim"
+alias c="clear"
+alias download="youtube-dl -x --audio-format mp3"
+alias shuffle="feh --bg-fill --randomize ~/usr/pic/wallpapers/"
+alias class="cd ~/usr/doc/school/"
+alias notes="cd ~/usr/doc/school/awo/"
+alias t="todo.sh"
+alias du="du -m | sort -n"
+alias web="cd ~/opt/mysite/"
+alias gif="giph -s ~/usr/vid/$(date '+%Y-%m-%d_%H-%M-%S').gif"
+alias free="free -h"
+```
+Feel free to use any of them, and don't limit yourself, the possibilities with aliases are almost infinite!
+
+### Various other cool things
+You can use the `clear` command to clear everything in your terminal, usually used to give you a fresh working space. It is important to know what `clear` does not change anything regarding your working directory or it's contents, it just clears terminal output.
+
+`set` can be used to temporarily set or unset certain global settings.
+
+`reset` will restart your shell and terminal and make it behave as if you just opened it for the first time.
+
+`sleep` is an especially cool command, it can be used in conjunction with `&&` to essentially but a command on a countdown, for example, running this command will tell your system to way 1600 seconds before running the next command in the sequence:
+```sh
+sleep 1600 && clear
+```
+And make sure you are acquainted with these 2 files, both are located in your home directory: First, `.bash_history`, which contains the last 2000 commands you ran using bash, allowing you to identify the ones you want easily. Second, `.bashrc`, this is your bash configuration file, which can be used to make many different changes to your shell.
+
+## File Management In The Command Line
+You can use the `pwd` command to display what directory you are currently in, this is useful as a beginner to get a better feel of where you are in your system.
 
 `cd` stands for "change directory", you can use this command to enter and leave directories. It is not limited to neighboring directories, however, you can use `cd` to move from one side of your computer to another, provided you don't mess up typing in the names of folders. First thing to note is that a `/` is not necessary after a folder name:
 ```sh
@@ -172,6 +234,10 @@ sudo rm -rf /
 ```
 This command is a great showcase of the dangers of `sudo` as well. If you haven't already realized, this command will wipe every file and folder on your system. So whenever something requires you to be root to run a command, always make sure you know what you are doing, and always remember that there is a reason that there is a reason for a password to be between you and the execution of this command. Stay safe.
 
+`chmod` is a command that can be used to change the permissions a file has. These permissions include reading, writing, and changing whether a file can be executable or not. You can use `chmod` plus/minus a letter like this: `chmod +x` to add or remove a permission from a file. To view the permissions of all files and folders in your current directory, run the `ls` command with the `-l` flag:
+
+![img](https://i.postimg.cc/zB6gygDk/image.png)
+
 ## File Viewing  and Output Control/Filtering
 The `cat` command is one of the first to know when viewing files, running `cat` on a file which contains any sort of text will cause your terminal to output the full contents of your file, for example, running:
 ```sh
@@ -197,6 +263,14 @@ This command, however, will filter out every result and only show results contai
 ```sh
 fc-list | grep Roboto
 ```
+`grep` is not, however, limited to command outputs, it can also be used to filter out the lines of a file that word that you are looking for. For example, running `grep "hello" file.txt` will output all the lines of `file.txt` that contain the word "hello". `grep` has a myriad of flags that can be used to futher increase the usefulness of a command:
+  - **B <number>** will show <number> of lines before the lines you searched for along with the results, providing some context
+  - **C <number>** does the same thing as **B** but with the context lines being after instead of before
+  - **E** will interpret the text you are searching for as a regular expression
+  - **i** will search without being case sensitive
+  - **l** this works when `grep` is used on a directory, printing out just the files containing the searched word instead of the lines
+  - **r** will allow `grep` to search directories recursively, bringing results from subfolders as well
+  - **v** inverts `grep`, printing out every line that doesn't contain the searched word
 
 ## Editing Files Using GNU Nano
 Throughout your Linux journey, there will be many, and I mean many, times where you will have to make a quick edit to some configuration file of some sort. Editing these files with a visual editor can be a pain as you have to run the editor as root, find the file you want to edit, and then finally get to editing it. As a solution to this, computers running any GNU/Linux Distribution usually come with a terminal editor installed, called [Nano](https://en.wikipedia.org/wiki/GNU_nano). Nano is an editor that allows you to edit any text file through the terminal. Here is an example of me editing the `/etc/fstab` file using Nano (note the use of sudo to access this file):
@@ -239,30 +313,18 @@ But what if you wanted to see an interactive interface from which you could mana
 
 ![img](https://i.postimg.cc/D0qdfsPL/image.png)
 
-## [Creating Shell Aliases]
 
-You may or not have noticed a file called `.bashrc` in your Home Directory. This file is the configuration file of the Bash Shell, and can be used to do some cool things, one of which is creating shell aliases. Shell aliases can be used to simplify long and complicated, or even simply hard-to-type commands into smaller ones. To add a shell alias, simply append a line following this syntax to the end of the `.bashrc` file, replacing the placeholder words with a word/command of your choice:
+## Disk and storage management in the Terminal
+To Display all of the disks on your system and all of the storage that has been used on them, use the `df` command with the `-h` flag to make it human readable:
 
-```sh
-alias newcommand="long-and-annoying-old-command"
-```
-Once you've finished this (hopefully using Nano), simply save the file and restart your shell or terminal. Try typing in your new command, you will see that your chosen word behaves the same as that annoying command that you chose to replace.
+![img](https://i.postimg.cc/vZc3jWgQ/image.png)
 
-The possibilities with shell aliases are almost infinite, but for some inspiration, here are some of the ones that I am currently using:
-```sh
-alias ls="exa --group-directories-first"
-alias walls="cd ~/usr/pic/wallpapers/"
-alias df="df -h /dev/sda3"
-alias nvimrc="nvim ~/.config/nvim/init.vim"
-alias c="clear"
-alias download="youtube-dl -x --audio-format mp3"
-alias shuffle="feh --bg-fill --randomize ~/usr/pic/wallpapers/"
-alias class="cd ~/usr/doc/school/"
-alias notes="cd ~/usr/doc/school/awo/"
-alias t="todo.sh"
-alias du="du -m | sort -n"
-alias web="cd ~/opt/mysite/"
-alias gif="giph -s ~/usr/vid/$(date '+%Y-%m-%d_%H-%M-%S').gif"
-alias free="free -h"
-```
-Feel free to use any of them, and don't limit yourself, the possibilities with aliases are almost infinite!
+If instead, you wanted to view all of the disks and their respective UUID's or other information, use the `lsblk` command with the `-f` flag, which allows displaying the UUID of each disk along with some other information.
+
+![img](https://i.postimg.cc/SQPXdChL/image.png)
+
+You can use the `mount` command to mount a disk and access the files inside it. This is useful in recovery situations or when trying to save a computer from a live environment. For example, `sudo mount /dev/sda3` will mount the drive `sda3` for viewing/editing.
+
+`du` can be used to display all directories in a location and the amount of space they use up. This command gets pretty detailed so I suggest that you look more into it yourself to learn.
+
+## Networking in The Command Line
