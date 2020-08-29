@@ -50,14 +50,14 @@
      </item>
    
      <item>
-       <title>Linux Command Line 101</title>
+       <title>Linux And The Command Line 101</title>
        <link>https://co1ncidence.github.io/posts/bash-basics-for-nubs/</link>
        <pubDate>Sat, 15 Aug 2020 14:15:28 -0500</pubDate>
        
        <guid>https://co1ncidence.github.io/posts/bash-basics-for-nubs/</guid>
        <description>&lt;p&gt;When I first started with Linux, and especially the command line, It was difficult to find a truly optimal and comprehensive guide to these things. While most tutorials were nice and gave me a good starting point, they usually provided inefficient information or didn&amp;rsquo;t showcase the most optimal commands/strategies. I am making this list as more of a dump for all of the things that I have learned about bash so far, which isn&amp;rsquo;t too much compared to some but I like to think that I know something. So without further ado, here is my bash basics list to boost you up in the Linux elitist ladder. And as a final note, unless specified, all of these commands are being run from the default (home) folder that your terminal puts you in.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Read The F***ing Manual&lt;/p&gt;
+&lt;p&gt;Always remember: RTFM: &amp;ldquo;Read The Fucking Manual&amp;rdquo;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;first-some-terminology-and-tips&#34;&gt;First, some Terminology and Tips&lt;/h2&gt;
 &lt;p&gt;The Terminal is simply an interface to interact with your computer, by itself, it is nothing but an empty program. A terminal (in 99.99% of cases) needs a &lt;strong&gt;Shell&lt;/strong&gt; to function. A shell is an interactive text interface for the user, and the &lt;strong&gt;Terminal&lt;/strong&gt; is the tool most often used to run commands via the shell. There are many shells out there, thought this tutorial in specific will be focusing on the most is &lt;strong&gt;Bash&lt;/strong&gt;, the most popular shell in use right now and the default shell of most &lt;a href=&#34;https://en.wikipedia.org/wiki/Linux&#34;&gt;Linux&lt;/a&gt; distributions. Bash allows you to run commands from other programs or utilities, common ones you&amp;rsquo;ll mostly likely need are those from something like the &lt;a href=&#34;https://en.wikipedia.org/wiki/GNU_Core_Utilities&#34;&gt;GNU Coreutils&lt;/a&gt;, and any other programs you might use daily. Once you have familiarized yourself with these terms, you can get on to actually using the command line. And finally, and most likely &lt;strong&gt;The Most Important Thing You Will Read Here&lt;/strong&gt;, you have to always be willing to read documentation and official manuals, don&amp;rsquo;t go around annoying others for help. Some things to do when encountering issues can include:&lt;/p&gt;
@@ -69,7 +69,11 @@
 &lt;li&gt;Searching &lt;a href=&#34;https://reddit.com&#34;&gt;Reddit&lt;/a&gt; for similar problems or making a post about your own&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Following these steps will lead you to your solution far more often than not.&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;second-basics-of-bash&#34;&gt;Second, Basics of bash&lt;/h2&gt;
+&lt;h2 id=&#34;second-some-linux-basics&#34;&gt;Second, Some Linux Basics&lt;/h2&gt;
+&lt;p&gt;In this section I will be discussing some basics Linux concept, terminology, and tip/tricks that every user should know before they dive deeper into the operating system.&lt;/p&gt;
+&lt;h3 id=&#34;the-linux-file-system&#34;&gt;The Linux File System&lt;/h3&gt;
+&lt;p&gt;In Linux and other UNIX-based operating systems, almost everything is available to the user as a file or folder. This results in your system being essentially just one massive file system&lt;/p&gt;
+&lt;h2 id=&#34;third-basics-of-bash&#34;&gt;Third, Basics of bash&lt;/h2&gt;
 &lt;p&gt;Here I will be explaining some simple bash concepts that will help speed you along your terminal journey, knowing these is necessary if you want to truly be efficient on the command line:&lt;/p&gt;
 &lt;h3 id=&#34;autocomplete&#34;&gt;Autocomplete&lt;/h3&gt;
 &lt;p&gt;Bash has built in &lt;strong&gt;tab-complete&lt;/strong&gt;, so instead of typing in entire long names of folders and/or programs, you can just type in a few letters and press the &lt;code&gt;tab&lt;/code&gt; key, Bash will then auto-type the rest of the name for your. If there are multiple possibilities, Bash will just output them all, so you can choose the one you want.&lt;/p&gt;
@@ -153,17 +157,14 @@ cd .
 cd ~/.config/polybar/
 &lt;span style=&#34;color:#75715e&#34;&gt;#this will move you to your root directory&lt;/span&gt;
 cd /
-&lt;span style=&#34;color:#75715e&#34;&gt;#this will move you back to home&lt;/span&gt;
-cd ~/
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;ls&lt;/code&gt; is one of the commands you will use the most, this command lists all of the files and folders in the current folder, allowing you to get a better idea of where you are. Here is an example of the &lt;code&gt;ls&lt;/code&gt; command in use:&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Another good thing to know is that running just &lt;code&gt;cd&lt;/code&gt; will take you back you your home folder:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/DzjJ3WSn/image.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ls&lt;/code&gt; is one of the commands you will use the most, this command lists all of the files and folders in the current folder, allowing you to get a better idea of where you are. Here is an example of the &lt;code&gt;ls&lt;/code&gt; command in use:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/pTzfWz2x/2020-08-23-07-06-00.gif&#34; alt=&#34;gif&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;touch&lt;/code&gt; is used (mostly) to create a new, empty file in the folder you are currently occupying, the filetype can vary based on name extension, for example, to create a new &lt;code&gt;css&lt;/code&gt; file you would run&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;touch file.css
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can also use touch to create files in other folders:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;touch ~/Documents/file.txt
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;while &lt;code&gt;touch&lt;/code&gt; is a cool command, it can sometimes be a pain to type, so another alternative can be just to type &lt;code&gt;:&amp;gt;&lt;/code&gt; instead, as it serves the same purpose:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#creates a new css file&lt;/span&gt;
-:&amp;gt; newfile.css
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;mkdir&lt;/code&gt; is like &lt;code&gt;touch&lt;/code&gt;, but instead of creating a single file it creates an entire directory, and like &lt;code&gt;touch&lt;/code&gt;, this can be used to create a folder anywhere on your system, provided you have the right permissions to do so, here is an example of the &lt;code&gt;mkdir&lt;/code&gt; command:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;mkdir folder/
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;mv&lt;/code&gt; is a command used to move files from one location to another, and because of this it can also be used to replace a file with another. It is also possible to change the name of a file when moving it. Example usage:&lt;/p&gt;
@@ -174,26 +175,22 @@ mv file.txt file2.txt
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;cp ~/.local/bin/command /usr/bin/command2
 &lt;span style=&#34;color:#75715e&#34;&gt;#if name is not a concern, just specify resulting directory&lt;/span&gt;
 cp ~/.local/bin/command /usr/bin
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;rm&lt;/code&gt; is another very useful, but dangerous command. It stands for &amp;ldquo;remove&amp;rdquo; and can be used to remove any
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can use &lt;code&gt;cp&lt;/code&gt; and &lt;code&gt;mv&lt;/code&gt; with multiple files as well, for example, this is how you would move multiple image files from one folder to another:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;cp 1.png 2.png 3.png ~/Pictures/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;As you can see, all you have to do is list all the files you would like to copy/move with a space in between them, this will stage them all for transition.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;rm&lt;/code&gt; is another very useful, but dangerous command. It stands for &amp;ldquo;remove&amp;rdquo; and can be used to remove any
 However, unlike the other file management commands, &lt;code&gt;rm&lt;/code&gt; cannot remove folders by default, this requires the use of a couple &lt;strong&gt;Flags&lt;/strong&gt;, which are just letters/words you can attach to a command to unlock abilities that the command cannot do by default. For &lt;code&gt;rm&lt;/code&gt; to be able to delete a whole folder, it requires the &lt;code&gt;-r&lt;/code&gt; and &lt;code&gt;-f&lt;/code&gt; flags, here is an example:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;rm -r -f folder/
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Though separating flags is not necessary, you can just combine them into one flag like this:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;rm -rf folder/
-&lt;span style=&#34;color:#75715e&#34;&gt;#you can also use the alternative &amp;#34;rmdir&amp;#34; command&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;#you can also use the alternative &amp;#34;rmdir&amp;#34; command, though only on empty folders&lt;/span&gt;
 rmdir folder/
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Thus is how you can use &lt;code&gt;rm&lt;/code&gt; to remove folders as well as individual files.&lt;/p&gt;
-&lt;h4 id=&#34;using-the--character-in-file-management&#34;&gt;[Using the &amp;ldquo;*&amp;rdquo; character in file management]&lt;/h4&gt;
-&lt;p&gt;You can also use this basic RegEx character to make bulk file movement easier, for example, you can move every &lt;code&gt;.png&lt;/code&gt; file in a folder somewhere else using the &lt;code&gt;*&lt;/code&gt; character, for example, this command is doing exactly that:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;mv *.png ~/Pictures/stuff/
-&lt;span style=&#34;color:#75715e&#34;&gt;#once again, this is not limited to the current location&lt;/span&gt;
-mv ~/usr/share/backgrounds/*.png ~/Pictures/stuff/
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can also pair &lt;code&gt;*&lt;/code&gt; with &lt;code&gt;rm&lt;/code&gt;, this can be very dangerous so make sure you are careful. Example&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#this removes all png files in folder&lt;/span&gt;
-rm *.png
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;permissions&#34;&gt;Permissions&lt;/h4&gt;
-&lt;p&gt;Sometimes, your user may not have the necessary permissions to execute certain commands on a file or folder, this is because the owner of said file/folder is the &lt;strong&gt;root user&lt;/strong&gt;, to obtain the abilities of the root user, you just have to place the word &lt;code&gt;sudo&lt;/code&gt; behind your command. &lt;code&gt;sudo&lt;/code&gt; stands for &amp;ldquo;Super User DO&amp;rdquo;, and will allow you to run commands with elevated permissions, here is an example:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;sudo rm -rf /
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This command is a great showcase of the dangers of &lt;code&gt;sudo&lt;/code&gt; as well. If you haven&amp;rsquo;t already realized, this command will wipe every file and folder on your system. So whenever something requires you to be root to run a command, always make sure you know what you are doing, and always remember that there is a reason that there is a reason for a password to be between you and the execution of this command. Stay safe.&lt;/p&gt;
+&lt;h4 id=&#34;managing-files-in-bulk-using-file-globbing&#34;&gt;Managing Files in Bulk using &amp;ldquo;File Globbing&amp;rdquo;&lt;/h4&gt;
+&lt;h4 id=&#34;elevating-permissions&#34;&gt;Elevating Permissions&lt;/h4&gt;
+&lt;p&gt;Sometimes, your user may not have the necessary permissions to execute certain commands on a file or folder, this is because the owner of said file/folder is the &lt;strong&gt;root user&lt;/strong&gt;, to obtain the abilities of the root user, you just have to place the word &lt;code&gt;sudo&lt;/code&gt; behind your command. &lt;code&gt;sudo&lt;/code&gt; stands for &amp;ldquo;Super User DO&amp;rdquo;, and will allow you to run commands with elevated (or &amp;ldquo;root&amp;rdquo;) permissions, here is an example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;sudo apt install firefox
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This command will install &lt;code&gt;firfox&lt;/code&gt; on your system. You will almost always need root permission to install a package on your system. Root permissions can be very dangerous however, as you can very easily delete everything on your computer. So it is vital to remember that whenever something requires you to be root to run a command, always make sure you know what you are doing, and be aware that there is a reason that there is a reason for a password to be between you and the execution of this command. Stay safe.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;chmod&lt;/code&gt; is a command that can be used to change the permissions a file has. These permissions include reading, writing, and changing whether a file can be executable or not. You can use &lt;code&gt;chmod&lt;/code&gt; plus/minus a letter like this: &lt;code&gt;chmod +x&lt;/code&gt; to add or remove a permission from a file. To view the permissions of all files and folders in your current directory, run the &lt;code&gt;ls&lt;/code&gt; command with the &lt;code&gt;-l&lt;/code&gt; flag:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/zB6gygDk/image.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;file-viewing--and-output-controlfiltering&#34;&gt;File Viewing  and Output Control/Filtering&lt;/h2&gt;
@@ -226,6 +223,8 @@ You may realize. Here is an example of the &lt;code&gt;cat&lt;/code&gt; command 
 &lt;h2 id=&#34;time-in-the-command-line&#34;&gt;[Time In The Command Line]&lt;/h2&gt;
 &lt;p&gt;The &lt;code&gt;date&lt;/code&gt; command can be used to quickly display the current date and time on the terminal, while this is cool it doesn&amp;rsquo;t really have much of a use in day to day command line usage, it is more effective in scripts and programs, as a reliable way to get system time. Here is an example of the &lt;code&gt;date&lt;/code&gt; command in use:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/W4JWZD2Y/image.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This is great output from a human readable standpoint, but if you are writing a script, it is not easily parseable, pass the &lt;code&gt;-Im&lt;/code&gt; flag along with &lt;code&gt;date&lt;/code&gt; to get an easily usable output:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/MGxXQ7QW/image.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Another time related command you can use is &lt;code&gt;uptime&lt;/code&gt;, this command outputs the amount of time the system has been on for, this can be helpful to know for a variety of reasons. By default, the &lt;code&gt;uptime&lt;/code&gt; command has very messy output, so run it with the &lt;code&gt;-p&lt;/code&gt; flag to make it more readable, here is an example:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/7YfghFPm/image.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;time&lt;/code&gt; command can be used to measure how much time another program takes to open up, this can be useful when diagnosing problems regarding system performance issues. Here is an example of the &lt;code&gt;time&lt;/code&gt; command being used to display the startup time of the Alacritty Terminal:&lt;/p&gt;

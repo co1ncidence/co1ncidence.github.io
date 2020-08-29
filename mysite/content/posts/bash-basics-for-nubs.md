@@ -1,5 +1,5 @@
 ---
-title: "Linux Command Line 101"
+title: "Linux And The Command Line 101"
 date: 2020-08-15T14:15:28-05:00
 tags:
   - Guide
@@ -8,7 +8,7 @@ tags:
 
 When I first started with Linux, and especially the command line, It was difficult to find a truly optimal and comprehensive guide to these things. While most tutorials were nice and gave me a good starting point, they usually provided inefficient information or didn't showcase the most optimal commands/strategies. I am making this list as more of a dump for all of the things that I have learned about bash so far, which isn't too much compared to some but I like to think that I know something. So without further ado, here is my bash basics list to boost you up in the Linux elitist ladder. And as a final note, unless specified, all of these commands are being run from the default (home) folder that your terminal puts you in.
 
-> Read The F***ing Manual
+> Always remember: RTFM: "Read The Fucking Manual"
 
 ## First, some Terminology and Tips
 The Terminal is simply an interface to interact with your computer, by itself, it is nothing but an empty program. A terminal (in 99.99% of cases) needs a **Shell** to function. A shell is an interactive text interface for the user, and the **Terminal** is the tool most often used to run commands via the shell. There are many shells out there, thought this tutorial in specific will be focusing on the most is **Bash**, the most popular shell in use right now and the default shell of most [Linux](https://en.wikipedia.org/wiki/Linux) distributions. Bash allows you to run commands from other programs or utilities, common ones you'll mostly likely need are those from something like the [GNU Coreutils](https://en.wikipedia.org/wiki/GNU_Core_Utilities), and any other programs you might use daily. Once you have familiarized yourself with these terms, you can get on to actually using the command line. And finally, and most likely **The Most Important Thing You Will Read Here**, you have to always be willing to read documentation and official manuals, don't go around annoying others for help. Some things to do when encountering issues can include:
@@ -20,7 +20,14 @@ The Terminal is simply an interface to interact with your computer, by itself, i
 
 **Following these steps will lead you to your solution far more often than not.**
 
-## Second, Basics of bash
+## Second, Some Linux Basics
+In this section I will be discussing some basics Linux concept, terminology, and tip/tricks that every user should know before they dive deeper into the operating system.
+
+### The Linux File System
+In Linux and other UNIX-based operating systems, almost everything is available to the user as a file or folder. This results in your system being essentially just one massive file system
+
+
+## Third, Basics of bash
 Here I will be explaining some simple bash concepts that will help speed you along your terminal journey, knowing these is necessary if you want to truly be efficient on the command line:
 
 ### Autocomplete
@@ -158,9 +165,10 @@ Finally, here are some examples of the `cd` command in use:
 cd ~/.config/polybar/
 #this will move you to your root directory
 cd /
-#this will move you back to home
-cd ~/
 ```
+Another good thing to know is that running just `cd` will take you back you your home folder:
+
+![img](https://i.postimg.cc/DzjJ3WSn/image.png)
 
 `ls` is one of the commands you will use the most, this command lists all of the files and folders in the current folder, allowing you to get a better idea of where you are. Here is an example of the `ls` command in use:
 
@@ -173,11 +181,6 @@ touch file.css
 You can also use touch to create files in other folders:
 ```sh
 touch ~/Documents/file.txt
-```
-while `touch` is a cool command, it can sometimes be a pain to type, so another alternative can be just to type `:>` instead, as it serves the same purpose:
-```sh
-#creates a new css file
-:> newfile.css
 ```
 
 `mkdir` is like `touch`, but instead of creating a single file it creates an entire directory, and like `touch`, this can be used to create a folder anywhere on your system, provided you have the right permissions to do so, here is an example of the `mkdir` command:
@@ -201,6 +204,12 @@ cp ~/.local/bin/command /usr/bin/command2
 cp ~/.local/bin/command /usr/bin
 ```
 
+You can use `cp` and `mv` with multiple files as well, for example, this is how you would move multiple image files from one folder to another:
+```sh
+cp 1.png 2.png 3.png ~/Pictures/
+```
+As you can see, all you have to do is list all the files you would like to copy/move with a space in between them, this will stage them all for transition.
+
 `rm` is another very useful, but dangerous command. It stands for "remove" and can be used to remove any
 However, unlike the other file management commands, `rm` cannot remove folders by default, this requires the use of a couple **Flags**, which are just letters/words you can attach to a command to unlock abilities that the command cannot do by default. For `rm` to be able to delete a whole folder, it requires the `-r` and `-f` flags, here is an example:
 ```sh
@@ -209,30 +218,19 @@ rm -r -f folder/
 Though separating flags is not necessary, you can just combine them into one flag like this:
 ```sh
 rm -rf folder/
-#you can also use the alternative "rmdir" command
+#you can also use the alternative "rmdir" command, though only on empty folders
 rmdir folder/
 ```
 Thus is how you can use `rm` to remove folders as well as individual files.
 
-#### [Using the "*" character in file management]
-You can also use this basic RegEx character to make bulk file movement easier, for example, you can move every `.png` file in a folder somewhere else using the `*` character, for example, this command is doing exactly that:
-```sh
-mv *.png ~/Pictures/stuff/
-#once again, this is not limited to the current location
-mv ~/usr/share/backgrounds/*.png ~/Pictures/stuff/
-```
-You can also pair `*` with `rm`, this can be very dangerous so make sure you are careful. Example
-```sh
-#this removes all png files in folder
-rm *.png
-```
+#### Managing Files in Bulk using "File Globbing"
 
-#### Permissions
-Sometimes, your user may not have the necessary permissions to execute certain commands on a file or folder, this is because the owner of said file/folder is the **root user**, to obtain the abilities of the root user, you just have to place the word `sudo` behind your command. `sudo` stands for "Super User DO", and will allow you to run commands with elevated permissions, here is an example:
+#### Elevating Permissions
+Sometimes, your user may not have the necessary permissions to execute certain commands on a file or folder, this is because the owner of said file/folder is the **root user**, to obtain the abilities of the root user, you just have to place the word `sudo` behind your command. `sudo` stands for "Super User DO", and will allow you to run commands with elevated (or "root") permissions, here is an example:
 ```sh
-sudo rm -rf /
+sudo apt install firefox
 ```
-This command is a great showcase of the dangers of `sudo` as well. If you haven't already realized, this command will wipe every file and folder on your system. So whenever something requires you to be root to run a command, always make sure you know what you are doing, and always remember that there is a reason that there is a reason for a password to be between you and the execution of this command. Stay safe.
+ This command will install `firfox` on your system. You will almost always need root permission to install a package on your system. Root permissions can be very dangerous however, as you can very easily delete everything on your computer. So it is vital to remember that whenever something requires you to be root to run a command, always make sure you know what you are doing, and be aware that there is a reason that there is a reason for a password to be between you and the execution of this command. Stay safe.
 
 `chmod` is a command that can be used to change the permissions a file has. These permissions include reading, writing, and changing whether a file can be executable or not. You can use `chmod` plus/minus a letter like this: `chmod +x` to add or remove a permission from a file. To view the permissions of all files and folders in your current directory, run the `ls` command with the `-l` flag:
 
@@ -283,6 +281,10 @@ Nano has many keyboard shortcuts and is a quite featured editor, though you will
 The `date` command can be used to quickly display the current date and time on the terminal, while this is cool it doesn't really have much of a use in day to day command line usage, it is more effective in scripts and programs, as a reliable way to get system time. Here is an example of the `date` command in use:
 
 ![img](https://i.postimg.cc/W4JWZD2Y/image.png)
+
+This is great output from a human readable standpoint, but if you are writing a script, it is not easily parseable, pass the `-Im` flag along with `date` to get an easily usable output:
+
+![img](https://i.postimg.cc/MGxXQ7QW/image.png)
 
 Another time related command you can use is `uptime`, this command outputs the amount of time the system has been on for, this can be helpful to know for a variety of reasons. By default, the `uptime` command has very messy output, so run it with the `-p` flag to make it more readable, here is an example:
 
