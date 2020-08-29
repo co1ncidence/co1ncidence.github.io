@@ -1,7 +1,7 @@
 publishdir = ".."
 baseURL = "https://co1ncidence.github.io"
 languageCode = "en-us"
-title = "nuaNce's blog"
+title = "nuaNce's blog "
 theme = "hugo-kiera"
 paginate = 10
 
