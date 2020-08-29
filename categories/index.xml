@@ -157,9 +157,10 @@ cd ~/.config/polybar/
 &lt;span style=&#34;color:#75715e&#34;&gt;#this will move you to your root directory&lt;/span&gt;
 cd /
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Another good thing to know is that running just &lt;code&gt;cd&lt;/code&gt; will take you back you your home folder:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/DzjJ3WSn/image.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;ls&lt;/code&gt; is one of the commands you will use the most, this command lists all of the files and folders in the current folder, allowing you to get a better idea of where you are. Here is an example of the &lt;code&gt;ls&lt;/code&gt; command in use:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/pTzfWz2x/2020-08-23-07-06-00.gif&#34; alt=&#34;gif&#34;&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#no matter where you run this, it will take you back to home&lt;/span&gt;
+cd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;ls&lt;/code&gt; is one of the commands you will use the most, this command lists all of the files and folders in the current folder, allowing you to get a better idea of where you are. Here is an example of the &lt;code&gt;ls&lt;/code&gt; command in use:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/L5V6jTJt/image.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;touch&lt;/code&gt; is used (mostly) to create a new, empty file in the folder you are currently occupying, the filetype can vary based on name extension, for example, to create a new &lt;code&gt;css&lt;/code&gt; file you would run&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;touch file.css
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can also use touch to create files in other folders:&lt;/p&gt;
@@ -297,6 +298,7 @@ You may realize. Here is an example of the &lt;code&gt;cat&lt;/code&gt; command 
        <description>&lt;h2 id=&#34;current-rice&#34;&gt;Current rice&lt;/h2&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/zDyS3g9H/what.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/y82s5dS3/what.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;gallery-of-older-rices&#34;&gt;Gallery of Older Rices&lt;/h2&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/sgRPQjw3/what.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;

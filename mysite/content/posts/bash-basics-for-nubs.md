@@ -167,12 +167,14 @@ cd ~/.config/polybar/
 cd /
 ```
 Another good thing to know is that running just `cd` will take you back you your home folder:
-
-![img](https://i.postimg.cc/DzjJ3WSn/image.png)
+```sh
+#no matter where you run this, it will take you back to home
+cd
+```
 
 `ls` is one of the commands you will use the most, this command lists all of the files and folders in the current folder, allowing you to get a better idea of where you are. Here is an example of the `ls` command in use:
 
-![gif](https://i.postimg.cc/pTzfWz2x/2020-08-23-07-06-00.gif)
+![img](https://i.postimg.cc/L5V6jTJt/image.png)
 
 `touch` is used (mostly) to create a new, empty file in the folder you are currently occupying, the filetype can vary based on name extension, for example, to create a new `css` file you would run
 ```sh
