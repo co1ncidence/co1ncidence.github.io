@@ -4,22 +4,27 @@ date: 2020-08-23T06:57:25-05:00
 ---
 
 ## Series
-| Author            | Series                   | Link to book 1                                              |
-|-------------------|--------------------------|-------------------------------------------------------------|
-| Brandon Sanderson | The Stormlight Archive   | [The Way of Kings](https://b-ok.cc/book/4219340/4b2f48)     |
-| Patrick Rothfuss  | The Kingkiller Chronicle | [The Name of The Wind](https://b-ok.cc/book/1564700/b39690) |
-| Robert Jordan     | The Wheel of Time        | [The Eye of The World](https://b-ok.cc/book/984472/9743af)  |
+| Author               | Series                   | Download (book 1)                                           |
+|----------------------|--------------------------|-------------------------------------------------------------|
+| Brandon Sanderson    | The Stormlight Archive   | [The Way of Kings](https://b-ok.cc/book/4219340/4b2f48)     |
+| Patrick Rothfuss     | The Kingkiller Chronicle | [The Name of The Wind](https://b-ok.cc/book/1564700/b39690) |
+| Robert Jordan        | The Wheel of Time        | [The Eye of The World](https://b-ok.cc/book/984472/9743af)  |
+| Christopher Ruocchio | Sun Eater                | [Empire of Silence](https://b-ok.cc/book/5029866/ff1b81)    |
 
 ## Singles (fiction)
-| Author                                              | Book                                 | Link                                        |
+| Author                                              | Book                                 | Download                                    |
 |-----------------------------------------------------|--------------------------------------|---------------------------------------------|
 | Brandon Sanderson                                   | Elantris                             | [EPUB](https://b-ok.cc/book/1222523/ef92aa) |
-| Brandon Sanderson :P                                | Warbreaker                           | [EPUB](https://b-ok.cc/book/1623479/d0cf66) |
+| Stephen King                                        | Doctor Sleep                         | [PDF](https://b-ok.cc/book/4261164/b41c46)  |
+| John Steinbeck                                      | The Grapes of Wrath                  | [PDF](https://b-ok.cc/book/1518328/bddb70)  |
+| Brandon Sanderson                                   | Warbreaker                           | [EPUB](https://b-ok.cc/book/1623479/d0cf66) |
 
-## Singles (self-improvement)
-| Author                                              | Book                                 | Link                                        |
+## Singles (non-fiction)
+| Author                                              | Book                                 | Download                                    |
 |-----------------------------------------------------|--------------------------------------|---------------------------------------------|
 | Saif' ur-Rahman Mubarakpuri                         | The Sealed Nectar                    | [EPUB](https://b-ok.cc/book/1009125/d83092) |
 | Jake Knapp and John Zeratsky                        | Make Time                            | [PDF](https://b-ok.cc/book/5337333/57a819)  |
+| Graham Alcott                                       | How to be a Productivity Ninja       | [EPUB](https://b-ok.cc/book/5709760/a3dff9) |
+| Michael Bazzel                                      | Open Source Intelligence             | [PDF](https://b-ok.cc/book/5275683/321b05)  |
 
 &nbsp;

@@ -3,7 +3,7 @@ title: "About Me"
 date: 2020-08-02T23:44:22-05:00
 ---
 
-> "Minimalism is not the lack of something, but instead the perfect amount of it" - Nicholas Burroughs
+> "Minimalism is not the lack of something, but instead the perfect amount of it"
 
 Just a lost windrunner who spends too much his time wasting it, mostly due to my obsession with Linux and ricing. Along with, of course, a good peach and chocolate covered almonds, nothing wastes time like those do.
 

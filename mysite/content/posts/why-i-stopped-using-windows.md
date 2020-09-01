@@ -1,7 +1,6 @@
 ---
 title: "Why I Stopped Using Windows"
-date: 2020-08-22T12:21:14-05:00
-draft: true
+date: 2020-08-29T12:21:14-05:00
 tags:
   - Opinion
   - Narrative
@@ -58,7 +57,7 @@ It's almost as if Windows is designed to be as unintuitive and unusable as possi
 
 ### Other, more miscellaneous concerns
 
-> This section is almost completely my own opinion, you are free to skip it if you don't feel like listening to a rant
+> This section is mostly my own opinion, you can skip it if you don't want to listen to a rant
 
 ## Now, Why is Linux any better?
 This subsection too, will be divided into these categories:

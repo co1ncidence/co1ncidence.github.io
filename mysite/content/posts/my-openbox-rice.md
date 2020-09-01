@@ -9,12 +9,12 @@ tags:
 ## Current rice
 ---
 
-![img](https://i.postimg.cc/zDyS3g9H/what.png)
-
-![img](https://i.postimg.cc/y82s5dS3/what.png)
+![img](https://i.postimg.cc/3Rs2SSgy/what.png)
 
 ## Gallery of Older Rices
 ---
+
+![img](https://i.postimg.cc/zDyS3g9H/what.png)
 
 ![img](https://i.postimg.cc/sgRPQjw3/what.png)
 

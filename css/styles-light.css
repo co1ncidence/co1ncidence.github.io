@@ -10,9 +10,9 @@ body {
   padding-left: 2vw;
   padding-top: 5vh;
   padding-bottom: 5vh;
-  font-family: serif;
+  font-family: "Source Serif Pro", "Liberation Serif", "Times New Roman", serif;
   background-color: #f5f5f5;
-  color: #404040;
+  color: #535353;
   border-radius: 20px;
   -webkit-box-shadow: 0px 0px 10px 1px rgba(25,25,25,0.25);
   -moz-box-shadow: 0px 0px 10px 1px rgba(25,25,25,0.25);
@@ -26,9 +26,9 @@ h4,
 h5,
 h6,
 time {
-  font-family: sans-serif;
+  font-family: "Source Sans Pro", "Tahoma", "Arial", "Helvetica Neue", "Impact", "Verdana", serif;
   font-weight: Bold;
-  color: #363636;
+  color: #494949;
 }
 
 #container {
@@ -102,7 +102,7 @@ a:focus {
   text-align: center;
   position: relative;
   padding-bottom: 0.5em;
-  font-family: serif;
+  font-family: "Source Serif Pro", "Liberation Serif", "Times New Roman", serif;
   border-bottom: 3px solid #7b7b7b;
 }
 
@@ -288,7 +288,7 @@ width: 100%;
 
 .meta-aside, #container main section#home ul li aside, #container main article aside {
   margin: 0.5em 0;
-  font-family: serif;
+  font-family: "Source Serif Pro", "Liberation Serif", "Times New Roman", serif;
   color: #191919;
   font-size: 0.8em;
 }
@@ -307,13 +307,13 @@ width: 100%;
 
 a {
   color: #617878;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover,
 a:focus {
   color: #7B9899;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .image, figure img, img {
@@ -419,16 +419,17 @@ table {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
+  color: #535353;
 }
 
 table th {
   background-color: #e7e7e7;
-  color: #2c2c2c;
+  color: #494949;
 }
 
 table th, table td {
   padding: 5px 10px;
-  border-bottom: 3px solid #191919;
+  border-bottom: 3px solid #494949;
   border-right: 2px solid #f5f5f5;
   border-left: 2px solid #f5f5f5;
 }
@@ -439,16 +440,19 @@ table thead {
 
 blockquote {
   margin-left: 0em;
-  border-left: solid 4px #363636;
   padding: 0.2em 2em;
   position: relative;
-  color: #404040;
-  background-color: #e7e7e7;
-  font-family: sans-serif;
+  color: #f5f5f5;
+  background-color: #404040;
+  font-family: "Source Sans Pro", "Tahoma", "Arial", "Helvetica Neue", "Impact", "Verdana", serif;
   font-size: 16px;
-  border-radius: 0px 4px 4px 0px;
-  -moz-border-radius: 0px 4px 4px 0px;
-  -webkit-border-radius: 0px 4px 4px 0px;
+  border: 0px solid #676767;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(25,25,25,0.25);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(25,25,25,0.25);
+  box-shadow: 0px 0px 5px 1px rgba(25,25,25,0.25);
 }
 
 @media only screen and (max-width: 800px) {
