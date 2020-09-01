@@ -36,13 +36,13 @@ And along with being terribly designed, the interface of Windows is also slow an
 
 It is well known how easy it is to create viruses and harmful malware for Windows computers. Due to the amount of market share the operating system has, the vast majority of hackers have no reason to worry about anything else, since so many of their targets are vulnerable on Windows. Microsoft has a history of being slow with security updates and has yet to find solutions to some very critical issues. The inbuilt security of Windows is also not effective against this, with "Windows Defender" doing almost nothing to protect your computer, and, in some cases, is a hindrance to the usability of your machine. And alongside having terrible security, Microsoft also takes advantage of it's hundreds of millions of users and gathers their data. The ironic thing however, is that they do this completely legally. Microsoft themselves state in their [Privacy Statement](https://privacy.microsoft.com/en-us/privacystatement) that they do, in fact, legally reserve the right to track and analyze whatever we do on out computers, and since most user's don't bother to read these documents, this has gone under the radar for all of these radar, If you don't want to read the privacy statement, here is a short excerpt which gives just about any information you could need:
 
-> Finally, we will access, disclose and preserve personal data, including your content (such as the content of your emails, other private communications or files in private folders), when we have a good faith belief that doing so is necessary to: 
+> Finally, we will access, disclose and preserve personal data, including your content (such as the content of your emails, other private communications or files in private folders), when we have a good faith belief that doing so is necessary to:
 
-> 1.comply with applicable law or respond to valid legal process, including from law enforcement or other government agencies; 
+> 1.comply with applicable law or respond to valid legal process, including from law enforcement or other government agencies;
 
-> 2.protect our customers, for example to prevent spam or attempts to defraud users of the services, or to help prevent the loss of life or serious injury of anyone; 
+> 2.protect our customers, for example to prevent spam or attempts to defraud users of the services, or to help prevent the loss of life or serious injury of anyone;
 
-> 3.operate and maintain the security of our services, including to prevent or stop an attack on our computer systems or networks; or 
+> 3.operate and maintain the security of our services, including to prevent or stop an attack on our computer systems or networks; or
 
 > 4.protect the rights or property of Microsoft, including enforcing the terms governing the use of the services – however, if we receive information indicating that someone is using our services to traffic in stolen intellectual or physical property of Microsoft, we will not inspect a customer’s private content ourselves, but we may refer the matter to law enforcement.
 
@@ -54,7 +54,7 @@ If you are someone who likes to use many different kinds of software, you have m
 
 ### Lack of control over system, too much going on without user consent
 
-It's almost as if Windows is designed to be as unintuitive and unusable as possible, with as little control being given to the user as possible whenever there is a chance. You can't control or delay (up to a certain extent) Windows updates, nor can you uninstall most of the programs that come with the computer. This gets more and more annoying as Windows updates come and go, since even if you do manage to debloat your system a little bit, all of those apps get reinstalled when the next update comes around. These updates are a pretty big nuisance as well. You can barely delay them, and when they do come, they can take up to 6 hours to finish and leave your system in an unusable state during that time, and due to their suddenness, some apps may not work for a bit after a recent Windows Update. Another thing that is concerning is the lack of any documentation on the many processes that are always running in the background when you are using your system. 
+It's almost as if Windows is designed to be as unintuitive and unusable as possible, with as little control being given to the user as possible whenever there is a chance. You can't control or delay (up to a certain extent) Windows updates, nor can you uninstall most of the programs that come with the computer. This gets more and more annoying as Windows updates come and go, since even if you do manage to debloat your system a little bit, all of those apps get reinstalled when the next update comes around. These updates are a pretty big nuisance as well. You can barely delay them, and when they do come, they can take up to 6 hours to finish and leave your system in an unusable state during that time, and due to their suddenness, some apps may not work for a bit after a recent Windows Update. Another thing that is concerning is the lack of any documentation on the many processes that are always running in the background when you are using your system.
 
 ### Other, more miscellaneous concerns
 
@@ -80,7 +80,7 @@ Linux offers an almost absurd collection of different desktop environments and w
 
 One of the main problems that windows had was it's corporate ownership. Almost everything that Microsoft did for the operating system and/or it's users had a financial incentive behind it. Now while this isn't inherently a bad thing (companies have to make money somehow), the methods Microsoft employed aren't the most ethical and this have made many users, including me, look for something more morally sound. Linux provides exactly that. With most of it's distributions being
 
-### Completely open source and free software base, almost too many options to choose from sometimes
+### Fully Open Source and Free software base
 
 ### Absolute control over system, nothing is inaccessible to the user
 
