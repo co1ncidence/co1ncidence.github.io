@@ -141,7 +141,7 @@ You can use the `clear` command to clear everything in your terminal, usually us
 ```sh
 sleep 1600 && clear
 ```
-And make sure you are acquainted with these 2 files, both are located in your home directory: First, `.bash_history`, which contains the last 2000 commands you ran using bash, allowing you to identify the ones you want easily. Second, `.bashrc`, this is your bash configuration file, which can be used to make many different changes to your shell.
+**And make sure you are acquainted with these 2 files, both are located in your home directory:** First, `.bash_history`, which contains the last 2000 commands you ran using bash, allowing you to identify the ones you want easily. Second, `.bashrc`, this is your bash configuration file, which can be used to make many different changes to your shell.
 
 ## File Management In The Command Line
 You can use the `pwd` command to display what directory you are currently in, this is useful as a beginner to get a better feel of where you are in your system.
@@ -220,7 +220,7 @@ rm -r -f folder/
 Though separating flags is not necessary, you can just combine them into one flag like this:
 ```sh
 rm -rf folder/
-#you can also use the alternative "rmdir" command, though only on empty folders
+#you can also use the "rmdir" command, though only on empty folders
 rmdir folder/
 ```
 Thus is how you can use `rm` to remove folders as well as individual files.

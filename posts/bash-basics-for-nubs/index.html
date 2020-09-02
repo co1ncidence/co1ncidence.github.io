@@ -200,7 +200,7 @@ alias free<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;f
 <p><code>reset</code> will restart your shell and terminal and make it behave as if you just opened it for the first time.</p>
 <p><code>sleep</code> is an especially cool command, it can be used in conjunction with <code>&amp;&amp;</code> to essentially but a command on a countdown, for example, running this command will tell your system to way 1600 seconds before running the next command in the sequence:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sleep <span style="color:#ae81ff">1600</span> <span style="color:#f92672">&amp;&amp;</span> clear
-</code></pre></div><p>And make sure you are acquainted with these 2 files, both are located in your home directory: First, <code>.bash_history</code>, which contains the last 2000 commands you ran using bash, allowing you to identify the ones you want easily. Second, <code>.bashrc</code>, this is your bash configuration file, which can be used to make many different changes to your shell.</p>
+</code></pre></div><p><strong>And make sure you are acquainted with these 2 files, both are located in your home directory:</strong> First, <code>.bash_history</code>, which contains the last 2000 commands you ran using bash, allowing you to identify the ones you want easily. Second, <code>.bashrc</code>, this is your bash configuration file, which can be used to make many different changes to your shell.</p>
 <h2 id="file-management-in-the-command-line">File Management In The Command Line</h2>
 <p>You can use the <code>pwd</code> command to display what directory you are currently in, this is useful as a beginner to get a better feel of where you are in your system.</p>
 <p><code>cd</code> stands for &ldquo;change directory&rdquo;, you can use this command to enter and leave directories. It is not limited to neighboring directories, however, you can use <code>cd</code> to move from one side of your computer to another, provided you don&rsquo;t mess up typing in the names of folders. First thing to note is that a <code>/</code> is not necessary after a folder name:</p>
@@ -244,7 +244,7 @@ However, unlike the other file management commands, <code>rm</code> cannot remov
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">rm -r -f folder/
 </code></pre></div><p>Though separating flags is not necessary, you can just combine them into one flag like this:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">rm -rf folder/
-<span style="color:#75715e">#you can also use the alternative &#34;rmdir&#34; command, though only on empty folders</span>
+<span style="color:#75715e">#you can also use the &#34;rmdir&#34; command, though only on empty folders</span>
 rmdir folder/
 </code></pre></div><p>Thus is how you can use <code>rm</code> to remove folders as well as individual files.</p>
 <h4 id="managing-files-in-bulk-using-file-globbing">Managing Files in Bulk using &ldquo;File Globbing&rdquo;</h4>
