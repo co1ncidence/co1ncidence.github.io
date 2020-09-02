@@ -1,5 +1,5 @@
 ---
-title: "Linux And The Command Line 101"
+title: "Linux and CLI, a 101"
 date: 2020-08-15T14:15:28-05:00
 tags:
   - Guide
@@ -174,7 +174,7 @@ cd
 
 `ls` is one of the commands you will use the most, this command lists all of the files and folders in the current folder, allowing you to get a better idea of where you are. Here is an example of the `ls` command in use:
 
-![img](https://i.postimg.cc/L5V6jTJt/image.png)
+![img](https://i.postimg.cc/9Q1wkZSB/image.png)
 
 `touch` is used (mostly) to create a new, empty file in the folder you are currently occupying, the filetype can vary based on name extension, for example, to create a new `css` file you would run
 ```sh
@@ -236,7 +236,7 @@ sudo apt install firefox
 
 `chmod` is a command that can be used to change the permissions a file has. These permissions include reading, writing, and changing whether a file can be executable or not. You can use `chmod` plus/minus a letter like this: `chmod +x` to add or remove a permission from a file. To view the permissions of all files and folders in your current directory, run the `ls` command with the `-l` flag:
 
-![img](https://i.postimg.cc/zB6gygDk/image.png)
+![img](https://i.postimg.cc/BZx6y2P1/image.png)
 
 ## File Viewing  and Output Control/Filtering
 The `cat` command is one of the first to know when viewing files, running `cat` on a file which contains any sort of text will cause your terminal to output the full contents of your file, for example, running:
@@ -246,11 +246,11 @@ cat .bashrc
 Will show you the contents of your `.bashrc` file, otherwise known as the bash shell configuration file, more about this later. `cat` is very useful when you want to look at certain content in a file but don't want to open it in your editor.
 You may realize. Here is an example of the `cat` command being used:
 
-![gif](https://i.postimg.cc/5tvYLJDS/2020-08-23-07-06-00.gif)
+![gif](https://i.postimg.cc/63tSQszK/out.gif)
 
 However, that `cat` can be annoying when used on longer files, as you have to manually scroll back if you want to view any content near the beginning of the file. This is where another, very useful command comes in. The `less` command is similar to `cat`, but instead of just throwing all of the output at you and leaving you alone to manage it, `less` allows you to view the file in a scrolling window, with the top of the file being the beginning. You can then use the Up and Down arrow keys of J and K to navigate the file as you want. For those of you comfortable with them, Vim keybindings work in `less` as well. As you can see here, the experience is far more intuitive:
 
-![gif](https://i.postimg.cc/FHSsnZG9/2020-08-23-07-06-00.gif)
+![gif](https://i.postimg.cc/dQ4ML0zx/out.gif)
 
 Sometimes, however, we have too much output of a command, one example of such a problematic command can be the `fc-list` command, which lists all fonts currently installed on your system. You can filter the output of this command using `grep`, an extremely powerful search utility. `grep` however, usually requires piping, which I talked about earlier. Here is a basic example of the usage of `grep`:
 
@@ -273,59 +273,58 @@ fc-list | grep Roboto
   - **v** inverts `grep`, printing out every line that doesn't contain the searched word
 
 ## Editing Files Using GNU Nano
-Throughout your Linux journey, there will be many, and I mean many, times where you will have to make a quick edit to some configuration file of some sort. Editing these files with a visual editor can be a pain as you have to run the editor as root, find the file you want to edit, and then finally get to editing it. As a solution to this, computers running any GNU/Linux Distribution usually come with a terminal editor installed, called [Nano](https://en.wikipedia.org/wiki/GNU_nano). Nano is an editor that allows you to edit any text file through the terminal. Here is an example of me editing the `/etc/fstab` file using Nano (note the use of sudo to access this file):
+Throughout your Linux journey, there will be many, and I mean many, times where you will have to make a quick edit to some configuration file of some sort. Editing these files with a visual editor can be a pain as you have to run the editor as root, find the file you want to edit, and then finally get to editing it. As a solution to this, computers running any GNU/Linux Distribution usually come with a terminal editor installed, called [Nano](https://en.wikipedia.org/wiki/GNU_nano). Nano is an editor that allows you to edit any text file through the terminal. Here is an example of me editing the `/etc/fstab` file using Nano (note the use of `sudo` to access this file):
 
-![gif](https://i.postimg.cc/dt2J2101/2020-08-23-07-06-00.gif)
+![gif](https://i.postimg.cc/NMsJc6ff/out.gif)
 
 Nano has many keyboard shortcuts and is a quite featured editor, though you will most likely only be using it for quick edits, as anything bigger would be better done in a real editor. The only real shortcut to know in Nano is **Ctrl + X**, this saves and exits the file, prompting you before doing so as well.
 
 ## Time In The Command Line
 The `date` command can be used to quickly display the current date and time on the terminal, while this is cool it doesn't really have much of a use in day to day command line usage, it is more effective in scripts and programs, as a reliable way to get system time. Here is an example of the `date` command in use:
 
-![img](https://i.postimg.cc/W4JWZD2Y/image.png)
+![img](https://i.postimg.cc/J7dTfBwM/image.png)
 
-This is great output from a human readable standpoint, but if you are writing a script, it is not easily parseable, pass the `-Im` flag along with `date` to get an easily usable output:
+This is great output from a readability standpoint, but if you are writing a script, it is not easily parseable, pass the `-Im` flag along with `date` to get more usable output:
 
-![img](https://i.postimg.cc/MGxXQ7QW/image.png)
+![img](https://i.postimg.cc/mrRVYY9N/image.png)
 
 Another time related command you can use is `uptime`, this command outputs the amount of time the system has been on for, this can be helpful to know for a variety of reasons. By default, the `uptime` command has very messy output, so run it with the `-p` flag to make it more readable, here is an example:
 
-![img](https://i.postimg.cc/7YfghFPm/image.png)
+![img](https://i.postimg.cc/4dy6PBxt/image.png)
 
 The `time` command can be used to measure how much time another program takes to open up, this can be useful when diagnosing problems regarding system performance issues. Here is an example of the `time` command being used to display the startup time of the Alacritty Terminal:
 
-![img](https://i.postimg.cc/rpQmSpQW/image.png)
+![img](https://i.postimg.cc/W4WWsDDG/image.png)
 
 ## Process Management in the Terminal
 
 Processes in Linux are usually given certain `pid`'s, having this form of identification allows them to be easily tracked and managed, mostly this is used to take care of or kill problematic processes. There are 2 commands that can be used to find the `pid` of a program. You can use either `pidof` of `pgrep`. For the purposes of this guide, I will be using the `pgrep` command. Here is an example of me using `pgrep` to find the `pid` of Alacritty, a program that I know is currently running:
 
-![img](https://i.postimg.cc/bvWv65fN/image.png)
+![img](https://i.postimg.cc/d1g5TzjD/image.png)
 
 Though, while this command is useful in a limited use case, you will most likely find it easier to just use the `pkill` command. `pkill` allows you to kill a process using a variety of signals, 15 to be exact. The only ones that really matter, however, are signals 9 and 15, otherwise known as `SIGKILL` and `SIGTERM` respectively. `SIGTERM` will kill a process off safely and slowly, but sometimes this is not enough, so you can use `SIGKILL` to immediately terminate it, but I recommend trying your best not to resort to that option, as it could cause problems. Different signals can be invoked using **Flags**. `pkill`, however, defaults to using the `SIGTERM` signal, so for 99% of your use cases just using `pkill` serves as enough, as shown in this example:
 
 **Not much to see here, the process either dies or there is an error:**
 
-![img](https://i.postimg.cc/cCD2mVPF/image.png)
-
+![img](https://i.postimg.cc/25KwPPJT/image.png)
 
 Another thing to take into account when dealing with running processes is memory usage, you can use the `free` command with the `-h` flag to display the amount of memory currently being used:
 
-![img](https://i.postimg.cc/PfBRtQTp/image.png)
+![img](https://i.postimg.cc/HnQ98jLP/image.png)
 
 But what if you wanted to see an interactive interface from which you could manage processes and see their relative resource usage, a "task manager" if you will. One of the programs you will find yourself most frequently using is `htop`, while not normally included with most Linux Distros, it is a must have utility, a lightweight and easy to use terminal task manager. I suggest you check out the program's GitHub page if you want to learn more. For now, however, here is a screenshot of `htop`:
 
-![img](https://i.postimg.cc/D0qdfsPL/image.png)
+![img](https://i.postimg.cc/t4RN7qG2/image.png)
 
 
 ## Disk and storage management in the Terminal
 To Display all of the disks on your system and all of the storage that has been used on them, use the `df` command with the `-h` flag to make it human readable:
 
-![img](https://i.postimg.cc/vZc3jWgQ/image.png)
+![img](https://i.postimg.cc/sXWpb15D/image.png)
 
 If instead, you wanted to view all of the disks and their respective UUID's or other information, use the `lsblk` command with the `-f` flag, which allows displaying the UUID of each disk along with some other information.
 
-![img](https://i.postimg.cc/SQPXdChL/image.png)
+![img](https://i.postimg.cc/L5Bj67yc/image.png)
 
 You can use the `mount` command to mount a disk and access the files inside it. This is useful in recovery situations or when trying to save a computer from a live environment. For example, `sudo mount /dev/sda3` will mount the drive `sda3` for viewing/editing.
 
