@@ -24,10 +24,27 @@ The Terminal is simply an interface to interact with your computer, by itself, i
 In this section I will be discussing some basics Linux concept, terminology, and tip/tricks that every user should know before they dive deeper into the operating system.
 
 ### The Linux File System
-In Linux and other UNIX-based operating systems, almost everything is available to the user as a file or folder. This results in your system being essentially just one massive file system
+In Linux and other UNIX-based operating systems, almost everything is available to the user as a file or folder. This results in your system being essentially just one massive file system. Imagine it this way, your entire Linux install is one huge folder, called `/`, this folder contains everything your system and the programs on it need to function and work together. You can use the `tree` command on the base `/` folder to better visualize this:
 
+![img](https://i.postimg.cc/GpV0nGcD/image.png)
 
-## Third, Basics of bash
+Here is some more detailed information on what each folder contains:
+
+`/bin/`: This is a symlink, or symbolic link, to the `/usr/bin` folder, `bin` is short for binary. Binaries are the files that launch various programs on your computer, for example, Firefox will have it's binary here as `/usr/bin/firefox`
+
+`/dev/`: This stands for "Device", and is where all the devices connected to your system have there appropriate files, this can contain drives or peripherals. You will find your hard disks and their partitions labeled as `/dev/sda-z|1-9`
+
+`/etc/`: Originally stood for "etcetera", now this is where all of the global configuration files of all the programs on your system are stored, such as, for example, those used by your init system or display manager
+
+`/home/`: This is where all of the home folders and files of all (normal) users on your system are, it is separated into folders with the usernames of said users, and contains specific files only accessible to said users. Here is where you will be spending around 90% of your time as a Linux user. Home folders usually contain the standard "Documents" or "Pictures" folders and the like, but also contain some important hidden folders, such as:
+  - **.cache/**: this is where all of your users program's store their cache files
+  - **.config/**: this is where all of your user-specific configuration files are stored
+  - **.local/**: this is the same (in terms of function) as the **/usr/** folder but for your current user only
+It is important to get to know your home folder well and to keep it nice and tidy, it is basically your "workspace" on a Linux system
+
+`/lib/ and /lib64`:
+
+## Third, Getting to Know Bash
 Here I will be explaining some simple bash concepts that will help speed you along your terminal journey, knowing these is necessary if you want to truly be efficient on the command line:
 
 ### Autocomplete
@@ -330,4 +347,22 @@ You can use the `mount` command to mount a disk and access the files inside it. 
 
 `du` can be used to display all directories in a location and the amount of space they use up. This command gets pretty detailed so I suggest that you look more into it yourself to learn.
 
-## Networking in The Command Line
+## Networking on The Command Line
+
+> This section assumes beforehand that you use networkmanager as your internet daemon
+
+
+If unsure whether you are connected to the Internet, or if you just want to check whether a website will accept packet requests from you, you can use the `ping` command on it's domain and monitor network transfers:
+```sh
+#this will send continuous requests to google.com
+ping google.com
+```
+You can use the `ping` command on any domain, local or public
+
+If you wanted to connect to an Internet connection from the command line, the easiest way would be to use `nmtui`, a simple and easy to use interface for `networkmanager`, here is an example of me using `nmtui` to disconnect then reconnect to my home's Internet connection:
+
+![gif](https://i.postimg.cc/nr2Km8ht/out.gif)
+
+To view your I.P. Address and other basic network information, run the `ip addr` command. If you need more detailed information about your current connection, use `nmcli`. And if you want a live environment to view the sending and receiving your computer is doing, try installing and running `bmon`, it looks something like this:
+
+![gif](https://i.postimg.cc/0yyvD7cg/out.gif)

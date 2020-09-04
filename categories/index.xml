@@ -143,8 +143,21 @@
 &lt;h2 id=&#34;second-some-linux-basics&#34;&gt;Second, Some Linux Basics&lt;/h2&gt;
 &lt;p&gt;In this section I will be discussing some basics Linux concept, terminology, and tip/tricks that every user should know before they dive deeper into the operating system.&lt;/p&gt;
 &lt;h3 id=&#34;the-linux-file-system&#34;&gt;The Linux File System&lt;/h3&gt;
-&lt;p&gt;In Linux and other UNIX-based operating systems, almost everything is available to the user as a file or folder. This results in your system being essentially just one massive file system&lt;/p&gt;
-&lt;h2 id=&#34;third-basics-of-bash&#34;&gt;Third, Basics of bash&lt;/h2&gt;
+&lt;p&gt;In Linux and other UNIX-based operating systems, almost everything is available to the user as a file or folder. This results in your system being essentially just one massive file system. Imagine it this way, your entire Linux install is one huge folder, called &lt;code&gt;/&lt;/code&gt;, this folder contains everything your system and the programs on it need to function and work together. You can use the &lt;code&gt;tree&lt;/code&gt; command on the base &lt;code&gt;/&lt;/code&gt; folder to better visualize this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/GpV0nGcD/image.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Here is some more detailed information on what each folder contains:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;/bin/&lt;/code&gt;: This is a symlink, or symbolic link, to the &lt;code&gt;/usr/bin&lt;/code&gt; folder, &lt;code&gt;bin&lt;/code&gt; is short for binary. Binaries are the files that launch various programs on your computer, for example, Firefox will have it&amp;rsquo;s binary here as &lt;code&gt;/usr/bin/firefox&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;/dev/&lt;/code&gt;: This stands for &amp;ldquo;Device&amp;rdquo;, and is where all the devices connected to your system have there appropriate files, this can contain drives or peripherals. You will find your hard disks and their partitions labeled as &lt;code&gt;/dev/sda-z|1-9&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;/etc/&lt;/code&gt;: Originally stood for &amp;ldquo;etcetera&amp;rdquo;, now this is where all of the global configuration files of all the programs on your system are stored, such as, for example, those used by your init system or display manager&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;/home/&lt;/code&gt;: This is where all of the home folders and files of all (normal) users on your system are, it is separated into folders with the usernames of said users, and contains specific files only accessible to said users. Here is where you will be spending around 90% of your time as a Linux user. Home folders usually contain the standard &amp;ldquo;Documents&amp;rdquo; or &amp;ldquo;Pictures&amp;rdquo; folders and the like, but also contain some important hidden folders, such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;.cache/&lt;/strong&gt;: this is where all of your users program&amp;rsquo;s store their cache files&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;.config/&lt;/strong&gt;: this is where all of your user-specific configuration files are stored&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;.local/&lt;/strong&gt;: this is the same (in terms of function) as the &lt;strong&gt;/usr/&lt;/strong&gt; folder but for your current user only
+It is important to get to know your home folder well and to keep it nice and tidy, it is basically your &amp;ldquo;workspace&amp;rdquo; on a Linux system&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;/lib/ and /lib64&lt;/code&gt;:&lt;/p&gt;
+&lt;h2 id=&#34;third-getting-to-know-bash&#34;&gt;Third, Getting to Know Bash&lt;/h2&gt;
 &lt;p&gt;Here I will be explaining some simple bash concepts that will help speed you along your terminal journey, knowing these is necessary if you want to truly be efficient on the command line:&lt;/p&gt;
 &lt;h3 id=&#34;autocomplete&#34;&gt;Autocomplete&lt;/h3&gt;
 &lt;p&gt;Bash has built in &lt;strong&gt;tab-complete&lt;/strong&gt;, so instead of typing in entire long names of folders and/or programs, you can just type in a few letters and press the &lt;code&gt;tab&lt;/code&gt; key, Bash will then auto-type the rest of the name for your. If there are multiple possibilities, Bash will just output them all, so you can choose the one you want.&lt;/p&gt;
@@ -318,7 +331,18 @@ You may realize. Here is an example of the &lt;code&gt;cat&lt;/code&gt; command 
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/L5Bj67yc/image.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
 &lt;p&gt;You can use the &lt;code&gt;mount&lt;/code&gt; command to mount a disk and access the files inside it. This is useful in recovery situations or when trying to save a computer from a live environment. For example, &lt;code&gt;sudo mount /dev/sda3&lt;/code&gt; will mount the drive &lt;code&gt;sda3&lt;/code&gt; for viewing/editing.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;du&lt;/code&gt; can be used to display all directories in a location and the amount of space they use up. This command gets pretty detailed so I suggest that you look more into it yourself to learn.&lt;/p&gt;
-&lt;h2 id=&#34;networking-in-the-command-line&#34;&gt;Networking in The Command Line&lt;/h2&gt;
+&lt;h2 id=&#34;networking-on-the-command-line&#34;&gt;Networking on The Command Line&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This section assumes beforehand that you use networkmanager as your internet daemon&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;If unsure whether you are connected to the Internet, or if you just want to check whether a website will accept packet requests from you, you can use the &lt;code&gt;ping&lt;/code&gt; command on it&amp;rsquo;s domain and monitor network transfers:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#this will send continuous requests to google.com&lt;/span&gt;
+ping google.com
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can use the &lt;code&gt;ping&lt;/code&gt; command on any domain, local or public&lt;/p&gt;
+&lt;p&gt;If you wanted to connect to an Internet connection from the command line, the easiest way would be to use &lt;code&gt;nmtui&lt;/code&gt;, a simple and easy to use interface for &lt;code&gt;networkmanager&lt;/code&gt;, here is an example of me using &lt;code&gt;nmtui&lt;/code&gt; to disconnect then reconnect to my home&amp;rsquo;s Internet connection:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/nr2Km8ht/out.gif&#34; alt=&#34;gif&#34;&gt;&lt;/p&gt;
+&lt;p&gt;To view your I.P. Address and other basic network information, run the &lt;code&gt;ip addr&lt;/code&gt; command. If you need more detailed information about your current connection, use &lt;code&gt;nmcli&lt;/code&gt;. And if you want a live environment to view the sending and receiving your computer is doing, try installing and running &lt;code&gt;bmon&lt;/code&gt;, it looks something like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/0yyvD7cg/out.gif&#34; alt=&#34;gif&#34;&gt;&lt;/p&gt;
 </description>
      </item>
    

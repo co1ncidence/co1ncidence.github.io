@@ -106,7 +106,7 @@
         </li>
         
 
-        <li>20 minutes read</li>
+        <li>22 minutes read</li>
     </ul>
 </aside>
 
@@ -132,8 +132,21 @@
 <h2 id="second-some-linux-basics">Second, Some Linux Basics</h2>
 <p>In this section I will be discussing some basics Linux concept, terminology, and tip/tricks that every user should know before they dive deeper into the operating system.</p>
 <h3 id="the-linux-file-system">The Linux File System</h3>
-<p>In Linux and other UNIX-based operating systems, almost everything is available to the user as a file or folder. This results in your system being essentially just one massive file system</p>
-<h2 id="third-basics-of-bash">Third, Basics of bash</h2>
+<p>In Linux and other UNIX-based operating systems, almost everything is available to the user as a file or folder. This results in your system being essentially just one massive file system. Imagine it this way, your entire Linux install is one huge folder, called <code>/</code>, this folder contains everything your system and the programs on it need to function and work together. You can use the <code>tree</code> command on the base <code>/</code> folder to better visualize this:</p>
+<p><img src="https://i.postimg.cc/GpV0nGcD/image.png" alt="img"></p>
+<p>Here is some more detailed information on what each folder contains:</p>
+<p><code>/bin/</code>: This is a symlink, or symbolic link, to the <code>/usr/bin</code> folder, <code>bin</code> is short for binary. Binaries are the files that launch various programs on your computer, for example, Firefox will have it&rsquo;s binary here as <code>/usr/bin/firefox</code></p>
+<p><code>/dev/</code>: This stands for &ldquo;Device&rdquo;, and is where all the devices connected to your system have there appropriate files, this can contain drives or peripherals. You will find your hard disks and their partitions labeled as <code>/dev/sda-z|1-9</code></p>
+<p><code>/etc/</code>: Originally stood for &ldquo;etcetera&rdquo;, now this is where all of the global configuration files of all the programs on your system are stored, such as, for example, those used by your init system or display manager</p>
+<p><code>/home/</code>: This is where all of the home folders and files of all (normal) users on your system are, it is separated into folders with the usernames of said users, and contains specific files only accessible to said users. Here is where you will be spending around 90% of your time as a Linux user. Home folders usually contain the standard &ldquo;Documents&rdquo; or &ldquo;Pictures&rdquo; folders and the like, but also contain some important hidden folders, such as:</p>
+<ul>
+<li><strong>.cache/</strong>: this is where all of your users program&rsquo;s store their cache files</li>
+<li><strong>.config/</strong>: this is where all of your user-specific configuration files are stored</li>
+<li><strong>.local/</strong>: this is the same (in terms of function) as the <strong>/usr/</strong> folder but for your current user only
+It is important to get to know your home folder well and to keep it nice and tidy, it is basically your &ldquo;workspace&rdquo; on a Linux system</li>
+</ul>
+<p><code>/lib/ and /lib64</code>:</p>
+<h2 id="third-getting-to-know-bash">Third, Getting to Know Bash</h2>
 <p>Here I will be explaining some simple bash concepts that will help speed you along your terminal journey, knowing these is necessary if you want to truly be efficient on the command line:</p>
 <h3 id="autocomplete">Autocomplete</h3>
 <p>Bash has built in <strong>tab-complete</strong>, so instead of typing in entire long names of folders and/or programs, you can just type in a few letters and press the <code>tab</code> key, Bash will then auto-type the rest of the name for your. If there are multiple possibilities, Bash will just output them all, so you can choose the one you want.</p>
@@ -307,7 +320,18 @@ You may realize. Here is an example of the <code>cat</code> command being used:<
 <p><img src="https://i.postimg.cc/L5Bj67yc/image.png" alt="img"></p>
 <p>You can use the <code>mount</code> command to mount a disk and access the files inside it. This is useful in recovery situations or when trying to save a computer from a live environment. For example, <code>sudo mount /dev/sda3</code> will mount the drive <code>sda3</code> for viewing/editing.</p>
 <p><code>du</code> can be used to display all directories in a location and the amount of space they use up. This command gets pretty detailed so I suggest that you look more into it yourself to learn.</p>
-<h2 id="networking-in-the-command-line">Networking in The Command Line</h2>
+<h2 id="networking-on-the-command-line">Networking on The Command Line</h2>
+<blockquote>
+<p>This section assumes beforehand that you use networkmanager as your internet daemon</p>
+</blockquote>
+<p>If unsure whether you are connected to the Internet, or if you just want to check whether a website will accept packet requests from you, you can use the <code>ping</code> command on it&rsquo;s domain and monitor network transfers:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#this will send continuous requests to google.com</span>
+ping google.com
+</code></pre></div><p>You can use the <code>ping</code> command on any domain, local or public</p>
+<p>If you wanted to connect to an Internet connection from the command line, the easiest way would be to use <code>nmtui</code>, a simple and easy to use interface for <code>networkmanager</code>, here is an example of me using <code>nmtui</code> to disconnect then reconnect to my home&rsquo;s Internet connection:</p>
+<p><img src="https://i.postimg.cc/nr2Km8ht/out.gif" alt="gif"></p>
+<p>To view your I.P. Address and other basic network information, run the <code>ip addr</code> command. If you need more detailed information about your current connection, use <code>nmcli</code>. And if you want a live environment to view the sending and receiving your computer is doing, try installing and running <code>bmon</code>, it looks something like this:</p>
+<p><img src="https://i.postimg.cc/0yyvD7cg/out.gif" alt="gif"></p>
 
 
 </article>
