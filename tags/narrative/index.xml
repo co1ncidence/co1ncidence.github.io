@@ -191,6 +191,7 @@ command1 &lt;span style=&#34;color:#f92672&#34;&gt;||&lt;/span&gt; command2
 &lt;p&gt;&lt;code&gt;ctrl + a&lt;/code&gt; moves the cursor all the way back to the prompt&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;ctrl + u&lt;/code&gt; will delete all text entered&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;ctrl + r&lt;/code&gt; will initiate a reverse search for previously entered commands&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ctrl + l&lt;/code&gt; will clear everything in the terminal&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;ctrl + n/p&lt;/code&gt; will cycle you through previously entered commands&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;ctrl + m/j&lt;/code&gt;, both work the same way as &lt;code&gt;enter&lt;/code&gt;&lt;/p&gt;
 &lt;h3 id=&#34;environment-variables&#34;&gt;Environment Variables&lt;/h3&gt;
