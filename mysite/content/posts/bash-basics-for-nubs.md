@@ -28,7 +28,7 @@ In Linux and other UNIX-based operating systems, almost everything is available 
 
 ![img](https://i.postimg.cc/GpV0nGcD/image.png)
 
-Here is some more detailed information on what each folder contains:
+This command only shows the biggest, main folders on your system. Each of these is further subdivided into even more different folders and files. Going over the entire filesystem is an extremely daunting task, so I will just give a short briefing on the general purpose of each folder.
 
 `/bin/`: This is a symlink, or symbolic link, to the `/usr/bin` folder, `bin` is short for binary. Binaries are the files that launch various programs on your computer, for example, Firefox will have it's binary here as `/usr/bin/firefox`
 
