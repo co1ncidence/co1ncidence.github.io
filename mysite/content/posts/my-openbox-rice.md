@@ -11,6 +11,8 @@ tags:
 
 ![img](https://i.postimg.cc/LXhJw6Y0/what.png)
 
+![img](https://i.postimg.cc/0yjX1Rs3/what.png)
+
 ## Gallery of Older Rices
 ---
 
