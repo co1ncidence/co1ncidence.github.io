@@ -51,6 +51,7 @@
 <blockquote>
 <p>Always remember: RTFM: &ldquo;Read The Fucking Manual&rdquo;</p>
 </blockquote>
+<hr>
 <h2 id="first-some-terminology-and-tips">First, some Terminology and Tips</h2>
 <p>The Terminal is simply an interface to interact with your computer, by itself, it is nothing but an empty program. A terminal (in 99.99% of cases) needs a <strong>Shell</strong> to function. A shell is an interactive text interface for the user, and the <strong>Terminal</strong> is the tool most often used to run commands via the shell. There are many shells out there, thought this tutorial in specific will be focusing on the most is <strong>Bash</strong>, the most popular shell in use right now and the default shell of most <a href="https://en.wikipedia.org/wiki/Linux">Linux</a> distributions. Bash allows you to run commands from other programs or utilities, common ones you&rsquo;ll mostly likely need are those from something like the <a href="https://en.wikipedia.org/wiki/GNU_Core_Utilities">GNU Coreutils</a>, and any other programs you might use daily. Once you have familiarized yourself with these terms, you can get on to actually using the command line. And finally, and most likely <strong>The Most Important Thing You Will Read Here</strong>, you have to always be willing to read documentation and official manuals, don&rsquo;t go around annoying others for help. Some things to do when encountering issues can include:</p>
 <ul>
@@ -61,6 +62,7 @@
 <li>Searching <a href="https://reddit.com">Reddit</a> for similar problems or making a post about your own</li>
 </ul>
 <p><strong>Following these steps will lead you to your solution far more often than not.</strong></p>
+<hr>
 <h2 id="second-some-linux-basics">Second, Some Linux Basics</h2>
 <p>In this section I will be discussing some basics Linux concept, terminology, and tip/tricks that every user should know before they dive deeper into the operating system.</p>
 <h3 id="the-linux-file-system">The Linux File System</h3>
@@ -78,6 +80,7 @@
 It is important to get to know your home folder well and to keep it nice and tidy, it is basically your main &ldquo;workspace&rdquo; on a Linux system</li>
 </ul>
 <p><code>/lib/ and /lib64</code>:</p>
+<hr>
 <h2 id="third-getting-to-know-bash">Third, Getting to Know Bash</h2>
 <p>Here I will be explaining some simple bash concepts that will help speed you along your terminal journey, knowing these is necessary if you want to truly be efficient on the command line:</p>
 <h3 id="autocomplete">Autocomplete</h3>
@@ -96,7 +99,7 @@ command1 <span style="color:#f92672">||</span> command2
 </code></pre></div><h3 id="pipes-in-bash">Pipes In Bash</h3>
 <p><strong>Pipes</strong> are things you can use to filter one command through another, thus allowing for things like controlling outputs of commands. Pipes have many uses so I recommend that you look more into them as there is no way I can go into full depth here. Here is an example of a pipe being used to filter the output of of <code>fc-list</code> through <code>grep</code> to only show fonts with a certain name.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">fc-list | grep Roboto
-</code></pre></div><h2 id="sending-command-outputs-to-different-places">Sending command outputs to different places</h2>
+</code></pre></div><h3 id="sending-command-outputs-to-different-places">Sending command outputs to different places</h3>
 <p>The <code>&gt;</code> character works in a similar fashion to pipes, but instead of filtering the command through another, it pushes the output to a file of your choice. The amount of <code>&gt;</code>'s you use also makes a difference, for example, this command will print the word &ldquo;hello&rdquo; and push it as the first word in a new file called &ldquo;file.txt&rdquo;:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">echo <span style="color:#e6db74">&#34;hello&#34;</span> &gt; file.txt
 </code></pre></div><p>Using two <code>&gt;</code>'s provides a different result, instead of creating a new file containing the outputted words, it will append the output to an existing file that you point it to. A common example of this is when adding a heading to a GitHub README:</p>
@@ -120,7 +123,7 @@ command1 <span style="color:#f92672">||</span> command2
 </code></pre></div><p>Environment variables can be set using the <code>export</code> command, for example, if I wanted to change my <code>TERMINAL</code> variable to <code>st</code>, I would use this command:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">export TERMINAL<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;st&#34;</span>
 </code></pre></div><p>This would set the default terminal used by other programs to <code>st</code> instead of whatever I was using before. Many different programs have their own environment variables, though I don&rsquo;t recommend messing with them unless the manual you are reading asks you to do so.</p>
-<h2 id="shell-aliases">Shell Aliases</h2>
+<h3 id="shell-aliases">Shell Aliases</h3>
 <p>You may or not have noticed a file called <code>.bashrc</code> in your Home Directory. This file is the configuration file of the Bash Shell, and can be used to do some cool things, one of which is creating shell aliases. Shell aliases can be used to simplify long and complicated, or even simply hard-to-type commands into smaller ones. To add a shell alias, simply append a line following this syntax to the end of the <code>.bashrc</code> file, replacing the placeholder words with a word/command of your choice:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">alias newcommand<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;long-and-annoying-old-command&#34;</span>
 </code></pre></div><p>Once you&rsquo;ve finished this (hopefully using Nano), simply save the file and restart your shell or terminal. Try typing in your new command, you will see that your chosen word behaves the same as that annoying command that you chose to replace.</p>
@@ -144,9 +147,10 @@ alias free<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;f
 <p>You can use the <code>clear</code> command to clear everything in your terminal, usually used to give you a fresh working space. It is important to know what <code>clear</code> does not change anything regarding your working directory or it&rsquo;s contents, it just clears terminal output.</p>
 <p><code>set</code> can be used to temporarily set or unset certain global settings.</p>
 <p><code>reset</code> will restart your shell and terminal and make it behave as if you just opened it for the first time.</p>
-<p><code>sleep</code> is an especially cool command, it can be used in conjunction with <code>&amp;&amp;</code> to essentially but a command on a countdown, for example, running this command will tell your system to way 1600 seconds before running the next command in the sequence:</p>
+<p><code>sleep</code> is an especially cool command, it can be used in conjunction with <code>&amp;&amp;</code> to essentially but a command on a countdown, for example, running this command will tell your system to wait 1600 seconds before running the next command in the sequence:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sleep <span style="color:#ae81ff">1600</span> <span style="color:#f92672">&amp;&amp;</span> clear
-</code></pre></div><p><strong>And make sure you are acquainted with these 2 files, both are located in your home directory:</strong> First, <code>.bash_history</code>, which contains the last 2000 commands you ran using bash, allowing you to identify the ones you want easily. Second, <code>.bashrc</code>, this is your bash configuration file, which can be used to make many different changes to your shell.</p>
+</code></pre></div><p><strong>Lastly, make sure that you are acquainted with these 2 files, both are located in your home directory:</strong> First, <code>.bash_history</code>, which contains the last 2000 commands you ran using bash, allowing you to identify the ones you want easily. Second, <code>.bashrc</code>, this is your bash configuration file, which can be used to make many different changes to your shell.</p>
+<hr>
 <h2 id="file-management-in-the-command-line">File Management In The Command Line</h2>
 <p>You can use the <code>pwd</code> command to display what directory you are currently in, this is useful as a beginner to get a better feel of where you are in your system.</p>
 <p><code>cd</code> stands for &ldquo;change directory&rdquo;, you can use this command to enter and leave directories. It is not limited to neighboring directories, however, you can use <code>cd</code> to move from one side of your computer to another, provided you don&rsquo;t mess up typing in the names of folders. First thing to note is that a <code>/</code> is not necessary after a folder name:</p>
@@ -193,13 +197,28 @@ However, unlike the other file management commands, <code>rm</code> cannot remov
 <span style="color:#75715e">#you can also use the &#34;rmdir&#34; command, though only on empty folders</span>
 rmdir folder/
 </code></pre></div><p>Thus is how you can use <code>rm</code> to remove folders as well as individual files.</p>
-<h4 id="managing-files-in-bulk-using-file-globbing">Managing Files in Bulk using &ldquo;File Globbing&rdquo;</h4>
-<h4 id="elevating-permissions">Elevating Permissions</h4>
+<h3 id="managing-files-in-bulk-using-file-globbing">Managing Files in Bulk using &ldquo;File Globbing&rdquo;</h3>
+<p>&ldquo;File Globbing&rdquo; is a term used to describe a method of directory management that makes use of many shells&rsquo; in-built pattern searching capabilities. You can use these features to make it far easier to manage multiple files at the same time.</p>
+<h4 id="bulk-management-using-">Bulk Management Using <code>*</code></h4>
+<p>The <code>*</code> symbol, or asterisk, represents any string of characters possible, you can use it to easily clear directories of all of their contents. For example, running <code>rm *</code> inside of a folder will remove every file in that folder, since all of them have names that contain a character that can be represented with <code>*</code>. But what if you wanted to be more specific? Say that you have a folder filled with <code>.png</code> and <code>.jpg</code> image files, and you wanted to only get rid of all the pictures of a certain filetype, here is how you would do it:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># this will remove any file with the &#34;.jpg&#34; extension</span>
+rm *.jpg
+<span style="color:#75715e"># this will remove any file with the &#34;.png&#34; extension</span>
+rm *.png
+</code></pre></div><p>This comes in very handy when cleaning out older directories. But it is not only limited to the removal of files, you can use <code>*</code> in conjunction with <code>mv</code>, <code>cp</code>, and just about any other file management command. Here are some more examples:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># this will copy all files to home dir.</span>
+cp * ~/
+<span style="color:#75715e"># this will move all &#34;txt&#34; files to parent dir.</span>
+mv *.txt ..
+<span style="color:#75715e"># this will remove all &#34;png&#34; files in your home dir</span>
+rm ~/*.png
+</code></pre></div><h3 id="elevating-permissions">Elevating Permissions</h3>
 <p>Sometimes, your user may not have the necessary permissions to execute certain commands on a file or folder, this is because the owner of said file/folder is the <strong>root user</strong>, to obtain the abilities of the root user, you just have to place the word <code>sudo</code> behind your command. <code>sudo</code> stands for &ldquo;Super User DO&rdquo;, and will allow you to run commands with elevated (or &ldquo;root&rdquo;) permissions, here is an example:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo apt install firefox
 </code></pre></div><p>This command will install <code>firfox</code> on your system. You will almost always need root permission to install a package on your system. Root permissions can be very dangerous however, as you can very easily delete everything on your computer. So it is vital to remember that whenever something requires you to be root to run a command, always make sure you know what you are doing, and be aware that there is a reason that there is a reason for a password to be between you and the execution of this command. Stay safe.</p>
 <p><code>chmod</code> is a command that can be used to change the permissions a file has. These permissions include reading, writing, and changing whether a file can be executable or not. You can use <code>chmod</code> plus/minus a letter like this: <code>chmod +x</code> to add or remove a permission from a file. To view the permissions of all files and folders in your current directory, run the <code>ls</code> command with the <code>-l</code> flag:</p>
 <p><img src="https://i.postimg.cc/FstPcR8x/image.png" alt="img"></p>
+<hr>
 <h2 id="file-viewing--and-output-controlfiltering">File Viewing  and Output Control/Filtering</h2>
 <p>The <code>cat</code> command is one of the first to know when viewing files, running <code>cat</code> on a file which contains any sort of text will cause your terminal to output the full contents of your file, for example, running:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cat .bashrc
@@ -223,6 +242,7 @@ You may realize. Here is an example of the <code>cat</code> command being used:<
 <li><strong>r</strong> will allow <code>grep</code> to search directories recursively, bringing results from subfolders as well</li>
 <li><strong>v</strong> inverts <code>grep</code>, printing out every line that doesn&rsquo;t contain the searched word</li>
 </ul>
+<hr>
 <h2 id="editing-files-using-gnu-nano">Editing Files Using GNU Nano</h2>
 <p>Throughout your Linux journey, there will be many, and I mean many, times where you will have to make a quick edit to some configuration file of some sort. Editing these files with a visual editor can be a pain as you have to run the editor as root, find the file you want to edit, and then finally get to editing it. As a solution to this, computers running any GNU/Linux Distribution usually come with a terminal editor installed, called <a href="https://en.wikipedia.org/wiki/GNU_nano">Nano</a>. Nano is an editor that allows you to edit any text file through the terminal. Here is an example of me editing the <code>/etc/fstab</code> file using Nano (note the use of <code>sudo</code> to access this file):</p>
 <p><img src="https://i.postimg.cc/NFQKqRL4/out.gif" alt="gif"></p>
@@ -236,6 +256,7 @@ You may realize. Here is an example of the <code>cat</code> command being used:<
 <p><img src="https://i.postimg.cc/MHZprxr3/image.png" alt="img"></p>
 <p>The <code>time</code> command can be used to measure how much time another program takes to open up, this can be useful when diagnosing problems regarding system performance issues. Here is an example of the <code>time</code> command being used to display the startup time of the Alacritty Terminal:</p>
 <p><img src="https://i.postimg.cc/nVTz9jCy/image.png" alt="img"></p>
+<hr>
 <h2 id="process-management-in-the-terminal">Process Management in the Terminal</h2>
 <p>Processes in Linux are usually given certain <code>pid</code>'s, having this form of identification allows them to be easily tracked and managed, mostly this is used to take care of or kill problematic processes. There are 2 commands that can be used to find the <code>pid</code> of a program. You can use either <code>pidof</code> of <code>pgrep</code>. For the purposes of this guide, I will be using the <code>pgrep</code> command. Here is an example of me using <code>pgrep</code> to find the <code>pid</code> of MPV, a program that I know is currently running:</p>
 <p><img src="https://i.postimg.cc/TP8Yvn4D/image.png" alt="img"></p>
@@ -246,6 +267,7 @@ You may realize. Here is an example of the <code>cat</code> command being used:<
 <p><img src="https://i.postimg.cc/90Dvfn4F/image.png" alt="img"></p>
 <p>But what if you wanted to see an interactive interface from which you could manage processes and see their relative resource usage, a &ldquo;task manager&rdquo; if you will. One of the programs you will find yourself most frequently using is <code>htop</code>, while not normally included with most Linux Distros, it is a must have utility, a lightweight and easy to use terminal task manager. I suggest you check out the program&rsquo;s GitHub page if you want to learn more. For now, however, here is a screenshot of <code>htop</code>:</p>
 <p><img src="https://i.postimg.cc/zGZ9Jpq8/image.png" alt="img"></p>
+<hr>
 <h2 id="disk-and-storage-management-in-the-terminal">Disk and storage management in the Terminal</h2>
 <p>To Display all of the disks on your system and all of the storage that has been used on them, use the <code>df</code> command with the <code>-h</code> flag to make it human readable:</p>
 <p><img src="https://i.postimg.cc/XqBzWBhr/image.png" alt="img"></p>

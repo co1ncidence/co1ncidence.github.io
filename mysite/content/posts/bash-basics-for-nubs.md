@@ -10,6 +10,8 @@ When I first started with Linux, and especially the command line, It was difficu
 
 > Always remember: RTFM: "Read The Fucking Manual"
 
+---
+
 ## First, some Terminology and Tips
 The Terminal is simply an interface to interact with your computer, by itself, it is nothing but an empty program. A terminal (in 99.99% of cases) needs a **Shell** to function. A shell is an interactive text interface for the user, and the **Terminal** is the tool most often used to run commands via the shell. There are many shells out there, thought this tutorial in specific will be focusing on the most is **Bash**, the most popular shell in use right now and the default shell of most [Linux](https://en.wikipedia.org/wiki/Linux) distributions. Bash allows you to run commands from other programs or utilities, common ones you'll mostly likely need are those from something like the [GNU Coreutils](https://en.wikipedia.org/wiki/GNU_Core_Utilities), and any other programs you might use daily. Once you have familiarized yourself with these terms, you can get on to actually using the command line. And finally, and most likely **The Most Important Thing You Will Read Here**, you have to always be willing to read documentation and official manuals, don't go around annoying others for help. Some things to do when encountering issues can include:
   - The official manual of the program, accessed by running the man command for that program in the terminal
@@ -19,6 +21,8 @@ The Terminal is simply an interface to interact with your computer, by itself, i
   - Searching [Reddit](https://reddit.com) for similar problems or making a post about your own
 
 **Following these steps will lead you to your solution far more often than not.**
+
+---
 
 ## Second, Some Linux Basics
 In this section I will be discussing some basics Linux concept, terminology, and tip/tricks that every user should know before they dive deeper into the operating system.
@@ -42,9 +46,9 @@ This command only shows the biggest, main folders on your system. Each of these 
   - **.local/**: this is the same (in terms of function) as the **/usr/** folder but for your current user only
 It is important to get to know your home folder well and to keep it nice and tidy, it is basically your main "workspace" on a Linux system
 
-
-
 `/lib/ and /lib64`:
+
+---
 
 ## Third, Getting to Know Bash
 Here I will be explaining some simple bash concepts that will help speed you along your terminal journey, knowing these is necessary if you want to truly be efficient on the command line:
@@ -77,7 +81,7 @@ command1 || command2
 fc-list | grep Roboto
 ```
 
-## Sending command outputs to different places
+### Sending command outputs to different places
 The `>` character works in a similar fashion to pipes, but instead of filtering the command through another, it pushes the output to a file of your choice. The amount of `>`'s you use also makes a difference, for example, this command will print the word "hello" and push it as the first word in a new file called "file.txt":
 ```sh
 echo "hello" > file.txt
@@ -123,7 +127,7 @@ export TERMINAL="st"
 ```
 This would set the default terminal used by other programs to `st` instead of whatever I was using before. Many different programs have their own environment variables, though I don't recommend messing with them unless the manual you are reading asks you to do so.
 
-## Shell Aliases
+### Shell Aliases
 
 You may or not have noticed a file called `.bashrc` in your Home Directory. This file is the configuration file of the Bash Shell, and can be used to do some cool things, one of which is creating shell aliases. Shell aliases can be used to simplify long and complicated, or even simply hard-to-type commands into smaller ones. To add a shell alias, simply append a line following this syntax to the end of the `.bashrc` file, replacing the placeholder words with a word/command of your choice:
 
@@ -158,11 +162,13 @@ You can use the `clear` command to clear everything in your terminal, usually us
 
 `reset` will restart your shell and terminal and make it behave as if you just opened it for the first time.
 
-`sleep` is an especially cool command, it can be used in conjunction with `&&` to essentially but a command on a countdown, for example, running this command will tell your system to way 1600 seconds before running the next command in the sequence:
+`sleep` is an especially cool command, it can be used in conjunction with `&&` to essentially but a command on a countdown, for example, running this command will tell your system to wait 1600 seconds before running the next command in the sequence:
 ```sh
 sleep 1600 && clear
 ```
-**And make sure you are acquainted with these 2 files, both are located in your home directory:** First, `.bash_history`, which contains the last 2000 commands you ran using bash, allowing you to identify the ones you want easily. Second, `.bashrc`, this is your bash configuration file, which can be used to make many different changes to your shell.
+**Lastly, make sure that you are acquainted with these 2 files, both are located in your home directory:** First, `.bash_history`, which contains the last 2000 commands you ran using bash, allowing you to identify the ones you want easily. Second, `.bashrc`, this is your bash configuration file, which can be used to make many different changes to your shell.
+
+---
 
 ## File Management In The Command Line
 You can use the `pwd` command to display what directory you are currently in, this is useful as a beginner to get a better feel of where you are in your system.
@@ -246,9 +252,32 @@ rmdir folder/
 ```
 Thus is how you can use `rm` to remove folders as well as individual files.
 
-#### Managing Files in Bulk using "File Globbing"
+### Managing Files in Bulk using "File Globbing"
 
-#### Elevating Permissions
+"File Globbing" is a term used to describe a method of directory management that makes use of many shells' in-built pattern searching capabilities. You can use these features to make it far easier to manage multiple files at the same time.
+
+#### Bulk Management Using `*`
+The `*` symbol, or asterisk, represents any string of characters possible, you can use it to easily clear directories of all of their contents. For example, running `rm *` inside of a folder will remove every file in that folder, since all of them have names that contain a character that can be represented with `*`. But what if you wanted to be more specific? Say that you have a folder filled with `.png` and `.jpg` image files, and you wanted to only get rid of all the pictures of a certain filetype, here is how you would do it:
+
+```sh
+# this will remove any file with the ".jpg" extension
+rm *.jpg
+# this will remove any file with the ".png" extension
+rm *.png
+```
+
+This comes in very handy when cleaning out older directories. But it is not only limited to the removal of files, you can use `*` in conjunction with `mv`, `cp`, and just about any other file management command. Here are some more examples:
+
+```sh
+# this will copy all files to home dir.
+cp * ~/
+# this will move all "txt" files to parent dir.
+mv *.txt ..
+# this will remove all "png" files in your home dir
+rm ~/*.png
+```
+
+### Elevating Permissions
 Sometimes, your user may not have the necessary permissions to execute certain commands on a file or folder, this is because the owner of said file/folder is the **root user**, to obtain the abilities of the root user, you just have to place the word `sudo` behind your command. `sudo` stands for "Super User DO", and will allow you to run commands with elevated (or "root") permissions, here is an example:
 ```sh
 sudo apt install firefox
@@ -258,6 +287,8 @@ sudo apt install firefox
 `chmod` is a command that can be used to change the permissions a file has. These permissions include reading, writing, and changing whether a file can be executable or not. You can use `chmod` plus/minus a letter like this: `chmod +x` to add or remove a permission from a file. To view the permissions of all files and folders in your current directory, run the `ls` command with the `-l` flag:
 
 ![img](https://i.postimg.cc/FstPcR8x/image.png)
+
+---
 
 ## File Viewing  and Output Control/Filtering
 The `cat` command is one of the first to know when viewing files, running `cat` on a file which contains any sort of text will cause your terminal to output the full contents of your file, for example, running:
@@ -293,6 +324,8 @@ fc-list | grep Roboto
   - **r** will allow `grep` to search directories recursively, bringing results from subfolders as well
   - **v** inverts `grep`, printing out every line that doesn't contain the searched word
 
+---
+
 ## Editing Files Using GNU Nano
 Throughout your Linux journey, there will be many, and I mean many, times where you will have to make a quick edit to some configuration file of some sort. Editing these files with a visual editor can be a pain as you have to run the editor as root, find the file you want to edit, and then finally get to editing it. As a solution to this, computers running any GNU/Linux Distribution usually come with a terminal editor installed, called [Nano](https://en.wikipedia.org/wiki/GNU_nano). Nano is an editor that allows you to edit any text file through the terminal. Here is an example of me editing the `/etc/fstab` file using Nano (note the use of `sudo` to access this file):
 
@@ -317,6 +350,8 @@ The `time` command can be used to measure how much time another program takes to
 
 ![img](https://i.postimg.cc/nVTz9jCy/image.png)
 
+---
+
 ## Process Management in the Terminal
 
 Processes in Linux are usually given certain `pid`'s, having this form of identification allows them to be easily tracked and managed, mostly this is used to take care of or kill problematic processes. There are 2 commands that can be used to find the `pid` of a program. You can use either `pidof` of `pgrep`. For the purposes of this guide, I will be using the `pgrep` command. Here is an example of me using `pgrep` to find the `pid` of MPV, a program that I know is currently running:
@@ -337,6 +372,7 @@ But what if you wanted to see an interactive interface from which you could mana
 
 ![img](https://i.postimg.cc/zGZ9Jpq8/image.png)
 
+---
 
 ## Disk and storage management in the Terminal
 To Display all of the disks on your system and all of the storage that has been used on them, use the `df` command with the `-h` flag to make it human readable:
