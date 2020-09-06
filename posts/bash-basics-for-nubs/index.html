@@ -65,7 +65,7 @@
 <p>In this section I will be discussing some basics Linux concept, terminology, and tip/tricks that every user should know before they dive deeper into the operating system.</p>
 <h3 id="the-linux-file-system">The Linux File System</h3>
 <p>In Linux and other UNIX-based operating systems, almost everything is available to the user as a file or folder. This results in your system being essentially just one massive file system. Imagine it this way, your entire Linux install is one huge folder, called <code>/</code>, this folder contains everything your system and the programs on it need to function and work together. You can use the <code>tree</code> command on the base <code>/</code> folder to better visualize this:</p>
-<p><img src="https://i.postimg.cc/GpV0nGcD/image.png" alt="img"></p>
+<p><img src="https://i.postimg.cc/pdVcT64b/image.png" alt="img"></p>
 <p>This command only shows the biggest, main folders on your system. Each of these is further subdivided into even more different folders and files. Going over the entire filesystem is an extremely daunting task, so I will just give a short briefing on the general purpose of each folder.</p>
 <p><code>/bin/</code>: This is a symlink, or symbolic link, to the <code>/usr/bin</code> folder, <code>bin</code> is short for binary. Binaries are the files that launch various programs on your computer, for example, Firefox will have it&rsquo;s binary here as <code>/usr/bin/firefox</code></p>
 <p><code>/dev/</code>: This stands for &ldquo;Device&rdquo;, and is where all the devices connected to your system have there appropriate files, this can contain drives or peripherals. You will find your hard disks and their partitions labeled as <code>/dev/sda-z|1-9</code></p>
@@ -167,7 +167,7 @@ cd /
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#no matter where you run this, it will take you back to home</span>
 cd
 </code></pre></div><p><code>ls</code> is one of the commands you will use the most, this command lists all of the files and folders in the current folder, allowing you to get a better idea of where you are. Here is an example of the <code>ls</code> command in use:</p>
-<p><img src="https://i.postimg.cc/9Q1wkZSB/image.png" alt="img"></p>
+<p><img src="https://i.postimg.cc/KjTJwSkL/image.png" alt="img"></p>
 <p><code>touch</code> is used (mostly) to create a new, empty file in the folder you are currently occupying, the filetype can vary based on name extension, for example, to create a new <code>css</code> file you would run</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">touch file.css
 </code></pre></div><p>You can also use touch to create files in other folders:</p>
@@ -199,15 +199,15 @@ rmdir folder/
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo apt install firefox
 </code></pre></div><p>This command will install <code>firfox</code> on your system. You will almost always need root permission to install a package on your system. Root permissions can be very dangerous however, as you can very easily delete everything on your computer. So it is vital to remember that whenever something requires you to be root to run a command, always make sure you know what you are doing, and be aware that there is a reason that there is a reason for a password to be between you and the execution of this command. Stay safe.</p>
 <p><code>chmod</code> is a command that can be used to change the permissions a file has. These permissions include reading, writing, and changing whether a file can be executable or not. You can use <code>chmod</code> plus/minus a letter like this: <code>chmod +x</code> to add or remove a permission from a file. To view the permissions of all files and folders in your current directory, run the <code>ls</code> command with the <code>-l</code> flag:</p>
-<p><img src="https://i.postimg.cc/BZx6y2P1/image.png" alt="img"></p>
+<p><img src="https://i.postimg.cc/FstPcR8x/image.png" alt="img"></p>
 <h2 id="file-viewing--and-output-controlfiltering">File Viewing  and Output Control/Filtering</h2>
 <p>The <code>cat</code> command is one of the first to know when viewing files, running <code>cat</code> on a file which contains any sort of text will cause your terminal to output the full contents of your file, for example, running:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cat .bashrc
 </code></pre></div><p>Will show you the contents of your <code>.bashrc</code> file, otherwise known as the bash shell configuration file, more about this later. <code>cat</code> is very useful when you want to look at certain content in a file but don&rsquo;t want to open it in your editor.
 You may realize. Here is an example of the <code>cat</code> command being used:</p>
-<p><img src="https://i.postimg.cc/63tSQszK/out.gif" alt="gif"></p>
+<p><img src="https://i.postimg.cc/vmmXM6xG/out.gif" alt="gif"></p>
 <p>However, that <code>cat</code> can be annoying when used on longer files, as you have to manually scroll back if you want to view any content near the beginning of the file. This is where another, very useful command comes in. The <code>less</code> command is similar to <code>cat</code>, but instead of just throwing all of the output at you and leaving you alone to manage it, <code>less</code> allows you to view the file in a scrolling window, with the top of the file being the beginning. You can then use the Up and Down arrow keys of J and K to navigate the file as you want. For those of you comfortable with them, Vim keybindings work in <code>less</code> as well. As you can see here, the experience is far more intuitive:</p>
-<p><img src="https://i.postimg.cc/dQ4ML0zx/out.gif" alt="gif"></p>
+<p><img src="https://i.postimg.cc/Gps8kcZk/out.gif" alt="gif"></p>
 <p>Sometimes, however, we have too much output of a command, one example of such a problematic command can be the <code>fc-list</code> command, which lists all fonts currently installed on your system. You can filter the output of this command using <code>grep</code>, an extremely powerful search utility. <code>grep</code> however, usually requires piping, which I talked about earlier. Here is a basic example of the usage of <code>grep</code>:</p>
 <p>This command will have hundreds of lines of output, displaying all of your fonts:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">fc-list
@@ -225,32 +225,32 @@ You may realize. Here is an example of the <code>cat</code> command being used:<
 </ul>
 <h2 id="editing-files-using-gnu-nano">Editing Files Using GNU Nano</h2>
 <p>Throughout your Linux journey, there will be many, and I mean many, times where you will have to make a quick edit to some configuration file of some sort. Editing these files with a visual editor can be a pain as you have to run the editor as root, find the file you want to edit, and then finally get to editing it. As a solution to this, computers running any GNU/Linux Distribution usually come with a terminal editor installed, called <a href="https://en.wikipedia.org/wiki/GNU_nano">Nano</a>. Nano is an editor that allows you to edit any text file through the terminal. Here is an example of me editing the <code>/etc/fstab</code> file using Nano (note the use of <code>sudo</code> to access this file):</p>
-<p><img src="https://i.postimg.cc/NMsJc6ff/out.gif" alt="gif"></p>
+<p><img src="https://i.postimg.cc/NFQKqRL4/out.gif" alt="gif"></p>
 <p>Nano has many keyboard shortcuts and is a quite featured editor, though you will most likely only be using it for quick edits, as anything bigger would be better done in a real editor. The only real shortcut to know in Nano is <strong>Ctrl + X</strong>, this saves and exits the file, prompting you before doing so as well.</p>
 <h2 id="time-in-the-command-line">Time In The Command Line</h2>
 <p>The <code>date</code> command can be used to quickly display the current date and time on the terminal, while this is cool it doesn&rsquo;t really have much of a use in day to day command line usage, it is more effective in scripts and programs, as a reliable way to get system time. Here is an example of the <code>date</code> command in use:</p>
-<p><img src="https://i.postimg.cc/J7dTfBwM/image.png" alt="img"></p>
+<p><img src="https://i.postimg.cc/kg2BmJMk/image.png" alt="img"></p>
 <p>This is great output from a readability standpoint, but if you are writing a script, it is not easily parseable, pass the <code>-Im</code> flag along with <code>date</code> to get more usable output:</p>
-<p><img src="https://i.postimg.cc/mrRVYY9N/image.png" alt="img"></p>
+<p><img src="https://i.postimg.cc/PxjxY1bj/image.png" alt="img"></p>
 <p>Another time related command you can use is <code>uptime</code>, this command outputs the amount of time the system has been on for, this can be helpful to know for a variety of reasons. By default, the <code>uptime</code> command has very messy output, so run it with the <code>-p</code> flag to make it more readable, here is an example:</p>
-<p><img src="https://i.postimg.cc/4dy6PBxt/image.png" alt="img"></p>
+<p><img src="https://i.postimg.cc/MHZprxr3/image.png" alt="img"></p>
 <p>The <code>time</code> command can be used to measure how much time another program takes to open up, this can be useful when diagnosing problems regarding system performance issues. Here is an example of the <code>time</code> command being used to display the startup time of the Alacritty Terminal:</p>
-<p><img src="https://i.postimg.cc/W4WWsDDG/image.png" alt="img"></p>
+<p><img src="https://i.postimg.cc/nVTz9jCy/image.png" alt="img"></p>
 <h2 id="process-management-in-the-terminal">Process Management in the Terminal</h2>
-<p>Processes in Linux are usually given certain <code>pid</code>'s, having this form of identification allows them to be easily tracked and managed, mostly this is used to take care of or kill problematic processes. There are 2 commands that can be used to find the <code>pid</code> of a program. You can use either <code>pidof</code> of <code>pgrep</code>. For the purposes of this guide, I will be using the <code>pgrep</code> command. Here is an example of me using <code>pgrep</code> to find the <code>pid</code> of Alacritty, a program that I know is currently running:</p>
-<p><img src="https://i.postimg.cc/d1g5TzjD/image.png" alt="img"></p>
+<p>Processes in Linux are usually given certain <code>pid</code>'s, having this form of identification allows them to be easily tracked and managed, mostly this is used to take care of or kill problematic processes. There are 2 commands that can be used to find the <code>pid</code> of a program. You can use either <code>pidof</code> of <code>pgrep</code>. For the purposes of this guide, I will be using the <code>pgrep</code> command. Here is an example of me using <code>pgrep</code> to find the <code>pid</code> of MPV, a program that I know is currently running:</p>
+<p><img src="https://i.postimg.cc/TP8Yvn4D/image.png" alt="img"></p>
 <p>Though, while this command is useful in a limited use case, you will most likely find it easier to just use the <code>pkill</code> command. <code>pkill</code> allows you to kill a process using a variety of signals, 15 to be exact. The only ones that really matter, however, are signals 9 and 15, otherwise known as <code>SIGKILL</code> and <code>SIGTERM</code> respectively. <code>SIGTERM</code> will kill a process off safely and slowly, but sometimes this is not enough, so you can use <code>SIGKILL</code> to immediately terminate it, but I recommend trying your best not to resort to that option, as it could cause problems. Different signals can be invoked using <strong>Flags</strong>. <code>pkill</code>, however, defaults to using the <code>SIGTERM</code> signal, so for 99% of your use cases just using <code>pkill</code> serves as enough, as shown in this example:</p>
 <p><strong>Not much to see here, the process either dies or there is an error:</strong></p>
-<p><img src="https://i.postimg.cc/25KwPPJT/image.png" alt="img"></p>
+<p><img src="https://i.postimg.cc/PxTXPThf/image.png" alt="img"></p>
 <p>Another thing to take into account when dealing with running processes is memory usage, you can use the <code>free</code> command with the <code>-h</code> flag to display the amount of memory currently being used:</p>
-<p><img src="https://i.postimg.cc/HnQ98jLP/image.png" alt="img"></p>
+<p><img src="https://i.postimg.cc/90Dvfn4F/image.png" alt="img"></p>
 <p>But what if you wanted to see an interactive interface from which you could manage processes and see their relative resource usage, a &ldquo;task manager&rdquo; if you will. One of the programs you will find yourself most frequently using is <code>htop</code>, while not normally included with most Linux Distros, it is a must have utility, a lightweight and easy to use terminal task manager. I suggest you check out the program&rsquo;s GitHub page if you want to learn more. For now, however, here is a screenshot of <code>htop</code>:</p>
-<p><img src="https://i.postimg.cc/t4RN7qG2/image.png" alt="img"></p>
+<p><img src="https://i.postimg.cc/zGZ9Jpq8/image.png" alt="img"></p>
 <h2 id="disk-and-storage-management-in-the-terminal">Disk and storage management in the Terminal</h2>
 <p>To Display all of the disks on your system and all of the storage that has been used on them, use the <code>df</code> command with the <code>-h</code> flag to make it human readable:</p>
-<p><img src="https://i.postimg.cc/sXWpb15D/image.png" alt="img"></p>
+<p><img src="https://i.postimg.cc/XqBzWBhr/image.png" alt="img"></p>
 <p>If instead, you wanted to view all of the disks and their respective UUID&rsquo;s or other information, use the <code>lsblk</code> command with the <code>-f</code> flag, which allows displaying the UUID of each disk along with some other information.</p>
-<p><img src="https://i.postimg.cc/L5Bj67yc/image.png" alt="img"></p>
+<p><img src="https://i.postimg.cc/hPTKbXj4/image.png" alt="img"></p>
 <p>You can use the <code>mount</code> command to mount a disk and access the files inside it. This is useful in recovery situations or when trying to save a computer from a live environment. For example, <code>sudo mount /dev/sda3</code> will mount the drive <code>sda3</code> for viewing/editing.</p>
 <p><code>du</code> can be used to display all directories in a location and the amount of space they use up. This command gets pretty detailed so I suggest that you look more into it yourself to learn.</p>
 <h2 id="networking-on-the-command-line">Networking on The Command Line</h2>
@@ -262,9 +262,8 @@ You may realize. Here is an example of the <code>cat</code> command being used:<
 ping google.com
 </code></pre></div><p>You can use the <code>ping</code> command on any domain, local or public</p>
 <p>If you wanted to connect to an Internet connection from the command line, the easiest way would be to use <code>nmtui</code>, a simple and easy to use interface for <code>networkmanager</code>, here is an example of me using <code>nmtui</code> to disconnect then reconnect to my home&rsquo;s Internet connection:</p>
-<p><img src="https://i.postimg.cc/nr2Km8ht/out.gif" alt="gif"></p>
-<p>To view your I.P. Address and other basic network information, run the <code>ip addr</code> command. If you need more detailed information about your current connection, use <code>nmcli</code>. And if you want a live environment to view the sending and receiving your computer is doing, try installing and running <code>bmon</code>, it looks something like this:</p>
-<p><img src="https://i.postimg.cc/0yyvD7cg/out.gif" alt="gif"></p>
+<p><img src="https://i.postimg.cc/3RkTyRVT/out.gif" alt="gif"></p>
+<p>To view your I.P. Address and other basic network information, run the <code>ip addr</code> command. If you need more detailed information about your current connection, use <code>nmcli</code>.</p>
 
 			</div>
 		</article>

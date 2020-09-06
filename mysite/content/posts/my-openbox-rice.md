@@ -22,25 +22,15 @@ tags:
 
 ![img](https://i.postimg.cc/sgRPQjw3/what.png)
 
-![img](https://i.postimg.cc/PfmCyx5s/2020-08-21-19-29-18.png)
-
 ![img](https://i.redd.it/uhmfcesa1zh51.png)
-
-![img](https://i.imgur.com/NNM1EHU.jpg)
 
 ![img](https://cdn.discordapp.com/attachments/743868455547305985/743868817028939876/image.png)
 
 ![img](https://cdn.discordapp.com/attachments/743868455547305985/743868991428100156/image.png)
 
-![img](https://cdn.discordapp.com/attachments/743868455547305985/743869025699889162/image.png)
-
-![img](https://cdn.discordapp.com/attachments/743868455547305985/743869067751981137/image.png)
-
 ![img](https://cdn.discordapp.com/attachments/743868455547305985/743869123804528641/image.png)
 
 ![img](https://cdn.discordapp.com/attachments/743868455547305985/743869197209174116/image.png)
-
-![img](https://cdn.discordapp.com/attachments/743868455547305985/743869263236038786/image.png)
 
 ![img](https://cdn.discordapp.com/attachments/743868455547305985/743869347050553425/image.png)
 
@@ -60,15 +50,11 @@ tags:
 
 ![img](https://cdn.discordapp.com/attachments/743868455547305985/743870663319879840/image.png)
 
-![img](https://cdn.discordapp.com/attachments/743868455547305985/743870977724776502/image.png)
-
 ![img](https://cdn.discordapp.com/attachments/743868455547305985/743871057064230922/image.png)
 
 ![img](https://cdn.discordapp.com/attachments/743868455547305985/743871129814564955/image.png)
 
 ![img](https://cdn.discordapp.com/attachments/743868455547305985/743871216506372197/image.png)
-
-![img](https://cdn.discordapp.com/attachments/743868455547305985/743871305434267738/image.png)
 
 ![img](https://cdn.discordapp.com/attachments/743868455547305985/743871396999856208/image.png)
 
