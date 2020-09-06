@@ -40,7 +40,9 @@ This command only shows the biggest, main folders on your system. Each of these 
   - **.cache/**: this is where all of your users program's store their cache files
   - **.config/**: this is where all of your user-specific configuration files are stored
   - **.local/**: this is the same (in terms of function) as the **/usr/** folder but for your current user only
-It is important to get to know your home folder well and to keep it nice and tidy, it is basically your "workspace" on a Linux system
+It is important to get to know your home folder well and to keep it nice and tidy, it is basically your main "workspace" on a Linux system
+
+
 
 `/lib/ and /lib64`:
 

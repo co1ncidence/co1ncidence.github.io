@@ -2,7 +2,7 @@ publishdir = ".."
 baseURL = "https://co1ncidence.github.io"
 languageCode = "en-us"
 title = "nuaNce's blog"
-theme = "hugo-kiera"
+theme = "smol"
 paginate = 10
 
 disqusShortname = ""
@@ -24,19 +24,19 @@ googleAnalytics = ""
 
   [[menu.main]]
     identifier = "about"
-    name = "About Me"
+    name = "About Me -"
     url = "/about/"
     weight = 1
 
   [[menu.main]]
     identifier = "archive"
-    name = "Posts"
+    name = "Posts -"
     url = "/posts/"
     weight = 2
 
   [[menu.main]]
     identifier = "tags"
-    name = "Tags"
+    name = "Tags -"
     url = "/tags/"
     weight = 3
 
