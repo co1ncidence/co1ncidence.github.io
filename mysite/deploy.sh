@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# If a command fails then deploy stops
+# If  fails then deploy stops
 set -e
 
 printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
