@@ -34,16 +34,22 @@ googleAnalytics = ""
     url = "/posts/"
     weight = 2
 
-  [[menu.main]]
-    identifier = "tags"
-    name = "Tags -"
-    url = "/tags/"
-    weight = 3
+  # [[menu.main]]
+  #   identifier = "tags"
+  #   name = "Tags -"
+  #   url = "/tags/"
+  #   weight = 3
 
   [[menu.main]]
-    name = "Books"
+    name = "Books -"
     identifier = "books"
     url = "/books/"
+    weight = 4
+
+  [[menu.main]]
+    name = "Rices"
+    identifier = "rices"
+    url = "/posts/my-openbox-rice/"
     weight = 4
 
 [social]
