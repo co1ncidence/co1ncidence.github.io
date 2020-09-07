@@ -6,12 +6,12 @@ tags:
   - Ricing and Theming
 ---
 
-## Current rice
+## Current rice,
 ---
 
 ![img](https://i.postimg.cc/k56XgFzc/what3.png)
 
-## Gallery of Older Rices
+## Gallery of Older Rices,
 ---
 
 ![img](https://i.postimg.cc/0yjX1Rs3/what.png)
