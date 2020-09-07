@@ -1,7 +1,6 @@
 ---
 title: "Making Git Pushes Less Annoying"
 date: 2020-09-06T18:57:05-05:00
-draft: true
 ---
 
 For a long time now I've been quite annoyed by how much of a pain it can be to do simple things with git. Even changes to your own repositories can take a while with all of the adding and committing and then typing in your credentials. Thankfully though, I have found ways to make git almost trivial to use, now I barely have to enter more than one command for most tasks, here is how I did it:
