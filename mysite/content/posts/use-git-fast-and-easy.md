@@ -24,16 +24,24 @@ This script will stage all of your files to commit and give the commit a variabl
 
 ## Second, Make Git Stop Asking For Usernames/Passwords
 
-Another annoying thing that occurs when pushing repositories is that git always asks you for your username and password, which can get very tedious after a while. Fortunately, `git config` has a built in system to override this. First, you have to set your default github url to that of your username with this command, just replace `##` with your git username:
+Another annoying thing that occurs when pushing repositories is that git always asks you for your username and password, which can get very tedious after a while. Fortunately, `git config` has a built in system to override this. First, you have to set your default github url to that of your username with this command, just replace `<username>` with your git username:
 
 ```sh
-git config --global url."https://##@github.com".insteadOf "https://github.com"
+git config --global url."https://<username>@github.com".insteadOf "https://github.com"
 ```
 
 This will make git remember who you are and not ask for your username anymore. Now for your password, there is no real way to *never type your passweord*, but you can extend the sudo-like wait period that git has with this command:
 ```sh
 git config --global credential.helper 'cache --timeout=28800'
 ```
-This will make git not ask for your password again for 28,800 seconds, which is roughly 8 hours. You can, of course, adjust this time to suit your needs.
-
-
+This will make git not ask for your password again for 28,800 seconds, which is roughly 8 hours. You can, of course, adjust this time to suit your needs. After all of this is done, your git config file, usually `~/.gitconfig` will look something like this:
+```toml
+[user]
+    email = "r3yan.chaudhry@zohomail.com"
+    name = "co1ncidence"
+  [url "https://co1ncidence@github.com"]
+    insteadOf = "https://github.com"
+  [credential]
+    helper = "cache --timeout=28800"
+```
+**There you go! This will hopefully make a lot of your smaller tasks with git a great deal easier.**

@@ -14,9 +14,7 @@
 </head>
 <body>
 	<header>
-	
 	<a class="title" href="https://co1ncidence.github.io">nuaNce&#39;s blog</a>
-	
 	
 	<p>
 	<nav>
@@ -57,11 +55,19 @@ git commit -m <span style="color:#e6db74">&#34;</span><span style="color:#e6db74
 git push origin master
 </code></pre></div><p>This script will stage all of your files to commit and give the commit a variable message, which is the current <code>date</code> on your system. It will then push the repository to its master branch. This script, which I&rsquo;ve named <code>push</code>, should work for many of your pushing needs, since anything more detailed would require you to think the process through anyway.</p>
 <h2 id="second-make-git-stop-asking-for-usernamespasswords">Second, Make Git Stop Asking For Usernames/Passwords</h2>
-<p>Another annoying thing that occurs when pushing repositories is that git always asks you for your username and password, which can get very tedious after a while. Fortunately, <code>git config</code> has a built in system to override this. First, you have to set your default github url to that of your username with this command, just replace <code>##</code> with your git username:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git config --global url.<span style="color:#e6db74">&#34;https://##@github.com&#34;</span>.insteadOf <span style="color:#e6db74">&#34;https://github.com&#34;</span>
+<p>Another annoying thing that occurs when pushing repositories is that git always asks you for your username and password, which can get very tedious after a while. Fortunately, <code>git config</code> has a built in system to override this. First, you have to set your default github url to that of your username with this command, just replace <code>&lt;username&gt;</code> with your git username:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git config --global url.<span style="color:#e6db74">&#34;https://&lt;username&gt;@github.com&#34;</span>.insteadOf <span style="color:#e6db74">&#34;https://github.com&#34;</span>
 </code></pre></div><p>This will make git remember who you are and not ask for your username anymore. Now for your password, there is no real way to <em>never type your passweord</em>, but you can extend the sudo-like wait period that git has with this command:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git config --global credential.helper <span style="color:#e6db74">&#39;cache --timeout=28800&#39;</span>
-</code></pre></div><p>This will make git not ask for your password again for 28,800 seconds, which is roughly 8 hours. You can, of course, adjust this time to suit your needs.</p>
+</code></pre></div><p>This will make git not ask for your password again for 28,800 seconds, which is roughly 8 hours. You can, of course, adjust this time to suit your needs. After all of this is done, your git config file, usually <code>~/.gitconfig</code> will look something like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">user</span>]
+    <span style="color:#a6e22e">email</span> = <span style="color:#e6db74">&#34;r3yan.chaudhry@zohomail.com&#34;</span>
+    <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;co1ncidence&#34;</span>
+  [<span style="color:#a6e22e">url</span> <span style="color:#e6db74">&#34;https://co1ncidence@github.com&#34;</span>]
+    <span style="color:#a6e22e">insteadOf</span> = <span style="color:#e6db74">&#34;https://github.com&#34;</span>
+  [<span style="color:#a6e22e">credential</span>]
+    <span style="color:#a6e22e">helper</span> = <span style="color:#e6db74">&#34;cache --timeout=28800&#34;</span>
+</code></pre></div><p><strong>There you go! This will hopefully make a lot of your smaller tasks with git a great deal easier.</strong></p>
 
 			</div>
 		</article>
