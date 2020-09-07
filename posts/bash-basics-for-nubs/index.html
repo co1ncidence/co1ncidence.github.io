@@ -126,20 +126,25 @@ command1 <span style="color:#f92672">||</span> command2
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">alias newcommand<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;long-and-annoying-old-command&#34;</span>
 </code></pre></div><p>Once you&rsquo;ve finished this (hopefully using Nano), simply save the file and restart your shell or terminal. Try typing in your new command, you will see that your chosen word behaves the same as that annoying command that you chose to replace.</p>
 <p>The possibilities with shell aliases are almost infinite, but for some inspiration, here are some of the ones that I am currently using:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">alias ls<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;exa --group-directories-first&#34;</span>
-alias walls<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;cd ~/usr/pic/wallpapers/&#34;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">alias walls<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;cd ~/usr/pic/wallpapers/&#34;</span>
 alias df<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;df -h /dev/sda3&#34;</span>
 alias nvimrc<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nvim ~/.config/nvim/init.vim&#34;</span>
 alias c<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;clear&#34;</span>
-alias download<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;youtube-dl -x --audio-format mp3&#34;</span>
-alias shuffle<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;feh --bg-fill --randomize ~/usr/pic/wallpapers/&#34;</span>
 alias class<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;cd ~/usr/doc/school/&#34;</span>
 alias notes<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;cd ~/usr/doc/school/awo/&#34;</span>
 alias t<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;todo.sh&#34;</span>
 alias du<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;du -m | sort -n&#34;</span>
-alias web<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;cd ~/opt/mysite/&#34;</span>
-alias gif<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;giph -s ~/usr/vid/</span><span style="color:#66d9ef">$(</span>date <span style="color:#e6db74">&#39;+%Y-%m-%d_%H-%M-%S&#39;</span><span style="color:#66d9ef">)</span><span style="color:#e6db74">.gif&#34;</span>
+alias web<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;cd ~/git/co1ncidence.github.io/mysite/&#34;</span>
 alias free<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;free -h&#34;</span>
+alias epub<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;epy&#34;</span>
+alias wset<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;hsetroot -cover&#34;</span>
+alias r<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ranger&#34;</span>
+alias f<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fff&#34;</span>
+alias ff<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;shfm&#34;</span>
+alias q<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;qalc&#34;</span>
+alias ls<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ls -CF --color=auto --group-directories-first&#34;</span>
+alias scdl<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;scdl -l&#34;</span>
+alias volume<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;amixer set Master&#34;</span>
 </code></pre></div><p>Feel free to use any of them, and don&rsquo;t limit yourself, the possibilities with aliases are almost infinite!</p>
 <h3 id="various-other-cool-things">Various other cool things</h3>
 <p>You can use the <code>clear</code> command to clear everything in your terminal, usually used to give you a fresh working space. It is important to know what <code>clear</code> does not change anything regarding your working directory or it&rsquo;s contents, it just clears terminal output.</p>

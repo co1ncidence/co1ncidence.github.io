@@ -138,20 +138,25 @@ Once you've finished this (hopefully using Nano), simply save the file and resta
 
 The possibilities with shell aliases are almost infinite, but for some inspiration, here are some of the ones that I am currently using:
 ```sh
-alias ls="exa --group-directories-first"
 alias walls="cd ~/usr/pic/wallpapers/"
 alias df="df -h /dev/sda3"
 alias nvimrc="nvim ~/.config/nvim/init.vim"
 alias c="clear"
-alias download="youtube-dl -x --audio-format mp3"
-alias shuffle="feh --bg-fill --randomize ~/usr/pic/wallpapers/"
 alias class="cd ~/usr/doc/school/"
 alias notes="cd ~/usr/doc/school/awo/"
 alias t="todo.sh"
 alias du="du -m | sort -n"
-alias web="cd ~/opt/mysite/"
-alias gif="giph -s ~/usr/vid/$(date '+%Y-%m-%d_%H-%M-%S').gif"
+alias web="cd ~/git/co1ncidence.github.io/mysite/"
 alias free="free -h"
+alias epub="epy"
+alias wset="hsetroot -cover"
+alias r="ranger"
+alias f="fff"
+alias ff="shfm"
+alias q="qalc"
+alias ls="ls -CF --color=auto --group-directories-first"
+alias scdl="scdl -l"
+alias volume="amixer set Master"
 ```
 Feel free to use any of them, and don't limit yourself, the possibilities with aliases are almost infinite!
 
