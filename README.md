@@ -1,2 +1,2 @@
 # co1ncidence.github.io
-bo
+Repository for my blog.
