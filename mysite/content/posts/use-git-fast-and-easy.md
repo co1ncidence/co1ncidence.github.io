@@ -1,0 +1,38 @@
+---
+title: "Making Git Pushes Less Annoying"
+date: 2020-09-06T18:57:05-05:00
+draft: true
+---
+
+For a long time now I've been quite annoyed by how much of a pain it can be to do simple things with git. Even changes to your own repositories can take a while with all of the adding and committing and then typing in your credentials. Thankfully though, I have found ways to make git almost trivial to use, now I barely have to enter more than one command for most tasks, here is how I did it:
+
+## First, Make A Push Script
+
+Normally when you push a newly modified repository, you would need to do 3 or 4 different commands, I've found it much easier to just make a shell script like this and then place it in my `$PATH` for easy usage:
+
+```sh
+#!/bin/sh
+
+msg="$(date)"
+
+git add .
+git commit -m "${msg}"
+git push origin master
+```
+This script will stage all of your files to commit and give the commit a variable message, which is the current `date` on your system. It will then push the repository to its master branch. This script, which I've named `push`, should work for many of your pushing needs, since anything more detailed would require you to think the process through anyway.
+
+## Second, Make Git Stop Asking For Usernames/Passwords
+
+Another annoying thing that occurs when pushing repositories is that git always asks you for your username and password, which can get very tedious after a while. Fortunately, `git config` has a built in system to override this. First, you have to set your default github url to that of your username with this command, just replace `##` with your git username:
+
+```sh
+git config --global url."https://##@github.com".insteadOf "https://github.com"
+```
+
+This will make git remember who you are and not ask for your username anymore. Now for your password, there is no real way to *never type your passweord*, but you can extend the sudo-like wait period that git has with this command:
+```sh
+git config --global credential.helper 'cache --timeout=28800'
+```
+This will make git not ask for your password again for 28,800 seconds, which is roughly 8 hours. You can, of course, adjust this time to suit your needs.
+
+
