@@ -1,6 +1,7 @@
 ---
 title: "My Linux Rices"
 date: 2020-08-04T00:19:18-05:00
+draft: true
 tags:
   - Showcase
   - Ricing and Theming
