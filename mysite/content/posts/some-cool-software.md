@@ -12,7 +12,7 @@ Just a list of some software I find nice to use, most are pretty minimal as well
 |                                                                        |                                                    |
 |------------------------------------------------------------------------|----------------------------------------------------|
 |**[cfm](https://github.com/WillEccles/cfm)**                            | Simple and fast terminal file manager              |
-|**[maim](https://github.com/naelstrof/maim)**                           | extremely powerful CLI screenshot tool             |
+|**[maim](https://github.com/naelstrof/maim)**                           | Extremely powerful CLI screenshot tool             |
 |**[SXIV](https://github.com/muennich/sxiv)**                            | "Simple X Image Viewer"                            |
 |**[giph](https://github.com/phisch/giph)**                              | Customizable and easy to use GIF recorder          |
 |**[birch](https://github.com/dylanaraps/birch)**                        | Freenode IRC client written in bash                |
