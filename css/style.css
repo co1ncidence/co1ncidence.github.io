@@ -10,7 +10,7 @@ body {
   padding-left: 4vw;
   padding-top: 8vh;
   padding-bottom: 8vh;
-  font-family: monospace;
+  font-family: "IBM Plex Mono", "Roboto Mono", "Jetbrains Mono", "SF Mono", "Consolas", monospace;
   font-size: 16px;
   background-color: #f5f5f5;
   color: #535353;
@@ -28,7 +28,7 @@ nav {
   padding-bottom: 0.3em;
   border-bottom: 3px solid #535353;
   margin-bottom: -1em;
-  font-family: monospace;
+  font-family: "IBM Plex Mono", "Roboto Mono", "Jetbrains Mono", "SF Mono", "Consolas", monospace;
 }
 
 h1,
@@ -37,7 +37,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: monospace;
+  font-family: "IBM Plex Mono", "Roboto Mono", "Jetbrains Mono", "SF Mono", "Consolas", monospace;
   font-weight: bold;
   color: #494949;
   line-height: 1.2;
@@ -51,7 +51,7 @@ time {
 
 
 .title {
-  font-family: monospace;
+  font-family: "IBM Plex Mono", "Roboto Mono", "Jetbrains Mono", "SF Mono", "Consolas", monospace;
   font-size: 2em;
   color: #ac8a8c;
   text-decoration: none;
