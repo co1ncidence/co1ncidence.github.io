@@ -16,6 +16,12 @@
 		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
 	{{- end }}
 </head>
+<style>
+@font-face {
+   font-family: "Apercu Mono"
+   src: url(fonts/'Apercu Mono.otf');
+}
+</style>
 <body>
 	{{ partial "header" . }}
 	{{ block "main" . }}{{ end }}
