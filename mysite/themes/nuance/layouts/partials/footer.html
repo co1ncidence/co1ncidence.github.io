@@ -1,12 +1,6 @@
 <footer>
-	<style>
-		@font-face {
-			font-family: "Apercu Mono"
-			src: url(fonts/'Apercu Mono.otf');
-		}
-		</style>
 	<br />
-	<p>&copy; {{ now.Year }} - <a href="https://github.com/co1ncidence"><b>Made By nuaNce</b></a>.
+	<p>&copy; {{ now.Year }} - <a href="https://github.com/co1ncidence"><b>nuaNce</b></a>.
 	{{- range .Site.Menus.footer }}
 	<a href="{{ .URL }}"><b>{{ .Name }}</b></a>.
         {{- end }}
