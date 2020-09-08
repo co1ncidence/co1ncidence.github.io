@@ -48,7 +48,7 @@ googleAnalytics = ""
   [[menu.main]]
     name = "Rices"
     identifier = "rices"
-    url = "/posts/my-openbox-rice/"
+    url = "/rices/"
     weight = 4
 
 [social]
