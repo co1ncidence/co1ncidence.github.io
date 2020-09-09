@@ -26,8 +26,8 @@ date: 2020-08-23T06:57:25-05:00
 ## Singles (non-fiction)
 | Author                                              | Book                                 | Download                                    |
 |-----------------------------------------------------|--------------------------------------|---------------------------------------------|
-| Saif' ur-Rahman Mubarakpuri                         | The Sealed Nectar                    | [EPUB](https://b-ok.cc/book/1009125/d83092) |
-| Jake Knapp and John Zeratsky                        | Make Time                            | [PDF](https://b-ok.cc/book/5337333/57a819)  |
+| Saif' ur-Rahman                                     | The Sealed Nectar                    | [EPUB](https://b-ok.cc/book/1009125/d83092) |
+| Jake Knapp                                          | Make Time                            | [PDF](https://b-ok.cc/book/5337333/57a819)  |
 | Graham Alcott                                       | How to be a Productivity Ninja       | [EPUB](https://b-ok.cc/book/5709760/a3dff9) |
 | Michael Bazzel                                      | Open Source Intelligence             | [PDF](https://b-ok.cc/book/5275683/321b05)  |
 | Tim Ferriss                                         | Tribe of Mentors                     | [TOR](https://b-ok.cc/book/3397110/2abf56)  |
