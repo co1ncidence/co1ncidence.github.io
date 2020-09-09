@@ -104,14 +104,14 @@ pre {
 	overflow-y: hidden;
 	font-size: 16px;
 	line-height: 1.8;
-  margin-top: 25px;
-  margin-bottom: 50px;
+  margin-top: 40px;
+  margin-bottom: 60px;
 	padding: 28px;
   border: 5px solid #272822;
   border-radius: 10px;
-  -webkit-box-shadow: 10px 10px 50px -25px rgba(54,54,54,0.85);
-  -moz-box-shadow: 10px 10px 50px -25px rgba(54,54,54,0.85);
-  box-shadow: 10px 10px 50px -25px rgba(54,54,54,0.85);
+  -webkit-box-shadow: 10px 8px 60px -25px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 8px 60px -25px rgba(0,0,0,0.75);
+  box-shadow: 10px 8px 60px -25px rgba(0,0,0,0.75);
 }
 
 article {
