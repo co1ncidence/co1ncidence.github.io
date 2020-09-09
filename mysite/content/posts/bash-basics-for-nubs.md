@@ -67,28 +67,28 @@ Bash has built in **tab-complete**, so instead of typing in entire long names of
 `&` is a character you can insert after a command and use to spawn command outputs in the background, and `&&` can be used to implement **Conditional Execution**, which means you can run multiple commands in succession, for example:
 ```sh
 # command2 will only run if command1 is successful
-command1 && command2
+[$] command1 && command2
 ```
 You can also do another kind of sequential execution in the command line, using the `||` function, this works in a similar way to `&&` but instead of running a command after the execution of the previous one, it runs a second command only if the first one failed to run, sort of like a "Plan B" if you will. Here is an example:
 ```sh
 # command2 will only run if command1 fails for any reason
-command1 || command2
+[$] command1 || command2
 ```
 
 ### Pipes In Bash
 **Pipes** are things you can use to filter one command through another, thus allowing for things like controlling outputs of commands. Pipes have many uses so I recommend that you look more into them as there is no way I can go into full depth here. Here is an example of a pipe being used to filter the output of of `fc-list` through `grep` to only show fonts with a certain name.
 ```sh
-fc-list | grep Roboto
+[$] fc-list | grep Roboto
 ```
 
 ### Sending command outputs to different places
 The `>` character works in a similar fashion to pipes, but instead of filtering the command through another, it pushes the output to a file of your choice. The amount of `>`'s you use also makes a difference, for example, this command will print the word "hello" and push it as the first word in a new file called "file.txt":
 ```sh
-echo "hello" > file.txt
+[$] echo "hello" > file.txt
 ```
 Using two `>`'s provides a different result, instead of creating a new file containing the outputted words, it will append the output to an existing file that you point it to. A common example of this is when adding a heading to a GitHub README:
 ```sh
-echo "# Heading" >> README.md
+[$] echo "# Heading" >> README.md
 ```
 
 ### Keyboard Shortcuts
@@ -123,7 +123,7 @@ TERMINAL="alacritty"
 ```
 Environment variables can be set using the `export` command, for example, if I wanted to change my `TERMINAL` variable to `st`, I would use this command:
 ```sh
-export TERMINAL="st"
+[$] export TERMINAL="st"
 ```
 This would set the default terminal used by other programs to `st` instead of whatever I was using before. Many different programs have their own environment variables, though I don't recommend messing with them unless the manual you are reading asks you to do so.
 
@@ -132,7 +132,7 @@ This would set the default terminal used by other programs to `st` instead of wh
 You may or not have noticed a file called `.bashrc` in your Home Directory. This file is the configuration file of the Bash Shell, and can be used to do some cool things, one of which is creating shell aliases. Shell aliases can be used to simplify long and complicated, or even simply hard-to-type commands into smaller ones. To add a shell alias, simply append a line following this syntax to the end of the `.bashrc` file, replacing the placeholder words with a word/command of your choice:
 
 ```sh
-alias newcommand="long-and-annoying-old-command"
+[$] alias newcommand="long-and-annoying-old-command"
 ```
 Once you've finished this (hopefully using Nano), simply save the file and restart your shell or terminal. Try typing in your new command, you will see that your chosen word behaves the same as that annoying command that you chose to replace.
 
@@ -169,7 +169,7 @@ You can use the `clear` command to clear everything in your terminal, usually us
 
 `sleep` is an especially cool command, it can be used in conjunction with `&&` to essentially but a command on a countdown, for example, running this command will tell your system to wait 1600 seconds before running the next command in the sequence:
 ```sh
-sleep 1600 && clear
+[$] sleep 1600 && clear
 ```
 **Lastly, make sure that you are acquainted with these 2 files, both are located in your home directory:** First, `.bash_history`, which contains the last 2000 commands you ran using bash, allowing you to identify the ones you want easily. Second, `.bashrc`, this is your bash configuration file, which can be used to make many different changes to your shell.
 
@@ -181,79 +181,82 @@ You can use the `pwd` command to display what directory you are currently in, th
 `cd` stands for "change directory", you can use this command to enter and leave directories. It is not limited to neighboring directories, however, you can use `cd` to move from one side of your computer to another, provided you don't mess up typing in the names of folders. First thing to note is that a `/` is not necessary after a folder name:
 ```sh
 #these 2 commands are the same
-cd ~/folder1/folder2/
-cd ~/folder1/folder2
+[$] cd ~/folder1/folder2/
+[$] cd ~/folder1/folder2
 ```
 You can use the aliases previously mentioned to navigate folders as well.
 ```sh
 #running this moves you to the parent folder
-cd ..
+[$] cd ..
 #running this does nothing, as you are moving to the same folder
-cd .
+[$] cd .
 ```
 Finally, here are some examples of the `cd` command in use:
 ```sh
 #this will place you in the polybar config folder
-cd ~/.config/polybar/
+[$] cd ~/.config/polybar/
 #this will move you to your root directory
-cd /
+[$] cd /
 ```
 Another good thing to know is that running just `cd` will take you back you your home folder:
 ```sh
 #no matter where you run this, it will take you back to home
-cd
+[$] cd
 ```
 
 `ls` is one of the commands you will use the most, this command lists all of the files and folders in the current folder, allowing you to get a better idea of where you are. Here is an example of the `ls` command in use:
 
-![img](https://i.postimg.cc/KjTJwSkL/image.png)
+```sh
+[$] ls
+etc/  git/  tmp/  usr/  var/
+```
 
 `touch` is used (mostly) to create a new, empty file in the folder you are currently occupying, the filetype can vary based on name extension, for example, to create a new `css` file you would run
 ```sh
-touch file.css
+[$] touch file.css
 ```
 You can also use touch to create files in other folders:
 ```sh
-touch ~/Documents/file.txt
+[$] touch ~/Documents/file.txt
 ```
 
 `mkdir` is like `touch`, but instead of creating a single file it creates an entire directory, and like `touch`, this can be used to create a folder anywhere on your system, provided you have the right permissions to do so, here is an example of the `mkdir` command:
 
 ```sh
-mkdir folder/
+[$] mkdir folder/
 ```
 
 `mv` is a command used to move files from one location to another, and because of this it can also be used to replace a file with another. It is also possible to change the name of a file when moving it. Example usage:
 
 ```sh
-mv /usr/share/file.txt ~/Documents/newfile.txt
+[$] mv /usr/share/file.txt ~/Documents/newfile.txt
 #mv can also be used to rename files
-mv file.txt file2.txt
+[$] mv file.txt file2.txt
 ```
 
 `cp` works the same way as `mv`, but instead of moving a file it creates a copy of the original file in the new location, and like `mv`, the resulting file can have new name. Example usage:
 ```sh
-cp ~/.local/bin/command /usr/bin/command2
+[$] cp ~/.local/bin/command /usr/bin/command2
 #if name is not a concern, just specify resulting directory
-cp ~/.local/bin/command /usr/bin
+[$] cp ~/.local/bin/command /usr/bin
 ```
 
 You can use `cp` and `mv` with multiple files as well, for example, this is how you would move multiple image files from one folder to another:
 ```sh
-cp 1.png 2.png 3.png ~/Pictures/
+[$] cp 1.png 2.png 3.png ~/Pictures/
 ```
 As you can see, all you have to do is list all the files you would like to copy/move with a space in between them, this will stage them all for transition.
 
 `rm` is another very useful, but dangerous command. It stands for "remove" and can be used to remove any
 However, unlike the other file management commands, `rm` cannot remove folders by default, this requires the use of a couple **Flags**, which are just letters/words you can attach to a command to unlock abilities that the command cannot do by default. For `rm` to be able to delete a whole folder, it requires the `-r` and `-f` flags, here is an example:
 ```sh
-rm -r -f folder/
+[$] rm -r -f folder/
 ```
 Though separating flags is not necessary, you can just combine them into one flag like this:
 ```sh
-rm -rf folder/
+[$] rm -rf folder/
 #you can also use the "rmdir" command, though only on empty folders
-rmdir folder/
+[$] rmdir folder/
 ```
 Thus is how you can use `rm` to remove folders as well as individual files.
 
@@ -266,39 +269,45 @@ The `*` symbol, or asterisk, represents any string of characters possible, you c
 
 ```sh
 # this will remove any file with the ".jpg" extension
-rm *.jpg
+[$] rm *.jpg
 # this will remove any file with the ".png" extension
-rm *.png
+[$] rm *.png
 ```
 
 This comes in very handy when cleaning out older directories. But it is not only limited to the removal of files, you can use `*` in conjunction with `mv`, `cp`, and just about any other file management command. Here are some more examples:
 
 ```sh
 # this will copy all files to home dir.
-cp * ~/
+[$] cp * ~/
 # this will move all "txt" files to parent dir.
-mv *.txt ..
+[$] mv *.txt ..
 # this will remove all "png" files in your home dir
-rm ~/*.png
+[$] rm ~/*.png
 ```
 
 ### Elevating Permissions
 Sometimes, your user may not have the necessary permissions to execute certain commands on a file or folder, this is because the owner of said file/folder is the **root user**, to obtain the abilities of the root user, you just have to place the word `sudo` behind your command. `sudo` stands for "Super User DO", and will allow you to run commands with elevated (or "root") permissions, here is an example:
 ```sh
-sudo apt install firefox
+[$] sudo apt install firefox
 ```
- This command will install `firfox` on your system. You will almost always need root permission to install a package on your system. Root permissions can be very dangerous however, as you can very easily delete everything on your computer. So it is vital to remember that whenever something requires you to be root to run a command, always make sure you know what you are doing, and be aware that there is a reason that there is a reason for a password to be between you and the execution of this command. Stay safe.
+ This command will install `firefox` on your system. You will almost always need root permission to install a package on your system. Root permissions can be very dangerous however, as you can very easily delete everything on your computer. So it is vital to remember that whenever something requires you to be root to run a command, always make sure you know what you are doing, and be aware that there is a reason that there is a reason for a password to be between you and the execution of this command. Stay safe.
 
 `chmod` is a command that can be used to change the permissions a file has. These permissions include reading, writing, and changing whether a file can be executable or not. You can use `chmod` plus/minus a letter like this: `chmod +x` to add or remove a permission from a file. To view the permissions of all files and folders in your current directory, run the `ls` command with the `-l` flag:
 
-![img](https://i.postimg.cc/FstPcR8x/image.png)
-
----
+```sh
+[$] ls -l
+total 20
+drwxr-xr-x 33 co1ncidence co1ncidence 4096 Sep  8 16:58 etc/
+drwxr-xr-x  7 co1ncidence co1ncidence 4096 Sep  7 00:08 git/
+drwxr-xr-x  3 co1ncidence co1ncidence 4096 Sep  8 18:16 tmp/
+drwxr-xr-x  8 co1ncidence co1ncidence 4096 Sep  7 23:46 usr/
+drwxr-xr-x 10 co1ncidence co1ncidence 4096 Sep  8 17:06 var/
+```
 
 ## File Viewing  and Output Control/Filtering
 The `cat` command is one of the first to know when viewing files, running `cat` on a file which contains any sort of text will cause your terminal to output the full contents of your file, for example, running:
 ```sh
-cat .bashrc
+[$] cat .bashrc
 ```
 Will show you the contents of your `.bashrc` file, otherwise known as the bash shell configuration file, more about this later. `cat` is very useful when you want to look at certain content in a file but don't want to open it in your editor.
 You may realize. Here is an example of the `cat` command being used:
@@ -313,12 +322,12 @@ Sometimes, however, we have too much output of a command, one example of such a 
 
 This command will have hundreds of lines of output, displaying all of your fonts:
 ```sh
-fc-list
+[$] fc-list
 ```
 
 This command, however, will filter out every result and only show results containing the word "Roboto":
 ```sh
-fc-list | grep Roboto
+[$] fc-list | grep Roboto
 ```
 `grep` is not, however, limited to command outputs, it can also be used to filter out the lines of a file that word that you are looking for. For example, running `grep "hello" file.txt` will output all the lines of `file.txt` that contain the word "hello". `grep` has a myriad of flags that can be used to futher increase the usefulness of a command:
   - **B <number>** will show <number> of lines before the lines you searched for along with the results, providing some context
@@ -339,21 +348,36 @@ Throughout your Linux journey, there will be many, and I mean many, times where 
 Nano has many keyboard shortcuts and is a quite featured editor, though you will most likely only be using it for quick edits, as anything bigger would be better done in a real editor. The only real shortcut to know in Nano is **Ctrl + X**, this saves and exits the file, prompting you before doing so as well.
 
 ## Time In The Command Line
+
 The `date` command can be used to quickly display the current date and time on the terminal, while this is cool it doesn't really have much of a use in day to day command line usage, it is more effective in scripts and programs, as a reliable way to get system time. Here is an example of the `date` command in use:
 
-![img](https://i.postimg.cc/kg2BmJMk/image.png)
+```sh
+[$] date
+Tue Sep  8 07:05:54 PM CDT 2020
+```
 
 This is great output from a readability standpoint, but if you are writing a script, it is not easily parseable, pass the `-Im` flag along with `date` to get more usable output:
 
-![img](https://i.postimg.cc/PxjxY1bj/image.png)
+```sh
+[$] date -Im
+2020-09-08T19:06-05:00
+```
 
 Another time related command you can use is `uptime`, this command outputs the amount of time the system has been on for, this can be helpful to know for a variety of reasons. By default, the `uptime` command has very messy output, so run it with the `-p` flag to make it more readable, here is an example:
 
-![img](https://i.postimg.cc/MHZprxr3/image.png)
+```sh
+[$] uptime
+19:07:20 up  4:20,  1 user,  load average: 0.52, 0.74, 0.59
+[$] uptime -p
+up 4 hours, 20 minutes
+```
 
-The `time` command can be used to measure how much time another program takes to open up, this can be useful when diagnosing problems regarding system performance issues. Here is an example of the `time` command being used to display the startup time of the Alacritty Terminal:
+The `time` command can be used to measure how much time another program takes to open up, this can be useful when diagnosing problems regarding system performance issues. Here is an example of the `time` command being used to display the startup time of the `st` Terminal:
 
-![img](https://i.postimg.cc/nVTz9jCy/image.png)
+```sh
+[$] time st
+st  0.08s user 0.01s system 7% cpu 1.199 total
+```
 
 ---
 
@@ -361,17 +385,28 @@ The `time` command can be used to measure how much time another program takes to
 
 Processes in Linux are usually given certain `pid`'s, having this form of identification allows them to be easily tracked and managed, mostly this is used to take care of or kill problematic processes. There are 2 commands that can be used to find the `pid` of a program. You can use either `pidof` of `pgrep`. For the purposes of this guide, I will be using the `pgrep` command. Here is an example of me using `pgrep` to find the `pid` of MPV, a program that I know is currently running:
 
-![img](https://i.postimg.cc/TP8Yvn4D/image.png)
+```sh
+[$] pgrep mpv
+24935
+```
 
 Though, while this command is useful in a limited use case, you will most likely find it easier to just use the `pkill` command. `pkill` allows you to kill a process using a variety of signals, 15 to be exact. The only ones that really matter, however, are signals 9 and 15, otherwise known as `SIGKILL` and `SIGTERM` respectively. `SIGTERM` will kill a process off safely and slowly, but sometimes this is not enough, so you can use `SIGKILL` to immediately terminate it, but I recommend trying your best not to resort to that option, as it could cause problems. Different signals can be invoked using **Flags**. `pkill`, however, defaults to using the `SIGTERM` signal, so for 99% of your use cases just using `pkill` serves as enough, as shown in this example:
 
 **Not much to see here, the process either dies or there is an error:**
 
-![img](https://i.postimg.cc/PxTXPThf/image.png)
+```sh
+[$] pkill alacritty
+[$]
+```
 
 Another thing to take into account when dealing with running processes is memory usage, you can use the `free` command with the `-h` flag to display the amount of memory currently being used:
 
-![img](https://i.postimg.cc/90Dvfn4F/image.png)
+```sh
+[$] free -h
+              total        used        free      shared  buff/cache   available
+Mem:          7.7Gi       659Mi       402Mi       523Mi       6.6Gi       6.2Gi
+Swap:         7.9Gi       0.0Ki       7.9Gi
+```
 
 But what if you wanted to see an interactive interface from which you could manage processes and see their relative resource usage, a "task manager" if you will. One of the programs you will find yourself most frequently using is `htop`, while not normally included with most Linux Distros, it is a must have utility, a lightweight and easy to use terminal task manager. I suggest you check out the program's GitHub page if you want to learn more. For now, however, here is a screenshot of `htop`:
 
@@ -382,11 +417,29 @@ But what if you wanted to see an interactive interface from which you could mana
 ## Disk and storage management in the Terminal
 To Display all of the disks on your system and all of the storage that has been used on them, use the `df` command with the `-h` flag to make it human readable:
 
-![img](https://i.postimg.cc/XqBzWBhr/image.png)
+```sh
+[$] df -h
+Filesystem      Size  Used Avail Use% Mounted on
+dev             3.9G     0  3.9G   0% /dev
+run             3.9G  1.5M  3.9G   1% /run
+/dev/sda3       461G   19G  419G   5% /
+tmpfs           3.9G  385M  3.5G  10% /dev/shm
+tmpfs           4.0M     0  4.0M   0% /sys/fs/cgroup
+tmpfs           3.9G  8.0K  3.9G   1% /tmp
+/dev/sda1       512M  280K  512M   1% /boot/efi
+tmpfs           785M  120K  785M   1% /run/user/1000
+```
 
 If instead, you wanted to view all of the disks and their respective UUID's or other information, use the `lsblk` command with the `-f` flag, which allows displaying the UUID of each disk along with some other information.
 
-![img](https://i.postimg.cc/hPTKbXj4/image.png)
+```sh
+[$] lsblk -f
+NAME   FSTYPE FSVER LABEL UUID                                 FSAVAIL FSUSE% MOUNTPOINT
+sda
+├─sda1 vfat   FAT32       FEC4-1212                             511.7M     0% /boot/efi
+├─sda2 swap   1           6ba4d0ab-f397-46a7-9a02-e12e3271e70d                [SWAP]
+└─sda3 ext4   1.0         eb40edc1-e302-4759-83b3-dadcdea05ef3  418.1G     4% /
+```
 
 You can use the `mount` command to mount a disk and access the files inside it. This is useful in recovery situations or when trying to save a computer from a live environment. For example, `sudo mount /dev/sda3` will mount the drive `sda3` for viewing/editing.
 
@@ -400,7 +453,7 @@ You can use the `mount` command to mount a disk and access the files inside it. 
 If unsure whether you are connected to the Internet, or if you just want to check whether a website will accept packet requests from you, you can use the `ping` command on it's domain and monitor network transfers:
 ```sh
 #this will send continuous requests to google.com
-ping google.com
+[$] ping google.com
 ```
 You can use the `ping` command on any domain, local or public
 
