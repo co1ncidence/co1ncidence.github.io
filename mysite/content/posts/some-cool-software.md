@@ -7,9 +7,9 @@ tags:
   - Showcase
 ---
 
-Just a list of some software I find nice to use, most are pretty minimal as well:
+Just a list of some software I find nice to use:
 
-|                                                                        |                                                    |
+| Software                                                               | Description                                        |
 |------------------------------------------------------------------------|----------------------------------------------------|
 |**[cfm](https://github.com/WillEccles/cfm)**                            | Simple and fast terminal file manager              |
 |**[maim](https://github.com/naelstrof/maim)**                           | Extremely powerful CLI screenshot tool             |
