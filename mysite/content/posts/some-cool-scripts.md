@@ -1,5 +1,5 @@
 ---
-title: "Some Cool Shell Scripts I've Found Handy"
+title: "Cool Shell Scripts I've Found Handy"
 date: 2020-09-08T21:12:44-05:00
 tags:
   - Showcase
