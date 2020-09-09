@@ -47,9 +47,8 @@
 			<div>
 				<p>When I first started with Linux, and especially the command line, It was difficult to find a truly optimal and comprehensive guide to these things. While most tutorials were nice and gave me a good starting point, they usually provided inefficient information or didn&rsquo;t showcase the most optimal commands/strategies. I am making this list as more of a dump for all of the things that I have learned about bash so far, which isn&rsquo;t too much compared to some but I like to think that I know something. So without further ado, here is my bash basics list to boost you up in the Linux elitist ladder. And as a final note, unless specified, all of these commands are being run from the default (home) folder that your terminal puts you in.</p>
 <blockquote>
-<p>Always remember: RTFM: &ldquo;Read The Fucking Manual&rdquo;</p>
+<p>Always remember: <strong>RTFM</strong> - &ldquo;Read The F***ing Manual&rdquo;</p>
 </blockquote>
-<hr>
 <h2 id="first-some-terminology-and-tips">First, some Terminology and Tips</h2>
 <p>The Terminal is simply an interface to interact with your computer, by itself, it is nothing but an empty program. A terminal (in 99.99% of cases) needs a <strong>Shell</strong> to function. A shell is an interactive text interface for the user, and the <strong>Terminal</strong> is the tool most often used to run commands via the shell. There are many shells out there, thought this tutorial in specific will be focusing on the most is <strong>Bash</strong>, the most popular shell in use right now and the default shell of most <a href="https://en.wikipedia.org/wiki/Linux">Linux</a> distributions. Bash allows you to run commands from other programs or utilities, common ones you&rsquo;ll mostly likely need are those from something like the <a href="https://en.wikipedia.org/wiki/GNU_Core_Utilities">GNU Coreutils</a>, and any other programs you might use daily. Once you have familiarized yourself with these terms, you can get on to actually using the command line. And finally, and most likely <strong>The Most Important Thing You Will Read Here</strong>, you have to always be willing to read documentation and official manuals, don&rsquo;t go around annoying others for help. Some things to do when encountering issues can include:</p>
 <ul>
@@ -65,8 +64,28 @@
 <p>In this section I will be discussing some basics Linux concept, terminology, and tip/tricks that every user should know before they dive deeper into the operating system.</p>
 <h3 id="the-linux-file-system">The Linux File System</h3>
 <p>In Linux and other UNIX-based operating systems, almost everything is available to the user as a file or folder. This results in your system being essentially just one massive file system. Imagine it this way, your entire Linux install is one huge folder, called <code>/</code>, this folder contains everything your system and the programs on it need to function and work together. You can use the <code>tree</code> command on the base <code>/</code> folder to better visualize this:</p>
-<p><img src="https://i.postimg.cc/pdVcT64b/image.png" alt="img"></p>
-<p>This command only shows the biggest, main folders on your system. Each of these is further subdivided into even more different folders and files. Going over the entire filesystem is an extremely daunting task, so I will just give a short briefing on the general purpose of each folder.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> tree -d -L <span style="color:#ae81ff">1</span>
+.
+├── bin -&gt; usr/bin
+├── boot
+├── dev
+├── etc
+├── home
+├── lib -&gt; usr/lib
+├── lib64 -&gt; usr/lib
+├── lost+found
+├── mnt
+├── opt
+├── proc
+├── root
+├── run
+├── sbin -&gt; usr/bin
+├── srv
+├── sys
+├── tmp
+├── usr
+└── var
+</code></pre></div><p>This command only shows the biggest, main folders on your system. Each of these is further subdivided into even more different folders and files. Going over the entire filesystem is an extremely daunting task, so I will just give a short briefing on the general purpose of each folder.</p>
 <p><code>/bin/</code>: This is a symlink, or symbolic link, to the <code>/usr/bin</code> folder, <code>bin</code> is short for binary. Binaries are the files that launch various programs on your computer, for example, Firefox will have it&rsquo;s binary here as <code>/usr/bin/firefox</code></p>
 <p><code>/dev/</code>: This stands for &ldquo;Device&rdquo;, and is where all the devices connected to your system have there appropriate files, this can contain drives or peripherals. You will find your hard disks and their partitions labeled as <code>/dev/sda-z|1-9</code></p>
 <p><code>/etc/</code>: Originally stood for &ldquo;etcetera&rdquo;, now this is where all of the global configuration files of all the programs on your system are stored, such as, for example, those used by your init system or display manager</p>

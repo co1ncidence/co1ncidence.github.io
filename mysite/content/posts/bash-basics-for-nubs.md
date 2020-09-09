@@ -8,9 +8,7 @@ tags:
 
 When I first started with Linux, and especially the command line, It was difficult to find a truly optimal and comprehensive guide to these things. While most tutorials were nice and gave me a good starting point, they usually provided inefficient information or didn't showcase the most optimal commands/strategies. I am making this list as more of a dump for all of the things that I have learned about bash so far, which isn't too much compared to some but I like to think that I know something. So without further ado, here is my bash basics list to boost you up in the Linux elitist ladder. And as a final note, unless specified, all of these commands are being run from the default (home) folder that your terminal puts you in.
 
-> Always remember: RTFM: "Read The Fucking Manual"
-
----
+> Always remember: **RTFM** - "Read The F***ing Manual"
 
 ## First, some Terminology and Tips
 The Terminal is simply an interface to interact with your computer, by itself, it is nothing but an empty program. A terminal (in 99.99% of cases) needs a **Shell** to function. A shell is an interactive text interface for the user, and the **Terminal** is the tool most often used to run commands via the shell. There are many shells out there, thought this tutorial in specific will be focusing on the most is **Bash**, the most popular shell in use right now and the default shell of most [Linux](https://en.wikipedia.org/wiki/Linux) distributions. Bash allows you to run commands from other programs or utilities, common ones you'll mostly likely need are those from something like the [GNU Coreutils](https://en.wikipedia.org/wiki/GNU_Core_Utilities), and any other programs you might use daily. Once you have familiarized yourself with these terms, you can get on to actually using the command line. And finally, and most likely **The Most Important Thing You Will Read Here**, you have to always be willing to read documentation and official manuals, don't go around annoying others for help. Some things to do when encountering issues can include:
@@ -30,7 +28,29 @@ In this section I will be discussing some basics Linux concept, terminology, and
 ### The Linux File System
 In Linux and other UNIX-based operating systems, almost everything is available to the user as a file or folder. This results in your system being essentially just one massive file system. Imagine it this way, your entire Linux install is one huge folder, called `/`, this folder contains everything your system and the programs on it need to function and work together. You can use the `tree` command on the base `/` folder to better visualize this:
 
-![img](https://i.postimg.cc/pdVcT64b/image.png)
+```sh
+[$] tree -d -L 1
+.
+├── bin -> usr/bin
+├── boot
+├── dev
+├── etc
+├── home
+├── lib -> usr/lib
+├── lib64 -> usr/lib
+├── lost+found
+├── mnt
+├── opt
+├── proc
+├── root
+├── run
+├── sbin -> usr/bin
+├── srv
+├── sys
+├── tmp
+├── usr
+└── var
+```
 
 This command only shows the biggest, main folders on your system. Each of these is further subdivided into even more different folders and files. Going over the entire filesystem is an extremely daunting task, so I will just give a short briefing on the general purpose of each folder.
 

@@ -11,6 +11,8 @@ date: 2020-08-23T06:57:25-05:00
 | Robert Jordan        | The Wheel of Time        | [The Eye of The World](https://b-ok.cc/book/984472/9743af)  |
 | Christopher Ruocchio | Sun Eater                | [Empire of Silence](https://b-ok.cc/book/5029866/ff1b81)    |
 
+&nbsp;
+
 ## Singles (fiction)
 | Author                                              | Book                                 | Download                                    |
 |-----------------------------------------------------|--------------------------------------|---------------------------------------------|
@@ -18,6 +20,8 @@ date: 2020-08-23T06:57:25-05:00
 | Stephen King                                        | Doctor Sleep                         | [PDF](https://b-ok.cc/book/4261164/b41c46)  |
 | John Steinbeck                                      | The Grapes of Wrath                  | [PDF](https://b-ok.cc/book/1518328/bddb70)  |
 | Brandon Sanderson                                   | Warbreaker                           | [EPUB](https://b-ok.cc/book/1623479/d0cf66) |
+
+&nbsp;
 
 ## Singles (non-fiction)
 | Author                                              | Book                                 | Download                                    |
