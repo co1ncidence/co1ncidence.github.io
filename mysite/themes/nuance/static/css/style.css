@@ -6,17 +6,17 @@ html {
 body {
   max-width: 80ch;
   width: 100vw;
-  margin: 5vh auto;
-  padding-right: 5vw;
-  padding-left: 5vw;
-  padding-top: 8vh;
-  padding-bottom: 8vh;
+  margin: 10vh auto;
+  padding-right: 10ch;
+  padding-left: 10ch;
+  padding-top: 7ch;
+  padding-bottom: 7ch;
   font-family: "JetBrains Mono", "IBM Plex Mono", "Roboto Mono", "Jetbrains Mono", "SF Mono", "Consolas", monospace;
   font-size: 16px;
   line-height: 1.6;
   background-color: #f5f5f5;
   color: #535353;
-  border-radius: 20px;
+  border-radius: 30px;
   -webkit-box-shadow: 10px 10px 60px -25px rgba(54,54,54,0.6);
   -moz-box-shadow: 10px 10px 60px -25px rgba(54,54,54,0.6);
   box-shadow: 10px 10px 60px -25px rgba(54,54,54,0.6);
@@ -128,12 +128,8 @@ article {
 .image, figure img, img {
   width: 80ch;
   margin: 0 auto;
-  border-radius: 10px;
   margin-top: 20px;
   margin-bottom: 25px;
-  -webkit-box-shadow: 10px 10px 50px -25px rgba(54,54,54,0.6);
-  -moz-box-shadow: 10px 10px 50px -25px rgba(54,54,54,0.6);
-  box-shadow: 10px 10px 50px -25px rgba(54,54,54,0.6);
 }
 
 blockquote {
