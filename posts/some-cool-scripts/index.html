@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<style type=text/css>body{font-family:monospace;}</style>
+	<title>Some Cool Shell Scripts I&#39;ve Found Handy</title>
+	<meta name="description" content="Just a place where I rant and sometimes say something smart">
+	<meta name="author" content="nuaNce">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	
+</head>
+<body>
+	<header>
+	<a class="title" href="https://co1ncidence.github.io">nuaNce&#39;s blog</a>
+	
+	<p>
+	<nav>
+			
+			
+			<a style="text-decoration: none" href="/about/"><b>About Me -</b></a>
+			
+			<a style="text-decoration: none" href="/posts/"><b>Posts -</b></a>
+			
+			<a style="text-decoration: none" href="/books/"><b>Books -</b></a>
+			
+			<a style="text-decoration: none" href="/rices/"><b>Rices</b></a>
+			
+	</nav>
+	</p>
+	
+</header>
+
+	
+	<main>
+		<article>
+			<h1>Some Cool Shell Scripts I&#39;ve Found Handy</h1>
+			<b><time>09-08-2020</time></b>
+		       
+		           <a href="/tags/showcase">#Showcase</a>
+        	       
+
+			<div>
+				<blockquote>
+<p>This post will most likely get updated as time goes by</p>
+</blockquote>
+<h2 id="vibe">Vibe:</h2>
+<p>I had used <code>mpd</code> and <code>ncmpcpp</code> for my music for a long time now, but decided to switch to <code>mpv</code> for the simplicity, and to make things even easier, I wrote this script, which shuffles all of the music files in the chosen directory and plays them in a terminal window, with album art in it&rsquo;s own small, separate window. If you wanted, you could remove the last line entirely and just manually point it to a specific file:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#!/bin/sh
+</span><span style="color:#75715e"></span>
+exec mpv --geometry<span style="color:#f92672">=</span>200x200+1600+800 <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>         --shuffle <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>         --x11-name<span style="color:#f92672">=</span>no-title <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>         <span style="color:#e6db74">&#34;</span>$@<span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>         -- ~/usr/mus/
+</code></pre></div><h2 id="upload-0x0">Upload (0x0):</h2>
+<p>Using pastebins was getting tiring and time consuming, so I decided to hop on the 0x0 train with my own script, this one will upload the chosen file to 0x0 using <code>curl</code> and then save the output URL to your clipboard, making external hosting extremely fast and easy:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#!/bin/sh
+</span><span style="color:#75715e"></span>
+<span style="color:#f92672">[</span> -f <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span> <span style="color:#f92672">&amp;&amp;</span> op<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;cat&#34;</span>
+<span style="color:#e6db74">${</span>op<span style="color:#66d9ef">:-</span>echo<span style="color:#e6db74">}</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>@<span style="color:#66d9ef">:-$(</span>cat -<span style="color:#66d9ef">)</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>	| curl -sF file<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;@-&#39;</span> <span style="color:#e6db74">&#39;http://0x0.st&#39;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>	| tee /dev/stderr <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>	| tr -d <span style="color:#e6db74">&#39;\n&#39;</span>      <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>	| xclip -sel clip
+</code></pre></div><h2 id="timer">Timer:</h2>
+<p>I got this one from <a href="https://github.com/6gk">6gk</a>, you simply type <code>timer</code> then specify an amount of minutes. After the time has passed a notification will appear, alongside a bell sound:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#!/bin/sh
+</span><span style="color:#75715e"></span>
+calc<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+	seconds<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>echo <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">*</span>$2<span style="color:#e6db74">&#34;</span> | bc | sed <span style="color:#e6db74">&#39;s/\..*$//&#39;</span><span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+<span style="color:#f92672">}</span>
+
+<span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> in
+	*h<span style="color:#f92672">)</span> calc <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>1%?<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> 3600;;
+	*m<span style="color:#f92672">)</span> calc <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>1%?<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>   60;;
+	*s<span style="color:#f92672">)</span> seconds<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>1%?<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>  ;;
+	*<span style="color:#f92672">)</span>  calc <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span>       60;;
+<span style="color:#66d9ef">esac</span>
+
+echo <span style="color:#e6db74">&#34;timer set for </span>$1<span style="color:#e6db74"> (</span>$seconds<span style="color:#e6db74">) </span><span style="color:#e6db74">${</span>2:+- $2<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+<span style="color:#f92672">{</span>
+	sleep <span style="color:#e6db74">&#34;</span>$seconds<span style="color:#e6db74">&#34;</span>
+
+	paplay <span style="color:#e6db74">&#34;/usr/share/sounds/freedesktop/stereo/complete.oga&#34;</span> |: &amp;
+	notify-send -u critical <span style="color:#e6db74">&#34;Times Up!&#34;</span> <span style="color:#e6db74">&#34;</span>$2<span style="color:#e6db74">&#34;</span>
+<span style="color:#f92672">}</span> &amp;
+</code></pre></div>
+			</div>
+		</article>
+	</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<footer>
+	<br />
+	<p>&copy; 2020 - <a href="https://github.com/co1ncidence"><b>nuaNce</b></a>.
+	</p>
+</footer>
+
+</body>
+</html>

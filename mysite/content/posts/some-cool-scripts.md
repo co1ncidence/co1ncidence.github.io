@@ -1,7 +1,8 @@
 ---
 title: "Some Cool Shell Scripts I've Found Handy"
 date: 2020-09-08T21:12:44-05:00
-draft: true
+tags:
+  - Showcase
 ---
 
 > This post will most likely get updated as time goes by

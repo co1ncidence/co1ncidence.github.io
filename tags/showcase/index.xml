@@ -6,10 +6,20 @@
     <description>Recent content in Showcase on nuaNce&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 Aug 2020 10:43:39 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 08 Sep 2020 21:12:44 -0500</lastBuildDate>
     
 	<atom:link href="https://co1ncidence.github.io/tags/showcase/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Some Cool Shell Scripts I&#39;ve Found Handy</title>
+      <link>https://co1ncidence.github.io/posts/some-cool-scripts/</link>
+      <pubDate>Tue, 08 Sep 2020 21:12:44 -0500</pubDate>
+      
+      <guid>https://co1ncidence.github.io/posts/some-cool-scripts/</guid>
+      <description>This post will most likely get updated as time goes by
+ Vibe: I had used mpd and ncmpcpp for my music for a long time now, but decided to switch to mpv for the simplicity, and to make things even easier, I wrote this script, which shuffles all of the music files in the chosen directory and plays them in a terminal window, with album art in it&amp;rsquo;s own small, separate window.</description>
+    </item>
     
     <item>
       <title>Some of My Favorite Software</title>
