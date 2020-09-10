@@ -12,6 +12,8 @@ I've always had a bit of an exaggerated font collection, most likely because I c
 
 ## Whois Mono (current fave)
 
+Relatively clean and serif-ish with great special characters and no ambiguity, the thing I like most about it is how nice it looks even at very low dpi and font sizes, this pair well with my terminal and small laptop screen.
+
 ![img](https://i.postimg.cc/pV3nXQGP/image.png)
 
 ## Bergen Mono
