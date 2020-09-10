@@ -8,7 +8,7 @@ tags:
 
 # Morning Coffee.
 
-![img](https://i.postimg.cc/3RbyY7yx/what10.png)
+![img](https://i.postimg.cc/fyN9vmVG/what12.png)
 
 # Safe and Sound.
 
