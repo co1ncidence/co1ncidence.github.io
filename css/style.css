@@ -11,7 +11,7 @@ body {
   padding-left: 10ch;
   padding-top: 7ch;
   padding-bottom: 7ch;
-  font-family: "JetBrains Mono", "IBM Plex Mono", "Roboto Mono", "Source Code Pro", "SF Mono", "Consolas", monospace;
+  font-family: "Bergen Mono", "JetBrains Mono", "IBM Plex Mono", "Roboto Mono", "Source Code Pro", "SF Mono", "Consolas", monospace;
   font-size: 16px;
   line-height: 1.6;
   background-color: #f5f5f5;
@@ -34,7 +34,7 @@ nav {
   padding-bottom: 0.3em;
   border-bottom: 3px solid #535353;
   margin-bottom: -1em;
-  font-family: "JetBrains Mono", "IBM Plex Mono", "Roboto Mono", "Source Code Pro", "SF Mono", "Consolas", monospace;
+  font-family: "Bergen Mono", "JetBrains Mono", "IBM Plex Mono", "Roboto Mono", "Source Code Pro", "SF Mono", "Consolas", monospace;
 }
 
 h1,
@@ -43,7 +43,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "JetBrains Mono", "IBM Plex Mono", "Roboto Mono", "Source Code Pro", "SF Mono", "Consolas", monospace;
+  font-family: "Bergen Mono", "JetBrains Mono", "IBM Plex Mono", "Roboto Mono", "Source Code Pro", "SF Mono", "Consolas", monospace;
   font-weight: bold;
   color: #494949;
   line-height: 1.2;
@@ -57,7 +57,7 @@ time {
 
 
 .title {
-  font-family: "JetBrains Mono", "IBM Plex Mono", "Roboto Mono", "Source Code Pro", "SF Mono", "Consolas", monospace;
+  font-family: "Bergen Mono", "JetBrains Mono", "IBM Plex Mono", "Roboto Mono", "Source Code Pro", "SF Mono", "Consolas", monospace;
   font-size: 2em;
   color: #ac8a8c;
   text-decoration: none;
