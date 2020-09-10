@@ -179,7 +179,7 @@ table thead {
 }
 
 ::-webkit-scrollbar-thumb {
-  border: 5px solid #f0f0f0;
+  border: 5px solid #272822;
   border-radius: 10px;
   background: #46483d;
 }
