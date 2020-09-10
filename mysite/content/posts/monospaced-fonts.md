@@ -6,7 +6,13 @@ tags:
   - Ricing and Theming
 ---
 
-I've always had a bit of an exaggerated font collection, most likely because I could never really decide on a single one. I do, however, have quite a few that I like more than others, here are some of them:
+I've always had a bit of an exaggerated font collection, most likely because I could never really decide on a single one. I've decided instead to make a list of all the ones that I (semi-regularly) switch around between. These screenshots are taken using the `alacritty` terminal at 800px width and 11px font size. This consistency allows for easier distinction between the line spacing and font size differences seen here. I have also nudged the line height by a bit to make the screenshots appear a bit less crowded.
+
+&nbsp;
+
+## Whois Mono (current fave)
+
+![img](https://i.postimg.cc/pV3nXQGP/image.png)
 
 ## Bergen Mono
 
