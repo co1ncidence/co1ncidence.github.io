@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  max-width: 80ch;
+  max-width: 800px;
   width: 100vw;
   margin: 10vh auto;
   padding-right: 10ch;
