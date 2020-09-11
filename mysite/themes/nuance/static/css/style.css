@@ -130,6 +130,9 @@ article {
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 25px;
+  -webkit-box-shadow: 10px 10px 38px -22px rgba(0,0,0,0.8);
+  -moz-box-shadow: 10px 10px 38px -22px rgba(0,0,0,0.8);
+  box-shadow: 10px 10px 38px -22px rgba(0,0,0,0.8);
 }
 
 blockquote {
