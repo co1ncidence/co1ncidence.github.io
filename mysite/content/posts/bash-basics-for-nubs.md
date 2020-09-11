@@ -6,21 +6,28 @@ tags:
   - Productivity
 ---
 
-When I first started with Linux, and especially the command line, It was difficult to find a truly optimal and comprehensive guide to these things. While most tutorials were nice and gave me a good starting point, they usually provided inefficient information or didn't showcase the most optimal commands/strategies. I am making this list as more of a dump for all of the things that I have learned about bash so far, which isn't too much compared to some but I like to think that I know something. So without further ado, here is my bash basics list to boost you up in the Linux elitist ladder. And as a final note, unless specified, all of these commands are being run from the default (home) folder that your terminal puts you in.
+When I first started with Linux, and especially the command line, It was difficult to find a truly optimal and comprehensive guide to everything I needed to know. While most tutorials were decent and gave me a good starting point, they usually provided insufficient information or didn't showcase the most optimal commands and strategies. I am making this list as more of a dump for all of the things that I have learned about Linux and the Command Line so far, which isn't too much compared to some but I like to think that I know something. So without further ado, here is my basic guide to boost you up in the Linux elitist ladder. And as a final note, unless specified, all of these commands are being run from the default (home) folder that your terminal puts you in.
 
 > Always remember: **RTFM** - "Read The F***ing Manual"
 
 ## First, some Terminology and Tips
-The Terminal is simply an interface to interact with your computer, by itself, it is nothing but an empty program. A terminal (in 99.99% of cases) needs a **Shell** to function. A shell is an interactive text interface for the user, and the **Terminal** is the tool most often used to run commands via the shell. There are many shells out there, thought this tutorial in specific will be focusing on the most is **Bash**, the most popular shell in use right now and the default shell of most [Linux](https://en.wikipedia.org/wiki/Linux) distributions. Bash allows you to run commands from other programs or utilities, common ones you'll mostly likely need are those from something like the [GNU Coreutils](https://en.wikipedia.org/wiki/GNU_Core_Utilities), and any other programs you might use daily. Once you have familiarized yourself with these terms, you can get on to actually using the command line. And finally, and most likely **The Most Important Thing You Will Read Here**, you have to always be willing to read documentation and official manuals, don't go around annoying others for help. Some things to do when encountering issues can include:
-  - The official manual of the program, accessed by running the man command for that program in the terminal
-  - Searching through the GitHub issues of the program you are struggling with to find a similar or identical problem
+The Terminal is simply an interface to interact with your computer, by itself, it is nothing but an empty program. A terminal (in 99.99% of cases) needs a **Shell** to function. A shell is an interactive text interface for the user, and the **Terminal** is the tool most often used to run commands via the shell. There are many shells out there, thought this tutorial in specific will be focusing on the most is **Bash**, the most popular shell in use right now and the default shell of most [Linux](https://en.wikipedia.org/wiki/Linux) distributions. Bash allows you to run commands from other programs or utilities, common ones you'll mostly likely need are those from something like the [GNU Coreutils](https://en.wikipedia.org/wiki/GNU_Core_Utilities), and any other programs you might use daily. Once you have familiarized yourself with these terms, you can get on to actually using the command line. Here is what you will usually see when you open up a terminal:
+
+```sh
+# This is a comment, these will guide you along 
+[user@hostname $] <-- The Prompt, where you enter commands
+# For the purposes of this guide, I will shorten the prompt to:
+[$] echo 'command'
+```
+
+And finally, and most likely **The Most Important Thing You Will Read Here**, you have to always be willing to read documentation and official manuals when encountering a problem or struggling to learn something. Don't go around annoying others for help. Some common things to do when having issues include:
+  - Reading the official manual of the program, accessed by running the "man" command for that program in the terminal
+  - Searching through the [GitHub](https://github.com) issues of the program you are struggling with to find a similar or identical problem
   - Searching through online forums like [Stack Overflow](https://stackoverflow.com/)
   - Reading Wiki pages on amazing websites like the [ArchWiki](https://wiki.archlinux.org/)
   - Searching [Reddit](https://reddit.com) for similar problems or making a post about your own
 
 **Following these steps will lead you to your solution far more often than not.**
-
----
 
 ## Second, Some Linux Basics
 In this section I will be discussing some basics Linux concept, terminology, and tip/tricks that every user should know before they dive deeper into the operating system.
@@ -54,21 +61,38 @@ In Linux and other UNIX-based operating systems, almost everything is available 
 
 This command only shows the biggest, main folders on your system. Each of these is further subdivided into even more different folders and files. Going over the entire filesystem is an extremely daunting task, so I will just give a short briefing on the general purpose of each folder.
 
-`/bin/`: This is a symlink, or symbolic link, to the `/usr/bin` folder, `bin` is short for binary. Binaries are the files that launch various programs on your computer, for example, Firefox will have it's binary here as `/usr/bin/firefox`
+`/bin/`: This is a symlink, or symbolic link, to the `/usr/bin` folder, I will go over **/usr** as a whole in a bit
 
 `/dev/`: This stands for "Device", and is where all the devices connected to your system have there appropriate files, this can contain drives or peripherals. You will find your hard disks and their partitions labeled as `/dev/sda-z|1-9`
 
 `/etc/`: Originally stood for "etcetera", now this is where all of the global configuration files of all the programs on your system are stored, such as, for example, those used by your init system or display manager
 
-`/home/`: This is where all of the home folders and files of all (normal) users on your system are, it is separated into folders with the usernames of said users, and contains specific files only accessible to said users. Here is where you will be spending around 90% of your time as a Linux user. Home folders usually contain the standard "Documents" or "Pictures" folders and the like, but also contain some important hidden folders, such as:
+`/home/`: This is where all of the home folders and files of all (normal) users on your system are, it is separated into folders with the usernames of said users, and contains specific files only accessible to said users. Here is where you will be spending around 90% of your time as a Linux user. Home folders usually contain the standard **Documents** or **Pictures** folders and the like, but also contain some important hidden folders, such as:
   - **.cache/**: this is where all of your users program's store their cache files
   - **.config/**: this is where all of your user-specific configuration files are stored
   - **.local/**: this is the same (in terms of function) as the **/usr/** folder but for your current user only
 It is important to get to know your home folder well and to keep it nice and tidy, it is basically your main "workspace" on a Linux system
 
-`/lib/ and /lib64`:
+`/lib/ and /lib64`: These are both symlinks to **/usr/lib**, which we will discuss later
 
----
+`/lost+found`: This is an interesting folder, it is where the recovered bit's and pieces of other corrupted files can be found. In general, however, you will never need to go near here
+
+`/mnt`: This is where USB drives and other mounted devices, and their contents, can be found. It will usually be empty if you don't have any external storage devices mounted
+
+`/opt`: This is where third party software and configurations are installed. You will usually find things like proprietary drivers and program files over here
+
+`/proc`: This is another special folder, since if it a virtual directory it doesn't actually contain any physical files, but instead just bits and pieces of varying system information and statistics. Things like your uptime and drive ID information are stored here and are constantly changing
+
+`/root`: This is the equivalent of **/home** but for the root user. Once again this is something that you will rarely mess with as most of the time on your machine is spend as a normal user, not root
+
+`/run`: This is not in use in most systems right now, developers have implemented it to prepare for incoming changes in the future, it is suspected that it will contain some program specific files and runtimes
+
+`/sbin`: This is another symlink to **/usr/bin**, which, yes I promise, we are getting to
+
+`/usr`: This, in essence, can be called the "home directory of your whole system", or, more specifically, the equivalent of **/home/.local/** but for all users on the computer. It contains a few folders, each which serve their own purpose:
+  - **bin/**, this is where all the global binaries on your system are stored. For example, when you install Firefox, it creates a file in this folder called "Firefox", which is executed every time you run the browser. The same applies to just about every other program or command on your system
+  - **include/**,
+
 
 ## Third, Getting to Know Bash
 Here I will be explaining some simple bash concepts that will help speed you along your terminal journey, knowing these is necessary if you want to truly be efficient on the command line:
@@ -192,8 +216,6 @@ You can use the `clear` command to clear everything in your terminal, usually us
 [$] sleep 1600 && clear
 ```
 **Lastly, make sure that you are acquainted with these 2 files, both are located in your home directory:** First, `.bash_history`, which contains the last 2000 commands you ran using bash, allowing you to identify the ones you want easily. Second, `.bashrc`, this is your bash configuration file, which can be used to make many different changes to your shell.
-
----
 
 ## File Management In The Command Line
 You can use the `pwd` command to display what directory you are currently in, this is useful as a beginner to get a better feel of where you are in your system.
@@ -358,8 +380,6 @@ This command, however, will filter out every result and only show results contai
   - **r** will allow `grep` to search directories recursively, bringing results from subfolders as well
   - **v** inverts `grep`, printing out every line that doesn't contain the searched word
 
----
-
 ## Editing Files Using GNU Nano
 Throughout your Linux journey, there will be many, and I mean many, times where you will have to make a quick edit to some configuration file of some sort. Editing these files with a visual editor can be a pain as you have to run the editor as root, find the file you want to edit, and then finally get to editing it. As a solution to this, computers running any GNU/Linux Distribution usually come with a terminal editor installed, called [Nano](https://en.wikipedia.org/wiki/GNU_nano). Nano is an editor that allows you to edit any text file through the terminal. Here is an example of me editing the `/etc/fstab` file using Nano (note the use of `sudo` to access this file):
 
@@ -399,8 +419,6 @@ The `time` command can be used to measure how much time another program takes to
 st  0.08s user 0.01s system 7% cpu 1.199 total
 ```
 
----
-
 ## Process Management in the Terminal
 
 Processes in Linux are usually given certain `pid`'s, having this form of identification allows them to be easily tracked and managed, mostly this is used to take care of or kill problematic processes. There are 2 commands that can be used to find the `pid` of a program. You can use either `pidof` of `pgrep`. For the purposes of this guide, I will be using the `pgrep` command. Here is an example of me using `pgrep` to find the `pid` of MPV, a program that I know is currently running:
@@ -431,8 +449,6 @@ Swap:         7.9Gi       0.0Ki       7.9Gi
 But what if you wanted to see an interactive interface from which you could manage processes and see their relative resource usage, a "task manager" if you will. One of the programs you will find yourself most frequently using is `htop`, while not normally included with most Linux Distros, it is a must have utility, a lightweight and easy to use terminal task manager. I suggest you check out the program's GitHub page if you want to learn more. For now, however, here is a screenshot of `htop`:
 
 ![img](https://i.postimg.cc/zGZ9Jpq8/image.png)
-
----
 
 ## Disk and storage management in the Terminal
 To Display all of the disks on your system and all of the storage that has been used on them, use the `df` command with the `-h` flag to make it human readable:

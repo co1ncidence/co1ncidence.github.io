@@ -45,21 +45,25 @@
         	       
 
 			<div>
-				<p>When I first started with Linux, and especially the command line, It was difficult to find a truly optimal and comprehensive guide to these things. While most tutorials were nice and gave me a good starting point, they usually provided inefficient information or didn&rsquo;t showcase the most optimal commands/strategies. I am making this list as more of a dump for all of the things that I have learned about bash so far, which isn&rsquo;t too much compared to some but I like to think that I know something. So without further ado, here is my bash basics list to boost you up in the Linux elitist ladder. And as a final note, unless specified, all of these commands are being run from the default (home) folder that your terminal puts you in.</p>
+				<p>When I first started with Linux, and especially the command line, It was difficult to find a truly optimal and comprehensive guide to everything I needed to know. While most tutorials were decent and gave me a good starting point, they usually provided insufficient information or didn&rsquo;t showcase the most optimal commands and strategies. I am making this list as more of a dump for all of the things that I have learned about Linux and the Command Line so far, which isn&rsquo;t too much compared to some but I like to think that I know something. So without further ado, here is my basic guide to boost you up in the Linux elitist ladder. And as a final note, unless specified, all of these commands are being run from the default (home) folder that your terminal puts you in.</p>
 <blockquote>
 <p>Always remember: <strong>RTFM</strong> - &ldquo;Read The F***ing Manual&rdquo;</p>
 </blockquote>
 <h2 id="first-some-terminology-and-tips">First, some Terminology and Tips</h2>
-<p>The Terminal is simply an interface to interact with your computer, by itself, it is nothing but an empty program. A terminal (in 99.99% of cases) needs a <strong>Shell</strong> to function. A shell is an interactive text interface for the user, and the <strong>Terminal</strong> is the tool most often used to run commands via the shell. There are many shells out there, thought this tutorial in specific will be focusing on the most is <strong>Bash</strong>, the most popular shell in use right now and the default shell of most <a href="https://en.wikipedia.org/wiki/Linux">Linux</a> distributions. Bash allows you to run commands from other programs or utilities, common ones you&rsquo;ll mostly likely need are those from something like the <a href="https://en.wikipedia.org/wiki/GNU_Core_Utilities">GNU Coreutils</a>, and any other programs you might use daily. Once you have familiarized yourself with these terms, you can get on to actually using the command line. And finally, and most likely <strong>The Most Important Thing You Will Read Here</strong>, you have to always be willing to read documentation and official manuals, don&rsquo;t go around annoying others for help. Some things to do when encountering issues can include:</p>
+<p>The Terminal is simply an interface to interact with your computer, by itself, it is nothing but an empty program. A terminal (in 99.99% of cases) needs a <strong>Shell</strong> to function. A shell is an interactive text interface for the user, and the <strong>Terminal</strong> is the tool most often used to run commands via the shell. There are many shells out there, thought this tutorial in specific will be focusing on the most is <strong>Bash</strong>, the most popular shell in use right now and the default shell of most <a href="https://en.wikipedia.org/wiki/Linux">Linux</a> distributions. Bash allows you to run commands from other programs or utilities, common ones you&rsquo;ll mostly likely need are those from something like the <a href="https://en.wikipedia.org/wiki/GNU_Core_Utilities">GNU Coreutils</a>, and any other programs you might use daily. Once you have familiarized yourself with these terms, you can get on to actually using the command line. Here is what you will usually see when you open up a terminal:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># This is a comment, these will guide you along</span> 
+<span style="color:#f92672">[</span>user@hostname $<span style="color:#f92672">]</span> &lt;-- The Prompt, where you enter commands
+<span style="color:#75715e"># For the purposes of this guide, I will shorten the prompt to:</span>
+<span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> echo <span style="color:#e6db74">&#39;command&#39;</span>
+</code></pre></div><p>And finally, and most likely <strong>The Most Important Thing You Will Read Here</strong>, you have to always be willing to read documentation and official manuals when encountering a problem or struggling to learn something. Don&rsquo;t go around annoying others for help. Some common things to do when having issues include:</p>
 <ul>
-<li>The official manual of the program, accessed by running the man command for that program in the terminal</li>
-<li>Searching through the GitHub issues of the program you are struggling with to find a similar or identical problem</li>
+<li>Reading the official manual of the program, accessed by running the &ldquo;man&rdquo; command for that program in the terminal</li>
+<li>Searching through the <a href="https://github.com">GitHub</a> issues of the program you are struggling with to find a similar or identical problem</li>
 <li>Searching through online forums like <a href="https://stackoverflow.com/">Stack Overflow</a></li>
 <li>Reading Wiki pages on amazing websites like the <a href="https://wiki.archlinux.org/">ArchWiki</a></li>
 <li>Searching <a href="https://reddit.com">Reddit</a> for similar problems or making a post about your own</li>
 </ul>
 <p><strong>Following these steps will lead you to your solution far more often than not.</strong></p>
-<hr>
 <h2 id="second-some-linux-basics">Second, Some Linux Basics</h2>
 <p>In this section I will be discussing some basics Linux concept, terminology, and tip/tricks that every user should know before they dive deeper into the operating system.</p>
 <h3 id="the-linux-file-system">The Linux File System</h3>
@@ -86,18 +90,29 @@
 ├── usr
 └── var
 </code></pre></div><p>This command only shows the biggest, main folders on your system. Each of these is further subdivided into even more different folders and files. Going over the entire filesystem is an extremely daunting task, so I will just give a short briefing on the general purpose of each folder.</p>
-<p><code>/bin/</code>: This is a symlink, or symbolic link, to the <code>/usr/bin</code> folder, <code>bin</code> is short for binary. Binaries are the files that launch various programs on your computer, for example, Firefox will have it&rsquo;s binary here as <code>/usr/bin/firefox</code></p>
+<p><code>/bin/</code>: This is a symlink, or symbolic link, to the <code>/usr/bin</code> folder, I will go over <strong>/usr</strong> as a whole in a bit</p>
 <p><code>/dev/</code>: This stands for &ldquo;Device&rdquo;, and is where all the devices connected to your system have there appropriate files, this can contain drives or peripherals. You will find your hard disks and their partitions labeled as <code>/dev/sda-z|1-9</code></p>
 <p><code>/etc/</code>: Originally stood for &ldquo;etcetera&rdquo;, now this is where all of the global configuration files of all the programs on your system are stored, such as, for example, those used by your init system or display manager</p>
-<p><code>/home/</code>: This is where all of the home folders and files of all (normal) users on your system are, it is separated into folders with the usernames of said users, and contains specific files only accessible to said users. Here is where you will be spending around 90% of your time as a Linux user. Home folders usually contain the standard &ldquo;Documents&rdquo; or &ldquo;Pictures&rdquo; folders and the like, but also contain some important hidden folders, such as:</p>
+<p><code>/home/</code>: This is where all of the home folders and files of all (normal) users on your system are, it is separated into folders with the usernames of said users, and contains specific files only accessible to said users. Here is where you will be spending around 90% of your time as a Linux user. Home folders usually contain the standard <strong>Documents</strong> or <strong>Pictures</strong> folders and the like, but also contain some important hidden folders, such as:</p>
 <ul>
 <li><strong>.cache/</strong>: this is where all of your users program&rsquo;s store their cache files</li>
 <li><strong>.config/</strong>: this is where all of your user-specific configuration files are stored</li>
 <li><strong>.local/</strong>: this is the same (in terms of function) as the <strong>/usr/</strong> folder but for your current user only
 It is important to get to know your home folder well and to keep it nice and tidy, it is basically your main &ldquo;workspace&rdquo; on a Linux system</li>
 </ul>
-<p><code>/lib/ and /lib64</code>:</p>
-<hr>
+<p><code>/lib/ and /lib64</code>: These are both symlinks to <strong>/usr/lib</strong>, which we will discuss later</p>
+<p><code>/lost+found</code>: This is an interesting folder, it is where the recovered bit&rsquo;s and pieces of other corrupted files can be found. In general, however, you will never need to go near here</p>
+<p><code>/mnt</code>: This is where USB drives and other mounted devices, and their contents, can be found. It will usually be empty if you don&rsquo;t have any external storage devices mounted</p>
+<p><code>/opt</code>: This is where third party software and configurations are installed. You will usually find things like proprietary drivers and program files over here</p>
+<p><code>/proc</code>: This is another special folder, since if it a virtual directory it doesn&rsquo;t actually contain any physical files, but instead just bits and pieces of varying system information and statistics. Things like your uptime and drive ID information are stored here and are constantly changing</p>
+<p><code>/root</code>: This is the equivalent of <strong>/home</strong> but for the root user. Once again this is something that you will rarely mess with as most of the time on your machine is spend as a normal user, not root</p>
+<p><code>/run</code>: This is not in use in most systems right now, developers have implemented it to prepare for incoming changes in the future, it is suspected that it will contain some program specific files and runtimes</p>
+<p><code>/sbin</code>: This is another symlink to <strong>/usr/bin</strong>, which, yes I promise, we are getting to</p>
+<p><code>/usr</code>: This, in essence, can be called the &ldquo;home directory of your whole system&rdquo;, or, more specifically, the equivalent of <strong>/home/.local/</strong> but for all users on the computer. It contains a few folders, each which serve their own purpose:</p>
+<ul>
+<li><strong>bin/</strong>, this is where all the global binaries on your system are stored. For example, when you install Firefox, it creates a file in this folder called &ldquo;Firefox&rdquo;, which is executed every time you run the browser. The same applies to just about every other program or command on your system</li>
+<li><strong>include/</strong>,</li>
+</ul>
 <h2 id="third-getting-to-know-bash">Third, Getting to Know Bash</h2>
 <p>Here I will be explaining some simple bash concepts that will help speed you along your terminal journey, knowing these is necessary if you want to truly be efficient on the command line:</p>
 <h3 id="autocomplete">Autocomplete</h3>
@@ -172,7 +187,6 @@ alias volume<span style="color:#f92672">=</span><span style="color:#e6db74">&#34
 <p><code>sleep</code> is an especially cool command, it can be used in conjunction with <code>&amp;&amp;</code> to essentially but a command on a countdown, for example, running this command will tell your system to wait 1600 seconds before running the next command in the sequence:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> sleep <span style="color:#ae81ff">1600</span> <span style="color:#f92672">&amp;&amp;</span> clear
 </code></pre></div><p><strong>Lastly, make sure that you are acquainted with these 2 files, both are located in your home directory:</strong> First, <code>.bash_history</code>, which contains the last 2000 commands you ran using bash, allowing you to identify the ones you want easily. Second, <code>.bashrc</code>, this is your bash configuration file, which can be used to make many different changes to your shell.</p>
-<hr>
 <h2 id="file-management-in-the-command-line">File Management In The Command Line</h2>
 <p>You can use the <code>pwd</code> command to display what directory you are currently in, this is useful as a beginner to get a better feel of where you are in your system.</p>
 <p><code>cd</code> stands for &ldquo;change directory&rdquo;, you can use this command to enter and leave directories. It is not limited to neighboring directories, however, you can use <code>cd</code> to move from one side of your computer to another, provided you don&rsquo;t mess up typing in the names of folders. First thing to note is that a <code>/</code> is not necessary after a folder name:</p>
@@ -270,7 +284,6 @@ You may realize. Here is an example of the <code>cat</code> command being used:<
 <li><strong>r</strong> will allow <code>grep</code> to search directories recursively, bringing results from subfolders as well</li>
 <li><strong>v</strong> inverts <code>grep</code>, printing out every line that doesn&rsquo;t contain the searched word</li>
 </ul>
-<hr>
 <h2 id="editing-files-using-gnu-nano">Editing Files Using GNU Nano</h2>
 <p>Throughout your Linux journey, there will be many, and I mean many, times where you will have to make a quick edit to some configuration file of some sort. Editing these files with a visual editor can be a pain as you have to run the editor as root, find the file you want to edit, and then finally get to editing it. As a solution to this, computers running any GNU/Linux Distribution usually come with a terminal editor installed, called <a href="https://en.wikipedia.org/wiki/GNU_nano">Nano</a>. Nano is an editor that allows you to edit any text file through the terminal. Here is an example of me editing the <code>/etc/fstab</code> file using Nano (note the use of <code>sudo</code> to access this file):</p>
 <p><img src="https://i.postimg.cc/NFQKqRL4/out.gif" alt="gif"></p>
@@ -290,8 +303,7 @@ up <span style="color:#ae81ff">4</span> hours, <span style="color:#ae81ff">20</s
 </code></pre></div><p>The <code>time</code> command can be used to measure how much time another program takes to open up, this can be useful when diagnosing problems regarding system performance issues. Here is an example of the <code>time</code> command being used to display the startup time of the <code>st</code> Terminal:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> time st
 st  0.08s user 0.01s system 7% cpu 1.199 total
-</code></pre></div><hr>
-<h2 id="process-management-in-the-terminal">Process Management in the Terminal</h2>
+</code></pre></div><h2 id="process-management-in-the-terminal">Process Management in the Terminal</h2>
 <p>Processes in Linux are usually given certain <code>pid</code>'s, having this form of identification allows them to be easily tracked and managed, mostly this is used to take care of or kill problematic processes. There are 2 commands that can be used to find the <code>pid</code> of a program. You can use either <code>pidof</code> of <code>pgrep</code>. For the purposes of this guide, I will be using the <code>pgrep</code> command. Here is an example of me using <code>pgrep</code> to find the <code>pid</code> of MPV, a program that I know is currently running:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> pgrep mpv
 <span style="color:#ae81ff">24935</span>
@@ -306,7 +318,6 @@ Mem:          7.7Gi       659Mi       402Mi       523Mi       6.6Gi       6.2Gi
 Swap:         7.9Gi       0.0Ki       7.9Gi
 </code></pre></div><p>But what if you wanted to see an interactive interface from which you could manage processes and see their relative resource usage, a &ldquo;task manager&rdquo; if you will. One of the programs you will find yourself most frequently using is <code>htop</code>, while not normally included with most Linux Distros, it is a must have utility, a lightweight and easy to use terminal task manager. I suggest you check out the program&rsquo;s GitHub page if you want to learn more. For now, however, here is a screenshot of <code>htop</code>:</p>
 <p><img src="https://i.postimg.cc/zGZ9Jpq8/image.png" alt="img"></p>
-<hr>
 <h2 id="disk-and-storage-management-in-the-terminal">Disk and storage management in the Terminal</h2>
 <p>To Display all of the disks on your system and all of the storage that has been used on them, use the <code>df</code> command with the <code>-h</code> flag to make it human readable:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> df -h
