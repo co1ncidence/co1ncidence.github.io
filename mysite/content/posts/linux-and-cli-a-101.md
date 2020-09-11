@@ -11,7 +11,7 @@ When I first started with Linux, and especially the command line, It was difficu
 > Always remember: **RTFM** - "Read The F***ing Manual"
 
 ## First, some Terminology and Tips
-The Terminal is simply an interface to interact with your computer, by itself, it is nothing but an empty program. A terminal (in 99.99% of cases) needs a **Shell** to function. A shell is an interactive text interface for the user, and the **Terminal** is the tool most often used to run commands via the shell. There are many shells out there, thought this tutorial in specific will be focusing on the most is **Bash**, the most popular shell in use right now and the default shell of most [Linux](https://en.wikipedia.org/wiki/Linux) distributions. Bash allows you to run commands from other programs or utilities, common ones you'll mostly likely need are those from something like the [GNU Coreutils](https://en.wikipedia.org/wiki/GNU_Core_Utilities), and any other programs you might use daily. Once you have familiarized yourself with these terms, you can get on to actually using the command line. Here is what you will usually see when you open up a terminal:
+The Terminal is simply an interface to interact with your computer, by itself, it is nothing but an empty program. A terminal (in 99.99% of cases) needs a **Shell** to function. A shell is an interactive text interface for the user, and the **Terminal** is the tool most often used to run commands via the shell. There are many shells out there, thought this tutorial in specific will be focusing on the most is **Bash**, the most popular shell in use right now and the default shell of most [Linux](https://en.wikipedia.org/wiki/Linux) distributions, if you are on macOS and thus use **ZSH**, don't worry, everything here will still apply, just replace all instances of the word "bash" with "zsh". Bash allows you to run commands from other programs or utilities, common ones you'll mostly likely need are those from something like the [GNU Coreutils](https://en.wikipedia.org/wiki/GNU_Core_Utilities), and any other programs you might use daily. Once you have familiarized yourself with these terms, you can get on to actually using the command line. Here is what you will usually see when you open up a terminal:
 
 ```sh
 # This is a comment, these will guide you along
@@ -22,12 +22,12 @@ The Terminal is simply an interface to interact with your computer, by itself, i
 
 And finally, and most likely **The Most Important Thing You Will Read Here**, you have to always be willing to read documentation and official manuals when encountering a problem or struggling to learn something. Don't go around annoying others for help. Some common things to do when having issues include:
   - Reading the official manual of the program, accessed by running the "man" command for that program in the terminal
-  - Searching through the [GitHub](https://github.com) issues of the program you are struggling with to find a similar or identical problem
+  - Searching through the [GitHub](https://github.com) issues of the program you are struggling with
   - Searching through online forums like [Stack Overflow](https://stackoverflow.com/)
   - Reading Wiki pages on amazing websites like the [ArchWiki](https://wiki.archlinux.org/)
   - Searching [Reddit](https://reddit.com) for similar problems or making a post about your own
 
-**Following these steps will lead you to your solution far more often than not.**
+**If you follow these steps and effectively search  for solutions, you will learn far better and faster than any other way.**
 
 ## Second, Some Linux Basics
 In this section I will be discussing some basics Linux concept, terminology, and tip/tricks that every user should know before they dive deeper into the operating system.
@@ -149,7 +149,8 @@ You can also do another kind of sequential execution in the command line, using 
 ```
 
 ### Pipes In Bash
-**Pipes** are things you can use to filter one command through another, thus allowing for things like controlling outputs of commands. Pipes have many uses so I recommend that you look more into them as there is no way I can go into full depth here. Here is an example of a pipe being used to filter the output of of `fc-list` through `grep` to only show fonts with a certain name.
+**Pipes** are things you can use to filter one command through another, thus allowing for things like controlling outputs of commands or sending then to different places. Pipes have many uses so I recommend that you look more into them as there is no way I can go into full depth here. Here is an example of a pipe being used to filter the output of of `fc-list` through `grep` to only show fonts with a certain name.
+
 ```sh
 [$] fc-list | grep Roboto
 ```
@@ -165,7 +166,7 @@ Using two `>`'s provides a different result, instead of creating a new file cont
 ```
 
 ### Keyboard Shortcuts
-Unknown to me for quite a while during my usage of the terminal in Linux was that there were many keyboard shortcuts that could be used to navigate and control text much faster in the command line. These are mostly inherited from some of the keyboard shortcuts in editors like `emacs`, from what I can tell. Here are the ones I find myself using most often:
+Unknown to me for quite a while during my usage of bash was that there were many keyboard shortcuts that could be used to navigate and control text much faster in the command line. These are mostly inherited from some of the keyboard shortcuts in editors like `emacs`, from what I can tell. Here are the ones I find myself using most often:
 
 `ctrl + arrow keys` will move the cursor one word in the respective direction
 
@@ -203,7 +204,6 @@ This would set the default terminal used by other programs to `st` instead of wh
 ### Shell Aliases
 
 You may or not have noticed a file called `.bashrc` in your Home Directory. This file is the configuration file of the Bash Shell, and can be used to do some cool things, one of which is creating shell aliases. Shell aliases can be used to simplify long and complicated, or even simply hard-to-type commands into smaller ones. To add a shell alias, simply append a line following this syntax to the end of the `.bashrc` file, replacing the placeholder words with a word/command of your choice:
-
 ```sh
 [$] alias newcommand="long-and-annoying-old-command"
 ```
@@ -297,7 +297,7 @@ You can also use touch to create files in other folders:
 [$] mkdir folder/
 ```
 
-`mv` is a command used to move files from one location to another, and because of this it can also be used to replace a file with another. It is also possible to change the name of a file when moving it. Example usage:
+`mv` is a command used to move files  and folders from one location to another, it can also (indirectly) be used to replace a file with another. It is also possible to change the name of a file when moving it. Example usage:
 
 ```sh
 [$] mv /usr/share/file.txt ~/Documents/newfile.txt
