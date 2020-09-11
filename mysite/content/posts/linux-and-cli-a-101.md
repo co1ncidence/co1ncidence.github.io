@@ -14,7 +14,7 @@ When I first started with Linux, and especially the command line, It was difficu
 The Terminal is simply an interface to interact with your computer, by itself, it is nothing but an empty program. A terminal (in 99.99% of cases) needs a **Shell** to function. A shell is an interactive text interface for the user, and the **Terminal** is the tool most often used to run commands via the shell. There are many shells out there, thought this tutorial in specific will be focusing on the most is **Bash**, the most popular shell in use right now and the default shell of most [Linux](https://en.wikipedia.org/wiki/Linux) distributions. Bash allows you to run commands from other programs or utilities, common ones you'll mostly likely need are those from something like the [GNU Coreutils](https://en.wikipedia.org/wiki/GNU_Core_Utilities), and any other programs you might use daily. Once you have familiarized yourself with these terms, you can get on to actually using the command line. Here is what you will usually see when you open up a terminal:
 
 ```sh
-# This is a comment, these will guide you along 
+# This is a comment, these will guide you along
 [user@hostname $] <-- The Prompt, where you enter commands
 # For the purposes of this guide, I will shorten the prompt to:
 [$] echo 'command'
@@ -59,39 +59,68 @@ In Linux and other UNIX-based operating systems, almost everything is available 
 └── var
 ```
 
-This command only shows the biggest, main folders on your system. Each of these is further subdivided into even more different folders and files. Going over the entire filesystem is an extremely daunting task, so I will just give a short briefing on the general purpose of each folder.
+This command only shows the biggest, main folders on your system. Each of these is further subdivided into even more different folders and files. Going over the entire filesystem is an extremely daunting task, so I will just give a short briefing on the general purpose of each folder:
 
-`/bin/`: This is a symlink, or symbolic link, to the `/usr/bin` folder, I will go over **/usr** as a whole in a bit
+`/bin/`: This is a symlink, or symbolic link, to the `/usr/bin` folder, I will go over **/usr** as a whole in a bit.
 
-`/dev/`: This stands for "Device", and is where all the devices connected to your system have there appropriate files, this can contain drives or peripherals. You will find your hard disks and their partitions labeled as `/dev/sda-z|1-9`
+`/dev/`: This stands for "Device", and is where all the devices connected to your system have there appropriate files, this can contain drives or peripherals. You will find your hard disks and their partitions labeled as `/dev/sda-z|1-9`.
 
-`/etc/`: Originally stood for "etcetera", now this is where all of the global configuration files of all the programs on your system are stored, such as, for example, those used by your init system or display manager
+`/etc/`: Originally stood for "etcetera", now this is where all of the global configuration files of all the programs on your system are stored, such as, for example, those used by your init system or display manager:
 
 `/home/`: This is where all of the home folders and files of all (normal) users on your system are, it is separated into folders with the usernames of said users, and contains specific files only accessible to said users. Here is where you will be spending around 90% of your time as a Linux user. Home folders usually contain the standard **Documents** or **Pictures** folders and the like, but also contain some important hidden folders, such as:
   - **.cache/**: this is where all of your users program's store their cache files
   - **.config/**: this is where all of your user-specific configuration files are stored
   - **.local/**: this is the same (in terms of function) as the **/usr/** folder but for your current user only
-It is important to get to know your home folder well and to keep it nice and tidy, it is basically your main "workspace" on a Linux system
+It is important to get to know your home folder well and to keep it nice and tidy, it is basically your main "workspace" on a Linux system.
 
-`/lib/ and /lib64`: These are both symlinks to **/usr/lib**, which we will discuss later
+`/lib/ and /lib64`: These are both symlinks to **/usr/lib**, which we will discuss later.
 
-`/lost+found`: This is an interesting folder, it is where the recovered bit's and pieces of other corrupted files can be found. In general, however, you will never need to go near here
+`/lost+found`: This is an interesting folder, it is where the recovered bit's and pieces of other corrupted files can be found. In general, however, you will never need to go near here.
 
-`/mnt`: This is where USB drives and other mounted devices, and their contents, can be found. It will usually be empty if you don't have any external storage devices mounted
+`/mnt`: This is where USB drives and other mounted devices, and their contents, can be found. It will usually be empty if you don't have any external storage devices mounted.
 
-`/opt`: This is where third party software and configurations are installed. You will usually find things like proprietary drivers and program files over here
+`/opt`: This is where third party software and configurations are installed. You will usually find things like proprietary drivers and program files over here.
 
-`/proc`: This is another special folder, since if it a virtual directory it doesn't actually contain any physical files, but instead just bits and pieces of varying system information and statistics. Things like your uptime and drive ID information are stored here and are constantly changing
+`/proc`: This is another special folder, since if it a virtual directory it doesn't actually contain any physical files, but instead just bits and pieces of varying system information and statistics. Most of the files in here contain information regarding either your kernel or running processes.
 
-`/root`: This is the equivalent of **/home** but for the root user. Once again this is something that you will rarely mess with as most of the time on your machine is spend as a normal user, not root
+`/root`: This is the equivalent of **/home** but for the root user. Once again this is something that you will rarely mess with as most of the time on your machine is spend as a normal user, not root.
 
-`/run`: This is not in use in most systems right now, developers have implemented it to prepare for incoming changes in the future, it is suspected that it will contain some program specific files and runtimes
+`/run`: Being one of the newest directories in the Filesystem, this is where some applications store transient files, such as sockets and/or process ID's.
 
-`/sbin`: This is another symlink to **/usr/bin**, which, yes I promise, we are getting to
+`/sbin`: While symlinked to **/usr/bin**, it also serves as the place where certain system administration binaries are stored, or in other words, commands only the root user should be allowed to run.
+
+`srv`: This is where service data is stored, such as files for websites you visit. It is always changing and not anything you would ever have to mess with.
+
+`sys`: This is where certain system information is stored in variable files. Things like your battery percentage or brightness level can be found here.
+
+`tmp`: This is another interesting folder, it is called "tmp" because it is a temporary filesystem, or, in simple terms, a folder that cleans itself every time you restart your computer. Many programs dump temporary files here to save space.
 
 `/usr`: This, in essence, can be called the "home directory of your whole system", or, more specifically, the equivalent of **/home/.local/** but for all users on the computer. It contains a few folders, each which serve their own purpose:
+
+```sh
+[$] tree -d -L 1 /usr/
+/usr
+├── bin
+├── include
+├── lib
+├── lib32
+├── lib64 -> lib
+├── local
+├── sbin -> bin
+├── share
+└── src
+```
   - **bin/**, this is where all the global binaries on your system are stored. For example, when you install Firefox, it creates a file in this folder called "Firefox", which is executed every time you run the browser. The same applies to just about every other program or command on your system
-  - **include/**,
+  - **include/**, This directory "includes" all necessary headers that C compilers use at compile time. It is not somewhere you will ever find yourself, so we won't go any deeper
+  - **lib/, lib32/, and lib64/**, These are where the libraries of all languages and programs of your system go. These files are often stored for later use by programs and their developers, and aren't something you would ever usually need to touch
+  - **local/**, This is basically a clone of **/usr/** but for local purposes, these files are usually only accessible to certain users, usually the administrator of the system
+  - **sbin/**, This is just a symlink to **bin/**, which we discussed before
+  - **share/**, This is the equivalent of **.local/share** but for the system as a whole. Many programs and architectures make use of the global files here. Out of all the **/usr** directories mentioned so far, this is the only one you might have to actually spend time in
+  - **src/**, A folder not found on every distribution, this usually contains important source code for certain Kernel objects, not something you will usually ever need to worry about though.
+
+`var/`: The last of the root directories, it's name stand for "variable(s)". It contains constantly changing files and information that programs use. It is also writable unlike **/usr**, which makes it a useful and safe place to store things like system logs, which can be found in **/var/log/** and so on.
+
+There we have it, the Linux filesystem in it's entirety. While it may seem confusing at first, there is quite a good bit of useful organization here, and as you continue to use your computer you will realize how little you really need to think about where something might be, as each folder has a pretty distinct purpose. Just remember to not go messing around in places that I mentioned you shouldn't be.
 
 
 ## Third, Getting to Know Bash
