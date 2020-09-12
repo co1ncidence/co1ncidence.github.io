@@ -10,6 +10,12 @@ Here are ~~all~~ most of the Rices that I have made on my computer over the last
 
 &nbsp;
 
+# Dark Inside.
+
+![img](https://i.postimg.cc/kg4S1bgh/hola.png)
+
+---
+
 # The Mountaineer.
 
 ---
@@ -33,12 +39,6 @@ Here are ~~all~~ most of the Rices that I have made on my computer over the last
 ---
 
 ![img](https://i.postimg.cc/k56XgFzc/what3.png)
-
-# Misty Mountain.
-
----
-
-![img](https://i.postimg.cc/0yjX1Rs3/what.png)
 
 # Function > Form.
 
