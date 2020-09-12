@@ -19,7 +19,7 @@ Just a list of some software I find nice to use:
 |**[farge](https://github.com/sdushantha/farge)**                        | Finally a lightweight CLI colorpicker              |
 |**[ungoogled-chromium](https://github.com/Eloston/ungoogled-chromium)** | Browse safely and privately, no compromises        |
 |**[ST](https://st.suckless.org/)**                                      | Simple Terminal                                    |
-|**[shfm](https://github.com/dylanaraps/shfm)**                          | Terminal file browser written in bash              |
+|**[shfm](https://github.com/dylanaraps/shfm)**                          | Terminal file browser written in posix shell       |
 |**[epy](https://github.com/wustho/epy)**                                | Terminal based Ebook reader                        |
 |**[wpm](https://pypi.org/project/wpm/)**                                | Command line typing test                           |
 |**[cchat-gtk](https://github.com/diamondburned/cchat-gtk)**             | GTK+ frontend for cchat's                          |
