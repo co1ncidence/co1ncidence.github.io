@@ -27,7 +27,7 @@
       
       <guid>https://co1ncidence.github.io/posts/some-cool-software/</guid>
       <description>Just a list of some software I find nice to use:
-   Software Description     cfm Simple and fast terminal file manager   maim Extremely powerful CLI screenshot tool   SXIV &amp;ldquo;Simple X Image Viewer&amp;rdquo;   giph Customizable and easy to use GIF recorder   birch Freenode IRC client written in bash   farge Finally a lightweight CLI colorpicker   ungoogled-chromium Browse safely and privately, no compromises   ST Simple Terminal   shfm Terminal file browser written in posix shell   epy Terminal based Ebook reader   wpm Command line typing test   cchat-gtk GTK+ frontend for cchat&amp;rsquo;s    </description>
+   Software Description     giph Customizable and easy to use GIF recorder   maim Extremely powerful CLI screenshot tool   SXIV &amp;ldquo;Simple X Image Viewer&amp;rdquo;   birch Freenode IRC client written in bash   farge Simple Colorpicker written in bash   ungoogled-chromium Browse safely and google-free, no compromises   ST Simple Terminal   shfm Terminal file browser written in posix shell   cchat-gtk GTK+ frontend for cchat   cfm Simple and fast terminal file manager   epy Terminal based Ebook reader   wpm Command line typing test    </description>
     </item>
     
     <item>
