@@ -23,3 +23,4 @@ Just a list of some software I find nice to use:
 |**[cfm](https://github.com/WillEccles/cfm)**                            | Simple and fast terminal file manager              |
 |**[epy](https://github.com/wustho/epy)**                                | Terminal based Ebook reader                        |
 |**[wpm](https://pypi.org/project/wpm/)**                                | Command line typing test                           |
+|**[wmutils](https://github.com/wmutils/core)                            | Very extensible set of WM utilities                |

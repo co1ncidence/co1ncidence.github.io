@@ -5,7 +5,7 @@ tags:
   - Showcase
 ---
 
-> This post will most likely get updated as time goes by
+> This post is very messy and mostly made for testing code blocks.
 
 ## Vibe:
 
@@ -110,3 +110,129 @@ youtube-dl \
     --audio-format mp3 \
     "$@"
 ```
+
+## Centerwindow
+
+Taken shamelessly from the [wmutils readme](https://github.com/wmutils/core), this script will center a window, regardless of WM:
+
+```sh
+#!/bin/sh
+
+WID=$(pfw)
+WW=$(wattr w $WID)
+WH=$(wattr h $WID)
+
+ROOT=$(lsw -r)
+SW=$(wattr w $ROOT)
+SH=$(wattr h $ROOT)
+
+wtp $(((SW - WW)/2)) $(((SH - WH)/2)) $WW $WH $WID
+```
+
+## DL
+
+Just a curl script that will always work, has a neat little progress bar as well. I mostly made this to avoid having to use curl flags over and again:
+
+```sh
+#!/bin/sh
+
+[ "$1" ] || { read -r inp && set "$inp" ; }
+
+usage() {
+    >&2 print 'Usage: %s [-m] link <output>\n' "${0##*/}"
+    exit 1
+}
+
+_dl() {
+    curl \
+        --disable \
+        --ipv4 \
+        --location \
+        --retry 2 \
+        --progress-bar \
+        --continue-at - \
+        --url "$1" \
+        --output "${2:-${1##*/}}"
+}
+
+mass_dl() {
+    tmp=/tmp/$$
+    ${EDITOR:-vi} $tmp
+    count=0
+    while read -r url name ; do
+        count=$((count + 1))
+        _dl "$url" "$count-${name:-download.jpg}" &
+    done < $tmp
+    wait
+    rm $tmp
+}
+
+main() {
+    case ${1#-} in
+        h) usage ;;
+        m|v) mass_dl ;;
+        *) _dl "$@"
+    esac
+}
+
+main "$@"
+```
+
+## EXT
+
+Detects what kind of archive you are pointing it at and extracts it properly, I made this to remove my dependency on GUI file managers:
+
+```sh
+#!/bin/sh
+
+usage() {
+    >&2 printf '%s\n' "Usage: ${0##*/} [-c copy_path] file"
+    exit 1
+}
+
+decompress() {
+    case ${1##*.} in
+        gz|tgz)  gunzip -qdc "$1" ;;
+        xz|txz)  xz -qdcT 0 "$1"  ;;
+        bz2|tbz) bunzip2 -qdc "$1" ;;
+    esac
+}
+
+run() {
+    case $1 in
+        *tar.*|*.tgz|*.txz|*.tbz)
+            decompress "$1" | \
+            tar -C "${COPY_PATH:-$PWD}" -xpf -
+            ;;
+        *.xz|*.gz|*.bz2)
+            decompress "$1" "${COPY_PATH:-$PWD}/${1%.*}"
+            ;;
+        *.zip)
+            unzip -q "$1" -d "$2"
+            ;;
+        *.rar)
+            unrar x "$1"
+            ;;
+        *.7z)
+            7z x "$1"
+            ;;
+        *)
+            >&2 echo "Unrecognized compression format: ${1##*.}"
+    esac
+}
+
+while [ "$1" ] ; do
+    case $1 in
+        -h|h)
+            usage
+            ;;
+        -C|-c)
+            COPY_PATH=$1
+            ;;
+        *)
+            run "$@"
+    esac
+    shift
+done
+```
+

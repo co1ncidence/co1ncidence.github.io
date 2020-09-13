@@ -26,7 +26,7 @@
       <pubDate>Tue, 08 Sep 2020 21:12:44 -0500</pubDate>
       
       <guid>https://co1ncidence.github.io/posts/some-cool-scripts/</guid>
-      <description>This post will most likely get updated as time goes by
+      <description>This post is very messy and mostly made for testing code blocks.
  Vibe: I had used mpd and ncmpcpp for my music for a long time now, but decided to switch to mpv for the simplicity, and to make things even easier, I wrote this script, which shuffles all of the music files in the chosen directory and plays them in a terminal window, with album art in it&amp;rsquo;s own small, separate window.</description>
     </item>
     
@@ -64,7 +64,7 @@
       
       <guid>https://co1ncidence.github.io/posts/some-cool-software/</guid>
       <description>Just a list of some software I find nice to use:
-   Software Description     giph Customizable and easy to use GIF recorder   maim Extremely powerful CLI screenshot tool   SXIV &amp;ldquo;Simple X Image Viewer&amp;rdquo;   birch Freenode IRC client written in bash   farge Simple Colorpicker written in bash   ungoogled-chromium Browse safely and google-free, no compromises   ST Simple Terminal   shfm Terminal file browser written in posix shell   cchat-gtk GTK+ frontend for cchat   cfm Simple and fast terminal file manager   epy Terminal based Ebook reader   wpm Command line typing test    </description>
+   Software Description     giph Customizable and easy to use GIF recorder   maim Extremely powerful CLI screenshot tool   SXIV &amp;ldquo;Simple X Image Viewer&amp;rdquo;   birch Freenode IRC client written in bash   farge Simple Colorpicker written in bash   ungoogled-chromium Browse safely and google-free, no compromises   ST Simple Terminal   shfm Terminal file browser written in posix shell   cchat-gtk GTK+ frontend for cchat   cfm Simple and fast terminal file manager   epy Terminal based Ebook reader   wpm Command line typing test   **wmutils Very extensible set of WM utilities    </description>
     </item>
     
     <item>

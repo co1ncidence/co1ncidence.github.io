@@ -44,7 +44,7 @@
 
 			<div>
 				<blockquote>
-<p>This post will most likely get updated as time goes by</p>
+<p>This post is very messy and mostly made for testing code blocks.</p>
 </blockquote>
 <h2 id="vibe">Vibe:</h2>
 <p>I had used <code>mpd</code> and <code>ncmpcpp</code> for my music for a long time now, but decided to switch to <code>mpv</code> for the simplicity, and to make things even easier, I wrote this script, which shuffles all of the music files in the chosen directory and plays them in a terminal window, with album art in it&rsquo;s own small, separate window. If you wanted, you could remove the last line entirely and just manually point it to a specific file:</p>
@@ -120,6 +120,116 @@ youtube-dl <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>    -x <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>    --audio-format mp3 <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>    <span style="color:#e6db74">&#34;</span>$@<span style="color:#e6db74">&#34;</span>
+</code></pre></div><h2 id="centerwindow">Centerwindow</h2>
+<p>Taken shamelessly from the <a href="https://github.com/wmutils/core">wmutils readme</a>, this script will center a window, regardless of WM:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#!/bin/sh
+</span><span style="color:#75715e"></span>
+WID<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>pfw<span style="color:#66d9ef">)</span>
+WW<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>wattr w $WID<span style="color:#66d9ef">)</span>
+WH<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>wattr h $WID<span style="color:#66d9ef">)</span>
+
+ROOT<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>lsw -r<span style="color:#66d9ef">)</span>
+SW<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>wattr w $ROOT<span style="color:#66d9ef">)</span>
+SH<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>wattr h $ROOT<span style="color:#66d9ef">)</span>
+
+wtp <span style="color:#66d9ef">$((</span><span style="color:#f92672">(</span>SW <span style="color:#f92672">-</span> WW<span style="color:#f92672">)/</span><span style="color:#ae81ff">2</span><span style="color:#66d9ef">))</span> <span style="color:#66d9ef">$((</span><span style="color:#f92672">(</span>SH <span style="color:#f92672">-</span> WH<span style="color:#f92672">)/</span><span style="color:#ae81ff">2</span><span style="color:#66d9ef">))</span> $WW $WH $WID
+</code></pre></div><h2 id="dl">DL</h2>
+<p>Just a curl script that will always work, has a neat little progress bar as well. I mostly made this to avoid having to use curl flags over and again:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#!/bin/sh
+</span><span style="color:#75715e"></span>
+<span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span> <span style="color:#f92672">||</span> <span style="color:#f92672">{</span> read -r inp <span style="color:#f92672">&amp;&amp;</span> set <span style="color:#e6db74">&#34;</span>$inp<span style="color:#e6db74">&#34;</span> ; <span style="color:#f92672">}</span>
+
+usage<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    &gt;&amp;<span style="color:#ae81ff">2</span> print <span style="color:#e6db74">&#39;Usage: %s [-m] link &lt;output&gt;\n&#39;</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>0##*/<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+    exit <span style="color:#ae81ff">1</span>
+<span style="color:#f92672">}</span>
+
+_dl<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    curl <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>        --disable <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>        --ipv4 <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>        --location <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>        --retry <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>        --progress-bar <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>        --continue-at - <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>        --url <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>        --output <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>2<span style="color:#66d9ef">:-</span><span style="color:#e6db74">${</span>1##*/<span style="color:#e6db74">}}</span><span style="color:#e6db74">&#34;</span>
+<span style="color:#f92672">}</span>
+
+mass_dl<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    tmp<span style="color:#f92672">=</span>/tmp/$$
+    <span style="color:#e6db74">${</span>EDITOR<span style="color:#66d9ef">:-</span>vi<span style="color:#e6db74">}</span> $tmp
+    count<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+    <span style="color:#66d9ef">while</span> read -r url name ; <span style="color:#66d9ef">do</span>
+        count<span style="color:#f92672">=</span><span style="color:#66d9ef">$((</span>count <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#66d9ef">))</span>
+        _dl <span style="color:#e6db74">&#34;</span>$url<span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;</span>$count<span style="color:#e6db74">-</span><span style="color:#e6db74">${</span>name<span style="color:#66d9ef">:-</span>download.jpg<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> &amp;
+    <span style="color:#66d9ef">done</span> &lt; $tmp
+    wait
+    rm $tmp
+<span style="color:#f92672">}</span>
+
+main<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">case</span> <span style="color:#e6db74">${</span>1#-<span style="color:#e6db74">}</span> in
+        h<span style="color:#f92672">)</span> usage ;;
+        m|v<span style="color:#f92672">)</span> mass_dl ;;
+        *<span style="color:#f92672">)</span> _dl <span style="color:#e6db74">&#34;</span>$@<span style="color:#e6db74">&#34;</span>
+    <span style="color:#66d9ef">esac</span>
+<span style="color:#f92672">}</span>
+
+main <span style="color:#e6db74">&#34;</span>$@<span style="color:#e6db74">&#34;</span>
+</code></pre></div><h2 id="ext">EXT</h2>
+<p>Detects what kind of archive you are pointing it at and extracts it properly, I made this to remove my dependency on GUI file managers:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#!/bin/sh
+</span><span style="color:#75715e"></span>
+usage<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    &gt;&amp;<span style="color:#ae81ff">2</span> printf <span style="color:#e6db74">&#39;%s\n&#39;</span> <span style="color:#e6db74">&#34;Usage: </span><span style="color:#e6db74">${</span>0##*/<span style="color:#e6db74">}</span><span style="color:#e6db74"> [-c copy_path] file&#34;</span>
+    exit <span style="color:#ae81ff">1</span>
+<span style="color:#f92672">}</span>
+
+decompress<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">case</span> <span style="color:#e6db74">${</span>1##*.<span style="color:#e6db74">}</span> in
+        gz|tgz<span style="color:#f92672">)</span>  gunzip -qdc <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> ;;
+        xz|txz<span style="color:#f92672">)</span>  xz -qdcT <span style="color:#ae81ff">0</span> <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span>  ;;
+        bz2|tbz<span style="color:#f92672">)</span> bunzip2 -qdc <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> ;;
+    <span style="color:#66d9ef">esac</span>
+<span style="color:#f92672">}</span>
+
+run<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">case</span> $1 in
+        *tar.*|*.tgz|*.txz|*.tbz<span style="color:#f92672">)</span>
+            decompress <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> | <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>            tar -C <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>COPY_PATH<span style="color:#66d9ef">:-</span>$PWD<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> -xpf -
+            ;;
+        *.xz|*.gz|*.bz2<span style="color:#f92672">)</span>
+            decompress <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>COPY_PATH<span style="color:#66d9ef">:-</span>$PWD<span style="color:#e6db74">}</span><span style="color:#e6db74">/</span><span style="color:#e6db74">${</span>1%.*<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+            ;;
+        *.zip<span style="color:#f92672">)</span>
+            unzip -q <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> -d <span style="color:#e6db74">&#34;</span>$2<span style="color:#e6db74">&#34;</span>
+            ;;
+        *.rar<span style="color:#f92672">)</span>
+            unrar x <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span>
+            ;;
+        *.7z<span style="color:#f92672">)</span>
+            7z x <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span>
+            ;;
+        *<span style="color:#f92672">)</span>
+            &gt;&amp;<span style="color:#ae81ff">2</span> echo <span style="color:#e6db74">&#34;Unrecognized compression format: </span><span style="color:#e6db74">${</span>1##*.<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+    <span style="color:#66d9ef">esac</span>
+<span style="color:#f92672">}</span>
+
+<span style="color:#66d9ef">while</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span> ; <span style="color:#66d9ef">do</span>
+    <span style="color:#66d9ef">case</span> $1 in
+        -h|h<span style="color:#f92672">)</span>
+            usage
+            ;;
+        -C|-c<span style="color:#f92672">)</span>
+            COPY_PATH<span style="color:#f92672">=</span>$1
+            ;;
+        *<span style="color:#f92672">)</span>
+            run <span style="color:#e6db74">&#34;</span>$@<span style="color:#e6db74">&#34;</span>
+    <span style="color:#66d9ef">esac</span>
+    shift
+<span style="color:#66d9ef">done</span>
 </code></pre></div>
 			</div>
 		</article>
