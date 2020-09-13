@@ -10,6 +10,12 @@ Here are ~~all~~ most of the Rices that I have made on my computer over the last
 
 &nbsp;
 
+# Surrounded but Alone.
+
+![img](https://raw.githubusercontent.com/co1ncidence/dotless/master/screenshots/what17.png)
+
+---
+
 # The Forester.
 
 ![img](https://i.postimg.cc/vH9yZzb9/forester.png)
