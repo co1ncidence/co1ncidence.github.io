@@ -11,10 +11,12 @@ Just a list of some software I find nice to use:
 
 | Software                                                               | Description                                        |
 |------------------------------------------------------------------------|----------------------------------------------------|
+|**[dash](https://wiki.archlinux.org/index.php/Dash)                     | Fast and powerful POSIX shell
 |**[giph](https://github.com/phisch/giph)**                              | Customizable and easy to use GIF recorder          |
 |**[maim](https://github.com/naelstrof/maim)**                           | Extremely powerful CLI screenshot tool             |
 |**[SXIV](https://github.com/muennich/sxiv)**                            | "Simple X Image Viewer"                            |
 |**[birch](https://github.com/dylanaraps/birch)**                        | Freenode IRC client written in bash                |
+|**[herbe](https://github.com/dudik/herbe)                               | Simple, yet DBus free notifications                |
 |**[farge](https://github.com/sdushantha/farge)**                        | Simple Colorpicker written in bash                 |
 |**[ungoogled-chromium](https://github.com/Eloston/ungoogled-chromium)** | Browse safely and google-free, no compromises      |
 |**[ST](https://st.suckless.org/)**                                      | Simple Terminal                                    |
