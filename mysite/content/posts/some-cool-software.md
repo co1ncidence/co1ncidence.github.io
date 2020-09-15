@@ -11,7 +11,7 @@ Just a list of some software I find nice to use:
 
 | Software                                                               | Description                                        |
 |------------------------------------------------------------------------|----------------------------------------------------|
-|**[dash](https://wiki.archlinux.org/index.php/Dash)                     | Fast and powerful POSIX shell
+|**[dash](https://wiki.archlinux.org/index.php/Dash)                     | Fast and powerful POSIX shell                      |
 |**[giph](https://github.com/phisch/giph)**                              | Customizable and easy to use GIF recorder          |
 |**[maim](https://github.com/naelstrof/maim)**                           | Extremely powerful CLI screenshot tool             |
 |**[SXIV](https://github.com/muennich/sxiv)**                            | "Simple X Image Viewer"                            |
