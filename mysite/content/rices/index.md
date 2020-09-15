@@ -12,7 +12,7 @@ Here are ~~all~~ most of the Rices that I have made on my computer over the last
 
 # Surrounded but Alone.
 
-![img](https://raw.githubusercontent.com/co1ncidence/dotless/master/screenshots/what18.png)
+![img](https://raw.githubusercontent.com/co1ncidence/dotless/master/screenshots/what.png)
 
 ---
 
