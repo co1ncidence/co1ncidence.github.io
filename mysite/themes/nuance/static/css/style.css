@@ -34,7 +34,7 @@ nav {
   padding-bottom: 0.3em;
   border-bottom: 3px solid #535353;
   margin-bottom: -1em;
-  font-family: "Roboto Mono", "JetBrains Mono", "IBM Plex Mono", "SF Mono", "Consolas", monospace;
+  font-family: "Roboto Mono Light", "JetBrains Mono Light", "IBM Plex Mon Light", "SF Mono Light", "Consolas Light", monospace;
 }
 
 h1,
@@ -43,7 +43,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto Mono", "JetBrains Mono", "IBM Plex Mono", "SF Mono", "Consolas", monospace;
+  font-family: "Roboto Mono Light", "JetBrains Mono Light", "IBM Plex Mon Light", "SF Mono Light", "Consolas Light", monospace;
   font-weight: bold;
   color: #494949;
   line-height: 1.2;
