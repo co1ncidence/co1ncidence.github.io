@@ -23,7 +23,7 @@ exec mpv --geometry=200x200+1600+800 \
 
 ## Upload (0x0):
 
-Using pastebins was getting tiring and time consuming, so I decided to hop on the 0x0 train with my own script, this one will upload the chosen file to 0x0 using `curl` and then save the output URL to your clipboard, making external hosting extremely fast and easy:
+Written by [vizs](https://github.com/vizs), this one will upload the chosen file to 0x0 using `curl` and then save the output URL to your clipboard, making external hosting extremely fast and easy:
 
 ```sh
 #!/bin/sh
