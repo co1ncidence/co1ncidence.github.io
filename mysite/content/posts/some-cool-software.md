@@ -23,13 +23,13 @@ Just a list of some software I find nice to use:
 |**[ST](https://st.suckless.org/)**                                      | Simple Terminal                                        |
 |**[scr](https://github.com/6gk/scr)**                                   | Super Crappy SCReenshot SCRipt for Sound Cloud Rappers |
 |**[vimtex](https://github.com/lervag/vimtex)**                          | Make LaTeX in Vim a breeze to edit                     |
+|**[neovim](https://github.com/neovim/neovim)**                          | Objectively the best editor                            |
 |**[shfm](https://github.com/dylanaraps/shfm)**                          | Terminal file browser written in posix shell           |
 |**[KISS Linux](https://github.com/kisslinux)**                          | An independent Linux Distro focused on simplicity      |
-|**[cchat-gtk](https://github.com/diamondburned/cchat-gtk)**             | GTK+ frontend for cchat                                |
 |**[cfm](https://github.com/WillEccles/cfm)**                            | Simple and fast terminal file manager                  |
-|**[ORW](https://github.com/s0la/orw)**                                  | Extremely extensible Openbox Ricing Wrapper            |
 |**[epy](https://github.com/wustho/epy)**                                | Terminal based Ebook reader                            |
 |**[PDF Viewer Plus](https://github.com/JavaCafe01/PdfViewer)**          | The best mobile PDF viewer there is                    |
+|**[ripcord](https://cancel.fm)**                                        | Not great, but it's a minimal discord client           |
 |**[doas](https://github.com/slicer69/doas)**                            | Simple and light `sudo` replacement                    |
 |**[wpm](https://pypi.org/project/wpm/)**                                | Command line typing test                               |
 |**[monkey-type](https://github.com/s0la/orw)**                          | Clean, fun, and minimal typing test                    |
