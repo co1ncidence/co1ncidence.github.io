@@ -1,6 +1,7 @@
 html {
   overflow-y: scroll;
   background-color: #f0f0f0;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -11,9 +12,9 @@ body {
   padding-left: 10ch;
   padding-top: 7ch;
   padding-bottom: 7ch;
-  font-family: "iA Writer Mono V", "Roboto Mono", monospace;
+  font-family: "iA Writer Mono S", "Roboto Mono", "SF Mono", monospace;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.8em;
   background-color: #f5f5f5;
   color: #535353;
   border-radius: 30px;
@@ -34,7 +35,7 @@ nav {
   padding-bottom: 0.3em;
   border-bottom: 3px solid #535353;
   margin-bottom: -1em;
-  font-family: "iA Writer Mono V", "Roboto Mono", monospace;
+  font-family: "iA Writer Mono S", "Roboto Mono", "SF Mono", monospace;
 }
 
 h1,
@@ -43,9 +44,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "iA Writer Mono V", "Roboto Mono", monospace;
+  font-family: "iA Writer Mono S", "Roboto Mono", "SF Mono", monospace;
   color: #494949;
   line-height: 1.2;
+  text-rendering: optimizeLegibility;
 }
 
 time {
@@ -55,7 +57,7 @@ time {
 
 
 .title {
-  font-family: "iA Writer Mono V", "Roboto Mono", monospace;
+  font-family: "iA Writer Mono S", "Roboto Mono", "SF Mono", monospace;
   font-size: 2em;
   color: #ac8a8c;
   text-decoration: none;

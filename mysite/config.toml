@@ -17,7 +17,7 @@ googleAnalytics = ""
    subTitle = "Garfield Hates Monday And So Do I"
    dateFormat = "2006-01-02"
    paginationSinglePost = true
-   customCSS = []
+   customCSS = ["css/style.css"]
 
 [menu]
 
