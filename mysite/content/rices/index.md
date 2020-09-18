@@ -10,9 +10,9 @@ Here are ~~all~~ most of the Rices that I have made on my computer over the last
 
 &nbsp;
 
-# Surrounded But Alone
+# Bliss v2.
 
-![img](https://raw.githubusercontent.com/co1ncidence/dotless/master/screenshots/comfy.png)
+![img](https://raw.githubusercontent.com/co1ncidence/dotless/master/scr/comfyaf.png)
 
 ---
 
