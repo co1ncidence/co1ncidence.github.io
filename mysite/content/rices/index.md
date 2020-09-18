@@ -12,21 +12,21 @@ Here are ~~all~~ most of the Rices that I have made on my computer over the last
 
 # Bliss v2.
 
-![img](https://raw.githubusercontent.com/co1ncidence/dotless/master/scr/comfyaf.png)
-
 ---
+
+![img](https://raw.githubusercontent.com/co1ncidence/dotless/master/scr/comfyaf.png)
 
 # The Forester.
 
-![img](https://i.postimg.cc/vH9yZzb9/forester.png)
-
 ---
+
+![img](https://i.postimg.cc/vH9yZzb9/forester.png)
 
 # Dark Inside.
 
-![img](https://i.postimg.cc/kg4S1bgh/hola.png)
-
 ---
+
+![img](https://i.postimg.cc/kg4S1bgh/hola.png)
 
 # The Mountaineer.
 
