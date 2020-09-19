@@ -14,13 +14,15 @@ Normally when you push a newly modified repository, you would need to do 3 or 4 
 ```sh
 #!/bin/sh
 
-msg="$(date)"
+[ -z "$1" ] && \
+    msg="docs:update" || \
+    msg="$1"
 
 git add .
 git commit -m "${msg}"
 git push origin master
 ```
-This script will stage all of your files to commit and give the commit a variable message, which is the current `date` on your system. It will then push the repository to its master branch. This script, which I've named `push`, should work for many of your pushing needs, since anything more detailed would require you to think the process through anyway.
+This script will stage all of the files in your current git directory for a commit, and use whatever argument you pass after it as the commit message. If you don't give any message to the script, it will use `docs:update` and push with that.
 
 ## Second, Make Git Stop Asking For Usernames/Passwords
 

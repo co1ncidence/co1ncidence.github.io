@@ -9,7 +9,7 @@
 	<meta name="description" content="Just a place where I rant and sometimes say something smart">
 	<meta name="author" content="nuaNce">
 	<link rel="stylesheet" href="/css/style.css">
-	<link rel="stylesheet" href="/css/style.css?rnd=1600517082">
+	<link rel="stylesheet" href="/css/style.css?rnd=1600517657">
 	
 </head>
 <body>
@@ -47,12 +47,14 @@
 <p>Normally when you push a newly modified repository, you would need to do 3 or 4 different commands, I&rsquo;ve found it much easier to just make a shell script like this and then place it in my <code>$PATH</code> for easy usage:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#!/bin/sh
 </span><span style="color:#75715e"></span>
-msg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>date<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+<span style="color:#f92672">[</span> -z <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    msg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;docs:update&#34;</span> <span style="color:#f92672">||</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    msg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span>
 
 git add .
 git commit -m <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>msg<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
 git push origin master
-</code></pre></div><p>This script will stage all of your files to commit and give the commit a variable message, which is the current <code>date</code> on your system. It will then push the repository to its master branch. This script, which I&rsquo;ve named <code>push</code>, should work for many of your pushing needs, since anything more detailed would require you to think the process through anyway.</p>
+</code></pre></div><p>This script will stage all of the files in your current git directory for a commit, and use whatever argument you pass after it as the commit message. If you don&rsquo;t give any message to the script, it will use <code>docs:update</code> and push with that.</p>
 <h2 id="second-make-git-stop-asking-for-usernamespasswords">Second, Make Git Stop Asking For Usernames/Passwords</h2>
 <p>Another annoying thing that occurs when pushing repositories is that git always asks you for your username and password, which can get very tedious after a while. Fortunately, <code>git config</code> has a built in system to override this. First, you have to set your default github url to that of your username with this command, just replace <code>&lt;username&gt;</code> with your git username:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git config --global url.<span style="color:#e6db74">&#34;https://&lt;username&gt;@github.com&#34;</span>.insteadOf <span style="color:#e6db74">&#34;https://github.com&#34;</span>

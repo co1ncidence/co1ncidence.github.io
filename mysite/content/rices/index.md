@@ -16,12 +16,6 @@ Here are ~~all~~ most of the Rices that I have made on my computer over the last
 
 ![img](https://raw.githubusercontent.com/co1ncidence/dotless/master/scr/comfyaf.png)
 
-# The Forester.
-
----
-
-![img](https://i.postimg.cc/vH9yZzb9/forester.png)
-
 # Dark Inside.
 
 ---

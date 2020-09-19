@@ -40,7 +40,7 @@ time {
   color: #494949;
   line-height: 2;
   margin-top: -0.5em;
-  margin-bottom: 1.5em;
+  margin-bottom: 0.5em;
 }
 
 .title {
@@ -135,8 +135,8 @@ article {
 .image, figure img, img {
   width: 100%;
   margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 25px;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 blockquote {
