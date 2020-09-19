@@ -1,3 +1,5 @@
+/* ---------  Main Things ---------  */
+
 html {
   overflow-y: scroll;
   -webkit-font-smoothing: antialiased;
@@ -6,17 +8,17 @@ html {
 body {
   max-width: 900px;
   width: 100vw;
-  margin: -5vh auto;
-  padding-right: 10ch;
-  padding-left: 10ch;
-  padding-top: 7ch;
-  padding-bottom: 7ch;
+  margin: 0 auto;
+  padding-top: 3ch;
+  padding-bottom: 3ch;
   font-family: "iA Writer Mono S", "Roboto Mono", "SF Mono", monospace;
   font-size: 20px;
   line-height: 1.8em;
   background-color: #f5f5f5;
   color: #535353;
 }
+
+/* ---------  Headers ---------  */
 
 header {
   color: #535353;
@@ -36,6 +38,8 @@ h6 {
   text-shadow: 1px 1px 0px rgba(150, 150, 150, 0.43);
 }
 
+/* ---------  Time Published ---------  */
+
 time {
   display: block;
   color: #494949;
@@ -44,6 +48,8 @@ time {
   margin-bottom: 0.5em;
   text-shadow: 1px 1px 0px rgba(150, 150, 150, 0.43);
 }
+
+/* ---------  Website Title ---------  */
 
 .title {
   width: 60%;
@@ -65,6 +71,8 @@ time {
   color: #C49EA0;
 }
 
+/* ---------  Nav bar ---------  */
+
 nav {
   display: block;
   margin-left: auto;
@@ -84,6 +92,8 @@ nav {
   box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.21);
 }
 
+/* ---------  Links ---------  */
+
 a {
   color: #617878;
   text-decoration: underline;
@@ -94,6 +104,8 @@ a:focus {
   color: #7B9899;
   text-decoration: none;
 }
+
+/* ---------  Code ---------  */
 
 p > code {
   padding-left: 0.5em;
@@ -113,8 +125,8 @@ pre {
 	overflow-y: hidden;
 	font-size: 16px;
 	line-height: 1.8;
-  margin-top: 50px;
-  margin-bottom: 60px;
+  margin-top: 30px;
+  margin-bottom: 40px;
 	padding: 28px;
   border: 5px solid #272822;
   -webkit-box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.31);
@@ -122,8 +134,10 @@ pre {
   box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.31);
 }
 
+/* ---------- Articles --------- */
+
 article {
-  padding:24px 0
+  padding: 24px 0;
 }
 
 .center {
@@ -133,12 +147,16 @@ article {
   width: 100%;
 }
 
+/* ---------  Images ---------  */
+
 .image, figure img, img {
   width: 100%;
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 15px;
 }
+
+/* ---------  Quotes ---------  */
 
 blockquote {
   margin-left: 0em;
@@ -154,6 +172,8 @@ blockquote {
   -moz-box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.31);
   box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.31);
 }
+
+/* ---------  Table ---------  */
 
 table {
   width: 100%;
@@ -178,6 +198,8 @@ table thead {
   background-color: transparent;
 }
 
+/* ---------  Scrollbar ---------  */
+
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -196,6 +218,8 @@ table thead {
 ::-webkit-scrollbar-thumb:window-inactive {
     background: #38322e;
 }
+
+/* ---------  Text Selection ---------  */
 
 ::-moz-selection {
   background: #C7ECF7;
