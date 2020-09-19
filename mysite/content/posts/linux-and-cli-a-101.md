@@ -30,7 +30,7 @@ And finally, and most likely **The Most Important Thing You Will Read Here**, yo
 **If you follow these steps and effectively search  for solutions, you will learn far better and faster than any other way.**
 
 ## Second, Some Linux Basics
-In this section I will be discussing some basics Linux concept, terminology, and tip/tricks that every user should know before they dive deeper into the operating system.
+In this section I will be discussing some basic Linux concepts, terminology, and tip/tricks that every user should know before they dive deeper into the operating system.
 
 ### The Linux File System
 In Linux and other UNIX-based operating systems, almost everything is available to the user as a file or folder. This results in your system being essentially just one massive file system. Imagine it this way, your entire Linux install is one huge folder, called `/`, this folder contains everything your system and the programs on it need to function and work together. You can use the `tree` command on the base `/` folder to better visualize this:
