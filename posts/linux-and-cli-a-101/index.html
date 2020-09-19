@@ -9,7 +9,7 @@
 	<meta name="description" content="Just a place where I rant and sometimes say something smart">
 	<meta name="author" content="nuaNce">
 	<link rel="stylesheet" href="/css/style.css">
-	<link rel="stylesheet" href="/css/style.css?rnd=1600522044">
+	<link rel="stylesheet" href="/css/style.css?rnd=1600522222">
 	
 </head>
 <body>
@@ -271,8 +271,9 @@ However, unlike the other file management commands, <code>rm</code> cannot remov
 </code></pre></div><h3 id="elevating-permissions">Elevating Permissions</h3>
 <p>Sometimes, your user may not have the necessary permissions to execute certain commands on a file or folder, this is because the owner of said file/folder is the <strong>root user</strong>, to obtain the abilities of the root user, you just have to place the word <code>sudo</code> behind your command. <code>sudo</code> stands for &ldquo;Super User DO&rdquo;, and will allow you to run commands with elevated (or &ldquo;root&rdquo;) permissions, here is an example:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> sudo apt install firefox
-</code></pre></div><p>This command will install <code>firefox</code> on your system. You will almost always need root permission to install a package on your system. Root permissions can be very dangerous however, as you can very easily delete everything on your computer. So it is vital to remember that whenever something requires you to be root to run a command, always make sure you know what you are doing, and be aware that there is a reason that there is a reason for a password to be between you and the execution of this command. Stay safe.</p>
-<p><code>chmod</code> is a command that can be used to change the permissions a file has. These permissions include reading, writing, and changing whether a file can be executable or not. You can use <code>chmod</code> plus/minus a letter like this: <code>chmod +x</code> to add or remove a permission from a file. To view the permissions of all files and folders in your current directory, run the <code>ls</code> command with the <code>-l</code> flag:</p>
+</code></pre></div><p>This command will install <code>firefox</code> on your system. You will almost always need root permission to install a package. Root permissions can be very dangerous however, as you can very easily delete something important or break your installation. So it is vital you always make sure you know what you are doing when asked to run a command as root, and be aware that there is a reason that there is a reason for a password to be between you and the execution of this command.</p>
+<p><code>chmod</code> is a command that can be used to change the permissions a file or folder has. These permissions include reading, writing, and changing whether a file can be executable or not. You can use <code>chmod</code> plus/minus a letter like this: <code>chmod +x</code> to add or remove a permission from a file. To view the permissions of all files and folders in your current directory, run the <code>ls</code> command with the <code>-l</code> flag:</p>
+<p><code>chown</code> is like <code>chmod</code>, but instead of changing a file or folders permissions, it transfers ownership of that target to a user that you specify.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> ls -l
 total <span style="color:#ae81ff">20</span>
 drwxr-xr-x <span style="color:#ae81ff">33</span> co1ncidence co1ncidence <span style="color:#ae81ff">4096</span> Sep  <span style="color:#ae81ff">8</span> 16:58 etc/

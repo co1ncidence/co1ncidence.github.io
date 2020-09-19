@@ -360,9 +360,11 @@ Sometimes, your user may not have the necessary permissions to execute certain c
 ```sh
 [$] sudo apt install firefox
 ```
- This command will install `firefox` on your system. You will almost always need root permission to install a package on your system. Root permissions can be very dangerous however, as you can very easily delete everything on your computer. So it is vital to remember that whenever something requires you to be root to run a command, always make sure you know what you are doing, and be aware that there is a reason that there is a reason for a password to be between you and the execution of this command. Stay safe.
+ This command will install `firefox` on your system. You will almost always need root permission to install a package. Root permissions can be very dangerous however, as you can very easily delete something important or break your installation. So it is vital you always make sure you know what you are doing when asked to run a command as root, and be aware that there is a reason that there is a reason for a password to be between you and the execution of this command.
 
-`chmod` is a command that can be used to change the permissions a file has. These permissions include reading, writing, and changing whether a file can be executable or not. You can use `chmod` plus/minus a letter like this: `chmod +x` to add or remove a permission from a file. To view the permissions of all files and folders in your current directory, run the `ls` command with the `-l` flag:
+`chmod` is a command that can be used to change the permissions a file or folder has. These permissions include reading, writing, and changing whether a file can be executable or not. You can use `chmod` plus/minus a letter like this: `chmod +x` to add or remove a permission from a file. To view the permissions of all files and folders in your current directory, run the `ls` command with the `-l` flag:
+
+`chown` is like `chmod`, but instead of changing a file or folders permissions, it transfers ownership of that target to a user that you specify.
 
 ```sh
 [$] ls -l
