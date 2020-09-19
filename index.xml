@@ -17,8 +17,7 @@
       <pubDate>Tue, 08 Sep 2020 21:12:44 -0500</pubDate>
       
       <guid>https://co1ncidence.github.io/posts/some-cool-scripts/</guid>
-      <description>This post is very messy and mostly made for testing code blocks.
- Vibe: I had used mpd and ncmpcpp for my music for a long time now, but decided to switch to mpv for the simplicity, and to make things even easier, I wrote this script, which shuffles all of the music files in the chosen directory and plays them in a terminal window, with album art in it&amp;rsquo;s own small, separate window.</description>
+      <description>&lt;p&gt;Recently I&amp;rsquo;ve gained a bit of an obsession with shell scripting. Something about just being able to write little scripts that can do big tasks for you in little time seems very appealing to me. So in this post I&amp;rsquo;ve compiled a few of my favorite scripts, most of which I make use of on a daily basis:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -54,8 +53,15 @@
       <pubDate>Mon, 17 Aug 2020 10:43:39 -0500</pubDate>
       
       <guid>https://co1ncidence.github.io/posts/some-cool-software/</guid>
-      <description>Just a list of some software I find nice to use:
-   Software Description     dash Fast and powerful POSIX shell   giph Customizable and easy to use GIF recorder   maim Extremely powerful CLI screenshot tool   mpv Simple yet featureful CLI media player   SXIV &amp;ldquo;Simple X Image Viewer&amp;rdquo;   birch Freenode IRC client written in bash   herbe Simple, yet DBus free notifications   farge Simple Colorpicker written in bash   ung-chromium Browse safely and Google-free, no compromises   ST Simple Terminal   scr Super Crappy SCReenshot SCRipt for Sound Cloud Rappers   vimtex Make LaTeX in Vim a breeze to edit   ale A complete syntax checker and linter for Vim   neovim Objectively the best editor   shfm Terminal file browser written in posix shell   KISS Linux An independent Linux Distro focused on simplicity   cfm Simple and fast terminal file manager   epy Terminal based Ebook reader   PDF Viewer Plus The best mobile PDF viewer there is   ripcord Not great, but it&amp;rsquo;s a minimal discord client   doas Simple and light sudo replacement   wpm Command line typing test   monkey-type Clean, fun, and minimal typing test   wmutils Very extensible set of WM utilities   0x0 Effective, No-Bullshit file hosting    </description>
+      <description>&lt;p&gt;Just a list of some software I find nice to use. A lot of these correlate with &lt;a href=&#34;https://github.com/co1ncidence?tab=stars&#34;&gt;my stars on github&lt;/a&gt;, so be sure to check them out as well if you want some other nice things to use. My preferences with software usually boil down to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It gets the job done&lt;/li&gt;
+&lt;li&gt;It&amp;rsquo;s smaller in size than similar software&lt;/li&gt;
+&lt;li&gt;It&amp;rsquo;s free and open source&lt;/li&gt;
+&lt;li&gt;It&amp;rsquo;s not overrated normie shit&lt;/li&gt;
+&lt;li&gt;And it mixes well with my workflow&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now with that out of the way, here are some of my software faves:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -64,7 +70,7 @@
       <pubDate>Sat, 15 Aug 2020 14:15:28 -0500</pubDate>
       
       <guid>https://co1ncidence.github.io/posts/linux-and-cli-a-101/</guid>
-      <description>When I first started with Linux, and especially the command line, It was difficult to find a truly optimal and comprehensive guide to everything I needed to know. While most tutorials were decent and gave me a good starting point, they usually provided insufficient information or didn&amp;rsquo;t showcase the most optimal commands and strategies. I am making this list as more of a dump for all of the things that I have learned about Linux and the Command Line so far, which isn&amp;rsquo;t too much compared to some but I like to think that I know something.</description>
+      <description>&lt;p&gt;When I first started with Linux, and especially the command line, It was difficult to find a truly optimal and comprehensive guide to everything I needed to know. While most tutorials were decent and gave me a good starting point, they usually provided insufficient information or didn&amp;rsquo;t showcase the most optimal commands and strategies. I am making this list as more of a dump for all of the things that I have learned about Linux and the Command Line so far. While my knowledge isn&amp;rsquo;t too much compared to some, I like to think that I know something. So without further ado, here is my guide to help boost you up in the Linux elitist ladder:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -73,8 +79,8 @@
       <pubDate>Wed, 05 Aug 2020 15:58:49 -0500</pubDate>
       
       <guid>https://co1ncidence.github.io/posts/top-10-best-looking-cars/</guid>
-      <description>Mercedes AMG GT-R One of the only cars in recent times to really pose a threat to the sales of the 911, the GT does a good job of representing a similar muscular and round look while also adhering to the aesthetic of it&amp;rsquo;s predecessor, the SLS AMG.
-Datsun 240z Fairlady One of the most well-known sports cars of it&amp;rsquo;s time and now a JDM legend, the amount of things that have been done to the Datsun are insane, here is NightRide&amp;rsquo;s iteration of the vehicle, one of the best looking ones I&amp;rsquo;ve found:</description>
+      <description>&lt;p&gt;I&amp;rsquo;ve always liked cars and have been reading automotive journalism for many years now. While many things come into play when considering a vehicle to buy, none, in my opinion, are as important as how good your car looks. So I&amp;rsquo;ve compiled a list of what I think are the best looking cars that I have ever seen. Expect this list to vary over time, however, since it&amp;rsquo;s hard for me not to change my mind about these things all the time:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;:P&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -93,7 +99,7 @@ Datsun 240z Fairlady One of the most well-known sports cars of it&amp;rsquo;s ti
       <pubDate>Sun, 02 Aug 2020 23:44:22 -0500</pubDate>
       
       <guid>https://co1ncidence.github.io/about/</guid>
-      <description>Just a lost windrunner who spends too much of his time wasting it, mostly due to my obsession with Linux and ricing. Along with, of course, a good peach and chocolate covered almonds, nothing wastes time like those do.
+      <description>Just a lost windrunner who spends too much of my wasting it, mostly due to my obsession with Linux and ricing. Along with, of course, a good peach and chocolate covered almonds, nothing wastes time like those do.
 I&amp;rsquo;ve always been a fan of the Fjords of Norway but recently discovered the beauty of places like Iceland and Baffin Island, both of which are making my bucket list seem quite expensive.</description>
     </item>
     

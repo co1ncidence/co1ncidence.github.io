@@ -6,7 +6,9 @@ tags:
   - Productivity
 ---
 
-When I first started with Linux, and especially the command line, It was difficult to find a truly optimal and comprehensive guide to everything I needed to know. While most tutorials were decent and gave me a good starting point, they usually provided insufficient information or didn't showcase the most optimal commands and strategies. I am making this list as more of a dump for all of the things that I have learned about Linux and the Command Line so far, which isn't too much compared to some but I like to think that I know something. So without further ado, here is my basic guide to boost you up in the Linux elitist ladder. And as a final note, unless specified, all of these commands are being run from the default (home) folder that your terminal puts you in.
+When I first started with Linux, and especially the command line, It was difficult to find a truly optimal and comprehensive guide to everything I needed to know. While most tutorials were decent and gave me a good starting point, they usually provided insufficient information or didn't showcase the most optimal commands and strategies. I am making this list as more of a dump for all of the things that I have learned about Linux and the Command Line so far. While my knowledge isn't too much compared to some, I like to think that I know something. So without further ado, here is my guide to help boost you up in the Linux elitist ladder:
+
+<!--more-->
 
 > Always remember: **RTFM** - "Read The F***ing Manual"
 

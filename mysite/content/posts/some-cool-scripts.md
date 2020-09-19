@@ -5,7 +5,9 @@ tags:
   - Showcase
 ---
 
-> This post is very messy and mostly made for testing code blocks.
+Recently I've gained a bit of an obsession with shell scripting. Something about just being able to write little scripts that can do big tasks for you in little time seems very appealing to me. So in this post I've compiled a few of my favorite scripts, most of which I make use of on a daily basis:
+
+<!--more-->
 
 ## Vibe:
 

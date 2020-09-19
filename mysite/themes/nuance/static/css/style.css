@@ -196,3 +196,11 @@ table thead {
 ::-webkit-scrollbar-thumb:window-inactive {
     background: #38322e;
 }
+
+::-moz-selection {
+  background: #C7ECF7;
+}
+
+::selection {
+  background: #C7ECF7;
+}
