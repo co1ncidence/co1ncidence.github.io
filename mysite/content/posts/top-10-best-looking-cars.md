@@ -8,8 +8,6 @@ tags:
 
 I've always liked cars and have been reading automotive journalism for many years now. While many things come into play when considering a vehicle to buy, none, in my opinion, are as important as how good your car looks. So I've compiled a list of what I think are the best looking cars that I have ever seen. Expect this list to vary over time, however, since it's hard for me not to change my mind about these things all the time:
 
-**:P**
-
 <!--more-->
 
 ## Mercedes AMG GT-R
