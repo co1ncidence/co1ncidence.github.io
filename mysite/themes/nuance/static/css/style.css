@@ -33,6 +33,7 @@ h6 {
   color: #494949;
   line-height: 1.2;
   text-rendering: optimizeLegibility;
+  text-shadow: 1px 1px 0px rgba(150, 150, 150, 0.43);
 }
 
 time {
@@ -41,6 +42,7 @@ time {
   line-height: 2;
   margin-top: -0.5em;
   margin-bottom: 0.5em;
+  text-shadow: 1px 1px 0px rgba(150, 150, 150, 0.43);
 }
 
 .title {
