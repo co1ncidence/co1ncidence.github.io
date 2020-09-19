@@ -13,11 +13,11 @@ Before we begin, a confession, I used to really like Windows, I admit that it wa
 ## What's wrong with Windows?
 
 I will divide this subsection into 5 categories and talk about them separately:
-  1. Slow, bloated interface, terrible UI design
-  2. Many security and privacy issues, constant spying from Microsoft
-  3. Software base being almost completely proprietary
-  4. Lack of control over system, too much going on without user consent
-  5. Other, more miscellaneous concerns
+  1. [Slow, bloated interface, terrible UI design](http://co1ncidence.github.io/posts/why-i-stopped-using-windows/#slow-bloated-interface-terrible-ui-design)
+  2. [Many security and privacy issues, constant spying from Microsoft](http://co1ncidence.github.io/posts/why-i-stopped-using-windows/#many-security-and-privacy-issues-constant-spying-from-microsoft)
+  3. [Software base being almost completely proprietary](http://co1ncidence.github.io/posts/why-i-stopped-using-windows/#software-base-being-almost-completely-proprietary)
+  4. [Lack of control over system, too much going on without user consent](http://co1ncidence.github.io/posts/why-i-stopped-using-windows/#lack-of-control-over-system-too-much-going-on-without-user-consent)
+  5. [Other, more miscellaneous concerns](http://co1ncidence.github.io/posts/why-i-stopped-using-windows/#other-more-miscellaneous-concerns)
 
 ### Slow, bloated Interface, terrible UI design
 
@@ -55,6 +55,8 @@ If you are someone who uses many different kinds of software, you have probably 
 ### Lack of control over system, too much going on without user consent
 
 It's almost as if Windows is designed to be as unintuitive and unusable as possible, with as little control being given to the user as possible whenever there is a chance. You can't control or delay (up to a certain extent) Windows updates, nor can you uninstall most of the programs that come with the computer. This gets more and more annoying as Windows updates come and go, since even if you do manage to debloat your system a little bit, all of those apps get reinstalled when the next update comes around. These updates are a pretty big nuisance as well. You can barely delay them, and when they do come, they can take up to 6 hours to finish and leave your system in an unusable state during that time, and due to their suddenness, some apps may not work for a bit after a recent Windows Update. Another thing that is concerning is the lack of any documentation on the many processes that are always running in the background when you are using your system. Customization options are also lacking, and changing things like the default Windows keybindings is almost impossible without doing some sort of high level hacking, even then, your options are very limited. In short, you are very limited with what you are allowed to do on Windows, this leads it to be an operating system that promotes lazy workflow habits and inefficiency out of the box. Especially for users who don't want to spend hours trying to find out how to change some small thing.
+
+### Other, more miscellaneous concerns
 
 ## Now, Why is Linux any better?
 This subsection too, will be divided into these categories:

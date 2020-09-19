@@ -29,7 +29,6 @@ h3,
 h4,
 h5,
 h6 {
-  text-align: center;
   font-family: "iA Writer Mono S", "Roboto Mono", "SF Mono", monospace;
   color: #494949;
   line-height: 1.2;
@@ -38,7 +37,6 @@ h6 {
 
 time {
   display: block;
-  text-align: center;
   color: #494949;
   line-height: 2;
   margin-top: -0.5em;
@@ -54,7 +52,7 @@ time {
   display: block;
   padding-top: 40px;
   padding-bottom: 30px;
-  border-bottom: 5px solid #e2e2e2;
+  border-bottom: 5px solid #f5f5f5;
   font-family: "iA Writer Mono S", "Roboto Mono", "SF Mono", monospace;
   font-size: 3em;
   color: #ac8a8c;
@@ -71,13 +69,14 @@ nav {
   margin-right: auto;
   text-align: center;
   width: 70%;
-  background-color: #efefef;
+  background-color: #ececec;
   color: #617878;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   margin-bottom: 1em;
   font-family: "iA Writer Mono S", "Roboto Mono", "SF Mono", monospace;
   font-size: 1.5em;
+  text-shadow: 1px 1px 0px rgba(150, 150, 150, 0.43);
   -webkit-box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.21);
   -moz-box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.21);
   box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.21);

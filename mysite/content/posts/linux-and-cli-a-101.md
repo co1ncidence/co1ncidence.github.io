@@ -70,7 +70,7 @@ This command only shows the biggest, main folders on your system. Each of these 
 `/home/`: This is where all of the home folders and files of all (normal) users on your system are, it is separated into folders with the usernames of said users, and contains specific files only accessible to said users. Here is where you will be spending around 90% of your time as a Linux user. Home folders usually contain the standard **Documents** or **Pictures** folders and the like, but also contain some important hidden folders, such as:
   - **.cache/**: this is where all of your users program's store their cache files
   - **.config/**: this is where all of your user-specific configuration files are stored
-  - **.local/**: this is the same (in terms of function) as the **/usr/** folder but for your current user only
+  - **.local/**: this is the same (in terms of function) as the **/usr/** folder but for your current user only.
 It is important to get to know your home folder well and to keep it nice and tidy, it is basically your main "workspace" on a Linux system.
 
 `/lib/ and /lib64/`: These are both symlinks to **/usr/lib/**, which we will discuss later.
