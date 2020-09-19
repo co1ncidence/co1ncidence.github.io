@@ -9,7 +9,7 @@
 	<meta name="description" content="Just a place where I rant and sometimes say something smart">
 	<meta name="author" content="nuaNce">
 	<link rel="stylesheet" href="/css/style.css">
-	<link rel="stylesheet" href="/css/style.css?rnd=1600475515">
+	<link rel="stylesheet" href="/css/style.css?rnd=1600492662">
 	
 </head>
 <body>
@@ -20,11 +20,11 @@
 	<nav>
 			
 			
-			<a style="text-decoration: none" href="/about/"><b>About Me -</b></a>
+			<a style="text-decoration: none" href="/about/"><b>About Me /</b></a>
 			
-			<a style="text-decoration: none" href="/posts/"><b>Posts -</b></a>
+			<a style="text-decoration: none" href="/posts/"><b>Posts /</b></a>
 			
-			<a style="text-decoration: none" href="/books/"><b>Books -</b></a>
+			<a style="text-decoration: none" href="/books/"><b>Books /</b></a>
 			
 			<a style="text-decoration: none" href="/rices/"><b>Rices</b></a>
 			
@@ -39,9 +39,7 @@
 			<h1>Linux and CLI, a 101</h1>
 			<b><time>08-15-2020</time></b>
 		       
-		           <a href="/tags/guide">#Guide</a>
         	       
-		           <a href="/tags/productivity">#Productivity</a>
         	       
 
 			<div>
@@ -90,7 +88,7 @@
 ├── usr
 └── var
 </code></pre></div><p>This command only shows the biggest, main folders on your system. Each of these is further subdivided into even more different folders and files. Going over the entire filesystem is an extremely daunting task, so I will just give a short briefing on the general purpose of each folder:</p>
-<p><code>/bin/</code>: This is a symlink, or symbolic link, to the <code>/usr/bin</code> folder, I will go over <strong>/usr</strong> as a whole in a bit.</p>
+<p><code>/bin/</code>: This is a symlink, or symbolic link, to the <code>/usr/bin/</code> folder, I will go over <strong>/usr/</strong> as a whole in a bit.</p>
 <p><code>/dev/</code>: This stands for &ldquo;Device&rdquo;, and is where all the devices connected to your system have there appropriate files, this can contain drives or peripherals. You will find your hard disks and their partitions labeled as <code>/dev/sda-z|1-9</code>.</p>
 <p><code>/etc/</code>: Originally stood for &ldquo;etcetera&rdquo;, now this is where all of the global configuration files of all the programs on your system are stored, such as, for example, those used by your init system or display manager:</p>
 <p><code>/home/</code>: This is where all of the home folders and files of all (normal) users on your system are, it is separated into folders with the usernames of said users, and contains specific files only accessible to said users. Here is where you will be spending around 90% of your time as a Linux user. Home folders usually contain the standard <strong>Documents</strong> or <strong>Pictures</strong> folders and the like, but also contain some important hidden folders, such as:</p>
@@ -100,18 +98,18 @@
 <li><strong>.local/</strong>: this is the same (in terms of function) as the <strong>/usr/</strong> folder but for your current user only
 It is important to get to know your home folder well and to keep it nice and tidy, it is basically your main &ldquo;workspace&rdquo; on a Linux system.</li>
 </ul>
-<p><code>/lib/ and /lib64</code>: These are both symlinks to <strong>/usr/lib</strong>, which we will discuss later.</p>
-<p><code>/lost+found</code>: This is an interesting folder, it is where the recovered bit&rsquo;s and pieces of other corrupted files can be found. In general, however, you will never need to go near here.</p>
-<p><code>/mnt</code>: This is where USB drives and other mounted devices, and their contents, can be found. It will usually be empty if you don&rsquo;t have any external storage devices mounted.</p>
-<p><code>/opt</code>: This is where third party software and configurations are installed. You will usually find things like proprietary drivers and program files over here.</p>
-<p><code>/proc</code>: This is another special folder, since if it a virtual directory it doesn&rsquo;t actually contain any physical files, but instead just bits and pieces of varying system information and statistics. Most of the files in here contain information regarding either your kernel or running processes.</p>
-<p><code>/root</code>: This is the equivalent of <strong>/home</strong> but for the root user. Once again this is something that you will rarely mess with as most of the time on your machine is spend as a normal user, not root.</p>
-<p><code>/run</code>: Being one of the newest directories in the Filesystem, this is where some applications store transient files, such as sockets and/or process ID&rsquo;s.</p>
-<p><code>/sbin</code>: While symlinked to <strong>/usr/bin</strong>, it also serves as the place where certain system administration binaries are stored, or in other words, commands only the root user should be allowed to run.</p>
-<p><code>srv</code>: This is where service data is stored, such as files for websites you visit. It is always changing and not anything you would ever have to mess with.</p>
-<p><code>sys</code>: This is where certain system information is stored in variable files. Things like your battery percentage or brightness level can be found here.</p>
-<p><code>tmp</code>: This is another interesting folder, it is called &ldquo;tmp&rdquo; because it is a temporary filesystem, or, in simple terms, a folder that cleans itself every time you restart your computer. Many programs dump temporary files here to save space.</p>
-<p><code>/usr</code>: This, in essence, can be called the &ldquo;home directory of your whole system&rdquo;, or, more specifically, the equivalent of <strong>/home/.local/</strong> but for all users on the computer. It contains a few folders, each which serve their own purpose:</p>
+<p><code>/lib/ and /lib64/</code>: These are both symlinks to <strong>/usr/lib/</strong>, which we will discuss later.</p>
+<p><code>/lost+found/</code>: This is an interesting folder, it is where the recovered bit&rsquo;s and pieces of other corrupted files can be found. In general, however, you will never need to go near here.</p>
+<p><code>/mnt/</code>: This is where USB drives and other mounted devices, and their contents, can be found. It will usually be empty if you don&rsquo;t have any external storage devices mounted.</p>
+<p><code>/opt/</code>: This is where third party software and configurations are installed. You will usually find things like proprietary drivers and program files over here.</p>
+<p><code>/proc/</code>: This is another special folder, since if it a virtual directory it doesn&rsquo;t actually contain any physical files, but instead just bits and pieces of varying system information and statistics. Most of the files in here contain information regarding either your kernel or running processes.</p>
+<p><code>/root/</code>: This is the equivalent of <strong>/home</strong> but for the root user. Once again this is something that you will rarely mess with as most of the time on your machine is spend as a normal user, not root.</p>
+<p><code>/run/</code>: Being one of the newest directories in the Filesystem, this is where some applications store transient files, such as sockets and/or process ID&rsquo;s.</p>
+<p><code>/sbin/</code>: While symlinked to <strong>/usr/bin</strong>, it also serves as the place where certain system administration binaries are stored, or in other words, commands only the root user should be allowed to run.</p>
+<p><code>/srv/</code>: This is where service data is stored, such as files for websites you visit. It is always changing and not anything you would ever have to mess with.</p>
+<p><code>/sys/</code>: This is where certain system information is stored in variable files. Things like your battery percentage or brightness level can be found here.</p>
+<p><code>/tmp/</code>: This is another interesting folder, it is called &ldquo;tmp&rdquo; because it is a temporary filesystem, or, in simple terms, a folder that cleans itself every time you restart your computer. Many programs dump temporary files here to save space.</p>
+<p><code>/usr/</code>: This, in essence, can be called the &ldquo;home directory of your whole system&rdquo;, or, more specifically, the equivalent of <strong>/home/.local/</strong> but for all users on the computer. It contains a few folders, each which serve their own purpose:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> tree -d -L <span style="color:#ae81ff">1</span> /usr/
 /usr
 ├── bin
@@ -132,7 +130,7 @@ It is important to get to know your home folder well and to keep it nice and tid
 <li><strong>share/</strong>, This is the equivalent of <strong>.local/share</strong> but for the system as a whole. Many programs and architectures make use of the global files here. Out of all the <strong>/usr</strong> directories mentioned so far, this is the only one you might have to actually spend time in</li>
 <li><strong>src/</strong>, A folder not found on every distribution, this usually contains important source code for certain Kernel objects, not something you will usually ever need to worry about though.</li>
 </ul>
-<p><code>var/</code>: The last of the root directories, it&rsquo;s name stand for &ldquo;variable(s)&rdquo;. It contains constantly changing files and information that programs use. It is also writable unlike <strong>/usr</strong>, which makes it a useful and safe place to store things like system logs, which can be found in <strong>/var/log/</strong> and so on.</p>
+<p><code>/var/</code>: The last of the root directories, it&rsquo;s name stand for &ldquo;variable(s)&rdquo;. It contains constantly changing files and information that programs use. It is also writable unlike <strong>/usr/</strong>, which makes it a useful and safe place to store things like system logs, which can be found in <strong>/var/log/</strong> and so on.</p>
 <p>There we have it, the Linux filesystem in it&rsquo;s entirety. While it may seem confusing at first, there is quite a good bit of useful organization here, and as you continue to use your computer you will realize how little you really need to think about where something might be, as each folder has a pretty distinct purpose. Just remember to not go messing around in places that I mentioned you shouldn&rsquo;t be.</p>
 <h2 id="third-getting-to-know-bash">Third, Getting to Know Bash</h2>
 <p>Here I will be explaining some simple bash concepts that will help speed you along your terminal journey, knowing these is necessary if you want to truly be efficient on the command line:</p>

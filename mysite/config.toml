@@ -22,19 +22,19 @@ googleAnalytics = ""
 [menu]
 
   [[menu.main]]
+    name = "About Me /"
     identifier = "about"
-    name = "About Me -"
     url = "/about/"
     weight = 1
 
   [[menu.main]]
+    name = "Posts /"
     identifier = "archive"
-    name = "Posts -"
     url = "/posts/"
     weight = 2
 
   [[menu.main]]
-    name = "Books -"
+    name = "Books /"
     identifier = "books"
     url = "/books/"
     weight = 4

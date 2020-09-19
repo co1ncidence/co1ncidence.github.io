@@ -3,7 +3,7 @@
 	<b><time>{{ .Date.Format (default "01-02-2006" .Site.Params.dateFmt) }}</time></b>
 	{{ range .Params.tags }}
 	{{ end }}
-	<div>
+	<div align="center">
 		{{ .Summary }}
 		{{ if .Truncated }}
 		{{ end }}

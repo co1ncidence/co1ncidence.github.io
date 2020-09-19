@@ -61,7 +61,7 @@ In Linux and other UNIX-based operating systems, almost everything is available 
 
 This command only shows the biggest, main folders on your system. Each of these is further subdivided into even more different folders and files. Going over the entire filesystem is an extremely daunting task, so I will just give a short briefing on the general purpose of each folder:
 
-`/bin/`: This is a symlink, or symbolic link, to the `/usr/bin` folder, I will go over **/usr** as a whole in a bit.
+`/bin/`: This is a symlink, or symbolic link, to the `/usr/bin/` folder, I will go over **/usr/** as a whole in a bit.
 
 `/dev/`: This stands for "Device", and is where all the devices connected to your system have there appropriate files, this can contain drives or peripherals. You will find your hard disks and their partitions labeled as `/dev/sda-z|1-9`.
 
@@ -73,29 +73,29 @@ This command only shows the biggest, main folders on your system. Each of these 
   - **.local/**: this is the same (in terms of function) as the **/usr/** folder but for your current user only
 It is important to get to know your home folder well and to keep it nice and tidy, it is basically your main "workspace" on a Linux system.
 
-`/lib/ and /lib64`: These are both symlinks to **/usr/lib**, which we will discuss later.
+`/lib/ and /lib64/`: These are both symlinks to **/usr/lib/**, which we will discuss later.
 
-`/lost+found`: This is an interesting folder, it is where the recovered bit's and pieces of other corrupted files can be found. In general, however, you will never need to go near here.
+`/lost+found/`: This is an interesting folder, it is where the recovered bit's and pieces of other corrupted files can be found. In general, however, you will never need to go near here.
 
-`/mnt`: This is where USB drives and other mounted devices, and their contents, can be found. It will usually be empty if you don't have any external storage devices mounted.
+`/mnt/`: This is where USB drives and other mounted devices, and their contents, can be found. It will usually be empty if you don't have any external storage devices mounted.
 
-`/opt`: This is where third party software and configurations are installed. You will usually find things like proprietary drivers and program files over here.
+`/opt/`: This is where third party software and configurations are installed. You will usually find things like proprietary drivers and program files over here.
 
-`/proc`: This is another special folder, since if it a virtual directory it doesn't actually contain any physical files, but instead just bits and pieces of varying system information and statistics. Most of the files in here contain information regarding either your kernel or running processes.
+`/proc/`: This is another special folder, since if it a virtual directory it doesn't actually contain any physical files, but instead just bits and pieces of varying system information and statistics. Most of the files in here contain information regarding either your kernel or running processes.
 
-`/root`: This is the equivalent of **/home** but for the root user. Once again this is something that you will rarely mess with as most of the time on your machine is spend as a normal user, not root.
+`/root/`: This is the equivalent of **/home** but for the root user. Once again this is something that you will rarely mess with as most of the time on your machine is spend as a normal user, not root.
 
-`/run`: Being one of the newest directories in the Filesystem, this is where some applications store transient files, such as sockets and/or process ID's.
+`/run/`: Being one of the newest directories in the Filesystem, this is where some applications store transient files, such as sockets and/or process ID's.
 
-`/sbin`: While symlinked to **/usr/bin**, it also serves as the place where certain system administration binaries are stored, or in other words, commands only the root user should be allowed to run.
+`/sbin/`: While symlinked to **/usr/bin**, it also serves as the place where certain system administration binaries are stored, or in other words, commands only the root user should be allowed to run.
 
-`srv`: This is where service data is stored, such as files for websites you visit. It is always changing and not anything you would ever have to mess with.
+`/srv/`: This is where service data is stored, such as files for websites you visit. It is always changing and not anything you would ever have to mess with.
 
-`sys`: This is where certain system information is stored in variable files. Things like your battery percentage or brightness level can be found here.
+`/sys/`: This is where certain system information is stored in variable files. Things like your battery percentage or brightness level can be found here.
 
-`tmp`: This is another interesting folder, it is called "tmp" because it is a temporary filesystem, or, in simple terms, a folder that cleans itself every time you restart your computer. Many programs dump temporary files here to save space.
+`/tmp/`: This is another interesting folder, it is called "tmp" because it is a temporary filesystem, or, in simple terms, a folder that cleans itself every time you restart your computer. Many programs dump temporary files here to save space.
 
-`/usr`: This, in essence, can be called the "home directory of your whole system", or, more specifically, the equivalent of **/home/.local/** but for all users on the computer. It contains a few folders, each which serve their own purpose:
+`/usr/`: This, in essence, can be called the "home directory of your whole system", or, more specifically, the equivalent of **/home/.local/** but for all users on the computer. It contains a few folders, each which serve their own purpose:
 
 ```sh
 [$] tree -d -L 1 /usr/
@@ -118,10 +118,9 @@ It is important to get to know your home folder well and to keep it nice and tid
   - **share/**, This is the equivalent of **.local/share** but for the system as a whole. Many programs and architectures make use of the global files here. Out of all the **/usr** directories mentioned so far, this is the only one you might have to actually spend time in
   - **src/**, A folder not found on every distribution, this usually contains important source code for certain Kernel objects, not something you will usually ever need to worry about though.
 
-`var/`: The last of the root directories, it's name stand for "variable(s)". It contains constantly changing files and information that programs use. It is also writable unlike **/usr**, which makes it a useful and safe place to store things like system logs, which can be found in **/var/log/** and so on.
+`/var/`: The last of the root directories, it's name stand for "variable(s)". It contains constantly changing files and information that programs use. It is also writable unlike **/usr/**, which makes it a useful and safe place to store things like system logs, which can be found in **/var/log/** and so on.
 
 There we have it, the Linux filesystem in it's entirety. While it may seem confusing at first, there is quite a good bit of useful organization here, and as you continue to use your computer you will realize how little you really need to think about where something might be, as each folder has a pretty distinct purpose. Just remember to not go messing around in places that I mentioned you shouldn't be.
-
 
 ## Third, Getting to Know Bash
 Here I will be explaining some simple bash concepts that will help speed you along your terminal journey, knowing these is necessary if you want to truly be efficient on the command line:
