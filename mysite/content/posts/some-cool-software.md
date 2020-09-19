@@ -23,6 +23,7 @@ Just a list of some software I find nice to use:
 |**[ST](https://st.suckless.org/)**                                      | Simple Terminal                                        |
 |**[scr](https://github.com/6gk/scr)**                                   | Super Crappy SCReenshot SCRipt for Sound Cloud Rappers |
 |**[vimtex](https://github.com/lervag/vimtex)**                          | Make LaTeX in Vim a breeze to edit                     |
+|**[ale](https://github.com/dense-analysis/ale)**                        | A complete syntax checker and linter for Vim           |
 |**[neovim](https://github.com/neovim/neovim)**                          | Objectively the best editor                            |
 |**[shfm](https://github.com/dylanaraps/shfm)**                          | Terminal file browser written in posix shell           |
 |**[KISS Linux](https://github.com/kisslinux)**                          | An independent Linux Distro focused on simplicity      |
@@ -34,3 +35,4 @@ Just a list of some software I find nice to use:
 |**[wpm](https://pypi.org/project/wpm/)**                                | Command line typing test                               |
 |**[monkey-type](https://github.com/s0la/orw)**                          | Clean, fun, and minimal typing test                    |
 |**[wmutils](https://github.com/wmutils/core)**                          | Very extensible set of WM utilities                    |
+|**[0x0](https://github.com/mia-0/0x0)**                                 | Effective, No-Bullshit file hosting                    |
