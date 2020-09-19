@@ -7,7 +7,7 @@ tags:
 
 For a long time now I've been quite annoyed by how much of a pain it can be to do simple things with git. Even changes to your own repositories can take a while with all of the adding and committing and then typing in your credentials. Thankfully though, I have found ways to make git almost trivial to use, now I barely have to enter more than one command for most tasks, here is how I did it:
 
-## First, Make A Push Script
+## Make A Push Script
 
 Normally when you push a newly modified repository, you would need to do 3 or 4 different commands, I've found it much easier to just make a shell script like this and then place it in my `$PATH` for easy usage:
 
@@ -24,7 +24,7 @@ git push origin master
 ```
 This script will stage all of the files in your current git directory for a commit, and use whatever argument you pass after it as the commit message. If you don't give any message to the script, it will use `docs:update` and push with that.
 
-## Second, Make Git Stop Asking For Usernames/Passwords
+## Make Git Stop Asking For Usernames/Passwords
 
 Another annoying thing that occurs when pushing repositories is that git always asks you for your username and password, which can get very tedious after a while. Fortunately, `git config` has a built in system to override this. First, you have to set your default github url to that of your username with this command, just replace `<username>` with your git username:
 

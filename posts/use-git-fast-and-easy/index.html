@@ -9,7 +9,7 @@
 	<meta name="description" content="Just a place where I rant and sometimes say something smart">
 	<meta name="author" content="nuaNce">
 	<link rel="stylesheet" href="/css/style.css">
-	<link rel="stylesheet" href="/css/style.css?rnd=1600529376">
+	<link rel="stylesheet" href="/css/style.css?rnd=1600530255">
 	
 </head>
 <body>
@@ -43,7 +43,7 @@
 
 			<div>
 				<p>For a long time now I&rsquo;ve been quite annoyed by how much of a pain it can be to do simple things with git. Even changes to your own repositories can take a while with all of the adding and committing and then typing in your credentials. Thankfully though, I have found ways to make git almost trivial to use, now I barely have to enter more than one command for most tasks, here is how I did it:</p>
-<h2 id="first-make-a-push-script">First, Make A Push Script</h2>
+<h2 id="make-a-push-script">Make A Push Script</h2>
 <p>Normally when you push a newly modified repository, you would need to do 3 or 4 different commands, I&rsquo;ve found it much easier to just make a shell script like this and then place it in my <code>$PATH</code> for easy usage:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#!/bin/sh
 </span><span style="color:#75715e"></span>
@@ -55,7 +55,7 @@ git add .
 git commit -m <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>msg<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
 git push origin master
 </code></pre></div><p>This script will stage all of the files in your current git directory for a commit, and use whatever argument you pass after it as the commit message. If you don&rsquo;t give any message to the script, it will use <code>docs:update</code> and push with that.</p>
-<h2 id="second-make-git-stop-asking-for-usernamespasswords">Second, Make Git Stop Asking For Usernames/Passwords</h2>
+<h2 id="make-git-stop-asking-for-usernamespasswords">Make Git Stop Asking For Usernames/Passwords</h2>
 <p>Another annoying thing that occurs when pushing repositories is that git always asks you for your username and password, which can get very tedious after a while. Fortunately, <code>git config</code> has a built in system to override this. First, you have to set your default github url to that of your username with this command, just replace <code>&lt;username&gt;</code> with your git username:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git config --global url.<span style="color:#e6db74">&#34;https://&lt;username&gt;@github.com&#34;</span>.insteadOf <span style="color:#e6db74">&#34;https://github.com&#34;</span>
 </code></pre></div><p>This will make git remember who you are and not ask for your username anymore. Now for your password, there is no real way to <em>never type your password</em>, but you can extend the sudo-like wait period that git has with this command:</p>
