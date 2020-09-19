@@ -14,7 +14,7 @@ Just a list of some software I find nice to use. A lot of these correlate with [
   - It's not overrated normie shit
   - And it integrates well with my workflow
 
-Now with that out of the way, here are some of my software faves:
+Now with that out of the way, here is the list:
 
 <!--more-->
 
