@@ -19,7 +19,7 @@ Just a list of some software I find nice to use:
 |**[birch](https://github.com/dylanaraps/birch)**                        | Freenode IRC client written in bash                    |
 |**[herbe](https://github.com/dudik/herbe)**                             | Simple, yet DBus free notifications                    |
 |**[farge](https://github.com/sdushantha/farge)**                        | Simple Colorpicker written in bash                     |
-|**[ungoogled-chromium](https://github.com/Eloston/ungoogled-chromium)** | Browse safely and Google-free, no compromises          |
+|**[ung-chromium](https://github.com/Eloston/ungoogled-chromium)**       | Browse safely and Google-free, no compromises          |
 |**[ST](https://st.suckless.org/)**                                      | Simple Terminal                                        |
 |**[scr](https://github.com/6gk/scr)**                                   | Super Crappy SCReenshot SCRipt for Sound Cloud Rappers |
 |**[vimtex](https://github.com/lervag/vimtex)**                          | Make LaTeX in Vim a breeze to edit                     |
