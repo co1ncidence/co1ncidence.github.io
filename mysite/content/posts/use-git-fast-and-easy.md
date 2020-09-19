@@ -32,7 +32,7 @@ Another annoying thing that occurs when pushing repositories is that git always 
 git config --global url."https://<username>@github.com".insteadOf "https://github.com"
 ```
 
-This will make git remember who you are and not ask for your username anymore. Now for your password, there is no real way to *never type your passweord*, but you can extend the sudo-like wait period that git has with this command:
+This will make git remember who you are and not ask for your username anymore. Now for your password, there is no real way to *never type your password*, but you can extend the sudo-like wait period that git has with this command:
 ```sh
 git config --global credential.helper 'cache --timeout=28800'
 ```
