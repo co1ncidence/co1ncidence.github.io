@@ -250,27 +250,27 @@ You can use the `pwd` command to display what directory you are currently in, th
 
 `cd` stands for "change directory", you can use this command to enter and leave directories. It is not limited to neighboring directories, however, you can use `cd` to move from one side of your computer to another, provided you don't mess up typing in the names of folders. First thing to note is that a `/` is not necessary after a folder name:
 ```sh
-#these 2 commands are the same
+# these 2 commands are the same
 [$] cd ~/folder1/folder2/
 [$] cd ~/folder1/folder2
 ```
 You can use the aliases previously mentioned to navigate folders as well.
 ```sh
-#running this moves you to the parent folder
+# running this moves you to the parent folder
 [$] cd ..
-#running this does nothing, as you are moving to the same folder
+# running this does nothing, as you are moving to the same folder
 [$] cd .
 ```
 Finally, here are some examples of the `cd` command in use:
 ```sh
-#this will place you in the polybar config folder
+# this will place you in the polybar config folder
 [$] cd ~/.config/polybar/
-#this will move you to your root directory
+# this will move you to your root directory
 [$] cd /
 ```
 Another good thing to know is that running just `cd` will take you back you your home folder:
 ```sh
-#no matter where you run this, it will take you back to home
+# no matter where you run this, it will take you back to home
 [$] cd
 ```
 
@@ -300,14 +300,14 @@ You can also use touch to create files in other folders:
 
 ```sh
 [$] mv /usr/share/file.txt ~/Documents/newfile.txt
-#mv can also be used to rename files
+# mv can also be used to rename files
 [$] mv file.txt file2.txt
 ```
 
 `cp` works the same way as `mv`, but instead of moving a file it creates a copy of the original file in the new location, and like `mv`, the resulting file can have new name. Example usage:
 ```sh
 [$] cp ~/.local/bin/command /usr/bin/command2
-#if name is not a concern, just specify resulting directory
+# if name is not a concern, just specify resulting directory
 [$] cp ~/.local/bin/command /usr/bin
 ```
 
@@ -325,7 +325,7 @@ However, unlike the other file management commands, `rm` cannot remove folders b
 Though separating flags is not necessary, you can just combine them into one flag like this:
 ```sh
 [$] rm -rf folder/
-#you can also use the "rmdir" command, though only on empty folders
+# you can also use the "rmdir" command, though only on empty folders
 [$] rmdir folder/
 ```
 Thus is how you can use `rm` to remove folders as well as individual files.
@@ -384,11 +384,11 @@ The `cat` command is one of the first to know when viewing files, running `cat` 
 Will show you the contents of your `.bashrc` file, otherwise known as the bash shell configuration file, more about this later. `cat` is very useful when you want to look at certain content in a file but don't want to open it in your editor.
 You may realize. Here is an example of the `cat` command being used:
 
-![gif](https://i.postimg.cc/vmmXM6xG/out.gif)
+![gif](https://i.postimg.cc/26DM7wqq/out.gif)
 
-However, that `cat` can be annoying when used on longer files, as you have to manually scroll back if you want to view any content near the beginning of the file. This is where another, very useful command comes in. The `less` command is similar to `cat`, but instead of just throwing all of the output at you and leaving you alone to manage it, `less` allows you to view the file in a scrolling window, with the top of the file being the beginning. You can then use the Up and Down arrow keys of J and K to navigate the file as you want. For those of you comfortable with them, Vim keybindings work in `less` as well. As you can see here, the experience is far more intuitive:
+However, that `cat` can be annoying when used on longer files, as you have to manually scroll back if you want to view any content near the beginning of the file. This is where another, very useful command comes in. The `less` command is similar to `cat`, but instead of just throwing all of the output at you and leaving you alone to manage it, `less` allows you to view the file in a scrolling window, with the top of the file being the beginning. You can then use the Up and Down arrow keys of J and K to navigate the file as you want. For those of you comfortable with them, Vim keybindings (like `j` and `k`) work in `less` as well. As you can see here, the experience is far more intuitive:
 
-![gif](https://i.postimg.cc/Gps8kcZk/out.gif)
+![gif](https://i.postimg.cc/dtxfxvkc/out.gif)
 
 Sometimes, however, we have too much output of a command, one example of such a problematic command can be the `fc-list` command, which lists all fonts currently installed on your system. You can filter the output of this command using `grep`, an extremely powerful search utility. `grep` however, usually requires piping, which I talked about earlier. Here is a basic example of the usage of `grep`:
 
@@ -413,7 +413,7 @@ This command, however, will filter out every result and only show results contai
 ## Editing Files Using GNU Nano
 Throughout your Linux journey, there will be many, and I mean many, times where you will have to make a quick edit to some configuration file of some sort. Editing these files with a visual editor can be a pain as you have to run the editor as root, find the file you want to edit, and then finally get to editing it. As a solution to this, computers running any GNU/Linux Distribution usually come with a terminal editor installed, called [Nano](https://en.wikipedia.org/wiki/GNU_nano). Nano is an editor that allows you to edit any text file through the terminal. Here is an example of me editing the `/etc/fstab` file using Nano (note the use of `sudo` to access this file):
 
-![gif](https://i.postimg.cc/NFQKqRL4/out.gif)
+![gif](https://i.postimg.cc/RVyPTRyM/out.gif)
 
 Nano has many keyboard shortcuts and is a quite featured editor, though you will most likely only be using it for quick edits, as anything bigger would be better done in a real editor. The only real shortcut to know in Nano is **Ctrl + X**, this saves and exits the file, prompting you before doing so as well.
 
@@ -478,7 +478,7 @@ Swap:         7.9Gi       0.0Ki       7.9Gi
 
 But what if you wanted to see an interactive interface from which you could manage processes and see their relative resource usage, a "task manager" if you will. One of the programs you will find yourself most frequently using is `htop`, while not normally included with most Linux Distros, it is a must have utility, a lightweight and easy to use terminal task manager. I suggest you check out the program's GitHub page if you want to learn more. For now, however, here is a screenshot of `htop`:
 
-![img](https://i.postimg.cc/zGZ9Jpq8/image.png)
+![img](https://i.postimg.cc/RVkRt0Jh/image.png)
 
 ## Disk and storage management in the Terminal
 To Display all of the disks on your system and all of the storage that has been used on them, use the `df` command with the `-h` flag to make it human readable:
@@ -518,13 +518,13 @@ You can use the `mount` command to mount a disk and access the files inside it. 
 
 If unsure whether you are connected to the Internet, or if you just want to check whether a website will accept packet requests from you, you can use the `ping` command on it's domain and monitor network transfers:
 ```sh
-#this will send continuous requests to google.com
+# this will send continuous requests to google.com
 [$] ping google.com
 ```
 You can use the `ping` command on any domain, local or public
 
 If you wanted to connect to an Internet connection from the command line, the easiest way would be to use `nmtui`, a simple and easy to use interface for `networkmanager`, here is an example of me using `nmtui` to disconnect then reconnect to my home's Internet connection:
 
-![gif](https://i.postimg.cc/3RkTyRVT/out.gif)
+![gif](https://i.postimg.cc/LXQk84MH/out.gif)
 
-To view your I.P. Address and other basic network information, run the `ip addr` command. If you need more detailed information about your current connection, use `nmcli`.
+To view your I.P. Address and some other basic network information, run the `ip addr` command. If you need more detailed information about your current connection, use `nmcli`.
