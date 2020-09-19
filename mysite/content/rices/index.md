@@ -14,7 +14,7 @@ Here are ~~all~~ most of the Rices that I have made on my computer over the last
 
 ---
 
-![img](https://raw.githubusercontent.com/co1ncidence/dotless/master/scr/blissful.png)
+![img](https://raw.githubusercontent.com/co1ncidence/dotless/master/scr/sunset.png)
 
 # Dark Inside.
 
