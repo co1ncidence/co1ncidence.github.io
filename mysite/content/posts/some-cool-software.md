@@ -36,6 +36,7 @@ Now with that out of the way, here are some of my software faves:
 |**[neovim](https://github.com/neovim/neovim)**                          | Objectively the best editor                            |
 |**[shfm](https://github.com/dylanaraps/shfm)**                          | Terminal file browser written in posix shell           |
 |**[KISS Linux](https://github.com/kisslinux)**                          | An independent Linux Distro focused on simplicity      |
+|**[fff](https://github.com/dylanaraps/fff)**                            | Fucking Fast File manager written in bash              |
 |**[cfm](https://github.com/WillEccles/cfm)**                            | Simple and fast terminal file manager                  |
 |**[epy](https://github.com/wustho/epy)**                                | Terminal based Ebook reader                            |
 |**[PDF Viewer Plus](https://github.com/JavaCafe01/PdfViewer)**          | The best mobile PDF viewer there is                    |
