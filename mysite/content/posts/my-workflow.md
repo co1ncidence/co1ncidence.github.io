@@ -32,7 +32,7 @@ To start things off, here is a basic overview of some of my productivity softwar
 
 **Editor:** NeoVim
 
-**Other Software:** Zathura, LibreOffice, XournalPP, SkanLite
+**Other Software:** Zathura, LibreOffice, Xournal++, SkanLite
 
 You may be confused about some of the choices I've made here, mainly those regarding my distribution and window manager. The reason I run Manjaro is for printer compatibility, which I simply could *not* get working on Arch Linux. And I use Openbox because it does exactly what I need it to, manages windows without getting in my way. While not being very workflow oriented out of the box, and with just a few tweaks and scripts we can get Openbox to be even more efficient than a standard tiling window manager.
 
