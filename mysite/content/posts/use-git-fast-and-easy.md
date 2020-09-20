@@ -7,6 +7,8 @@ tags:
 
 For a long time now I've been quite annoyed by how much of a pain it can be to do simple things with git. Even changes to your own repositories can take a while with all of the adding and committing and then typing in your credentials. Thankfully though, I have found ways to make git almost trivial to use, now I barely have to enter more than one command for most tasks, here is how I did it:
 
+<!--more-->
+
 ## Make A Push Script
 
 Normally when you push a newly modified repository, you would need to do 3 or 4 different commands, I've found it much easier to just make a shell script like this and then place it in my `$PATH` for easy usage:
