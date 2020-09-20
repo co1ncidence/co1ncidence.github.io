@@ -23,7 +23,7 @@ Here is some more professional information about me:
   - (Basic) POSIX and Non-POSIX shell scripting
   - Very much at home in the Command Line
     - I have written a [Linux and CLI guide](https://co1ncidence.github.io/posts/linux-and-cli-a-101/)
-  - **Proficient and experienced with all major operating systems**
+  - **Proficient with all major operating systems**
     - Years of experience with Windows
     - Currently a *NIX user
   - Experienced and efficient in [workflow management](https://co1ncidence.github.io/posts/my-workflow/)
