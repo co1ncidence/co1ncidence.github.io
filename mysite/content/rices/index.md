@@ -10,49 +10,49 @@ Here are ~~all~~ most of the Rices that I have made on my computer over the last
 
 &nbsp;
 
-# Bliss v2.
+# Bliss v2
 
 ---
 
 ![img](https://raw.githubusercontent.com/co1ncidence/dotless/master/scr/sunset.png)
 
-# Dark Inside.
+# Dark Inside
 
 ---
 
 ![img](https://i.postimg.cc/kg4S1bgh/hola.png)
 
-# The Mountaineer.
+# The Mountaineer
 
 ---
 
 ![img](https://i.postimg.cc/t4JCwzn3/what13.png)
 
-# Morning Coffee.
+# Morning Coffee
 
 ---
 
 ![img](https://i.postimg.cc/fyN9vmVG/what12.png)
 
-# Safe and Sound.
+# Safe and Sound
 
 ---
 
 ![img](https://i.postimg.cc/rFs7tTmT/what9.png)
 
-# Bloated Minimalism.
+# Bloated Minimalism
 
 ---
 
 ![img](https://i.postimg.cc/k56XgFzc/what3.png)
 
-# Function > Form.
+# Function > Form
 
 ---
 
 ![img](https://i.postimg.cc/jqnvqncX/what.png)
 
-# Contempt.
+# Contempt
 
 ---
 
@@ -64,13 +64,13 @@ Here are ~~all~~ most of the Rices that I have made on my computer over the last
 
 ![img](https://i.redd.it/uhmfcesa1zh51.png)
 
-# IceBerg.
+# IceBerg
 
 ---
 
 ![img](https://cdn.discordapp.com/attachments/743868455547305985/743868817028939876/image.png)
 
-# Attention to Detail.
+# Attention to Detail
 
 ---
 
@@ -82,13 +82,13 @@ Here are ~~all~~ most of the Rices that I have made on my computer over the last
 
 ![img](https://cdn.discordapp.com/attachments/743868455547305985/743869123804528641/image.png)
 
-# Polka.
+# Polka
 
 ---
 
 ![img](https://cdn.discordapp.com/attachments/743868455547305985/743869197209174116/image.png)
 
-# GMK Dots.
+# GMK Dots
 
 ---
 
@@ -100,7 +100,7 @@ Here are ~~all~~ most of the Rices that I have made on my computer over the last
 
 ![img](https://cdn.discordapp.com/attachments/743868455547305985/743869761556840569/image.png)
 
-# Don't Ask.
+# Don't Ask
 
 ---
 
@@ -112,31 +112,31 @@ Here are ~~all~~ most of the Rices that I have made on my computer over the last
 
 ![img](https://cdn.discordapp.com/attachments/743868455547305985/743869978997948548/image.png)
 
-# Mediocre.
+# Mediocre
 
 ---
 
 ![img](https://cdn.discordapp.com/attachments/743868455547305985/743870073629966387/image.png)
 
-# Pop of Red.
+# Pop of Red
 
 ---
 
 ![img](https://cdn.discordapp.com/attachments/743868455547305985/743870351632498759/image.png)
 
-# Bliss.
+# Bliss
 
 ---
 
 ![img](https://cdn.discordapp.com/attachments/743868455547305985/743870537209741342/image.png)
 
-# Sands of Time.
+# Sands of Time
 
 ---
 
 ![img](https://cdn.discordapp.com/attachments/743868455547305985/743870663319879840/image.png)
 
-# Clarity.
+# Clarity
 
 ---
 
@@ -148,19 +148,19 @@ Here are ~~all~~ most of the Rices that I have made on my computer over the last
 
 ![img](https://cdn.discordapp.com/attachments/743868455547305985/743871129814564955/image.png)
 
-# Gloomy Nights.
+# Gloomy Nights
 
 ---
 
 ![img](https://cdn.discordapp.com/attachments/743868455547305985/743871216506372197/image.png)
 
-# Warm and Sweet.
+# Warm and Sweet
 
 ---
 
 ![img](https://cdn.discordapp.com/attachments/743868455547305985/743871396999856208/image.png)
 
-# Serenity.
+# Serenity
 
 ---
 
