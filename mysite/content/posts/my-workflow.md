@@ -38,7 +38,7 @@ You may be confused about some of the choices I've made here, mainly those regar
 
 ## Window management
 
-To overcome Openbox's strange default workflow, I have implement a mix of efficient [vim-based keybinds](https://www.maketecheasier.com/cheatsheet/vim-keyboard-shortcuts/) to make window management easier. I have all of the window placement, resizing, and movement that I could want from most tiling window managers but at a minimal level, thus removing any unnecessary features. Most of this window management is achieved using [wmutils](https://github.com/wmutils/core) in correspondence with [sxhkd](https://github.com/baskerville/sxhkd). One thing to note is that due to my limited (14 inches) screen real estate, I rarely ever have more than 2 or 3 windows on my screen. A lot of my window management workflow and keybind choices revolve around this condition.
+To overcome Openbox's strange default workflow, I have implemented a mix of efficient [vim-based keybinds](https://www.maketecheasier.com/cheatsheet/vim-keyboard-shortcuts/) to make window management easier. I have all of the window placement, resizing, and movement that I could want from most tiling window managers but at a minimal level, thus removing any unnecessary features. Most of this window management is achieved using [wmutils](https://github.com/wmutils/core) in correspondence with [sxhkd](https://github.com/baskerville/sxhkd). One thing to note is that due to my limited (14 inches) screen real estate, I rarely ever have more than 2 or 3 windows on my screen. A lot of my window management workflow and keybind choices revolve around this condition.
 
 #### Workspaces
 
