@@ -28,11 +28,11 @@ To start things off, here is a basic overview of some of my productivity softwar
 You may be confused about some of the choices I've made here, mainly those regarding my distribution and window manager. The reason I run Manjaro is for printer compatibility, which I simply could *not* get working on Arch Linux. And I use Openbox because it does exactly what I need it to, manages windows without getting in my way. While not being very workflow oriented out of the box, and with just a few tweaks and scripts we can get Openbox to be even more efficient than a standard tiling window manager.
 
 ##### Table of Contents:
-  1. [Window Management](https://co1ncidence.github.com/posts/)
-  2. [Other Usefult Keybinds](https://co1ncidence.github.com/posts/)
-  3. [Dmenu-Ception](https://co1ncidence.github.com/posts/)
-  4. [Effective and Minimal Note Taking](https://co1ncidence.github.com/posts/)
-  5. [Compatibility With The Norm](https://co1ncidence.github.com/posts/)
+  1. [Window Management](https://co1ncidence.github.com/posts/my-workflow/#window-management)
+  2. [Other Useful Keybinds](https://co1ncidence.github.com/posts/my-workflow/#other-useful-keybinds)
+  3. [Dmenu-Ception](https://co1ncidence.github.com/posts/my-workflow/#dmenu-ception)
+  4. [Effective and Minimal Note Taking](https://co1ncidence.github.com/posts/my-workflow/#effective-note-taking)
+  5. [Compatibility With The Norm](https://co1ncidence.github.com/posts/my-workflow/#compatibility-with-the-norm)
 
 ## Window management
 
