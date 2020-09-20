@@ -11,7 +11,7 @@ One of the things I find the most important when using a computer is effective w
   2. [Software I Use](https://co1ncidence.github.com/posts/my-workflow/#software-i-use)
   2. [Window Management](https://co1ncidence.github.com/posts/my-workflow/#window-management)
   3. [Other Useful Keybinds](https://co1ncidence.github.com/posts/my-workflow/#other-useful-keybinds)
-  4. [Dmenu-Ception](https://co1ncidence.github.com/posts/my-workflow/#dmenu-ception)
+  4. [Dmenu-Ception](https://co1ncidence.github.com/posts/my-workflow/#dmenuception)
   5. [Effective and Minimal Note Taking](https://co1ncidence.github.com/posts/my-workflow/#effective-note-taking)
   6. [Compatibility With The Norm](https://co1ncidence.github.com/posts/my-workflow/#compatibility-with-the-norm)
 
