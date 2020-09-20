@@ -53,7 +53,7 @@ To overcome Openbox's strange default workflow, I have implement a mix of effici
 
 #### Manual Window Resizing
 
-**Alt + h/j/k/l** will resize a window, one set resizes outwards, and the other resizes inwards. My resizing gets is extremely fast as well, because I have `xset r rate 250 50` set in my Borg configuration, which applies considerable acceleration to any repeated actions.
+**Alt + h/j/k/l** will resize a window, one set resizes outwards, and the other resizes inwards. My resizing is extremely fast as well, because I have `xset r rate 250 50` set in my Xorg configuration, which applies considerable acceleration to any repeated actions.
 
 **Ctrl + Shift + h/j/k/l** will snap a window to any of the 4 cardinal directions, this helps with laying out multiple windows side by side or top to bottom.
 
