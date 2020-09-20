@@ -41,21 +41,21 @@ To overcome Openbox's strange default workflow, I have implement a mix of effici
 
 #### Workspaces
 
-**Super + h/l** will move me between relative workspaces:
+**Super + h/l** will move me between relative workspaces.
 
-**Alt + Shift + h/l** will move the current window between relative workspaces:
+**Alt + Shift + h/l** will move the current window between relative workspaces.
 
 #### Manipulating Windows
 
-**Super + c** will center the current window, helps with bringing windows quickly into a focused position:
+**Super + c** will center the current window, helps with bringing windows quickly into a focused position.
 
-**Super + j/k** will toggle a window as maximized, both keys do either action so as to reduce any margin of error:
+**Super + j/k** will toggle a window as maximized, both keys do either action so as to reduce any margin of error.
 
 #### Manual Window Resizing
 
 **Alt + h/j/k/l** will resize a window, one set resizes outwards, and the other resizes inwards. My resizing gets is extremely fast as well, because I have `xset r rate 250 50` set in my Borg configuration, which applies considerable acceleration to any repeated actions.
 
-**Ctrl + Shift + h/j/k/l** will snap a window to any of the 4 cardinal directions, this helps with laying out multiple windows side by side or top to bottom
+**Ctrl + Shift + h/j/k/l** will snap a window to any of the 4 cardinal directions, this helps with laying out multiple windows side by side or top to bottom.
 
 ## Other Useful Keybinds
 
