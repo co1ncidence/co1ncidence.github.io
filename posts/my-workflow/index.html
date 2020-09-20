@@ -9,7 +9,7 @@
 	<meta name="description" content="Just a place where I rant and sometimes say something smart">
 	<meta name="author" content="nuaNce">
 	<link rel="stylesheet" href="/css/style.css">
-	<link rel="stylesheet" href="/css/style.css?rnd=1600606482">
+	<link rel="stylesheet" href="/css/style.css?rnd=1600606578">
 	
 </head>
 <body>
@@ -99,12 +99,12 @@ pass<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>ls 
 </code></pre></div><p>Now here is where it gets interesting. You can point a <code>dmenu</code> script to another <code>dmenu</code> script, this allows you to essentially navigate a directory of menus. I have such a setup here for opening up certain school documents and folders with ease:</p>
 <p><img src="https://i.postimg.cc/0QPnnyC0/out.gif" alt="gif"></p>
 <h2 id="effective-note-taking">Effective Note Taking</h2>
-<p>On the topic of little useful scripts, here is one that I came up with called <code>n</code> that makes quick and easy note taking almost trivial:</p>
+<p>On the topic of little useful scripts, here is one that I came up with called <code>note</code> that makes quick and easy note taking almost trivial:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#!/bin/sh
 </span><span style="color:#75715e"></span>
 printf <span style="color:#e6db74">&#39;%s\n&#39;</span> <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>date +<span style="color:#e6db74">&#39;%a/%d %I:%M&#39;</span><span style="color:#66d9ef">)</span><span style="color:#e6db74">: </span>$*<span style="color:#e6db74">&#34;</span> &gt;&gt; ~/var/notes/notes.html
 </code></pre></div><p>Here is an example of this script in use:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> n Finish writing a blogpost
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> note Finish writing a blogpost
 </code></pre></div><p>This command will append the sentence <code>Finish writing a blogpost</code> to the end of a specified notes file. Not only that, but the note entry will be prefixed by a date and time. This makes identifying and marking off old notes much easier. Here is what a notes file would look like:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">Wed/16 08:02: Relearn Quadratics
 Wed/16 08:03: Finish Covid essays

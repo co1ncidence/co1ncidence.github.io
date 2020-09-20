@@ -93,7 +93,7 @@ Now here is where it gets interesting. You can point a `dmenu` script to another
 
 ## Effective Note Taking
 
-On the topic of little useful scripts, here is one that I came up with called `n` that makes quick and easy note taking almost trivial:
+On the topic of little useful scripts, here is one that I came up with called `note` that makes quick and easy note taking almost trivial:
 
 ```sh
 #!/bin/sh
@@ -104,7 +104,7 @@ printf '%s\n' "$(date +'%a/%d %I:%M'): $*" >> ~/var/notes/notes.html
 Here is an example of this script in use:
 
 ```sh
-[$] n Finish writing a blogpost
+[$] note Finish writing a blogpost
 ```
 
 This command will append the sentence `Finish writing a blogpost` to the end of a specified notes file. Not only that, but the note entry will be prefixed by a date and time. This makes identifying and marking off old notes much easier. Here is what a notes file would look like:
