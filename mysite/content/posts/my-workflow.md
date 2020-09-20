@@ -7,6 +7,14 @@ One of the things I find the most important when using a computer is effective w
 
 <!--more-->
 
+### Table of Contents:
+  2. [Software I Use](https://co1ncidence.github.com/posts/my-workflow/#software-i-use)
+  2. [Window Management](https://co1ncidence.github.com/posts/my-workflow/#window-management)
+  3. [Other Useful Keybinds](https://co1ncidence.github.com/posts/my-workflow/#other-useful-keybinds)
+  4. [Dmenu-Ception](https://co1ncidence.github.com/posts/my-workflow/#dmenu-ception)
+  5. [Effective and Minimal Note Taking](https://co1ncidence.github.com/posts/my-workflow/#effective-note-taking)
+  6. [Compatibility With The Norm](https://co1ncidence.github.com/posts/my-workflow/#compatibility-with-the-norm)
+
 ## Software I use
 
 To start things off, here is a basic overview of some of my productivity software:
@@ -26,13 +34,6 @@ To start things off, here is a basic overview of some of my productivity softwar
 **Other Software:** Zathura, LibreOffice, XournalPP, SkanLite
 
 You may be confused about some of the choices I've made here, mainly those regarding my distribution and window manager. The reason I run Manjaro is for printer compatibility, which I simply could *not* get working on Arch Linux. And I use Openbox because it does exactly what I need it to, manages windows without getting in my way. While not being very workflow oriented out of the box, and with just a few tweaks and scripts we can get Openbox to be even more efficient than a standard tiling window manager.
-
-##### Table of Contents:
-  1. [Window Management](https://co1ncidence.github.com/posts/my-workflow/#window-management)
-  2. [Other Useful Keybinds](https://co1ncidence.github.com/posts/my-workflow/#other-useful-keybinds)
-  3. [Dmenu-Ception](https://co1ncidence.github.com/posts/my-workflow/#dmenu-ception)
-  4. [Effective and Minimal Note Taking](https://co1ncidence.github.com/posts/my-workflow/#effective-note-taking)
-  5. [Compatibility With The Norm](https://co1ncidence.github.com/posts/my-workflow/#compatibility-with-the-norm)
 
 ## Window management
 
