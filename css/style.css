@@ -28,6 +28,7 @@
   --title2:   #C49EA0;
   --link1:    #617878;
   --link2:    #7B9899;
+  --code:     #282a36;
   --seltext:  #C7ECF7;
 }
 
@@ -43,6 +44,7 @@
     --title2:   #ac8a8c;
     --link1:    #93a8a8;
     --link2:    #9eb1b1;
+    --code:     #e7e7e7;
     --seltext:  #C7ECF7;
   }
 }
@@ -168,7 +170,7 @@ p > code {
   padding-top: 0.2em;
   padding-bottom: 0.3em;
   color: var(--bg1);
-  background-color: #282a36;
+  background-color: var(--code);
   font-size: 0.9em;
 }
 
