@@ -12,3 +12,39 @@ Gaming was a big thing for me a while ago but I find it kind of meh now, I've co
 I'm the kind of guy who eats grapes straight from the vine and will use the smallest spoon available when eating something he likes. I don't know if that says anything about me but I hope it does. I learn by teaching and teach by scolding, it's worked for me so far and I hope it keeps doing so.
 
 I haven't met Money in a while now, she doesn't exactly get along well with me, but that's fine, Loneliness was always more my type.
+
+## Professional Information
+
+Here is some more professional information about me:
+
+### Skills
+
+  - (Basic) HTML/CSS Web Developement (no js)
+  - (Basic) POSIX and Non-POSIX shell scripting
+  - Very much at home in the Command Line
+    - I have written a [Linux and CLI guide](https://co1ncidence.github.io/posts/linux-and-cli-a-101/)
+  - **Proficient and experienced with all major operating systems**
+    - Years of experience with Windows
+    - Currently a *NIX user
+  - Experienced and efficient in [workflow management](https://co1ncidence.github.io/posts/my-workflow/)
+  - Familiar with the tech support environment
+  - Experienced with markup languages
+    - LaTeX
+    - Markdown/Rmarkdown
+    - Usage of pandoc
+  - Experienced with design tools such as
+    - GIMP
+    - Inkscape
+  - Some minor video editing experience
+
+### Social Media Links
+
+- **[GitHub](https://github.com/co1ncidence)**
+- **[StackOverflow](https://stackoverflow.com/users/13316025/jovinderpihainu)**
+- **[Reddit](https://www.reddit.com/user/fps_co1ncidence/)**
+
+### Contact
+
+You can email me anytime at **r3yan.chaudhry@zohomail.com**
+
+I also have a Discord tag: `@nuaNce#4387`
