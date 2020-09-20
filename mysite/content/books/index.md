@@ -3,6 +3,8 @@ title: "Books I've Been Reading"
 date: 2020-08-23T06:57:25-05:00
 ---
 
+![img](https://i.postimg.cc/52gFVLYh/erad.png)
+
 ## Series
 | Author               | Series                   | Download (book 1)                                           |
 |----------------------|--------------------------|-------------------------------------------------------------|

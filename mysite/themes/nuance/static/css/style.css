@@ -213,6 +213,12 @@ article {
   margin-bottom: 15px;
 }
 
+.mid-image, figure.mid img, img[src*="mid"] {
+  display: block;
+  width: 50%;
+  float: right;
+}
+
 /* ---------  Quotes ---------  */
 
 blockquote {
