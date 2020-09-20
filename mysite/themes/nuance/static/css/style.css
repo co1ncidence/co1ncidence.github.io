@@ -55,7 +55,7 @@ html {
 }
 
 body {
-  max-width: 900px;
+  max-width: 800px;
   width: 100vw;
   margin: 0 auto;
   padding-top: 3ch;
@@ -129,11 +129,11 @@ nav {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  width: 63%;
+  width: 75%;
   background-color: var(--bg3);
   color: var(--link1);
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
   margin-bottom: 1em;
   font-family: 'Recursive', sans-serif;
   font-size: 1.5em;
