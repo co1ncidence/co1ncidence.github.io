@@ -336,8 +336,8 @@ Thus is how you can use `rm` to remove folders as well as individual files.
 
 "File Globbing" is a term used to describe a method of directory management that makes use of many shells' in-built pattern searching capabilities. You can use these features to make it far easier to manage multiple files at the same time.
 
-#### Bulk Management Using `*`
-The `*` symbol, or asterisk, represents any string of characters possible, you can use it to easily clear directories of all of their contents. For example, running `rm *` inside of a folder will remove every file in that folder, since all of them have names that contain a character that can be represented with `*`. But what if you wanted to be more specific? Say that you have a folder filled with `.png` and `.jpg` image files, and you wanted to only get rid of all the pictures of a certain filetype, here is how you would do it:
+#### Using `*`, the Wild Card
+The `*` symbol, or "Wild Card", represents any string of characters possible, you can use it to easily all contents of a directory for certain actions. For example, running `rm *` inside of a folder will remove every file in that folder, since all of them have names that contain a character that can be represented with `*`. But what if you wanted to be more specific? Say that you have a folder filled with `.png` and `.jpg` image files, and you wanted to only get rid of all the pictures of a certain filetype, here is how you would do it:
 
 ```sh
 # this will remove any file with the ".jpg" extension

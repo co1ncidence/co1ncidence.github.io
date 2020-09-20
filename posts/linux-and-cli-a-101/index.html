@@ -9,7 +9,7 @@
 	<meta name="description" content="Just a place where I rant and sometimes say something smart">
 	<meta name="author" content="nuaNce">
 	<link rel="stylesheet" href="/css/style.css">
-	<link rel="stylesheet" href="/css/style.css?rnd=1600612560">
+	<link rel="stylesheet" href="/css/style.css?rnd=1600614466">
 	
 </head>
 <body>
@@ -255,8 +255,8 @@ However, unlike the other file management commands, <code>rm</code> cannot remov
 </code></pre></div><p>Thus is how you can use <code>rm</code> to remove folders as well as individual files.</p>
 <h3 id="managing-files-in-bulk-using-file-globbing">Managing Files in Bulk using &ldquo;File Globbing&rdquo;</h3>
 <p>&ldquo;File Globbing&rdquo; is a term used to describe a method of directory management that makes use of many shells&rsquo; in-built pattern searching capabilities. You can use these features to make it far easier to manage multiple files at the same time.</p>
-<h4 id="bulk-management-using-">Bulk Management Using <code>*</code></h4>
-<p>The <code>*</code> symbol, or asterisk, represents any string of characters possible, you can use it to easily clear directories of all of their contents. For example, running <code>rm *</code> inside of a folder will remove every file in that folder, since all of them have names that contain a character that can be represented with <code>*</code>. But what if you wanted to be more specific? Say that you have a folder filled with <code>.png</code> and <code>.jpg</code> image files, and you wanted to only get rid of all the pictures of a certain filetype, here is how you would do it:</p>
+<h4 id="using--the-wild-card">Using <code>*</code>, the Wild Card</h4>
+<p>The <code>*</code> symbol, or &ldquo;Wild Card&rdquo;, represents any string of characters possible, you can use it to easily all contents of a directory for certain actions. For example, running <code>rm *</code> inside of a folder will remove every file in that folder, since all of them have names that contain a character that can be represented with <code>*</code>. But what if you wanted to be more specific? Say that you have a folder filled with <code>.png</code> and <code>.jpg</code> image files, and you wanted to only get rid of all the pictures of a certain filetype, here is how you would do it:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># this will remove any file with the &#34;.jpg&#34; extension</span>
 <span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> rm *.jpg
 <span style="color:#75715e"># this will remove any file with the &#34;.png&#34; extension</span>
