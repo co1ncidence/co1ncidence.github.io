@@ -13,7 +13,7 @@ I'm the kind of guy who eats grapes straight from the vine and will use the smal
 
 I haven't met Money in a while now, she doesn't exactly get along well with me, but that's fine, Loneliness was always more my type.
 
-## Professional Information
+## Personal Information
 
 Here is some more professional information about me:
 
