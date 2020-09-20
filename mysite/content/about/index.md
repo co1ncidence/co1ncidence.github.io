@@ -19,23 +19,7 @@ Here is some more professional information about me:
 
 ### Skills
 
-  - (Basic) HTML/CSS Web Developement (no js)
-  - (Basic) POSIX and Non-POSIX shell scripting
-  - Very much at home in the Command Line
-    - I have written a [Linux and CLI guide](https://co1ncidence.github.io/posts/linux-and-cli-a-101/)
-  - **Proficient with all major operating systems**
-    - Years of experience with Windows
-    - Currently a *NIX user
-  - Experienced and efficient in [workflow management](https://co1ncidence.github.io/posts/my-workflow/)
-  - Familiar with the tech support environment
-  - Experienced with markup languages
-    - LaTeX
-    - Markdown/Rmarkdown
-    - Usage of pandoc
-  - Experienced with design tools such as
-    - GIMP
-    - Inkscape
-  - Some minor video editing experience
+None!
 
 ### Social Media Links
 
