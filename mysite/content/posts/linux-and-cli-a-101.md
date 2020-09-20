@@ -366,8 +366,6 @@ Sometimes, your user may not have the necessary permissions to execute certain c
 
 `chmod` is a command that can be used to change the permissions a file or folder has. These permissions include reading, writing, and changing whether a file can be executable or not. You can use `chmod` plus/minus a letter like this: `chmod +x` to add or remove a permission from a file. To view the permissions of all files and folders in your current directory, run the `ls` command with the `-l` flag:
 
-`chown` is like `chmod`, but instead of changing a file or folders permissions, it transfers ownership of that target to a user that you specify.
-
 ```sh
 [$] ls -l
 total 20
@@ -376,6 +374,12 @@ drwxr-xr-x  7 co1ncidence co1ncidence 4096 Sep  7 00:08 git/
 drwxr-xr-x  3 co1ncidence co1ncidence 4096 Sep  8 18:16 tmp/
 drwxr-xr-x  8 co1ncidence co1ncidence 4096 Sep  7 23:46 usr/
 drwxr-xr-x 10 co1ncidence co1ncidence 4096 Sep  8 17:06 var/
+```
+
+The `chown` is like `chmod`, but instead of changing a file or folders permissions, it transfers ownership of that target to a user that you specify.
+
+```sh
+chown file.txt root
 ```
 
 ## File Viewing  and Output Control/Filtering
