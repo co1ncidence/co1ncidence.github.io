@@ -6,10 +6,19 @@
     <description>Recent content on nuaNce&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Sep 2020 21:12:44 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 18 Sep 2020 14:55:33 -0500</lastBuildDate>
     
 	<atom:link href="https://co1ncidence.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>An In Depth Look at My Workflow</title>
+      <link>https://co1ncidence.github.io/posts/my-workflow/</link>
+      <pubDate>Fri, 18 Sep 2020 14:55:33 -0500</pubDate>
+      
+      <guid>https://co1ncidence.github.io/posts/my-workflow/</guid>
+      <description>&lt;p&gt;One of the things I find the most important when using a computer is effective workflow management. Getting the most efficient setup and being able to do my work as fast as possible while maintaining quality. In this post I will go over in detail the things I do in my setup to ensure that I have the most efficient working environment possible.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Cool Shell Scripts I&#39;ve Found Handy</title>
