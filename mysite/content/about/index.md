@@ -3,9 +3,7 @@ title: "About Me"
 date: 2020-08-02T23:44:22-05:00
 ---
 
-![img](https://i.postimg.cc/YSTZq4T3/undraw-working-from-anywhere-ub67.png#mid)
-
-Just a lost windrunner who spends too much of my wasting it, mostly due to my obsession with Linux, ricing, and Open Source. Though of course, the blame all goes to a good peach and some chocolate covered almonds, nothing wastes time like those do.
+I'm just a lost windrunner who spends too much of my wasting it, mostly due to my obsession with Linux, ricing, and Open Source. Though of course, the blame all goes to a good peach and some chocolate covered almonds, nothing wastes time like those do.
 
 I've always been a fan of the [Fjords of Norway](https://duckduckgo.com/?q=fjords+of+norway&iax=images&ia=images) but recently discovered the beauty of places like [Iceland](https://duckduckgo.com/?q=iceland+mountains&iax=images&ia=images) and [Baffin Island](https://duckduckgo.com/?q=baffin+island&iax=images&ia=images), both of which are making my bucket list seem quite expensive.
 
