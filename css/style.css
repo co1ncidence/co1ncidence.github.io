@@ -160,6 +160,10 @@ a:focus {
 
 /* ---------  Code ---------  */
 
+code {
+  font-family: "JetBrains Mono", "Ubuntu Mono", "Source Code Pro", "Fira Code", "Iosevka", "SF Mono", "Consolas", monospace;
+}
+
 p > code {
   padding-left: 0.5em;
   padding-right: 0.5em;

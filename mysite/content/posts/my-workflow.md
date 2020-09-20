@@ -3,7 +3,7 @@ title: "An In Depth Look at My Workflow"
 date: 2020-09-18T14:55:33-05:00
 ---
 
-One of the things I find the most important when using a computer is effective workflow management. Getting the most efficient setup and being able to do my work as fast as possible while maintaining quality. In this post I will go over in detail the things I do in my setup to ensure that I have the most efficient working environment possible.
+One of the things I find most important when using a computer is effective workflow management. Getting the most efficient setup and being able to do my work as fast as possible while maintaining quality. In this post I will go over some of the things I do in my setup to ensure that I have the most efficient working environment possible.
 
 <!--more-->
 
@@ -13,7 +13,8 @@ One of the things I find the most important when using a computer is effective w
   3. [Other Useful Keybinds](https://co1ncidence.github.io/posts/my-workflow/#other-useful-keybinds)
   4. [Dmenu-Ception](https://co1ncidence.github.io/posts/my-workflow/#dmenu-ception)
   5. [Effective and Minimal Note Taking](https://co1ncidence.github.io/posts/my-workflow/#effective-note-taking)
-  6. [Compatibility With The Norm](https://co1ncidence.github.io/posts/my-workflow/#compatibility-with-the-norm)
+  6. [My Workflow and School](https://co1ncidence.github.io/posts/my-workflow/#my-workflow-and-school)
+  6. [Final Note](https://co1ncidence.github.io/posts/my-workflow/#final-note)
 
 ## Software I use
 
@@ -73,6 +74,8 @@ To overcome Openbox's strange default workflow, I have implement a mix of effici
   - **Alt + Shift + t** will begin recording my entire screen in 60fps
   - **Alt + Shift + r** manually select a region of my screen to record
 
+You can view the rest of my keybindings (such as those for my many menus) in my [sxhkd config](https://github.com/co1ncidence/dotless/blob/master/etc/sxhkd/sxhkdrc).
+
 ## Dmenu-Ception
 
 While normally just used for launching applications, `dmenu` can also be used to create custom menus that run whichever commands you want them to. Here is an example of a menu that I use as a password manager. I point it to a directory that contains my passwords and, to put it simply, `dmenu` will copy those passwords to my clipboard:
@@ -87,7 +90,7 @@ pass=$(ls -1 "$dir" | dmenu -fn "Recursive Mono Linear Static")
 [ -f "$dir/$pass" ] && xclip -sel clip "$dir/$pass"
 ```
 
-Now here is where it gets interesting. You can point a `dmenu` script to another `dmenu` script, this allows you to essentially navigate a directory of menus. I have such a setup here for opening up certain school documents and folders with ease:
+Now here is where it gets interesting. You can point a `dmenu` script to another `dmenu` script, this allows you to essentially navigate a directory of menus. I have such a setup here (which I can initiate with **Super +b**) for opening up certain school documents and folders with ease:
 
 ![gif](https://i.postimg.cc/0QPnnyC0/out.gif)
 
@@ -127,6 +130,73 @@ Fri/18 07:41: Find out which labs to complete
 Sat/19 03:48: Finish shell scripting course
 ```
 
-Putting the notes in HTML format also allows me to easily, and visually, comment out entries that I have marked as done. And by using the fantastic `vim-commentary` plugin, this is as simple as pressing `gcc` on a line. To supplement this, I have aliases to quickly access this notes file as well as one to reveal only the undone entries of it. The simplicity of this setup allows for almost infinite extensibility. So, in theory, I should be able to adapt this "semi-workflow" to just about any situation.
+Putting the notes in HTML format also allows me to easily, and visually, comment out entries that I have marked as done. And by using the fantastic `vim-commentary` plugin, this is as simple as pressing `gcc` on a line. To supplement this, I have aliases to quickly access this notes file as well as one to reveal only the undone entries of it. The simplicity of this setup allows for almost infinite extensibility. So, in theory, **I should be able to adapt this "semi-workflow" to just about any situation.**
 
-## Compatibility With The Norm
+## My Workflow and School
+
+As a college student, **using Linux can be scary.** You never know when you might not be able to do something your fellow students can. Perhaps your distro is missing a package or you forgot to install some drivers. While a lot of these things can be taken care of before a semester, sometimes you need to fix things on the spot. Thankfully, however, I was able to integrate my workflow with my college's requirements without too much of a headache. Here are some of the things I did to keep up with my professor's requirements:
+
+### Easy-To-Miss Software requirements
+
+When you are as stressed about minimalism in computing as I am sometimes, you may end up accidentally forgetting to implement a feature that may not seem important but actually is. These things can include:
+
+  - Installed and working printer drivers
+  - Software that can use your printers scanner
+  - Knowing how to mount and unmount USB drives
+  - Enabling HDMI support for monitors and projectors
+  - And being familiar with shitty college websites
+
+While some of these things may seem like common sense, I frequently check on my ability to do them so I don't miss out on a crucial moment. For example, I always make sure I have **SkanLite** installed in case I ever need to scan a physical document for submission.
+
+### Managing All My Files
+
+One thing I always make sure I have is an intuitive, easy to navigate, and well organized directory tree for all my documents. I prefer to follow a Semantic directory structure, which lets me break down categories into more categories, thus making even the most obscure files and folders trivial to find. Here is a quick overview of my current documents directory:
+
+```sh
+[$] tree -d -L 3
+.
+├── bok
+├── sav
+│   ├── keepass
+│   └── pass
+└── sch
+    ├── doc
+    │   ├── pdf
+    │   ├── png
+    │   ├── ppt
+    │   └── txt
+    ├── engl-1302
+    │   ├── assignments
+    │   ├── doc
+    │   ├── essays
+    │   ├── labs
+    │   └── reqs
+    ├── huma-1301
+    │   ├── assignments
+    │   └── doc
+    └── precalc
+```
+
+As you can see, I like to keep everything organized **in human readable fashion in their own specific places,** while also keeping directory names small and simple. Organizing classes by their own folders is also handy, as to not mix up rubrics or other teacher-given documents.
+
+### Composition, Writing Essays in MLA
+
+While most people are used to writing their college essays in something like **Microsoft Word** or **LibreOffice**, I personally am not a fan of them. Rich text editing is tedious and most of the time inefficient as well. I much prefer to use proper markup formatters like [LaTeX](https://www.latex-project.org/) and [Markdown](https://daringfireball.net/projects/markdown/). To summarize my reasoning, here is a meme one of my friends made on this topic:
+
+![img](https://i.postimg.cc/fTwJHKwn/latex.png)
+
+Now while learning LaTeX can be a hard thing, especially while you may be trying to study for an upcoming exam, utilizing it for something like an MLA formatted essay is almost trivial. I've been using **LaTeX in NeoVim** for quite some time now and have even managed to integrate it with my menu workflow shown before. And for MLA formatting I simply use a [LaTeX MLA template](https://wso.williams.edu/wiki/index.php/LaTeX_MLA_Template), thus all I need to do is type in my name/date and start typing away. The MLA template I use also has a simple to use bibliography system with a predefined "Works Cited" page, so I have no worries regarding properly citing my source  of formatting them into my essay without errors. Once I'm done I can simple run a command like this to make my document ready for submission:
+
+```sh
+[$] pdflatex essay.tex essay.pdf
+```
+
+And *Voila*, I have successfully written an MLA essay and now can send it to my teachers for grading!
+
+### Browser
+
+While I've always loved and used Firefox, It often has compatibility issues with some of my **shittily designed school websites.** So to make up for this I am using [ungoogled-chromium](https://github.com/eloston/ungoogled-chromium/) as my main browser. I've had no compatibility issues so far with it so I guess I'll stay using it for now.
+
+## Final Note
+
+So there it is, a rather simple overview of some of the things that boost up my daily workflow. I hope that you found some of these things interesting and maybe even took some inspiration from them.
