@@ -21,15 +21,6 @@
     </item>
     
     <item>
-      <title>Cool Shell Scripts I&#39;ve Found Handy</title>
-      <link>https://co1ncidence.github.io/posts/some-cool-scripts/</link>
-      <pubDate>Tue, 08 Sep 2020 21:12:44 -0500</pubDate>
-      
-      <guid>https://co1ncidence.github.io/posts/some-cool-scripts/</guid>
-      <description>&lt;p&gt;Recently I&amp;rsquo;ve gained a bit of an obsession with shell scripting. Something about just being able to write little scripts that can do big tasks for you in little time seems very appealing to me. So in this post I&amp;rsquo;ve compiled a few of my favorite scripts, most of which I make use of on a daily basis:&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Making Git Pushes Less Annoying</title>
       <link>https://co1ncidence.github.io/posts/use-git-fast-and-easy/</link>
       <pubDate>Sun, 06 Sep 2020 18:57:05 -0500</pubDate>

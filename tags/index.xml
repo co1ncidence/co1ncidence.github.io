@@ -6,19 +6,10 @@
     <description>Recent content in Tags on nuaNce&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Sep 2020 21:12:44 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 06 Sep 2020 18:57:05 -0500</lastBuildDate>
     
 	<atom:link href="https://co1ncidence.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Showcase</title>
-      <link>https://co1ncidence.github.io/tags/showcase/</link>
-      <pubDate>Tue, 08 Sep 2020 21:12:44 -0500</pubDate>
-      
-      <guid>https://co1ncidence.github.io/tags/showcase/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Guide</title>
@@ -44,6 +35,15 @@
       <pubDate>Sat, 29 Aug 2020 12:21:14 -0500</pubDate>
       
       <guid>https://co1ncidence.github.io/tags/opinion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Showcase</title>
+      <link>https://co1ncidence.github.io/tags/showcase/</link>
+      <pubDate>Mon, 17 Aug 2020 10:43:39 -0500</pubDate>
+      
+      <guid>https://co1ncidence.github.io/tags/showcase/</guid>
       <description></description>
     </item>
     
