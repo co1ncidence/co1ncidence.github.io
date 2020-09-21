@@ -65,6 +65,8 @@ This command only shows the biggest, main folders on your system. Each of these 
 
 `/bin/`: This is a symlink, or symbolic link, to the `/usr/bin/` folder, I will go over **/usr/** as a whole in a bit.
 
+`/boot/`: This is where static bootloader files, such as the ones that initiate your system, are placed. As a whole this is a dangerous place to be messing around so I would highly advise against it unless you know what you are doing.
+
 `/dev/`: This stands for "Device", and is where all the devices connected to your system have there appropriate files, this can contain drives or peripherals. You will find your hard disks and their partitions labeled as `/dev/sda-z|1-9`.
 
 `/etc/`: Originally stood for "etcetera", now this is where all of the global configuration files of all the programs on your system are stored, such as, for example, those used by your init system or display manager:

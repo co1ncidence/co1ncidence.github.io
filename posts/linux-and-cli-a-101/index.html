@@ -9,7 +9,7 @@
 	<meta name="description" content="Just a place where I rant and sometimes say something smart">
 	<meta name="author" content="nuaNce">
 	<link rel="stylesheet" href="/css/style.css">
-	<link rel="stylesheet" href="/css/style.css?rnd=1600637510">
+	<link rel="stylesheet" href="/css/style.css?rnd=1600691041">
 	
 </head>
 <body>
@@ -89,6 +89,7 @@
 └── var
 </code></pre></div><p>This command only shows the biggest, main folders on your system. Each of these is further subdivided into even more different folders and files. Going over the entire filesystem is an extremely daunting task, so I will just give a short briefing on the general purpose of each folder:</p>
 <p><code>/bin/</code>: This is a symlink, or symbolic link, to the <code>/usr/bin/</code> folder, I will go over <strong>/usr/</strong> as a whole in a bit.</p>
+<p><code>/boot/</code>: This is where static bootloader files, such as the ones that initiate your system, are placed. As a whole this is a dangerous place to be messing around so I would highly advise against it unless you know what you are doing.</p>
 <p><code>/dev/</code>: This stands for &ldquo;Device&rdquo;, and is where all the devices connected to your system have there appropriate files, this can contain drives or peripherals. You will find your hard disks and their partitions labeled as <code>/dev/sda-z|1-9</code>.</p>
 <p><code>/etc/</code>: Originally stood for &ldquo;etcetera&rdquo;, now this is where all of the global configuration files of all the programs on your system are stored, such as, for example, those used by your init system or display manager:</p>
 <p><code>/home/</code>: This is where all of the home folders and files of all (normal) users on your system are, it is separated into folders with the usernames of said users, and contains specific files only accessible to said users. Here is where you will be spending around 90% of your time as a Linux user. Home folders usually contain the standard <strong>Documents</strong> or <strong>Pictures</strong> folders and the like, but also contain some important hidden folders, such as:</p>
