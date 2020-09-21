@@ -126,6 +126,8 @@ It is important to get to know your home folder well and to keep it nice and tid
 
 There we have it, the Linux filesystem in it's entirety. While it may seem confusing at first, there is quite a good bit of useful organization here, and as you continue to use your computer you will realize how little you really need to think about where something might be, as each folder has a pretty distinct purpose. Just remember to not go messing around in places that I mentioned you shouldn't be.
 
+And of course, If you would like to learn more than just this basic overview has taught you, run `man hier` in the terminal and take a look through it, it goes quite a bit more in detail than I did here.
+
 ## Third, Getting to Know Bash
 Here I will be explaining some simple bash concepts that will help speed you along your terminal journey, knowing these is necessary if you want to truly be efficient on the command line:
 
