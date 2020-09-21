@@ -42,7 +42,7 @@ Now with that out of the way, here is the list:
 |**[PDF Viewer Plus](https://github.com/JavaCafe01/PdfViewer)**          | The best mobile PDF viewer there is                    |
 |**[ripcord](https://cancel.fm)**                                        | Not great, but it's a minimal discord client           |
 |**[doas](https://github.com/slicer69/doas)**                            | Simple and light `sudo` replacement                    |
-|**[wpm](https://pypi.org/project/wpm/)**                                | Command line typing test                               |
+|**[gottagofast](https://github.com/callum-oakley/gotta-go-fast)**       | Simple and minimal CLI typing test                     |
 |**[monkey-type](https://github.com/s0la/orw)**                          | Clean, fun, and minimal typing test                    |
 |**[wmutils](https://github.com/wmutils/core)**                          | Very extensible set of WM utilities                    |
 |**[0x0](https://github.com/mia-0/0x0)**                                 | Effective, No-Bullshit file hosting                    |
