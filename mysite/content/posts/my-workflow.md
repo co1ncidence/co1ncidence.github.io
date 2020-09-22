@@ -10,7 +10,7 @@ One of the things I find most important when using a computer is effective workf
 ### Table of Contents:
   1. [Software I Use](https://co1ncidence.github.io/posts/my-workflow/#software-i-use)
   2. [Window Management](https://co1ncidence.github.io/posts/my-workflow/#window-management)
-  3. [Other Useful Keybinds](https://co1ncidence.github.io/posts/my-workflow/#other-useful-keybinds)
+  3. [Useful Keybinds](https://co1ncidence.github.io/posts/my-workflow/#useful-keybinds)
   4. [Dmenu-Ception](https://co1ncidence.github.io/posts/my-workflow/#dmenu-ception)
   5. [Effective and Minimal Note Taking](https://co1ncidence.github.io/posts/my-workflow/#effective-note-taking)
   6. [My Workflow and School](https://co1ncidence.github.io/posts/my-workflow/#my-workflow-and-school)
