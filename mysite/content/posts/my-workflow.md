@@ -60,6 +60,8 @@ To overcome Openbox's strange default workflow, I have implemented a mix of effi
 
 ## Useful Keybinds
 
+I find that one of the most essential parts to maintaining efficiency is by having a keyboard based workflow, so, in keeping with this, I've made sure that the actions that I find myself doing most are all bound to keypresses, so I can do them quickly instead of having to waste time using a mouse.
+
 #### Apps
 
   - **Super + Return** will open my terminal
@@ -213,7 +215,16 @@ And *Voila*, I have successfully written an MLA essay and now can send it to my 
 
 ### Browser
 
-While I've always loved and used Firefox, It often has compatibility issues with some of my **shittily designed school websites.** So to make up for this I am using [ungoogled-chromium](https://github.com/eloston/ungoogled-chromium/) as my main browser. I've had no compatibility issues so far with it so I guess I'll stay using it for now.
+While I've always loved and used Firefox, It often has compatibility issues with some of my **shittily designed school websites.** To make up for this I am using [ungoogled-chromium](https://github.com/eloston/ungoogled-chromium/) as my main browser, it works (as far as I can tell) exactly like the normal chromium browser but without all of the malicious Google code. It has had not compatibility issues for me so far, and is also quite a bit faster than other browsers that I've tried.
+
+Here are the browser extensions I use:
+  - Vimium C
+  - Ublock origin
+  - Reddit Enhancement Suite
+  - HTTPS Everywhere
+  - H264ify
+
+Most of these are pretty common except Vimium C, I use it because it helps me move my Vim keybindings into my browser as well, making moving around tabs and just any sort of navigation in general extremely simple.
 
 ## Final Note
 
