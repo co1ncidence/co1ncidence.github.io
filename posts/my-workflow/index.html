@@ -9,7 +9,7 @@
 	<meta name="description" content="Just a place where I rant and sometimes say something smart">
 	<meta name="author" content="nuaNce">
 	<link rel="stylesheet" href="/css/style.css">
-	<link rel="stylesheet" href="/css/style.css?rnd=1600695239">
+	<link rel="stylesheet" href="/css/style.css?rnd=1600793250">
 	
 </head>
 <body>
@@ -75,7 +75,7 @@
 <h4 id="manual-window-resizing">Manual Window Resizing</h4>
 <p><strong>Alt + h/j/k/l</strong> will resize a window, one set resizes outwards, and the other resizes inwards. My resizing is extremely fast as well, this is because I have <code>xset r rate 250 50</code> set in my Xorg configuration, which applies considerable acceleration to any repeated actions.</p>
 <p><strong>Ctrl + Shift + h/j/k/l</strong> will snap a window to any of the 4 cardinal directions, this helps with laying out multiple windows side by side or top to bottom.</p>
-<h2 id="other-useful-keybinds">Other Useful Keybinds</h2>
+<h2 id="useful-keybinds">Useful Keybinds</h2>
 <h4 id="apps">Apps</h4>
 <ul>
 <li><strong>Super + Return</strong> will open my terminal</li>
@@ -90,7 +90,27 @@
 <li><strong>Alt + Shift + t</strong> will begin recording my entire screen in 60fps</li>
 <li><strong>Alt + Shift + r</strong> manually select a region of my screen to record</li>
 </ul>
-<p>You can view the rest of my keybindings (such as those for my many menus) in my <a href="https://github.com/co1ncidence/dotless/blob/master/etc/sxhkd/sxhkdrc">sxhkd config</a>.</p>
+<h4 id="other-things">Other things</h4>
+<ul>
+<li><strong>Super + o/p</strong> will raise and lower my volume</li>
+<li><strong>Super + Up/Down</strong> will raise and lower my screen brightness</li>
+<li><strong>Super + bracketright/left</strong> will play the next/previous song in mpd</li>
+<li><strong>Super + backslash</strong> will toggle mpd playback</li>
+<li><strong>Super + q</strong> will show a nice info notification:
+<ul>
+<li>This removes any need for a space wasting bar</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://i.postimg.cc/Y9JZFsJP/image.png" alt="img"></p>
+<h4 id="dmenu-bindings">Dmenu bindings</h4>
+<ul>
+<li><strong>Super + b</strong> will open up my school menu tree</li>
+<li><strong>Super + m</strong> will open up the meme menu</li>
+<li><strong>Super + n</strong> will open up my <a href="https://github.com/cdown/passmenu">password menu</a></li>
+<li><strong>Super + s</strong> will open up a menu of fonts, each will launch a typing test with the font I choose:</li>
+</ul>
+<p><img src="https://i.postimg.cc/52BzWQ4Q/what.png" alt="img"></p>
 <h2 id="dmenu-ception">Dmenu-Ception</h2>
 <p>While normally just used for launching applications, <code>dmenu</code> can also be used to create custom menus that run whichever commands you want them to. Here is an example of a menu that I use as a password manager. I point it to a directory that contains my passwords and, to put it simply, <code>dmenu</code> will copy those passwords to my clipboard:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#ff79c6">#!/bin/sh

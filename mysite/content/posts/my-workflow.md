@@ -58,7 +58,7 @@ To overcome Openbox's strange default workflow, I have implemented a mix of effi
 
 **Ctrl + Shift + h/j/k/l** will snap a window to any of the 4 cardinal directions, this helps with laying out multiple windows side by side or top to bottom.
 
-## Other Useful Keybinds
+## Useful Keybinds
 
 #### Apps
 
@@ -74,7 +74,25 @@ To overcome Openbox's strange default workflow, I have implemented a mix of effi
   - **Alt + Shift + t** will begin recording my entire screen in 60fps
   - **Alt + Shift + r** manually select a region of my screen to record
 
-You can view the rest of my keybindings (such as those for my many menus) in my [sxhkd config](https://github.com/co1ncidence/dotless/blob/master/etc/sxhkd/sxhkdrc).
+#### Other things
+
+  - **Super + o/p** will raise and lower my volume
+  - **Super + Up/Down** will raise and lower my screen brightness
+  - **Super + bracketright/left** will play the next/previous song in mpd
+  - **Super + backslash** will toggle mpd playback
+  - **Super + q** will show a nice info notification:
+    + This removes any need for a space wasting bar
+
+![img](https://i.postimg.cc/Y9JZFsJP/image.png)
+
+#### Dmenu bindings
+
+  - **Super + b** will open up my school menu tree
+  - **Super + m** will open up the meme menu
+  - **Super + n** will open up my [password menu](https://github.com/cdown/passmenu)
+  - **Super + s** will open up a menu of fonts, each will launch a typing test with the font I choose:
+
+![img](https://i.postimg.cc/52BzWQ4Q/what.png)
 
 ## Dmenu-Ception
 

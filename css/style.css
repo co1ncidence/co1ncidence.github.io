@@ -213,10 +213,9 @@ article {
   margin-bottom: 15px;
 }
 
-.mid-image, figure.mid img, img[src*="mid"] {
-  display: block;
+.mid-image, figure.mid img, img[src*="mid"] {)
   width: 50%;
-  float: right;
+  margin: 0 auto;
 }
 
 /* ---------  Quotes ---------  */
