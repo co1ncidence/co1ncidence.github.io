@@ -16,22 +16,22 @@
   --seltext:  #C7ECF7;
 }
 
-/* @media(prefers-color-scheme:dark) { */
-/*   :root { */
-/*     --bg1:      #363636; */
-/*     --bg2:      #494949; */
-/*     --bg3:      #535353; */
-/*     --fg1:      #ececec; */
-/*     --fg2:      #e7e7e7; */
-/*     --fg3:      #f5f5f5; */
-/*     --title1:   #C49EA0; */
-/*     --title2:   #ac8a8c; */
-/*     --link1:    #93a8a8; */
-/*     --link2:    #9eb1b1; */
-/*     --code:     #e7e7e7; */
-/*     --seltext:  #C7ECF7; */
-/*   } */
-/* } */
+@media(prefers-color-scheme:dark) {
+  :root {
+    --bg1:      #363636;
+    --bg2:      #494949;
+    --bg3:      #535353;
+    --fg1:      #ececec;
+    --fg2:      #e7e7e7;
+    --fg3:      #f5f5f5;
+    --title1:   #C49EA0;
+    --title2:   #ac8a8c;
+    --link1:    #b4c2c2;
+    --link2:    #becbcb;
+    --code:     #e7e7e7;
+    --seltext:  #C7ECF7;
+  }
+}
 
 /* ---------  Main Things ---------  */
 
@@ -113,7 +113,7 @@ nav {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  width: 75%;
+  width: 72%;
   background-color: var(--bg3);
   color: var(--link1);
   padding-top: 0.6em;
@@ -165,12 +165,9 @@ pre {
 	font-size: 16px;
 	line-height: 1.8;
   margin-top: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 	padding: 28px;
-  border: 5px solid #282A36;
-  -webkit-box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.41);
-  -moz-box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.41);
-  box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.41);
+  border: 5px solid #414458;
 }
 
 /* ---------- Articles --------- */
@@ -204,17 +201,17 @@ article {
 
 blockquote {
   margin-left: 0em;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   padding: 0.2em 2em;
   position: relative;
   color: var(--fg3);
   background-color: var(--bg2);
   border-left: 3px solid var(--fg2);
   font-size: 16px;
-  -webkit-box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.41);
-  -moz-box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.41);
-  box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.41);
+  -webkit-box-shadow: 5px 5px 0px 0px rgba(54,54,54,0.2);
+  -moz-box-shadow: 5px 5px 0px 0px rgba(54,54,54,0.2);
+  box-shadow: 5px 5px 0px 0px rgba(54,54,54,0.2);
 }
 
 /* ---------  Table ---------  */

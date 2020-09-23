@@ -13,11 +13,11 @@ Before we begin, a confession, I used to really like Windows, I admit that it wa
 ## What's wrong with Windows?
 
 I will divide this subsection into 5 categories and talk about them separately:
-  1. [Slow, bloated interface, terrible UI design](http://co1ncidence.github.io/posts/why-i-stopped-using-windows/#slow-bloated-interface-terrible-ui-design)
-  2. [Many security and privacy issues, constant spying from Microsoft](http://co1ncidence.github.io/posts/why-i-stopped-using-windows/#many-security-and-privacy-issues-constant-spying-from-microsoft)
-  3. [Software base being almost completely proprietary](http://co1ncidence.github.io/posts/why-i-stopped-using-windows/#software-base-being-almost-completely-proprietary)
-  4. [Lack of control over system, too much going on without user consent](http://co1ncidence.github.io/posts/why-i-stopped-using-windows/#lack-of-control-over-system-too-much-going-on-without-user-consent)
-  5. [TLDR](http://co1ncidence.github.io/posts/why-i-stopped-using-windows/#tldr)
+  1. [Slow, bloated interface, terrible UI design](#slow-bloated-interface-terrible-ui-design)
+  2. [Many security and privacy issues](#many-security-and-privacy-issues-constant-spying-from-microsoft)
+  3. [Software base almost completely proprietary](#software-base-being-almost-completely-proprietary)
+  4. [Lack of control over system](#lack-of-control-over-system-too-much-going-on-without-user-consent)
+  5. [TLDR](#tldr)
 
 ### Slow, bloated Interface, terrible UI design
 
@@ -61,12 +61,12 @@ Windows seems to be designed to be as unintuitive and unusable as possible, with
 In it's entirety, Windows 10, which costs 120 dollars, seems like quite a bad deal, mostly because it is one. I don't blame people for using it, however. These days almost no marketing is given to Windows alternatives. This allows Microsoft to control and manipulate as large of a percentage of the desktop market share as it possibly can. And with it's terrible workflow and features, Windows normalizes lazy computer habits and also makes users indifferent to any alternatives, as it won't be "what they're used to". The proprietary nature of the operating system is also concerning. Most Windows users know close to nothing about the internals of the machine **that they themselves use every day.** This is becoming the norm more and more, and sooner or later no one will worry about what goes on behind the scenes on the system that virtually their entire life depends upon. Add this to the 6 hour long sudden updates, constant abuse and intrusion on user privacy, slow and bloated user interface, bad treatment of users and there software, and Windows really starts to look like a terrible operating system. Hope hasn't been lost yet, however, since there are still many alternatives to Windows available for everyone to try, one of them being Linux.
 
 ## Now, Why is Linux any better?
-This subsection too, will be divided into these categories:
-  1. No single operating systems, many distributions to choose from for virtually any purpose
-  2. UI and design has infinite customization potential, there is virtually no limit, and thus, no complaint
-  3. Completely open and secure, everything is known to the user, no corporate ownership
-  4. Completely open source and free software base, almost too many options to choose from sometimes
-  5. Absolute control over system, nothing is inaccessible to the user
+This subsection too, will be divided into 5 categories:
+  1. Many distributions to choose from for almost any purpose
+  2. UI and design has infinite customization potential
+  3. Completely open and secure
+  4. Free and Open Source software base
+  5. Absolute control over system
 
 ### Many distributions to choose from for almost any purpose
 
@@ -78,14 +78,16 @@ Linux offers an almost absurd collection of different desktop environments and w
 
 ### Completely transparent and secure
 
-One of the main problems that windows had was it's corporate ownership. Almost everything that Microsoft did for the operating system and/or it's users had a financial incentive behind it. Now while this isn't inherently a bad thing (companies have to make money somehow), the methods Microsoft employed aren't the most ethical and this have made many users, including me, look for something more morally sound. Linux provides exactly that. With most of it's distributions being community owned and supported, almost every line of code can be verified to be non malicious. Some distributions are owned by corporations as well, notably enterprise ones like [RHEL(), these, however, are still completely open source and secure, and are intended for more professional use cases. Either way, choice is once again given to the user, if one distribution feels uncomfortable, you have dozens more to choose from. Distributions and their communities are also completely open about their development processes and bugs, and are constantly working together to solve these problems and further stabilize the distributions. Nothing is hidden from users, leading to far more interaction and active development.
+One of the main problems that windows had was it's corporate ownership. Almost everything that Microsoft did for the operating system and/or it's users had a financial incentive behind it. Now while this isn't inherently a bad thing (companies have to make money somehow), the methods Microsoft employed aren't the most ethical and this have made many users, including me, look for something more morally sound. Linux provides exactly that. With most of it's distributions being community owned and supported, almost every line of code can be verified to be non malicious. Some distributions are owned by corporations as well, notably enterprise ones like [RHEL](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux), these, however, are still completely open source and secure, and are intended for more professional use cases. Either way, choice is once again given to the user, if one distribution feels uncomfortable, you have dozens more to choose from. Distributions and their communities are also completely open about their development processes and bugs, and are constantly working together to solve these problems and further stabilize the distributions. Nothing is hidden from users, leading to far more interaction and active development.
 
 ### Free and Open Source software base
 
-Linux has always, and does still, pride itself on being a completely open and free operating system. On top of that, the Linux Community has also done a fantastic job of making sure that all software that is on Linux is also Free and Open-source. This includes drivers, firmware, and even system utilities for many systems.
+Linux has always, and does still, pride itself on being a completely open and free operating system. On top of that, the Linux Community has also done a fantastic job of making sure that all software that is on Linux is also Free and Open-source. This includes drivers, firmware, and even system utilities for many systems. Every Linux distributions package repositories are comprised solely of open source and free software, and there are large, and very active, communities who are always working on making these projects even better than they already are. Another benefit of such a software base is that you are almost always guaranteed privacy and freedom over whatever software you download. You are free to modify it, view it's source code, and even run analytics on it if you wish. Along with being free and easy to manage, Linux's software base also gives it's users the utmost privacy. With package managers directly installing programs straight from their developers, you never have to worry about accidentally installing a virus or putting your system in danger when installing something, like you would on Windows.
 
 ### Absolute control over system
 
-Linux distributions allow root access to the system by default. And there are dozens of built in utilities that let the user access, change, or remove anything they want from the system. While this can be dangerous if the user is not aware of what they are doing, it also gives immense amounts of freedom of control to anyone using the system. You can uninstall or install any application you want any time. All dependencies and requirements are available to you via the package manager. You have full access to the entirety of the Linux Filesystem, and can manually configure any program by hand if you so wish. Linux is friendly to both advanced and new users, with many concepts being simple and intuitive to understand. Instead of having to deal with downloading and installing programs (and worrying about viruses), all software is managed via your distro's "package manager", which, of course, is under your control.
+Linux distributions allow root access to the system by default. And there are dozens of built in utilities that let the user access, change, or remove anything they want from the system. While this can be dangerous if the user is not aware of what they are doing, it also gives immense amounts of freedom of control to anyone using the system. You can uninstall or install any application you want any time. All dependencies and requirements are available to you via the package manager. You have full access to the entirety of the Linux Filesystem, and can manually configure any program by hand if you so wish. Linux is friendly to both advanced and new users, with many concepts being simple and intuitive to understand. Instead of having to deal with downloading and installing programs (and worrying about viruses), all software is managed via your distro's "package manager", which, of course, is under your control. Having such extensive control also allows the user to shape the systems to meet their needs, with environment variables and the easy to manage directory structure of UNIX systems, doing so is easier than ever before. There really isn't much more to say here, I could rant on for hours about all the things you can do on your system, but I think it's best that I let you find out on your own.
 
 ## Final note
+
+To close things off, I will say that I don't expect everyone as a mass to switch off of Windows. I am well aware of how much of a necessity it has become nowadays. But while we may not be able to completely rid ourselves of this, we can at least try our best to educate ourselves and those we know about the risks of using it. One of mankind's defining characteristics is loving out rights, and I think it's reasonable to say that any kind of software that takes freedom, privacy, and an intuitive experience away from you is infringing on those rights.
