@@ -20,19 +20,13 @@ One of the things I find most important when using a computer is effective workf
 
 To start things off, here is a basic overview of some of my productivity software:
 
-**Distro:** Manjaro Linux
-
-**Window Manager:** Openbox
-
-**Terminal:** Simple Terminal
-
-**Browser:** Ungoogled-Chromium
-
-**Menu Manager:** Dmenu
-
-**Editor:** NeoVim
-
-**Other Software:** Zathura, LibreOffice, Xournal++, SkanLite
+- **Distro:** Manjaro Linux
+- **Window Manager:** Openbox
+- **Terminal:** Simple Terminal
+- **Editor:** NeoVim
+- **Browser:** Ungoogled-Chromium
+- **Menu Manager:** Dmenu
+- **Other Software:** Zathura, LibreOffice, Xournal++, SkanLite
 
 You may be confused about some of the choices I've made here, mainly those regarding my distribution and window manager. The reason I run Manjaro is for printer compatibility, which I simply could *not* get working on Arch Linux. And I use Openbox because it does exactly what I need it to, manages windows without getting in my way. While not being very workflow oriented out of the box, and with just a few tweaks and scripts we can get Openbox to be even more efficient than a standard tiling window manager.
 
