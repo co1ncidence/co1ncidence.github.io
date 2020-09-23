@@ -48,7 +48,7 @@ body {
   padding-bottom: 3ch;
   padding-left: 3ch;
   padding-right: 3ch;
-  font-family: 'Zilla Slab', sans-serif;
+  font-family: 'DM Serif Text', sans-serif;
   font-size: 20px;
   line-height: 1.6em;
   background-color: var(--bg1);
@@ -68,7 +68,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'DM Mono', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   color: var(--fg2);
   line-height: 1.2;
   text-rendering: optimizeLegibility;
@@ -96,7 +96,7 @@ time {
   padding-top: 40px;
   padding-bottom: 30px;
   border-bottom: 5px solid var(--bg1);
-  font-family: 'DM Mono', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 3em;
   color: var(--title1);
   text-shadow: 1px 1px 0px rgba(150, 150, 150, 0.43);
@@ -119,7 +119,7 @@ nav {
   padding-top: 0.6em;
   padding-bottom: 0.6em;
   margin-bottom: 1em;
-  font-family: 'DM Mono', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 1.5em;
   text-shadow: 1px 1px 0px rgba(150, 150, 150, 0.43);
   -webkit-box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.41);
