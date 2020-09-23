@@ -23,12 +23,12 @@ None!
 
 ### Social Media Links
 
-- **[GitHub](https://github.com/co1ncidence)**
-- **[StackOverflow](https://stackoverflow.com/users/13316025/jovinderpihainu)**
-- **[Reddit](https://www.reddit.com/user/fps_co1ncidence/)**
+- [GitHub](https://github.com/co1ncidence)
+- [StackOverflow](https://stackoverflow.com/users/13316025/jovinderpihainu)
+- [Reddit](https://www.reddit.com/user/fps_co1ncidence/)
 
 ### Contact
 
-You can email me anytime at **r3yan.chaudhry@zohomail.com**
+You can email me anytime at r3yan.chaudhry@zohomail.com
 
 I also have a Discord tag: `@nuaNce#4387`
