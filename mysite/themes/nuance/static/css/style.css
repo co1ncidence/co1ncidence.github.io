@@ -38,21 +38,26 @@
 html {
   overflow-y: scroll;
   -webkit-font-smoothing: antialiased;
+  background-color: #f6f6f6;
 }
 
 body {
   max-width: 800px;
   width: 100vw;
-  margin: 0 auto;
+  margin: 10vh auto;
   padding-top: 10vh;
   padding-bottom: 10vh;
-  padding-left: 10vw;
-  padding-right: 10vw;
+  padding-left: 8vw;
+  padding-right: 8vw;
   font-family: 'Crimson Pro', sans-serif;
   font-size: 18px;
   line-height: 30px;
   background-color: var(--bg1);
   color: var(--fg1);
+  border: 2px solid #2f1e2e;
+  -webkit-box-shadow: 20px 20px 0px -2px rgba(44,44,44,0.21);
+  -moz-box-shadow: 20px 20px 0px -2px rgba(44,44,44,0.21);
+  box-shadow: 20px 20px 0px -2px rgba(44,44,44,0.21);
 }
 
 /* ---------  Headers ---------  */
@@ -194,7 +199,7 @@ pre {
   margin-top: 30px;
   margin-bottom: 30px;
 	padding: 28px;
-  border: 5px solid #533551;
+  border: 5px solid #6b4469;
 }
 
 /* ---------- Articles --------- */
