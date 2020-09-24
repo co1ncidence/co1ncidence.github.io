@@ -124,7 +124,7 @@ Here is an example of this script in use:
 [$] note Finish writing a blogpost
 ```
 
-This command will append the sentence `Finish writing a blogpost` to the end of a specified notes file. Not only that, but the note entry will be prefixed by a date and time. This makes identifying and marking off old notes much easier. Here is what a notes file would look like:
+This command will append the sentence `Finish writing a blogpost` to the end of a specified notes file. Not only that, the note entry will also be prefixed by a date and time. This makes identifying and marking off old notes much easier. Here is what a notes file would look like:
 
 ```html
 Wed/16 08:02: Relearn Quadratics
@@ -144,7 +144,7 @@ Fri/18 07:41: Find out which labs to complete
 Sat/19 03:48: Finish shell scripting course
 ```
 
-Putting the notes in HTML format also allows me to easily, and visually, comment out entries that I have marked as done. And by using the fantastic `vim-commentary` plugin, this is as simple as pressing `gcc` on a line. To supplement this, I have aliases to quickly access this notes file as well as one to reveal only the undone entries of it. The simplicity of this setup allows for almost infinite extensibility. So, in theory, **I should be able to adapt this "semi-workflow" to just about any situation.**
+Putting the notes in HTML (or markdown, if you prefer that) format also allows me to easily, and visually, comment out entries that I have marked as done. And by using the fantastic `vim-commentary` plugin, this is as simple as pressing `gcc` on a line. To supplement this, I have aliases to quickly access this notes file as well as one to reveal only the undone entries of it. The simplicity of this setup allows for almost infinite extensibility. So, in theory, **I should be able to adapt this "semi-workflow" to just about any situation.**
 
 ## My Workflow and School
 
