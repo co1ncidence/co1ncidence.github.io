@@ -1,5 +1,5 @@
 <article>
-		<h1><a style="text-decoration: none; color: var(--fg1)" href="{{ .Permalink }}">{{ .Title }}</a></h1>
+		<h1><a class="postitle" href="{{ .Permalink }}">{{ .Title }}</a></h1>
 	<b><time>{{ .Date.Format (default "Published: 01/02/2006" .Site.Params.dateFmt) }}</time></b>
 	{{ range .Params.tags }}
 	{{ end }}

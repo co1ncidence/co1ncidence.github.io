@@ -48,7 +48,7 @@ body {
   padding-bottom: 10vh;
   padding-left: 10vw;
   padding-right: 10vw;
-  font-family: 'Crimson Text', sans-serif;
+  font-family: 'Crimson Pro', sans-serif;
   font-size: 18px;
   line-height: 30px;
   background-color: var(--bg1);
@@ -70,7 +70,7 @@ h1 {
   line-height: 1.3;
   padding-bottom: 7px;
   text-rendering: optimizeLegibility;
-  border-bottom: 2px solid #2c2c2c;
+  border-bottom: 2px solid var(--fg2);
 }
 
 h2,
@@ -82,6 +82,18 @@ h6 {
   color: var(--fg2);
   line-height: 1.2;
   text-rendering: optimizeLegibility;
+}
+
+/* ---------- Post Title ------------ */
+
+.postitle {
+  color: var(--fg2);
+  text-decoration: none;
+}
+
+.postitle:hover {
+  color: var(--title1);
+  text-decoration: none;
 }
 
 /* ---------  Time Published ---------  */
@@ -160,10 +172,12 @@ code {
 }
 
 p > code {
-  padding-left: 0.5em;
-  padding-right: 0.5em;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
   padding-top: 0.2em;
-  padding-bottom: 0.3em;
+  padding-bottom: 0.2em;
+  margin-right: 0.1em;
+  margin-left: 0.1em;
   color: var(--bg1);
   background-color: var(--code);
   font-size: 0.9em;
@@ -220,11 +234,12 @@ blockquote {
   position: relative;
   color: var(--fg3);
   background-color: var(--bg2);
-  border-left: 3px solid var(--fg2);
+  border: 2px solid #c9aac7;
+  border-left: 6px solid #c9aac7;
   font-size: 16px;
-  -webkit-box-shadow: 5px 5px 0px 0px rgba(54,54,54,0.2);
-  -moz-box-shadow: 5px 5px 0px 0px rgba(54,54,54,0.2);
-  box-shadow: 5px 5px 0px 0px rgba(54,54,54,0.2);
+  -webkit-box-shadow: 5px 5px 0px 0px rgba(232,218,231,1);
+  -moz-box-shadow: 5px 5px 0px 0px rgba(232,218,231,1);
+  box-shadow: 5px 5px 0px 0px rgba(232,218,231,1);
 }
 
 /* ---------  Table ---------  */
