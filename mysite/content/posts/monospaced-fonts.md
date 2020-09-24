@@ -3,7 +3,7 @@ title: "Poggers Monospaced Fonts"
 date: 2020-09-24T12:12:31-05:00
 ---
 
-Recently I've garnered a bit of an obsession with fonts, especially the ones I use in my terminal. I tried out almost 100 different fonts over the past few weeks and I think I've done enough experimentation for me to make a list of the ones I like the most. The fonts were all tested in [simple terminal]() with the font size as **pixelsize:16**, so any variation you see in size is part of what Xorg likes to do with fonts. Anyhow, without further ado, here is the list:
+Recently I've garnered a bit of an obsession with fonts, especially the ones I use in my terminal. I tried out almost 100 different fonts over the past few weeks and I think I've done enough experimentation for me to make a list of the ones I like the most. The fonts were all tested in [simple terminal](https://st.suckless.org/) with the font size as **pixelsize:16**, so any variation you see in size is part of what Xorg likes to do with fonts. Anyhow, without further ado, here is the list:
 
 <!--more-->
 
