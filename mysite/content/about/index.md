@@ -19,7 +19,7 @@ Here is some more professional information about me:
 
 ### Skills
 
-None!
+Yes!
 
 ### Social Media Links
 
