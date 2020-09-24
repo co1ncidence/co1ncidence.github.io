@@ -7,7 +7,7 @@ One of the things I find most important when using a computer is effective workf
 
 <!--more-->
 
-### Table of Contents:
+## Table of Contents:
   1. [Software I Use](#software-i-use)
   2. [Window Management](#window-management)
   3. [Useful Keybinds](#useful-keybinds)
@@ -34,19 +34,19 @@ You may be confused about some of the choices I've made here, mainly those regar
 
 To overcome Openbox's strange default workflow, I have implemented a mix of efficient [vim-based keybinds](https://www.maketecheasier.com/cheatsheet/vim-keyboard-shortcuts/) to make window management easier. I have all of the window placement, resizing, and movement that I could want from most tiling window managers but at a minimal level, thus removing any unnecessary features. Most of this window management is achieved using [wmutils](https://github.com/wmutils/core) in correspondence with [sxhkd](https://github.com/baskerville/sxhkd). One thing to note is that due to my limited (14 inches) screen real estate, I rarely ever have more than 2 or 3 windows on my screen. A lot of my window management workflow and keybind choices revolve around this condition.
 
-#### Workspaces
+### Workspaces
 
 **Super + h/l** will move me between relative workspaces.
 
 **Alt + Shift + h/l** will move the current window between relative workspaces.
 
-#### Manipulating Windows
+### Manipulating Windows
 
 **Super + c** will center the current window, helps with bringing windows quickly into a focused position.
 
 **Super + j/k** will toggle a window as maximized, both keys do either action so as to reduce any margin of error.
 
-#### Manual Window Resizing
+### Manual Window Resizing
 
 **Alt + h/j/k/l** will resize a window, one set resizes outwards, and the other resizes inwards. My resizing is extremely fast as well, this is because I have `xset r rate 250 50` set in my Xorg configuration, which applies considerable acceleration to any repeated actions.
 
@@ -56,13 +56,13 @@ To overcome Openbox's strange default workflow, I have implemented a mix of effi
 
 I find that one of the most essential parts to maintaining efficiency is by having a keyboard based workflow, so, in keeping with this, I've made sure that the actions that I find myself doing most are all bound to keypresses, so I can do them quickly instead of having to waste time using a mouse.
 
-#### Apps
+### Apps
 
   - **Super + Return** will open my terminal
   - **Super + i** will open my browser
   - **Super + e** will open ranger in a terminal window
 
-#### Screenshots and Video
+### Screenshots and Video
 
   - **Alt + Shift + e** screenshot by selection, copies to clipboard
   - **Alt + Shift + s** screenshot by selection and save it to a folder
@@ -70,7 +70,7 @@ I find that one of the most essential parts to maintaining efficiency is by havi
   - **Alt + Shift + t** will begin recording my entire screen in 60fps
   - **Alt + Shift + r** manually select a region of my screen to record
 
-#### Other things
+### Other things
 
   - **Super + o/p** will raise and lower my volume
   - **Super + Up/Down** will raise and lower my screen brightness
@@ -79,16 +79,16 @@ I find that one of the most essential parts to maintaining efficiency is by havi
   - **Super + q** will show a nice info notification:
     + This removes any need for a space wasting bar
 
-![img](https://i.postimg.cc/Y9JZFsJP/image.png)
+![img](https://i.postimg.cc/g2t3w86X/what.png)
 
-#### Dmenu bindings
+### Dmenu bindings
 
   - **Super + b** will open up my school menu tree
   - **Super + m** will open up the meme menu
   - **Super + n** will open up my [password menu](https://github.com/cdown/passmenu)
   - **Super + s** will open up a menu of fonts, each will launch a typing test with the font I choose:
 
-![img](https://i.postimg.cc/52BzWQ4Q/what.png)
+![img](https://i.postimg.cc/6pFyJ0v0/what.png)
 
 ## Dmenu-Ception
 
@@ -106,7 +106,7 @@ pass=$(ls -1 "$dir" | dmenu -fn "Recursive Mono Linear Static")
 
 Now here is where it gets interesting. You can point a `dmenu` script to another `dmenu` script, this allows you to essentially navigate a directory of menus. I have such a setup here (which I can initiate with **Super +b**) for opening up certain school documents and folders with ease:
 
-![gif](https://i.postimg.cc/0QPnnyC0/out.gif)
+![gif](https://i.postimg.cc/Z5YKGQnp/what.gif)
 
 ## Effective Note Taking
 

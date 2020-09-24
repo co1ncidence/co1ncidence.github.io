@@ -9,7 +9,7 @@
 	<meta name="description" content="Just a place where I rant and sometimes say something smart">
 	<meta name="author" content="nuaNce">
 	<link rel="stylesheet" href="/css/style.css">
-	<link rel="stylesheet" href="/css/style.css?rnd=1600907688">
+	<link rel="stylesheet" href="/css/style.css?rnd=1600923791">
 	
 </head>
 <body>
@@ -39,12 +39,12 @@
 	<main>
 		<article>
 			<h1>An In Depth Look at My Workflow</h1>
-			<b><time>09/18/2020</time></b>
+			
 		       
 
 			<div>
 				<p>One of the things I find most important when using a computer is effective workflow management. Getting the most efficient setup and being able to do my work as fast as possible while maintaining quality. In this post I will go over some of the things I do in my setup to ensure that I have the most efficient working environment possible.</p>
-<h3 id="table-of-contents">Table of Contents:</h3>
+<h2 id="table-of-contents">Table of Contents:</h2>
 <ol>
 <li><a href="#software-i-use">Software I Use</a></li>
 <li><a href="#window-management">Window Management</a></li>
@@ -68,24 +68,24 @@
 <p>You may be confused about some of the choices I&rsquo;ve made here, mainly those regarding my distribution and window manager. The reason I run Manjaro is for printer compatibility, which I simply could <em>not</em> get working on Arch Linux. And I use Openbox because it does exactly what I need it to, manages windows without getting in my way. While not being very workflow oriented out of the box, and with just a few tweaks and scripts we can get Openbox to be even more efficient than a standard tiling window manager.</p>
 <h2 id="window-management">Window management</h2>
 <p>To overcome Openbox&rsquo;s strange default workflow, I have implemented a mix of efficient <a href="https://www.maketecheasier.com/cheatsheet/vim-keyboard-shortcuts/">vim-based keybinds</a> to make window management easier. I have all of the window placement, resizing, and movement that I could want from most tiling window managers but at a minimal level, thus removing any unnecessary features. Most of this window management is achieved using <a href="https://github.com/wmutils/core">wmutils</a> in correspondence with <a href="https://github.com/baskerville/sxhkd">sxhkd</a>. One thing to note is that due to my limited (14 inches) screen real estate, I rarely ever have more than 2 or 3 windows on my screen. A lot of my window management workflow and keybind choices revolve around this condition.</p>
-<h4 id="workspaces">Workspaces</h4>
+<h3 id="workspaces">Workspaces</h3>
 <p><strong>Super + h/l</strong> will move me between relative workspaces.</p>
 <p><strong>Alt + Shift + h/l</strong> will move the current window between relative workspaces.</p>
-<h4 id="manipulating-windows">Manipulating Windows</h4>
+<h3 id="manipulating-windows">Manipulating Windows</h3>
 <p><strong>Super + c</strong> will center the current window, helps with bringing windows quickly into a focused position.</p>
 <p><strong>Super + j/k</strong> will toggle a window as maximized, both keys do either action so as to reduce any margin of error.</p>
-<h4 id="manual-window-resizing">Manual Window Resizing</h4>
+<h3 id="manual-window-resizing">Manual Window Resizing</h3>
 <p><strong>Alt + h/j/k/l</strong> will resize a window, one set resizes outwards, and the other resizes inwards. My resizing is extremely fast as well, this is because I have <code>xset r rate 250 50</code> set in my Xorg configuration, which applies considerable acceleration to any repeated actions.</p>
 <p><strong>Ctrl + Shift + h/j/k/l</strong> will snap a window to any of the 4 cardinal directions, this helps with laying out multiple windows side by side or top to bottom.</p>
 <h2 id="useful-keybinds">Useful Keybinds</h2>
 <p>I find that one of the most essential parts to maintaining efficiency is by having a keyboard based workflow, so, in keeping with this, I&rsquo;ve made sure that the actions that I find myself doing most are all bound to keypresses, so I can do them quickly instead of having to waste time using a mouse.</p>
-<h4 id="apps">Apps</h4>
+<h3 id="apps">Apps</h3>
 <ul>
 <li><strong>Super + Return</strong> will open my terminal</li>
 <li><strong>Super + i</strong> will open my browser</li>
 <li><strong>Super + e</strong> will open ranger in a terminal window</li>
 </ul>
-<h4 id="screenshots-and-video">Screenshots and Video</h4>
+<h3 id="screenshots-and-video">Screenshots and Video</h3>
 <ul>
 <li><strong>Alt + Shift + e</strong> screenshot by selection, copies to clipboard</li>
 <li><strong>Alt + Shift + s</strong> screenshot by selection and save it to a folder</li>
@@ -93,7 +93,7 @@
 <li><strong>Alt + Shift + t</strong> will begin recording my entire screen in 60fps</li>
 <li><strong>Alt + Shift + r</strong> manually select a region of my screen to record</li>
 </ul>
-<h4 id="other-things">Other things</h4>
+<h3 id="other-things">Other things</h3>
 <ul>
 <li><strong>Super + o/p</strong> will raise and lower my volume</li>
 <li><strong>Super + Up/Down</strong> will raise and lower my screen brightness</li>
@@ -105,15 +105,15 @@
 </ul>
 </li>
 </ul>
-<p><img src="https://i.postimg.cc/Y9JZFsJP/image.png" alt="img"></p>
-<h4 id="dmenu-bindings">Dmenu bindings</h4>
+<p><img src="https://i.postimg.cc/g2t3w86X/what.png" alt="img"></p>
+<h3 id="dmenu-bindings">Dmenu bindings</h3>
 <ul>
 <li><strong>Super + b</strong> will open up my school menu tree</li>
 <li><strong>Super + m</strong> will open up the meme menu</li>
 <li><strong>Super + n</strong> will open up my <a href="https://github.com/cdown/passmenu">password menu</a></li>
 <li><strong>Super + s</strong> will open up a menu of fonts, each will launch a typing test with the font I choose:</li>
 </ul>
-<p><img src="https://i.postimg.cc/52BzWQ4Q/what.png" alt="img"></p>
+<p><img src="https://i.postimg.cc/6pFyJ0v0/what.png" alt="img"></p>
 <h2 id="dmenu-ception">Dmenu-Ception</h2>
 <p>While normally just used for launching applications, <code>dmenu</code> can also be used to create custom menus that run whichever commands you want them to. Here is an example of a menu that I use as a password manager. I point it to a directory that contains my passwords and, to put it simply, <code>dmenu</code> will copy those passwords to my clipboard:</p>
 <div class="highlight"><pre style="color:#e7e9db;background-color:#2f1e2e;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#776e71">#!/bin/sh
@@ -124,7 +124,7 @@
 
 <span style="color:#5bc4bf">[</span> -f <span style="color:#48b685">&#34;</span><span style="color:#ef6155">$dir</span><span style="color:#48b685">/</span><span style="color:#ef6155">$pass</span><span style="color:#48b685">&#34;</span> <span style="color:#5bc4bf">]</span> <span style="color:#5bc4bf">&amp;&amp;</span> xclip -sel clip <span style="color:#48b685">&#34;</span><span style="color:#ef6155">$dir</span><span style="color:#48b685">/</span><span style="color:#ef6155">$pass</span><span style="color:#48b685">&#34;</span>
 </code></pre></div><p>Now here is where it gets interesting. You can point a <code>dmenu</code> script to another <code>dmenu</code> script, this allows you to essentially navigate a directory of menus. I have such a setup here (which I can initiate with <strong>Super +b</strong>) for opening up certain school documents and folders with ease:</p>
-<p><img src="https://i.postimg.cc/0QPnnyC0/out.gif" alt="gif"></p>
+<p><img src="https://i.postimg.cc/Z5YKGQnp/what.gif" alt="gif"></p>
 <h2 id="effective-note-taking">Effective Note Taking</h2>
 <p>On the topic of little useful scripts, here is one that I came up with called <code>note</code> that makes quick and easy note taking almost trivial:</p>
 <div class="highlight"><pre style="color:#e7e9db;background-color:#2f1e2e;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#776e71">#!/bin/sh
