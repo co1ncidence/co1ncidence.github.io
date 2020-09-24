@@ -2,17 +2,17 @@
 
 /* ---------  Root Vars ---------- */
 :root {
-  --bg1:      #f5f5f5;
-  --bg2:      #e7e7e7;
-  --bg3:      #ececec;
-  --fg1:      #535353;
-  --fg2:      #494949;
-  --fg3:      #363636;
-  --title1:   #ac8a8c;
-  --title2:   #C49EA0;
-  --link1:    #617878;
-  --link2:    #7B9899;
-  --code:     #282a36;
+  --bg1:      #fefefe;
+  --bg2:      #f7f2f7;
+  --bg3:      #f7f2f7;
+  --fg1:      #2f1e2e;
+  --fg2:      #2f1e2e;
+  --fg3:      #231622;
+  --title1:   #a36e87;
+  --title2:   #ba92a5;
+  --link1:    #538083;
+  --link2:    #63979b;
+  --code:     #2f1e2e;
   --seltext:  #C7ECF7;
 }
 
@@ -44,13 +44,13 @@ body {
   max-width: 800px;
   width: 100vw;
   margin: 0 auto;
-  padding-top: 3ch;
-  padding-bottom: 3ch;
-  padding-left: 3ch;
-  padding-right: 3ch;
-  font-family: 'DM Serif Text', sans-serif;
-  font-size: 20px;
-  line-height: 1.6em;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  font-family: 'Fauna One', sans-serif;
+  font-size: 16px;
+  line-height: 30px;
   background-color: var(--bg1);
   color: var(--fg1);
 }
@@ -62,13 +62,20 @@ header {
   font-size: 20px;
 }
 
-h1,
+h1 {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 32px;
+  color: var(--fg2);
+  line-height: 1.2;
+  text-rendering: optimizeLegibility;
+}
+
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Playfair Display', sans-serif;
   color: var(--fg2);
   line-height: 1.2;
   text-rendering: optimizeLegibility;
@@ -96,7 +103,7 @@ time {
   padding-top: 40px;
   padding-bottom: 30px;
   border-bottom: 5px solid var(--bg1);
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Playfair Display', sans-serif;
   font-size: 3em;
   color: var(--title1);
   text-shadow: 1px 1px 0px rgba(150, 150, 150, 0.43);
@@ -113,18 +120,20 @@ nav {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  width: 98%;
-  background-color: var(--bg3);
+  width: 80%;
+  background-color: #fafafa;
   color: var(--link1);
-  padding-top: 0.6em;
-  padding-bottom: 0.6em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
   margin-bottom: 1em;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 1.5em;
+  font-family: "Inconsolata", monospace;
+  font-size: 1.4em;
+  border: 2px solid #2f1e2e;
+  border-radius: 7px;
   text-shadow: 1px 1px 0px rgba(150, 150, 150, 0.43);
-  -webkit-box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.41);
-  -moz-box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.41);
-  box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.41);
+  -webkit-box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.21);
+  -moz-box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.21);
+  box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.21);
 }
 
 /* ---------  Links ---------  */
@@ -167,7 +176,7 @@ pre {
   margin-top: 30px;
   margin-bottom: 30px;
 	padding: 28px;
-  border: 5px solid #414458;
+  border: 5px solid #533551;
 }
 
 /* ---------- Articles --------- */

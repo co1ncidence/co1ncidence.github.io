@@ -9,7 +9,7 @@
 	<meta name="description" content="Just a place where I rant and sometimes say something smart">
 	<meta name="author" content="nuaNce">
 	<link rel="stylesheet" href="/css/style.css">
-	<link rel="stylesheet" href="/css/style.css?rnd=1600904963">
+	<link rel="stylesheet" href="/css/style.css?rnd=1600907688">
 	
 </head>
 <body>
@@ -47,29 +47,29 @@
 				<p>For a long time now I&rsquo;ve been quite annoyed by how much of a pain it can be to do simple things with git. Even changes to your own repositories can take a while with all of the adding and committing and then typing in your credentials. Thankfully though, I have found ways to make git almost trivial to use, now I barely have to enter more than one command for most tasks, here is how I did it:</p>
 <h2 id="make-a-push-script">Make A Push Script</h2>
 <p>Normally when you push a newly modified repository, you would need to do 3 or 4 different commands, I&rsquo;ve found it much easier to just make a shell script like this and then place it in my <code>$PATH</code> for easy usage:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#ff79c6">#!/bin/sh
-</span><span style="color:#ff79c6"></span>
-<span style="color:#ff79c6">[</span> -z <span style="color:#f1fa8c">&#34;</span><span style="color:#8be9fd;font-style:italic">$1</span><span style="color:#f1fa8c">&#34;</span> <span style="color:#ff79c6">]</span> <span style="color:#ff79c6">&amp;&amp;</span> <span style="color:#f1fa8c">\
-</span><span style="color:#f1fa8c"></span>    <span style="color:#8be9fd;font-style:italic">msg</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;docs:update&#34;</span> <span style="color:#ff79c6">||</span> <span style="color:#f1fa8c">\
-</span><span style="color:#f1fa8c"></span>    <span style="color:#8be9fd;font-style:italic">msg</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;</span><span style="color:#8be9fd;font-style:italic">$1</span><span style="color:#f1fa8c">&#34;</span>
+<div class="highlight"><pre style="color:#e7e9db;background-color:#2f1e2e;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#776e71">#!/bin/sh
+</span><span style="color:#776e71"></span>
+<span style="color:#5bc4bf">[</span> -z <span style="color:#48b685">&#34;</span><span style="color:#ef6155">$1</span><span style="color:#48b685">&#34;</span> <span style="color:#5bc4bf">]</span> <span style="color:#5bc4bf">&amp;&amp;</span> <span style="color:#f99b15">\
+</span><span style="color:#f99b15"></span>    <span style="color:#ef6155">msg</span><span style="color:#5bc4bf">=</span><span style="color:#48b685">&#34;docs:update&#34;</span> <span style="color:#5bc4bf">||</span> <span style="color:#f99b15">\
+</span><span style="color:#f99b15"></span>    <span style="color:#ef6155">msg</span><span style="color:#5bc4bf">=</span><span style="color:#48b685">&#34;</span><span style="color:#ef6155">$1</span><span style="color:#48b685">&#34;</span>
 
 git add .
-git commit -m <span style="color:#f1fa8c">&#34;</span><span style="color:#f1fa8c">${</span><span style="color:#8be9fd;font-style:italic">msg</span><span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&#34;</span>
+git commit -m <span style="color:#48b685">&#34;</span><span style="color:#f99b15">${</span><span style="color:#ef6155">msg</span><span style="color:#f99b15">}</span><span style="color:#48b685">&#34;</span>
 git push origin master
 </code></pre></div><p>This script will stage all of the files in your current git directory for a commit, and use whatever argument you pass after it as the commit message. If you don&rsquo;t give any message to the script, it will use <code>docs:update</code> and push with that.</p>
 <h2 id="make-git-stop-asking-for-usernamespasswords">Make Git Stop Asking For Usernames/Passwords</h2>
 <p>Another annoying thing that occurs when pushing repositories is that git always asks you for your username and password, which can get very tedious after a while. Fortunately, <code>git config</code> has a built in system to override this. First, you have to set your default github url to that of your username with this command, just replace <code>&lt;username&gt;</code> with your git username:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git config --global url.<span style="color:#f1fa8c">&#34;https://&lt;username&gt;@github.com&#34;</span>.insteadOf <span style="color:#f1fa8c">&#34;https://github.com&#34;</span>
+<div class="highlight"><pre style="color:#e7e9db;background-color:#2f1e2e;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git config --global url.<span style="color:#48b685">&#34;https://&lt;username&gt;@github.com&#34;</span>.insteadOf <span style="color:#48b685">&#34;https://github.com&#34;</span>
 </code></pre></div><p>This will make git remember who you are and not ask for your username anymore. Now for your password, there is no real way to <em>never type your password</em>, but you can extend the sudo-like wait period that git has with this command:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git config --global credential.helper <span style="color:#f1fa8c">&#39;cache --timeout=28800&#39;</span>
+<div class="highlight"><pre style="color:#e7e9db;background-color:#2f1e2e;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git config --global credential.helper <span style="color:#48b685">&#39;cache --timeout=28800&#39;</span>
 </code></pre></div><p>This will make git not ask for your password again for 28,800 seconds, which is roughly 8 hours. You can, of course, adjust this time to suit your needs. After all of this is done, your git config file, usually <code>~/.gitconfig</code> will look something like this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[user]
-    email = <span style="color:#f1fa8c">&#34;r3yan.chaudhry@zohomail.com&#34;</span>
-    name = <span style="color:#f1fa8c">&#34;co1ncidence&#34;</span>
-  [url <span style="color:#f1fa8c">&#34;https://co1ncidence@github.com&#34;</span>]
-    insteadOf = <span style="color:#f1fa8c">&#34;https://github.com&#34;</span>
-  [credential]
-    helper = <span style="color:#f1fa8c">&#34;cache --timeout=28800&#34;</span>
+<div class="highlight"><pre style="color:#e7e9db;background-color:#2f1e2e;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#06b6ef">user</span>]
+    <span style="color:#06b6ef">email</span> = <span style="color:#48b685">&#34;r3yan.chaudhry@zohomail.com&#34;</span>
+    <span style="color:#06b6ef">name</span> = <span style="color:#48b685">&#34;co1ncidence&#34;</span>
+  [<span style="color:#06b6ef">url</span> <span style="color:#48b685">&#34;https://co1ncidence@github.com&#34;</span>]
+    <span style="color:#06b6ef">insteadOf</span> = <span style="color:#48b685">&#34;https://github.com&#34;</span>
+  [<span style="color:#06b6ef">credential</span>]
+    <span style="color:#06b6ef">helper</span> = <span style="color:#48b685">&#34;cache --timeout=28800&#34;</span>
 </code></pre></div><p><strong>There you go! This will hopefully make a lot of your smaller tasks with git a great deal easier.</strong></p>
 			</div>
 		</article>
