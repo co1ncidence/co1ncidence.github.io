@@ -19,7 +19,9 @@ Here is some more professional information about me:
 
 ### Skills
 
-Yes!
+- Friends with gk, the kingk of these lands
+- Yes!
+- The priNcek of these lands
 
 ### Social Media Links
 
