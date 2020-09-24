@@ -133,14 +133,14 @@ Wed/16 08:03: Trust me bro this one is cooler
 <!-- Thu/17 09:43: REEEE Help im Trapped! -->
 <!-- Thu/17 11:26: Another finished task -->
 Thu/17 02:29: This is just a note, nothing else
-<!-- Thu/17 06:48:  Why are you reading these -->
-<!-- Fri/18 02:40:  Another victim of HTML -->
+<!-- Thu/17 06:48: Why are you reading these -->
+<!-- Fri/18 02:40: Another victim of HTML -->
 Fri/18 05:18: Hello I am cute monkey gib banana
 Fri/18 05:19: Have you ever thought about your feet?
 Fri/18 05:19: Make sure to eat food tonight
 Fri/18 07:41: Where did my pencil go
-<!-- Sat/19 10:03:  Hello darkness my old friend -->
-<!-- Sat/19 03:48:  It's been while since I died-->
+<!-- Sat/19 10:03: Hello darkness my old friend -->
+<!-- Sat/19 03:48: It's been while since I died-->
 Sat/19 03:48: The final nooote, badabumbumm...
 ```
 
