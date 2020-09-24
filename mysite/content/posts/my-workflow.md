@@ -127,21 +127,21 @@ Here is an example of this script in use:
 This command will append the sentence `Finish writing a blogpost` to the end of a specified notes file. Not only that, the note entry will also be prefixed by a date and time. This makes identifying and marking off old notes much easier. Here is what a notes file would look like:
 
 ```html
-Wed/16 08:02: Relearn Quadratics
-Wed/16 08:03: Finish Covid essays
-<!-- Wed/16 08:03: Watch Linux TED talks and use as labs -->
-<!-- Thu/17 09:43: do Khan Academy auto-tests -->
-<!-- Thu/17 11:26: Learn github-cli tool because cool -->
-Thu/17 02:29: Finish windows blog post
-<!-- Thu/17 06:48: Remove bliss window decor -->
-<!-- Fri/18 02:40: Make some kind of trash folder -->
-Fri/18 05:18: Find more TED talks
-Fri/18 05:19: Do a writing center appointment
-Fri/18 05:19: Write workflow blog post
-Fri/18 07:41: Find out which labs to complete
-<!-- Sat/19 10:03: Find out how to use custom website fonts -->
-<!-- Sat/19 03:48: Finalize website dark mode -->
-Sat/19 03:48: Finish shell scripting course
+Wed/16 08:02: A cool and nice note
+Wed/16 08:03: Trust me bro this one is cooler
+<!-- Wed/16 08:03: I am done and finished -->
+<!-- Thu/17 09:43: REEEE Help im Trapped! -->
+<!-- Thu/17 11:26: Another finished task -->
+Thu/17 02:29: This is just a note, nothing else
+<!-- Thu/17 06:48:  Why are you reading these -->
+<!-- Fri/18 02:40:  Another victim of HTML -->
+Fri/18 05:18: Hello I am cute monkey gib banana
+Fri/18 05:19: Have you ever thought about your feet?
+Fri/18 05:19: Make sure to eat food tonight
+Fri/18 07:41: Where did my pencil go
+<!-- Sat/19 10:03:  Hello darkness my old friend -->
+<!-- Sat/19 03:48:  It's been while since I died-->
+Sat/19 03:48: The final nooote, badabumbumm...
 ```
 
 Putting the notes in HTML (or markdown, if you prefer that) format also allows me to easily, and visually, comment out entries that I have marked as done. And by using the fantastic `vim-commentary` plugin, this is as simple as pressing `gcc` on a line. To supplement this, I have aliases to quickly access this notes file as well as one to reveal only the undone entries of it. The simplicity of this setup allows for almost infinite extensibility. So, in theory, **I should be able to adapt this "semi-workflow" to just about any situation.**
