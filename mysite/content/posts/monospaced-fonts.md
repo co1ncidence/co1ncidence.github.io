@@ -9,31 +9,42 @@ Recently I've garnered a bit of an obsession with fonts, especially the ones I u
 
 ## Recursive Mono (Linear Static)
 
+--
+
 ![img](https://i.postimg.cc/rw5xcKqr/what.png)
 
 ## Roboto Mono
+
+--
 
 ![img](https://i.postimg.cc/SK2sqP6t/what.png)
 
 ## Apercu Mono
 
+--
+
 ![img](https://i.postimg.cc/CMtcxnpP/what.png)
 
 ## Sudo
+
+--
 
 ![img](https://i.postimg.cc/hjCcdb17/what.png)
 
 ## iA Writer Mono
 
+--
+
 ![img](https://i.postimg.cc/FK9MVkRb/what.png)
 
 ## JetBrains Mono
+
+--
 
 ![img](https://i.postimg.cc/gjV9KVvD/what.png)
 
 ## Space Mono
 
+--
+
 ![img](https://i.postimg.cc/pXR3Hnfw/what.png)
-
-
-
