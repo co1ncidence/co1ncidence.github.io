@@ -10,67 +10,67 @@ Here are ~~all~~ most of the Rices that I have made on my computer over the last
 
 ---
 
-![img](https://raw.githubusercontent.com/co1ncidence/dotless/master/scr/sunset.png)
+![img](/images/rices/sunset.png)
 
 ## Dark Inside
 
 ---
 
-![img](https://i.postimg.cc/kg4S1bgh/hola.png)
+![img](/images/rices/dark-inside.png)
 
 ## The Mountaineer
 
 ---
 
-![img](https://i.postimg.cc/t4JCwzn3/what13.png)
+![img](/images/rices/mountaineer.png)
 
 ## Morning Coffee
 
 ---
 
-![img](https://i.postimg.cc/fyN9vmVG/what12.png)
+![img](/images/rices/morning-coffee.png)
 
 ## Safe and Sound
 
 ---
 
-![img](https://i.postimg.cc/rFs7tTmT/what9.png)
+![img](/images/rices/safe-and-sound.png)
 
 ## Bloated Minimalism
 
 ---
 
-![img](https://i.postimg.cc/k56XgFzc/what3.png)
+![img](/images/rices/bloated-minimalism.png)
 
 ## Function > Form
 
 ---
 
-![img](https://i.postimg.cc/jqnvqncX/what.png)
+![img](/images/rices/function.png)
 
 ## Contempt
 
 ---
 
-![img](https://i.postimg.cc/RZ8cW0wt/what.png)
+![img](/images/rices/contempt.png)
 
 ## Is One Rose Enough?
 
 ---
 
-![img](https://i.redd.it/uhmfcesa1zh51.png)
+![img](/images/rices/rose.png)
 
 ## IceBerg
 
 ---
 
-![img](https://cdn.discordapp.com/attachments/743868455547305985/743868817028939876/image.png)
+![img](/images/rices/iceberg.png)
 
 ## Attention to Detail
 
 ---
 
-![img](https://cdn.discordapp.com/attachments/743868455547305985/743868991428100156/image.png)
+![img](/images/rices/detail.png)
 
 ## Bliss v1.5
 

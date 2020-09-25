@@ -13,40 +13,40 @@ Recently I've garnered a bit of an obsession with fonts, especially the ones I u
 
 ---
 
-![img](https://i.postimg.cc/rw5xcKqr/what.png)
+![img](/images/fonts/recursive-mono.png)
 
 ## Roboto Mono
 
 ---
 
-![img](https://i.postimg.cc/SK2sqP6t/what.png)
+![img](/images/fonts/roboto-mono.png)
 
 ## Apercu Mono
 
 ---
 
-![img](https://i.postimg.cc/CMtcxnpP/what.png)
+![img](/images/fonts/apercu-mono.png)
 
 ## Sudo
 
 ---
 
-![img](https://i.postimg.cc/hjCcdb17/what.png)
+![img](/images/fonts/sudo.png)
 
 ## iA Writer Mono
 
 ---
 
-![img](https://i.postimg.cc/FK9MVkRb/what.png)
+![img](/images/fonts/iawriter-mono.png)
 
 ## JetBrains Mono
 
 ---
 
-![img](https://i.postimg.cc/gjV9KVvD/what.png)
+![img](/images/fonts/jetbrains-mono.png)
 
 ## Space Mono
 
 ---
 
-![img](https://i.postimg.cc/pXR3Hnfw/what.png)
+![img](/images/fonts/space-mono.png)
