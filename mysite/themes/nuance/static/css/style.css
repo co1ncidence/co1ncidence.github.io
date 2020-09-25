@@ -295,3 +295,8 @@ table thead {
 ::selection {
   background: var(--seltext);
 }
+
+.post-title {
+  margin-left: 200px;
+  font-size: 20px;
+}
