@@ -239,12 +239,9 @@ blockquote {
   position: relative;
   color: var(--fg3);
   background-color: var(--bg2);
-  border: 2px solid #c9aac7;
-  border-left: 6px solid #c9aac7;
+  border: 2px solid var(--fg3);
+  border-left: 6px solid var(--fg3);
   font-size: 16px;
-  -webkit-box-shadow: 5px 5px 0px 0px rgba(232,218,231,1);
-  -moz-box-shadow: 5px 5px 0px 0px rgba(232,218,231,1);
-  box-shadow: 5px 5px 0px 0px rgba(232,218,231,1);
 }
 
 /* ---------  Table ---------  */
