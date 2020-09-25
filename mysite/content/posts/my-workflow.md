@@ -79,7 +79,7 @@ I find that one of the most essential parts to maintaining efficiency is by havi
   - **Super + q** will show a nice info notification:
     + This removes any need for a space wasting bar
 
-![img](https://i.postimg.cc/g2t3w86X/what.png)
+![img](/images/workflow/supernoti.png)
 
 ### Dmenu bindings
 
@@ -88,7 +88,7 @@ I find that one of the most essential parts to maintaining efficiency is by havi
   - **Super + n** will open up my [password menu](https://github.com/cdown/passmenu)
   - **Super + s** will open up a menu of fonts, each will launch a typing test with the font I choose:
 
-![img](https://i.postimg.cc/6pFyJ0v0/what.png)
+![img](/images/workflow/fontmenu.png)
 
 ## Dmenu-Ception
 
@@ -106,7 +106,7 @@ pass=$(ls -1 "$dir" | dmenu -fn "Recursive Mono Linear Static")
 
 Now here is where it gets interesting. You can point a `dmenu` script to another `dmenu` script, this allows you to essentially navigate a directory of menus. I have such a setup here (which I can initiate with **Super +b**) for opening up certain school documents and folders with ease:
 
-![gif](https://i.postimg.cc/Z5YKGQnp/what.gif)
+![img](/images/workflow/schoolmenus.gif)
 
 ## Effective Note Taking
 
@@ -197,7 +197,7 @@ As you can see, I like to keep everything organized **in human readable fashion 
 
 While most people are used to writing their college essays in something like **Microsoft Word** or **LibreOffice**, I personally am not a fan of them. Rich text editing is tedious and most of the time inefficient as well. I much prefer to use proper markup formatters like [LaTeX](https://www.latex-project.org/) and [Markdown](https://daringfireball.net/projects/markdown/). To summarize my reasoning, here is a meme one of my friends made on this topic:
 
-![img](https://i.postimg.cc/fTwJHKwn/latex.png)
+![img](/images/workflow/latexmeme.png)
 
 Now while learning LaTeX can be a hard thing, especially while you may be trying to study for an upcoming exam, utilizing it for something like an MLA formatted essay is almost trivial. I've been using **LaTeX in NeoVim** for quite some time now and have even managed to integrate it with my menu workflow shown before. And for MLA formatting I simply use a [LaTeX MLA template](https://wso.williams.edu/wiki/index.php/LaTeX_MLA_Template), thus all I need to do is write name/date and start typing away. The MLA template I use also has a simple to use bibliography system with a predefined "Works Cited" page, so I have no worries regarding properly citing my sources or formatting them into my essay. Once I'm done I can simple run a command like this to make my document ready for submission:
 
