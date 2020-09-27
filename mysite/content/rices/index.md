@@ -1,5 +1,5 @@
 ---
-title: "My Linux Rices"
+title: "My Rices"
 date: 2020-08-04T00:19:18-05:00
   - Ricing and Theming
 ---
@@ -26,23 +26,11 @@ Here are ~~all~~ most of the Rices that I have made on my computer over the last
 
 ![img](/images/rices/sunset.png)
 
-## Dark Inside
-
----
-
-![img](/images/rices/dark-inside.png)
-
 ## The Mountaineer
 
 ---
 
-![img](/images/rices/mountaineer.png)
-
-## Morning Coffee
-
----
-
-![img](/images/rices/morning-coffee.png)
+![img](/images/rices/the-mountaineer.png)
 
 ## Safe and Sound
 
