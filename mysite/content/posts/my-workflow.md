@@ -7,6 +7,8 @@ One of the things I find most important when using a computer is effective workf
 
 <!--more-->
 
+> This post is sort of outdated and will be updated soon :)
+
 ## Table of Contents:
   1. [Software I Use](#software-i-use)
   2. [Window Management](#window-management)
