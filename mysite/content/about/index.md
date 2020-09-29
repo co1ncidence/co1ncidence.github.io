@@ -27,6 +27,7 @@ Here is some more professional information about me:
 
 - [GitHub](https://github.com/co1ncidence)
 - [StackOverflow](https://stackoverflow.com/users/13316025/jovinderpihainu)
+- [Mastodon](https://mastodon.social/web/accounts/1284686)
 - [Reddit](https://www.reddit.com/user/fps_co1ncidence/)
 
 ### Contact
