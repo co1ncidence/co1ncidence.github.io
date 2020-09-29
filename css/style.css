@@ -5,16 +5,34 @@
   --bg1:      #fefefe;
   --bg2:      #f7f2f7;
   --bg3:      #f7f2f7;
-  --fg1:      #2c2c2c;
-  --fg2:      #2c2c2c;
-  --fg3:      #231622;
+  --fg1:      #363636;
+  --fg2:      #363636;
+  --fg3:      #2c2c2c;
   --title1:   #a36e87;
   --title2:   #ba92a5;
   --link1:    #538083;
   --link2:    #63979b;
-  --code:     #2f1e2e;
+  --code:     #202020;
   --border:   #363636;
   --seltext:  #C7ECF7;
+}
+
+/* --------- Mobile CSS ---------- */
+
+@media only screen and (max-width: 600px) {
+  body {
+    max-width: 600px;
+    font-size: 16px;
+    padding: 0px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    max-width: 800px;
+    font-size: 16px;
+    padding: 0px;
+  }
 }
 
 /* ---------  Main Things ---------  */
@@ -110,7 +128,6 @@ time {
   font-family: 'Julius Sans One', sans-serif;
   font-size: 3em;
   color: var(--title1);
-  text-shadow: 1px 1px 0px rgba(150, 150, 150, 0.43);
   border: 2px solid var(--border);
   -webkit-box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.21);
   -moz-box-shadow: 10px 10px 0px -2px rgba(44,44,44,0.21);
@@ -183,7 +200,7 @@ pre {
   margin-top: 30px;
   margin-bottom: 30px;
 	padding: 28px;
-  border: 5px solid #6b4469;
+  border: 5px solid #404040;
 }
 
 /* ---------- Articles --------- */
@@ -260,11 +277,11 @@ table thead {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #e0cedf;
+    background: #303030;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #e8dae7;
+    background: #404040;
 }
 
 /* ---------  Text Selection ---------  */
