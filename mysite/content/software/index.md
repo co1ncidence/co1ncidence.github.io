@@ -37,7 +37,6 @@ Now with that out of the way, here is the list:
 |**[shfm](https://github.com/dylanaraps/shfm)**                          | Terminal file browser written in posix shell           |
 |**[KISS Linux](https://github.com/kisslinux)**                          | An independent Linux Distro focused on simplicity      |
 |**[fff](https://github.com/dylanaraps/fff)**                            | Fucking Fast File manager written in bash              |
-|**[cfm](https://github.com/WillEccles/cfm)**                            | Simple and fast terminal file manager                  |
 |**[epy](https://github.com/wustho/epy)**                                | Terminal based Ebook reader                            |
 |**[PDF Viewer Plus](https://github.com/JavaCafe01/PdfViewer)**          | The best mobile PDF viewer there is                    |
 |**[ripcord](https://cancel.fm)**                                        | Not great, but it's a minimal discord client           |
