@@ -39,13 +39,13 @@ Microsoft's developers have implemented almost no optimization into their interf
 It is well known how easy it is to create viruses and harmful malware for Windows computers. Due to the amount of market share the operating system has, the vast majority of hackers have no reason to worry about targeting anything else, since so many of their targets are vulnerable on Windows. And to add one to this, Microsoft has a history of being slow with security updates and sometimes takes far too long to find solutions to some [very critical issues](https://www.forbes.com/sites/daveywinder/2020/04/15/windows-10-security-alert-as-microsoft-confirms-seven-critical-vulnerabilities/#2008829625bf). And until maybe this year at most, the inbuilt security of Windows was also very ineffective, with "Windows Defender" doing almost nothing to protect your computer, and, in some cases, is a hindrance to the usability of your machine. And alongside having terrible security, Microsoft also takes advantage of it's hundreds of millions of users and gathers their data. The ironic thing however, is that they do this completely legally. Microsoft themselves state in their [Privacy Statement](https://privacy.microsoft.com/en-us/privacystatement) that they do, in fact, legally reserve the right to track and analyze whatever we do on our computers, and since most user's don't bother to read these documents, this stays under the radar. If you don't want to read the privacy statement, here is a short excerpt which sums up the situation quite well:
 
 > Finally, we will access, disclose and preserve personal data, including your content (such as the content of your emails, other private communications or files in private folders), when we have a good faith belief that doing so is necessary to:
-
+>
 > 1: Comply with applicable law or respond to valid legal process, including from law enforcement or other government agencies;
-
+>
 > 2: Protect our customers, for example to prevent spam or attempts to defraud users of the services, or to help prevent the loss of life or serious injury of anyone;
-
+>
 > 3: Operate and maintain the security of our services, including to prevent or stop an attack on our computer systems or networks; or
-
+>
 > 4: Protect the rights or property of Microsoft, including enforcing the terms governing the use of the services – however, if we receive information indicating that someone is using our services to traffic in stolen intellectual or physical property of Microsoft, we will not inspect a customer’s private content ourselves, but we may refer the matter to law enforcement.
 
 They say that you should always read the fine text, or else you will end up regretting it. That anecdote applies here as well. This was a shocker for me when I first found out about it. Microsoft spies on it's users with complete legal rights and also has a myriad of other perks that it gains once you buy a Windows license, some of which even force you to comply with any legal action that Microsoft might decide to take against. I doubt there is anything more for me to share here, since not much is known about how exactly Microsoft acquires (mostly due to how closed-off the operating system is) this data, we can't exactly track down or opt out of a lot of these programs.

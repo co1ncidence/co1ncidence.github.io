@@ -33,5 +33,3 @@ Just a list of some books that I've been enjoying over the past year or so. I've
 | Graham Alcott                                       | How to be a Productivity Ninja       | [EPUB](https://b-ok.cc/book/5709760/a3dff9)                 |
 | Michael Bazzel                                      | Open Source Intelligence             | [PDF](https://b-ok.cc/book/5275683/321b05)                  |
 | Tim Ferriss                                         | Tribe of Mentors                     | [TOR](https://b-ok.cc/book/3397110/2abf56)                  |
-
-&nbsp;

@@ -179,10 +179,13 @@ pre {
 	overflow-y: hidden;
 	font-size: 16px;
 	line-height: 1.8;
-  margin-top: 30px;
+  padding: 20px;
+  margin-top: 24px;
   margin-bottom: 30px;
-	padding: 28px;
-  border: 5px solid #404040;
+  border: 2px solid var(--border);
+  -webkit-box-shadow: 6px 6px 0px 0px rgba(209,209,209,1);
+  -moz-box-shadow: 6px 6px 0px 0px rgba(209,209,209,1);
+  box-shadow: 6px 6px 0px 0px rgba(209,209,209,1);
 }
 
 /* ---------- Articles --------- */
@@ -221,8 +224,7 @@ blockquote {
   padding: 0.2em 2em;
   position: relative;
   color: var(--fg3);
-  background-color: var(--bg2);
-  border: 2px solid var(--fg3);
+  background-color: #f4f4f4;
   border-left: 6px solid var(--fg3);
   font-size: 16px;
 }

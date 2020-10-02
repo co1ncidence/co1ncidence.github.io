@@ -31,7 +31,7 @@ googleAnalytics = ""
     lineNos = false
     lineNumbersInTable = true
     noClasses = true
-    style = "native"
+    style = "monokailight"
     tabWidth = 4
 
 [menu]

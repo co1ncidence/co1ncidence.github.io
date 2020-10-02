@@ -9,7 +9,7 @@
 	<meta name="description" content="Just a place where I rant and sometimes say something smart">
 	<meta name="author" content="nuaNce">
 	<link rel="stylesheet" href="/css/style.css">
-	<link rel="stylesheet" href="/css/style.css?rnd=1601595254">
+	<link rel="stylesheet" href="/css/style.css?rnd=1601679509">
 	
 </head>
 <body>
@@ -119,37 +119,37 @@
 <p><img src="/images/workflow/fontmenu.png" alt="img"></p>
 <h2 id="dmenu-ception">Dmenu-Ception</h2>
 <p>While normally just used for launching applications, <code>dmenu</code> can also be used to create custom menus that run whichever commands you want them to. Here is an example of a menu that I use as a password manager. I point it to a directory that contains my passwords and, to put it simply, <code>dmenu</code> will copy those passwords to my clipboard:</p>
-<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#cd2828;font-weight:bold">#!/bin/sh
-</span><span style="color:#cd2828;font-weight:bold"></span>
-<span style="color:#40ffff">dir</span>=<span style="color:#ed9d13">&#34;</span><span style="color:#40ffff">$HOME</span><span style="color:#ed9d13">/usr/doc/sav/pass&#34;</span>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#!/bin/sh
+</span><span style="color:#75715e"></span>
+<span style="color:#111">dir</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;</span><span style="color:#111">$HOME</span><span style="color:#d88200">/usr/doc/sav/pass&#34;</span>
 
-<span style="color:#40ffff">pass</span>=<span style="color:#6ab825;font-weight:bold">$(</span>ls -1 <span style="color:#ed9d13">&#34;</span><span style="color:#40ffff">$dir</span><span style="color:#ed9d13">&#34;</span> | dmenu -fn <span style="color:#ed9d13">&#34;Recursive Mono Linear Static&#34;</span><span style="color:#6ab825;font-weight:bold">)</span>
+<span style="color:#111">pass</span><span style="color:#f92672">=</span><span style="color:#00a8c8">$(</span>ls -1 <span style="color:#d88200">&#34;</span><span style="color:#111">$dir</span><span style="color:#d88200">&#34;</span> <span style="color:#111">|</span> dmenu -fn <span style="color:#d88200">&#34;Recursive Mono Linear Static&#34;</span><span style="color:#00a8c8">)</span>
 
-[ -f <span style="color:#ed9d13">&#34;</span><span style="color:#40ffff">$dir</span><span style="color:#ed9d13">/</span><span style="color:#40ffff">$pass</span><span style="color:#ed9d13">&#34;</span> ] &amp;&amp; xclip -sel clip <span style="color:#ed9d13">&#34;</span><span style="color:#40ffff">$dir</span><span style="color:#ed9d13">/</span><span style="color:#40ffff">$pass</span><span style="color:#ed9d13">&#34;</span>
+<span style="color:#f92672">[</span> -f <span style="color:#d88200">&#34;</span><span style="color:#111">$dir</span><span style="color:#d88200">/</span><span style="color:#111">$pass</span><span style="color:#d88200">&#34;</span> <span style="color:#f92672">]</span> <span style="color:#f92672">&amp;&amp;</span> xclip -sel clip <span style="color:#d88200">&#34;</span><span style="color:#111">$dir</span><span style="color:#d88200">/</span><span style="color:#111">$pass</span><span style="color:#d88200">&#34;</span>
 </code></pre></div><p>Now here is where it gets interesting. You can point a <code>dmenu</code> script to another <code>dmenu</code> script, this allows you to essentially navigate a directory of menus. I have such a setup here (which I can initiate with <strong>Super +b</strong>) for opening up certain school documents and folders with ease:</p>
 <p><img src="/images/workflow/schoolmenus.gif" alt="img"></p>
 <h2 id="effective-note-taking">Effective Note Taking</h2>
 <p>On the topic of little useful scripts, here is one that I came up with called <code>note</code> that makes quick and easy note taking almost trivial:</p>
-<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#cd2828;font-weight:bold">#!/bin/sh
-</span><span style="color:#cd2828;font-weight:bold"></span>
-<span style="color:#24909d">printf</span> <span style="color:#ed9d13">&#39;%s\n&#39;</span> <span style="color:#ed9d13">&#34;</span><span style="color:#6ab825;font-weight:bold">$(</span>date +<span style="color:#ed9d13">&#39;%a/%d %I:%M&#39;</span><span style="color:#6ab825;font-weight:bold">)</span><span style="color:#ed9d13">: </span><span style="color:#40ffff">$*</span><span style="color:#ed9d13">&#34;</span> &gt;&gt; ~/var/notes/notes.html
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#!/bin/sh
+</span><span style="color:#75715e"></span>
+<span style="color:#111">printf</span> <span style="color:#d88200">&#39;%s\n&#39;</span> <span style="color:#d88200">&#34;</span><span style="color:#00a8c8">$(</span>date +<span style="color:#d88200">&#39;%a/%d %I:%M&#39;</span><span style="color:#00a8c8">)</span><span style="color:#d88200">: </span><span style="color:#111">$*</span><span style="color:#d88200">&#34;</span> &gt;&gt; ~/var/notes/notes.html
 </code></pre></div><p>Here is an example of this script in use:</p>
-<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">[$] note Finish writing a blogpost
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> note Finish writing a blogpost
 </code></pre></div><p>This command will append the sentence <code>Finish writing a blogpost</code> to the end of a specified notes file. Not only that, the note entry will also be prefixed by a date and time. This makes identifying and marking off old notes much easier. Here is what a notes file would look like:</p>
-<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">Wed/16 08:02: A cool and nice note
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">Wed/16 08:02: A cool and nice note
 Wed/16 08:03: Trust me bro this one is cooler
-<span style="color:#999;font-style:italic">&lt;!-- Wed/16 08:03: I am done and finished --&gt;</span>
-<span style="color:#999;font-style:italic">&lt;!-- Thu/17 09:43: REEEE Help im Trapped! --&gt;</span>
-<span style="color:#999;font-style:italic">&lt;!-- Thu/17 11:26: Another finished task --&gt;</span>
+<span style="color:#75715e">&lt;!-- Wed/16 08:03: I am done and finished --&gt;</span>
+<span style="color:#75715e">&lt;!-- Thu/17 09:43: REEEE Help im Trapped! --&gt;</span>
+<span style="color:#75715e">&lt;!-- Thu/17 11:26: Another finished task --&gt;</span>
 Thu/17 02:29: This is just a note, nothing else
-<span style="color:#999;font-style:italic">&lt;!-- Thu/17 06:48: Why are you reading these --&gt;</span>
-<span style="color:#999;font-style:italic">&lt;!-- Fri/18 02:40: Another victim of HTML --&gt;</span>
+<span style="color:#75715e">&lt;!-- Thu/17 06:48: Why are you reading these --&gt;</span>
+<span style="color:#75715e">&lt;!-- Fri/18 02:40: Another victim of HTML --&gt;</span>
 Fri/18 05:18: Hello I am cute monkey gib banana
 Fri/18 05:19: Have you ever thought about your feet?
 Fri/18 05:19: Make sure to eat food tonight
 Fri/18 07:41: Where did my pencil go
-<span style="color:#999;font-style:italic">&lt;!-- Sat/19 10:03: Hello darkness my old friend --&gt;</span>
-<span style="color:#999;font-style:italic">&lt;!-- Sat/19 03:48: It&#39;s been while since I died--&gt;</span>
+<span style="color:#75715e">&lt;!-- Sat/19 10:03: Hello darkness my old friend --&gt;</span>
+<span style="color:#75715e">&lt;!-- Sat/19 03:48: It&#39;s been while since I died--&gt;</span>
 Sat/19 03:48: The final nooote, badabumbumm...
 </code></pre></div><p>Putting the notes in HTML (or markdown, if you prefer that) format also allows me to easily, and visually, comment out entries that I have marked as done. And by using the fantastic <code>vim-commentary</code> plugin, this is as simple as pressing <code>gcc</code> on a line. To supplement this, I have aliases to quickly access this notes file as well as one to reveal only the undone entries of it. The simplicity of this setup allows for almost infinite extensibility. So, in theory, <strong>I should be able to adapt this &ldquo;semi-workflow&rdquo; to just about any situation.</strong></p>
 <h2 id="my-workflow-and-school">My Workflow and School</h2>
@@ -166,7 +166,7 @@ Sat/19 03:48: The final nooote, badabumbumm...
 <p>While some of these things may seem like common sense, I frequently check on my ability to do them so I don&rsquo;t miss out on a crucial moment. For example, I always make sure I have <strong>SkanLite</strong> installed in case I ever need to scan a physical document for submission.</p>
 <h3 id="managing-all-my-files">Managing All My Files</h3>
 <p>One thing I always make sure I have is an intuitive, easy to navigate, and well organized directory tree for all my documents. I prefer to follow a Semantic directory structure, which lets me break down categories into more categories, thus making even the most obscure files and folders trivial to find. Here is a quick overview of my current documents directory:</p>
-<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">[$] tree -d -L <span style="color:#3677a9">3</span>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> tree -d -L <span style="color:#ae81ff">3</span>
 .
 ├── bok
 ├── sav
@@ -193,7 +193,7 @@ Sat/19 03:48: The final nooote, badabumbumm...
 <p>While most people are used to writing their college essays in something like <strong>Microsoft Word</strong> or <strong>LibreOffice</strong>, I personally am not a fan of them. Rich text editing is tedious and most of the time inefficient as well. I much prefer to use proper markup formatters like <a href="https://www.latex-project.org/">LaTeX</a> and <a href="https://daringfireball.net/projects/markdown/">Markdown</a>. To summarize my reasoning, here is a meme one of my friends made on this topic:</p>
 <p><img src="/images/workflow/latexmeme.png" alt="img"></p>
 <p>Now while learning LaTeX can be a hard thing, especially while you may be trying to study for an upcoming exam, utilizing it for something like an MLA formatted essay is almost trivial. I&rsquo;ve been using <strong>LaTeX in NeoVim</strong> for quite some time now and have even managed to integrate it with my menu workflow shown before. And for MLA formatting I simply use a <a href="https://wso.williams.edu/wiki/index.php/LaTeX_MLA_Template">LaTeX MLA template</a>, thus all I need to do is write name/date and start typing away. The MLA template I use also has a simple to use bibliography system with a predefined &ldquo;Works Cited&rdquo; page, so I have no worries regarding properly citing my sources or formatting them into my essay. Once I&rsquo;m done I can simple run a command like this to make my document ready for submission:</p>
-<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">[$] pdflatex essay.tex essay.pdf
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> pdflatex essay.tex essay.pdf
 </code></pre></div><p>And <em>Voila</em>, I have successfully written an MLA essay and now can send it to my teachers for grading!</p>
 <h3 id="browser">Browser</h3>
 <p>While I&rsquo;ve always loved and used Firefox, It often has compatibility issues with some of my <strong>shittily designed school websites.</strong> To make up for this I am using <a href="https://github.com/eloston/ungoogled-chromium/">ungoogled-chromium</a> as my main browser, it works (as far as I can tell) exactly like the normal chromium browser but without all of the malicious Google code. It has had not compatibility issues for me so far, and is also quite a bit faster than other browsers that I&rsquo;ve tried.</p>
