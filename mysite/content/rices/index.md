@@ -14,6 +14,8 @@ Here are ~~all~~ most of the Rices that I have made on my computer over the last
 
 ![img](/images/rices/dejavu.png)
 
+![img](/images/rices/dejavu2.png)
+
 ## Tear Me Apart
 
 ---
