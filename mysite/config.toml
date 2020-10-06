@@ -14,7 +14,7 @@ googleAnalytics = ""
 [params]
    author = "nuaNce"
    description = "Just a place where I rant and sometimes say something smart"
-   subTitle = "Garfield Hates Monday And So Do I"
+   subTitle = "Welcome To My Realm."
    dateFormat = "2006-01-02"
    paginationSinglePost = true
    customCSS = ["css/style.css"]
