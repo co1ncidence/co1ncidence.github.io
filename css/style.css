@@ -257,15 +257,14 @@ article {
 /* Quotes */
 
 blockquote {
-  margin-left: 0em;
+  width: 100%;
+  margin-left: -20px;
   margin-top: 25px;
   margin-bottom: 25px;
   padding: 0.2em 2em;
   position: relative;
   color: var(--fg3);
-  background-color: #f4f4f4;
-  border-left: 6px solid var(--fg3);
-  font-size: 16px;
+  border-left: 6px solid var(--title2);
 }
 
 /* Table */
