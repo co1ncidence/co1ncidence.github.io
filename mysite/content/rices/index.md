@@ -8,6 +8,12 @@ Here are ~~all~~ most of the Rices that I have made on my computer over the last
 
 &nbsp;
 
+## The Nomad
+
+---
+
+![img](/images/rices/nomad.png)
+
 ## Deja Vu
 
 ---
@@ -15,12 +21,6 @@ Here are ~~all~~ most of the Rices that I have made on my computer over the last
 ![img](/images/rices/dejavu.png)
 
 ![img](https://raw.githubusercontent.com/co1ncidence/dotless/master/scr/dejavu.png)
-
-## Tear Me Apart
-
----
-
-![img](/images/rices/tear-me-apart.png)
 
 ## Bliss v2
 
