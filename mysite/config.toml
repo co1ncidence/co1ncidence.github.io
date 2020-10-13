@@ -13,6 +13,11 @@ googleAnalytics = ""
 
 [params]
    author = "nuaNce"
+   email = "r3yan.chaudhry@zohomail.com"
+   mastodon = "https://mastodon.social/web/accounts/1284686"
+   github = "github.com/co1ncidence"
+   url = "https://git.io/co1ncidence"
+   keywords = "blog, linux, ricing"
    description = "Just a place where I rant and sometimes say something smart"
    subTitle = "Welcome To My Realm."
    dateFormat = "2006-01-02"
@@ -115,7 +120,7 @@ tag = "tags"
     lineNos = false
     lineNumbersInTable = true
     noClasses = true
-    style = "monokai"
+    style = "manni"
     tabWidth = 4
   [markup.tableOfContents]
     endLevel = 3
