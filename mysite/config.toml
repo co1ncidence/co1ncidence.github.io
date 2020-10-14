@@ -120,7 +120,7 @@ tag = "tags"
     lineNos = false
     lineNumbersInTable = true
     noClasses = true
-    style = "manni"
+    style = "monokai"
     tabWidth = 4
   [markup.tableOfContents]
     endLevel = 3

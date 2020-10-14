@@ -7,9 +7,9 @@
   --bg1:      #fefefe;
   --bg2:      #f7f2f7;
   --bg3:      #f7f2f7;
-  --fg1:      #363636;
-  --fg2:      #363636;
-  --fg3:      #2c2c2c;
+  --fg1:      #4c4c4c;
+  --fg2:      #4c4c4c;
+  --fg3:      #363636;
   --title1:   #f0f0f0;
   --title2:   #ba92a5;
   --link1:    #538083;
@@ -24,13 +24,13 @@
 html {
   overflow-y: scroll;
   -webkit-font-smoothing: antialiased;
-  background-color: var(--bg0);
+  background-color: var(--bg1);
 }
 
 body {
   max-width: 800px;
   width: 100vw;
-  margin: 10vh auto;
+  margin: 0 auto;
   padding-top: 10vh;
   padding-bottom: 10vh;
   padding-left: 8vw;
@@ -40,10 +40,6 @@ body {
   line-height: 35px;
   background-color: var(--bg1);
   color: var(--fg1);
-  border: 20px solid var(--border);
-  -webkit-box-shadow: 20px 20px 0px -2px rgba(44,44,44,0.21);
-  -moz-box-shadow: 20px 20px 0px -2px rgba(44,44,44,0.21);
-  box-shadow: 20px 20px 0px -2px rgba(44,44,44,0.21);
 }
 
 /* Headers */
