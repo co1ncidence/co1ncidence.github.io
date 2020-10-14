@@ -8,6 +8,12 @@ Here are ~~all~~ most of the Rices that I have made on my computer over the last
 
 &nbsp;
 
+## Heads and Tails
+
+---
+
+![img](/images/rices/headsandtails.png)
+
 ## The Nomad
 
 ---
@@ -19,8 +25,6 @@ Here are ~~all~~ most of the Rices that I have made on my computer over the last
 ---
 
 ![img](/images/rices/dejavu.png)
-
-![img](https://raw.githubusercontent.com/co1ncidence/dotless/master/scr/dejavu.png)
 
 ## Bliss v2
 
