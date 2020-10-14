@@ -1,0 +1,18 @@
+{{ define "main" }}
+	<main>
+		<article>
+			<h1>{{ .Title }}</h1>
+				<p style="text-align:left;">
+						<b>{{ .Date.Format (default "Published: 01/02/2006" .Site.Params.dateFmt) }}</b>
+					<span style="float:right;">
+						<b>{{ .ReadingTime }} Minutes Read</b>
+					</span>
+				</p>
+		    {{ range .Params.tags }}
+          {{ end }}
+			<div>
+				{{ .Content }}
+			</div>
+		</article>
+	</main>
+{{ end }}

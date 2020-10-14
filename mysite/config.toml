@@ -1,8 +1,8 @@
 publishdir = ".."
 baseURL = "https://co1ncidence.github.io"
 languageCode = "en-us"
-title = "nuaNce's blog"
-theme = "nuance"
+title = "nuaNce"
+theme = "jayden"
 paginate = 10
 
 disqusShortname = ""
@@ -27,30 +27,35 @@ googleAnalytics = ""
 [menu]
 
   [[menu.main]]
-    name = "About ∙"
+    # name = "About ∙"
+    name = "About / "
     identifier = "about"
     url = "/about/"
     weight = 1
 
   [[menu.main]]
-    name = "Posts ∙"
+    # name = "Posts ∙"
+    name = "Posts / "
     identifier = "archive"
     url = "/posts/"
     weight = 2
 
   [[menu.main]]
-    name = "Books ∙"
+    # name = "Books ∙"
+    name = "Books / "
     identifier = "books"
     url = "/books/"
     weight = 4
 
   [[menu.main]]
-    name = "Software ∙"
+    # name = "Software ∙"
+    name = "Software / "
     identifier = "software"
     url = "/software/"
     weight = 2
 
   [[menu.main]]
+    # name = "Rices"
     name = "Rices"
     identifier = "rices"
     url = "/rices/"
