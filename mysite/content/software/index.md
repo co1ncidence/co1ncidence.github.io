@@ -25,6 +25,7 @@ Now with that out of the way, here is the list:
 |**[herbe](https://github.com/dudik/herbe)**                             | Simple, yet DBus free notifications                    |
 |**[farge](https://github.com/sdushantha/farge)**                        | Simple Colorpicker written in bash                     |
 |**[ung-chromium](https://github.com/Eloston/ungoogled-chromium)**       | Browse safely and Google-free, no compromises          |
+|**[imgp](https://github.com/jarun/imgp)**                               | Blazing fast CLI image resizing and conversion         |
 |**[ST](https://st.suckless.org/)**                                      | Simple Terminal                                        |
 |**[scr](https://github.com/6gk/scr)**                                   | Super Crappy SCReenshot SCRipt for Sound Cloud Rappers |
 |**[vimtex](https://github.com/lervag/vimtex)**                          | Make LaTeX in Vim a breeze to edit                     |
