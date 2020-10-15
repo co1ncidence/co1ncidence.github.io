@@ -1,6 +1,6 @@
 /* import fonts */
 @import url("https://rsms.me/inter/inter.css");
-@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@3/distr/fira_code.css);
+@import url("https://cdn.jsdelivr.net/gh/tonsky/FiraCode@3/distr/fira_code.css");
 
 /* Root Vars */
 :root {
