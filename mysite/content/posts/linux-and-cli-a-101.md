@@ -114,13 +114,18 @@ It is important to get to know your home folder well and to keep it nice and tid
 ├── share
 └── src
 ```
-  - **bin/**, this is where all the global binaries on your system are stored. For example, when you install Firefox, it creates a file in this folder called "Firefox", which is executed every time you run the browser. The same applies to just about every other program or command on your system
-  - **include/**, This directory "includes" all necessary headers that C compilers use at compile time. It is not somewhere you will ever find yourself, so we won't go any deeper
-  - **lib/, lib32/, and lib64/**, These are where the libraries of all languages and programs of your system go. These files are often stored for later use by programs and their developers, and aren't something you would ever usually need to touch
-  - **local/**, This is basically a clone of **/usr/** but for local purposes, these files are usually only accessible to certain users, usually the administrator of the system
-  - **sbin/**, This is just a symlink to **bin/**, which we discussed before
-  - **share/**, This is the equivalent of **.local/share** but for the system as a whole. Many programs and architectures make use of the global files here. Out of all the **/usr** directories mentioned so far, this is the only one you might have to actually spend time in
-  - **src/**, A folder not found on every distribution, this usually contains important source code for certain Kernel objects, not something you will usually ever need to worry about though.
+
+`/usr/bin/`, this is where all the global binaries on your system are stored. For example, when you install Firefox, it creates a file in this folder called "Firefox", which is executed every time you run the browser. The same applies to just about every other program or command on your system
+include/**, This directory "includes" all necessary headers that C compilers use at compile time. It is not somewhere you will ever find yourself, so we won't go any deeper
+
+`/usr/lib/, /usr/lib32/, and /usr/lib64/`, These are where the libraries of all languages and programs of your system go. These files are often stored for later use by programs and their developers, and aren't something you would ever usually need to touch
+
+`/usr/local/`, This is basically a clone of **/usr/** but for local purposes, these files are usually only accessible to certain users, usually the administrator of the system
+
+`/usr/sbin/`, This is just a symlink to **bin/**, which we discussed before
+share/, This is the equivalent of **.local/share** but for the system as a whole. Many programs and architectures make use of the global files here. Out of all the **/usr** directories mentioned so far, this is the only one you might have to actually spend time in
+
+`/usr/src/`, A folder not found on every distribution, this usually contains important source code for certain Kernel objects, not something you will usually ever need to worry about though.
 
 `/var/`: The last of the root directories, it's name stand for "variable(s)". It contains constantly changing files and information that programs use. It is also writable unlike **/usr/**, which makes it a useful and safe place to store things like system logs, which can be found in **/var/log/** and so on.
 

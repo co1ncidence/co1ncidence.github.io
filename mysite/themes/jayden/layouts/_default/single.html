@@ -3,9 +3,9 @@
 		<article>
 			<h1>{{ .Title }}</h1>
 				<p style="text-align:left;">
-						<b>{{ .Date.Format (default "Published: 01/02/2006" .Site.Params.dateFmt) }}</b>
+						<b>{{ .Date.Format (default "Published: 01/02 — 2006" .Site.Params.dateFmt) }}</b>
 					<span style="float:right;">
-						<b>{{ .ReadingTime }} Minutes Read</b>
+						<b>{{ .ReadingTime }} Min.</b>
 					</span>
 				</p>
 		    {{ range .Params.tags }}
