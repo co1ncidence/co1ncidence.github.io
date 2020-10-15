@@ -5,18 +5,11 @@ title = "nuaNce"
 theme = "nuance"
 paginate = 10
 
-disqusShortname = ""
-googleAnalytics = ""
-
 [author]
   name = "nuaNce"
 
 [params]
    author = "nuaNce"
-   email = "r3yan.chaudhry@zohomail.com"
-   mastodon = "https://mastodon.social/web/accounts/1284686"
-   github = "github.com/co1ncidence"
-   url = "https://git.io/co1ncidence"
    keywords = "blog, linux, ricing"
    description = "Just a place where I rant and sometimes say something smart"
    subTitle = "Welcome To My Realm."
@@ -27,35 +20,30 @@ googleAnalytics = ""
 [menu]
 
   [[menu.main]]
-    # name = "About ∙"
     name = "About /"
     identifier = "about"
     url = "/about/"
     weight = 1
 
   [[menu.main]]
-    # name = "Posts ∙"
     name = "Posts /"
     identifier = "archive"
     url = "/posts/"
     weight = 2
 
   [[menu.main]]
-    # name = "Books ∙"
     name = "Books /"
     identifier = "books"
     url = "/books/"
     weight = 4
 
   [[menu.main]]
-    # name = "Software ∙"
     name = "Software /"
     identifier = "software"
     url = "/software/"
     weight = 2
 
   [[menu.main]]
-    # name = "Rices"
     name = "Rices"
     identifier = "rices"
     url = "/rices/"

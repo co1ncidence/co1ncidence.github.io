@@ -1,9 +1,6 @@
 ---
 title: "My Top 10 Best Looking Cars"
 date: 2020-08-05T15:58:49-05:00
-tags:
-  - Cars
-  - Opinion
 ---
 
 I've always liked cars and have been reading automotive journalism for many years now. While many things come into play when considering a vehicle to buy, none, in my opinion, are as important as how good your car looks. So I've compiled a list of what I think are the best looking cars that I have ever seen. Expect this list to vary over time, however, since it's hard for me not to change my mind about these things all the time:

@@ -1,11 +1,11 @@
 name = "nuance"
-license = "MIT"
+license = "GPL v3.0"
 licenselink = "https://github.com/co1ncidence/hugo-theme-nuance/blob/master/LICENSE.md"
 description = "Minimal hugo theme with clean CSS and a legible design"
 homepage = "https://github.com/co1ncidence/hugo-theme-nuance"
 tags = ["blog", "minimal", "monospace", "simple", "clean", "light", "responsive", "fast", "no-js", "no-tracking", "privacy"]
 features = ["blog", "privacy", "responsive", "fast"]
-min_version = "0.20"
+min_version = "1.00"
 
 [author]
   name = "nuaNce"

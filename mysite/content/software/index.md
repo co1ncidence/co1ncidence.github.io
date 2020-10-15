@@ -1,10 +1,6 @@
 ---
 title: "Some of My Favorite Software"
 date: 2020-08-17T10:43:39-05:00
-tags:
-  - Opinion
-  - Software
-  - Showcase
 ---
 
 Just a list of some software I find nice to use. A lot of these correlate with [my stars on github](https://github.com/co1ncidence?tab=stars), so be sure to check them out as well if you want some other nice things to use. My preferences with software usually boil down to:
