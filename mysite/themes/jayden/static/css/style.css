@@ -25,6 +25,7 @@ html {
   -webkit-font-smoothing: antialiased;
   background-color: var(--bg0);
   font-size: 18px;
+  scroll-behavior: smooth;
 }
 
 body {
