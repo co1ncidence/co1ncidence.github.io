@@ -14,7 +14,6 @@
   --link1:    #538083;
   --link2:    #63979b;
   --code:     #d9d9d9;
-  --border:   #575757;
   --seltext:  #C7ECF7;
 }
 
@@ -58,7 +57,7 @@ h1 {
   margin-left: -5px;
   text-rendering: optimizeLegibility;
   color: var(--title1);
-  background-color: var(--border);
+  background-color: var(--fg1);
   transition: 0.3s all;
   border-radius: 10px;
   -webkit-box-shadow: 6px 10px 48px -40px rgba(0,0,0,0.75);
@@ -158,7 +157,7 @@ nav {
   margin-bottom: 1em;
   font-family: 'Fira Code', monospace;
   font-size: 1.2em;
-  border-bottom: 5px solid var(--border);
+  border-bottom: 5px solid var(--fg1);
 }
 
 /* Links */
