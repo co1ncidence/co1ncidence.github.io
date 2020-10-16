@@ -11,7 +11,7 @@ Here are ~~all~~ most of the Rices that I have made on my computer over the last
 
 ---
 
-![img](/images/rices/itai.png)
+![img](https://raw.githubusercontent.com/co1ncidence/dotless/master/scr/itai2.png)
 
 ## Heads and Tails
 
