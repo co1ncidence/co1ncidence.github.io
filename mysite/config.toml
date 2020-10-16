@@ -104,6 +104,7 @@ tag = "tags"
       unsafe = false
       xhtml = false
   [markup.highlight]
+    pygmentsUseClasses = true
     anchorLineNos = false
     codeFences = true
     guessSyntax = false
