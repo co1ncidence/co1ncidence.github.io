@@ -7,6 +7,12 @@ Here are ~~all~~ most of the Rices that I have made on my computer over the last
 
 &nbsp;
 
+## Itai
+
+---
+
+![img](/images/rices/itai.png)
+
 ## Heads and Tails
 
 ---
