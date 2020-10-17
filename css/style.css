@@ -224,11 +224,11 @@ pre {
   margin-top: 20px;
   margin-bottom: 30px;
   margin-left: -5%;
-  border: 3px solid #d7d7d7;
+  border: 3px solid var(--bg2);
   border-radius: 10px;
-  -webkit-box-shadow: inset 0px 0px 25px -10px rgba(0,0,0,0.25);
-  -moz-box-shadow: inset 0px 0px 25px -10px rgba(0,0,0,0.25);
-  box-shadow: inset 0px 0px 25px -10px rgba(0,0,0,0.25);
+  -webkit-box-shadow: inset 0px 0px 20px -10px rgba(0,0,0,0.25);
+  -moz-box-shadow: inset 0px 0px 20px -10px rgba(0,0,0,0.25);
+  box-shadow: inset 0px 0px 20px -10px rgba(0,0,0,0.25);
 }
 
 /* Articles */
