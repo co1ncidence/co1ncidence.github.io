@@ -3,11 +3,9 @@ title: "An In Depth Look at My Workflow"
 date: 2020-09-18T14:55:33-05:00
 ---
 
-One of the things I find most important when using a computer is effective workflow management. Getting the most efficient setup and being able to do my work as fast as possible while maintaining quality. In this post I will go over some of the things I do in my setup to ensure that I have the most efficient working environment possible.
+One of the things I find most important when using a computer is effective workflow management. Getting the most efficient setup and being able to do my work as fast as possible while maintaining quality. In this post I will go over some of the things I do in my setup to ensure that I have the most efficient working environment possible
 
 <!--more-->
-
-> This post is sort of outdated and will be updated soon :)
 
 ## Table of Contents:
   1. [Software I Use](#software-i-use)

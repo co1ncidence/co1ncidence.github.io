@@ -9,7 +9,7 @@
 	<meta name="description" content="Just a place where I rant and sometimes say something smart">
 	<meta name="author" content="nuaNce">
 	<link rel="stylesheet" href="/css/style.css">
-	<link rel="stylesheet" href="/css/style.css?rnd=1602960611">
+	<link rel="stylesheet" href="/css/style.css?rnd=1602967397">
 	
 </head>
 <body>
@@ -301,8 +301,8 @@ You may realize. Here is an example of the <code>cat</code> command being used:<
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> fc-list <span style="color:#111">|</span> grep Roboto
 </code></pre></div><p><code>grep</code> is not, however, limited to command outputs, it can also be used to filter out the lines of a file that word that you are looking for. For example, running <code>grep &quot;hello&quot; file.txt</code> will output all the lines of <code>file.txt</code> that contain the word &ldquo;hello&rdquo;. <code>grep</code> has a myriad of flags that can be used to futher increase the usefulness of a command:</p>
 <ul>
-<li><strong>B <!-- raw HTML omitted --></strong> will show <!-- raw HTML omitted --> of lines before the lines you searched for along with the results, providing some context</li>
-<li><strong>C <!-- raw HTML omitted --></strong> does the same thing as <strong>B</strong> but with the context lines being after instead of before</li>
+<li><strong>B <number></strong> will show <number> of lines before the lines you searched for along with the results, providing some context</li>
+<li><strong>C <number></strong> does the same thing as <strong>B</strong> but with the context lines being after instead of before</li>
 <li><strong>E</strong> will interpret the text you are searching for as a regular expression</li>
 <li><strong>i</strong> will search without being case sensitive</li>
 <li><strong>l</strong> this works when <code>grep</code> is used on a directory, printing out just the files containing the searched word instead of the lines</li>

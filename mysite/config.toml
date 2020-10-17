@@ -101,7 +101,7 @@ tag = "tags"
       autoHeadingIDType = "github"
     [markup.goldmark.renderer]
       hardWraps = false
-      unsafe = false
+      unsafe = true
       xhtml = false
   [markup.highlight]
     pygmentsUseClasses = true

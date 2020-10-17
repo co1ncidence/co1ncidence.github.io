@@ -1,6 +1,6 @@
 ---
 title: "Why I Stopped Using Windows"
-date: 2020-10-09T12:21:14-05:00
+date: 2020-09-14T12:21:14-05:00
 ---
 
 Before we begin, a confession, I used to really like Windows, I admit that it
