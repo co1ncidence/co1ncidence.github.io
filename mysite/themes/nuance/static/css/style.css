@@ -76,18 +76,30 @@ h1 {
   background-color: var(--fg1);
   transition: 0.3s all;
   border-radius: 10px;
-  -webkit-box-shadow: 10px 10px 50px -20px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 50px -20px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 50px -20px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 40px -20px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 40px -20px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 40px -20px rgba(0,0,0,0.75);
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
   font-family: 'Inter var', 'Inter', sans-serif;
-  font-weight: 600;
+  font-size: 1.6rem;
+  color: var(--fg1);
+  line-height: 1.2;
+  text-rendering: optimizeLegibility;
+}
+
+h3 {
+  font-family: 'Inter var', 'Inter', sans-serif;
+  font-size: 1.4rem;
+  color: var(--fg1);
+  line-height: 1.2;
+  text-rendering: optimizeLegibility;
+}
+
+h4 {
+  font-family: 'Inter var', 'Inter', sans-serif;
+  font-size: 1.2rem;
   color: var(--fg1);
   line-height: 1.2;
   text-rendering: optimizeLegibility;
