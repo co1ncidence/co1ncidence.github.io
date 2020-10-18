@@ -14,7 +14,7 @@ cd ..
 # Stage everything
 git add .
 
-# Commit 
+# Commit
 msg="rebuilding site $(date)"
 if [ -n "$*" ]; then
 	msg="$*"
