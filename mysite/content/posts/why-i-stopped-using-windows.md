@@ -73,7 +73,7 @@ Start Menu can take quite a bit of your time. Speaking of the Start menu,
 not only is it slow, it provides few helpful features at first glance and
 requires you to spend considerable time scrolling (or searching) to actually find
 anything. The search feature is also very slow, taking forever to find files
-and programs on your system. Furthermore, the Start Menu is 
+and programs on your system. Furthermore, the Start Menu is
 [littered with ads and
 publications](https://i.postimg.cc/FK45KDsW/ads-in-Windows-10-start-menu.png),
 which are put there without any user consent whatsoever. All of these features
@@ -101,7 +101,7 @@ Windows computers. Due to the amount of market share the operating system has,
 the vast majority of hackers have no reason to worry about targeting anything
 else, since so many of their targets are vulnerable on Windows. And to add one
 to this, Microsoft has a history of being slow with security updates and
-sometimes takes far too long to find solutions to some 
+sometimes takes far too long to find solutions to some
 [very critical issues](https://www.forbes.com/sites/daveywinder/2020/04/15/windows-10-security-alert-as-microsoft-confirms-seven-critical-vulnerabilities/#2008829625bf).
 And until maybe this year at most, the inbuilt security of Windows was also
 very ineffective, with "Windows Defender" doing almost nothing to protect your
