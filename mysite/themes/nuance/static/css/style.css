@@ -1,6 +1,7 @@
 /* import fonts */
-@import url(iosevka.css);
+/* @import url(iosevka.css); */
 @import url("https://rsms.me/inter/inter.css");
+@import url("https://cdn.jsdelivr.net/gh/tonsky/FiraCode@3/distr/fira_code.css");
 
 /* Root Vars */
 :root {
@@ -158,7 +159,7 @@ time {
   text-decoration: none;
   text-align: center;
   display: block;
-  font-family: 'Iosevka Term Slab', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 3em;
   color: var(--fg1);
 }
@@ -173,7 +174,7 @@ time {
   margin-right: auto;
   margin-bottom: 30px;
   text-align: center;
-  font-family: 'Iosevka Term Slab Extended', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 1.3em;
 }
 
@@ -187,7 +188,7 @@ nav {
   padding-top: 20px;
   padding-bottom: 5px;
   margin-bottom: 1em;
-  font-family: 'Iosevka Term Slab Extended', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 1.2em;
   border-bottom: 5px solid var(--fg1);
 }
@@ -206,7 +207,7 @@ a:focus {
 
 /* Code */
 code {
-  font-family: 'Iosevka Term Slab', monospace;
+  font-family: 'Fira Code', monospace;
 }
 
 p > code {
