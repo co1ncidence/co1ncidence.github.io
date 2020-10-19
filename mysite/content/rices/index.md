@@ -12,7 +12,6 @@ Here are ~~all~~ most of the Rices that I have made on my computer over the last
 ---
 
 ![img](https://raw.githubusercontent.com/co1ncidence/dotless/master/scr/itai.png)
-![img](https://raw.githubusercontent.com/co1ncidence/dotless/master/scr/itai2.png)
 
 ## Heads and Tails
 
@@ -175,4 +174,3 @@ Here are ~~all~~ most of the Rices that I have made on my computer over the last
 ---
 
 ![img](https://cdn.discordapp.com/attachments/743868455547305985/743871580370763856/image.png)
-

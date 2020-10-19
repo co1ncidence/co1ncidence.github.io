@@ -114,7 +114,7 @@ tag = "tags"
     lineNos = false
     lineNumbersInTable = true
     noClasses = true
-    style = "solarized-dark256"
+    style = "native"
     tabWidth = 4
   [markup.tableOfContents]
     endLevel = 3
