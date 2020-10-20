@@ -1,7 +1,6 @@
 /* import fonts */
-/* @import url(iosevka.css); */
+@import url(iosevka.css);
 @import url("https://rsms.me/inter/inter.css");
-@import url("https://cdn.jsdelivr.net/gh/tonsky/FiraCode@3/distr/fira_code.css");
 
 /* Root Vars */
 :root {
@@ -159,7 +158,7 @@ time {
   text-decoration: none;
   text-align: center;
   display: block;
-  font-family: 'Fira Code', monospace;
+  font-family: 'Iosevka Term Slab Web', monospace;
   font-size: 3em;
   color: var(--fg1);
 }
@@ -174,7 +173,8 @@ time {
   margin-right: auto;
   margin-bottom: 30px;
   text-align: center;
-  font-family: 'Fira Code', monospace;
+  font-family: 'Iosevka Term Slab Web', monospace;
+  font-stretch: expanded;
   font-size: 1.3em;
 }
 
@@ -188,7 +188,8 @@ nav {
   padding-top: 20px;
   padding-bottom: 5px;
   margin-bottom: 1em;
-  font-family: 'Fira Code', monospace;
+  font-family: 'Iosevka Term Slab Web', monospace;
+  font-stretch: expanded;
   font-size: 1.2em;
   border-bottom: 5px solid var(--fg1);
 }
@@ -207,7 +208,7 @@ a:focus {
 
 /* Code */
 code {
-  font-family: 'Fira Code', monospace;
+  font-family: 'Iosevka Term Slab Web', monospace;
 }
 
 p > code {
@@ -259,9 +260,9 @@ article {
   margin-top: 15px;
   margin-bottom: 20px;
   border-radius: 10px;
-  -webkit-box-shadow: 5px 10px 45px -20px rgba(0,0,0,0.65);
-  -moz-box-shadow: 5px 10px 45px -20px rgba(0,0,0,0.65);
-  box-shadow: 5px 10px 45px -20px rgba(0,0,0,0.65);
+  -webkit-box-shadow: 5px 10px 45px -20px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 10px 45px -20px rgba(0,0,0,0.75);
+  box-shadow: 5px 10px 45px -20px rgba(0,0,0,0.75);
 }
 
 /* Quotes */
