@@ -24,6 +24,7 @@ Here is some more professional information about me:
 ### Social Media Links
 
 - [GitHub](https://github.com/co1ncidence)
+- [YouTube](https://www.youtube.com/channel/UCMPEedx3_wzTNd_X1X4SPXg)
 - [StackOverflow](https://stackoverflow.com/users/13316025/jovinderpihainu)
 - [Mastodon](https://mastodon.social/web/accounts/1284686)
 - [Reddit](https://www.reddit.com/user/fps_co1ncidence/)
