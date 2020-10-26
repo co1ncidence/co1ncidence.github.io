@@ -218,6 +218,7 @@ p > code {
   padding-bottom: 0.3em;
   margin-right: 0.1em;
   margin-left: 0.1em;
+  margin-top: -0.1em;
   font-size: 0.9em;
   color: var(--fg1);
   background-color: var(--code);
