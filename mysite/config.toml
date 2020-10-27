@@ -114,7 +114,7 @@ tag = "tags"
     lineNos = false
     lineNumbersInTable = true
     noClasses = true
-    style = "native"
+    style = "monokailight"
     tabWidth = 4
   [markup.tableOfContents]
     endLevel = 3
