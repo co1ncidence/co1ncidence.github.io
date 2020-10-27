@@ -314,3 +314,11 @@ table thead {
 ::-webkit-scrollbar-thumb:hover {
     background: #636363;
 }
+
+/* mathjax support */
+code.has-jax {
+    -webkit-font-smoothing: antialiased;
+    background: inherit !important;
+    border: none !important;
+    font-size: 100%;
+}
