@@ -6,7 +6,18 @@
     <description>Recent content on nuaNce</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 18 Sep 2020 14:55:33 -0500</lastBuildDate><atom:link href="https://co1ncidence.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Oct 2020 09:15:32 -0500</lastBuildDate><atom:link href="https://co1ncidence.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>L&#39;Hopitals Rule</title>
+      <link>https://co1ncidence.github.io/posts/lhopitals-rule/</link>
+      <pubDate>Thu, 29 Oct 2020 09:15:32 -0500</pubDate>
+      
+      <guid>https://co1ncidence.github.io/posts/lhopitals-rule/</guid>
+      <description>Often when working with limits, you will come across a situation in which your limit, when solved by using simple substitution, ends up being an indeterminate form. An example of this is when attempting to compute the following:
+$$ \lim\limits_{x \to 0} f(x) = \frac{\sin(x)}{x} $$
+If you tried solving this limit in the normal fashion, by simply plugging in 0 for every time $ x $ appears, you would get a strange answer:</description>
+    </item>
+    
     <item>
       <title>An In Depth Look at My Workflow</title>
       <link>https://co1ncidence.github.io/posts/my-workflow/</link>

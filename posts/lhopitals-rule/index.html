@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<style type=text/css>body{font-family:monospace;}</style>
+	<title>L&#39;Hopitals Rule</title>
+	<meta name="description" content="Just a place where I rant and sometimes say something smart">
+	<meta name="author" content="nuaNce">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/style.css?rnd=1603985341">
+	
+</head>
+<body>
+	<header>
+	<a class="title" href="https://co1ncidence.github.io">nuaNce</a>
+	<p class="subtitle">welcome to my realm</p>
+	<p>
+	<nav>
+			
+			
+			<a style="text-decoration: none" href="/about/"><b>About /</b></a>
+			
+			<a style="text-decoration: none" href="/posts/"><b>Posts /</b></a>
+			
+			<a style="text-decoration: none" href="/software/"><b>Software /</b></a>
+			
+			<a style="text-decoration: none" href="/books/"><b>Books /</b></a>
+			
+			<a style="text-decoration: none" href="/rices/"><b>Rices</b></a>
+			
+	</nav>
+	</p>
+	
+	<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</header>
+
+	
+	<main>
+		<article>
+			<h1>L&#39;Hopitals Rule</h1>
+				<p style="text-align:left;">
+						<b>Published: 10/29 — 2020</b>
+					<span style="float:right;">
+						<b>386 Words, 2 Min.</b>
+					</span>
+				</p>
+		    
+			<div>
+				<p>Often when working with limits, you will come across a situation in which
+your limit, when solved by using simple substitution,
+ends up being an <em>indeterminate form</em>. An example of this is when
+attempting to compute the following:</p>
+<p>$$ \lim\limits_{x \to 0} f(x) = \frac{\sin(x)}{x} $$</p>
+<p>If you tried solving this limit in the normal fashion,
+by simply plugging in 0 for every time $ x $ appears,
+you would get a strange answer:</p>
+<p>$$ f(x) = \frac{\sin(0)}{0} \implies \frac{0}{0} $$</p>
+<p>As you can see, our answer is (decidedly) indeterminate.
+What does this mean?
+An answer like the above usually means that while your
+function <em>may</em> have a limit at the desired point,
+it is not defined, which is why we get null as our
+limit value when trying to plug it in.</p>
+<p>What can we do in such a situation?
+Since we don&rsquo;t have a graph available to us,
+we don&rsquo;t have the option to try and solve this visually,
+like we normally would.
+Fortunately, there is a rule which comes in quite
+handy when dealing with indeterminate forms.
+L&rsquo;Hopital&rsquo;s rule, which has been used for centuries
+to solve this paradox, states the following:</p>
+<p>$$ \lim\limits_{x \to y} \frac{f(x)}{g(x)} = \lim\limits_{x \to y} \frac{f'(x)}{g'(x)} $$</p>
+<p>Basically, when given a quotient comprised of two functions, $ f(x) $ and $ g(x) $, you can find
+their combined limits by dividing their respective derivatives by each other.
+Let&rsquo;s test this on our previously used example,
+beginning by turning $ \sin(x) $ into it&rsquo;s derivative $ \cos(x) $:</p>
+<p>$$ \lim\limits_{x \to 0} \frac{\sin(x)}{x} \implies \frac{\cos(x)}{1} $$</p>
+<p align="center">The derivative of $ x $ is always 1.</p>
+<p>$$ f(x) = \frac{\cos(x)}{1} = 1 $$</p>
+<p align="center">Since $ \cos $ is continuous, we are left with $ cos(0) $.</p>
+<p>As you can see, if we use L&rsquo;Hopital&rsquo;s rule, we can find the limit at 0 of $ \frac{\sin(x)}{x} $,
+even though the function is not defined at that point, without using a graph.
+It is important, however, to only use this rule if you know <em>for sure</em> that the
+expression you are trying to solve for the limit of is an indeterminate form,
+since it only works in those specific cases.</p>
+<p><strong>If you haven&rsquo;t realized, this post was just a test run for my mathjax config lmao,
+hope you enjoyed anyway though.</strong></p>
+
+			</div>
+		</article>
+	</main>
+
+	<footer>
+	<br />
+	<p>&copy; 2020 <a href="https://github.com/co1ncidence"><b>nuaNce</b></a>  -  <a href="https://co1ncidence.github.io/index.xml"><b>rss feed</b></a>
+	</p>
+</footer>
+
+</body>
+</html>
