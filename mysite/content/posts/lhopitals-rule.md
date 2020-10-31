@@ -1,5 +1,5 @@
 ---
-title: "L'Hopitals Rule"
+title: "L'Hôpital's Rule"
 date: 2020-10-29T09:15:32-05:00
 ---
 

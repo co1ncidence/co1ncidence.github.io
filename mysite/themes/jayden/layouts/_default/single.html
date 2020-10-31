@@ -1,16 +1,25 @@
 {{ define "main" }}
+	<style>
+		h1 {
+			margin-left: 47px;
+		}
+		h1:before {
+			content: "";
+		}
+	</style>
 	<main>
 		<article>
 			<h1>{{ .Title }}</h1>
+				<hr />
 				<p style="text-align:left;">
-						<b>{{ .Date.Format (default "Published: 01/02 — 2006" .Site.Params.dateFmt) }}</b>
+						<b>{{ .Date.Format (default "01/02/2006" .Site.Params.dateFmt) }}</b>
 					<span style="float:right;">
 						<b>{{ .WordCount }} Words, {{ .ReadingTime }} Min.</b>
 					</span>
 				</p>
 		    {{ range .Params.tags }}
           {{ end }}
-				<hr />
+				<!-- <hr /> -->
 			<div>
 				{{ .Content }}
 			</div>

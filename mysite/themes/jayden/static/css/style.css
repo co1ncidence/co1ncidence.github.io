@@ -16,6 +16,7 @@
   --quote:    #ceb2b2;
 }
 
+
 /* Main Things */
 html {
   overflow-y: scroll;
@@ -38,6 +39,18 @@ body {
   line-height: 35px;
   background-color: var(--bg0);
   color: var(--fg1);
+}
+
+@media only screen and (max-device-width: 480px)  {
+  html {
+    font-size: 12px;
+  }
+  body {
+    max-width: 300px;
+  }
+  nav {
+    display: none;
+  }
 }
 
 /* Headers */
@@ -109,12 +122,12 @@ h4:before {
 }
 
 .postitle:hover {
-  color: var(--link1);
+  color: var(--title2);
   text-decoration: none;
 }
 
 h1:hover:before {
-  color: var(--link1);
+  color: var(--title2);
 }
 
 /* Time Published */
@@ -173,7 +186,6 @@ nav {
 /* Links */
 a {
   color: var(--link1);
-  /'Iosevka Term Slab Web', * text-decoration: underline; */
 }
 
 a:hover,
@@ -307,11 +319,6 @@ code.has-jax {
 
 /* hr */
 hr {
-  display: block;
-  border-style: inset;
-  border-width: 1px;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  border: 1px solid var(--title2);
 }
