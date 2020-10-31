@@ -25,16 +25,16 @@ I consider to be far better.
 **To those of you more advanced readers, let me clarify beforehand that I am
 discussing this topic from a more casual viewpoint, so you won't hear me
 talking about the flaws in the NT kernel or anything else regarding foundation
-Windows 10, this is meant to be an experience that is relatable to the average
-user.**
+of Windows 10, this is meant to be an experience that is relatable to the
+average user.**
 
 ## What's wrong with Windows?
 
 I will divide this subsection into 5 categories and talk about them separately:
   1. [Slow, bloated interface, terrible UI design](#slow-bloated-interface-terrible-ui-design)
-  2. [Many security and privacy issues](#many-security-and-privacy-issues-constant-spying-from-microsoft)
-  3. [Software base almost completely proprietary](#software-base-being-almost-completely-proprietary)
-  4. [Lack of control over system](#lack-of-control-over-system-too-much-going-on-without-user-consent)
+  2. [Many security and privacy issues](#many-security-and-privacy-issues)
+  3. [Software base almost completely proprietary](#software-base-being-mostly-proprietary)
+  4. [Lack of control over system](#lack-of-control-over-system)
   5. [TLDR](#tldr)
 
 ### Slow, bloated Interface, terrible UI design
@@ -94,7 +94,7 @@ their operating system. For the amount of money a user would be dishing out for
 an operating system which is designed so shoddily, it's very hard for me to say
 that the experience is worth the cost.
 
-### Many security and privacy issues, constant spying from Microsoft
+### Many security and privacy issues
 
 It is well known how easy it is to create viruses and harmful malware for
 Windows computers. Due to the amount of market share the operating system has,
@@ -142,7 +142,7 @@ exactly Microsoft acquires (mostly due to how closed-off the operating system
 is) this data, we can't exactly track down or opt out of a lot of these
 programs.
 
-### Software base being almost completely proprietary
+### Software base being mostly proprietary
 
 If you are someone who uses many different kinds of software, you have most likely
 experienced the frustration that comes with finding good free and open source
@@ -185,7 +185,7 @@ future either. Since as more and more of these tech giants demolish their
 smaller free and open-source rivals, Windows becomes more of a trap for it's
 current users.
 
-### Lack of control over system, too much going on without user consent
+### Lack of control over system
 
 Windows seems to be designed to be as unintuitive and unusable as possible,
 with as little control being given to the user as possible whenever there is
@@ -231,13 +231,13 @@ them being Linux.
 
 ## Now, Why is Linux any better?
 This subsection too, will be divided into 5 categories:
-  1. Many distributions to choose from for almost any purpose
-  2. UI and design has infinite customization potential
-  3. Completely open and secure
-  4. Free and Open Source software base
-  5. Absolute control over system
+  1. [Many distributions to choose from](#many-distributions-to-choose-from)
+  2. [UI has infinite customization potential](#ui-has-infinite-customization-potential)
+  3. [Completely transparent and secure](#completely-transparent-and-secure)
+  4. [Free and Open Source software base](#free-and-open-source-software-base)
+  5. [Absolute control over system](#absolute-control-over-system)
 
-### Many distributions to choose from for almost any purpose
+### Many distributions to choose from
 
 Most people who use Windows have absolutely no idea of the code that was used
 to create the operating system that they use, everything is hidden away in
@@ -260,7 +260,7 @@ features you have, it's that you are provided complete choice and control over
 your computer and what you install on it. Something that Windows is notorious
 for not providing.
 
-### UI and design has infinite customization potential
+### UI has infinite customization potential
 
 Linux offers an almost absurd collection of different desktop environments and
 window managers, each being completely different and having their own upsides

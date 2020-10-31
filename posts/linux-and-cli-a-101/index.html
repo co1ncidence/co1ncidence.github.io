@@ -9,7 +9,7 @@
 	<meta name="description" content="Just a place where I rant and sometimes say something smart">
 	<meta name="author" content="nuaNce">
 	<link rel="stylesheet" href="/css/style.css">
-	<link rel="stylesheet" href="/css/style.css?rnd=1604065476">
+	<link rel="stylesheet" href="/css/style.css?rnd=1604164017">
 	
 </head>
 <body>
@@ -65,10 +65,11 @@
 				<p style="text-align:left;">
 						<b>Published: 08/15 — 2020</b>
 					<span style="float:right;">
-						<b>6116 Words, 29 Min.</b>
+						<b>6113 Words, 29 Min.</b>
 					</span>
 				</p>
 		    
+				<hr />
 			<div>
 				<p>When I first started with Linux, and especially the command line, It was difficult to find a truly optimal and comprehensive guide to everything I needed to know. While most tutorials were decent and gave me a good starting point, they usually provided insufficient information or didn&rsquo;t showcase the most optimal commands and strategies. I am making this list as more of a dump for all of the things that I have learned about Linux and the Command Line so far. While my knowledge isn&rsquo;t too much compared to some, I like to think that I know something. So without further ado, here is my guide to help boost you up in the Linux elitist ladder:</p>
 <blockquote>
@@ -177,7 +178,7 @@ share/, This is the equivalent of <strong>.local/share</strong> but for the syst
 </code></pre></div><h3 id="pipes-in-bash">Pipes In Bash</h3>
 <p><strong>Pipes</strong> are things you can use to filter one command through another, thus allowing for things like controlling outputs of commands or sending then to different places. Pipes have many uses so I recommend that you look more into them as there is no way I can go into full depth here. Here is an example of a pipe being used to filter the output of of <code>fc-list</code> through <code>grep</code> to only show fonts with a certain name.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> fc-list <span style="color:#111">|</span> grep Roboto
-</code></pre></div><h3 id="sending-command-outputs-to-different-places">Sending command outputs to different places</h3>
+</code></pre></div><h3 id="forwarding-command-outputs">Forwarding Command Outputs</h3>
 <p>The <code>&gt;</code> character works in a similar fashion to pipes, but instead of filtering the command through another, it pushes the output to a file of your choice. The amount of <code>&gt;</code>&rsquo;s you use also makes a difference, for example, this command will print the word &ldquo;hello&rdquo; and push it as the first word in a new file called &ldquo;file.txt&rdquo;:</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> <span style="color:#111">echo</span> <span style="color:#d88200">&#34;hello&#34;</span> &gt; file.txt
 </code></pre></div><p>Using two <code>&gt;</code>&rsquo;s provides a different result, instead of creating a new file containing the outputted words, it will append the output to an existing file that you point it to. A common example of this is when adding a heading to a GitHub README:</p>
@@ -309,7 +310,7 @@ drwxr-xr-x  <span style="color:#ae81ff">8</span> co1ncidence co1ncidence <span s
 drwxr-xr-x <span style="color:#ae81ff">10</span> co1ncidence co1ncidence <span style="color:#ae81ff">4096</span> Sep  <span style="color:#ae81ff">8</span> 17:06 var/
 </code></pre></div><p>The <code>chown</code> is like <code>chmod</code>, but instead of changing a file or folders permissions, it transfers ownership of that target to a user that you specify.</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">chown file.txt root
-</code></pre></div><h2 id="file-viewing--and-output-controlfiltering">File Viewing  and Output Control/Filtering</h2>
+</code></pre></div><h2 id="file-viewing--and-output-control">File Viewing  and Output Control</h2>
 <p>The <code>cat</code> command is one of the first to know when viewing files, running <code>cat</code> on a file which contains any sort of text will cause your terminal to output the full contents of your file, for example, running:</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> cat .bashrc
 </code></pre></div><p>Will show you the contents of your <code>.bashrc</code> file, otherwise known as the bash shell configuration file, more about this later. <code>cat</code> is very useful when you want to look at certain content in a file but don&rsquo;t want to open it in your editor.

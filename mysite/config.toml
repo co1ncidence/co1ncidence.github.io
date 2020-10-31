@@ -2,7 +2,7 @@ publishdir = ".."
 baseURL = "https://co1ncidence.github.io"
 languageCode = "en-us"
 title = "nuaNce"
-theme = "nuance"
+theme = "jayden"
 paginate = 10
 
 [author]

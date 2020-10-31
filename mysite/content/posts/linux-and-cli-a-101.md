@@ -162,7 +162,7 @@ You can also do another kind of sequential execution in the command line, using 
 [$] fc-list | grep Roboto
 ```
 
-### Sending command outputs to different places
+### Forwarding Command Outputs
 The `>` character works in a similar fashion to pipes, but instead of filtering the command through another, it pushes the output to a file of your choice. The amount of `>`'s you use also makes a difference, for example, this command will print the word "hello" and push it as the first word in a new file called "file.txt":
 ```sh
 [$] echo "hello" > file.txt
@@ -388,7 +388,7 @@ The `chown` is like `chmod`, but instead of changing a file or folders permissio
 chown file.txt root
 ```
 
-## File Viewing  and Output Control/Filtering
+## File Viewing  and Output Control
 The `cat` command is one of the first to know when viewing files, running `cat` on a file which contains any sort of text will cause your terminal to output the full contents of your file, for example, running:
 ```sh
 [$] cat .bashrc
