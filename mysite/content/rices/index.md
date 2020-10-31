@@ -11,79 +11,79 @@ Here are ~~all~~ most of the Rices that I have made on my computer over the last
 
 ---
 
-![img](https://raw.githubusercontent.com/co1ncidence/dotless/master/scr/itai6.png)
+[![](https://raw.githubusercontent.com/co1ncidence/dotless/master/scr/itai6.png)](https://raw.githubusercontent.com/co1ncidence/dotless/master/scr/itai6.png)
 
 ## Heads and Tails
 
 ---
 
-![img](/images/rices/headsandtails.png)
+[![](/images/rices/headsandtails.png)](/images/rices/headsandtails.png)
 
 ## The Nomad
 
 ---
 
-![img](/images/rices/nomad.png)
+[![](/images/rices/nomad.png)](/images/rices/nomad.png)
 
 ## Deja Vu
 
 ---
 
-![img](/images/rices/dejavu.png)
+[![](/images/rices/dejavu.png)](/images/rices/dejavu.png)
 
 ## Bliss v2
 
 ---
 
-![img](/images/rices/sunset.png)
+[![](/images/rices/sunset.png)](/images/rices/sunset.png)
 
 ## The Mountaineer
 
 ---
 
-![img](/images/rices/the-mountaineer.png)
+[![](/images/rices/the-mountaineer.png)](/images/rices/the-mountaineer.png)
 
 ## Safe and Sound
 
 ---
 
-![img](/images/rices/safe-and-sound.png)
+[![](/images/rices/safe-and-sound.png)](/images/rices/safe-and-sound.png)
 
 ## Bloated Minimalism
 
 ---
 
-![img](/images/rices/bloated-minimalism.png)
+[![](/images/rices/bloated-minimalism.png)](/images/rices/bloated-minimalism.png)
 
 ## Function > Form
 
 ---
 
-![img](/images/rices/function.png)
+[![](/images/rices/function.png)](/images/rices/function.png)
 
 ## Contempt
 
 ---
 
-![img](/images/rices/contempt.png)
+[![](/images/rices/contempt.png)](/images/rices/contempt.png)
 
 ## Is One Rose Enough?
 
 ---
 
-![img](/images/rices/rose.png)
+[![](/images/rices/rose.png)](/images/rices/rose.png)
 
 ## IceBerg
 
 ---
 
-![img](/images/rices/iceberg.png)
+[![](/images/rices/iceberg.png)](/images/rices/iceberg.png)
 
 ## Attention to Detail
 
 ---
 
-![img](/images/rices/detail.png)
+[![](/images/rices/detail.png)](/images/rices/detail.png)
 
 ## Bliss v1.5
 
