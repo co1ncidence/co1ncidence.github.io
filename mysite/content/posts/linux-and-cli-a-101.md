@@ -113,7 +113,8 @@ It is important to get to know your home folder well and to keep it nice and tid
 ```
 
 `/usr/bin/`, this is where all the global binaries on your system are stored. For example, when you install Firefox, it creates a file in this folder called "Firefox", which is executed every time you run the browser. The same applies to just about every other program or command on your system
-include/**, This directory "includes" all necessary headers that C compilers use at compile time. It is not somewhere you will ever find yourself, so we won't go any deeper
+
+`/usr/include/`, This directory "includes" all necessary headers that C compilers use at compile time. It is not somewhere you will ever find yourself, so I won't go any deeper
 
 `/usr/lib/, /usr/lib32/, and /usr/lib64/`, These are where the libraries of all languages and programs of your system go. These files are often stored for later use by programs and their developers, and aren't something you would ever usually need to touch
 

@@ -29,6 +29,7 @@ html {
 body {
   max-width: 600px;
   width: 100vw;
+  text-align: justify;
   margin: 0 auto;
   padding-top: 10vh;
   padding-bottom: 10vh;
@@ -98,19 +99,19 @@ h1:before {
 }
 
 h2:before {
-  color: var(--title2);
+  color: var(--bg2);
   content: "## ";
   margin-left: -47px;
 }
 
 h3:before {
-  color: var(--title2);
+  color: var(--bg2);
   content: "### ";
   margin-left: -55px;
 }
 
 h4:before {
-  color: var(--title2);
+  color: var(--bg2);
   content: "#### ";
   margin-left: -61px;
 }
@@ -173,13 +174,13 @@ nav {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  width: 95%;
-  padding-top: 20px;
+  width: 84%;
+  padding-top: 10px;
   padding-bottom: 5px;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   font-family: 'iA Writer Duospace', sans-serif;
   font-stretch: expanded;
-  font-size: 1.1em;
+  /* font-size: 1.0em; */
   border-bottom: 3px solid var(--fg1);
 }
 
@@ -253,9 +254,9 @@ article {
   margin-top: 15px;
   margin-bottom: 20px;
   border-radius: 10px;
-  -webkit-box-shadow: 5px 10px 40px -20px rgba(0,0,0,0.60);
-  -moz-box-shadow: 5px 10px 40px -20px rgba(0,0,0,0.60);
-  box-shadow: 5px 10px 40px -20px rgba(0,0,0,0.60);
+  -webkit-box-shadow: 5px 10px 40px -20px rgba(0,0,0,0.70);
+  -moz-box-shadow: 5px 10px 40px -20px rgba(0,0,0,0.70);
+  box-shadow: 5px 10px 40px -20px rgba(0,0,0,0.70);
 }
 
 /* Quotes */
