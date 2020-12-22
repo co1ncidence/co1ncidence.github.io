@@ -11,15 +11,8 @@
 		<article>
 			<h1>{{ .Title }}</h1>
 				<hr />
-				<!-- <p style="text-align:left;"> -->
-				<!-- 		<b>{{ .Date.Format (default "01/02/2006" .Site.Params.dateFmt) }}</b> -->
-				<!-- 	<span style="float:right;"> -->
-				<!-- 		<b>{{ .WordCount }} Words, {{ .ReadingTime }} Min.</b> -->
-				<!-- 	</span> -->
-				<!-- </p> -->
 		    {{ range .Params.tags }}
           {{ end }}
-				<!-- <hr /> -->
 			<div>
 				{{ .Content }}
 			</div>

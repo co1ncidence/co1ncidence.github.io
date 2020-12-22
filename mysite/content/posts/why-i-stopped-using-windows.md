@@ -39,7 +39,9 @@ I will divide this subsection into 5 categories and talk about them separately:
 
 ### Slow, bloated Interface, terrible UI design
 
-> Since design is a subjective topic, this section will be regarded as the "least important", some will agree with what I say but some might not, keep this in mind as you read.
+> Since design is a subjective topic, this section will be regarded as the
+> "least important", some will agree with what I say but some might not, keep
+> this in mind as you read.
 
 Something I noticed while using Windows on a daily basis was just how terrible
 the design could be at moments. It felt like there was no real effort put into
@@ -115,15 +117,27 @@ on our computers, and since most user's don't bother to read these documents,
 this stays under the radar. If you don't want to read the privacy statement,
 here is a short excerpt which sums up the situation quite well:
 
-> Finally, we will access, disclose and preserve personal data, including your content (such as the content of your emails, other private communications or files in private folders), when we have a good faith belief that doing so is necessary to:
+> Finally, we will access, disclose and preserve personal data, including your
+> content (such as the content of your emails, other private communications or
+> files in private folders), when we have a good faith belief that doing so is
+> necessary to:
 >
-> 1: Comply with applicable law or respond to valid legal process, including from law enforcement or other government agencies;
+> 1: Comply with applicable law or respond to valid legal process, including
+> from law enforcement or other government agencies;
 >
-> 2: Protect our customers, for example to prevent spam or attempts to defraud users of the services, or to help prevent the loss of life or serious injury of anyone;
+> 2: Protect our customers, for example to prevent spam or attempts to defraud
+> users of the services, or to help prevent the loss of life or serious injury
+> of anyone;
 >
-> 3: Operate and maintain the security of our services, including to prevent or stop an attack on our computer systems or networks; or
+> 3: Operate and maintain the security of our services, including to prevent or
+> stop an attack on our computer systems or networks; or
 >
-> 4: Protect the rights or property of Microsoft, including enforcing the terms governing the use of the services – however, if we receive information indicating that someone is using our services to traffic in stolen intellectual or physical property of Microsoft, we will not inspect a customer’s private content ourselves, but we may refer the matter to law enforcement.
+> 4: Protect the rights or property of Microsoft, including enforcing the terms
+> governing the use of the services – however, if we receive information
+> indicating that someone is using our services to traffic in stolen
+> intellectual or physical property of Microsoft, we will not inspect a
+> customer’s private content ourselves, but we may refer the matter to law
+> enforcement.
 
 They say that you should always read the fine text, or else you will end up
 regretting it. That anecdote applies here as well. This was a shocker for me

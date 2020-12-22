@@ -9,7 +9,7 @@
 	<meta name="description" content="Just a place where I rant and sometimes say something smart">
 	<meta name="author" content="nuaNce">
 	<link rel="stylesheet" href="/css/style.css">
-	<link rel="stylesheet" href="/css/style.css?rnd=1604528958">
+	<link rel="stylesheet" href="/css/style.css?rnd=1608662046">
 	
 </head>
 <body>
@@ -71,16 +71,13 @@
 		<article>
 			<h1>An In Depth Look at My Workflow</h1>
 				<hr />
-				
-				
-				
-				
-				
-				
 		    
-				
 			<div>
-				<p>One of the things I find most important when using a computer is effective workflow management. Getting the most efficient setup and being able to do my work as fast as possible while maintaining quality. In this post I will go over some of the things I do in my setup to ensure that I have the most efficient working environment possible</p>
+				<p>One of the things I find most important when using a computer is effective
+workflow management. Getting the most efficient setup and being able to do my
+work as fast as possible while maintaining quality. In this post I will go over
+some of the things I do in my setup to ensure that I have the most efficient
+working environment possible</p>
 <h2 id="table-of-contents">Table of Contents:</h2>
 <ol>
 <li><a href="#software-i-use">Software I Use</a></li>
@@ -92,7 +89,8 @@
 <li><a href="#final-note">Final Note</a></li>
 </ol>
 <h2 id="software-i-use">Software I use</h2>
-<p>To start things off, here is a basic overview of some of my productivity software:</p>
+<p>To start things off, here is a basic overview of some of my productivity
+software:</p>
 <ul>
 <li><strong>Distro:</strong> Manjaro Linux</li>
 <li><strong>Window Manager:</strong> Openbox</li>
@@ -102,20 +100,46 @@
 <li><strong>Menu Manager:</strong> Dmenu</li>
 <li><strong>Other Software:</strong> Zathura, LibreOffice, Xournal++, SkanLite</li>
 </ul>
-<p>You may be confused about some of the choices I&rsquo;ve made here, mainly those regarding my distribution and window manager. The reason I run Manjaro is for printer compatibility, which I simply could <em>not</em> get working on Arch Linux. And I use Openbox because it does exactly what I need it to, manages windows without getting in my way. While not being very workflow oriented out of the box, and with just a few tweaks and scripts we can get Openbox to be even more efficient than a standard tiling window manager.</p>
+<p>You may be confused about some of the choices I&rsquo;ve made here, mainly those
+regarding my distribution and window manager. The reason I run Manjaro is for
+printer compatibility, which I simply could <em>not</em> get working on Arch Linux.
+And I use Openbox because it does exactly what I need it to, manages windows
+without getting in my way. While not being very workflow oriented out of the
+box, and with just a few tweaks and scripts we can get Openbox to be even more
+efficient than a standard tiling window manager.</p>
 <h2 id="window-management">Window management</h2>
-<p>To overcome Openbox&rsquo;s strange default workflow, I have implemented a mix of efficient <a href="https://www.maketecheasier.com/cheatsheet/vim-keyboard-shortcuts/">vim-based keybinds</a> to make window management easier. I have all of the window placement, resizing, and movement that I could want from most tiling window managers but at a minimal level, thus removing any unnecessary features. Most of this window management is achieved using <a href="https://github.com/wmutils/core">wmutils</a> in correspondence with <a href="https://github.com/baskerville/sxhkd">sxhkd</a>. One thing to note is that due to my limited (14 inches) screen real estate, I rarely ever have more than 2 or 3 windows on my screen. A lot of my window management workflow and keybind choices revolve around this condition.</p>
+<p>To overcome Openbox&rsquo;s strange default workflow, I have implemented a mix of
+efficient <a href="https://www.maketecheasier.com/cheatsheet/vim-keyboard-shortcuts/">vim-based
+keybinds</a> to
+make window management easier. I have all of the window placement, resizing,
+and movement that I could want from most tiling window managers but at a
+minimal level, thus removing any unnecessary features. Most of this window
+management is achieved using <a href="https://github.com/wmutils/core">wmutils</a> in
+correspondence with <a href="https://github.com/baskerville/sxhkd">sxhkd</a>. One thing to
+note is that due to my limited (14 inches) screen real estate, I rarely ever
+have more than 2 or 3 windows on my screen. A lot of my window management
+workflow and keybind choices revolve around this condition.</p>
 <h3 id="workspaces">Workspaces</h3>
 <p><strong>Super + h/l</strong> will move me between relative workspaces.</p>
 <p><strong>Alt + Shift + h/l</strong> will move the current window between relative workspaces.</p>
 <h3 id="manipulating-windows">Manipulating Windows</h3>
-<p><strong>Super + c</strong> will center the current window, helps with bringing windows quickly into a focused position.</p>
-<p><strong>Super + j/k</strong> will toggle a window as maximized, both keys do either action so as to reduce any margin of error.</p>
+<p><strong>Super + c</strong> will center the current window, helps with bringing windows
+quickly into a focused position.</p>
+<p><strong>Super + j/k</strong> will toggle a window as maximized, both keys do either action
+so as to reduce any margin of error.</p>
 <h3 id="manual-window-resizing">Manual Window Resizing</h3>
-<p><strong>Alt + h/j/k/l</strong> will resize a window, one set resizes outwards, and the other resizes inwards. My resizing is extremely fast as well, this is because I have <code>xset r rate 250 50</code> set in my Xorg configuration, which applies considerable acceleration to any repeated actions.</p>
-<p><strong>Ctrl + Shift + h/j/k/l</strong> will snap a window to any of the 4 cardinal directions, this helps with laying out multiple windows side by side or top to bottom.</p>
+<p><strong>Alt + h/j/k/l</strong> will resize a window, one set resizes outwards, and the other
+resizes inwards. My resizing is extremely fast as well, this is because I have
+<code>xset r rate 250 50</code> set in my Xorg configuration, which applies considerable
+acceleration to any repeated actions.</p>
+<p><strong>Ctrl + Shift + h/j/k/l</strong> will snap a window to any of the 4 cardinal
+directions, this helps with laying out multiple windows side by side or top to
+bottom.</p>
 <h2 id="useful-keybinds">Useful Keybinds</h2>
-<p>I find that one of the most essential parts to maintaining efficiency is by having a keyboard based workflow, so, in keeping with this, I&rsquo;ve made sure that the actions that I find myself doing most are all bound to keypresses, so I can do them quickly instead of having to waste time using a mouse.</p>
+<p>I find that one of the most essential parts to maintaining efficiency is by
+having a keyboard based workflow, so, in keeping with this, I&rsquo;ve made sure that
+the actions that I find myself doing most are all bound to keypresses, so I can
+do them quickly instead of having to waste time using a mouse.</p>
 <h3 id="apps">Apps</h3>
 <ul>
 <li><strong>Super + Return</strong> will open my terminal</li>
@@ -152,7 +176,11 @@
 </ul>
 <p><img src="/images/workflow/fontmenu.png" alt="img"></p>
 <h2 id="dmenu-ception">Dmenu-Ception</h2>
-<p>While normally just used for launching applications, <code>dmenu</code> can also be used to create custom menus that run whichever commands you want them to. Here is an example of a menu that I use as a password manager. I point it to a directory that contains my passwords and, to put it simply, <code>dmenu</code> will copy those passwords to my clipboard:</p>
+<p>While normally just used for launching applications, <code>dmenu</code> can also be used
+to create custom menus that run whichever commands you want them to. Here is an
+example of a menu that I use as a password manager. I point it to a directory
+that contains my passwords and, to put it simply, <code>dmenu</code> will copy those
+passwords to my clipboard:</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#!/bin/sh
 </span><span style="color:#75715e"></span>
 <span style="color:#111">dir</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;</span><span style="color:#111">$HOME</span><span style="color:#d88200">/usr/doc/sav/pass&#34;</span>
@@ -160,16 +188,23 @@
 <span style="color:#111">pass</span><span style="color:#f92672">=</span><span style="color:#00a8c8">$(</span>ls -1 <span style="color:#d88200">&#34;</span><span style="color:#111">$dir</span><span style="color:#d88200">&#34;</span> <span style="color:#111">|</span> dmenu -fn <span style="color:#d88200">&#34;Recursive Mono Linear Static&#34;</span><span style="color:#00a8c8">)</span>
 
 <span style="color:#f92672">[</span> -f <span style="color:#d88200">&#34;</span><span style="color:#111">$dir</span><span style="color:#d88200">/</span><span style="color:#111">$pass</span><span style="color:#d88200">&#34;</span> <span style="color:#f92672">]</span> <span style="color:#f92672">&amp;&amp;</span> xclip -sel clip <span style="color:#d88200">&#34;</span><span style="color:#111">$dir</span><span style="color:#d88200">/</span><span style="color:#111">$pass</span><span style="color:#d88200">&#34;</span>
-</code></pre></div><p>Now here is where it gets interesting. You can point a <code>dmenu</code> script to another <code>dmenu</code> script, this allows you to essentially navigate a directory of menus. I have such a setup here (which I can initiate with <strong>Super +b</strong>) for opening up certain school documents and folders with ease:</p>
+</code></pre></div><p>Now here is where it gets interesting. You can point a <code>dmenu</code> script to
+another <code>dmenu</code> script, this allows you to essentially navigate a directory of
+menus. I have such a setup here (which I can initiate with <strong>Super +b</strong>) for
+opening up certain school documents and folders with ease:</p>
 <p><img src="/images/workflow/schoolmenus.gif" alt="img"></p>
 <h2 id="effective-note-taking">Effective Note Taking</h2>
-<p>On the topic of little useful scripts, here is one that I came up with called <code>note</code> that makes quick and easy note taking almost trivial:</p>
+<p>On the topic of little useful scripts, here is one that I came up with called
+<code>note</code> that makes quick and easy note taking almost trivial:</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#!/bin/sh
 </span><span style="color:#75715e"></span>
 <span style="color:#111">printf</span> <span style="color:#d88200">&#39;%s\n&#39;</span> <span style="color:#d88200">&#34;</span><span style="color:#00a8c8">$(</span>date +<span style="color:#d88200">&#39;%a/%d %I:%M&#39;</span><span style="color:#00a8c8">)</span><span style="color:#d88200">: </span><span style="color:#111">$*</span><span style="color:#d88200">&#34;</span> &gt;&gt; ~/var/notes/notes.html
 </code></pre></div><p>Here is an example of this script in use:</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> note Finish writing a blogpost
-</code></pre></div><p>This command will append the sentence <code>Finish writing a blogpost</code> to the end of a specified notes file. Not only that, the note entry will also be prefixed by a date and time. This makes identifying and marking off old notes much easier. Here is what a notes file would look like:</p>
+</code></pre></div><p>This command will append the sentence <code>Finish writing a blogpost</code> to the end of
+a specified notes file. Not only that, the note entry will also be prefixed by
+a date and time. This makes identifying and marking off old notes much easier.
+Here is what a notes file would look like:</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">Wed/16 08:02: A cool and nice note
 Wed/16 08:03: Trust me bro this one is cooler
 <span style="color:#75715e">&lt;!-- Wed/16 08:03: I am done and finished --&gt;</span>
@@ -185,11 +220,26 @@ Fri/18 07:41: Where did my pencil go
 <span style="color:#75715e">&lt;!-- Sat/19 10:03: Hello darkness my old friend --&gt;</span>
 <span style="color:#75715e">&lt;!-- Sat/19 03:48: It&#39;s been while since I died--&gt;</span>
 Sat/19 03:48: The final nooote, badabumbumm...
-</code></pre></div><p>Putting the notes in HTML (or markdown, if you prefer that) format also allows me to easily, and visually, comment out entries that I have marked as done. And by using the fantastic <code>vim-commentary</code> plugin, this is as simple as pressing <code>gcc</code> on a line. To supplement this, I have aliases to quickly access this notes file as well as one to reveal only the undone entries of it. The simplicity of this setup allows for almost infinite extensibility. So, in theory, <strong>I should be able to adapt this &ldquo;semi-workflow&rdquo; to just about any situation.</strong></p>
+</code></pre></div><p>Putting the notes in HTML (or markdown, if you prefer that) format also allows
+me to easily, and visually, comment out entries that I have marked as done. And
+by using the fantastic <code>vim-commentary</code> plugin, this is as simple as pressing
+<code>gcc</code> on a line. To supplement this, I have aliases to quickly access this
+notes file as well as one to reveal only the undone entries of it. The
+simplicity of this setup allows for almost infinite extensibility. So, in
+theory, <strong>I should be able to adapt this &ldquo;semi-workflow&rdquo; to just about any
+situation.</strong></p>
 <h2 id="my-workflow-and-school">My Workflow and School</h2>
-<p>As a college student, <strong>using Linux can be scary.</strong> You never know when you might not be able to do something your fellow students can. Perhaps your distro is missing a package or you forgot to install some drivers. While a lot of these things can be taken care of before a semester, sometimes you need to fix things on the spot. Thankfully, however, I was able to integrate my workflow with my college&rsquo;s requirements without too much of a headache. Here are some of the things I did to keep up with my professor&rsquo;s requirements:</p>
+<p>As a college student, <strong>using Linux can be scary.</strong> You never know when you
+might not be able to do something your fellow students can. Perhaps your distro
+is missing a package or you forgot to install some drivers. While a lot of
+these things can be taken care of before a semester, sometimes you need to fix
+things on the spot. Thankfully, however, I was able to integrate my workflow
+with my college&rsquo;s requirements without too much of a headache. Here are some of
+the things I did to keep up with my professor&rsquo;s requirements:</p>
 <h3 id="easy-to-miss-software-requirements">Easy-To-Miss Software requirements</h3>
-<p>When you are as stressed about minimalism in computing as I am sometimes, you may end up accidentally forgetting to implement a feature that may not seem important but actually is. These things can include:</p>
+<p>When you are as stressed about minimalism in computing as I am sometimes, you
+may end up accidentally forgetting to implement a feature that may not seem
+important but actually is. These things can include:</p>
 <ul>
 <li>Installed and working printer drivers</li>
 <li>Software that can use your printers scanner</li>
@@ -197,9 +247,16 @@ Sat/19 03:48: The final nooote, badabumbumm...
 <li>Enabling HDMI support for monitors and projectors</li>
 <li>And being familiar with shitty college websites</li>
 </ul>
-<p>While some of these things may seem like common sense, I frequently check on my ability to do them so I don&rsquo;t miss out on a crucial moment. For example, I always make sure I have <strong>SkanLite</strong> installed in case I ever need to scan a physical document for submission.</p>
+<p>While some of these things may seem like common sense, I frequently check on my
+ability to do them so I don&rsquo;t miss out on a crucial moment. For example, I
+always make sure I have <strong>SkanLite</strong> installed in case I ever need to scan a
+physical document for submission.</p>
 <h3 id="managing-all-my-files">Managing All My Files</h3>
-<p>One thing I always make sure I have is an intuitive, easy to navigate, and well organized directory tree for all my documents. I prefer to follow a Semantic directory structure, which lets me break down categories into more categories, thus making even the most obscure files and folders trivial to find. Here is a quick overview of my current documents directory:</p>
+<p>One thing I always make sure I have is an intuitive, easy to navigate, and well
+organized directory tree for all my documents. I prefer to follow a Semantic
+directory structure, which lets me break down categories into more categories,
+thus making even the most obscure files and folders trivial to find. Here is a
+quick overview of my current documents directory:</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> tree -d -L <span style="color:#ae81ff">3</span>
 .
 ├── bok
@@ -222,15 +279,40 @@ Sat/19 03:48: The final nooote, badabumbumm...
     │   ├── assignments
     │   └── doc
     └── precalc
-</code></pre></div><p>As you can see, I like to keep everything organized <strong>in human readable fashion in their own specific places,</strong> while also keeping directory names small and simple. Organizing classes by their own folders is also handy, as to not mix up rubrics or other teacher-given documents.</p>
+</code></pre></div><p>As you can see, I like to keep everything organized <strong>in human readable fashion
+in their own specific places,</strong> while also keeping directory names small and
+simple. Organizing classes by their own folders is also handy, as to not mix up
+rubrics or other teacher-given documents.</p>
 <h3 id="composition-writing-essays-in-mla">Composition, Writing Essays in MLA</h3>
-<p>While most people are used to writing their college essays in something like <strong>Microsoft Word</strong> or <strong>LibreOffice</strong>, I personally am not a fan of them. Rich text editing is tedious and most of the time inefficient as well. I much prefer to use proper markup formatters like <a href="https://www.latex-project.org/">LaTeX</a> and <a href="https://daringfireball.net/projects/markdown/">Markdown</a>. To summarize my reasoning, here is a meme one of my friends made on this topic:</p>
+<p>While most people are used to writing their college essays in something like
+<strong>Microsoft Word</strong> or <strong>LibreOffice</strong>, I personally am not a fan of them. Rich
+text editing is tedious and most of the time inefficient as well. I much prefer
+to use proper markup formatters like <a href="https://www.latex-project.org/">LaTeX</a>
+and <a href="https://daringfireball.net/projects/markdown/">Markdown</a>. To summarize my
+reasoning, here is a meme one of my friends made on this topic:</p>
 <p><img src="/images/workflow/latexmeme.png" alt="img"></p>
-<p>Now while learning LaTeX can be a hard thing, especially while you may be trying to study for an upcoming exam, utilizing it for something like an MLA formatted essay is almost trivial. I&rsquo;ve been using <strong>LaTeX in NeoVim</strong> for quite some time now and have even managed to integrate it with my menu workflow shown before. And for MLA formatting I simply use a <a href="https://wso.williams.edu/wiki/index.php/LaTeX_MLA_Template">LaTeX MLA template</a>, thus all I need to do is write name/date and start typing away. The MLA template I use also has a simple to use bibliography system with a predefined &ldquo;Works Cited&rdquo; page, so I have no worries regarding properly citing my sources or formatting them into my essay. Once I&rsquo;m done I can simple run a command like this to make my document ready for submission:</p>
+<p>Now while learning LaTeX can be a hard thing, especially while you may be
+trying to study for an upcoming exam, utilizing it for something like an MLA
+formatted essay is almost trivial. I&rsquo;ve been using <strong>LaTeX in NeoVim</strong> for
+quite some time now and have even managed to integrate it with my menu workflow
+shown before. And for MLA formatting I simply use a <a href="https://wso.williams.edu/wiki/index.php/LaTeX_MLA_Template">LaTeX MLA
+template</a>, thus all
+I need to do is write name/date and start typing away. The MLA template I use
+also has a simple to use bibliography system with a predefined &ldquo;Works Cited&rdquo;
+page, so I have no worries regarding properly citing my sources or formatting
+them into my essay. Once I&rsquo;m done I can simple run a command like this to make
+my document ready for submission:</p>
 <div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> pdflatex essay.tex essay.pdf
-</code></pre></div><p>And <em>Voila</em>, I have successfully written an MLA essay and now can send it to my teachers for grading!</p>
+</code></pre></div><p>And <em>Voila</em>, I have successfully written an MLA essay and now can send it to my
+teachers for grading!</p>
 <h3 id="browser">Browser</h3>
-<p>While I&rsquo;ve always loved and used Firefox, It often has compatibility issues with some of my <strong>shittily designed school websites.</strong> To make up for this I am using <a href="https://github.com/eloston/ungoogled-chromium/">ungoogled-chromium</a> as my main browser, it works (as far as I can tell) exactly like the normal chromium browser but without all of the malicious Google code. It has had not compatibility issues for me so far, and is also quite a bit faster than other browsers that I&rsquo;ve tried.</p>
+<p>While I&rsquo;ve always loved and used Firefox, It often has compatibility issues
+with some of my <strong>shittily designed school websites.</strong> To make up for this I am
+using <a href="https://github.com/eloston/ungoogled-chromium/">ungoogled-chromium</a> as
+my main browser, it works (as far as I can tell) exactly like the normal
+chromium browser but without all of the malicious Google code. It has had not
+compatibility issues for me so far, and is also quite a bit faster than other
+browsers that I&rsquo;ve tried.</p>
 <p>Here are the browser extensions I use:</p>
 <ul>
 <li>Vimium C</li>
@@ -239,9 +321,13 @@ Sat/19 03:48: The final nooote, badabumbumm...
 <li>HTTPS Everywhere</li>
 <li>H264ify</li>
 </ul>
-<p>Most of these are pretty common except Vimium C, I use it because it helps me move my Vim keybindings into my browser as well, making moving around tabs and just any sort of navigation in general extremely simple.</p>
+<p>Most of these are pretty common except Vimium C, I use it because it helps me
+move my Vim keybindings into my browser as well, making moving around tabs and
+just any sort of navigation in general extremely simple.</p>
 <h2 id="final-note">Final Note</h2>
-<p>So there it is, a rather simple overview of some of the things that boost up my daily workflow. I hope that you found some of these things interesting and maybe even took some inspiration from them.</p>
+<p>So there it is, a rather simple overview of some of the things that boost up my
+daily workflow. I hope that you found some of these things interesting and
+maybe even took some inspiration from them.</p>
 			</div>
 		</article>
 	</main>
