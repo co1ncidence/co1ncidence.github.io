@@ -9,69 +9,50 @@
 	<meta name="description" content="Just a place where I rant and sometimes say something smart">
 	<meta name="author" content="nuaNce">
 	<link rel="stylesheet" href="/css/style.css">
-	<link rel="stylesheet" href="/css/style.css?rnd=1608662046">
+	<link rel="stylesheet" href="/css/style.css?rnd=1612202490">
 	
 </head>
 <body>
 	<header>
+	<style>
+	.sidenav {
+		height: 22.5%;
+		width: 10%;
+		position: absolute;
+		top: 252px;
+		left: 370px;
+		background-color: transparent;
+		overflow-x: hidden;
+	}
+	.sidenav a {
+		padding: 6px 6px 6px 32px;
+		text-decoration: none;
+		display: block;
+	}
+	</style>
 	<a class="title" href="https://co1ncidence.github.io">nuaNce</a>
 	<p class="subtitle">welcome to my realm</p>
 	<p>
-	<nav>
+	<nav class="sidenav">
 			
 			
-			<a style="text-decoration: none" href="/about/"><b>About /</b></a>
+			<a style="text-decoration: none" href="/about/"><b>About</b></a>
 			
-			<a style="text-decoration: none" href="/posts/"><b>Posts /</b></a>
+			<a style="text-decoration: none" href="/software/"><b>Software</b></a>
 			
-			<a style="text-decoration: none" href="/software/"><b>Software /</b></a>
-			
-			<a style="text-decoration: none" href="/books/"><b>Books /</b></a>
+			<a style="text-decoration: none" href="/books/"><b>Books</b></a>
 			
 			<a style="text-decoration: none" href="/rices/"><b>Rices</b></a>
 			
 	</nav>
 	</p>
 	
-	<script>
-  MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$','$$'], ['\\[', '\\]']],
-      processEscapes: true,
-      processEnvironments: true
-    },
-    options: {
-      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
-    }
-  };
-
-  window.addEventListener('load', (event) => {
-      document.querySelectorAll("mjx-container").forEach(function(x){
-        x.parentElement.classList += 'has-jax'})
-    });
-
-</script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
 </header>
 
 	
-	<style>
-		h1 {
-			margin-left: 47px;
-		}
-		h1:before {
-			content: "";
-		}
-	</style>
 	<main>
 		<article>
 			<h1>Linux and CLI, a 101</h1>
-				<hr />
-		    
 			<div>
 				<p>When I first started with Linux, and especially the command line, It was
 difficult to find a truly optimal and comprehensive guide to everything I
@@ -82,10 +63,15 @@ for all of the things that I have learned about Linux and the Command Line so
 far. While my knowledge isn&rsquo;t too much compared to some, I like to think that I
 know something. So without further ado, here is my guide to help boost you up
 in the Linux elitist ladder:</p>
+
+<p></p>
+
 <blockquote>
 <p>Always remember: <strong>RTFM</strong> - &ldquo;Read The F***ing Manual&rdquo;</p>
 </blockquote>
+
 <h2 id="first-some-terminology-and-tips">First, some Terminology and Tips</h2>
+
 <p>The Terminal is simply an interface to interact with your computer, by itself,
 it is nothing but an empty program. A terminal (in 99.99% of cases) needs a
 <strong>Shell</strong> to function. A shell is an interactive text interface for the user,
@@ -101,14 +87,18 @@ Coreutils</a>, and any other
 programs you might use daily. Once you have familiarized yourself with these
 terms, you can get on to actually using the command line. Here is what you will
 usually see when you open up a terminal:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># This is a comment, these will guide you along</span>
-<span style="color:#f92672">[</span>user@hostname $<span style="color:#f92672">]</span> &lt;-- The Prompt, where you enter commands
-<span style="color:#75715e"># For the purposes of this guide, I will shorten the prompt to:</span>
-<span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> <span style="color:#111">echo</span> <span style="color:#d88200">&#39;command&#39;</span>
-</code></pre></div><p>And finally, and most likely <strong>The Most Important Thing You Will Read Here</strong>,
+
+<pre><code class="language-sh"># This is a comment, these will guide you along
+[user@hostname $] &lt;-- The Prompt, where you enter commands
+# For the purposes of this guide, I will shorten the prompt to:
+[$] echo 'command'
+</code></pre>
+
+<p>And finally, and most likely <strong>The Most Important Thing You Will Read Here</strong>,
 you have to always be willing to read documentation and official manuals when
 encountering a problem or struggling to learn something. Don&rsquo;t go around
 annoying others for help. Some common things to do when having issues include:</p>
+
 <ul>
 <li>Reading the official manual of the program, accessed by running the &ldquo;man&rdquo; command for that program in the terminal</li>
 <li>Searching through the <a href="https://github.com">GitHub</a> issues of the program you are struggling with</li>
@@ -116,19 +106,25 @@ annoying others for help. Some common things to do when having issues include:</
 <li>Reading Wiki pages on amazing websites like the <a href="https://wiki.archlinux.org/">ArchWiki</a></li>
 <li>Searching <a href="https://reddit.com">Reddit</a> for similar problems or making a post about your own</li>
 </ul>
+
 <p><strong>If you follow these steps and effectively search  for solutions, you will learn far better and faster than any other way.</strong></p>
+
 <h2 id="second-some-linux-basics">Second, Some Linux Basics</h2>
+
 <p>In this section I will be discussing some basic Linux concepts, terminology,
 and tip/tricks that every user should know before they dive deeper into the
 operating system.</p>
+
 <h3 id="the-linux-file-system">The Linux File System</h3>
+
 <p>In Linux and other UNIX-based operating systems, almost everything is available
 to the user as a file or folder. This results in your system being essentially
 just one massive file system. Imagine it this way, your entire Linux install is
 one huge folder, called <code>/</code>, this folder contains everything your system and
 the programs on it need to function and work together. You can use the <code>tree</code>
 command on the base <code>/</code> folder to better visualize this:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> tree -d -L <span style="color:#ae81ff">1</span>
+
+<pre><code class="language-sh">[$] tree -d -L 1
 .
 ├── bin -&gt; usr/bin
 ├── boot
@@ -149,203 +145,283 @@ command on the base <code>/</code> folder to better visualize this:</p>
 ├── tmp
 ├── usr
 └── var
-</code></pre></div><p>This command only shows the biggest, main folders on your system. Each of these
+</code></pre>
+
+<p>This command only shows the biggest, main folders on your system. Each of these
 is further subdivided into even more different folders and files. Going over
 the entire filesystem is an extremely daunting task, so I will just give a
 short briefing on the general purpose of each folder:</p>
+
 <p><code>/bin/</code>: This is a symlink, or symbolic link, to the <code>/usr/bin/</code> folder, I will
 go over <strong>/usr/</strong> as a whole in a bit.</p>
+
 <p><code>/boot/</code>: This is where static bootloader files, such as the ones that initiate
 your system, are placed. As a whole this is a dangerous place to be messing
 around so I would highly advise against it unless you know what you are doing.</p>
+
 <p><code>/dev/</code>: This stands for &ldquo;Device&rdquo;, and is where all the devices connected to
 your system have there appropriate files, this can contain drives or
 peripherals. You will find your hard disks and their partitions labeled as
 <code>/dev/sda-z|1-9</code>.</p>
+
 <p><code>/etc/</code>: Originally stood for &ldquo;etcetera&rdquo;, now this is where all of the global
 configuration files of all the programs on your system are stored, such as, for
 example, those used by your init system or display manager:</p>
+
 <p><code>/home/</code>: This is where all of the home folders and files of all (normal) users
 on your system are, it is separated into folders with the usernames of said
 users, and contains specific files only accessible to said users. Here is where
 you will be spending around 90% of your time as a Linux user. Home folders
 usually contain the standard <strong>Documents</strong> or <strong>Pictures</strong> folders and the
 like, but also contain some important hidden folders, such as:</p>
+
 <ul>
 <li><strong>.cache/</strong>: this is where all of your users program&rsquo;s store their cache files</li>
 <li><strong>.config/</strong>: this is where all of your user-specific configuration files are stored</li>
 <li><strong>.local/</strong>: this is the same (in terms of function) as the <strong>/usr/</strong> folder but for your current user only.
 It is important to get to know your home folder well and to keep it nice and tidy, it is basically your main &ldquo;workspace&rdquo; on a Linux system.</li>
 </ul>
+
 <p><code>/lib/ and /lib64/</code>: These are both symlinks to <strong>/usr/lib/</strong>, which we will
 discuss later.</p>
+
 <p><code>/lost+found/</code>: This is an interesting folder, it is where the recovered bit&rsquo;s
 and pieces of other corrupted files can be found. In general, however, you will
 never need to go near here.</p>
+
 <p><code>/mnt/</code>: This is where USB drives and other mounted devices, and their
 contents, can be found. It will usually be empty if you don&rsquo;t have any external
 storage devices mounted.</p>
+
 <p><code>/opt/</code>: This is where third party software and configurations are installed.
 You will usually find things like proprietary drivers and program files over
 here.</p>
+
 <p><code>/proc/</code>: This is another special folder, since if it a virtual directory it
 doesn&rsquo;t actually contain any physical files, but instead just bits and pieces
 of varying system information and statistics. Most of the files in here contain
 information regarding either your kernel or running processes.</p>
+
 <p><code>/root/</code>: This is the equivalent of <strong>/home</strong> but for the root user. Once again
 this is something that you will rarely mess with as most of the time on your
 machine is spend as a normal user, not root.</p>
+
 <p><code>/run/</code>: Being one of the newest directories in the Filesystem, this is where
 some applications store transient files, such as sockets and/or process ID&rsquo;s.</p>
+
 <p><code>/sbin/</code>: While symlinked to <strong>/usr/bin</strong>, it also serves as the place where
 certain system administration binaries are stored, or in other words, commands
 only the root user should be allowed to run.</p>
+
 <p><code>/srv/</code>: This is where service data is stored, such as files for websites you
 visit. It is always changing and not anything you would ever have to mess with.</p>
+
 <p><code>/sys/</code>: This is where certain system information is stored in variable files.
 Things like your battery percentage or brightness level can be found here.</p>
+
 <p><code>/tmp/</code>: This is another interesting folder, it is called &ldquo;tmp&rdquo; because it is a
 temporary filesystem, or, in simple terms, a folder that cleans itself every
 time you restart your computer. Many programs dump temporary files here to save
 space.</p>
+
 <p><code>/usr/</code>: This, in essence, can be called the &ldquo;home directory of your whole
 system&rdquo;, or, more specifically, the equivalent of <strong>/home/.local/</strong> but for all
 users on the computer. It contains a few folders, each which serve their own
 purpose:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> tree -d -L <span style="color:#ae81ff">1</span> /usr/
+
+<pre><code class="language-sh">[$] tree -d -L 1 /usr/
 /usr
 ├── bin
 ├── include
 ├── lib
 ├── lib32
 ├── lib64 -&gt; lib
-├── <span style="color:#111">local</span>
+├── local
 ├── sbin -&gt; bin
 ├── share
 └── src
-</code></pre></div><p><code>/usr/bin/</code>, this is where all the global binaries on your system are stored.
+</code></pre>
+
+<p><code>/usr/bin/</code>, this is where all the global binaries on your system are stored.
 For example, when you install Firefox, it creates a file in this folder called
 &ldquo;Firefox&rdquo;, which is executed every time you run the browser. The same applies
 to just about every other program or command on your system</p>
+
 <p><code>/usr/include/</code>, This directory &ldquo;includes&rdquo; all necessary headers that C
 compilers use at compile time. It is not somewhere you will ever find yourself,
 so I won&rsquo;t go any deeper</p>
+
 <p><code>/usr/lib/, /usr/lib32/, and /usr/lib64/</code>, These are where the libraries of all
 languages and programs of your system go. These files are often stored for
 later use by programs and their developers, and aren&rsquo;t something you would ever
 usually need to touch</p>
+
 <p><code>/usr/local/</code>, This is basically a clone of <strong>/usr/</strong> but for local purposes,
 these files are usually only accessible to certain users, usually the
 administrator of the system</p>
+
 <p><code>/usr/sbin/</code>, This is just a symlink to <strong>bin/</strong>, which we discussed before
 share/, This is the equivalent of <strong>.local/share</strong> but for the system as a
 whole. Many programs and architectures make use of the global files here. Out
 of all the <strong>/usr</strong> directories mentioned so far, this is the only one you
 might have to actually spend time in</p>
+
 <p><code>/usr/src/</code>, A folder not found on every distribution, this usually contains
 important source code for certain Kernel objects, not something you will
 usually ever need to worry about though.</p>
+
 <p><code>/var/</code>: The last of the root directories, it&rsquo;s name stand for &ldquo;variable(s)&rdquo;.
 It contains constantly changing files and information that programs use. It is
 also writable unlike <strong>/usr/</strong>, which makes it a useful and safe place to store
 things like system logs, which can be found in <strong>/var/log/</strong> and so on.</p>
+
 <p>There we have it, the Linux filesystem in it&rsquo;s entirety. While it may seem
 confusing at first, there is quite a good bit of useful organization here, and
 as you continue to use your computer you will realize how little you really
 need to think about where something might be, as each folder has a pretty
 distinct purpose. Just remember to not go messing around in places that I
 mentioned you shouldn&rsquo;t be.</p>
+
 <p>And of course, If you would like to learn more than just this basic overview
 has taught you, run <code>man hier</code> in the terminal and take a look through it, it
 goes quite a bit more in detail than I did here.</p>
+
 <h2 id="third-getting-to-know-bash">Third, Getting to Know Bash</h2>
+
 <p>Here I will be explaining some simple bash concepts that will help speed you
 along your terminal journey, knowing these is necessary if you want to truly be
 efficient on the command line:</p>
+
 <h3 id="autocomplete">Autocomplete</h3>
+
 <p>Bash has built in <strong>tab-complete</strong>, so instead of typing in entire long names
 of folders and/or programs, you can just type in a few letters and press the
 <code>tab</code> key, Bash will then auto-type the rest of the name for your. If there are
 multiple possibilities, Bash will just output them all, so you can choose the
 one you want.</p>
+
 <h3 id="global-aliases">Global Aliases</h3>
+
 <p><code>..</code> is an alias for the parent folder of the directory you are currently
 working inside, and the word <code>.</code> is the alias for the folder currently
 occupied. These are useful to know as they can save you precious time typing in
 long directory paths when you are working with more advanced commands. These
 aliases can be used with just about any command so be careful with them.</p>
+
 <p><code>~</code> is an alias that stands for <code>/home/username</code>, with &ldquo;username&rdquo; being the
 user name of the currently active user. It can be used with many commands, so
 once again, be careful with what you do. If you are ever unsure, just remind
 yourself that it <strong>directly</strong> translates to <code>/home/username</code>, that&rsquo;ll help you
 get a bearing on the command you are about to run.</p>
+
 <p><code>!!</code> is an alias for the last command run. For example, if you ran a command
 but forgot to add <code>sudo</code> or something, you can simply run <code>sudo !!</code> instead of
 typing out the whole of the previous command.</p>
+
 <h3 id="conditional-execution">Conditional Execution</h3>
+
 <p><code>&amp;</code> is a character you can insert after a command and use to spawn command
 outputs in the background, and <code>&amp;&amp;</code> can be used to implement <strong>Conditional
 Execution</strong>, which means you can run multiple commands in succession, for
 example:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># command2 will only run if command1 is successful</span>
-<span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> command1 <span style="color:#f92672">&amp;&amp;</span> command2
-</code></pre></div><p>You can also do another kind of sequential execution in the command line, using
+
+<pre><code class="language-sh"># command2 will only run if command1 is successful
+[$] command1 &amp;&amp; command2
+</code></pre>
+
+<p>You can also do another kind of sequential execution in the command line, using
 the <code>||</code> function, this works in a similar way to <code>&amp;&amp;</code> but instead of running a
 command after the execution of the previous one, it runs a second command only
 if the first one failed to run, sort of like a &ldquo;Plan B&rdquo; if you will. Here is an
 example:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># command2 will only run if command1 fails for any reason</span>
-<span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> command1 <span style="color:#f92672">||</span> command2
-</code></pre></div><h3 id="pipes-in-bash">Pipes In Bash</h3>
+
+<pre><code class="language-sh"># command2 will only run if command1 fails for any reason
+[$] command1 || command2
+</code></pre>
+
+<h3 id="pipes-in-bash">Pipes In Bash</h3>
+
 <p><strong>Pipes</strong> are things you can use to filter one command through another, thus
 allowing for things like controlling outputs of commands or sending then to
 different places. Pipes have many uses so I recommend that you look more into
 them as there is no way I can go into full depth here. Here is an example of a
 pipe being used to filter the output of of <code>fc-list</code> through <code>grep</code> to only
 show fonts with a certain name.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> fc-list <span style="color:#111">|</span> grep Roboto
-</code></pre></div><h3 id="forwarding-command-outputs">Forwarding Command Outputs</h3>
+
+<pre><code class="language-sh">[$] fc-list | grep Roboto
+</code></pre>
+
+<h3 id="forwarding-command-outputs">Forwarding Command Outputs</h3>
+
 <p>The <code>&gt;</code> character works in a similar fashion to pipes, but instead of filtering
 the command through another, it pushes the output to a file of your choice. The
 amount of <code>&gt;</code>&rsquo;s you use also makes a difference, for example, this command will
 print the word &ldquo;hello&rdquo; and push it as the first word in a new file called
 &ldquo;file.txt&rdquo;:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> <span style="color:#111">echo</span> <span style="color:#d88200">&#34;hello&#34;</span> &gt; file.txt
-</code></pre></div><p>Using two <code>&gt;</code>&rsquo;s provides a different result, instead of creating a new file
+
+<pre><code class="language-sh">[$] echo &quot;hello&quot; &gt; file.txt
+</code></pre>
+
+<p>Using two <code>&gt;</code>&rsquo;s provides a different result, instead of creating a new file
 containing the outputted words, it will append the output to an existing file
 that you point it to. A common example of this is when adding a heading to a
 GitHub README:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> <span style="color:#111">echo</span> <span style="color:#d88200">&#34;# Heading&#34;</span> &gt;&gt; README.md
-</code></pre></div><h3 id="keyboard-shortcuts">Keyboard Shortcuts</h3>
+
+<pre><code class="language-sh">[$] echo &quot;# Heading&quot; &gt;&gt; README.md
+</code></pre>
+
+<h3 id="keyboard-shortcuts">Keyboard Shortcuts</h3>
+
 <p>Unknown to me for quite a while during my usage of bash was that there were
 many keyboard shortcuts that could be used to navigate and control text much
 faster in the command line. These are mostly inherited from some of the
 keyboard shortcuts in editors like <code>emacs</code>, from what I can tell. Here are the
 ones I find myself using most often:</p>
+
 <p><code>ctrl + arrow keys</code> will move the cursor one word in the respective direction</p>
+
 <p><code>ctrl + b/f</code> will move the cursor backwards and forwards respectively</p>
+
 <p><code>ctrl + w</code> will delete the previous word</p>
+
 <p><code>ctrl + h</code> works the same way as <code>backspace</code></p>
+
 <p><code>ctrl + d</code> will delete the character under the cursor</p>
+
 <p><code>ctrl + a</code> moves the cursor all the way back to the prompt</p>
+
 <p><code>ctrl + u</code> will delete all text entered</p>
+
 <p><code>ctrl + r</code> will initiate a reverse search for previously entered commands</p>
+
 <p><code>ctrl + l</code> will clear everything in the terminal</p>
+
 <p><code>ctrl + n/p</code> will cycle you through previously entered commands</p>
+
 <p><code>ctrl + m/j</code>, both work the same way as <code>enter</code></p>
+
 <h3 id="environment-variables">Environment Variables</h3>
+
 <p>Environment variables are basically just global settings that different
 programs use to determine user preferences, they look something like this, a
 variable name followed by a <code>=</code> and the environment setting in quotes.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#111">TERMINAL</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;alacritty&#34;</span>
-</code></pre></div><p>Environment variables can be set using the <code>export</code> command, for example, if I
+
+<pre><code class="language-sh">TERMINAL=&quot;alacritty&quot;
+</code></pre>
+
+<p>Environment variables can be set using the <code>export</code> command, for example, if I
 wanted to change my <code>TERMINAL</code> variable to <code>st</code>, I would use this command:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> <span style="color:#111">export</span> <span style="color:#111">TERMINAL</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;st&#34;</span>
-</code></pre></div><p>This would set the default terminal used by other programs to <code>st</code> instead of
+
+<pre><code class="language-sh">[$] export TERMINAL=&quot;st&quot;
+</code></pre>
+
+<p>This would set the default terminal used by other programs to <code>st</code> instead of
 whatever I was using before. Many different programs have their own environment
 variables, though I don&rsquo;t recommend messing with them unless the manual you are
 reading asks you to do so.</p>
+
 <h3 id="shell-aliases">Shell Aliases</h3>
+
 <p>You may or not have noticed a file called <code>.bashrc</code> in your Home Directory.
 This file is the configuration file of the Bash Shell, and can be used to do
 some cool things, one of which is creating shell aliases. Shell aliases can be
@@ -353,131 +429,193 @@ used to simplify long and complicated, or even simply hard-to-type commands
 into smaller ones. To add a shell alias, simply append a line following this
 syntax to the end of the <code>.bashrc</code> file, replacing the placeholder words with a
 word/command of your choice:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> <span style="color:#111">alias</span> <span style="color:#111">newcommand</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;long-and-annoying-old-command&#34;</span>
-</code></pre></div><p>Once you&rsquo;ve finished this (hopefully using Nano), simply save the file and
+
+<pre><code class="language-sh">[$] alias newcommand=&quot;long-and-annoying-old-command&quot;
+</code></pre>
+
+<p>Once you&rsquo;ve finished this (hopefully using Nano), simply save the file and
 restart your shell or terminal. Try typing in your new command, you will see
 that your chosen word behaves the same as that annoying command that you chose
 to replace.</p>
+
 <p>The possibilities with shell aliases are almost infinite, but for some
 inspiration, here are some of the ones that I am currently using:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#111">alias</span> <span style="color:#111">walls</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;cd ~/usr/pic/wallpapers/&#34;</span>
-<span style="color:#111">alias</span> <span style="color:#111">df</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;df -h /dev/sda3&#34;</span>
-<span style="color:#111">alias</span> <span style="color:#111">nvimrc</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;nvim ~/.config/nvim/init.vim&#34;</span>
-<span style="color:#111">alias</span> <span style="color:#111">c</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;clear&#34;</span>
-<span style="color:#111">alias</span> <span style="color:#111">class</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;cd ~/usr/doc/school/&#34;</span>
-<span style="color:#111">alias</span> <span style="color:#111">notes</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;cd ~/usr/doc/school/awo/&#34;</span>
-<span style="color:#111">alias</span> <span style="color:#111">t</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;todo.sh&#34;</span>
-<span style="color:#111">alias</span> <span style="color:#111">du</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;du -m | sort -n&#34;</span>
-<span style="color:#111">alias</span> <span style="color:#111">web</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;cd ~/git/co1ncidence.github.io/mysite/&#34;</span>
-<span style="color:#111">alias</span> <span style="color:#111">free</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;free -h&#34;</span>
-<span style="color:#111">alias</span> <span style="color:#111">epub</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;epy&#34;</span>
-<span style="color:#111">alias</span> <span style="color:#111">wset</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;hsetroot -cover&#34;</span>
-<span style="color:#111">alias</span> <span style="color:#111">r</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;ranger&#34;</span>
-<span style="color:#111">alias</span> <span style="color:#111">f</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;fff&#34;</span>
-<span style="color:#111">alias</span> <span style="color:#111">ff</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;shfm&#34;</span>
-<span style="color:#111">alias</span> <span style="color:#111">q</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;qalc&#34;</span>
-<span style="color:#111">alias</span> <span style="color:#111">ls</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;ls -CF --color=auto --group-directories-first&#34;</span>
-<span style="color:#111">alias</span> <span style="color:#111">scdl</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;scdl -l&#34;</span>
-<span style="color:#111">alias</span> <span style="color:#111">volume</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;amixer set Master&#34;</span>
-</code></pre></div><p>Feel free to use any of them, and don&rsquo;t limit yourself, the possibilities with
+
+<pre><code class="language-sh">alias walls=&quot;cd ~/usr/pic/wallpapers/&quot;
+alias df=&quot;df -h /dev/sda3&quot;
+alias nvimrc=&quot;nvim ~/.config/nvim/init.vim&quot;
+alias c=&quot;clear&quot;
+alias class=&quot;cd ~/usr/doc/school/&quot;
+alias notes=&quot;cd ~/usr/doc/school/awo/&quot;
+alias t=&quot;todo.sh&quot;
+alias du=&quot;du -m | sort -n&quot;
+alias web=&quot;cd ~/git/co1ncidence.github.io/mysite/&quot;
+alias free=&quot;free -h&quot;
+alias epub=&quot;epy&quot;
+alias wset=&quot;hsetroot -cover&quot;
+alias r=&quot;ranger&quot;
+alias f=&quot;fff&quot;
+alias ff=&quot;shfm&quot;
+alias q=&quot;qalc&quot;
+alias ls=&quot;ls -CF --color=auto --group-directories-first&quot;
+alias scdl=&quot;scdl -l&quot;
+alias volume=&quot;amixer set Master&quot;
+</code></pre>
+
+<p>Feel free to use any of them, and don&rsquo;t limit yourself, the possibilities with
 aliases are almost infinite!</p>
+
 <h3 id="various-other-cool-things">Various other cool things</h3>
+
 <p>You can use the <code>clear</code> command to clear everything in your terminal, usually
 used to give you a fresh working space. It is important to know what <code>clear</code>
 does not change anything regarding your working directory or it&rsquo;s contents, it
 just clears terminal output.</p>
+
 <p><code>set</code> can be used to temporarily set or unset certain global settings.</p>
+
 <p><code>reset</code> will restart your shell and terminal and make it behave as if you just
 opened it for the first time.</p>
+
 <p><code>sleep</code> is an especially cool command, it can be used in conjunction with <code>&amp;&amp;</code>
 to essentially but a command on a countdown, for example, running this command
 will tell your system to wait 1600 seconds before running the next command in
 the sequence:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> sleep <span style="color:#ae81ff">1600</span> <span style="color:#f92672">&amp;&amp;</span> clear
-</code></pre></div><p><strong>Lastly, make sure that you are acquainted with these 2 files, both are
+
+<pre><code class="language-sh">[$] sleep 1600 &amp;&amp; clear
+</code></pre>
+
+<p><strong>Lastly, make sure that you are acquainted with these 2 files, both are
 located in your home directory:</strong> First, <code>.bash_history</code>, which contains the
 last 2000 commands you ran using bash, allowing you to identify the ones you
 want easily. Second, <code>.bashrc</code>, this is your bash configuration file, which can
 be used to make many different changes to your shell.</p>
+
 <h2 id="file-management-in-the-command-line">File Management In The Command Line</h2>
+
 <p>You can use the <code>pwd</code> command to display what directory you are currently in,
 this is useful as a beginner to get a better feel of where you are in your
 system.</p>
+
 <p><code>cd</code> stands for &ldquo;change directory&rdquo;, you can use this command to enter and leave
 directories. It is not limited to neighboring directories, however, you can use
 <code>cd</code> to move from one side of your computer to another, provided you don&rsquo;t mess
 up typing in the names of folders. First thing to note is that a <code>/</code> is not
 necessary after a folder name:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># these 2 commands are the same</span>
-<span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> <span style="color:#111">cd</span> ~/folder1/folder2/
-<span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> <span style="color:#111">cd</span> ~/folder1/folder2
-</code></pre></div><p>You can use the aliases previously mentioned to navigate folders as well.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># running this moves you to the parent folder</span>
-<span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> <span style="color:#111">cd</span> ..
-<span style="color:#75715e"># running this does nothing, as you are moving to the same folder</span>
-<span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> <span style="color:#111">cd</span> .
-</code></pre></div><p>Finally, here are some examples of the <code>cd</code> command in use:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># this will place you in the polybar config folder</span>
-<span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> <span style="color:#111">cd</span> ~/.config/polybar/
-<span style="color:#75715e"># this will move you to your root directory</span>
-<span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> <span style="color:#111">cd</span> /
-</code></pre></div><p>Another good thing to know is that running just <code>cd</code> will take you back you
+
+<pre><code class="language-sh"># these 2 commands are the same
+[$] cd ~/folder1/folder2/
+[$] cd ~/folder1/folder2
+</code></pre>
+
+<p>You can use the aliases previously mentioned to navigate folders as well.</p>
+
+<pre><code class="language-sh"># running this moves you to the parent folder
+[$] cd ..
+# running this does nothing, as you are moving to the same folder
+[$] cd .
+</code></pre>
+
+<p>Finally, here are some examples of the <code>cd</code> command in use:</p>
+
+<pre><code class="language-sh"># this will place you in the polybar config folder
+[$] cd ~/.config/polybar/
+# this will move you to your root directory
+[$] cd /
+</code></pre>
+
+<p>Another good thing to know is that running just <code>cd</code> will take you back you
 your home folder:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># no matter where you run this, it will take you back to home</span>
-<span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> <span style="color:#111">cd</span>
-</code></pre></div><p><code>ls</code> is one of the commands you will use the most, this command lists all of
+
+<pre><code class="language-sh"># no matter where you run this, it will take you back to home
+[$] cd
+</code></pre>
+
+<p><code>ls</code> is one of the commands you will use the most, this command lists all of
 the files and folders in the current folder, allowing you to get a better idea
 of where you are. Here is an example of the <code>ls</code> command in use:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> ls
+
+<pre><code class="language-sh">[$] ls
 etc/  git/  tmp/  usr/  var/
-</code></pre></div><p><code>touch</code> is used (mostly) to create a new, empty file in the folder you are
+</code></pre>
+
+<p><code>touch</code> is used (mostly) to create a new, empty file in the folder you are
 currently occupying, the filetype can vary based on name extension, for
 example, to create a new <code>css</code> file you would run</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> touch file.css
-</code></pre></div><p>You can also use touch to create files in other folders:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> touch ~/Documents/file.txt
-</code></pre></div><p><code>mkdir</code> is like <code>touch</code>, but instead of creating a single file it creates an
+
+<pre><code class="language-sh">[$] touch file.css
+</code></pre>
+
+<p>You can also use touch to create files in other folders:</p>
+
+<pre><code class="language-sh">[$] touch ~/Documents/file.txt
+</code></pre>
+
+<p><code>mkdir</code> is like <code>touch</code>, but instead of creating a single file it creates an
 entire directory, and like <code>touch</code>, this can be used to create a folder
 anywhere on your system, provided you have the right permissions to do so, here
 is an example of the <code>mkdir</code> command:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> mkdir folder/
-</code></pre></div><p><code>mv</code> is a command used to move files  and folders from one location to another,
+
+<pre><code class="language-sh">[$] mkdir folder/
+</code></pre>
+
+<p><code>mv</code> is a command used to move files  and folders from one location to another,
 it can also (indirectly) be used to replace a file with another. It is also
 possible to change the name of a file when moving it. Example usage:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> mv /usr/share/file.txt ~/Documents/newfile.txt
-<span style="color:#75715e"># mv can also be used to rename files</span>
-<span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> mv file.txt file2.txt
-</code></pre></div><p><code>cp</code> works the same way as <code>mv</code>, but instead of moving a file it creates a copy
+
+<pre><code class="language-sh">[$] mv /usr/share/file.txt ~/Documents/newfile.txt
+# mv can also be used to rename files
+[$] mv file.txt file2.txt
+</code></pre>
+
+<p><code>cp</code> works the same way as <code>mv</code>, but instead of moving a file it creates a copy
 of the original file in the new location, and like <code>mv</code>, the resulting file can
 have new name. Example usage:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> cp ~/.local/bin/command /usr/bin/command2
-<span style="color:#75715e"># if name is not a concern, just specify resulting directory</span>
-<span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> cp ~/.local/bin/command /usr/bin
-</code></pre></div><p>You can use <code>cp</code> and <code>mv</code> with multiple files as well, for example, this is how
+
+<pre><code class="language-sh">[$] cp ~/.local/bin/command /usr/bin/command2
+# if name is not a concern, just specify resulting directory
+[$] cp ~/.local/bin/command /usr/bin
+</code></pre>
+
+<p>You can use <code>cp</code> and <code>mv</code> with multiple files as well, for example, this is how
 you would move multiple image files from one folder to another:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> cp 1.png 2.png 3.png ~/Pictures/
-</code></pre></div><p>As you can see, all you have to do is list all the files you would like to
+
+<pre><code class="language-sh">[$] cp 1.png 2.png 3.png ~/Pictures/
+</code></pre>
+
+<p>As you can see, all you have to do is list all the files you would like to
 copy/move with a space in between them, this will stage them all for
 transition.</p>
+
 <p><code>rm</code> is another very useful, but dangerous command. It stands for &ldquo;remove&rdquo; and
 can be used to remove any However, unlike the other file management commands,
 <code>rm</code> cannot remove folders by default, this requires the use of a couple
 <strong>Flags</strong>, which are just letters/words you can attach to a command to unlock
 abilities that the command cannot do by default. For <code>rm</code> to be able to delete
 a whole folder, it requires the <code>-r</code> and <code>-f</code> flags, here is an example:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> rm -r -f folder/
-</code></pre></div><p>Though separating flags is not necessary, you can just combine them into one
+
+<pre><code class="language-sh">[$] rm -r -f folder/
+</code></pre>
+
+<p>Though separating flags is not necessary, you can just combine them into one
 flag like this:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> rm -rf folder/
-<span style="color:#75715e"># you can also use the &#34;rmdir&#34; command, though only on empty folders</span>
-<span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> rmdir folder/
-</code></pre></div><p>Thus is how you can use <code>rm</code> to remove folders as well as individual files.</p>
+
+<pre><code class="language-sh">[$] rm -rf folder/
+# you can also use the &quot;rmdir&quot; command, though only on empty folders
+[$] rmdir folder/
+</code></pre>
+
+<p>Thus is how you can use <code>rm</code> to remove folders as well as individual files.</p>
+
 <h3 id="managing-files-in-bulk-using-file-globbing">Managing Files in Bulk using &ldquo;File Globbing&rdquo;</h3>
+
 <p>&ldquo;File Globbing&rdquo; is a term used to describe a method of directory management
-that makes use of many shells' in-built pattern searching capabilities. You can
+that makes use of many shells&rsquo; in-built pattern searching capabilities. You can
 use these features to make it far easier to manage multiple files at the same
 time.</p>
-<h4 id="using--the-wild-card">Using <code>*</code>, the Wild Card</h4>
+
+<h4 id="using-the-wild-card">Using <code>*</code>, the Wild Card</h4>
+
 <p>The <code>*</code> symbol, or &ldquo;Wild Card&rdquo;, represents any string of characters possible,
 you can use it to easily all contents of a directory for certain actions. For
 example, running <code>rm *</code> inside of a folder will remove every file in that
@@ -485,61 +623,84 @@ folder, since all of them have names that contain a character that can be
 represented with <code>*</code>. But what if you wanted to be more specific? Say that you
 have a folder filled with <code>.png</code> and <code>.jpg</code> image files, and you wanted to only
 get rid of all the pictures of a certain filetype, here is how you would do it:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># this will remove any file with the &#34;.jpg&#34; extension</span>
-<span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> rm *.jpg
-<span style="color:#75715e"># this will remove any file with the &#34;.png&#34; extension</span>
-<span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> rm *.png
-</code></pre></div><p>This comes in very handy when cleaning out older directories. But it is not
+
+<pre><code class="language-sh"># this will remove any file with the &quot;.jpg&quot; extension
+[$] rm *.jpg
+# this will remove any file with the &quot;.png&quot; extension
+[$] rm *.png
+</code></pre>
+
+<p>This comes in very handy when cleaning out older directories. But it is not
 only limited to the removal of files, you can use <code>*</code> in conjunction with <code>mv</code>,
 <code>cp</code>, and just about any other file management command. Here are some more
 examples:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># this will copy all files to home dir.</span>
-<span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> cp * ~/
-<span style="color:#75715e"># this will move all &#34;txt&#34; files to parent dir.</span>
-<span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> mv *.txt ..
-<span style="color:#75715e"># this will remove all &#34;png&#34; files in your home dir</span>
-<span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> rm ~/*.png
-</code></pre></div><h3 id="elevating-permissions">Elevating Permissions</h3>
+
+<pre><code class="language-sh"># this will copy all files to home dir.
+[$] cp * ~/
+# this will move all &quot;txt&quot; files to parent dir.
+[$] mv *.txt ..
+# this will remove all &quot;png&quot; files in your home dir
+[$] rm ~/*.png
+</code></pre>
+
+<h3 id="elevating-permissions">Elevating Permissions</h3>
+
 <p>Sometimes, your user may not have the necessary permissions to execute certain
 commands on a file or folder, this is because the owner of said file/folder is
 the <strong>root user</strong>, to obtain the abilities of the root user, you just have to
 place the word <code>sudo</code> behind your command. <code>sudo</code> stands for &ldquo;Super User DO&rdquo;,
 and will allow you to run commands with elevated (or &ldquo;root&rdquo;) permissions, here
 is an example:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> sudo apt install firefox
-</code></pre></div><p>This command will install <code>firefox</code> on your system. You will almost always need
+
+<pre><code class="language-sh">[$] sudo apt install firefox
+</code></pre>
+
+<p>This command will install <code>firefox</code> on your system. You will almost always need
 root permission to install a package. Root permissions can be very dangerous
 however, as you can very easily delete something important or break your
 installation. So it is vital you always make sure you know what you are doing
 when asked to run a command as root, and be aware that there is a reason that
 there is a reason for a password to be between you and the execution of this
 command.</p>
+
 <p><code>chmod</code> is a command that can be used to change the permissions a file or
 folder has. These permissions include reading, writing, and changing whether a
 file can be executable or not. You can use <code>chmod</code> plus/minus a letter like
 this: <code>chmod +x</code> to add or remove a permission from a file. To view the
 permissions of all files and folders in your current directory, run the <code>ls</code>
 command with the <code>-l</code> flag:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> ls -l
-total <span style="color:#ae81ff">20</span>
-drwxr-xr-x <span style="color:#ae81ff">33</span> co1ncidence co1ncidence <span style="color:#ae81ff">4096</span> Sep  <span style="color:#ae81ff">8</span> 16:58 etc/
-drwxr-xr-x  <span style="color:#ae81ff">7</span> co1ncidence co1ncidence <span style="color:#ae81ff">4096</span> Sep  <span style="color:#ae81ff">7</span> 00:08 git/
-drwxr-xr-x  <span style="color:#ae81ff">3</span> co1ncidence co1ncidence <span style="color:#ae81ff">4096</span> Sep  <span style="color:#ae81ff">8</span> 18:16 tmp/
-drwxr-xr-x  <span style="color:#ae81ff">8</span> co1ncidence co1ncidence <span style="color:#ae81ff">4096</span> Sep  <span style="color:#ae81ff">7</span> 23:46 usr/
-drwxr-xr-x <span style="color:#ae81ff">10</span> co1ncidence co1ncidence <span style="color:#ae81ff">4096</span> Sep  <span style="color:#ae81ff">8</span> 17:06 var/
-</code></pre></div><p>The <code>chown</code> is like <code>chmod</code>, but instead of changing a file or folders
+
+<pre><code class="language-sh">[$] ls -l
+total 20
+drwxr-xr-x 33 co1ncidence co1ncidence 4096 Sep  8 16:58 etc/
+drwxr-xr-x  7 co1ncidence co1ncidence 4096 Sep  7 00:08 git/
+drwxr-xr-x  3 co1ncidence co1ncidence 4096 Sep  8 18:16 tmp/
+drwxr-xr-x  8 co1ncidence co1ncidence 4096 Sep  7 23:46 usr/
+drwxr-xr-x 10 co1ncidence co1ncidence 4096 Sep  8 17:06 var/
+</code></pre>
+
+<p>The <code>chown</code> is like <code>chmod</code>, but instead of changing a file or folders
 permissions, it transfers ownership of that target to a user that you specify.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">chown file.txt root
-</code></pre></div><h2 id="file-viewing--and-output-control">File Viewing  and Output Control</h2>
+
+<pre><code class="language-sh">chown file.txt root
+</code></pre>
+
+<h2 id="file-viewing-and-output-control">File Viewing  and Output Control</h2>
+
 <p>The <code>cat</code> command is one of the first to know when viewing files, running <code>cat</code>
 on a file which contains any sort of text will cause your terminal to output
 the full contents of your file, for example, running:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> cat .bashrc
-</code></pre></div><p>Will show you the contents of your <code>.bashrc</code> file, otherwise known as the bash
+
+<pre><code class="language-sh">[$] cat .bashrc
+</code></pre>
+
+<p>Will show you the contents of your <code>.bashrc</code> file, otherwise known as the bash
 shell configuration file, more about this later. <code>cat</code> is very useful when you
 want to look at certain content in a file but don&rsquo;t want to open it in your
 editor.  You may realize. Here is an example of the <code>cat</code> command being used:</p>
-<p><img src="https://i.postimg.cc/26DM7wqq/out.gif" alt="gif"></p>
+
+<p><img src="https://i.postimg.cc/26DM7wqq/out.gif" alt="gif" /></p>
+
 <p>However, that <code>cat</code> can be annoying when used on longer files, as you have to
 manually scroll back if you want to view any content near the beginning of the
 file. This is where another, very useful command comes in. The <code>less</code> command
@@ -549,23 +710,33 @@ scrolling window, with the top of the file being the beginning. You can then
 use the Up and Down arrow keys of J and K to navigate the file as you want. For
 those of you comfortable with them, Vim keybindings (like <code>j</code> and <code>k</code>) work in
 <code>less</code> as well. As you can see here, the experience is far more intuitive:</p>
-<p><img src="https://i.postimg.cc/dtxfxvkc/out.gif" alt="gif"></p>
+
+<p><img src="https://i.postimg.cc/dtxfxvkc/out.gif" alt="gif" /></p>
+
 <p>Sometimes, however, we have too much output of a command, one example of such a
 problematic command can be the <code>fc-list</code> command, which lists all fonts
 currently installed on your system. You can filter the output of this command
 using <code>grep</code>, an extremely powerful search utility. <code>grep</code> however, usually
 requires piping, which I talked about earlier. Here is a basic example of the
 usage of <code>grep</code>:</p>
+
 <p>This command will have hundreds of lines of output, displaying all of your fonts:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> fc-list
-</code></pre></div><p>This command, however, will filter out every result and only show results
+
+<pre><code class="language-sh">[$] fc-list
+</code></pre>
+
+<p>This command, however, will filter out every result and only show results
 containing the word &ldquo;Roboto&rdquo;:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> fc-list <span style="color:#111">|</span> grep Roboto
-</code></pre></div><p><code>grep</code> is not, however, limited to command outputs, it can also be used to
+
+<pre><code class="language-sh">[$] fc-list | grep Roboto
+</code></pre>
+
+<p><code>grep</code> is not, however, limited to command outputs, it can also be used to
 filter out the lines of a file that word that you are looking for. For example,
 running <code>grep &quot;hello&quot; file.txt</code> will output all the lines of <code>file.txt</code> that
 contain the word &ldquo;hello&rdquo;. <code>grep</code> has a myriad of flags that can be used to
 futher increase the usefulness of a command:</p>
+
 <ul>
 <li><strong>B <number></strong> will show <number> of lines before the lines you searched for along with the results, providing some context</li>
 <li><strong>C <number></strong> does the same thing as <strong>B</strong> but with the context lines being after instead of before</li>
@@ -575,7 +746,9 @@ futher increase the usefulness of a command:</p>
 <li><strong>r</strong> will allow <code>grep</code> to search directories recursively, bringing results from subfolders as well</li>
 <li><strong>v</strong> inverts <code>grep</code>, printing out every line that doesn&rsquo;t contain the searched word</li>
 </ul>
+
 <h2 id="editing-files-using-gnu-nano">Editing Files Using GNU Nano</h2>
+
 <p>Throughout your Linux journey, there will be many, and I mean many, times where
 you will have to make a quick edit to some configuration file of some sort.
 Editing these files with a visual editor can be a pain as you have to run the
@@ -586,41 +759,56 @@ come with a terminal editor installed, called
 you to edit any text file through the terminal. Here is an example of me
 editing the <code>/etc/fstab</code> file using Nano (note the use of <code>sudo</code> to access this
 file):</p>
-<p><img src="https://i.postimg.cc/RVyPTRyM/out.gif" alt="gif"></p>
+
+<p><img src="https://i.postimg.cc/RVyPTRyM/out.gif" alt="gif" /></p>
+
 <p>Nano has many keyboard shortcuts and is a quite featured editor, though you
 will most likely only be using it for quick edits, as anything bigger would be
-better done in a real editor. The only real shortcut to know in Nano is **Ctrl</p>
-<ul>
-<li>X**, this saves and exits the file, prompting you before doing so as well.</li>
-</ul>
+better done in a real editor. The only real shortcut to know in Nano is <strong>Ctrl
++ X</strong>, this saves and exits the file, prompting you before doing so as well.</p>
+
 <h2 id="time-in-the-command-line">Time In The Command Line</h2>
+
 <p>The <code>date</code> command can be used to quickly display the current date and time on
 the terminal, while this is cool it doesn&rsquo;t really have much of a use in day to
 day command line usage, it is more effective in scripts and programs, as a
 reliable way to get system time. Here is an example of the <code>date</code> command in
 use:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> date
-Tue Sep  <span style="color:#ae81ff">8</span> 07:05:54 PM CDT <span style="color:#ae81ff">2020</span>
-</code></pre></div><p>This is great output from a readability standpoint, but if you are writing a
+
+<pre><code class="language-sh">[$] date
+Tue Sep  8 07:05:54 PM CDT 2020
+</code></pre>
+
+<p>This is great output from a readability standpoint, but if you are writing a
 script, it is not easily parseable, pass the <code>-Im</code> flag along with <code>date</code> to
 get more usable output:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> date -Im
+
+<pre><code class="language-sh">[$] date -Im
 2020-09-08T19:06-05:00
-</code></pre></div><p>Another time related command you can use is <code>uptime</code>, this command outputs the
+</code></pre>
+
+<p>Another time related command you can use is <code>uptime</code>, this command outputs the
 amount of time the system has been on for, this can be helpful to know for a
 variety of reasons. By default, the <code>uptime</code> command has very messy output, so
 run it with the <code>-p</code> flag to make it more readable, here is an example:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> uptime
-19:07:20 up  4:20,  <span style="color:#ae81ff">1</span> user,  load average: 0.52, 0.74, 0.59
-<span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> uptime -p
-up <span style="color:#ae81ff">4</span> hours, <span style="color:#ae81ff">20</span> minutes
-</code></pre></div><p>The <code>time</code> command can be used to measure how much time another program takes
+
+<pre><code class="language-sh">[$] uptime
+19:07:20 up  4:20,  1 user,  load average: 0.52, 0.74, 0.59
+[$] uptime -p
+up 4 hours, 20 minutes
+</code></pre>
+
+<p>The <code>time</code> command can be used to measure how much time another program takes
 to open up, this can be useful when diagnosing problems regarding system
 performance issues. Here is an example of the <code>time</code> command being used to
 display the startup time of the <code>st</code> Terminal:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> <span style="color:#111">time</span> st
+
+<pre><code class="language-sh">[$] time st
 st  0.08s user 0.01s system 7% cpu 1.199 total
-</code></pre></div><h2 id="process-management-in-the-terminal">Process Management in the Terminal</h2>
+</code></pre>
+
+<h2 id="process-management-in-the-terminal">Process Management in the Terminal</h2>
+
 <p>Processes in Linux are usually given certain <code>pid</code>&rsquo;s, having this form of
 identification allows them to be easily tracked and managed, mostly this is
 used to take care of or kill problematic processes. There are 2 commands that
@@ -628,9 +816,12 @@ can be used to find the <code>pid</code> of a program. You can use either <code>
 <code>pgrep</code>. For the purposes of this guide, I will be using the <code>pgrep</code> command.
 Here is an example of me using <code>pgrep</code> to find the <code>pid</code> of MPV, a program that
 I know is currently running:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> pgrep mpv
-<span style="color:#ae81ff">24935</span>
-</code></pre></div><p>Though, while this command is useful in a limited use case, you will most
+
+<pre><code class="language-sh">[$] pgrep mpv
+24935
+</code></pre>
+
+<p>Though, while this command is useful in a limited use case, you will most
 likely find it easier to just use the <code>pkill</code> command. <code>pkill</code> allows you to
 kill a process using a variety of signals, 15 to be exact. The only ones that
 really matter, however, are signals 9 and 15, otherwise known as <code>SIGKILL</code> and
@@ -640,80 +831,101 @@ terminate it, but I recommend trying your best not to resort to that option, as
 it could cause problems. Different signals can be invoked using <strong>Flags</strong>.
 <code>pkill</code>, however, defaults to using the <code>SIGTERM</code> signal, so for 99% of your
 use cases just using <code>pkill</code> serves as enough, as shown in this example:</p>
+
 <p><strong>Not much to see here, the process either dies or there is an error:</strong></p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> pkill alacritty
-<span style="color:#f92672">[</span>$<span style="color:#f92672">]</span>
-</code></pre></div><p>Another thing to take into account when dealing with running processes is
+
+<pre><code class="language-sh">[$] pkill alacritty
+[$]
+</code></pre>
+
+<p>Another thing to take into account when dealing with running processes is
 memory usage, you can use the <code>free</code> command with the <code>-h</code> flag to display the
 amount of memory currently being used:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> free -h
+
+<pre><code class="language-sh">[$] free -h
               total        used        free      shared  buff/cache   available
 Mem:          7.7Gi       659Mi       402Mi       523Mi       6.6Gi       6.2Gi
 Swap:         7.9Gi       0.0Ki       7.9Gi
-</code></pre></div><p>But what if you wanted to see an interactive interface from which you could
+</code></pre>
+
+<p>But what if you wanted to see an interactive interface from which you could
 manage processes and see their relative resource usage, a &ldquo;task manager&rdquo; if you
 will. One of the programs you will find yourself most frequently using is
 <code>htop</code>, while not normally included with most Linux Distros, it is a must have
 utility, a lightweight and easy to use terminal task manager. I suggest you
 check out the program&rsquo;s GitHub page if you want to learn more. For now,
 however, here is a screenshot of <code>htop</code>:</p>
-<p><img src="https://i.postimg.cc/RVkRt0Jh/image.png" alt="img"></p>
+
+<p><img src="https://i.postimg.cc/RVkRt0Jh/image.png" alt="img" /></p>
+
 <h2 id="disk-and-storage-management-in-the-terminal">Disk and storage management in the Terminal</h2>
+
 <p>To Display all of the disks on your system and all of the storage that has been
 used on them, use the <code>df</code> command with the <code>-h</code> flag to make it human
 readable:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> df -h
+
+<pre><code class="language-sh">[$] df -h
 Filesystem      Size  Used Avail Use% Mounted on
-dev             3.9G     <span style="color:#ae81ff">0</span>  3.9G   0% /dev
+dev             3.9G     0  3.9G   0% /dev
 run             3.9G  1.5M  3.9G   1% /run
 /dev/sda3       461G   19G  419G   5% /
 tmpfs           3.9G  385M  3.5G  10% /dev/shm
-tmpfs           4.0M     <span style="color:#ae81ff">0</span>  4.0M   0% /sys/fs/cgroup
+tmpfs           4.0M     0  4.0M   0% /sys/fs/cgroup
 tmpfs           3.9G  8.0K  3.9G   1% /tmp
 /dev/sda1       512M  280K  512M   1% /boot/efi
 tmpfs           785M  120K  785M   1% /run/user/1000
-</code></pre></div><p>If instead, you wanted to view all of the disks and their respective UUID&rsquo;s or
+</code></pre>
+
+<p>If instead, you wanted to view all of the disks and their respective UUID&rsquo;s or
 other information, use the <code>lsblk</code> command with the <code>-f</code> flag, which allows
 displaying the UUID of each disk along with some other information.</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> lsblk -f
+
+<pre><code class="language-sh">[$] lsblk -f
 NAME   FSTYPE FSVER LABEL UUID                                 FSAVAIL FSUSE% MOUNTPOINT
 sda
 ├─sda1 vfat   FAT32       FEC4-1212                             511.7M     0% /boot/efi
-├─sda2 swap   <span style="color:#ae81ff">1</span>           6ba4d0ab-f397-46a7-9a02-e12e3271e70d                <span style="color:#f92672">[</span>SWAP<span style="color:#f92672">]</span>
+├─sda2 swap   1           6ba4d0ab-f397-46a7-9a02-e12e3271e70d                [SWAP]
 └─sda3 ext4   1.0         eb40edc1-e302-4759-83b3-dadcdea05ef3  418.1G     4% /
-</code></pre></div><p>You can use the <code>mount</code> command to mount a disk and access the files inside it.
+</code></pre>
+
+<p>You can use the <code>mount</code> command to mount a disk and access the files inside it.
 This is useful in recovery situations or when trying to save a computer from a
 live environment. For example, <code>sudo mount /dev/sda3</code> will mount the drive
 <code>sda3</code> for viewing/editing.</p>
+
 <p><code>du</code> can be used to display all directories in a location and the amount of
 space they use up. This command gets pretty detailed so I suggest that you look
 more into it yourself to learn.</p>
+
 <h2 id="networking-on-the-command-line">Networking on The Command Line</h2>
+
 <blockquote>
 <p>This section assumes beforehand that you use networkmanager as your internet daemon</p>
 </blockquote>
+
 <p>If unsure whether you are connected to the Internet, or if you just want to
 check whether a website will accept packet requests from you, you can use the
 <code>ping</code> command on it&rsquo;s domain and monitor network transfers:</p>
-<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># this will send continuous requests to google.com</span>
-<span style="color:#f92672">[</span>$<span style="color:#f92672">]</span> ping google.com
-</code></pre></div><p>You can use the <code>ping</code> command on any domain, local or public</p>
+
+<pre><code class="language-sh"># this will send continuous requests to google.com
+[$] ping google.com
+</code></pre>
+
+<p>You can use the <code>ping</code> command on any domain, local or public</p>
+
 <p>If you wanted to connect to an Internet connection from the command line, the
 easiest way would be to use <code>nmtui</code>, a simple and easy to use interface for
 <code>networkmanager</code>, here is an example of me using <code>nmtui</code> to disconnect then
 reconnect to my home&rsquo;s Internet connection:</p>
-<p><img src="https://i.postimg.cc/LXQk84MH/out.gif" alt="gif"></p>
-<p>To view your I.P. Address and some other basic network information, run the <code>ip addr</code> command. If you need more detailed information about your current
+
+<p><img src="https://i.postimg.cc/LXQk84MH/out.gif" alt="gif" /></p>
+
+<p>To view your I.P. Address and some other basic network information, run the <code>ip
+addr</code> command. If you need more detailed information about your current
 connection, use <code>nmcli</code>.</p>
 			</div>
 		</article>
 	</main>
-
-	<footer>
-	<br />
-	<p>&copy; 2020 <a href="https://github.com/co1ncidence"><b>nuaNce</b></a>  -  <a href="https://co1ncidence.github.io/index.xml"><b>rss feed</b></a>
-	</p>
-</footer>
 
 </body>
 </html>

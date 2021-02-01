@@ -1,5 +1,5 @@
-/* import fonts */
-@import url("fonts.css");
+/* Import Fonts */
+@import url("https://fonts.googleapis.com/css?family=Gentium+Basic");
 
 /* Root Vars */
 :root {
@@ -9,7 +9,7 @@
   --fg1:      #575757;
   --fg2:      #363636;
   --title1:   #e7e7e7;
-  --title2:   #d8c2cd;
+  --title2:   #c19eb0;
   --link1:    #538083;
   --link2:    #63979b;
   --code:     #d2d2d2;
@@ -35,7 +35,7 @@ body {
   padding-bottom: 10vh;
   padding-left: 8vw;
   padding-right: 8vw;
-  font-family: 'iA Writer Quattro S', sans-serif;
+  font-family: "Gentium Basic", serif;
   font-size: 1em;
   line-height: 35px;
   background-color: var(--bg0);
@@ -61,7 +61,7 @@ header {
 }
 
 h1 {
-  font-family: 'iA Writer Duospace', sans-serif;
+  font-family: "Gentium Basic", serif;
   font-size: 1.6rem;
   color: var(--fg1);
   line-height: 1.2;
@@ -69,7 +69,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'iA Writer Duospace', sans-serif;
+  font-family: "Gentium Basic", serif;
   font-size: 1.6rem;
   color: var(--fg1);
   line-height: 1.2;
@@ -77,7 +77,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'iA Writer Duospace', sans-serif;
+  font-family: "Gentium Basic", serif;
   font-size: 1.4rem;
   color: var(--fg1);
   line-height: 1.2;
@@ -85,7 +85,7 @@ h3 {
 }
 
 h4 {
-  font-family: 'iA Writer Duospace', sans-serif;
+  font-family: "Gentium Basic", serif;
   font-size: 1.2rem;
   color: var(--fg1);
   line-height: 1.2;
@@ -94,25 +94,21 @@ h4 {
 
 h1:before {
   color: var(--title2);
-  content: "-> ";
   margin-left: -47px;
 }
 
 h2:before {
   color: var(--bg2);
-  content: "## ";
   margin-left: -47px;
 }
 
 h3:before {
   color: var(--bg2);
-  content: "### ";
   margin-left: -55px;
 }
 
 h4:before {
   color: var(--bg2);
-  content: "#### ";
   margin-left: -61px;
 }
 
@@ -131,25 +127,12 @@ h1:hover:before {
   color: var(--title2);
 }
 
-/* Time Published */
-time {
-  display: block;
-  color: var(--fg1);
-  line-height: 2;
-  margin-top: 1em;
-  margin-bottom: -0.7em;
-}
-
 /* Website Title */
 .title {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 35px;
   text-decoration: none;
-  text-align: center;
   display: block;
-  font-family: 'iA Writer Duospace', sans-serif;
+  font-family: "Gentium Basic", serif;
   font-size: 3em;
   color: var(--fg1);
 }
@@ -160,28 +143,25 @@ time {
 
 .subtitle {
   color: #898989;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-  text-align: center;
-  font-family: 'iA Writer Duospace', sans-serif;
+  margin-bottom: 20px;
+  font-family: "Gentium Basic", serif;
   font-size: 1.2em;
+}
+
+.subtitle:before {
+  content: "— ";
 }
 
 /* Nav bar */
 nav {
-  display: block;
-  margin-left: auto;
+  text-align: right;
+  margin-left: 0;
   margin-right: auto;
-  text-align: center;
-  width: 87%;
-  padding-top: 10px;
-  padding-bottom: 5px;
-  margin-bottom: 1.5em;
-  font-family: 'iA Writer Duospace', sans-serif;
-  font-stretch: expanded;
-  /* font-size: 1.0em; */
-  border-bottom: 3px solid var(--fg1);
+  margin-bottom: -40px;
+  width: 12%;
+  padding-right: 20px;
+  font-family: "Gentium Basic", serif;
+  border-right: 3px solid var(--fg1);
 }
 
 /* Links */
@@ -197,7 +177,7 @@ a:focus {
 
 /* Code */
 code {
-  font-family: monospace;
+  font-family: "Inconsolata", monospace;
 }
 
 p > code {
@@ -217,17 +197,15 @@ p > code {
 pre {
   box-sizing: border-box;
   white-space: pre;
-	width: 700px;
+	width: 100%;
 	overflow: auto;
 	overflow-y: hidden;
-	font-size: 16px;
-	line-height: 1.6;
-  padding: 30px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  margin-left: -50px;
+	font-size: 14px;
+	line-height: 1.5;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   border: 5px solid var(--bg1);
-  border-radius: 10px;
   overflow-x: auto;
   -webkit-box-shadow: inset 0px 0px 25px -1px rgba(240,240,240,1);
   -moz-box-shadow: inset 0px 0px 25px -1px rgba(240,240,240,1);
@@ -248,15 +226,13 @@ article {
 
 /* Images */
 .image, figure img, img {
-  width: 700px;
+  width: 100%;
   margin: 0 auto;
-  margin-left: -50px;
   margin-top: 15px;
   margin-bottom: 20px;
-  border-radius: 10px;
-  -webkit-box-shadow: 5px 10px 40px -20px rgba(0,0,0,0.70);
-  -moz-box-shadow: 5px 10px 40px -20px rgba(0,0,0,0.70);
-  box-shadow: 5px 10px 40px -20px rgba(0,0,0,0.70);
+  -webkit-box-shadow: 5px 10px 40px -20px rgba(0,0,0,0.60);
+  -moz-box-shadow: 5px 10px 40px -20px rgba(0,0,0,0.60);
+  box-shadow: 5px 10px 40px -20px rgba(0,0,0,0.60);
 }
 
 /* Quotes */
@@ -273,8 +249,7 @@ blockquote {
 
 /* Table */
 table {
-  width: 700px;
-  margin-left: -50px;
+  width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
   color: var(--fg1);

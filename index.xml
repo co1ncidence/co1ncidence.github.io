@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>nuaNce</title>
@@ -6,16 +6,19 @@
     <description>Recent content on nuaNce</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Oct 2020 09:15:32 -0500</lastBuildDate><atom:link href="https://co1ncidence.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Feb 2021 11:44:57 -0600</lastBuildDate>
+    
+	<atom:link href="https://co1ncidence.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
-      <title>L&#39;Hôpital&#39;s Rule</title>
-      <link>https://co1ncidence.github.io/posts/lhopitals-rule/</link>
-      <pubDate>Thu, 29 Oct 2020 09:15:32 -0500</pubDate>
+      <title>Nigga What</title>
+      <link>https://co1ncidence.github.io/posts/nigga-what/</link>
+      <pubDate>Mon, 01 Feb 2021 11:44:57 -0600</pubDate>
       
-      <guid>https://co1ncidence.github.io/posts/lhopitals-rule/</guid>
-      <description>Often when working with limits, you will come across a situation in which your limit, when solved by using simple substitution, ends up being an indeterminate form. An example of this is when attempting to compute the following:
-$$ \lim\limits_{x \to 0} f(x) = \frac{\sin(x)}{x} $$
-If you tried solving this limit in the normal fashion, by simply plugging in 0 for every time $ x $ appears, you would get a strange answer:</description>
+      <guid>https://co1ncidence.github.io/posts/nigga-what/</guid>
+      <description>Weird Occurrences around these parts&amp;hellip;
+[5:36 PM] — reayn.: hi [5:36 PM] Empress_Shizz: hi [5:36 PM] Empress_Shizz: how r u [5:36 PM] — reayn.: big sad [5:36 PM] — reayn.: but better [5:36 PM] — reayn.: wbu [5:36 PM] Empress_Shizz: why [5:37 PM] Empress_Shizz: u sad? [5:37 PM] — reayn.: bad ting happen last night [5:37 PM] — reayn.: but it ok [5:37 PM] Empress_Shizz: wut thing wana spill beans [5:37 PM] Empress_Shizz: like casereol [5:37 PM] — reayn.</description>
     </item>
     
     <item>
@@ -28,7 +31,9 @@ If you tried solving this limit in the normal fashion, by simply plugging in 0 f
 workflow management. Getting the most efficient setup and being able to do my
 work as fast as possible while maintaining quality. In this post I will go over
 some of the things I do in my setup to ensure that I have the most efficient
-working environment possible&lt;/p&gt;</description>
+working environment possible&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -43,7 +48,9 @@ better. I used it often and started liking it even more when I started using
 some of it&amp;rsquo;s slightly less obvious, &amp;ldquo;power user&amp;rdquo; oriented features, such as the
 built in window management and multitasking capabilities. However, while I did
 have quite a good time in my years using Windows, reality dawned on me in early
-2020.&lt;/p&gt;</description>
+2020.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -57,7 +64,9 @@ do simple things with git. Even changes to your own repositories can take a
 while with all of the adding and committing and then typing in your
 credentials. Thankfully though, I have found ways to make git almost trivial to
 use, now I barely have to enter more than one command for most tasks, here is
-how I did it:&lt;/p&gt;</description>
+how I did it:&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -66,8 +75,8 @@ how I did it:&lt;/p&gt;</description>
       <pubDate>Sun, 23 Aug 2020 06:57:25 -0500</pubDate>
       
       <guid>https://co1ncidence.github.io/books/</guid>
-      <description>Just a list of some books that I&amp;rsquo;ve been enjoying over the past year or so. I&amp;rsquo;ve divided them into categories and provided the best download links that I could find, and for series&#39; I&amp;rsquo;ve given the link to the first book.
-Series    Author Series Download (book 1)     Brandon Sanderson The Stormlight Archive The Way of Kings   Patrick Rothfuss The Kingkiller Chronicle The Name of The Wind   Robert Jordan The Wheel of Time The Eye of The World   Christopher Ruocchio Sun Eater Empire of Silence     Singles (fiction)    Author Book Download     Brandon Sanderson Elantris EPUB   Stephen King Doctor Sleep PDF   John Steinbeck The Grapes of Wrath PDF   Brandon Sanderson Warbreaker EPUB     Singles (non-fiction)    Author Book Download     Saif&#39; ur-Rahman The Sealed Nectar EPUB   Jake Knapp Make Time PDF   Graham Alcott How to be a Productivity Ninja EPUB   Michael Bazzel Open Source Intelligence PDF   Tim Ferriss Tribe of Mentors TOR    </description>
+      <description>Just a list of some books that I&amp;rsquo;ve been enjoying over the past year or so. I&amp;rsquo;ve divided them into categories and provided the best download links that I could find, and for series&amp;rsquo; I&amp;rsquo;ve given the link to the first book.
+Series    Author Series Download (book 1)     Brandon Sanderson The Stormlight Archive The Way of Kings   Patrick Rothfuss The Kingkiller Chronicle The Name of The Wind   Robert Jordan The Wheel of Time The Eye of The World   Christopher Ruocchio Sun Eater Empire of Silence    &amp;nbsp;</description>
     </item>
     
     <item>
@@ -76,15 +85,16 @@ Series    Author Series Download (book 1)     Brandon Sanderson The Stormlight A
       <pubDate>Mon, 17 Aug 2020 10:43:39 -0500</pubDate>
       
       <guid>https://co1ncidence.github.io/software/</guid>
-      <description>&lt;p&gt;Just a list of some software I find nice to use. A lot of these correlate with &lt;a href=&#34;https://github.com/co1ncidence?tab=stars&#34;&gt;my stars on github&lt;/a&gt;, so be sure to check them out as well if you want some other nice things to use. My preferences with software usually boil down to:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;It gets the job done&lt;/li&gt;
-&lt;li&gt;It&amp;rsquo;s smaller in size than similar software&lt;/li&gt;
-&lt;li&gt;It&amp;rsquo;s free and open source&lt;/li&gt;
-&lt;li&gt;It&amp;rsquo;s not overrated normie shit&lt;/li&gt;
-&lt;li&gt;And it integrates well with my workflow&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Now with that out of the way, here is the list:&lt;/p&gt;</description>
+      <description>&lt;p&gt;Just a list of some software I find nice to use. A lot of these correlate with &lt;a href=&#34;https://github.com/co1ncidence?tab=stars&#34;&gt;my stars on github&lt;/a&gt;, so be sure to check them out as well if you want some other nice things to use. My preferences with software usually boil down to:
+  - It gets the job done
+  - It&amp;rsquo;s smaller in size than similar software
+  - It&amp;rsquo;s free and open source
+  - It&amp;rsquo;s not overrated normie shit
+  - And it integrates well with my workflow&lt;/p&gt;
+
+&lt;p&gt;Now with that out of the way, here is the list:&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -101,7 +111,9 @@ most optimal commands and strategies. I am making this list as more of a dump
 for all of the things that I have learned about Linux and the Command Line so
 far. While my knowledge isn&amp;rsquo;t too much compared to some, I like to think that I
 know something. So without further ado, here is my guide to help boost you up
-in the Linux elitist ladder:&lt;/p&gt;</description>
+in the Linux elitist ladder:&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -115,7 +127,9 @@ years now. While many things come into play when considering a vehicle to buy,
 none, in my opinion, are as important as how good your car looks. So I&amp;rsquo;ve
 compiled a list of what I think are the best looking cars that I have ever
 seen. Expect this list to vary over time, however, since it&amp;rsquo;s hard for me not
-to change my mind about these things all the time: \course{Nigger Course}&lt;/p&gt;</description>
+to change my mind about these things all the time: \course{Nigger Course}&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -125,11 +139,13 @@ to change my mind about these things all the time: \course{Nigger Course}&lt;/p&
       
       <guid>https://co1ncidence.github.io/rices/</guid>
       <description>Here are all most of the Rices that I have made on my computer over the last few months, some are pretty similar to each other but I put them in here anyway. If you would like to try some of my configs for yourself, visit my dotless files repository.
- Itai  
-Heads and Tails  
-The Nomad  
-Deja Vu  
-Bliss v2</description>
+&amp;nbsp;
+Itai 
+Heads and Tails 
+The Nomad 
+Deja Vu 
+Bliss v2 
+The Mountaineer</description>
     </item>
     
     <item>

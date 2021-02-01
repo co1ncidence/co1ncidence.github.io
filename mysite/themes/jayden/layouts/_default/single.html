@@ -1,18 +1,7 @@
 {{ define "main" }}
-	<style>
-		h1 {
-			margin-left: 47px;
-		}
-		h1:before {
-			content: "";
-		}
-	</style>
 	<main>
 		<article>
 			<h1>{{ .Title }}</h1>
-				<hr />
-		    {{ range .Params.tags }}
-          {{ end }}
 			<div>
 				{{ .Content }}
 			</div>

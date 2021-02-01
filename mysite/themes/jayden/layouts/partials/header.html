@@ -1,8 +1,24 @@
 <header>
+	<style>
+	.sidenav {
+		height: 22.5%;
+		width: 10%;
+		position: absolute;
+		top: 252px;
+		left: 370px;
+		background-color: transparent;
+		overflow-x: hidden;
+	}
+	.sidenav a {
+		padding: 6px 6px 6px 32px;
+		text-decoration: none;
+		display: block;
+	}
+	</style>
 	<a class="title" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
 	<p class="subtitle">welcome to my realm</p>
 	<p>
-	<nav>
+	<nav class="sidenav">
 			{{ with .Site.Menus.main }}
 			{{ range . }}
 			<a style="text-decoration: none" href="{{ .URL | relURL }}"><b>{{ .Name }}</b></a>
@@ -10,5 +26,4 @@
 	</nav>
 	</p>
 	{{ end }}
-	{{ partial "mathjax_support.html" . }}
 </header>

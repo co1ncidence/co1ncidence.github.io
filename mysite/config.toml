@@ -20,25 +20,19 @@ paginate = 10
 [menu]
 
   [[menu.main]]
-    name = "About /"
+    name = "About"
     identifier = "about"
     url = "/about/"
     weight = 1
 
   [[menu.main]]
-    name = "Posts /"
-    identifier = "archive"
-    url = "/posts/"
-    weight = 2
-
-  [[menu.main]]
-    name = "Books /"
+    name = "Books"
     identifier = "books"
     url = "/books/"
     weight = 4
 
   [[menu.main]]
-    name = "Software /"
+    name = "Software"
     identifier = "software"
     url = "/software/"
     weight = 2
@@ -114,7 +108,7 @@ tag = "tags"
     lineNos = false
     lineNumbersInTable = true
     noClasses = true
-    style = "monokailight"
+    style = "monokai"
     tabWidth = 4
   [markup.tableOfContents]
     endLevel = 3
