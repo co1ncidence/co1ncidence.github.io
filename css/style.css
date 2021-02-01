@@ -30,7 +30,7 @@ body {
   max-width: 600px;
   width: 100vw;
   text-align: justify;
-  margin: 0 auto;
+  margin-left: 100px;
   padding-top: 10vh;
   padding-bottom: 10vh;
   padding-left: 8vw;
@@ -129,6 +129,7 @@ h1:hover:before {
 
 /* Website Title */
 .title {
+  margin-left: -46px;
   width: 100%;
   text-decoration: none;
   display: block;
@@ -142,8 +143,9 @@ h1:hover:before {
 }
 
 .subtitle {
+  margin-left: -25px;
   color: #898989;
-  margin-bottom: 20px;
+  margin-bottom: -30px;
   font-family: "Gentium Basic", serif;
   font-size: 1.2em;
 }
