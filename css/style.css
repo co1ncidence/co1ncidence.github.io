@@ -1,5 +1,6 @@
 /* Import Fonts */
 @import url("https://fonts.googleapis.com/css?family=Gentium+Basic");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono");
 
 /* Root Vars */
 :root {
@@ -179,7 +180,7 @@ a:focus {
 
 /* Code */
 code {
-  font-family: "Inconsolata", monospace;
+  font-family: "Ubuntu Mono", monospace;
 }
 
 p > code {
