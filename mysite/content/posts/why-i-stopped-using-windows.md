@@ -31,11 +31,11 @@ average user.**
 ## What's wrong with Windows?
 
 I will divide this subsection into 5 categories and talk about them separately:
-  1. [Slow, bloated interface, terrible UI design](#slow-bloated-interface-terrible-ui-design)
-  2. [Many security and privacy issues](#many-security-and-privacy-issues)
-  3. [Software base almost completely proprietary](#software-base-being-mostly-proprietary)
-  4. [Lack of control over system](#lack-of-control-over-system)
-  5. [TLDR](#tldr)
+1. [Slow, bloated interface, terrible UI design](#slow-bloated-interface-terrible-ui-design)
+2. [Many security and privacy issues](#many-security-and-privacy-issues)
+3. [Software base almost completely proprietary](#software-base-being-mostly-proprietary)
+4. [Lack of control over system](#lack-of-control-over-system)
+5. [TLDR](#tldr)
 
 ### Slow, bloated Interface, terrible UI design
 
@@ -245,11 +245,11 @@ them being Linux.
 
 ## Now, Why is Linux any better?
 This subsection too, will be divided into 5 categories:
-  1. [Many distributions to choose from](#many-distributions-to-choose-from)
-  2. [UI has infinite customization potential](#ui-has-infinite-customization-potential)
-  3. [Completely transparent and secure](#completely-transparent-and-secure)
-  4. [Free and Open Source software base](#free-and-open-source-software-base)
-  5. [Absolute control over system](#absolute-control-over-system)
+1. [Many distributions to choose from](#many-distributions-to-choose-from)
+2. [UI has infinite customization potential](#ui-has-infinite-customization-potential)
+3. [Completely transparent and secure](#completely-transparent-and-secure)
+4. [Free and Open Source software base](#free-and-open-source-software-base)
+5. [Absolute control over system](#absolute-control-over-system)
 
 ### Many distributions to choose from
 
