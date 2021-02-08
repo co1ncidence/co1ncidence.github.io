@@ -1,25 +1,8 @@
 <header>
-	<style>
-	.sidenav {
-		width: 10%;
-		position: absolute;
-		top: 160px;
-		left: 0;
-		background-color: transparent;
-		overflow-x: hidden;
-		padding-top: 30px;
-		padding-bottom: 30px;
-	}
-	.sidenav a {
-		padding: 6px 6px 6px 26px;
-		text-decoration: none;
-		display: block;
-	}
-	</style>
 	<a class="title" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
 	<p class="subtitle">welcome to my realm.</p>
 	<p>
-	<nav class="sidenav">
+	<nav>
 			{{ with .Site.Menus.main }}
 			{{ range . }}
 			<a style="text-decoration: none" href="{{ .URL | relURL }}"><b>{{ .Name }}</b></a>
