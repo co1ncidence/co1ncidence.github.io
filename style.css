@@ -24,27 +24,11 @@ body {
   color: inherit;
 }
 
-#left-wing {
-  position: fixed;
-  top: -65%;
-  left: -85%;
-  border-radius: 0.4rem;
-  padding: 10px;
-  box-shadow: 5px 5px 50px -5px rgba(0,0,0,0.25);
-  -webkit-box-shadow: 5px 5px 50px -5px rgba(0,0,0,0.25);
-  -moz-box-shadow: 5px 5px 50px -5px rgba(0,0,0,0.25);
-}
+/* #left-wing { */
+/* } */
 
-#right-wing {
-  position: fixed;
-  top: -65%;
-  right: -85%;
-  padding: 10px;
-  border-radius: 0.4rem;
-  box-shadow: 5px 5px 50px -5px rgba(0,0,0,0.25);
-  -webkit-box-shadow: 5px 5px 50px -5px rgba(0,0,0,0.25);
-  -moz-box-shadow: 5px 5px 50px -5px rgba(0,0,0,0.25);
-}
+/* #right-wing { */
+/* } */
 
 #header {
   margin: 0;
