@@ -24,12 +24,6 @@ body {
   color: inherit;
 }
 
-/* #left-wing { */
-/* } */
-
-/* #right-wing { */
-/* } */
-
 #header {
   margin: 0;
   margin: 1.2rem 0 0 0;
@@ -85,9 +79,9 @@ body {
   padding: 2.4rem 2rem;
   border-radius: 0.4rem;
   background: #eaeaea;
-  box-shadow: 10px 10px 100px 5px rgba(0,0,0,0.2);
-  -webkit-box-shadow: 10px 10px 100px 5px rgba(0,0,0,0.2);
-  -moz-box-shadow: 10px 10px 100px 5px rgba(0,0,0,0.2);
+  box-shadow: 10px 10px 100px 5px rgba(0,0,0,0.15);
+  -webkit-box-shadow: 10px 10px 100px 5px rgba(0,0,0,0.15);
+  -moz-box-shadow: 10px 10px 100px 5px rgba(0,0,0,0.15);
 }
 
 #text-display {

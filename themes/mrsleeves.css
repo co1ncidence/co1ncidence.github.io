@@ -14,6 +14,16 @@ body {
 }
 
 #left-wing {
+  background: transparent;
+  color: transparent;
+  position: fixed;
+  top: -60%;
+  left: -85%;
+  border-radius: 0.4rem;
+  padding: 20px;
+}
+
+#left-wing:hover {
   background: #eaeaea;
   color: #1a1a1a;
   position: fixed;
@@ -27,6 +37,16 @@ body {
 }
 
 #right-wing {
+  background: transparent;
+  color: transparent;
+  position: fixed;
+  top: -60%;
+  right: -85%;
+  padding: 20px;
+  border-radius: 0.4rem;
+}
+
+#right-wing:hover {
   background: #eaeaea;
   color: #1a1a1a;
   position: fixed;
