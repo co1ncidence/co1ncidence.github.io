@@ -18,9 +18,9 @@ let timerActive = false;
 let punctuation = false;
 
 // Get cookies
-getCookie('theme') === '' ? setTheme('light') : setTheme(getCookie('theme'));
-getCookie('language') === '' ? setLanguage('english') : setLanguage(getCookie('language'));
-getCookie('wordCount') === '' ? setWordCount(50) : setWordCount(getCookie('wordCount'));
+getCookie('theme') === '' ? setTheme('mrsleeves') : setTheme(getCookie('theme'));
+getCookie('language') === '' ? setLanguage('english1000') : setLanguage(getCookie('language'));
+getCookie('wordCount') === '' ? setWordCount(25) : setWordCount(getCookie('wordCount'));
 getCookie('timeCount') === '' ? setTimeCount(60) : setTimeCount(getCookie('timeCount'));
 getCookie('typingMode') === '' ? setTypingMode('wordcount') : setTypingMode(getCookie('typingMode'));
 getCookie('punctuation') === '' ? setPunctuation('false') : setPunctuation(getCookie('punctuation'));
@@ -455,5 +455,3 @@ function hideThemeCenter() {
   document.getElementById('theme-center').classList.add('hidden');
   document.getElementById('command-center').classList.remove('hidden');
 }
-
-
